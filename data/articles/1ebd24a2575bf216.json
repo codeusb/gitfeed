@@ -1,0 +1,21 @@
+{
+  "id": "1ebd24a2575bf216",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "Agent psychosis: are we going insane?",
+  "link": "https://changelog.com/news/177",
+  "author": "Changelog",
+  "publishedAt": "2026-01-19T20:30:00Z",
+  "snippet": "Armin Ronacher thinks AI agent psychosis might be driving us insane, Dan Abramov explains how AT Protocol is a social filesystem, RepoBar keeps your GitHub work in view without opening a browser, Ethan McCue shares some ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Armin Ronacher thinks AI agent psychosis might be driving us insane, Dan Abramov explains how AT Protocol is a social filesystem, RepoBar keeps your GitHub work in view without opening a browser, Ethan McCue shares some life altering Postgres patterns, and Lea Verou says web dependencies are broken and we need to fix them.</p>\n<p><a href=\"https://changelog.com/news/177/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members support our work, get closer to the metal, and make the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.sonatype.com\" rel=\"noopener noreferrer\" target=\"_blank\">Sonatype</a> – Develop software fearlessly. Find out how at <a href=\"https://www.sonatype.com\" rel=\"noopener noreferrer\" target=\"_blank\">sonatype.com</a>.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/177/changelog-news-177.mp3",
+      "type": "audio/mpeg",
+      "length": "6164881"
+    }
+  ]
+}

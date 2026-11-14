@@ -1,0 +1,21 @@
+{
+  "id": "8db99ffdb46f0bfa",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "What actually makes you senior",
+  "link": "https://changelog.com/news/172",
+  "author": "Changelog",
+  "publishedAt": "2025-12-01T20:30:00Z",
+  "snippet": "Matheus Lima on what makes senior developers actually senior, Tega Brain created a browser extension for avoiding AI slop, Andrew Kelley moves Zig from GitHub to Codeberg, Matias Heikkilä says there’s no free lunch for v...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Matheus Lima on what makes senior developers actually senior, Tega Brain created a browser extension for avoiding AI slop, Andrew Kelley moves Zig from GitHub to Codeberg, Matias Heikkilä says there’s no free lunch for vibe coding, and your SSD data at rest might be at risk.</p>\n<p><a href=\"https://changelog.com/news/172/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members save 1 minute on this episode because they made the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://namespace.so\" rel=\"noopener noreferrer\" target=\"_blank\">Namespace</a> – Speed up your development and testing workflows using your existing tools. (Much) faster GitHub actions, Docker builds, and more. At an unbeatable price.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/172/changelog-news-172.mp3",
+      "type": "audio/mpeg",
+      "length": "9252732"
+    }
+  ]
+}

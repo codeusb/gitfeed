@@ -1,0 +1,21 @@
+{
+  "id": "db37e4192fa2624d",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "Clawdbot triggers a run on Mac Minis",
+  "link": "https://changelog.com/news/178",
+  "author": "Changelog",
+  "publishedAt": "2026-01-26T20:00:00Z",
+  "snippet": "Clawdbot drives Mac Mini sales, Swizec Teller on the future of software engineering being SRE, Daniel Stenberg decided to end curl’s bug bounty program, zerobrew takes some of the best ideas from uv and applies them to H...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Clawdbot drives Mac Mini sales, Swizec Teller on the future of software engineering being SRE, Daniel Stenberg decided to end curl’s bug bounty program, zerobrew takes some of the best ideas from uv and applies them to Homebrew, and Phil Eaton on LLMs and your career.</p>\n<p><a href=\"https://changelog.com/news/178/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members support our work, get closer to the metal, and make the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.tigerdata.com\" rel=\"noopener noreferrer\" target=\"_blank\">Tiger Data</a> – Postgres for Developers, devices, and agents The data platform trusted by hundreds of thousands from IoT to Web3 to AI and more.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/178/changelog-news-178.mp3",
+      "type": "audio/mpeg",
+      "length": "6734116"
+    }
+  ]
+}

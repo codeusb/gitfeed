@@ -1,0 +1,21 @@
+{
+  "id": "25dd0135e19daf60",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "Astral has been acquired by OpenAI",
+  "link": "https://changelog.com/news/184",
+  "author": "Changelog",
+  "publishedAt": "2026-03-27T20:00:00Z",
+  "snippet": "Astral is joining OpenAI, which says a lot about where the center of gravity is moving for developer tools, LiteLLM got hit by a nasty supply-chain attack, and OpenCode blew up as the latest serious open source swing at ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Astral is joining OpenAI, which says a lot about where the center of gravity is moving for developer tools, LiteLLM got hit by a nasty supply-chain attack, and OpenCode blew up as the latest serious open source swing at the coding-agent stack. We’ve also got Rust doing a very public reality check on its own pain points, WorkOS pushing AuthKit into CLI auth, Ryan Lizza using AI to build an open source TurboTax alternative, and a fresh httpx fork that turns open source maintenance drama into a real dependency story. If nothing else, this week was a good reminder that tools, trust, and control all move together.</p>\n<p><a href=\"https://changelog.com/news/184/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members save 1 minute on this episode because they made the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://workos.com\" rel=\"noopener noreferrer\" target=\"_blank\">WorkOS</a> – Auth for CLI with AuthKit from WorkOS — Bring secure browser-based login to your terminal apps using the OAuth Device Flow, with the same polished AuthKit experience plus SSO, MFA, and passkeys. Learn more at <a href=\"https://workos.com/\" rel=\"noopener noreferrer\" target=\"_blank\">WorkOS.com</a> and <a href=\"https://www.authkit.com\" rel=\"noopener noreferrer\" target=\"_blank\">AuthKit.com</a>\n</li>\n</ul></p><p>Featuring:</p><ul><li>Adam Stacoviak – <a href=\"https://adamstacoviak.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/adamstac\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/adamstacoviak\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@adam\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/adamstac\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/184/changelog-news-184.mp3",
+      "type": "audio/mpeg",
+      "length": "15716684"
+    }
+  ]
+}

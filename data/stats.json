@@ -1,24 +1,123 @@
 {
-  "lastUpdated": "2026-11-14T13:59:27.476121+00:00",
-  "totalArticles": 139,
-  "newArticlesInThisRun": 2,
+  "lastUpdated": "2026-11-14T14:03:17.681870+00:00",
+  "totalArticles": 235,
+  "newArticlesInThisRun": 4,
   "prunedArticles": 0,
-  "activeFeeds": 8,
+  "activeFeeds": 19,
   "feedStatuses": {
+    "橘鸦ai早报": {
+      "title": "橘鸦AI早报",
+      "category": "tech",
+      "url": "https://daily.juya.uk/rss.xml",
+      "lastChecked": "2026-11-14T14:02:56.941062+00:00",
+      "status": "ok",
+      "articlesFetched": 10,
+      "error": null
+    },
+    "changelog": {
+      "title": "Changelog",
+      "category": "tech",
+      "url": "http://feeds.feedburner.com/thechangelog",
+      "lastChecked": "2026-11-14T14:02:58.287269+00:00",
+      "status": "ok",
+      "articlesFetched": 50,
+      "error": null
+    },
+    "javascript-weekly": {
+      "title": "JavaScript Weekly",
+      "category": "tech",
+      "url": "http://javascriptweekly.com/rss",
+      "lastChecked": "2026-11-14T14:02:59.152111+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "node-weekly": {
+      "title": "Node Weekly",
+      "category": "tech",
+      "url": "http://nodeweekly.com/rss/1j9a0ll9",
+      "lastChecked": "2026-11-14T14:03:00.031391+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "frontend-focus": {
+      "title": "Frontend Focus",
+      "category": "tech",
+      "url": "https://frontendfoc.us/rss",
+      "lastChecked": "2026-11-14T14:03:00.754114+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "react-status": {
+      "title": "React Status",
+      "category": "tech",
+      "url": "https://react.statuscode.com/rss",
+      "lastChecked": "2026-11-14T14:03:01.931085+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "selfh-st": {
+      "title": "selfh.st",
+      "category": "tech",
+      "url": "https://selfh.st/rss/",
+      "lastChecked": "2026-11-14T14:03:02.865364+00:00",
+      "status": "ok",
+      "articlesFetched": 25,
+      "error": null
+    },
+    "golang-weekly": {
+      "title": "Golang Weekly",
+      "category": "t-language",
+      "url": "http://golangweekly.com/rss",
+      "lastChecked": "2026-11-14T14:03:03.702190+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "36氪": {
+      "title": "36氪",
+      "category": "t-language",
+      "url": "http://www.36kr.com/feed",
+      "lastChecked": "2026-11-14T14:03:04.280216+00:00",
+      "status": "ok",
+      "articlesFetched": 30,
+      "error": null
+    },
+    "github-weekly-trending-repositories": {
+      "title": "GitHub Weekly Trending Repositories",
+      "category": "t-language",
+      "url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
+      "lastChecked": "2026-11-14T14:03:04.955890+00:00",
+      "status": "ok",
+      "articlesFetched": 15,
+      "error": null
+    },
+    "postgres-weekly": {
+      "title": "Postgres Weekly",
+      "category": "t-language",
+      "url": "http://postgresweekly.com/rss/1g42j1di",
+      "lastChecked": "2026-11-14T14:03:05.891324+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
     "hacker-news-frontpage": {
       "title": "Hacker News: Front Page",
       "category": "tech-news",
       "url": "https://hnrss.org/frontpage",
-      "lastChecked": "2026-11-14T13:59:24.522205+00:00",
-      "status": "ok",
-      "articlesFetched": 20,
-      "error": null
+      "lastChecked": "2026-11-14T14:03:13.082425+00:00",
+      "status": "error",
+      "articlesFetched": 0,
+      "error": "HTTP request failed: HTTPSConnectionPool(host='hnrss.org', port=443): Max retries exceeded with url: /frontpage (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))"
     },
     "github-blog": {
       "title": "GitHub Blog",
       "category": "tech-news",
       "url": "https://github.blog/feed/",
-      "lastChecked": "2026-11-14T13:59:24.718061+00:00",
+      "lastChecked": "2026-11-14T14:03:13.651901+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -27,7 +126,7 @@
       "title": "V2EX - 最热主题",
       "category": "tech-news",
       "url": "https://www.v2ex.com/index.xml",
-      "lastChecked": "2026-11-14T13:59:25.021108+00:00",
+      "lastChecked": "2026-11-14T14:03:14.186791+00:00",
       "status": "ok",
       "articlesFetched": 50,
       "error": null
@@ -36,7 +135,7 @@
       "title": "阮一峰的网络日志",
       "category": "weekly",
       "url": "http://www.ruanyifeng.com/blog/atom.xml",
-      "lastChecked": "2026-11-14T13:59:25.216867+00:00",
+      "lastChecked": "2026-11-14T14:03:14.471201+00:00",
       "status": "ok",
       "articlesFetched": 3,
       "error": null
@@ -45,7 +144,7 @@
       "title": "web.dev Blog",
       "category": "frontend",
       "url": "https://web.dev/feed.xml",
-      "lastChecked": "2026-11-14T13:59:25.752637+00:00",
+      "lastChecked": "2026-11-14T14:03:15.411625+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -54,7 +153,7 @@
       "title": "Smashing Magazine",
       "category": "frontend",
       "url": "https://www.smashingmagazine.com/feed/",
-      "lastChecked": "2026-11-14T13:59:27.099531+00:00",
+      "lastChecked": "2026-11-14T14:03:16.566367+00:00",
       "status": "ok",
       "articlesFetched": 40,
       "error": null
@@ -63,7 +162,7 @@
       "title": "MIT Technology Review",
       "category": "ai-ml",
       "url": "https://www.technologyreview.com/feed/",
-      "lastChecked": "2026-11-14T13:59:27.281344+00:00",
+      "lastChecked": "2026-11-14T14:03:17.140295+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -72,7 +171,7 @@
       "title": "Simon Willison's Weblog",
       "category": "ai-ml",
       "url": "https://simonwillison.net/atom/everything/",
-      "lastChecked": "2026-11-14T13:59:27.473611+00:00",
+      "lastChecked": "2026-11-14T14:03:17.679040+00:00",
       "status": "ok",
       "articlesFetched": 30,
       "error": null

@@ -1,0 +1,21 @@
+{
+  "id": "0e277e00db72a070",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "The mythical agent-month",
+  "link": "https://changelog.com/news/182",
+  "author": "Changelog",
+  "publishedAt": "2026-02-23T20:45:00Z",
+  "snippet": "Wes McKinney on the mythical agent-month, install Peon Ping to employ a Peon today, Andreas Kling explains why Ladybird is adopting Rust, Cloudflare has a new MCP server that’s quite efficient, and Elliot Bonneville thin...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Wes McKinney on the mythical agent-month, install Peon Ping to employ a Peon today, Andreas Kling explains why Ladybird is adopting Rust, Cloudflare has a new MCP server that’s quite efficient, and Elliot Bonneville thinks the only moat left is money.</p>\n<p><a href=\"https://changelog.com/news/182/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members support our work, get closer to the metal, and make the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.augmentcode.com/product/CLI\" rel=\"noopener noreferrer\" target=\"_blank\">Augment Code</a> – Adam loves “Auggie” – Augment Code’s CLI that brings Augment’s context engine and powerful AI reasoning anywhere your code goes. From building alongside you in the terminal to any part of your development workflow.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/182/changelog-news-182.mp3",
+      "type": "audio/mpeg",
+      "length": "7663173"
+    }
+  ]
+}

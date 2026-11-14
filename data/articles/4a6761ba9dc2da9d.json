@@ -1,0 +1,21 @@
+{
+  "id": "4a6761ba9dc2da9d",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "All the Claw things",
+  "link": "https://changelog.com/news/181",
+  "author": "Changelog",
+  "publishedAt": "2026-02-16T19:30:00Z",
+  "snippet": "Peter Steinberger joins OpenAI, ZeroClaw is “claw done right”, MimiClaw runs on a $5 chip, Steve Yegge on managing the AI Vampire, and the day the telnet died. View the newsletterJoin the discussionChangelog++ members su...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Peter Steinberger joins OpenAI, ZeroClaw is “claw done right”, MimiClaw runs on a $5 chip, Steve Yegge on managing the AI Vampire, and the day the telnet died.</p>\n<p><a href=\"https://changelog.com/news/181/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members support our work, get closer to the metal, and make the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.tigerdata.com\" rel=\"noopener noreferrer\" target=\"_blank\">Tiger Data</a> – Postgres for Developers, devices, and agents The data platform trusted by hundreds of thousands from IoT to Web3 to AI and more.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/181/changelog-news-181.mp3",
+      "type": "audio/mpeg",
+      "length": "6325631"
+    }
+  ]
+}

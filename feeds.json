@@ -1,16 +1,22 @@
 {
   "categories": [
     {
-      "id": "tech-news",
-      "name": "科技热点",
-      "nameEn": "Tech News",
-      "icon": "newspaper"
+      "id": "tech",
+      "name": "Tech 精选",
+      "nameEn": "Tech",
+      "icon": "cpu"
+    },
+    {
+      "id": "t-language",
+      "name": "编程与语言",
+      "nameEn": "T-language",
+      "icon": "code"
     },
     {
       "id": "frontend",
       "name": "前端与工程",
       "nameEn": "Frontend & Web",
-      "icon": "code"
+      "icon": "layout"
     },
     {
       "id": "ai-ml",
@@ -19,43 +25,118 @@
       "icon": "bot"
     },
     {
+      "id": "tech-news",
+      "name": "科技热点",
+      "nameEn": "Tech News",
+      "icon": "newspaper"
+    },
+    {
       "id": "weekly",
       "name": "优质周刊",
       "nameEn": "Weekly Digests",
       "icon": "book-open"
-    },
-    {
-      "id": "indie",
-      "name": "独立开发",
-      "nameEn": "Indie Hackers",
-      "icon": "rocket"
-    },
-    {
-      "id": "科技热点",
-      "name": "科技热点",
-      "nameEn": "科技热点",
-      "icon": "folder"
-    },
-    {
-      "id": "优质周刊",
-      "name": "优质周刊",
-      "nameEn": "优质周刊",
-      "icon": "folder"
-    },
-    {
-      "id": "前端与工程",
-      "name": "前端与工程",
-      "nameEn": "前端与工程",
-      "icon": "folder"
-    },
-    {
-      "id": "ai-前沿",
-      "name": "AI 前沿",
-      "nameEn": "AI 前沿",
-      "icon": "folder"
     }
   ],
   "feeds": [
+    {
+      "id": "橘鸦ai早报",
+      "title": "橘鸦AI早报",
+      "url": "https://daily.juya.uk/rss.xml",
+      "siteUrl": "https://daily.juya.uk/",
+      "category": "tech",
+      "description": "AI 每日动态与技术早报",
+      "enabled": true
+    },
+    {
+      "id": "changelog",
+      "title": "Changelog",
+      "url": "http://feeds.feedburner.com/thechangelog",
+      "siteUrl": "https://changelog.com/",
+      "category": "tech",
+      "description": "Software news and podcast episodes",
+      "enabled": true
+    },
+    {
+      "id": "javascript-weekly",
+      "title": "JavaScript Weekly",
+      "url": "http://javascriptweekly.com/rss",
+      "siteUrl": "https://javascriptweekly.com/",
+      "category": "tech",
+      "description": "Weekly roundup of JavaScript news and articles",
+      "enabled": true
+    },
+    {
+      "id": "node-weekly",
+      "title": "Node Weekly",
+      "url": "http://nodeweekly.com/rss/1j9a0ll9",
+      "siteUrl": "https://nodeweekly.com/",
+      "category": "tech",
+      "description": "Weekly Node.js newsletter",
+      "enabled": true
+    },
+    {
+      "id": "frontend-focus",
+      "title": "Frontend Focus",
+      "url": "https://frontendfoc.us/rss",
+      "siteUrl": "https://frontendfoc.us/",
+      "category": "tech",
+      "description": "Once-weekly HTML, CSS and Web dev roundup",
+      "enabled": true
+    },
+    {
+      "id": "react-status",
+      "title": "React Status",
+      "url": "https://react.statuscode.com/rss",
+      "siteUrl": "https://react.statuscode.com/",
+      "category": "tech",
+      "description": "Weekly curated React ecosystem newsletter",
+      "enabled": true
+    },
+    {
+      "id": "selfh-st",
+      "title": "selfh.st",
+      "url": "https://selfh.st/rss/",
+      "siteUrl": "https://selfh.st",
+      "category": "tech",
+      "description": "Self-hosting newsletter and directory",
+      "enabled": true
+    },
+    {
+      "id": "golang-weekly",
+      "title": "Golang Weekly",
+      "url": "http://golangweekly.com/rss",
+      "siteUrl": "https://golangweekly.com/",
+      "category": "t-language",
+      "description": "Weekly newsletter about the Go programming language",
+      "enabled": true
+    },
+    {
+      "id": "36氪",
+      "title": "36氪",
+      "url": "http://www.36kr.com/feed",
+      "siteUrl": "http://36kr.com",
+      "category": "t-language",
+      "description": "中国新经济与科技商业媒体",
+      "enabled": true
+    },
+    {
+      "id": "github-weekly-trending-repositories",
+      "title": "GitHub Weekly Trending Repositories",
+      "url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
+      "siteUrl": "https://mshibanami.github.io/GitHubTrendingRSS",
+      "category": "t-language",
+      "description": "Weekly trending repos across GitHub",
+      "enabled": true
+    },
+    {
+      "id": "postgres-weekly",
+      "title": "Postgres Weekly",
+      "url": "http://postgresweekly.com/rss/1g42j1di",
+      "siteUrl": "https://postgresweekly.com/",
+      "category": "t-language",
+      "description": "Weekly curated news and articles for PostgreSQL",
+      "enabled": true
+    },
     {
       "id": "hacker-news-frontpage",
       "title": "Hacker News: Front Page",

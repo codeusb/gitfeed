@@ -1,0 +1,21 @@
+{
+  "id": "41b76fd955532a8a",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "The code, prose & pods that shaped 2025",
+  "link": "https://changelog.com/news/174",
+  "author": "Changelog",
+  "publishedAt": "2025-12-15T20:00:00Z",
+  "snippet": "This episodes diverges from our traditional fare. I’ve reviewed the 49 previous editions and picked (IMHO) the coolest code, best prose & my favorite podcast episode from each month! View the newsletterJoin the discussio...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>This episodes diverges from our traditional fare. I’ve reviewed the 49 previous editions and picked (IMHO) the coolest code, best prose &amp; my favorite podcast episode from each month!</p>\n<p><a href=\"https://changelog.com/news/174/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members save 1 minute on this episode because they made the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.tigerdata.com\" rel=\"noopener noreferrer\" target=\"_blank\">Tiger Data</a> – Postgres for Developers, devices, and agents The data platform trusted by hundreds of thousands from IoT to Web3 to AI and more.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/174/changelog-news-174.mp3",
+      "type": "audio/mpeg",
+      "length": "16617831"
+    }
+  ]
+}

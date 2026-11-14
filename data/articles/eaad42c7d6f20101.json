@@ -1,0 +1,21 @@
+{
+  "id": "eaad42c7d6f20101",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "Big change brings big change",
+  "link": "https://changelog.com/news/183",
+  "author": "Changelog",
+  "publishedAt": "2026-03-10T20:00:00Z",
+  "snippet": "This week’s been wild — Iran bombed AWS data centers to take down Claude, OpenAI dropped GPT-5.4 (and it’s seriously good for coding), and living brain cells are literally playing DOOM. We’ve also got a heartfelt take on...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>This week’s been wild — Iran bombed AWS data centers to take down Claude, OpenAI dropped GPT-5.4 (and it’s seriously good for coding), and living brain cells are literally playing DOOM. We’ve also got a heartfelt take on what it feels like to be a 10x engineer in the age of AI, plus some cool new tools like Handy for speech-to-text and web haptics. Oh, and new MacBook Pros with M5 Pro and M5 Max are up for pre-order. Try not to impulse buy (or do).</p>\n<p><a href=\"https://changelog.com/news/183/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members support our work, get closer to the metal, and make the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.sonatype.com\" rel=\"noopener noreferrer\" target=\"_blank\">Sonatype</a> – Develop software fearlessly. Find out how at <a href=\"https://www.sonatype.com\" rel=\"noopener noreferrer\" target=\"_blank\">sonatype.com</a>.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Adam Stacoviak – <a href=\"https://adamstacoviak.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/adamstac\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/adamstacoviak\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@adam\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/adamstac\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/183/changelog-news-183.mp3",
+      "type": "audio/mpeg",
+      "length": "7605726"
+    }
+  ]
+}

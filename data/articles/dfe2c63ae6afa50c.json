@@ -1,0 +1,21 @@
+{
+  "id": "dfe2c63ae6afa50c",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "The tech monoculture is finally breaking",
+  "link": "https://changelog.com/news/179",
+  "author": "Changelog",
+  "publishedAt": "2026-02-02T20:30:00Z",
+  "snippet": "Jason Willems believes the tech monoculture is finally breaking, Don Ho shares some bad Notepad++ news, Tailscale’s Avery Pennarun pens a great downtime apology, Milan Milanović explains why you can only code 4 hours per...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Jason Willems believes the tech monoculture is finally breaking, Don Ho shares some bad Notepad++ news, Tailscale’s Avery Pennarun pens a great downtime apology, Milan Milanović explains why you can only code 4 hours per day, and Addy Osmani on managing comprehension debt when leaning on AI to code.</p>\n<p><a href=\"https://changelog.com/news/179/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members save 1 minute on this episode because they made the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.tigerdata.com\" rel=\"noopener noreferrer\" target=\"_blank\">Tiger Data</a> – Postgres for Developers, devices, and agents The data platform trusted by hundreds of thousands from IoT to Web3 to AI and more.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/179/changelog-news-179.mp3",
+      "type": "audio/mpeg",
+      "length": "8590069"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "2e3cffc64465fd20",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "Vouch for an open source web of trust",
+  "link": "https://changelog.com/news/180",
+  "author": "Changelog",
+  "publishedAt": "2026-02-09T19:00:00Z",
+  "snippet": "Mitchell Hashimoto’s trust management system for open source, Nicholas Carlini has a team of Claudes build a C compiler, Stephan Schwab recounts the history of attempted developer replacement, NanClaw is an alternative t...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Mitchell Hashimoto’s trust management system for open source, Nicholas Carlini has a team of Claudes build a C compiler, Stephan Schwab recounts the history of attempted developer replacement, NanClaw is an alternative to OpenClaw, and Sophie Koonin can’t wrap her head around so many people going so hard on LLM-generated code.</p>\n<p><a href=\"https://changelog.com/news/180/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members save 1 minute on this episode because they made the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://www.sonatype.com\" rel=\"noopener noreferrer\" target=\"_blank\">Sonatype</a> – Develop software fearlessly. Find out how at <a href=\"https://www.sonatype.com\" rel=\"noopener noreferrer\" target=\"_blank\">sonatype.com</a>.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Jerod Santo – <a href=\"https://jerodsanto.net\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@jerod\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/jerodsanto\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/180/changelog-news-180.mp3",
+      "type": "audio/mpeg",
+      "length": "7455219"
+    }
+  ]
+}

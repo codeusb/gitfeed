@@ -1,0 +1,21 @@
+{
+  "id": "983f9cf280c61fa1",
+  "feedId": "changelog",
+  "feedTitle": "Changelog",
+  "category": "tech",
+  "title": "Bitwarden CLI compromised",
+  "link": "https://changelog.com/news/185",
+  "author": "Changelog",
+  "publishedAt": "2026-04-29T15:00:00Z",
+  "snippet": "Bitwarden’s CLI got hit by the Checkmarx supply-chain campaign, TypeScript 7.0 beta lands with the Go-rewritten compiler running ~10x faster than 6.0, and pgBackRest lost its maintainer of thirteen years leaving anyone r...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Bitwarden’s CLI got hit by the Checkmarx supply-chain campaign, TypeScript 7.0 beta lands with the Go-rewritten compiler running ~10x faster than 6.0, and pgBackRest lost its maintainer of thirteen years leaving anyone running production Postgres with a real dependency-trust task this week. We’ve also got Ubuntu 26.04 LTS shipping with TPM-backed full-disk encryption, and Matz dropping Spinel as an AOT path that takes Ruby to native binaries. This week was a good reminder that the tools we depend on are all moving at once. Security, performance, and maintenance aren’t isolated threads.</p>\n<p><a href=\"https://changelog.com/news/185/email\" rel=\"noopener noreferrer\" target=\"_blank\">View the newsletter</a></p><p><a href=\"https://changelog.zulipchat.com/#narrow/stream/455469-news\" rel=\"noopener noreferrer\" target=\"_blank\">Join the discussion</a></p><p><a href=\"https://changelog.com/++\" rel=\"noopener noreferrer\" target=\"_blank\">Changelog++</a> members save 2 minutes on this episode because they made the ads disappear. Join today!</p><p>Sponsors:</p><p><ul><li><a href=\"https://coder.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Coder.com</a> – Secure environments where devs and agents work in parallel. Open by design. Secure by default.\n</li>\n</ul></p><p>Featuring:</p><ul><li>Adam Stacoviak – <a href=\"https://adamstacoviak.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Website</a>, <a href=\"https://github.com/adamstac\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a>, <a href=\"https://www.linkedin.com/in/adamstacoviak\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn</a>, <a href=\"https://changelog.social/@adam\" rel=\"noopener noreferrer\" target=\"_blank\">Mastodon</a>, <a href=\"https://x.com/adamstac\" rel=\"noopener noreferrer\" target=\"_blank\">X</a></li></ul>",
+  "attachments": [
+    {
+      "url": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/news/185/changelog-news-185.mp3",
+      "type": "audio/mpeg",
+      "length": "12477662"
+    }
+  ]
+}
