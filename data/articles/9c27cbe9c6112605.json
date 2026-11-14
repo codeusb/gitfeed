@@ -1,0 +1,15 @@
+{
+  "id": "9c27cbe9c6112605",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 一个人做了个照片对口型唱 Rap 的小站，踩了不少坑，求拍砖",
+  "link": "https://www.v2ex.com/t/1257110#reply0",
+  "author": "gyheatonhsu",
+  "publishedAt": "2026-11-14T14:10:09Z",
+  "snippet": "一个人做了这个站： https://rapvideo-ai.io 用法：传一张照片（人、猫狗、卡通都行），写一句主题，比如「奶奶偷偷喂狗吃火腿」，它会写词、配伴奏和人声，再让照片里的角色对口型唱出来。5–15 秒，横屏竖屏都行，2–4 分钟出片。传两张照片可以做双人对唱。 左边是传的照片，右边是生成的片段。GIF 没有声音，带声音的原片可在网站主页查看。 最麻烦的是歌词节奏和口型对不上。现在是先按拍子把每一行切好，再交给视频模型（ Se...",
+  "coverImage": "https://i.imgur.com/SZKQrNp.jpeg",
+  "readTime": 1,
+  "content": "<p>一个人做了这个站： <a href=\"https://rapvideo-ai.io\" rel=\"noopener noreferrer\" target=\"_blank\">https://rapvideo-ai.io</a></p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/SZKQrNp.jpeg\"/></p>\n<p>用法：传一张照片（人、猫狗、卡通都行），写一句主题，比如「奶奶偷偷喂狗吃火腿」，它会写词、配伴奏和人声，再让照片里的角色对口型唱出来。5–15 秒，横屏竖屏都行，2–4 分钟出片。传两张照片可以做双人对唱。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/P4NcukE.gif\"/></p>\n<p>左边是传的照片，右边是生成的片段。GIF 没有声音，带声音的原片可在网站主页查看。</p>\n<p>最麻烦的是歌词节奏和口型对不上。现在是先按拍子把每一行切好，再交给视频模型（ Seedance 2.0 系列）做口型，好了不少，但还是会翻车。</p>\n<p>技术栈是 TanStack Start + Cloudflare Workers + D1 + R2 ，一个人维护比较省心。</p>\n<p>注册送 3 个积分，不用绑卡，够做一条 5 秒 480p 的视频。歌词生成器不登录也能玩。</p>\n<p>我知道 V 站最近类似的站不少。想听真实意见：哪里不好用、出片哪里怪、价格贵不贵，直接说就行。</p>",
+  "attachments": []
+}
