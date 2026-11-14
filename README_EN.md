@@ -54,24 +54,88 @@ flowchart TD
 
 ---
 
-## 🚀 3-Minute Quickstart
+## 🚀 Quickstart: Build Your Private GitFeed from a Fork
 
-Get your own private RSS reader running in 3 simple steps:
+No server required, no database needed. Follow these steps to fork GitFeed and launch your personal, full-platform RSS service in about 3 minutes!
 
 ### Step 1: Fork This Repository
-Click the **`Fork`** button at the top right of this repository to create a copy under your personal GitHub account.
+1. Click the **`Fork`** button at the top right of this repository.
+2. Select your personal GitHub account, keep the repository name as `gitfeed` (or customize it), and click **Create fork**.
 
-### Step 2: Grant Workflow Read & Write Permissions
-Since GitHub Actions automatically commits fetched feed data back into your repository:
-1. In your forked repository, go to **Settings** -> **Actions** -> **General**.
-2. Scroll to the bottom under **Workflow permissions**, choose **Read and write permissions**.
-3. Click **Save**.
+### Step 2: Enable GitHub Actions Workflows
+> [!IMPORTANT]
+> GitHub automatically disables Actions workflows on all forked repositories by default for security reasons. You must manually enable them once.
 
-### Step 3: Enable GitHub Pages Deployment
-1. Go to **Settings** -> **Pages**.
-2. Under **Build and deployment** -> **Source**, select **`GitHub Actions`**.
-3. Switch to the **Actions** tab, select **`Update Feeds & Deploy`** on the left, and click **`Run workflow`** to trigger the initial crawl and deployment.
-4. Once completed (approx. 1-2 minutes), refresh your Pages tab to find your live GitFeed URL (e.g. `https://yourusername.github.io/gitfeed/`)!
+1. In your forked repository, navigate to the **Actions** tab at the top.
+2. Click the green button: **"I understand my workflows, go ahead and enable them"**.
+
+### Step 3: Grant Workflow Write Permissions
+Since GitHub Actions automatically commits fetched and sanitized articles back into your repository:
+1. Go to your repository's **Settings** -> select **Actions** -> **General** on the left menu.
+2. Scroll down to the **Workflow permissions** section.
+3. Select **Read and write permissions**.
+4. Check **Allow GitHub Actions to create and approve pull requests**.
+5. Click **Save**.
+
+### Step 4: Enable Free GitHub Pages Hosting
+1. Go to **Settings** -> select **Pages** from the left navigation.
+2. Under **Build and deployment**, set **Source** to **`GitHub Actions`**.
+   *(Note: Do NOT choose Deploy from a branch; choose GitHub Actions)*.
+
+### Step 5: Trigger Your Initial Crawl & Deployment
+1. Go to the **Actions** tab.
+2. In the left workflow list, click **`Update Feeds & Deploy`**.
+3. Click the **`Run workflow`** dropdown on the right -> keep `Branch: main` -> click the green **Run workflow** button.
+4. Wait about 1-2 minutes. The workflow will fetch default feeds, sanitize articles into static JSON, and deploy your site to GitHub Pages.
+5. Once finished, visit your live reader at:
+   ```
+   https://<your-github-username>.github.io/gitfeed/
+   ```
+   Your private cloud RSS reader is now live! It will automatically update silently twice a day via GitHub Actions.
+
+---
+
+### Step 6: Multi-Device Sync Configuration (Web + Mobile)
+
+GitFeed uses a local-first architecture. It functions with offline caching even without any token. To seamlessly sync read and starred statuses between **Desktop Web** and **Mobile App (Android APK / iOS PWA)**:
+
+1. **Generate a GitHub Personal Access Token (PAT)**:
+   * Go to GitHub -> Click your profile avatar -> **Settings** -> **Developer settings** -> **Personal access tokens** -> **Fine-grained tokens**.
+   * Click **Generate new token**:
+     * **Token name**: e.g., `gitfeed-sync`;
+     * **Repository access**: Select **Only select repositories** -> pick your `gitfeed` repository;
+     * **Permissions**: Expand **Repository permissions**, find **Contents**, and set to **Read and write**;
+   * Click **Generate token** at the bottom and copy the token string (`github_pat_...`).
+2. **Configure Clients for Sync**:
+   * Open your GitFeed Web reader or Mobile App, and tap the **⚙️ Settings** icon:
+     * **Data Source URL**: `https://<your-github-username>.github.io/gitfeed/data`
+     * **GitHub Repository**: `<your-github-username>/gitfeed`
+     * **GitHub Token**: Paste your generated PAT
+     * Tap **"Sync Remote State"**
+   * Both clients now feature debounced background synchronization and automatic HTTP 409 conflict resolution. Reading on one device will automatically sync to your other device upon launch or refresh!
+
+---
+
+### Step 7: Get Mobile & Desktop Apps
+
+* 📱 **Android Native App**:
+  * **Direct Download**: Grab the latest pre-compiled `GitFeed-vx.x.x.apk` from the [Releases Page](https://github.com/codeusb/gitfeed/releases/latest).
+  * **Cloud Build for Yourself**: In your forked repository, go to **Actions** -> select **`Build & Release Android APK`** -> click **Run workflow**. GitHub will automatically build a release APK under your own repository's Releases.
+* 🍎 **iOS (iPhone / iPad)**:
+  * Open your GitFeed URL in Safari, tap the bottom "Share" icon -> select **"Add to Home Screen"** for a full-screen, standalone app experience.
+* 💻 **Mac / Windows Desktop**:
+  * In Chrome or Edge, click the **"Install GitFeed"** icon in the address bar to install a standalone desktop application with complete keyboard navigation (`J`, `K`, `M`, `S`).
+
+---
+
+### Step 8: Customize Your Subscriptions & Theme
+
+* **Manage RSS Subscriptions**:
+  * Directly edit `feeds.json` in your repository root via the GitHub web editor to add blogs, newsletters, and podcasts.
+  * Or import your existing OPML subscription file exported from Feedly / Inoreader directly in the Web reader's Settings.
+* **Unified Design Token Customization**:
+  * GitFeed features the minimalist Astryx design system with a Single Source of Truth architecture.
+  * To customize colors or add custom palettes, modify `shared/tokens.json` and run `npm run tokens:gen` to update both Web and Mobile synchronously!
 
 ---
 

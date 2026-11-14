@@ -54,24 +54,88 @@ flowchart TD
 
 ---
 
-## 🚀 3 分钟快速上手指南
+## 🚀 开箱即用：基于本项目的完整使用指南 (从 Fork 开始搭建)
 
-作为普通用户，只需三步即可拥有属于你自己的专属私有 RSS 阅读平台：
+无需购买服务器、无需配置数据库，只需按以下步骤 Fork 本项目，约 3 分钟即可拥有属于你个人的专属私有全平台 RSS 服务！
 
 ### 第一步：Fork 本仓库
-1. 点击本页面右上角的 **`Fork`** 按钮，将项目复制到你自己的 GitHub 账号下。
+1. 点击本仓库页面右上角的 **`Fork`** 按钮。
+2. 在弹出的页面中，选择你的个人 GitHub 账号，保持仓库名为 `gitfeed`（或者你喜欢的名字），点击 **Create fork**。
 
-### 第二步：开启 GitHub Actions 读写权限
-因为 GitHub Actions 需要把定时拉取的文章提交回你的仓库，请开启写入权限：
-1. 进入你 Fork 后的仓库，点击 **Settings** -> **Actions** -> **General**。
-2. 滚动到底部 **Workflow permissions**，选择 **Read and write permissions**。
-3. 点击 **Save** 保存。
+### 第二步：激活 GitHub Actions 自动化工作流
+> [!IMPORTANT]
+> GitHub 默认对所有 Fork 出的仓库禁用自动化 Actions。因此必须手动激活一次。
 
-### 第三步：开启 GitHub Pages 免费部署
-1. 点击仓库的 **Settings** -> **Pages**。
-2. 在 **Build and deployment** 下方的 **Source** 选择 **`GitHub Actions`**。
-3. 进入 **Actions** 标签页，在左侧选择 **`Update Feeds & Deploy`**，点击右侧 **`Run workflow`** 手动触发第一次拉取与构建。
-4. 等待 1~2 分钟执行完毕，刷新 Pages 页面即可看到你专属的阅读器网址（例如 `https://yourusername.github.io/gitfeed/`）！
+1. 进入你 Fork 后的仓库，点击顶部的 **Actions** 标签页。
+2. 会看到提示页面，点击绿色的 **“I understand my workflows, go ahead and enable them”** 按钮。
+
+### 第三步：配置 Actions 仓库读写权限
+因为 GitHub Actions 需要定时将抓取清洗后的文章与状态提交回你的仓库，请开启写入权限：
+1. 进入仓库的 **Settings** -> 左侧导航选择 **Actions** -> **General**。
+2. 滚动到底部的 **Workflow permissions** 区域。
+3. 选择 **Read and write permissions**（读写权限）。
+4. 勾选 **Allow GitHub Actions to create and approve pull requests**。
+5. 点击 **Save** 保存。
+
+### 第四步：启用 GitHub Pages 免费托管
+1. 点击仓库的 **Settings** -> 左侧导航选择 **Pages**。
+2. 在 **Build and deployment** 下方的 **Source** 下拉框中，选择 **`GitHub Actions`**。
+   *(注意：不要选择 Deploy from a branch，直接选 GitHub Actions 即可)*。
+
+### 第五步：手动触发首次抓取与部署
+1. 点击仓库顶部的 **Actions** 标签页。
+2. 在左侧工作流列表中点击 **`Update Feeds & Deploy`**。
+3. 在右侧点击 **`Run workflow`** 下拉按钮 -> 保持 `Branch: main` -> 点击绿色的 **Run workflow**。
+4. 等待约 1~2 分钟，该工作流会自动抓取预设 RSS、清洗生成静态 JSON 并完成 GitHub Pages 部署。
+5. 部署完成后，访问你的专属地址：
+   ```
+   https://<你的GitHub用户名>.github.io/gitfeed/
+   ```
+   你的专属私有云 RSS 阅读器就已经正式上线！后续每天由 GitHub Actions 自动定时静默更新。
+
+---
+
+### 第六步：双端无缝同步配置 (PC Web + 手机客户端)
+
+GitFeed 采用本地优先（Local-First）机制，即使不配 Token 也能在单设备完美离线阅读。如果需要在 **电脑网页端** 与 **手机端（Android APK / iOS PWA）** 之间无缝实时同步已读与星标状态：
+
+1. **生成 GitHub 访问令牌 (Personal Access Token)**：
+   * 打开 GitHub -> 点击右上角头像 -> **Settings** -> 左侧最底部 **Developer settings** -> **Personal access tokens** -> **Fine-grained tokens**。
+   * 点击 **Generate new token**：
+     * **Token name**：填入 `gitfeed-sync`（任意名字）；
+     * **Repository access**：选择 **Only select repositories** -> 选择你的 `gitfeed` 仓库；
+     * **Permissions**：展开 **Repository permissions**，找到 **Contents**，设为 **Read and write**；
+   * 点击底部 **Generate token**，复制生成的 `github_pat_...` 令牌字符串。
+2. **在客户端配置同步**：
+   * 打开你的 GitFeed 网页版或手机 App，点击左下角的 **⚙️ 设置** 按钮：
+     * **数据源地址**：填入 `https://<你的GitHub用户名>.github.io/gitfeed/data`；
+     * **GitHub 仓库**：填入 `<你的GitHub用户名>/gitfeed`；
+     * **GitHub Token**：粘贴刚才生成的 PAT 令牌；
+     * 点击 **“立即同步状态”**。
+   * 保存后，双端均已打通后台自动同步与 409 冲突自愈，任何一端阅读标记，另一端启动或刷新时自动拉取！
+
+---
+
+### 第七步：获取手机端与桌面端应用
+
+* 📱 **Android 原生客户端**：
+  * **直接下载安装**：前往 [Releases 页面](https://github.com/codeusb/gitfeed/releases/latest) 下载最新 `GitFeed-vx.x.x.apk` 安装包。
+  * **云端为自己打包**：在你的 Fork 仓库中，进入 **Actions** -> 选择 **`Build & Release Android APK`** -> 点击 **Run workflow**，GitHub 将全自动编译专属你的 APK 并在你仓库的 Releases 中提供下载。
+* 🍎 **iOS (iPhone / iPad)**：
+  * 在 Safari 浏览器中打开你的 GitFeed 网址，点击底部“分享”图标 -> 选择 **“添加到主屏幕”**，即刻获得独立全屏原生体验。
+* 💻 **Mac / Windows 桌面端**：
+  * 使用 Chrome 或 Edge 打开网页，地址栏右侧点击 **“安装 GitFeed”** 图标，即可生成桌面原生窗口应用，支持完整的 `J`、`K`、`M`、`S` 键盘极速操作。
+
+---
+
+### 第八步：定制属于你的 RSS 订阅与界面风格
+
+* **添加或管理订阅源**：
+  * 直接在 GitHub 网页上编辑你仓库根目录的 `feeds.json`，添加你喜爱的技术博客、新闻或专栏；
+  * 或者在网页端设置中，直接导入你在 Feedly / Inoreader 导出的 `.opml` 订阅文件。
+* **统一设计主题定制**：
+  * GitFeed 内置 Astryx 极简现代设计系统，并支持一处维护（Single Source of Truth）。
+  * 如需扩展自己的品牌主色调，仅需在 `shared/tokens.json` 里增添一组色值，运行 `npm run tokens:gen` 即可自动同步至 Web 与移动端！
 
 ---
 
