@@ -1,0 +1,21 @@
+# Built application files
+*.apk
+*.aab
+output-metadata.json
+
+# Native symbols
+app/src/main/jniLibs
+app/src/main/libs
+
+# Gradle cache and generated files
+.gradle
+build/
+app/build/
+*.keystore
+!debug.keystore
+
+# Android Studio navigation and settings
+.idea
+*.iml
+local.properties
+.cxx
