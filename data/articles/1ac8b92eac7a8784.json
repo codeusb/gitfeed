@@ -1,0 +1,15 @@
+{
+  "id": "1ac8b92eac7a8784",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[站点状态] 20261114 - 楼中楼样式、黑暗模式可以自动跟随系统设置及 Solana 买入按钮的额外铜币奖励",
+  "link": "https://www.v2ex.com/t/1257127#reply0",
+  "author": "Livid",
+  "publishedAt": "2026-11-14T15:43:57Z",
+  "snippet": "现在在设置中可以选择几种不同的楼中楼样式： https://edge.v2ex.com/settings#reply_thread_style 关于几种新的楼中楼样式的说明： https://edge.v2ex.com/help/reply-threads 首页右上角的黑暗模式切换现在支持自动跟随系统设置。 如果在 Solana HODL 页面或者注册时使用快速买入功能（由 Jupiter Swap API 驱动），那么会获得额外的铜币...",
+  "coverImage": "https://i.v2ex.co/odpRBzC8.png",
+  "readTime": 1,
+  "content": "<p>现在在设置中可以选择几种不同的楼中楼样式：</p>\n<p><a href=\"https://edge.v2ex.com/settings#reply_thread_style\" rel=\"noopener noreferrer\" target=\"_blank\">https://edge.v2ex.com/settings#reply_thread_style</a></p>\n<p>关于几种新的楼中楼样式的说明：</p>\n<p><a href=\"https://edge.v2ex.com/help/reply-threads\" rel=\"noopener noreferrer\" target=\"_blank\">https://edge.v2ex.com/help/reply-threads</a></p>\n<hr/>\n<p>首页右上角的黑暗模式切换现在支持自动跟随系统设置。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.v2ex.co/odpRBzC8.png\"/></p>\n<hr/>\n<p>如果在 Solana HODL 页面或者注册时使用快速买入功能（由 Jupiter Swap API 驱动），那么会获得额外的铜币奖励：</p>\n<p><a href=\"https://edge.v2ex.com/help/buy-bonus\" rel=\"noopener noreferrer\" target=\"_blank\">https://edge.v2ex.com/help/buy-bonus</a></p>",
+  "attachments": []
+}

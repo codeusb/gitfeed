@@ -1,0 +1,15 @@
+{
+  "id": "2a5d5a074762a6c9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude] portal kyc 使用 personal 认证完成后又回到 start",
+  "link": "https://www.v2ex.com/t/1257123#reply0",
+  "author": "InterestingWorld",
+  "publishedAt": "2026-11-14T15:29:52Z",
+  "snippet": "使用护照做完 portal kyc ，personal 提示 done 了，但刷新原页面却回到了开始认证页面 点击 start 又开始重新选择 “What country is your government ID from?” 什么情况，不是说没通过是秒封吗？比较奇怪的是，如果 personal 本身没成功，那么 claude 的 portal 页面应该还是二维码页面才对，但又不是。会不会是等到人工审核再处理？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>使用护照做完 portal kyc ，personal 提示 done 了，但刷新原页面却回到了开始认证页面</p>\n<p>点击 start 又开始重新选择 “What country is your government ID from?” 什么情况，不是说没通过是秒封吗？比较奇怪的是，如果 personal 本身没成功，那么 claude 的 portal 页面应该还是二维码页面才对，但又不是。会不会是等到人工审核再处理？</p>",
+  "attachments": []
+}
