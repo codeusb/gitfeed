@@ -129,7 +129,7 @@ function parseContentToBlocks(raw: string): Block[] {
   const blocks: Block[] = [];
 
   // Match block-level elements: headings, images, pre/code, blockquotes, lists, hr, paragraphs
-  const blockRegex = /(<h([1-6])[^>]*>([\s\S]*?)<\/h\2>)|(<img\s+[^>]*src=["']([^"']+)["'][^>]*>)|(<pre[^>]*><code[^>]*>([\s\S]*?)<\/code><\/pre>)|(<pre[^>]*>([\s\S]*?)<\/pre>)|(<blockquote[^>]*>([\s\S]*?)<\/blockquote>)|(<(ul|ol)[^>]*>([\s\S]*?)<\/\12>)|(<hr\s*\/?>)|(<p[^>]*>([\s\S]*?)<\/p>)/gi;
+  const blockRegex = /(<h([1-6])[^>]*>([\s\S]*?)<\/h\2>)|(<img\s+[^>]*src=["']([^"']+)["'][^>]*>)|(<pre[^>]*><code[^>]*>([\s\S]*?)<\/code><\/pre>)|(<pre[^>]*>([\s\S]*?)<\/pre>)|(<blockquote[^>]*>([\s\S]*?)<\/blockquote>)|(<(ul|ol)[^>]*>([\s\S]*?)<\/(?:ul|ol)>)|(<hr\s*\/?>)|(<p[^>]*>([\s\S]*?)<\/p>)/gi;
 
   let lastIndex = 0;
   let match: RegExpExecArray | null;
@@ -302,19 +302,22 @@ const ArticleImage: React.FC<{ src: string; alt?: string; tokens: ThemeTokens }>
 
   useEffect(() => {
     if (!src || src.startsWith('data:')) return;
-    Image.getSize(
-      src,
-      (w, h) => {
-        if (w > 0 && h > 0) {
-          const ratio = w / h;
-          // Clamp to sensible range
-          setAspectRatio(Math.min(2.5, Math.max(0.6, ratio)));
+    try {
+      Image.getSize(
+        encodeURI(src),
+        (w, h) => {
+          if (w > 0 && h > 0) {
+            const ratio = w / h;
+            setAspectRatio(Math.min(2.5, Math.max(0.6, ratio)));
+          }
+        },
+        () => {
+          setError(true);
         }
-      },
-      () => {
-        setError(true);
-      }
-    );
+      );
+    } catch {
+      setError(true);
+    }
   }, [src]);
 
   if (error || !src) return null;
@@ -329,6 +332,8 @@ const ArticleImage: React.FC<{ src: string; alt?: string; tokens: ThemeTokens }>
       </View>
     );
   }
+
+  const hasCaption = Boolean(alt && alt.trim().length > 0 && !alt.startsWith('http'));
 
   return (
     <TouchableOpacity
@@ -351,11 +356,11 @@ const ArticleImage: React.FC<{ src: string; alt?: string; tokens: ThemeTokens }>
         style={[styles.articleImage, { aspectRatio }]}
         resizeMode="contain"
       />
-      {alt && alt.trim().length > 0 && !alt.startsWith('http') && (
+      {hasCaption ? (
         <View style={[styles.captionBox, { borderTopColor: tokens.borderSubtle }]}>
           <Text style={[styles.captionText, { color: tokens.textMuted }]}>{alt}</Text>
         </View>
-      )}
+      ) : null}
     </TouchableOpacity>
   );
 };
@@ -368,7 +373,14 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
   fontSize = 16,
   tokens,
 }) => {
-  const blocks = useMemo(() => parseContentToBlocks(content), [content]);
+  const blocks = useMemo(() => {
+    try {
+      return parseContentToBlocks(content);
+    } catch (e) {
+      console.warn('Failed to parse rich content:', e);
+      return [{ type: 'paragraph', text: content ? content.replace(/<[^>]+>/g, '') : '' }];
+    }
+  }, [content]);
 
   const renderInline = (text: string, baseStyle: any) => {
     const tokensList = parseInlineTokens(text);

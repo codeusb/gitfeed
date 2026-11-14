@@ -92,12 +92,15 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
     }
   };
 
-  const hasValidHeroImage =
+  const hasValidHeroImage = Boolean(
     articleSummary.coverImage &&
     !heroError &&
-    !articleSummary.coverImage.endsWith('.svg') &&
+    typeof articleSummary.coverImage === 'string' &&
+    articleSummary.coverImage.startsWith('http') &&
+    !articleSummary.coverImage.toLowerCase().endsWith('.svg') &&
     !articleSummary.coverImage.includes('shields.io') &&
-    !articleSummary.coverImage.includes('/assets/icons/');
+    !articleSummary.coverImage.includes('/assets/icons/')
+  );
 
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
@@ -221,7 +224,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
             </View>
 
             {/* Hero Cover Image if present */}
-            {hasValidHeroImage && (
+            {hasValidHeroImage ? (
               <View
                 style={[
                   styles.heroImageWrapper,
@@ -232,13 +235,13 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
                 ]}
               >
                 <Image
-                  source={{ uri: articleSummary.coverImage }}
+                  source={{ uri: articleSummary.coverImage! }}
                   style={styles.heroImage}
                   resizeMode="cover"
                   onError={() => setHeroError(true)}
                 />
               </View>
-            )}
+            ) : null}
           </View>
 
           {/* Article Content Container */}

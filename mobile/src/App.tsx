@@ -19,6 +19,7 @@ import { ArticleCard } from './components/ArticleCard';
 import { ReaderModal } from './components/ReaderModal';
 import { SettingsModal } from './components/SettingsModal';
 import { FeedsDrawerModal } from './components/FeedsDrawerModal';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { ThemeProvider, useTheme } from './theme/ThemeContext';
 
 function MainAppContent({
@@ -320,11 +321,13 @@ export default function App() {
   };
 
   return (
-    <SafeAreaProvider>
-      <ThemeProvider mode={settings.theme} palette={settings.palette || 'orange'}>
-        <MainAppContent settings={settings} onUpdateSettings={handleUpdateSettings} />
-      </ThemeProvider>
-    </SafeAreaProvider>
+    <ErrorBoundary>
+      <SafeAreaProvider>
+        <ThemeProvider mode={settings.theme} palette={settings.palette || 'orange'}>
+          <MainAppContent settings={settings} onUpdateSettings={handleUpdateSettings} />
+        </ThemeProvider>
+      </SafeAreaProvider>
+    </ErrorBoundary>
   );
 }
 
