@@ -9,6 +9,11 @@ __pycache__/
 # Builds
 web/dist/
 dist/
+mobile/android/.gradle/
+mobile/android/build/
+mobile/android/app/build/
+*.keystore
+!mobile/android/app/debug.keystore
 
 # OS & Environment
 .DS_Store

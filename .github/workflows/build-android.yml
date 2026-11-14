@@ -74,7 +74,7 @@ jobs:
         run: |
           VERSION="${{ github.ref_name }}"
           if [[ "$VERSION" != v* ]]; then
-            VERSION="${{ github.event.inputs.version_name || 'v1.0.0' }}"
+            VERSION="${{ github.event.inputs.version_name || 'v1.0.2' }}"
           fi
           
           SOURCE_APK="mobile/android/app/build/outputs/apk/release/app-release.apk"
@@ -97,11 +97,12 @@ jobs:
           path: ${{ steps.prepare_apk.outputs.apk_path }}
 
       - name: Publish to GitHub Releases
-        if: startsWith(github.ref, 'refs/tags/v') || github.event.inputs.create_release == true
+        if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/main' || github.event.inputs.create_release == true
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.prepare_apk.outputs.version }}
           name: GitFeed ${{ steps.prepare_apk.outputs.version }}
+          make_latest: true
           body: |
             ### ⚡ GitFeed Android Client (${{ steps.prepare_apk.outputs.version }})
             
