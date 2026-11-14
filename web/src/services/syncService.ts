@@ -94,34 +94,54 @@ export class SyncService {
         fileSha === null;
 
       if (hasNewLocalData) {
-        const updatedPayload: RemoteState = {
-          version: 1,
-          lastUpdated: new Date().toISOString(),
-          readIds: Array.from(mergedReadSet),
-          starredIds: Array.from(mergedStarredSet),
-        };
+        let retries = 3;
+        while (retries > 0) {
+          const updatedPayload: RemoteState = {
+            version: 1,
+            lastUpdated: new Date().toISOString(),
+            readIds: Array.from(mergedReadSet),
+            starredIds: Array.from(mergedStarredSet),
+          };
 
-        const jsonString = JSON.stringify(updatedPayload, null, 2);
-        const encodedContent = btoa(unescape(encodeURIComponent(jsonString)));
+          const jsonString = JSON.stringify(updatedPayload, null, 2);
+          const encodedContent = btoa(unescape(encodeURIComponent(jsonString)));
 
-        const putBody: any = {
-          message: `chore: sync reading state [skip ci] (${mergedReadSet.size} read)`,
-          content: encodedContent,
-        };
-        if (fileSha) {
-          putBody.sha = fileSha;
-        }
+          const putBody: any = {
+            message: `chore: sync reading state [skip ci] (${mergedReadSet.size} read)`,
+            content: encodedContent,
+          };
+          if (fileSha) {
+            putBody.sha = fileSha;
+          }
 
-        const putResp = await fetch(apiUrl, {
-          method: 'PUT',
-          headers: {
-            ...headers,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(putBody),
-        });
+          const putResp = await fetch(apiUrl, {
+            method: 'PUT',
+            headers: {
+              ...headers,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(putBody),
+          });
 
-        if (!putResp.ok) {
+          if (putResp.ok) {
+            break;
+          }
+
+          // Handle 409 Conflict: another device pushed in the meantime
+          if (putResp.status === 409 && retries > 1) {
+            retries--;
+            const reGet = await fetch(apiUrl, { headers });
+            if (reGet.status === 200) {
+              const fileData = await reGet.json();
+              fileSha = fileData.sha;
+              const decodedContent = decodeURIComponent(escape(atob(fileData.content.replace(/\s/g, ''))));
+              const latestRemote = JSON.parse(decodedContent);
+              (latestRemote.readIds || []).forEach((id: string) => mergedReadSet.add(id));
+              (latestRemote.starredIds || []).forEach((id: string) => mergedStarredSet.add(id));
+              continue;
+            }
+          }
+
           const putErr = await putResp.json().catch(() => ({}));
           throw new Error(putErr.message || `Failed to update remote state: ${putResp.status}`);
         }

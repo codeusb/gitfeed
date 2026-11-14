@@ -67,27 +67,47 @@ export class MobileSyncService {
         !fileSha;
 
       if (hasLocalNew) {
-        const payload = {
-          version: 1,
-          lastUpdated: new Date().toISOString(),
-          readIds: Array.from(mergedRead),
-          starredIds: Array.from(mergedStarred),
-        };
+        let retries = 3;
+        while (retries > 0) {
+          const payload = {
+            version: 1,
+            lastUpdated: new Date().toISOString(),
+            readIds: Array.from(mergedRead),
+            starredIds: Array.from(mergedStarred),
+          };
 
-        const jsonString = JSON.stringify(payload, null, 2);
-        const encoded = btoa(unescape(encodeURIComponent(jsonString)));
+          const jsonString = JSON.stringify(payload, null, 2);
+          const encoded = btoa(unescape(encodeURIComponent(jsonString)));
 
-        const putResp = await fetch(apiUrl, {
-          method: 'PUT',
-          headers: { ...headers, 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            message: `chore: mobile sync reading state [skip ci] (${mergedRead.size} read)`,
-            content: encoded,
-            sha: fileSha || undefined,
-          }),
-        });
+          const putResp = await fetch(apiUrl, {
+            method: 'PUT',
+            headers: { ...headers, 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              message: `chore: mobile sync reading state [skip ci] (${mergedRead.size} read)`,
+              content: encoded,
+              sha: fileSha || undefined,
+            }),
+          });
 
-        if (!putResp.ok) {
+          if (putResp.ok) {
+            break;
+          }
+
+          // Handle 409 Conflict: concurrent write on Web or another client
+          if (putResp.status === 409 && retries > 1) {
+            retries--;
+            const reGet = await fetch(apiUrl, { headers });
+            if (reGet.status === 200) {
+              const fileData = await reGet.json();
+              fileSha = fileData.sha;
+              const decoded = decodeURIComponent(escape(atob(fileData.content.replace(/\s/g, ''))));
+              const latestRemote = JSON.parse(decoded);
+              (latestRemote.readIds || []).forEach((id: string) => mergedRead.add(id));
+              (latestRemote.starredIds || []).forEach((id: string) => mergedStarred.add(id));
+              continue;
+            }
+          }
+
           throw new Error(`Sync put failed: ${putResp.status}`);
         }
       }

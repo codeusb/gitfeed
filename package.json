@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "npm --prefix web run dev",
     "build": "npm --prefix web run build",
+    "tokens:gen": "node scripts/generate-tokens.js",
     "fetch": "[ -f .venv/bin/python3 ] && .venv/bin/python3 scripts/fetch.py || python3 scripts/fetch.py",
     "opml:export": "[ -f .venv/bin/python3 ] && .venv/bin/python3 scripts/opml_tool.py export feeds.opml || python3 scripts/opml_tool.py export feeds.opml",
     "opml:import": "[ -f .venv/bin/python3 ] && .venv/bin/python3 scripts/opml_tool.py import || python3 scripts/opml_tool.py import",

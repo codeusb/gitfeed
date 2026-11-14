@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "tokens:gen": "node ../scripts/generate-tokens.js",
+    "prebuild": "node ../scripts/generate-tokens.js",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"

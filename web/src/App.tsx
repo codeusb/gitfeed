@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { ArticleSummary, Category, Feed, FeedStats, UserSettings, ViewSelection } from './types';
 import { DataService } from './services/dataService';
 import { SyncService } from './services/syncService';
@@ -50,6 +50,18 @@ export const App: React.FC = () => {
   const [settingsModalOpen, setSettingsModalOpen] = useState(false);
   const [feedManagerModalOpen, setFeedManagerModalOpen] = useState(false);
   const [helpModalOpen, setHelpModalOpen] = useState(false);
+
+  // Debounced auto-sync when read/starred state changes
+  const syncTimeoutRef = useRef<any>(null);
+  const triggerDebouncedSync = useCallback((currentSettings: UserSettings) => {
+    if (!currentSettings.githubToken || !currentSettings.githubRepo) return;
+    if (syncTimeoutRef.current) {
+      clearTimeout(syncTimeoutRef.current);
+    }
+    syncTimeoutRef.current = setTimeout(() => {
+      SyncService.syncWithGitHub(currentSettings).catch(() => {});
+    }, 4000);
+  }, []);
 
   // Mobile view navigation: 'list' or 'reader'
   const [mobileView, setMobileView] = useState<'list' | 'reader'>('list');
@@ -134,9 +146,10 @@ export const App: React.FC = () => {
     if (settings.autoMarkReadOnOpen && !readIds.has(art.id)) {
       markArticleRead(art.id).then(() => {
         setReadIds((prev) => new Set([...prev, art.id]));
+        triggerDebouncedSync(settings);
       });
     }
-  }, [settings.autoMarkReadOnOpen, readIds]);
+  }, [settings, readIds, triggerDebouncedSync]);
 
   // Read toggle
   const handleToggleRead = useCallback(async (articleId: string) => {
@@ -152,7 +165,8 @@ export const App: React.FC = () => {
       await markArticleRead(articleId);
       setReadIds((prev) => new Set([...prev, articleId]));
     }
-  }, [readIds]);
+    triggerDebouncedSync(settings);
+  }, [settings, readIds, triggerDebouncedSync]);
 
   // Star toggle
   const handleToggleStar = useCallback(async (articleId: string) => {
@@ -167,7 +181,8 @@ export const App: React.FC = () => {
       }
       return next;
     });
-  }, [starredIds]);
+    triggerDebouncedSync(settings);
+  }, [settings, starredIds, triggerDebouncedSync]);
 
   // Mark all read in current view
   const handleMarkCurrentViewRead = useCallback(async () => {
@@ -184,7 +199,8 @@ export const App: React.FC = () => {
 
     await markMultipleArticlesRead(unreadTargetIds);
     setReadIds((prev) => new Set([...prev, ...unreadTargetIds]));
-  }, [articles, currentSelection, readIds, starredIds]);
+    triggerDebouncedSync(settings);
+  }, [settings, articles, currentSelection, readIds, starredIds, triggerDebouncedSync]);
 
   // Filtered articles list for keyboard navigation
   const visibleArticles = useMemo(() => {

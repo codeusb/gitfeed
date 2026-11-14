@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
   View,
   Text,
@@ -14,6 +14,7 @@ import { ArticleSummary, Category, Feed, MobileSettings } from './types';
 import { Storage, DEFAULT_SETTINGS } from './storage';
 import { MobileDataService } from './services/dataService';
 import { UpdateService } from './services/updateService';
+import { MobileSyncService } from './services/syncService';
 import { ArticleCard } from './components/ArticleCard';
 import { ReaderModal } from './components/ReaderModal';
 import { SettingsModal } from './components/SettingsModal';
@@ -60,6 +61,20 @@ function MainAppContent({
       setCategories(feedsData.categories || []);
       setFeeds(feedsData.feeds || []);
       setArticles(indexData || []);
+
+      // Trigger background silent sync if GitHub token and repo are configured
+      if (currentSettings.githubToken && currentSettings.githubRepo) {
+        MobileSyncService.syncWithGitHub(currentSettings).then(async (res) => {
+          if (res.success && res.newReadCount > 0) {
+            const [latestReads, latestStars] = await Promise.all([
+              Storage.getReadIds(),
+              Storage.getStarredIds(),
+            ]);
+            setReadIds(latestReads);
+            setStarredIds(latestStars);
+          }
+        }).catch(() => {});
+      }
     } catch (e) {
       console.warn('Error loading mobile feeds:', e);
     } finally {
@@ -72,11 +87,24 @@ function MainAppContent({
     UpdateService.checkForUpdates(settings.githubRepo, true);
   }, [loadAllData, settings]);
 
+  // Debounced auto-sync when read/starred state changes
+  const syncTimeoutRef = useRef<any>(null);
+  const triggerDebouncedSync = useCallback((currentSettings: MobileSettings) => {
+    if (!currentSettings.githubToken || !currentSettings.githubRepo) return;
+    if (syncTimeoutRef.current) {
+      clearTimeout(syncTimeoutRef.current);
+    }
+    syncTimeoutRef.current = setTimeout(() => {
+      MobileSyncService.syncWithGitHub(currentSettings).catch(() => {});
+    }, 4000);
+  }, []);
+
   const handleSelectArticle = (art: ArticleSummary) => {
     setReadingArticle(art);
     if (settings.autoMarkReadOnOpen && !readIds.has(art.id)) {
       Storage.markRead(art.id).then(() => {
         setReadIds((prev) => new Set([...prev, art.id]));
+        triggerDebouncedSync(settings);
       });
     }
   };
@@ -93,6 +121,7 @@ function MainAppContent({
       await Storage.markRead(id);
       setReadIds((prev) => new Set([...prev, id]));
     }
+    triggerDebouncedSync(settings);
   };
 
   const handleToggleStar = async (id: string) => {
@@ -107,6 +136,7 @@ function MainAppContent({
       }
       return next;
     });
+    triggerDebouncedSync(settings);
   };
 
   // Filtered articles
