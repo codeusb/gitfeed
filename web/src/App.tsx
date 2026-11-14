@@ -58,25 +58,29 @@ export const App: React.FC = () => {
   useEffect(() => {
     loadSettings().then((s) => {
       setSettings(s);
-      applyTheme(s.theme);
+      applyTheme(s.theme, s.palette);
     });
   }, []);
 
-  const applyTheme = (theme: 'dark' | 'light' | 'system') => {
+  const applyTheme = (theme: 'dark' | 'light' | 'system', palette?: import('./types').ColorPalette) => {
     const root = document.documentElement;
-    if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (isDark) {
       root.classList.add('dark');
+      root.setAttribute('data-theme', 'dark');
     } else {
       root.classList.remove('dark');
+      root.setAttribute('data-theme', 'light');
     }
+    root.setAttribute('data-palette', palette || settings.palette || 'orange');
   };
 
   const toggleTheme = () => {
-    const nextTheme: 'dark' | 'light' = settings.theme === 'dark' ? 'light' : 'dark';
+    const nextTheme: 'dark' | 'light' = (settings.theme === 'dark' || (!document.documentElement.classList.contains('dark') ? false : true)) ? 'light' : 'dark';
     const updated: UserSettings = { ...settings, theme: nextTheme };
     setSettings(updated);
     saveSettings(updated);
-    applyTheme(nextTheme);
+    applyTheme(nextTheme, updated.palette);
   };
 
   // Load data & local states
@@ -441,7 +445,7 @@ export const App: React.FC = () => {
         onSaveSettings={(newSettings) => {
           setSettings(newSettings);
           saveSettings(newSettings);
-          applyTheme(newSettings.theme);
+          applyTheme(newSettings.theme, newSettings.palette);
         }}
         onSyncComplete={async () => {
           const updatedR = await getLocalReadIds();

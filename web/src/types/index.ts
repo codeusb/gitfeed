@@ -59,11 +59,14 @@ export interface FeedStats {
   feedStatuses: Record<string, FeedStatusRecord>;
 }
 
+export type ColorPalette = 'orange' | 'blue' | 'purple' | 'green' | 'monochrome';
+
 export interface UserSettings {
   dataSourceUrl: string; // Empty means relative path './data/'
   githubToken: string;   // Optional Fine-grained PAT
   githubRepo: string;    // e.g. "username/gitfeed"
   theme: 'dark' | 'light' | 'system';
+  palette?: ColorPalette;
   fontFamily: 'sans' | 'serif';
   fontSize: 'sm' | 'md' | 'lg' | 'xl';
   autoMarkReadOnOpen: boolean;

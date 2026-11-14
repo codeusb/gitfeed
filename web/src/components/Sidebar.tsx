@@ -8,7 +8,6 @@ import {
   Settings,
   RefreshCw,
   Folder,
-  Sliders,
   HelpCircle,
   Sun,
   Moon,
@@ -69,23 +68,23 @@ export const Sidebar: React.FC<SidebarProps> = ({
   };
 
   return (
-    <aside className="w-full md:w-64 lg:w-72 h-full flex flex-col bg-white dark:bg-[#1b1b1b] border-r border-black/[0.08] dark:border-white/[0.1] text-black dark:text-[#f1f1f1] select-none transition-colors duration-175 ease-astryx">
+    <aside className="w-full md:w-64 lg:w-72 h-full flex flex-col bg-theme-surface border-r border-theme-subtle text-theme-primary select-none transition-colors duration-175 ease-astryx">
       {/* Brand Header */}
-      <div className="p-4 border-b border-black/[0.08] dark:border-white/[0.1] flex items-center justify-between">
+      <div className="p-4 border-b border-theme-subtle flex items-center justify-between">
         <div className="flex items-center space-x-2.5">
           <img
             src="./favicon.png"
             alt="GitFeed"
-            className="w-8 h-8 rounded-xl object-cover border border-black/10 dark:border-white/15 shadow-sm"
+            className="w-8 h-8 rounded-xl object-cover border border-theme-subtle shadow-sm"
           />
           <div>
-            <h1 className="font-bold text-base leading-tight tracking-tight text-black dark:text-white flex items-center gap-1.5 font-sans">
+            <h1 className="font-bold text-base leading-tight tracking-tight text-theme-primary flex items-center gap-1.5 font-sans">
               GitFeed
-              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-[#EB6E00]/10 text-[#EB6E00] dark:bg-[#EB6E00]/20 dark:text-[#FF7A1A]">
-                Astryx
+              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-theme-accent-subtle text-theme-accent">
+                Tokens
               </span>
             </h1>
-            <p className="text-[11px] text-[#474747] dark:text-[#9e9e9e]">Git-as-Backend RSS</p>
+            <p className="text-[11px] text-theme-muted">Git-as-Backend RSS</p>
           </div>
         </div>
 
@@ -93,9 +92,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
           onClick={onRefresh}
           disabled={isRefreshing}
           title="Refresh feeds"
-          className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] hover:text-black dark:text-[#9e9e9e] dark:hover:text-white transition-all duration-175 ease-astryx"
+          className="p-2 rounded-xl hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary transition-all duration-175 ease-astryx"
         >
-          <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin text-[#EB6E00]' : ''}`} />
+          <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin text-theme-accent' : ''}`} />
         </button>
       </div>
 
@@ -105,8 +104,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           onClick={() => handleSelect({ type: 'unread', title: '未读文章' })}
           className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition-all duration-175 ease-astryx ${
             currentSelection.type === 'unread'
-              ? 'bg-[#EB6E00] text-white shadow-sm shadow-[#EB6E00]/25'
-              : 'hover:bg-black/5 dark:hover:bg-white/[0.08] text-[#474747] dark:text-[#d4d4d4] hover:text-black dark:hover:text-white'
+              ? 'bg-theme-accent text-theme-accent-contrast shadow-sm'
+              : 'hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary'
           }`}
         >
           <div className="flex items-center space-x-2.5">
@@ -117,8 +116,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span
               className={`text-xs px-2 py-0.5 rounded-full font-mono font-semibold ${
                 currentSelection.type === 'unread'
-                  ? 'bg-white/20 text-white'
-                  : 'bg-black/5 dark:bg-white/10 text-black dark:text-white'
+                  ? 'bg-black/20 dark:bg-white/20 text-inherit'
+                  : 'bg-theme-subtle text-theme-primary'
               }`}
             >
               {unreadCount}
@@ -130,8 +129,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           onClick={() => handleSelect({ type: 'all', title: '全部文章' })}
           className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition-all duration-175 ease-astryx ${
             currentSelection.type === 'all'
-              ? 'bg-[#EB6E00] text-white shadow-sm shadow-[#EB6E00]/25'
-              : 'hover:bg-black/5 dark:hover:bg-white/[0.08] text-[#474747] dark:text-[#d4d4d4] hover:text-black dark:hover:text-white'
+              ? 'bg-theme-accent text-theme-accent-contrast shadow-sm'
+              : 'hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary'
           }`}
         >
           <div className="flex items-center space-x-2.5">
@@ -144,8 +143,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           onClick={() => handleSelect({ type: 'starred', title: '星标收藏' })}
           className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition-all duration-175 ease-astryx ${
             currentSelection.type === 'starred'
-              ? 'bg-[#EB6E00] text-white shadow-sm shadow-[#EB6E00]/25'
-              : 'hover:bg-black/5 dark:hover:bg-white/[0.08] text-[#474747] dark:text-[#d4d4d4] hover:text-black dark:hover:text-white'
+              ? 'bg-theme-accent text-theme-accent-contrast shadow-sm'
+              : 'hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary'
           }`}
         >
           <div className="flex items-center space-x-2.5">
@@ -156,7 +155,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span
               className={`text-xs px-2 py-0.5 rounded-full font-mono font-semibold ${
                 currentSelection.type === 'starred'
-                  ? 'bg-white/20 text-white'
+                  ? 'bg-black/20 dark:bg-white/20 text-inherit'
                   : 'bg-amber-500/15 text-amber-600 dark:text-amber-400'
               }`}
             >
@@ -169,12 +168,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Categories & Feeds Section */}
       <div className="flex-1 overflow-y-auto px-3 py-2 space-y-4">
         <div className="flex items-center justify-between px-1">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-[#919191] dark:text-[#6a6a6a]">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-theme-muted">
             订阅源列表
           </span>
           <button
             onClick={onOpenFeedManager}
-            className="text-[11px] text-[#EB6E00] hover:text-[#d66100] dark:text-[#FF7A1A] hover:underline font-medium transition-colors"
+            className="text-[11px] text-theme-accent hover:underline font-medium transition-colors"
           >
             管理源
           </button>
@@ -196,8 +195,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <div
                 className={`group flex items-center justify-between px-2.5 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-all duration-175 ease-astryx ${
                   isCategorySelected
-                    ? 'bg-black/5 dark:bg-white/10 text-[#EB6E00] dark:text-[#FF7A1A]'
-                    : 'text-[#474747] dark:text-[#9e9e9e] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] hover:text-black dark:hover:text-white'
+                    ? 'bg-theme-accent-subtle text-theme-accent'
+                    : 'text-theme-secondary hover:bg-theme-subtle hover:text-theme-primary'
                 }`}
               >
                 <div
@@ -210,7 +209,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
                 <div className="flex items-center space-x-1 shrink-0">
                   {catUnread > 0 && (
-                    <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/5 dark:bg-white/10 font-mono font-bold text-[#474747] dark:text-[#d4d4d4]">
+                    <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-theme-subtle font-mono font-bold text-theme-primary">
                       {catUnread}
                     </span>
                   )}
@@ -219,7 +218,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       e.stopPropagation();
                       toggleCategory(category.id);
                     }}
-                    className="p-1 hover:text-black dark:hover:text-white rounded-md"
+                    className="p-1 hover:text-theme-primary rounded-md"
                   >
                     {isCollapsed ? (
                       <ChevronRight className="w-3.5 h-3.5" />
@@ -232,7 +231,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
               {/* Sub Feeds */}
               {!isCollapsed && (
-                <div className="pl-3.5 space-y-0.5 border-l border-black/[0.08] dark:border-white/[0.1] ml-2.5 mt-1">
+                <div className="pl-3.5 space-y-0.5 border-l border-theme-subtle ml-2.5 mt-1">
                   {catFeeds.map((feed) => {
                     const isFeedSelected =
                       currentSelection.type === 'feed' && currentSelection.id === feed.id;
@@ -244,13 +243,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         onClick={() => handleSelect({ type: 'feed', id: feed.id, title: feed.title })}
                         className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-xs transition-all duration-175 ease-astryx ${
                           isFeedSelected
-                            ? 'bg-[#EB6E00]/10 text-[#EB6E00] dark:bg-[#EB6E00]/20 dark:text-[#FF7A1A] font-semibold'
-                            : 'text-[#474747] dark:text-[#9e9e9e] hover:bg-black/[0.03] dark:hover:bg-white/[0.04] hover:text-black dark:hover:text-white'
+                            ? 'bg-theme-accent-subtle text-theme-accent font-semibold'
+                            : 'text-theme-secondary hover:bg-theme-subtle hover:text-theme-primary'
                         }`}
                       >
                         <span className="truncate pr-1 text-left">{feed.title}</span>
                         {unread > 0 && (
-                          <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-[#EB6E00]/10 text-[#EB6E00] dark:text-[#FF7A1A] font-mono font-semibold shrink-0">
+                          <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-theme-accent-subtle text-theme-accent font-mono font-semibold shrink-0">
                             {unread}
                           </span>
                         )}
@@ -265,39 +264,39 @@ export const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* Bottom Controls */}
-      <div className="p-3 border-t border-black/[0.08] dark:border-white/[0.1] space-y-2.5">
+      <div className="p-3 border-t border-theme-subtle space-y-2.5">
         <a
           href="https://github.com/codeusb/gitfeed/releases/latest"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-black/5 hover:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 text-black dark:text-white text-xs font-semibold border border-black/[0.08] dark:border-white/[0.1] transition-all duration-175 ease-astryx shadow-xs"
+          className="flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-theme-subtle hover:bg-theme-subtle-hover text-theme-primary text-xs font-semibold border border-theme-subtle transition-all duration-175 ease-astryx shadow-xs"
           title="在 GitHub Releases 下载安卓客户端安装包"
         >
           <span>📲 下载 Android APK</span>
         </a>
 
-        <div className="flex items-center justify-between text-xs text-[#474747] dark:text-[#9e9e9e]">
+        <div className="flex items-center justify-between text-xs text-theme-secondary">
           <button
             onClick={onMarkAllRead}
-            className="flex items-center space-x-1.5 px-2 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] hover:text-black dark:text-[#9e9e9e] dark:hover:text-white transition-all duration-175 ease-astryx"
+            className="flex items-center space-x-1.5 px-2 py-1.5 rounded-xl hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary transition-all duration-175 ease-astryx"
             title="全部标为已读"
           >
-            <CheckCheck className="w-3.5 h-3.5 text-[#0B991F]" />
+            <CheckCheck className="w-3.5 h-3.5 text-theme-success" />
             <span>全部已读</span>
           </button>
 
           <div className="flex items-center space-x-1">
             <button
               onClick={onToggleTheme}
-              className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 hover:text-black dark:hover:text-white transition-all duration-175 ease-astryx"
-              title="切换主题"
+              className="p-1.5 rounded-xl hover:bg-theme-subtle hover:text-theme-primary transition-all duration-175 ease-astryx"
+              title="切换主题 (日间 / 夜间)"
             >
               {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
             </button>
 
             <button
               onClick={onOpenHelp}
-              className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 hover:text-black dark:hover:text-white transition-all duration-175 ease-astryx"
+              className="p-1.5 rounded-xl hover:bg-theme-subtle hover:text-theme-primary transition-all duration-175 ease-astryx"
               title="快捷键说明"
             >
               <HelpCircle className="w-4 h-4" />
@@ -305,7 +304,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
             <button
               onClick={onOpenSettings}
-              className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 hover:text-black dark:hover:text-white transition-all duration-175 ease-astryx"
+              className="p-1.5 rounded-xl hover:bg-theme-subtle hover:text-theme-primary transition-all duration-175 ease-astryx"
               title="设置"
             >
               <Settings className="w-4 h-4" />
@@ -314,7 +313,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
 
         {stats?.lastUpdated && (
-          <div className="text-[10px] text-center text-[#919191] dark:text-[#6a6a6a] font-mono truncate">
+          <div className="text-[10px] text-center text-theme-muted font-mono truncate">
             更新于: {new Date(stats.lastUpdated).toLocaleDateString()} {new Date(stats.lastUpdated).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
           </div>
         )}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { ArticleSummary } from '../types';
+import { useTheme } from '../theme/ThemeContext';
 
 interface ArticleCardProps {
   article: ArticleSummary;
@@ -19,6 +20,8 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   onToggleRead,
   onToggleStar,
 }) => {
+  const { tokens } = useTheme();
+
   const formatTime = (dateStr: string) => {
     try {
       const pub = new Date(dateStr).getTime();
@@ -40,22 +43,29 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
     <TouchableOpacity
       activeOpacity={0.7}
       onPress={onPress}
-      style={[styles.container, isRead && styles.containerRead]}
+      style={[
+        styles.container,
+        {
+          backgroundColor: isRead ? tokens.bgCardRead : tokens.bgCard,
+          borderColor: tokens.borderSubtle,
+          opacity: isRead ? 0.72 : 1,
+        },
+      ]}
     >
       {/* Top Meta */}
       <View style={styles.topMeta}>
         <View style={styles.leftMeta}>
-          {!isRead && <View style={styles.unreadDot} />}
-          <Text style={styles.feedTitle} numberOfLines={1}>
+          {!isRead && <View style={[styles.unreadDot, { backgroundColor: tokens.accent }]} />}
+          <Text style={[styles.feedTitle, { color: tokens.textPrimary }]} numberOfLines={1}>
             {article.feedTitle}
           </Text>
-          <Text style={styles.dotSeparator}>•</Text>
-          <Text style={styles.timeText}>{formatTime(article.publishedAt)}</Text>
+          <Text style={[styles.dotSeparator, { color: tokens.textMuted }]}>•</Text>
+          <Text style={[styles.timeText, { color: tokens.textSecondary }]}>{formatTime(article.publishedAt)}</Text>
         </View>
 
         <View style={styles.rightActions}>
           <TouchableOpacity onPress={onToggleStar} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
-            <Text style={[styles.actionIcon, isStarred && styles.starActive]}>
+            <Text style={[styles.actionIcon, { color: isStarred ? '#f59e0b' : tokens.textMuted }]}>
               {isStarred ? '★' : '☆'}
             </Text>
           </TouchableOpacity>
@@ -64,7 +74,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             style={{ marginLeft: 12 }}
             hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
           >
-            <Text style={[styles.actionIcon, !isRead && styles.unreadAction]}>
+            <Text style={[styles.actionIcon, { color: isRead ? tokens.textMuted : tokens.accent }]}>
               {isRead ? '✓' : '○'}
             </Text>
           </TouchableOpacity>
@@ -74,10 +84,17 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
       {/* Title & Body */}
       <View style={styles.contentRow}>
         <View style={styles.textColumn}>
-          <Text style={[styles.title, isRead && styles.titleRead]} numberOfLines={2}>
+          <Text
+            style={[
+              styles.title,
+              { color: isRead ? tokens.textSecondary : tokens.textPrimary },
+              isRead && styles.titleRead,
+            ]}
+            numberOfLines={2}
+          >
             {article.title}
           </Text>
-          <Text style={styles.snippet} numberOfLines={2}>
+          <Text style={[styles.snippet, { color: tokens.textMuted }]} numberOfLines={2}>
             {article.snippet}
           </Text>
         </View>
@@ -85,7 +102,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         {article.coverImage && (
           <Image
             source={{ uri: article.coverImage }}
-            style={styles.thumbnail}
+            style={[styles.thumbnail, { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle }]}
             resizeMode="cover"
           />
         )}
@@ -100,14 +117,7 @@ const styles = StyleSheet.create({
     marginVertical: 4,
     padding: 14,
     borderRadius: 16,
-    backgroundColor: '#222222',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.08)',
-  },
-  containerRead: {
-    opacity: 0.72,
-    backgroundColor: '#1c1c1c',
-    borderColor: 'rgba(255, 255, 255, 0.04)',
   },
   topMeta: {
     flexDirection: 'row',
@@ -125,23 +135,19 @@ const styles = StyleSheet.create({
     width: 6,
     height: 6,
     borderRadius: 3,
-    backgroundColor: '#EB6E00',
     marginRight: 6,
   },
   feedTitle: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#ffffff',
     maxWidth: 160,
   },
   dotSeparator: {
-    color: '#666666',
     marginHorizontal: 6,
     fontSize: 10,
   },
   timeText: {
     fontSize: 11,
-    color: '#9e9e9e',
     fontVariant: ['tabular-nums'],
   },
   rightActions: {
@@ -150,13 +156,6 @@ const styles = StyleSheet.create({
   },
   actionIcon: {
     fontSize: 15,
-    color: '#888888',
-  },
-  unreadAction: {
-    color: '#EB6E00',
-  },
-  starActive: {
-    color: '#f59e0b',
   },
   contentRow: {
     flexDirection: 'row',
@@ -169,26 +168,21 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#ffffff',
     lineHeight: 21,
     marginBottom: 4,
     letterSpacing: -0.2,
   },
   titleRead: {
-    color: '#9e9e9e',
     fontWeight: '400',
   },
   snippet: {
     fontSize: 12,
-    color: '#888888',
     lineHeight: 18,
   },
   thumbnail: {
     width: 62,
     height: 62,
     borderRadius: 12,
-    backgroundColor: '#262626',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.08)',
   },
 });

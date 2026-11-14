@@ -114,6 +114,7 @@ const DEFAULT_SETTINGS: UserSettings = {
   githubToken: '',
   githubRepo: '',
   theme: 'dark',
+  palette: 'orange',
   fontFamily: 'sans',
   fontSize: 'md',
   autoMarkReadOnOpen: true,

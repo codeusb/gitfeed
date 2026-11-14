@@ -59,11 +59,15 @@ export interface FeedStats {
   feedStatuses: Record<string, FeedStatusRecord>;
 }
 
+export type ThemeMode = 'dark' | 'light' | 'system';
+export type ColorPalette = 'orange' | 'blue' | 'purple' | 'green' | 'monochrome';
+
 export interface MobileSettings {
   dataSourceUrl: string;
   githubToken: string;
   githubRepo: string;
-  theme: 'dark' | 'light';
+  theme: ThemeMode;
+  palette?: ColorPalette;
   fontSize: 'sm' | 'md' | 'lg';
   autoMarkReadOnOpen: boolean;
 }

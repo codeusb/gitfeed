@@ -18,9 +18,16 @@ import { ArticleCard } from './components/ArticleCard';
 import { ReaderModal } from './components/ReaderModal';
 import { SettingsModal } from './components/SettingsModal';
 import { FeedsDrawerModal } from './components/FeedsDrawerModal';
+import { ThemeProvider, useTheme } from './theme/ThemeContext';
 
-export default function App() {
-  const [settings, setSettings] = useState<MobileSettings>(DEFAULT_SETTINGS);
+function MainAppContent({
+  settings,
+  onUpdateSettings,
+}: {
+  settings: MobileSettings;
+  onUpdateSettings: (s: MobileSettings) => void;
+}) {
+  const { tokens } = useTheme();
   const [categories, setCategories] = useState<Category[]>([]);
   const [feeds, setFeeds] = useState<Feed[]>([]);
   const [articles, setArticles] = useState<ArticleSummary[]>([]);
@@ -37,16 +44,6 @@ export default function App() {
   const [readingArticle, setReadingArticle] = useState<ArticleSummary | null>(null);
   const [settingsVisible, setSettingsVisible] = useState(false);
   const [drawerVisible, setDrawerVisible] = useState(false);
-
-  // Initialize
-  useEffect(() => {
-    Storage.getSettings().then((s) => {
-      setSettings(s);
-      loadAllData(s);
-      // Quietly check for APK update on start
-      UpdateService.checkForUpdates(s.githubRepo, true);
-    });
-  }, []);
 
   const loadAllData = useCallback(async (currentSettings: MobileSettings) => {
     setRefreshing(true);
@@ -69,6 +66,11 @@ export default function App() {
       setRefreshing(false);
     }
   }, []);
+
+  useEffect(() => {
+    loadAllData(settings);
+    UpdateService.checkForUpdates(settings.githubRepo, true);
+  }, [loadAllData, settings]);
 
   const handleSelectArticle = (art: ArticleSummary) => {
     setReadingArticle(art);
@@ -98,8 +100,11 @@ export default function App() {
     await Storage.toggleStar(id, !isStarred);
     setStarredIds((prev) => {
       const next = new Set(prev);
-      if (isStarred) next.delete(id);
-      else next.add(id);
+      if (isStarred) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
       return next;
     });
   };
@@ -107,26 +112,21 @@ export default function App() {
   // Filtered articles
   const filteredArticles = useMemo(() => {
     return articles.filter((art) => {
-      // Category / Feed scope
-      if (selectedFeed && art.feedId !== selectedFeed) return false;
       if (selectedCategory && art.category !== selectedCategory) return false;
+      if (selectedFeed && art.feedId !== selectedFeed) return false;
 
-      // Filter tabs
       if (filterMode === 'unread' && readIds.has(art.id)) return false;
       if (filterMode === 'starred' && !starredIds.has(art.id)) return false;
 
-      // Search
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
-        return (
-          art.title.toLowerCase().includes(q) ||
-          art.snippet.toLowerCase().includes(q) ||
-          art.author?.toLowerCase().includes(q)
-        );
+        const titleMatch = art.title.toLowerCase().includes(q);
+        const snippetMatch = art.snippet.toLowerCase().includes(q);
+        return titleMatch || snippetMatch;
       }
       return true;
     });
-  }, [articles, selectedFeed, selectedCategory, filterMode, readIds, starredIds, searchQuery]);
+  }, [articles, selectedCategory, selectedFeed, filterMode, readIds, starredIds, searchQuery]);
 
   const feedUnreadCounts = useMemo(() => {
     const map: Record<string, number> = {};
@@ -149,119 +149,151 @@ export default function App() {
   }, [selectedFeed, selectedCategory, feeds, categories]);
 
   return (
-    <SafeAreaProvider>
-      <StatusBar barStyle="light-content" backgroundColor="#090d16" />
-      <SafeAreaView style={styles.container}>
-        {/* Header */}
-        <View style={styles.header}>
-          <TouchableOpacity onPress={() => setDrawerVisible(true)} style={styles.scopeButton}>
-            <Text style={styles.scopeTitle} numberOfLines={1}>
-              {currentViewTitle}
-            </Text>
-            <Text style={styles.scopeArrow}>▾</Text>
+    <SafeAreaView style={[styles.container, { backgroundColor: tokens.bgPage }]}>
+      <StatusBar barStyle={tokens.statusBar} backgroundColor={tokens.bgPage} />
+      {/* Header */}
+      <View style={[styles.header, { borderBottomColor: tokens.borderSubtle, backgroundColor: tokens.bgPage }]}>
+        <TouchableOpacity onPress={() => setDrawerVisible(true)} style={styles.scopeButton}>
+          <Text style={[styles.scopeTitle, { color: tokens.textPrimary }]} numberOfLines={1}>
+            {currentViewTitle}
+          </Text>
+          <Text style={[styles.scopeArrow, { color: tokens.accent }]}>▾</Text>
+        </TouchableOpacity>
+
+        <View style={styles.headerActions}>
+          <TouchableOpacity onPress={() => loadAllData(settings)} style={styles.headerIconBtn}>
+            <Text style={[styles.headerIcon, { color: tokens.textSecondary }]}>↻</Text>
           </TouchableOpacity>
-
-          <View style={styles.headerActions}>
-            <TouchableOpacity onPress={() => loadAllData(settings)} style={styles.headerIconBtn}>
-              <Text style={styles.headerIcon}>↻</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => setSettingsVisible(true)} style={styles.headerIconBtn}>
-              <Text style={styles.headerIcon}>⚙</Text>
-            </TouchableOpacity>
-          </View>
+          <TouchableOpacity onPress={() => setSettingsVisible(true)} style={styles.headerIconBtn}>
+            <Text style={[styles.headerIcon, { color: tokens.textSecondary }]}>⚙</Text>
+          </TouchableOpacity>
         </View>
+      </View>
 
-        {/* Search & Tabs Bar */}
-        <View style={styles.filterBar}>
-          <TextInput
-            style={styles.searchInput}
-            placeholder="搜索文章..."
-            placeholderTextColor="#64748b"
-            value={searchQuery}
-            onChangeText={setSearchQuery}
-          />
+      {/* Search & Tabs Bar */}
+      <View style={[styles.filterBar, { borderBottomColor: tokens.borderSubtle, backgroundColor: tokens.bgPage }]}>
+        <TextInput
+          style={[
+            styles.searchInput,
+            { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle, color: tokens.textPrimary },
+          ]}
+          placeholder="搜索文章..."
+          placeholderTextColor={tokens.textMuted}
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+        />
 
-          <View style={styles.tabRow}>
-            {(['all', 'unread', 'starred'] as const).map((mode) => (
-              <TouchableOpacity
-                key={mode}
-                onPress={() => setFilterMode(mode)}
-                style={[styles.tab, filterMode === mode && styles.tabActive]}
+        <View style={[styles.tabRow, { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle }]}>
+          {(['all', 'unread', 'starred'] as const).map((mode) => (
+            <TouchableOpacity
+              key={mode}
+              onPress={() => setFilterMode(mode)}
+              style={[
+                styles.tab,
+                filterMode === mode && { backgroundColor: tokens.accent },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.tabText,
+                  { color: filterMode === mode ? tokens.accentContrast : tokens.textSecondary },
+                  filterMode === mode && styles.tabTextActive,
+                ]}
               >
-                <Text style={[styles.tabText, filterMode === mode && styles.tabTextActive]}>
-                  {mode === 'all' ? '全部' : mode === 'unread' ? '未读' : '星标'}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </View>
+                {mode === 'all' ? '全部' : mode === 'unread' ? '未读' : '星标'}
+              </Text>
+            </TouchableOpacity>
+          ))}
         </View>
+      </View>
 
-        {/* Articles List */}
-        <FlatList
-          data={filteredArticles}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <ArticleCard
-              article={item}
-              isRead={readIds.has(item.id)}
-              isStarred={starredIds.has(item.id)}
-              onPress={() => handleSelectArticle(item)}
-              onToggleRead={() => handleToggleRead(item.id)}
-              onToggleStar={() => handleToggleStar(item.id)}
-            />
-          )}
-          refreshControl={
-            <RefreshControl
-              refreshing={refreshing}
-              onRefresh={() => loadAllData(settings)}
-              tintColor="#EB6E00"
-              colors={['#EB6E00']}
-            />
-          }
-          ListEmptyComponent={
-            <View style={styles.emptyContainer}>
-              <Text style={styles.emptyTitle}>暂无文章</Text>
-              <Text style={styles.emptyDesc}>所有文章都已读完或当前分类下无文章</Text>
-            </View>
-          }
-        />
+      {/* Articles List */}
+      <FlatList
+        data={filteredArticles}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <ArticleCard
+            article={item}
+            isRead={readIds.has(item.id)}
+            isStarred={starredIds.has(item.id)}
+            onPress={() => handleSelectArticle(item)}
+            onToggleRead={() => handleToggleRead(item.id)}
+            onToggleStar={() => handleToggleStar(item.id)}
+          />
+        )}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={() => loadAllData(settings)}
+            tintColor={tokens.accent}
+            colors={[tokens.accent]}
+          />
+        }
+        ListEmptyComponent={
+          <View style={styles.emptyContainer}>
+            <Text style={[styles.emptyTitle, { color: tokens.textPrimary }]}>暂无文章</Text>
+            <Text style={[styles.emptyDesc, { color: tokens.textMuted }]}>
+              所有文章都已读完或当前分类下无文章
+            </Text>
+          </View>
+        }
+      />
 
-        {/* Reader Modal */}
-        <ReaderModal
-          visible={!!readingArticle}
-          articleSummary={readingArticle}
-          settings={settings}
-          isRead={readingArticle ? readIds.has(readingArticle.id) : false}
-          isStarred={readingArticle ? starredIds.has(readingArticle.id) : false}
-          onClose={() => setReadingArticle(null)}
-          onToggleRead={() => readingArticle && handleToggleRead(readingArticle.id)}
-          onToggleStar={() => readingArticle && handleToggleStar(readingArticle.id)}
-        />
+      {/* Reader Modal */}
+      <ReaderModal
+        visible={!!readingArticle}
+        articleSummary={readingArticle}
+        settings={settings}
+        isRead={readingArticle ? readIds.has(readingArticle.id) : false}
+        isStarred={readingArticle ? starredIds.has(readingArticle.id) : false}
+        onClose={() => setReadingArticle(null)}
+        onToggleRead={() => readingArticle && handleToggleRead(readingArticle.id)}
+        onToggleStar={() => readingArticle && handleToggleStar(readingArticle.id)}
+      />
 
-        {/* Settings Modal */}
-        <SettingsModal
-          visible={settingsVisible}
-          onClose={() => setSettingsVisible(false)}
-          settings={settings}
-          onUpdateSettings={(newSettings) => {
-            setSettings(newSettings);
-            loadAllData(newSettings);
-          }}
-        />
+      {/* Settings Modal */}
+      <SettingsModal
+        visible={settingsVisible}
+        onClose={() => setSettingsVisible(false)}
+        settings={settings}
+        onUpdateSettings={onUpdateSettings}
+      />
 
-        {/* Feeds Drawer Modal */}
-        <FeedsDrawerModal
-          visible={drawerVisible}
-          onClose={() => setDrawerVisible(false)}
-          categories={categories}
-          feeds={feeds}
-          selectedCategory={selectedCategory}
-          selectedFeed={selectedFeed}
-          onSelectCategory={setSelectedCategory}
-          onSelectFeed={setSelectedFeed}
-          feedUnreadCounts={feedUnreadCounts}
-        />
-      </SafeAreaView>
+      {/* Feeds Drawer Modal */}
+      <FeedsDrawerModal
+        visible={drawerVisible}
+        onClose={() => setDrawerVisible(false)}
+        categories={categories}
+        feeds={feeds}
+        selectedCategory={selectedCategory}
+        selectedFeed={selectedFeed}
+        onSelectCategory={setSelectedCategory}
+        onSelectFeed={setSelectedFeed}
+        feedUnreadCounts={feedUnreadCounts}
+      />
+    </SafeAreaView>
+  );
+}
+
+export default function App() {
+  const [settings, setSettings] = useState<MobileSettings>(DEFAULT_SETTINGS);
+
+  useEffect(() => {
+    Storage.getSettings().then((s) => {
+      setSettings(s);
+    });
+  }, []);
+
+  const handleUpdateSettings = (newSettings: MobileSettings) => {
+    setSettings(newSettings);
+    Storage.saveSettings(newSettings);
+  };
+
+  return (
+    <SafeAreaProvider>
+      <ThemeProvider mode={settings.theme} palette={settings.palette || 'orange'}>
+        <MainAppContent settings={settings} onUpdateSettings={handleUpdateSettings} />
+      </ThemeProvider>
     </SafeAreaProvider>
   );
 }
@@ -269,7 +301,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1b1b1b',
   },
   header: {
     height: 54,
@@ -278,8 +309,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 16,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
-    backgroundColor: '#1b1b1b',
   },
   scopeButton: {
     flexDirection: 'row',
@@ -289,13 +318,11 @@ const styles = StyleSheet.create({
     paddingRight: 12,
   },
   scopeTitle: {
-    color: '#ffffff',
     fontSize: 18,
     fontWeight: 'bold',
     letterSpacing: -0.3,
   },
   scopeArrow: {
-    color: '#EB6E00',
     fontSize: 14,
     fontWeight: 'bold',
   },
@@ -310,33 +337,25 @@ const styles = StyleSheet.create({
   },
   headerIcon: {
     fontSize: 18,
-    color: '#9e9e9e',
   },
   filterBar: {
     paddingHorizontal: 14,
     paddingVertical: 10,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
-    backgroundColor: '#1b1b1b',
     gap: 8,
   },
   searchInput: {
-    backgroundColor: '#222222',
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.08)',
     paddingHorizontal: 14,
     paddingVertical: 8,
-    color: '#ffffff',
     fontSize: 13,
   },
   tabRow: {
     flexDirection: 'row',
-    backgroundColor: '#222222',
     borderRadius: 12,
     padding: 3,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.06)',
   },
   tab: {
     flex: 1,
@@ -344,16 +363,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 9,
   },
-  tabActive: {
-    backgroundColor: '#EB6E00',
-  },
   tabText: {
-    color: '#9e9e9e',
     fontSize: 12,
     fontWeight: '600',
   },
   tabTextActive: {
-    color: '#ffffff',
     fontWeight: 'bold',
   },
   emptyContainer: {
@@ -362,12 +376,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
   },
   emptyTitle: {
-    color: '#ffffff',
     fontSize: 16,
     fontWeight: 'bold',
   },
   emptyDesc: {
-    color: '#888888',
     fontSize: 12,
     marginTop: 6,
     textAlign: 'center',

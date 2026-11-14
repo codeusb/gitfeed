@@ -8,53 +8,40 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Astryx Design System Color Palette
-        astryx: {
-          // Backgrounds
-          bg: {
-            light: '#f1f1f1',
-            dark: '#1b1b1b',
-          },
-          surface: {
-            light: '#ffffff',
-            dark: '#262626',
-            card: '#222222',
-            muted: '#1f1f1f',
-          },
-          // Text colors
-          text: {
-            primary: {
-              light: '#000000',
-              dark: '#ffffff',
-            },
-            secondary: {
-              light: '#474747',
-              dark: '#9e9e9e',
-            },
-            disabled: {
-              light: '#919191',
-              dark: '#525252',
-            }
-          },
-          // Accent colors
+        // Fully Tokenized Semantic Color Palette
+        theme: {
+          page: 'var(--bg-page)',
+          surface: 'var(--bg-surface)',
+          card: 'var(--bg-card)',
+          'card-hover': 'var(--bg-card-hover)',
+          subtle: 'var(--bg-subtle)',
+          'subtle-hover': 'var(--bg-subtle-hover)',
+          input: 'var(--bg-input)',
+          modal: 'var(--bg-modal)',
+          overlay: 'var(--bg-overlay)',
+
+          'border-subtle': 'var(--border-subtle)',
+          'border-muted': 'var(--border-muted)',
+          'border-emphasized': 'var(--border-emphasized)',
+
+          'text-primary': 'var(--text-primary)',
+          'text-secondary': 'var(--text-secondary)',
+          'text-muted': 'var(--text-muted)',
+          'text-disabled': 'var(--text-disabled)',
+
           accent: {
-            light: '#1b1b1b',
-            dark: '#f1f1f1',
-            orange: '#EB6E00',
-            orangeHover: '#d66100',
-            blue: '#0171E3',
-            green: '#0B991F',
-            purple: '#6B1EFD',
-          }
+            DEFAULT: 'var(--accent-primary)',
+            hover: 'var(--accent-hover)',
+            subtle: 'var(--accent-subtle)',
+            border: 'var(--accent-border)',
+            contrast: 'var(--accent-contrast)',
+          },
+
+          success: 'var(--status-success)',
+          warning: 'var(--status-warning)',
+          error: 'var(--status-error)',
+          info: 'var(--status-info)',
         },
-        brand: {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          400: '#fb923c',
-          500: '#EB6E00',
-          600: '#d66100',
-          700: '#c2410c',
-        }
       },
       fontFamily: {
         sans: ['Figtree', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],

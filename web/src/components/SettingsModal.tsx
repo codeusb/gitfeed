@@ -146,7 +146,79 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
           <div className="h-[1px] bg-black/[0.08] dark:bg-white/[0.1]" />
 
-          {/* Section 3: Reader Preferences */}
+          {/* Section 3: Appearance & Tokenized Palette */}
+          <div className="space-y-4">
+            <span className="text-black dark:text-white font-semibold block">外观与颜色色系 (Astryx Tokens)</span>
+
+            {/* Mode selection */}
+            <div>
+              <label className="text-xs text-[#474747] dark:text-[#9e9e9e] block mb-2 font-medium">
+                显示模式 (Theme Mode)
+              </label>
+              <div className="grid grid-cols-3 gap-2">
+                {[
+                  { id: 'dark', label: '深色模式 🌙' },
+                  { id: 'light', label: '浅色模式 ☀️' },
+                  { id: 'system', label: '跟随系统 💻' },
+                ].map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, theme: m.id as any })}
+                    className={`py-2 px-3 rounded-xl text-xs font-semibold border transition-all duration-175 ${
+                      formData.theme === m.id
+                        ? 'border-[#EB6E00] bg-[#EB6E00]/10 text-[#EB6E00] dark:text-[#FF7A1A]'
+                        : 'border-black/[0.08] dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.04] text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white'
+                    }`}
+                  >
+                    {m.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Palette selection */}
+            <div>
+              <label className="text-xs text-[#474747] dark:text-[#9e9e9e] block mb-2 font-medium">
+                强调色系 (Accent Palette)
+              </label>
+              <div className="grid grid-cols-5 gap-2">
+                {[
+                  { id: 'orange', name: '暖橙', color: '#EB6E00' },
+                  { id: 'blue', name: '蔚蓝', color: '#0171E3' },
+                  { id: 'purple', name: '极光紫', color: '#6B1EFD' },
+                  { id: 'green', name: '翡翠绿', color: '#0B991F' },
+                  { id: 'monochrome', name: '黑白', color: '#1b1b1b' },
+                ].map((p) => {
+                  const isSelected = (formData.palette || 'orange') === p.id;
+                  return (
+                    <button
+                      key={p.id}
+                      type="button"
+                      onClick={() => setFormData({ ...formData, palette: p.id as any })}
+                      className={`flex flex-col items-center gap-1.5 p-2 rounded-xl border transition-all duration-175 ${
+                        isSelected
+                          ? 'border-[#EB6E00] bg-black/[0.04] dark:bg-white/[0.08]'
+                          : 'border-black/[0.08] dark:border-white/[0.1] hover:bg-black/[0.02] dark:hover:bg-white/[0.04]'
+                      }`}
+                    >
+                      <span
+                        className="w-5 h-5 rounded-full border border-black/10 dark:border-white/20 shadow-xs"
+                        style={{ backgroundColor: p.color }}
+                      />
+                      <span className="text-[11px] font-medium text-black dark:text-white">
+                        {p.name}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          <div className="h-[1px] bg-black/[0.08] dark:bg-white/[0.1]" />
+
+          {/* Section 4: Reader Preferences */}
           <div className="space-y-3">
             <span className="text-black dark:text-white font-semibold block">阅读器偏好</span>
 

@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Category, Feed } from '../types';
+import { useTheme } from '../theme/ThemeContext';
 
 interface FeedsDrawerModalProps {
   visible: boolean;
@@ -33,13 +34,15 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
   onSelectFeed,
   feedUnreadCounts,
 }) => {
+  const { tokens } = useTheme();
+
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
-      <SafeAreaView style={styles.container}>
-        <View style={styles.navbar}>
-          <Text style={styles.title}>订阅源与分类</Text>
+      <SafeAreaView style={[styles.container, { backgroundColor: tokens.bgPage }]}>
+        <View style={[styles.navbar, { borderBottomColor: tokens.borderSubtle, backgroundColor: tokens.bgPage }]}>
+          <Text style={[styles.title, { color: tokens.textPrimary }]}>订阅源与分类</Text>
           <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
-            <Text style={styles.closeBtnText}>完成</Text>
+            <Text style={[styles.closeBtnText, { color: tokens.accent }]}>完成</Text>
           </TouchableOpacity>
         </View>
 
@@ -51,9 +54,17 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
               onSelectFeed(null);
               onClose();
             }}
-            style={[styles.item, !selectedCategory && !selectedFeed && styles.itemActive]}
+            style={[
+              styles.item,
+              !selectedCategory && !selectedFeed && { backgroundColor: tokens.accentSubtle },
+            ]}
           >
-            <Text style={[styles.itemText, !selectedCategory && !selectedFeed && styles.itemTextActive]}>
+            <Text
+              style={[
+                styles.itemText,
+                { color: !selectedCategory && !selectedFeed ? tokens.accent : tokens.textPrimary },
+              ]}
+            >
               全部订阅
             </Text>
           </TouchableOpacity>
@@ -71,14 +82,22 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
                     onSelectFeed(null);
                     onClose();
                   }}
-                  style={[styles.catHeader, isCatActive && styles.itemActive]}
+                  style={[
+                    styles.catHeader,
+                    isCatActive && { backgroundColor: tokens.accentSubtle },
+                  ]}
                 >
-                  <Text style={[styles.catTitle, isCatActive && styles.itemTextActive]}>
+                  <Text
+                    style={[
+                      styles.catTitle,
+                      { color: isCatActive ? tokens.accent : tokens.textSecondary },
+                    ]}
+                  >
                     📁 {cat.name}
                   </Text>
                 </TouchableOpacity>
 
-                <View style={styles.subFeeds}>
+                <View style={[styles.subFeeds, { borderLeftColor: tokens.borderSubtle }]}>
                   {catFeeds.map((feed) => {
                     const isFeedActive = selectedFeed === feed.id;
                     const unread = feedUnreadCounts[feed.id] || 0;
@@ -91,17 +110,24 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
                           onSelectFeed(feed.id);
                           onClose();
                         }}
-                        style={[styles.feedItem, isFeedActive && styles.feedItemActive]}
+                        style={[
+                          styles.feedItem,
+                          isFeedActive && { backgroundColor: tokens.accentSubtle },
+                        ]}
                       >
                         <Text
-                          style={[styles.feedTitle, isFeedActive && styles.feedTitleActive]}
+                          style={[
+                            styles.feedTitle,
+                            { color: isFeedActive ? tokens.accent : tokens.textPrimary },
+                            isFeedActive && styles.feedTitleActive,
+                          ]}
                           numberOfLines={1}
                         >
                           {feed.title}
                         </Text>
                         {unread > 0 && (
-                          <View style={styles.badge}>
-                            <Text style={styles.badgeText}>{unread}</Text>
+                          <View style={[styles.badge, { backgroundColor: tokens.accentSubtle }]}>
+                            <Text style={[styles.badgeText, { color: tokens.accent }]}>{unread}</Text>
                           </View>
                         )}
                       </TouchableOpacity>
@@ -120,7 +146,6 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1b1b1b',
   },
   navbar: {
     height: 52,
@@ -129,20 +154,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
-    backgroundColor: '#1b1b1b',
   },
   title: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#ffffff',
     letterSpacing: -0.2,
   },
   closeBtn: {
     padding: 6,
   },
   closeBtnText: {
-    color: '#EB6E00',
     fontWeight: 'bold',
     fontSize: 14,
   },
@@ -156,16 +177,9 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     marginBottom: 6,
   },
-  itemActive: {
-    backgroundColor: 'rgba(235, 110, 0, 0.15)',
-  },
   itemText: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#ffffff',
-  },
-  itemTextActive: {
-    color: '#FF7A1A',
   },
   catGroup: {
     marginTop: 12,
@@ -178,13 +192,11 @@ const styles = StyleSheet.create({
   catTitle: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#9e9e9e',
   },
   subFeeds: {
     paddingLeft: 18,
     marginTop: 4,
     borderLeftWidth: 1,
-    borderLeftColor: 'rgba(255, 255, 255, 0.08)',
     marginLeft: 14,
   },
   feedItem: {
@@ -196,27 +208,20 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 1,
   },
-  feedItemActive: {
-    backgroundColor: 'rgba(235, 110, 0, 0.15)',
-  },
   feedTitle: {
     fontSize: 13,
-    color: '#d4d4d4',
     flex: 1,
     paddingRight: 8,
   },
   feedTitleActive: {
-    color: '#FF7A1A',
     fontWeight: '600',
   },
   badge: {
-    backgroundColor: 'rgba(235, 110, 0, 0.18)',
     paddingHorizontal: 6,
     paddingVertical: 2,
     borderRadius: 8,
   },
   badgeText: {
-    color: '#FF7A1A',
     fontSize: 10,
     fontWeight: 'bold',
   },

@@ -11,6 +11,7 @@ export const DEFAULT_SETTINGS: MobileSettings = {
   githubToken: '',
   githubRepo: 'codeusb/gitfeed',
   theme: 'dark',
+  palette: 'orange',
   fontSize: 'md',
   autoMarkReadOnOpen: true,
 };
