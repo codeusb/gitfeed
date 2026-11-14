@@ -12,6 +12,7 @@ on:
       - 'feeds.json'
       - 'scripts/**'
       - 'web/**'
+      - '.github/workflows/**'
 
 permissions:
   contents: write
