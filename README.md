@@ -6,6 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-orange.svg)](.github/workflows/update-feeds.yml)
+[![Android APK](https://img.shields.io/badge/Android-APK%20Release-brightgreen?logo=android)](https://github.com/codeusb/gitfeed/releases/latest)
 [![PWA Ready](https://img.shields.io/badge/PWA-Ready-success.svg)](web/)
 [![Zero Server Cost](https://img.shields.io/badge/Server%20Cost-%240%2Fmonth-brightgreen.svg)](#)
 
@@ -74,13 +75,29 @@ flowchart TD
 
 ---
 
-## 📲 在手机和电脑上安装使用 (PWA)
+## 📲 在手机和电脑上安装使用 (Android 原生 APK & PWA)
 
-GitFeed 是标准的高性能渐进式 Web 应用（PWA），无需去应用商店下载繁琐的客户端：
+GitFeed 提供两种使用形态：标准 Web PWA 与 **React Native 原生 Android 安装包 (APK)**。
 
-### 📱 移动端 (iPhone / Android)
+### 🤖 Android 原生客户端 (React Native APK)
+你可以直接在 GitHub Releases 中下载免应用商店的独立 APK 安装包：
+* 📥 **[前往 Releases 页面下载最新 APK 安装包](https://github.com/codeusb/gitfeed/releases/latest)**
+* **特性**：
+  * 基于 React Native 原生驱动，拥有更极致的流畅滑动与高刷性能。
+  * 深度离线持久化存储，断网地铁依然秒开全部缓存文章。
+  * 内置 GitHub API 多端已读状态同步。
+  * **应用内版本自更新检测**：进入设置点击“检查新版本”，可直接下载最新 Releases 安装包。
+* **如何云端自动打包发版**：
+  在终端打上 Git Tag 即可触发云端自动化构建并自动发布至 Releases：
+  ```bash
+  git tag v1.0.0
+  git push origin v1.0.0
+  ```
+  *(也可在 GitHub Actions 网页中找到 `Build & Release Android APK` 点击 `Run workflow` 一键手动触发打包)*。
+
+### 📱 移动端 PWA (iPhone / Android)
 * **iOS (Safari)**：用 Safari 打开你的 GitFeed 网址，点击底部中间的 **“分享”** 按钮 -> 滚动选择 **“添加到主屏幕”**。桌面上会出现专属 GitFeed 图标，全屏沉浸、无地址栏、支持离线阅读。
-* **Android (Chrome / 微信内置/ Edge)**：在浏览器中打开网址，点击右上角菜单 -> 选择 **“安装应用”** 或 **“添加到主屏幕”** 即可。
+* **Android (Chrome / Edge)**：在浏览器中打开网址，点击右上角菜单 -> 选择 **“安装应用”** 或 **“添加到主屏幕”** 即可。
 
 ### 💻 桌面端 (Mac / Windows / Linux)
 * 在 Chrome / Edge 浏览器中访问 GitFeed，在地址栏右侧会显示一个 **“安装 GitFeed”** 图标，点击即可生成独立窗口桌面程序，支持与原生软件完全相同的键盘快捷键体验。

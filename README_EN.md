@@ -6,6 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Automated-orange.svg)](.github/workflows/update-feeds.yml)
+[![Android APK](https://img.shields.io/badge/Android-APK%20Release-brightgreen?logo=android)](https://github.com/codeusb/gitfeed/releases/latest)
 [![PWA Ready](https://img.shields.io/badge/PWA-Ready-success.svg)](web/)
 [![Zero Server Cost](https://img.shields.io/badge/Server%20Cost-%240%2Fmonth-brightgreen.svg)](#)
 
@@ -74,16 +75,32 @@ Since GitHub Actions automatically commits fetched feed data back into your repo
 
 ---
 
-## 📲 Installing as a PWA (Mobile & Desktop)
+## 📲 Mobile & Desktop Apps (Android Native APK & PWA)
 
-GitFeed is a high-performance Progressive Web App (PWA):
+GitFeed provides two frontend experiences: a modern responsive Web PWA and a **native React Native Android App (APK)**.
 
-### 📱 Mobile (iPhone / Android)
-* **iOS (Safari)**: Open your GitFeed URL in Safari -> Tap the **Share** button -> Tap **"Add to Home Screen"**. GitFeed will launch as a standalone, distraction-free app with offline support.
-* **Android (Chrome / Edge)**: Open the URL -> Tap the menu (three dots) -> Tap **"Install App"** or **"Add to Home Screen"**.
+### 🤖 Android Native App (React Native APK)
+You can download the sideloadable APK directly from GitHub Releases without going through app stores:
+* 📥 **[Download Latest APK from GitHub Releases](https://github.com/codeusb/gitfeed/releases/latest)**
+* **Features**:
+  * Native 120Hz smooth scrolling and haptic touch feedback.
+  * Robust offline cache (AsyncStorage / local database)—read cached articles without an active internet connection.
+  * GitHub API multi-device read & starred state sync.
+  * **In-app self-update checker**: tap "Check for Updates" in Settings to directly download newer APK releases.
+* **Automated Cloud Build & Release**:
+  Simply push a Git version tag to trigger the cloud compilation and release workflow:
+  ```bash
+  git tag v1.0.0
+  git push origin v1.0.0
+  ```
+  *(Or click `Run workflow` manually under the `Build & Release Android APK` tab in GitHub Actions)*.
+
+### 📱 Mobile PWA (iOS / Android)
+* **iOS (Safari)**: Open your GitFeed URL in Safari -> Tap the **Share** button -> Tap **"Add to Home Screen"**. GitFeed launches in standalone mode with offline support.
+* **Android (Chrome / Edge)**: Open the URL -> Tap the menu -> Tap **"Install App"** or **"Add to Home Screen"**.
 
 ### 💻 Desktop (macOS / Windows / Linux)
-* Open the site in Chrome, Edge, or Brave. Click the **Install** button on the right side of the address bar to create a native standalone application window with full keyboard shortcut support.
+* Open the site in Chrome, Edge, or Brave. Click the **Install** button on the address bar for an independent desktop app window.
 
 ---
 

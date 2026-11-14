@@ -265,6 +265,16 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* Bottom Controls */}
       <div className="p-3 border-t border-slate-200 dark:border-slate-800 space-y-2">
+        <a
+          href="https://github.com/codeusb/gitfeed/releases/latest"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center space-x-1.5 py-1.5 px-3 rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-600 dark:text-orange-400 text-xs font-semibold transition-colors"
+          title="在 GitHub Releases 下载安卓客户端安装包"
+        >
+          <span>📲 下载 Android APK</span>
+        </a>
+
         <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
           <button
             onClick={onMarkAllRead}

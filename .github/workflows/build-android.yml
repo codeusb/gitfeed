@@ -1,0 +1,107 @@
+name: Build & Release Android APK
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version_name:
+        description: 'Version Name (e.g. v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+      create_release:
+        description: 'Publish to GitHub Releases?'
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: mobile/package.json
+
+      - name: Install Mobile Dependencies
+        run: |
+          cd mobile
+          npm install
+
+      - name: Generate Default Keystore
+        run: |
+          cd mobile/android/app
+          if [ ! -f debug.keystore ]; then
+            keytool -genkeypair -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=GitFeed,O=OpenSource,C=US"
+          fi
+
+      - name: Build Android Release APK
+        run: |
+          cd mobile/android
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+
+      - name: Prepare APK Artifact
+        id: prepare_apk
+        run: |
+          VERSION="${{ github.ref_name }}"
+          if [[ "$VERSION" != v* ]]; then
+            VERSION="${{ github.event.inputs.version_name || 'v1.0.0' }}"
+          fi
+          
+          SOURCE_APK="mobile/android/app/build/outputs/apk/release/app-release.apk"
+          TARGET_APK="GitFeed-${VERSION}.apk"
+          
+          if [ -f "$SOURCE_APK" ]; then
+            cp "$SOURCE_APK" "$TARGET_APK"
+            echo "apk_path=$TARGET_APK" >> $GITHUB_OUTPUT
+            echo "version=$VERSION" >> $GITHUB_OUTPUT
+            echo "✓ Successfully prepared $TARGET_APK"
+          else
+            echo "Error: Release APK not found at $SOURCE_APK"
+            exit 1
+          fi
+
+      - name: Upload APK to Workflow Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: GitFeed-Android-APK
+          path: ${{ steps.prepare_apk.outputs.apk_path }}
+
+      - name: Publish to GitHub Releases
+        if: startsWith(github.ref, 'refs/tags/v') || github.event.inputs.create_release == true
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.prepare_apk.outputs.version }}
+          name: GitFeed ${{ steps.prepare_apk.outputs.version }}
+          body: |
+            ### ⚡ GitFeed Android Client (${{ steps.prepare_apk.outputs.version }})
+            
+            #### 📲 安装指南 (Installation)
+            * **直接下载下方 `GitFeed-${{ steps.prepare_apk.outputs.version }}.apk` 附件** 并在安卓手机上安装。
+            * 国内网络下载较慢可使用镜像加速。
+            
+            #### 🌟 特性功能 (Features)
+            * 🚀 基于 React Native 原生驱动，极致平滑高刷体验。
+            * 💾 支持离线缓存 IndexedDB / 本地存储，地铁断网依然畅读。
+            * 🔄 支持通过 GitHub Fine-grained PAT 与网页端同步已读状态。
+            * 📢 内置应用内自更新检测机制。
+          files: ${{ steps.prepare_apk.outputs.apk_path }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
