@@ -7,7 +7,7 @@
     "title": "google/elephant-goldfish-model",
     "link": "https://github.com/google/elephant-goldfish-model",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Open-source plugin for designing and reviewing software with agentshttps://egm.dev Design with an elephant. Review with a goldfish. Install · Quickstart · Documentation · Website Develop ideas with context and review doc...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -20,7 +20,7 @@
     "title": "ZhuLinsen/daily_stock_analysis",
     "link": "https://github.com/ZhuLinsen/daily_stock_analysis",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.ht...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -33,7 +33,7 @@
     "title": "NVIDIA/auto-ontology",
     "link": "https://github.com/NVIDIA/auto-ontology",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows....",
     "coverImage": "https://raw.githubusercontent.com/NVIDIA/auto-ontology/main/docs/assets/arch.png",
     "readTime": 1
@@ -46,7 +46,7 @@
     "title": "google-deepmind/mujoco",
     "link": "https://github.com/google-deepmind/mujoco",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Multi-Joint dynamics with Contact. A general purpose physics simulator.https://mujoco.org MuJoCo stands for Multi-Joint dynamics with Contact. It is a general purpose physics engine that aims to facilitate research and d...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -59,7 +59,7 @@
     "title": "mattpocock/skills",
     "link": "https://github.com/mattpocock/skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Skills for Real Engineers. Straight from my .agents directory.https://aihero.dev/skills Skills For Real Engineers My agent skills that I use every day to do real engineering - not vibe coding. Developing real application...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -72,7 +72,7 @@
     "title": "addyosmani/agent-skills",
     "link": "https://github.com/addyosmani/agent-skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Production-grade engineering skills for AI coding agents.https://skills.addy.ieAgent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that se...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -85,7 +85,7 @@
     "title": "cloudflare/security-audit-skill",
     "link": "https://github.com/cloudflare/security-audit-skill",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findingssecurity-audit A coding-agent skill that turns your agent into a security auditor. It orchestrates isolated agent...",
     "coverImage": null,
     "readTime": 1
@@ -98,7 +98,7 @@
     "title": "zed-industries/zed",
     "link": "https://github.com/zed-industries/zed",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.https://zed.devZed Welcome to Zed, a high-performance, multiplayer code editor from the creators...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -111,7 +111,7 @@
     "title": "anthropics/claude-quickstarts",
     "link": "https://github.com/anthropics/claude-quickstarts",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude APIClaude Quickstarts Claude Quickstarts is a collection of projects designed to help develo...",
     "coverImage": null,
     "readTime": 1
@@ -124,7 +124,7 @@
     "title": "vercel-labs/agent-desktop",
     "link": "https://github.com/vercel-labs/agent-desktop",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Computer use CLI for AI agentshttps://agent-browser.dev/desktopagent-desktop Computer use for AI agents: see and operate desktop apps on macOS, Windows, and Linux through the OS accessibility tree. agent-desktop gives an...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -137,7 +137,7 @@
     "title": "lobehub/lobehub",
     "link": "https://github.com/lobehub/lobehub",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.https://lobehub.com LobeHub Super-Agents on Your Team Add super-agents...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -150,7 +150,7 @@
     "title": "vercel-labs/agent-browser",
     "link": "https://github.com/vercel-labs/agent-browser",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:49Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Browser automation CLI for AI agentshttps://agent-browser.devagent-browser Browser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell. agent-browser is a native R...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -163,7 +163,7 @@
     "title": "sherlock-project/sherlock",
     "link": "https://github.com/sherlock-project/sherlock",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:48Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Hunt down social media accounts by username across social networkshttps://sherlockproject.xyz Hunt down social media accounts by username across 400+ social networks Installation • Usage • Contributing Installation Warni...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -176,7 +176,7 @@
     "title": "anthropics/skills",
     "link": "https://github.com/anthropics/skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:48Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Public repository for Agent Skills Note: This repository contains Anthropic's implementation of skills for Claude. For information about the Agent Skills standard, see agentskills.io. Skills Skills are folders of instruc...",
     "coverImage": "https://skills.sh/b/anthropics/skills",
     "readTime": 1
@@ -189,9 +189,87 @@
     "title": "milind-soni/OpenMausBot",
     "link": "https://github.com/milind-soni/OpenMausBot",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:42:48Z",
+    "publishedAt": "2026-11-14T15:22:16Z",
     "snippet": "Open-source Grok Bot alternative with a virtual machine that bots can usehttps://www.mausbot.com/ OpenMausBot The open-source Grok Bot alternative: your own team of AI bots, in a chat app. openmausbot.com · Download · Op...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
+    "readTime": 1
+  },
+  {
+    "id": "b1ea594d8d5cfbe8",
+    "feedId": "v2ex-hot",
+    "feedTitle": "V2EX",
+    "category": "tech-news",
+    "title": "[问与答] 不挣钱的男人不如狗",
+    "link": "https://www.v2ex.com/t/1257122#reply0",
+    "author": "jedeft",
+    "publishedAt": "2026-11-14T15:21:45Z",
+    "snippet": "男人要不挣钱，在家里的地位还没有狗高。",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "67c87c962baec383",
+    "feedId": "v2ex-hot",
+    "feedTitle": "V2EX",
+    "category": "tech-news",
+    "title": "[分享创造] 做了个能打断的 AI 语音面试陪练，求拍砖",
+    "link": "https://www.v2ex.com/t/1257121#reply0",
+    "author": "cryptitalk",
+    "publishedAt": "2026-11-14T15:19:57Z",
+    "snippet": "大家好，我是独立开发者。面试最难的是找不到人陪练，所以我做了一个 AI 语音面试陪练，想请大家帮忙试试、拍拍砖。 跟其他 AI 面试工具有什么不一样 大部分工具是你说完一段、它再回一段，像在发语音消息。这个是全双工实时对话： 你停下来想一想，它会等你，不抢话 它说得太长，你可以直接打断 目前有两个角色：技术面试官 Alex ，练 system design 和项目深挖；英语口语私教 Emma 。 怎么参加 打开 👉 https://ai...",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "17b496c3137d5c85",
+    "feedId": "v2ex-hot",
+    "feedTitle": "V2EX",
+    "category": "tech-news",
+    "title": "[全球工单系统] 怎么样才能解决淘宝的谜之风控",
+    "link": "https://www.v2ex.com/t/1257119#reply3",
+    "author": "jiagm",
+    "publishedAt": "2026-11-14T15:04:10Z",
+    "snippet": "海外 IP 试图购买 App Store 充值卡旗舰店（ https://appstore.tmall.com ）的商品，会触发谜之风控：部分面值（ 10 元、68 元）可以购买，部分面值（ 50 元、100 元）不可购买（提示“同一时间下单人数过多，建议您稍后再试”）。触发风控后无论打客服电话，还是在安全中心反馈，都是装傻充愣、制式回复。10 元、68 元可以正常下单50 元无法下单反馈只剩制式回复",
+    "coverImage": "https://i.imgur.com/QTdq5JE.png",
+    "readTime": 1
+  },
+  {
+    "id": "4f01cfa9d404bf65",
+    "feedId": "v2ex-hot",
+    "feedTitle": "V2EX",
+    "category": "tech-news",
+    "title": "[天黑以后] 20261114 午夜俱乐部",
+    "link": "https://www.v2ex.com/t/1257118#reply2",
+    "author": "xujdan",
+    "publishedAt": "2026-11-14T14:56:51Z",
+    "snippet": "失业快一个月了，申领失业金通过了，三个月的房租暂时有着落了，但陆续在 boss 上打招呼和投的简历都没什么下文，要么就是不匹配。 和家里人说了后，我妈也只会喊口号说着不管我做啥都支持我，我爸依旧只会隔段时间问我吃饭没然后喊我考公，我想回家吃饭但他们这样我又想远离。 这次离职后反倒感觉没上一次紧张，虽然存款不多撑不了太长时间，但总觉得心里一直崩的那个弦似乎松了好多。只是没朋友的我有时候想找人说说话，也只能找咸鱼上的心理咨询付费。 就这样吧...",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "2cfc9d9b1d9deda2",
+    "feedId": "v2ex-hot",
+    "feedTitle": "V2EX",
+    "category": "tech-news",
+    "title": "[Go 编程语言] 坐标：深圳！寻一个 Gopher 做项目！",
+    "link": "https://www.v2ex.com/t/1257117#reply0",
+    "author": "jobtesting",
+    "publishedAt": "2026-11-14T14:53:45Z",
+    "snippet": "项目为智慧物业方向。希望：1 、在深圳，方便沟通。2 、兼职远程。3 、有实现项目经验，有支付交易项目经验为佳。4 、按工时付费，有意向的可以聊聊。",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "b473718555b90005",
+    "feedId": "v2ex-hot",
+    "feedTitle": "V2EX",
+    "category": "tech-news",
+    "title": "[Google Gemini] Argon 莫名其妙抽风来了句印地语",
+    "link": "https://www.v2ex.com/t/1257115#reply3",
+    "author": "Tory12138",
+    "publishedAt": "2026-11-14T14:44:59Z",
+    "snippet": "https://imgur.com/a/OpipObE 这让我对 Gemini 的能力感到怀疑，有没有遇到过的也用 Gemini 的朋友",
+    "coverImage": null,
     "readTime": 1
   },
   {
@@ -216,7 +294,7 @@
     "link": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
     "author": "wondersky",
     "publishedAt": "2026-11-14T14:09:25Z",
-    "snippet": "Article URL: https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/ Comments URL: https://news.ycombinator.com/item?id=50497155 Points: 18 # Comments: 1",
+    "snippet": "Article URL: https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/ Comments URL: https://news.ycombinator.com/item?id=50497155 Points: 32 # Comments: 10",
     "coverImage": null,
     "readTime": 1
   },
@@ -229,7 +307,7 @@
     "link": "https://github.com/paul-nameless/agweb",
     "author": "paul_nameless",
     "publishedAt": "2026-11-14T14:08:12Z",
-    "snippet": "Article URL: https://github.com/paul-nameless/agweb Comments URL: https://news.ycombinator.com/item?id=50497147 Points: 4 # Comments: 1",
+    "snippet": "Article URL: https://github.com/paul-nameless/agweb Comments URL: https://news.ycombinator.com/item?id=50497147 Points: 12 # Comments: 2",
     "coverImage": null,
     "readTime": 1
   },
@@ -255,7 +333,7 @@
     "link": "https://github.com/FURSOY/fursoy-cpu",
     "author": "fursoy",
     "publishedAt": "2026-11-14T14:06:34Z",
-    "snippet": "Article URL: https://github.com/FURSOY/fursoy-cpu Comments URL: https://news.ycombinator.com/item?id=50497137 Points: 3 # Comments: 0",
+    "snippet": "Article URL: https://github.com/FURSOY/fursoy-cpu Comments URL: https://news.ycombinator.com/item?id=50497137 Points: 7 # Comments: 0",
     "coverImage": null,
     "readTime": 1
   },
@@ -278,7 +356,7 @@
     "feedTitle": "V2EX",
     "category": "tech-news",
     "title": "[问与答] 求助: 想在寝室搞一个小主机 有推荐么?",
-    "link": "https://www.v2ex.com/t/1257109#reply9",
+    "link": "https://www.v2ex.com/t/1257109#reply15",
     "author": "xukuangdi465",
     "publishedAt": "2026-11-14T14:03:54Z",
     "snippet": "目前只有一台 8845H 的笔记本 + iPad air(有点想把 pad 出掉... 记笔记屏幕滑的一 看书不如手机随时随地又小巧 拿着舒服) 预算 4000 左右 用途 挂 agent 跑任务(主要是翻译一些文档 搜集一些资料 完成一些重复小任务 小机器人监控一些任务 有时候有一些想法直接丢给 ai one-shot 先跑三四轮 然后后看一看结果是否收敛 如果有感觉就继续迭代 感觉完成的不好或者是后续投入优化的时间会花费的很大的话就...",
@@ -304,7 +382,7 @@
     "feedTitle": "V2EX",
     "category": "tech-news",
     "title": "[酷工作] 最近被领导叫去涨薪了",
-    "link": "https://www.v2ex.com/t/1257106#reply0",
+    "link": "https://www.v2ex.com/t/1257106#reply1",
     "author": "FreshOldMan",
     "publishedAt": "2026-11-14T13:57:55Z",
     "snippet": "说实话，我就之前提过，竟然真的涨了，但是不多只有 1k",
@@ -321,6 +399,19 @@
     "author": "btc888r",
     "publishedAt": "2026-11-14T13:56:52Z",
     "snippet": "出 ios surge 明年 11 月 8 日到期 90 一位 +v et123kk",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "953186777804ab37",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "The Myth of Neutral Code",
+    "link": "https://foss.life/notes/2026/the-myth-of-neutral-code/",
+    "author": "birdculture",
+    "publishedAt": "2026-11-14T13:52:11Z",
+    "snippet": "Article URL: https://foss.life/notes/2026/the-myth-of-neutral-code/ Comments URL: https://news.ycombinator.com/item?id=50497041 Points: 9 # Comments: 0",
     "coverImage": null,
     "readTime": 1
   },
@@ -346,7 +437,7 @@
     "link": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
     "author": "giuliomagnifico",
     "publishedAt": "2026-11-14T13:48:06Z",
-    "snippet": "Article URL: https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/ Comments URL: https://news.ycombinator.com/item?id=50497009 Points: 17 # Comments: 2",
+    "snippet": "Article URL: https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/ Comments URL: https://news.ycombinator.com/item?id=50497009 Points: 32 # Comments: 10",
     "coverImage": null,
     "readTime": 1
   },
@@ -364,6 +455,32 @@
     "readTime": 1
   },
   {
+    "id": "0cbfc517ecaca7fd",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "KDE: The Documentary on Free Software [video]",
+    "link": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+    "author": "mrkn1",
+    "publishedAt": "2026-11-14T13:43:28Z",
+    "snippet": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 8 # Comments: 0",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "94a968dac705d731",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Does the Crichton Estate Have a Case?",
+    "link": "https://yapern.com/blog/does-the-crichton-estate-have-a-case/",
+    "author": "15o9o",
+    "publishedAt": "2026-11-14T13:39:08Z",
+    "snippet": "Article URL: https://yapern.com/blog/does-the-crichton-estate-have-a-case/ Comments URL: https://news.ycombinator.com/item?id=50496938 Points: 4 # Comments: 0",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
     "id": "c70ad488976662a9",
     "feedId": "hacker-news-frontpage",
     "feedTitle": "Hacker News: Front Page",
@@ -372,7 +489,7 @@
     "link": "https://www.netmeister.org/blog/claude-delusion.html",
     "author": "janvdberg",
     "publishedAt": "2026-11-14T13:36:17Z",
-    "snippet": "Article URL: https://www.netmeister.org/blog/claude-delusion.html Comments URL: https://news.ycombinator.com/item?id=50496921 Points: 49 # Comments: 20",
+    "snippet": "Article URL: https://www.netmeister.org/blog/claude-delusion.html Comments URL: https://news.ycombinator.com/item?id=50496921 Points: 100 # Comments: 81",
     "coverImage": null,
     "readTime": 1
   },
@@ -385,7 +502,7 @@
     "link": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
     "author": "acossta",
     "publishedAt": "2026-11-14T13:20:43Z",
-    "snippet": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 10 # Comments: 0",
+    "snippet": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 21 # Comments: 3",
     "coverImage": null,
     "readTime": 1
   },
@@ -437,7 +554,7 @@
     "link": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
     "author": "gslin",
     "publishedAt": "2026-11-14T12:45:45Z",
-    "snippet": "Article URL: https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again Comments URL: https://news.ycombinator.com/item?id=50496602 Points: 91 # Comments: 16",
+    "snippet": "Article URL: https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again Comments URL: https://news.ycombinator.com/item?id=50496602 Points: 118 # Comments: 24",
     "coverImage": null,
     "readTime": 1
   },
@@ -642,7 +759,7 @@
     "feedTitle": "V2EX",
     "category": "tech-news",
     "title": "[Android] 有没有 V 友自己搭建过云手机？想实现网页远程操作，不想再用第三方云手机了",
-    "link": "https://www.v2ex.com/t/1257073#reply11",
+    "link": "https://www.v2ex.com/t/1257073#reply12",
     "author": "ccai",
     "publishedAt": "2026-11-14T10:13:39Z",
     "snippet": "想问一下，有没有 V 友尝试过自己用服务器搭建开源项目的云手机？ 比如在自己的服务器上部署云手机环境，然后通过网页端远程访问和操作，平时用来刷视频、玩游戏，测试 app 等等。 如果整个环境都部署在自己的服务器上，数据和操作也由自己掌控，理论上隐私和安全性也会更有保障。 不知道有没有大佬实践过？目前有哪些比较成熟的开源方案值得推荐？求分享经验！",
@@ -1256,7 +1373,7 @@
     "link": "https://monkeyisland.pages.dev/",
     "author": "maximilianburke",
     "publishedAt": "2026-11-14T04:23:30Z",
-    "snippet": "Article URL: https://monkeyisland.pages.dev/ Comments URL: https://news.ycombinator.com/item?id=50493904 Points: 279 # Comments: 83",
+    "snippet": "Article URL: https://monkeyisland.pages.dev/ Comments URL: https://news.ycombinator.com/item?id=50493904 Points: 295 # Comments: 86",
     "coverImage": null,
     "readTime": 1
   },
@@ -1308,7 +1425,7 @@
     "link": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
     "author": "speckx",
     "publishedAt": "2026-11-14T02:52:59Z",
-    "snippet": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 810 # Comments: 480",
+    "snippet": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 834 # Comments: 498",
     "coverImage": null,
     "readTime": 1
   },
@@ -1321,7 +1438,7 @@
     "link": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
     "author": "cobychapple",
     "publishedAt": "2026-11-14T02:28:29Z",
-    "snippet": "Article URL: https://github.com/ggml-org/ggml/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50493062 Points: 332 # Comments: 52",
+    "snippet": "Article URL: https://github.com/ggml-org/ggml/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50493062 Points: 342 # Comments: 53",
     "coverImage": null,
     "readTime": 1
   },
@@ -1386,7 +1503,7 @@
     "link": "https://unsloth.ai/docs/models/qwen3.8",
     "author": "Retro_Dev",
     "publishedAt": "2026-11-14T00:06:04Z",
-    "snippet": "Article URL: https://unsloth.ai/docs/models/qwen3.8 Comments URL: https://news.ycombinator.com/item?id=50491980 Points: 201 # Comments: 58",
+    "snippet": "Article URL: https://unsloth.ai/docs/models/qwen3.8 Comments URL: https://news.ycombinator.com/item?id=50491980 Points: 204 # Comments: 61",
     "coverImage": null,
     "readTime": 1
   },
@@ -1399,7 +1516,7 @@
     "link": "https://dfarq.homeip.net/what-happened-to-3com/",
     "author": "gvieri",
     "publishedAt": "2026-11-13T23:48:59Z",
-    "snippet": "Article URL: https://dfarq.homeip.net/what-happened-to-3com/ Comments URL: https://news.ycombinator.com/item?id=50491830 Points: 176 # Comments: 93",
+    "snippet": "Article URL: https://dfarq.homeip.net/what-happened-to-3com/ Comments URL: https://news.ycombinator.com/item?id=50491830 Points: 178 # Comments: 96",
     "coverImage": null,
     "readTime": 1
   },
@@ -1412,7 +1529,7 @@
     "link": "https://grounds.top/",
     "author": "gvsi",
     "publishedAt": "2026-11-13T23:17:39Z",
-    "snippet": "Article URL: https://grounds.top/ Comments URL: https://news.ycombinator.com/item?id=50491545 Points: 176 # Comments: 23",
+    "snippet": "Article URL: https://grounds.top/ Comments URL: https://news.ycombinator.com/item?id=50491545 Points: 180 # Comments: 23",
     "coverImage": null,
     "readTime": 1
   },
@@ -1425,7 +1542,7 @@
     "link": "https://www.joshka.net/cell-borders/",
     "author": "vinhnx",
     "publishedAt": "2026-11-13T23:06:40Z",
-    "snippet": "Article URL: https://www.joshka.net/cell-borders/ Comments URL: https://news.ycombinator.com/item?id=50491423 Points: 336 # Comments: 147",
+    "snippet": "Article URL: https://www.joshka.net/cell-borders/ Comments URL: https://news.ycombinator.com/item?id=50491423 Points: 343 # Comments: 149",
     "coverImage": null,
     "readTime": 1
   },
@@ -1438,7 +1555,7 @@
     "link": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
     "author": "vinhnx",
     "publishedAt": "2026-11-13T23:04:30Z",
-    "snippet": "Article URL: https://alichraghi.github.io/blog/how-not-to-build-a-music-player/ Comments URL: https://news.ycombinator.com/item?id=50491400 Points: 143 # Comments: 62",
+    "snippet": "Article URL: https://alichraghi.github.io/blog/how-not-to-build-a-music-player/ Comments URL: https://news.ycombinator.com/item?id=50491400 Points: 147 # Comments: 63",
     "coverImage": null,
     "readTime": 1
   },
@@ -1477,7 +1594,7 @@
     "link": "https://orcasairband.com/",
     "author": "mmaunder",
     "publishedAt": "2026-11-13T22:04:24Z",
-    "snippet": "Article URL: https://orcasairband.com/ Comments URL: https://news.ycombinator.com/item?id=50490593 Points: 280 # Comments: 66",
+    "snippet": "Article URL: https://orcasairband.com/ Comments URL: https://news.ycombinator.com/item?id=50490593 Points: 281 # Comments: 66",
     "coverImage": null,
     "readTime": 1
   },
