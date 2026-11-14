@@ -156,8 +156,33 @@ def clean_html(raw_html: str, base_url: str = "") -> Tuple[str, Optional[str], s
         if src:
             if base_url and not urlparse(src).netloc:
                 src = urljoin(base_url, src)
-            if not cover_image and not src.endswith(".gif"):
+
+            # Check if this is a valid article cover image (not an icon/badge/svg)
+            width_str = str(img.get("width", "")).replace("px", "")
+            height_str = str(img.get("height", "")).replace("px", "")
+            is_small = False
+            try:
+                if width_str and int(width_str) <= 48:
+                    is_small = True
+                if height_str and int(height_str) <= 48:
+                    is_small = True
+            except ValueError:
+                pass
+
+            src_lower = src.lower()
+            is_excluded = (
+                is_small
+                or src_lower.endswith(".svg")
+                or src_lower.endswith(".gif")
+                or "shields.io" in src_lower
+                or "badge" in src_lower
+                or "/assets/icons/" in src_lower
+                or "tracker" in src_lower
+            )
+
+            if not cover_image and not is_excluded:
                 cover_image = src
+
             # Add security & lazy loading
             img["src"] = src
             img["loading"] = "lazy"

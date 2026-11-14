@@ -9,11 +9,13 @@ import {
   Linking,
   Share,
   ActivityIndicator,
+  Image,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ArticleDetail, ArticleSummary, MobileSettings } from '../types';
 import { MobileDataService } from '../services/dataService';
 import { useTheme } from '../theme/ThemeContext';
+import { RichContentRenderer } from './RichContentRenderer';
 
 interface ReaderModalProps {
   visible: boolean;
@@ -40,14 +42,17 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
   const [detail, setDetail] = useState<ArticleDetail | null>(null);
   const [loading, setLoading] = useState(false);
   const [fontSize, setFontSize] = useState<number>(16);
+  const [heroError, setHeroError] = useState(false);
 
   useEffect(() => {
     if (!articleSummary || !visible) {
       setDetail(null);
+      setHeroError(false);
       return;
     }
 
     setLoading(true);
+    setHeroError(false);
     MobileDataService.fetchArticleDetail(articleSummary.id, settings)
       .then((res) => {
         setDetail(res);
@@ -74,103 +79,222 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
     Linking.openURL(articleSummary.link);
   };
 
-  // Strip simple HTML tags for text display or clean preview
-  const cleanContent = detail?.content
-    ? detail.content.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/\n\s*\n/g, '\n\n')
-    : articleSummary.snippet;
+  const formatPubDate = (dateStr: string) => {
+    try {
+      return new Date(dateStr).toLocaleString(undefined, {
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+    } catch {
+      return '';
+    }
+  };
+
+  const hasValidHeroImage =
+    articleSummary.coverImage &&
+    !heroError &&
+    !articleSummary.coverImage.endsWith('.svg') &&
+    !articleSummary.coverImage.includes('shields.io') &&
+    !articleSummary.coverImage.includes('/assets/icons/');
 
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
       <SafeAreaView style={[styles.container, { backgroundColor: tokens.bgPage }]}>
-        {/* Top Navigation Bar */}
-        <View style={[styles.navbar, { borderBottomColor: tokens.borderSubtle, backgroundColor: tokens.bgPage }]}>
-          <TouchableOpacity onPress={onClose} style={styles.navButton}>
+        {/* Top Astryx Navigation Bar */}
+        <View
+          style={[
+            styles.navbar,
+            {
+              borderBottomColor: tokens.borderSubtle,
+              backgroundColor: tokens.bgSurface,
+            },
+          ]}
+        >
+          <TouchableOpacity onPress={onClose} style={styles.navButton} activeOpacity={0.7}>
             <Text style={[styles.navButtonText, { color: tokens.textSecondary }]}>✕ 关闭</Text>
           </TouchableOpacity>
 
           <View style={styles.rightActions}>
+            {/* Font Size Scaling */}
             <TouchableOpacity
               onPress={() => setFontSize((s) => Math.max(13, s - 2))}
-              style={[styles.toolBtn, { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle }]}
+              style={[
+                styles.toolBtn,
+                { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
+              ]}
+              activeOpacity={0.7}
             >
               <Text style={[styles.toolBtnText, { color: tokens.textPrimary }]}>A-</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
               onPress={() => setFontSize((s) => Math.min(24, s + 2))}
-              style={[styles.toolBtn, { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle }]}
+              style={[
+                styles.toolBtn,
+                { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
+              ]}
+              activeOpacity={0.7}
             >
               <Text style={[styles.toolBtnText, { color: tokens.textPrimary }]}>A+</Text>
             </TouchableOpacity>
 
+            {/* Toggle Star */}
             <TouchableOpacity
               onPress={onToggleStar}
-              style={[styles.toolBtn, { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle }]}
+              style={[
+                styles.toolBtn,
+                { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
+              ]}
+              activeOpacity={0.7}
             >
               <Text style={[styles.toolIcon, { color: isStarred ? '#f59e0b' : tokens.textPrimary }]}>
                 {isStarred ? '★' : '☆'}
               </Text>
             </TouchableOpacity>
 
+            {/* Share */}
             <TouchableOpacity
               onPress={handleShare}
-              style={[styles.toolBtn, { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle }]}
+              style={[
+                styles.toolBtn,
+                { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
+              ]}
+              activeOpacity={0.7}
             >
               <Text style={[styles.toolIcon, { color: tokens.textPrimary }]}>⇪</Text>
             </TouchableOpacity>
 
+            {/* Open in external browser */}
             <TouchableOpacity
               onPress={handleOpenBrowser}
-              style={[styles.toolBtn, { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle }]}
+              style={[
+                styles.toolBtn,
+                { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
+              ]}
+              activeOpacity={0.7}
             >
               <Text style={[styles.toolIcon, { color: tokens.textPrimary }]}>↗</Text>
             </TouchableOpacity>
           </View>
         </View>
 
-        {/* Article Body */}
+        {/* Article Body Scroll */}
         <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
-          <View style={[styles.header, { borderBottomColor: tokens.borderSubtle }]}>
-            <Text
-              style={[
-                styles.feedBadge,
-                { backgroundColor: tokens.accentSubtle, color: tokens.accent },
-              ]}
-            >
-              {articleSummary.feedTitle}
-            </Text>
-            <Text style={[styles.title, { color: tokens.textPrimary }]}>{articleSummary.title}</Text>
-            <View style={styles.metaRow}>
-              <Text style={[styles.author, { color: tokens.textPrimary }]}>
-                {articleSummary.author || articleSummary.feedTitle}
+          {/* Article Header Card */}
+          <View
+            style={[
+              styles.headerCard,
+              {
+                backgroundColor: tokens.bgCard,
+                borderColor: tokens.borderSubtle,
+              },
+            ]}
+          >
+            <View style={styles.feedRow}>
+              <Text
+                style={[
+                  styles.feedBadge,
+                  { backgroundColor: tokens.accentSubtle, color: tokens.accent },
+                ]}
+              >
+                {articleSummary.feedTitle}
               </Text>
-              <Text style={[styles.metaSeparator, { color: tokens.textMuted }]}>•</Text>
-              <Text style={[styles.metaText, { color: tokens.textSecondary }]}>
+              <Text style={[styles.readTimeText, { color: tokens.textMuted }]}>
                 {articleSummary.readTime} 分钟阅读
               </Text>
             </View>
+
+            <Text style={[styles.title, { color: tokens.textPrimary }]}>
+              {articleSummary.title}
+            </Text>
+
+            <View style={styles.metaRow}>
+              <Text style={[styles.author, { color: tokens.textSecondary }]}>
+                {articleSummary.author || articleSummary.feedTitle}
+              </Text>
+              <Text style={[styles.metaSeparator, { color: tokens.textMuted }]}>•</Text>
+              <Text style={[styles.metaDate, { color: tokens.textMuted }]}>
+                {formatPubDate(articleSummary.publishedAt)}
+              </Text>
+            </View>
+
+            {/* Hero Cover Image if present */}
+            {hasValidHeroImage && (
+              <View
+                style={[
+                  styles.heroImageWrapper,
+                  {
+                    borderColor: tokens.borderSubtle,
+                    backgroundColor: tokens.bgSubtle,
+                  },
+                ]}
+              >
+                <Image
+                  source={{ uri: articleSummary.coverImage }}
+                  style={styles.heroImage}
+                  resizeMode="cover"
+                  onError={() => setHeroError(true)}
+                />
+              </View>
+            )}
           </View>
 
-          {loading ? (
-            <View style={styles.loadingContainer}>
-              <ActivityIndicator size="large" color={tokens.accent} />
-              <Text style={[styles.loadingText, { color: tokens.textSecondary }]}>正在加载正文...</Text>
-            </View>
-          ) : (
-            <Text style={[styles.prose, { color: tokens.textPrimary, fontSize, lineHeight: fontSize * 1.7 }]}>
-              {cleanContent}
-            </Text>
-          )}
-
-          <TouchableOpacity
-            onPress={handleOpenBrowser}
+          {/* Article Content Container */}
+          <View
             style={[
-              styles.bottomOpenBtn,
-              { backgroundColor: tokens.bgSurface, borderColor: tokens.borderSubtle },
+              styles.contentCard,
+              {
+                backgroundColor: tokens.bgCard,
+                borderColor: tokens.borderSubtle,
+              },
             ]}
           >
-            <Text style={[styles.bottomOpenText, { color: tokens.accent }]}>在浏览器中打开原网页 ↗</Text>
-          </TouchableOpacity>
+            {loading ? (
+              <View style={styles.loadingContainer}>
+                <ActivityIndicator size="large" color={tokens.accent} />
+                <Text style={[styles.loadingText, { color: tokens.textSecondary }]}>
+                  正在排版与加载正文...
+                </Text>
+              </View>
+            ) : (
+              <RichContentRenderer
+                content={detail?.content || `<p>${articleSummary.snippet}</p>`}
+                fontSize={fontSize}
+                tokens={tokens}
+              />
+            )}
+          </View>
+
+          {/* Bottom Actions Bar */}
+          <View style={styles.bottomBar}>
+            <TouchableOpacity
+              onPress={handleOpenBrowser}
+              style={[
+                styles.bottomActionBtn,
+                { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle },
+              ]}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.bottomBtnText, { color: tokens.accent }]}>
+                在浏览器中打开原网页 ↗
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              onPress={onToggleRead}
+              style={[
+                styles.bottomActionBtn,
+                { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle },
+              ]}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.bottomBtnText, { color: tokens.textPrimary }]}>
+                {isRead ? '标记为未读 ○' : '标记为已读 ✓'}
+              </Text>
+            </TouchableOpacity>
+          </View>
         </ScrollView>
       </SafeAreaView>
     </Modal>
@@ -190,8 +314,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   navButton: {
-    paddingVertical: 6,
-    paddingHorizontal: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 10,
   },
   navButtonText: {
     fontSize: 14,
@@ -200,83 +324,118 @@ const styles = StyleSheet.create({
   rightActions: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
   },
   toolBtn: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
+    height: 34,
+    minWidth: 34,
     borderRadius: 10,
     borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 6,
+    paddingHorizontal: 8,
   },
   toolBtnText: {
     fontSize: 12,
-    fontWeight: 'bold',
+    fontWeight: '700',
   },
   toolIcon: {
-    fontSize: 16,
+    fontSize: 15,
   },
   scroll: {
     flex: 1,
   },
   scrollContent: {
-    padding: 20,
+    padding: 12,
     paddingBottom: 40,
   },
-  header: {
-    marginBottom: 20,
-    borderBottomWidth: 1,
-    paddingBottom: 16,
+  headerCard: {
+    borderRadius: 16,
+    borderWidth: 1,
+    padding: 18,
+    marginBottom: 12,
+  },
+  feedRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 10,
   },
   feedBadge: {
-    alignSelf: 'flex-start',
-    fontSize: 12,
-    fontWeight: 'bold',
-    paddingHorizontal: 9,
+    fontSize: 11,
+    fontWeight: '700',
+    paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: 8,
-    marginBottom: 10,
+    overflow: 'hidden',
+  },
+  readTimeText: {
+    fontSize: 12,
+    fontWeight: '500',
   },
   title: {
     fontSize: 22,
-    fontWeight: 'bold',
-    lineHeight: 30,
+    fontWeight: '800',
+    lineHeight: 28,
+    letterSpacing: -0.4,
     marginBottom: 10,
-    letterSpacing: -0.3,
   },
   metaRow: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   author: {
-    fontSize: 12,
-    fontWeight: '500',
+    fontSize: 13,
+    fontWeight: '600',
   },
   metaSeparator: {
-    marginHorizontal: 6,
-  },
-  metaText: {
+    marginHorizontal: 8,
     fontSize: 12,
   },
+  metaDate: {
+    fontSize: 12,
+  },
+  heroImageWrapper: {
+    marginTop: 14,
+    borderRadius: 14,
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+  heroImage: {
+    width: '100%',
+    height: 180,
+  },
+  contentCard: {
+    borderRadius: 16,
+    borderWidth: 1,
+    padding: 18,
+    minHeight: 180,
+  },
   loadingContainer: {
-    paddingVertical: 60,
+    paddingVertical: 50,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   loadingText: {
     marginTop: 12,
     fontSize: 13,
   },
-  prose: {
-    letterSpacing: 0.2,
+  bottomBar: {
+    marginTop: 16,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 10,
   },
-  bottomOpenBtn: {
-    marginTop: 40,
-    paddingVertical: 14,
-    borderRadius: 14,
+  bottomActionBtn: {
+    flex: 1,
+    height: 44,
+    borderRadius: 12,
     borderWidth: 1,
+    justifyContent: 'center',
     alignItems: 'center',
   },
-  bottomOpenText: {
+  bottomBtnText: {
+    fontSize: 13,
     fontWeight: '600',
-    fontSize: 14,
   },
 });

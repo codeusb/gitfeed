@@ -31,7 +31,7 @@ export const ThemeProvider: React.FC<{
   }, [mode, systemScheme]);
 
   const tokens = useMemo(() => {
-    return getThemeTokens(isDark, palette);
+    return getThemeTokens(isDark, (palette as ColorPalette) || 'orange');
   }, [isDark, palette]);
 
   return (

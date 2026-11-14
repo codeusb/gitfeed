@@ -21,6 +21,14 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   onToggleStar,
 }) => {
   const { tokens } = useTheme();
+  const [imageError, setImageError] = React.useState(false);
+
+  const isValidCover =
+    article.coverImage &&
+    !imageError &&
+    !article.coverImage.endsWith('.svg') &&
+    !article.coverImage.includes('shields.io') &&
+    !article.coverImage.includes('/assets/icons/');
 
   const formatTime = (dateStr: string) => {
     try {
@@ -99,11 +107,12 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
           </Text>
         </View>
 
-        {article.coverImage && (
+        {isValidCover && (
           <Image
             source={{ uri: article.coverImage }}
             style={[styles.thumbnail, { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle }]}
             resizeMode="cover"
+            onError={() => setImageError(true)}
           />
         )}
       </View>
