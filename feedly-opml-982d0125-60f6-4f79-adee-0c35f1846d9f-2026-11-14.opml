@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>dai subscriptions in feedly Cloud</title>
+    </head>
+    <body>
+        <outline text="T-language" title="T-language">
+            <outline type="rss" text="Golang Weekly" title="Golang Weekly" xmlUrl="http://golangweekly.com/rss" htmlUrl="https://golangweekly.com/"/>
+            <outline type="rss" text="36氪" title="36氪" xmlUrl="http://www.36kr.com/feed" htmlUrl="http://36kr.com"/>
+            <outline type="rss" text="GitHub Weekly Trending Repositories" title="GitHub Weekly Trending Repositories" xmlUrl="https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml" htmlUrl="https://mshibanami.github.io/GitHubTrendingRSS"/>
+            <outline type="rss" text="Postgres Weekly" title="Postgres Weekly" xmlUrl="http://postgresweekly.com/rss/1g42j1di" htmlUrl="https://postgresweekly.com/"/>
+        </outline>
+        <outline text="Tech" title="Tech">
+            <outline type="rss" text="Changelog" title="Changelog" xmlUrl="http://feeds.feedburner.com/thechangelog" htmlUrl="https://changelog.com/"/>
+            <outline type="rss" text="JavaScript Weekly" title="JavaScript Weekly" xmlUrl="http://javascriptweekly.com/rss" htmlUrl="https://javascriptweekly.com/"/>
+            <outline type="rss" text="橘鸦AI早报" title="橘鸦AI早报" xmlUrl="https://daily.juya.uk/rss.xml" htmlUrl="https://daily.juya.uk/"/>
+            <outline type="rss" text="Node Weekly" title="Node Weekly" xmlUrl="http://nodeweekly.com/rss/1j9a0ll9" htmlUrl="https://nodeweekly.com/"/>
+            <outline type="rss" text="Frontend Focus" title="Frontend Focus" xmlUrl="http://html5weekly.com/rss" htmlUrl="https://frontendfoc.us/"/>
+            <outline type="rss" text="React Status" title="React Status" xmlUrl="https://react.statuscode.com/rss" htmlUrl="https://react.statuscode.com/"/>
+            <outline type="rss" text="selfh.st" title="selfh.st" xmlUrl="https://selfh.st/rss/" htmlUrl="https://selfh.st"/>
+        </outline>
+    </body>
+</opml>
