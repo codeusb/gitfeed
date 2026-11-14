@@ -4,6 +4,11 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - main
+    paths:
+      - 'mobile/**'
+      - '.github/workflows/build-android.yml'
   workflow_dispatch:
     inputs:
       version_name:
