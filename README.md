@@ -9,7 +9,7 @@
 [![PWA Ready](https://img.shields.io/badge/PWA-Ready-success.svg)](web/)
 [![Zero Server Cost](https://img.shields.io/badge/Server%20Cost-%240%2Fmonth-brightgreen.svg)](#)
 
-[English](#-overview-en) | **简体中文**
+[English](README_EN.md) | **简体中文**
 
 </div>
 
@@ -34,20 +34,20 @@
 
 ```mermaid
 flowchart TD
-    subgraph GitHub 云端自动化 (定时触发)
-        Cron["GitHub Actions 定时触发\n(每天 09:00, 18:00 / 自定义)"] --> Fetcher["Python 抓取排重引擎\n(清洗 HTML / 提取封面 / 估算阅读时长)"]
-        FeedsConfig["feeds.json\n(你的订阅源配置)"] --> Fetcher
-        Fetcher --> GitCommit["自动 Commit 数据至 main 分支\n(data/index.json, data/articles/*.json)"]
+    subgraph GitHubCloud ["GitHub 云端自动化 (定时触发)"]
+        Cron["GitHub Actions 定时触发<br/>(每天 09:00, 18:00 / 自定义)"] --> Fetcher["Python 抓取排重引擎<br/>(清洗 HTML / 提取封面 / 估算阅读时长)"]
+        FeedsConfig["feeds.json<br/>(你的订阅源配置)"] --> Fetcher
+        Fetcher --> GitCommit["自动 Commit 数据至 main 分支<br/>(data/index.json, data/articles/*.json)"]
     end
 
-    subgraph 免费分发网络 (国内极速)
-        GitCommit --> CDN["Cloudflare Pages / GitHub Pages\n(全球边缘 CDN 零成本托管)"]
+    subgraph CDNNetwork ["免费分发网络 (国内极速)"]
+        GitCommit --> CDN["Cloudflare Pages / GitHub Pages<br/>(全球边缘 CDN 零成本托管)"]
     end
 
-    subgraph 终端体验 (PC + 手机)
-        CDN --> WebPWA["自研 Web & PWA 阅读器\n(现代化界面 / 离线缓存 IndexedDB)"]
-        WebPWA -- "阅读记录本地持久化" --> LocalDB["本地 IndexedDB"]
-        WebPWA -- "跨设备同步已读/星标" --> RemoteSync["GitHub Contents API\n(自动更新 data/state.json)"]
+    subgraph ClientEnd ["终端体验 (PC + 手机)"]
+        CDN --> WebPWA["自研 Web & PWA 阅读器<br/>(现代化界面 / 离线缓存 IndexedDB)"]
+        WebPWA -->|"阅读记录本地持久化"| LocalDB["本地 IndexedDB"]
+        WebPWA -->|"跨设备同步已读与星标"| RemoteSync["GitHub Contents API<br/>(自动更新 data/state.json)"]
     end
 ```
 
