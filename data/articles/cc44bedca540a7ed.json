@@ -1,0 +1,15 @@
+{
+  "id": "cc44bedca540a7ed",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] [分享创造] 一份多页 PDF 转成 PPT，我是怎么控制页数的",
+  "link": "https://www.v2ex.com/t/1257090#reply0",
+  "author": "weishao666",
+  "publishedAt": "2026-11-14T12:21:13Z",
+  "snippet": "长文档转出来最容易失控的是页数：一页塞两种版式，或者一张表被切成两页。 我的做法是转换前先按版式分页，一个版式一页，别混。转换后先看每页是不是完整，有没有半截内容跑到下一页；再检查页边距是否一致。 如果原文档本来就是整页扫描，转出来会偏“图片感”，这时候我更倾向按章节拆开，一页只放一个主题。页码和页眉页脚最好手动统一。 工具入口在这里： https://image2ppt.asia?utm_source=v2ex （图片、截图、单页 P...",
+  "coverImage": "https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%BE%E8%A1%A8%E5%88%86%E6%9E%90/109_%E6%B5%81%E7%A8%8B%E5%9B%BEPPT%E6%A8%A1%E6%9D%BF/%E5%8E%9F%E5%9B%BE.jpg",
+  "readTime": 1,
+  "content": "<p>长文档转出来最容易失控的是页数：一页塞两种版式，或者一张表被切成两页。</p>\n<p>我的做法是转换前先按版式分页，一个版式一页，别混。转换后先看每页是不是完整，有没有半截内容跑到下一页；再检查页边距是否一致。</p>\n<p>如果原文档本来就是整页扫描，转出来会偏“图片感”，这时候我更倾向按章节拆开，一页只放一个主题。页码和页眉页脚最好手动统一。</p>\n<p>工具入口在这里： <a href=\"https://image2ppt.asia?utm_source=v2ex\" rel=\"noopener noreferrer\" target=\"_blank\">https://image2ppt.asia?utm_source=v2ex</a>\n（图片、截图、单页 PDF 都能转成可编辑的 PPTX ，成品无水印。）</p>\n<p>一个例子（原图 → 可编辑成品）：</p>\n<p><img alt=\"流程图 PPT 模板 原图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%BE%E8%A1%A8%E5%88%86%E6%9E%90/109_%E6%B5%81%E7%A8%8B%E5%9B%BEPPT%E6%A8%A1%E6%9D%BF/%E5%8E%9F%E5%9B%BE.jpg\"/></p>\n<p><img alt=\"流程图 PPT 模板 成品\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%BE%E8%A1%A8%E5%88%86%E6%9E%90/109_%E6%B5%81%E7%A8%8B%E5%9B%BEPPT%E6%A8%A1%E6%9D%BF/%E6%88%90%E5%93%81%E9%A2%84%E8%A7%88.jpg\"/></p>\n<p>素材库里随手挑的几页，这类图都能这么转：</p>\n<p><img alt=\"128_项目管理计划模板_p10\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s057.jpg\"/>\n<img alt=\"127_项目管理计划模板_p09\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s059.jpg\"/></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "67d85205dd0fa3cf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [纯粹翻译 / LineCat] 我开发了一个 App 完美解决了在 iOS 和 macOS 上的翻译需求，支持 Safari 浏览器，完美代替沉浸式翻译",
+  "link": "https://www.v2ex.com/t/1257098#reply3",
+  "author": "Arispex",
+  "publishedAt": "2026-11-14T13:16:29Z",
+  "snippet": "功能介绍在官网，欢迎访问： https://lingcat.arispex.com 因为官网设计了功能演示，我觉得直接看官网比我在这里用文字 bb 更好一点（ doge 丢一张以前的图片，此处没有 Safari 浏览器扩展效果展示 目前正在 TestFlight ，欢迎测试： https://testflight.apple.com/join/q6jBzfhT Telegram 交流群： https://t.me/+IaIZz6Jx_P...",
+  "coverImage": "https://cdn.nodeimage.com/i/SfMRLYuWRvC4MppFdXlx0rv8OstishiD.webp",
+  "readTime": 1,
+  "content": "<p>功能介绍在官网，欢迎访问： <a href=\"https://lingcat.arispex.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://lingcat.arispex.com</a></p>\n<p>因为官网设计了功能演示，我觉得直接看官网比我在这里用文字 bb 更好一点（ doge</p>\n<p>丢一张以前的图片，此处没有 Safari 浏览器扩展效果展示</p>\n<p><img alt=\"SfMRLYuWRvC4MppFdXlx0rv8OstishiD\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://cdn.nodeimage.com/i/SfMRLYuWRvC4MppFdXlx0rv8OstishiD.webp\"/></p>\n<p>目前正在 TestFlight ，欢迎测试： <a href=\"https://testflight.apple.com/join/q6jBzfhT\" rel=\"noopener noreferrer\" target=\"_blank\">https://testflight.apple.com/join/q6jBzfhT</a></p>\n<p>Telegram 交流群： <a href=\"https://t.me/+IaIZz6Jx_PJkNmQ1\" rel=\"noopener noreferrer\" target=\"_blank\">https://t.me/+IaIZz6Jx_PJkNmQ1</a></p>\n<p>纯粹翻译已更名为“LingCat”，并更换了开发者账号，之前加入 TestFlight 的用户需要重新加入，所以只能再发个帖子了</p>\n<p>为什么更换了开发者账号呢？</p>\n<p>之前那个开发者账号原本在国区注册的，后面因为一些原因更换到了美区，前两个星期 Apple 更新了 Apple Developer Program 开发者许可协议，然后我的账号因为换区问题导致没办法同意新的许可协议，不同意新的许可协议就没办法更新 app 。。。。。。导致我不得不换一个开发者账号来更新。已经联系 Apple 开发者支持半个月了还停留在提供截图视频环节，顺便吐槽一下 Apple 开发者支持的处理速度是真的慢</p>\n<p>对于之前的付费用户：</p>\n<p>如果 Apple 迟迟没有解决问题导致我不得不用另外一个开发者账号上架 app ，对于之前已经付费的用户会补发激活码</p>",
+  "attachments": []
+}

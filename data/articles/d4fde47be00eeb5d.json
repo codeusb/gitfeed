@@ -1,0 +1,15 @@
+{
+  "id": "d4fde47be00eeb5d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 我自己开发了一个远程控制软件 Airhand 欢迎 star~ 支持 120fps",
+  "link": "https://www.v2ex.com/t/1257076#reply11",
+  "author": "sqlpxc",
+  "publishedAt": "2026-11-14T10:16:37Z",
+  "snippet": "airhand 我是 airhand 的开发者，项目地址：https://github.com/sqlpxc/airhand，欢迎 Star ⭐ FAQ 为什么还要再做远程控制？为什么不用 RustDesk ？ 最开始的原因很简单：RustDesk 需要部署 hbbs 和 hbbr，开的端口太多了，我总觉得在服务端开很多端口不是什么好事…… 而且它不支持 AV1 硬件编码。（为什么一定要支持这个？自己使用过我的项目就能体会，效果非常不错...",
+  "coverImage": "https://i.imgur.com/1j4s67l.png",
+  "readTime": 1,
+  "content": "<h1>airhand</h1>\n<blockquote>\n<p>我是 airhand 的开发者，项目地址：<a href=\"https://github.com/sqlpxc/airhand\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/sqlpxc/airhand</a>，欢迎 Star ⭐</p>\n</blockquote>\n<h2>FAQ</h2>\n<h3>为什么还要再做远程控制？为什么不用 RustDesk ？</h3>\n<p>最开始的原因很简单：RustDesk 需要部署 <code>hbbs</code> 和 <code>hbbr</code>，开的端口太多了，我总觉得在服务端开很多端口不是什么好事……</p>\n<p>而且它不支持 <strong>AV1 硬件编码</strong>。（为什么一定要支持这个？自己使用过我的项目就能体会，效果非常不错。）</p>\n<h3>为什么之前一直没有编译二进制文件？</h3>\n<p>因为早期版本里，如果服务端不可信，是很危险的：服务器管理员甚至可以直接连接任何客户端。</p>\n<p>后来加了<strong>配对码</strong>功能，我才自己部署了服务端。</p>\n<p>对了，最终 windows 安装包只有不到 4M ，也就一个高清图片大小。。。</p>\n<h3>为什么用 QUIC 可靠流，而不是 UDP 或者数据报？</h3>\n<p>BBR 就不说了，为什么用可靠流传输画面呢？</p>\n<ol>\n<li>有现成的 <strong>TLS 1.3</strong> 可以用。</li>\n<li>编码用的是<strong>超长 GOP</strong>，关键帧只在控制端请求或分辨率变化时才编码，所以每一帧都依赖前一帧。一个包丢了没补上，这一帧就坏了，而且花屏会一直持续到\n下一个关键帧。</li>\n</ol>\n<p>关键帧是这里流量消耗最大的地方。重传丢的包至少要等一个 RTT ；即使换成不可靠传输，也躲不开这一个 RTT 的等待，只是多了一个\"先显示花屏\"的选项。</p>\n<p>远程桌面上满屏都是文字，<strong>花屏比晚一个 RTT 在使用体验上更加难受</strong>……</p>\n<h3>服务器会一直维护吗？</h3>\n<p>大概率不会。公共服务端只是给大家体验一下的，而且服务器配置一般，人多了还是会很卡，<strong>建议自己部署</strong>。</p>\n<h2>特性</h2>\n<ul>\n<li><strong>只需暴露 1 个 UDP 端口</strong>：服务端只有一个 UDP 端口需要对外开放。</li>\n<li><strong>中转也走 QUIC/UDP + BBR</strong>：据我所知，不少远控软件打洞失败后会退到 TCP 中转，比如 RustDesk 的中转就是 TCP 。TCP 上丢一个包，后面所有数据都得等它\n重传。</li>\n<li><strong>各通道互不阻塞</strong>：控制、画面、剪贴板各走一条流，声音和 Ping 走数据报，鼠标操作不会排在大帧后面。</li>\n<li><strong>延迟不堆积</strong>：中转把连接拆成两段，在两端之间又做了一层码率控制。发送端限制在途字节，网络慢时跳到最新一帧，不会越用越卡。</li>\n<li><strong>多平台兼容</strong>：甚至支持电视端。安卓包直接装到电视上就行，会自动检测是不是电视。</li>\n<li><strong>支持安卓控制安卓</strong></li>\n<li><strong>自动 UDP 打洞</strong>：如果两台设备能打洞成功，画面会按实测时延选更快的那条线路。显示「直连」时网络延迟极低，基本和串流效果差不多。</li>\n<li><strong>音频冗余设计</strong>：保证音频不断。</li>\n</ul>\n<p>给大家截几个图吧：\n<img alt=\"airhand 截图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/1j4s67l.png\"/>\n<img alt=\"airhand 截图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/fLmBSo0.png\"/></p>\n<h2>许可证</h2>\n<p><a href=\"https://github.com/sqlpxc/airhand\" rel=\"noopener noreferrer\" target=\"_blank\">MIT License</a></p>",
+  "attachments": []
+}

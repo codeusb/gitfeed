@@ -1,0 +1,15 @@
+{
+  "id": "780ede8000de7cbb",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 把影库揣兜里 在酒店体验在家的感觉",
+  "link": "https://www.v2ex.com/t/1257080#reply5",
+  "author": "Lamlam147",
+  "publishedAt": "2026-11-14T10:51:40Z",
+  "snippet": "在外出差旅游的时间太多了,现在 PCDN 太厉害了,连家里速度太慢了,还无法分享给酒店电视和投影.在外面想静下来优雅沉浸的看部片子都不行,不是在找资源就是在折腾酒店投屏的路上,手机看电影又太小了,毫无沉浸感,于是做了个这个小玩意. Walnuts 是一个运行在 Android 设备上的本地影视网关服务。它将加密的影视索引在手机/平板/车机本地挂载为一个高性能、只读的 WebDAV 服务器，供各类主流播放器（如 Infuse 、VidHu...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>在外出差旅游的时间太多了,现在 PCDN 太厉害了,连家里速度太慢了,还无法分享给酒店电视和投影.在外面想静下来优雅沉浸的看部片子都不行,不是在找资源就是在折腾酒店投屏的路上,手机看电影又太小了,毫无沉浸感,于是做了个这个小玩意.</p>\n<p>Walnuts 是一个运行在 Android 设备上的本地影视网关服务。它将加密的影视索引在手机/平板/车机本地挂载为一个高性能、只读的 WebDAV 服务器，供各类主流播放器（如 Infuse 、VidHub 、Nova Player 、Kodi 、Fileball 等）直接连接播放。</p>\n<p>初始状态你只需四步:1.登录网盘-2.点击索引-3.启动网关-4.复制 webdav 地址去你的任意播放器,即可拥有一个资源实时更新的类 emby 的影库</p>\n<p>只需一次配置,以后,你需要看电影的时候只需要点一次开启网关就行了,资源永远在哪里</p>\n<p>它:无需付费,无需担心资源失效,无需担心 cookie 泄露,更不用担心网盘被塞满垃圾文件</p>\n<p>软件不收费,加了激活码主要防止乱分享,如果激活码无法使用了,留下邮箱</p>\n<p>UNI-L-MDBC-JXAV-QVYL</p>\n<p>UNI-L-4VZM-B6BT-7NGL</p>\n<p>UNI-L-Y5QK-S6U7-AEYY</p>\n<p>UNI-L-7K78-C9YW-8WUV</p>\n<p>UNI-L-J2WK-WCWJ-LB9U</p>\n<p>UNI-L-QQGA-RKK7-ZVS3</p>\n<p>UNI-L-FJKV-X3XX-AW2H</p>\n<p>UNI-L-WNZN-UK5G-WEDX</p>\n<p>UNI-L-K74E-GNLF-6N2D</p>\n<p>UNI-L-4K3U-RF3U-ZZRX</p>\n<p>UNI-L-QB5S-8SCX-W3J3</p>\n<p>UNI-L-7MFT-TGUJ-9DZ7</p>\n<p>UNI-L-AK7B-65UQ-C4BP</p>\n<p>UNI-L-A3CX-LHHC-RXL5</p>\n<p>UNI-L-P8FQ-P93A-553V</p>\n<p>UNI-L-ZTAB-B7KQ-HQ2X</p>\n<p>UNI-L-SRU4-68N3-JS6Z</p>\n<p>UNI-L-N3NE-DP5X-HBR2</p>\n<p>UNI-L-2FAK-RC8Y-2EVH</p>\n<p>UNI-L-B63N-75UR-J2Q5</p>\n<p>UNI-L-838Z-2W7B-CQ7B</p>\n<p>UNI-L-98G5-AVAU-7XWY</p>\n<p>UNI-L-SQ37-8PVH-3D9Y</p>\n<p>UNI-L-99XZ-288G-VUVD</p>\n<p>UNI-L-DDZZ-S6RA-QR7U</p>\n<p>UNI-L-YD9A-F8XU-GP2D</p>\n<p>UNI-L-XQ9F-QRU5-TZHX</p>\n<p>UNI-L-GN7F-LPBW-SLDV</p>\n<p>UNI-L-W3UW-8EUL-4EBK</p>\n<p>UNI-L-8FH7-83Z3-XNNK</p>\n<p>下载地址:<a href=\"https://github.com/Tart7/walnuts/releases\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/Tart7/walnuts/releases</a></p>\n<p><a href=\"https://i.imgur.com/pUaPGoe.png\" rel=\"noopener noreferrer\" target=\"_blank\">https://i.imgur.com/pUaPGoe.png</a></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "f3b7fdceba25792a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 给 dsh 写了个工作区插件，文件、搜索、git 都在对话里",
+  "link": "https://www.v2ex.com/t/1257094#reply0",
+  "author": "echoVic",
+  "publishedAt": "2026-11-14T12:45:09Z",
+  "snippet": "用 dsh 客户端写东西的时候，最烦的是文件：想看哪个文件、改一行、或者刚改完想确认一下 diff ，就得切出去开编辑器，回来还得把会话找回来。 所以写了个插件 dsh-workspace-ide 。装上之后左边栏多一个「工作区」，点开是文件树，文件可以直接看、直接改，有行号和语法高亮，⌘S 保存。另外两个页面，一个是全文搜整个工作区，一个是 git：当前分支、未提交的改动、提交历史，diff 是彩色的。 编辑器该有的基本都有：⌘P 快...",
+  "coverImage": "https://raw.githubusercontent.com/echoVic/dsh-workspace-ide/main/docs/screenshot-files.png",
+  "readTime": 1,
+  "content": "<p>用 dsh 客户端写东西的时候，最烦的是文件：想看哪个文件、改一行、或者刚改完想确认一下 diff ，就得切出去开编辑器，回来还得把会话找回来。</p>\n<p>所以写了个插件 dsh-workspace-ide 。装上之后左边栏多一个「工作区」，点开是文件树，文件可以直接看、直接改，有行号和语法高亮，⌘S 保存。另外两个页面，一个是全文搜整个工作区，一个是 git：当前分支、未提交的改动、提交历史，diff 是彩色的。</p>\n<p>编辑器该有的基本都有：⌘P 快速打开文件、⌘F 查找替换（支持正则）、⌘G 跳行、多标签，每个标签记自己的草稿，关掉没保存的会问一句。Markdown 能切预览，图片和 SVG 直接看，括号匹配、自动配对、注释切换这些也都有。</p>\n<p>主题默认跟 dsh 走，也能选 Dark+ / Light+ / One Dark Pro / Dracula 那几套。语法高亮是自己写的一个小分词器，没引 Shiki 之类的东西，30 多种语言，300 KB 以上的文件退回纯文本。</p>\n<p>界面大概这样：</p>\n<p><img alt=\"文件树和编辑器\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/echoVic/dsh-workspace-ide/main/docs/screenshot-files.png\"/></p>\n<p><img alt=\"git 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/echoVic/dsh-workspace-ide/main/docs/screenshot-git.png\"/></p>\n<p>装的话一行，当前 v1.8.11：</p>\n<pre><code class=\"language-text\">plugin_manager({ action: \"install_bundle\", target: \"dsh-workspace-ide\" })\n</code></pre>\n<p>也能从 GitHub 装（ pin 版本也行，README 里写了）。发版走 GitHub Actions ，tag 和 package.json 对上了就用 npm 的 trusted publishing 发，带 provenance 。</p>\n<p>先说几个实在的：这是 dsh 的插件，没有 dsh 装不了；截图是我拿一个假的工作区（ aurora-dashboard ）造的，不是真实项目，生成脚本在仓库里； Windows 的路径处理做了，但没在真机上多跑几下；功能基本都是我自己每天用得上的，缺什么可以提。</p>\n<p>代码在 <a href=\"https://github.com/echoVic/dsh-workspace-ide\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/echoVic/dsh-workspace-ide</a> ，MIT 。</p>\n<p>用着别扭或者缺什么，回帖说，我改。</p>",
+  "attachments": []
+}

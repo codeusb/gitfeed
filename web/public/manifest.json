@@ -1,0 +1,19 @@
+{
+  "name": "GitFeed - Git-as-Backend RSS Reader",
+  "short_name": "GitFeed",
+  "description": "A serverless, elegant, git-backed RSS reader powered by GitHub Actions.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

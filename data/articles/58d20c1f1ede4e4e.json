@@ -1,0 +1,15 @@
+{
+  "id": "58d20c1f1ede4e4e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 陪女儿玩大富翁，顺手做了个带动画的随机数 App，今天在 Product Hunt 上 launch 了",
+  "link": "https://www.v2ex.com/t/1257089#reply1",
+  "author": "maowenbei",
+  "publishedAt": "2026-11-14T11:49:59Z",
+  "snippet": "之前陪女儿玩大富翁的时候，想做个比普通摇骰子更有意思的工具，于是有了 Lucky Step 。 其实就是一个随机数生成器，做了数字滚动、幸运转盘、翻牌三种动画，带音效和语音播报。数字范围可以自己设置，除了大富翁、飞行棋，也能用在聚会小游戏、比点数大小、随机选人这些场景。 目前支持 iPhone 和 iPad ，完全免费，不用注册，也可以离线使用。 这是我第一个独立开发并上架的 iOS App ，主要用 React Native 、Exp...",
+  "coverImage": "https://assets.muzhistudy.com/guide/lucky-step-iphone-rolling-zh-cn.webp",
+  "readTime": 1,
+  "content": "<p>之前陪女儿玩大富翁的时候，想做个比普通摇骰子更有意思的工具，于是有了 Lucky Step 。</p>\n<p>其实就是一个随机数生成器，做了数字滚动、幸运转盘、翻牌三种动画，带音效和语音播报。数字范围可以自己设置，除了大富翁、飞行棋，也能用在聚会小游戏、比点数大小、随机选人这些场景。</p>\n<p>目前支持 iPhone 和 iPad ，完全免费，不用注册，也可以离线使用。</p>\n<p>这是我第一个独立开发并上架的 iOS App ，主要用 React Native 、Expo 和 Codex 做的。</p>\n<p>今天第一次自己在 Product Hunt 发 Launch ，也想借这个机会给自己的 App 增加一点曝光和互动。</p>\n<p>Product Hunt：\n<a href=\"https://www.producthunt.com/products/lucky-step-randomizer\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.producthunt.com/products/lucky-step-randomizer</a></p>\n<p>感兴趣的 V 友可以去看看，欢迎评论、提建议，喜欢的话也欢迎支持一下 😄</p>\n<p>下面放两张实际界面图：</p>\n<img alt=\"Lucky Step iPhone 数字滚动界面\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://assets.muzhistudy.com/guide/lucky-step-iphone-rolling-zh-cn.webp\"/>\n<img alt=\"Lucky Step iPad 横屏界面\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://assets.muzhistudy.com/guide/lucky-step-ipad-landscape-en.webp\"/>",
+  "attachments": []
+}

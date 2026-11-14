@@ -1,0 +1,15 @@
+{
+  "id": "4532947dfcccfac5",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "llm 0.37.1",
+  "link": "https://simonwillison.net/2026/Nov/3/llm/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-03T21:41:42Z",
+  "snippet": "Release: llm 0.37.1 A bugfix release for LLM, with contributions from Steven Huang, Tao An, Arjan Mossel, and XQ. Tags: llm",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37.1\" rel=\"noopener noreferrer\" target=\"_blank\">llm 0.37.1</a></p>\n<p>A bugfix release for <a href=\"https://llm.datasette.io/\" rel=\"noopener noreferrer\" target=\"_blank\">LLM</a>, with contributions from <a href=\"https://github.com/remote-controlled-man\" rel=\"noopener noreferrer\" target=\"_blank\">Steven Huang</a>, <a href=\"https://github.com/tao-hpu\" rel=\"noopener noreferrer\" target=\"_blank\">Tao An</a>, <a href=\"https://github.com/ar-jan\" rel=\"noopener noreferrer\" target=\"_blank\">Arjan Mossel</a>, and <a href=\"https://github.com/XXXXXQ-0206\" rel=\"noopener noreferrer\" target=\"_blank\">XQ</a>.</p>\n<p>Tags: <a href=\"https://simonwillison.net/tags/llm\" rel=\"noopener noreferrer\" target=\"_blank\">llm</a></p>",
+  "attachments": []
+}

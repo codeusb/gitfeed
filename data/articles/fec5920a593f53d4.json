@@ -1,0 +1,15 @@
+{
+  "id": "fec5920a593f53d4",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] xxl-job 是放弃维护了吗？ PG 版本的兼容 PR 提了那么长时间都没人合并，还没有更好的组件选择？",
+  "link": "https://www.v2ex.com/t/1257091#reply4",
+  "author": "chenzw2",
+  "publishedAt": "2026-11-14T12:21:55Z",
+  "snippet": "xxl-job 不知道有没有人搞过迁移 PG 的？我看 GITHUB 上的 PG 版本的 PR 都是去年 9 月份就有的，但是一直没人维护合并，是不是不维护了？还有没有其它更好的组件选择？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>xxl-job 不知道有没有人搞过迁移 PG 的？我看 GITHUB 上的 PG 版本的 PR 都是去年 9 月份就有的，但是一直没人维护合并，是不是不维护了？还有没有其它更好的组件选择？</p>",
+  "attachments": []
+}

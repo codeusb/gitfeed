@@ -1,0 +1,15 @@
+{
+  "id": "3a599c5bde11830c",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "llm 0.37.2",
+  "link": "https://simonwillison.net/2026/Nov/11/llm/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-11T17:19:52Z",
+  "snippet": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w. LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endp...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.37.2\" rel=\"noopener noreferrer\" target=\"_blank\">llm 0.37.2</a></p>\n<p>Fixes a security issue reported by <a href=\"https://github.com/BluePlexus\" rel=\"noopener noreferrer\" target=\"_blank\">Daniel de Araujo</a> in <a href=\"https://github.com/simonw/llm/security/advisories/GHSA-v9h7-jj4g-f862\" rel=\"noopener noreferrer\" target=\"_blank\">GHSA-v9h7-jj4g-f862</a> and <a href=\"https://github.com/simonw/llm/security/advisories/GHSA-r639-rr7r-x72w\" rel=\"noopener noreferrer\" target=\"_blank\">GHSA-r639-rr7r-x72w</a>.</p>\n<p>LLM has a mechanism called <a href=\"https://llm.datasette.io/en/stable/other-models.html#configure-an-openai-compatible-model\" rel=\"noopener noreferrer\" target=\"_blank\">extra-openai-models.yaml</a> - now managed by the new-in-0.37 <a href=\"https://llm.datasette.io/en/stable/other-models.html#openai-endpoint-add\" rel=\"noopener noreferrer\" target=\"_blank\">llm openai endpoint add</a> command - for using LLM with OpenAI-compatible API endpoints from other providers.</p>\n<p>Daniel reported two ways this could accidentally send your configured OpenAI API key to one of those providers: if the key named by <code>api_key_name</code> had never been stored, or if a <code>responses: true</code> model was run with <code>-o chat_completions 1</code>.</p>\n<p>Tags: <a href=\"https://simonwillison.net/tags/projects\" rel=\"noopener noreferrer\" target=\"_blank\">projects</a>, <a href=\"https://simonwillison.net/tags/security\" rel=\"noopener noreferrer\" target=\"_blank\">security</a>, <a href=\"https://simonwillison.net/tags/llm\" rel=\"noopener noreferrer\" target=\"_blank\">llm</a>, <a href=\"https://simonwillison.net/tags/releases\" rel=\"noopener noreferrer\" target=\"_blank\">releases</a></p>",
+  "attachments": []
+}

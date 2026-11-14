@@ -1,0 +1,15 @@
+{
+  "id": "e1208176322bf6da",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] html 网页，可视化编辑现在用什么工具？",
+  "link": "https://www.v2ex.com/t/1257057#reply7",
+  "author": "qazwsxkevin",
+  "publishedAt": "2026-11-14T08:20:05Z",
+  "snippet": "AI 回答是 vscode+Live Preview 扩展，但这个是代码修改，实时看到效果而已； 实际上要的是，能在编辑器里，对某个元素如 div 框，拉宽，拉高、又或者把某个元素从一个地方移动到另外一个地方，调整表格间距等等；这些行为全靠 Agent+tokens 去做，时间和效率都不高。。。 上古时代曾经有个软件叫 dreamweaver ，我是想着这时候都 HTML5 了，应该用什么了？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "AI 回答是 vscode+Live Preview 扩展，但这个是代码修改，实时看到效果而已；   <br/>实际上要的是，能在编辑器里，对某个元素如 div 框，拉宽，拉高、又或者把某个元素从一个地方移动到另外一个地方，调整表格间距等等；这些行为全靠 Agent+tokens 去做，时间和效率都不高。。。   <br/> <br/>上古时代曾经有个软件叫 dreamweaver ，我是想着这时候都 HTML5 了，应该用什么了？",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "5a22d61f550f271d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[OpenAI] ChatGPT 开始让 agent 帮你刷卡付钱了",
+  "link": "https://www.v2ex.com/t/1257048#reply8",
+  "author": "chunyucaitom",
+  "publishedAt": "2026-11-14T07:32:48Z",
+  "snippet": "看到 OpenAI 11 月 13 日发了 ChatGPT Wallet ，跟美国运通、Mastercard 、Visa 合作，让 dots 这个 agent 在你批准后帮你付钱。官方说卡只绑一次，每笔下单前会给你看商品、总价和用哪张卡，再刷脸或指纹确认。商家和 agent 拿到的是支付网络发的 token ，见不到真实卡号，卡本身的积分和争议保护也还在。文里还提了一句，以后可能让你设个额度、品类和时间段提前授权，agent 就能自己买...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "看到 OpenAI 11 月 13 日发了 ChatGPT Wallet ，跟美国运通、Mastercard 、Visa 合作，让 dots 这个 agent 在你批准后帮你付钱。<br/><br/>官方说卡只绑一次，每笔下单前会给你看商品、总价和用哪张卡，再刷脸或指纹确认。商家和 agent 拿到的是支付网络发的 token ，见不到真实卡号，卡本身的积分和争议保护也还在。<br/><br/>文里还提了一句，以后可能让你设个额度、品类和时间段提前授权，agent 就能自己买了。现在只开放给美国的 Pro 用户，国内基本碰不到。<br/><br/>9 月那会儿 ChatGPT 里也有个叫 Wallet 的，那是礼品卡余额，这次是同名的新东西。<br/><br/>这篇把付款流程和谁能用讲得比较清楚<br/><a href=\"https://lotook.com/articles/chatgpt-wallet/\" rel=\"noopener noreferrer\" target=\"_blank\">https://lotook.com/articles/chatgpt-wallet/</a><br/><br/>真能设额度预授权的话，你们敢让 agent 自己下单吗？",
+  "attachments": []
+}

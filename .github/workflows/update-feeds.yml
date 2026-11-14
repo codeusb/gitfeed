@@ -1,0 +1,84 @@
+name: Update Feeds & Deploy
+
+on:
+  schedule:
+    # 每天北京时间 09:00 与 18:00 (UTC 01:00 与 10:00) 定时拉取
+    - cron: '0 1,10 * * *'
+  workflow_dispatch: # 支持 GitHub 网页上一键手动拉取
+  push:
+    branches:
+      - main
+    paths:
+      - 'feeds.json'
+      - 'scripts/**'
+      - 'web/**'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'gitfeed-pipeline'
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Fetch and process RSS feeds
+        run: |
+          python scripts/fetch.py
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build Web & PWA App
+        run: |
+          cd web
+          npm ci
+          npm run build
+
+      - name: Commit and push updated feeds data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ feeds.json
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore(feeds): auto update RSS articles [skip ci]"
+            git push origin main
+          fi
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

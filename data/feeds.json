@@ -1,0 +1,133 @@
+{
+  "categories": [
+    {
+      "id": "tech-news",
+      "name": "科技热点",
+      "nameEn": "Tech News",
+      "icon": "newspaper"
+    },
+    {
+      "id": "frontend",
+      "name": "前端与工程",
+      "nameEn": "Frontend & Web",
+      "icon": "code"
+    },
+    {
+      "id": "ai-ml",
+      "name": "AI 前沿",
+      "nameEn": "AI & Machine Learning",
+      "icon": "bot"
+    },
+    {
+      "id": "weekly",
+      "name": "优质周刊",
+      "nameEn": "Weekly Digests",
+      "icon": "book-open"
+    },
+    {
+      "id": "indie",
+      "name": "独立开发",
+      "nameEn": "Indie Hackers",
+      "icon": "rocket"
+    },
+    {
+      "id": "科技热点",
+      "name": "科技热点",
+      "nameEn": "科技热点",
+      "icon": "folder"
+    },
+    {
+      "id": "优质周刊",
+      "name": "优质周刊",
+      "nameEn": "优质周刊",
+      "icon": "folder"
+    },
+    {
+      "id": "前端与工程",
+      "name": "前端与工程",
+      "nameEn": "前端与工程",
+      "icon": "folder"
+    },
+    {
+      "id": "ai-前沿",
+      "name": "AI 前沿",
+      "nameEn": "AI 前沿",
+      "icon": "folder"
+    }
+  ],
+  "feeds": [
+    {
+      "id": "hacker-news-frontpage",
+      "title": "Hacker News: Front Page",
+      "url": "https://hnrss.org/frontpage",
+      "siteUrl": "https://news.ycombinator.com",
+      "category": "tech-news",
+      "description": "Hacker News front page top stories",
+      "enabled": true
+    },
+    {
+      "id": "github-blog",
+      "title": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "siteUrl": "https://github.blog",
+      "category": "tech-news",
+      "description": "Updates, ideas, and inspiration from GitHub",
+      "enabled": true
+    },
+    {
+      "id": "v2ex-hot",
+      "title": "V2EX - 最热主题",
+      "url": "https://www.v2ex.com/index.xml",
+      "siteUrl": "https://www.v2ex.com",
+      "category": "tech-news",
+      "description": "V2EX 每日精选最热讨论",
+      "enabled": true
+    },
+    {
+      "id": "阮一峰的网络日志",
+      "title": "阮一峰的网络日志",
+      "url": "http://www.ruanyifeng.com/blog/atom.xml",
+      "siteUrl": "http://www.ruanyifeng.com/blog/",
+      "category": "weekly",
+      "description": "科技爱好者周刊与技术随笔",
+      "enabled": true
+    },
+    {
+      "id": "web-dev",
+      "title": "web.dev Blog",
+      "url": "https://web.dev/feed.xml",
+      "siteUrl": "https://web.dev",
+      "category": "frontend",
+      "description": "Google Chrome team guidance for modern web development",
+      "enabled": true
+    },
+    {
+      "id": "smashing-magazine",
+      "title": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/feed/",
+      "siteUrl": "https://www.smashingmagazine.com",
+      "category": "frontend",
+      "description": "For Web Designers And Developers",
+      "enabled": true
+    },
+    {
+      "id": "mit-tech-review",
+      "title": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/",
+      "siteUrl": "https://www.technologyreview.com",
+      "category": "ai-ml",
+      "description": "In-depth reporting on emerging tech and AI",
+      "enabled": true
+    },
+    {
+      "id": "simon-willison",
+      "title": "Simon Willison's Weblog",
+      "url": "https://simonwillison.net/atom/everything/",
+      "siteUrl": "https://simonwillison.net",
+      "category": "ai-ml",
+      "description": "LLM experiments, open source, and web development",
+      "enabled": true
+    }
+  ],
+  "updatedAt": "2026-11-14T13:57:49.072992+00:00"
+}

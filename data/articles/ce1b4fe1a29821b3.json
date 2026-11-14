@@ -1,0 +1,15 @@
+{
+  "id": "ce1b4fe1a29821b3",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "Quoting Prompting Claude Fable 5.2",
+  "link": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-10T05:34:14Z",
+  "snippet": "Claude Fable 5.2 pays close attention to who owns the code it works on. In Anthropic’s testing on small coding tasks, the model tended to add to the existing structure when the prompt said nothing about ownership or pres...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<blockquote cite=\"https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code\"><p>Claude Fable 5.2 pays close attention to who owns the code it works on. In Anthropic’s testing on small coding tasks, the model tended to add to the existing structure when the prompt said nothing about ownership or presented the code base as someone else’s, even when that duplicated existing code. When the prompt said the code base was the model’s own, it often consolidated duplicated code and sometimes made related fixes without being asked.</p>\n<p>If you want the model to improve the structure as it works, say that the code is its own:</p>\n<blockquote>\n<p><code>You are the owner and long-term maintainer of this codebase, and its design is up to you.</code></p>\n</blockquote>\n<p>The ownership sentence makes the model much more likely to consolidate duplicated code into one shared function. In Anthropic’s testing on small coding tasks, the model consolidated duplicated code in under 10 percent of runs without the sentence and in about 75 percent of runs with it.</p></blockquote>\n<p class=\"cite\">— <a href=\"https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code\" rel=\"noopener noreferrer\" target=\"_blank\">Prompting Claude Fable 5.2</a>, Anthropic documentation</p>\n<p>Tags: <a href=\"https://simonwillison.net/tags/prompt-engineering\" rel=\"noopener noreferrer\" target=\"_blank\">prompt-engineering</a>, <a href=\"https://simonwillison.net/tags/anthropic\" rel=\"noopener noreferrer\" target=\"_blank\">anthropic</a>, <a href=\"https://simonwillison.net/tags/generative-ai\" rel=\"noopener noreferrer\" target=\"_blank\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/ai\" rel=\"noopener noreferrer\" target=\"_blank\">ai</a>, <a href=\"https://simonwillison.net/tags/llms\" rel=\"noopener noreferrer\" target=\"_blank\">llms</a>, <a href=\"https://simonwillison.net/tags/claude-mythos-fable\" rel=\"noopener noreferrer\" target=\"_blank\">claude-mythos-fable</a></p>",
+  "attachments": []
+}

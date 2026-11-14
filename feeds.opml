@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="2.0">
+  <head>
+    <title>GitFeed RSS Subscriptions</title>
+    <dateCreated>Sat, 14 Nov 2026 13:52:50 GMT</dateCreated>
+  </head>
+  <body>
+    <outline text="科技热点" title="科技热点">
+      <outline type="rss" text="Hacker News: Front Page" title="Hacker News: Front Page" xmlUrl="https://hnrss.org/frontpage" htmlUrl="https://news.ycombinator.com"/>
+      <outline type="rss" text="GitHub Blog" title="GitHub Blog" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog"/>
+      <outline type="rss" text="V2EX - 最热主题" title="V2EX - 最热主题" xmlUrl="https://www.v2ex.com/index.xml" htmlUrl="https://www.v2ex.com"/>
+    </outline>
+    <outline text="优质周刊" title="优质周刊">
+      <outline type="rss" text="阮一峰的网络日志" title="阮一峰的网络日志" xmlUrl="http://www.ruanyifeng.com/blog/atom.xml" htmlUrl="http://www.ruanyifeng.com/blog/"/>
+    </outline>
+    <outline text="前端与工程" title="前端与工程">
+      <outline type="rss" text="web.dev Blog" title="web.dev Blog" xmlUrl="https://web.dev/feed.xml" htmlUrl="https://web.dev"/>
+      <outline type="rss" text="Smashing Magazine" title="Smashing Magazine" xmlUrl="https://www.smashingmagazine.com/feed/" htmlUrl="https://www.smashingmagazine.com"/>
+    </outline>
+    <outline text="AI 前沿" title="AI 前沿">
+      <outline type="rss" text="MIT Technology Review" title="MIT Technology Review" xmlUrl="https://www.technologyreview.com/feed/" htmlUrl="https://www.technologyreview.com"/>
+      <outline type="rss" text="Simon Willison's Weblog" title="Simon Willison's Weblog" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net"/>
+    </outline>
+  </body>
+</opml>

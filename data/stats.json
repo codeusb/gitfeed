@@ -1,0 +1,81 @@
+{
+  "lastUpdated": "2026-11-14T13:57:49.073098+00:00",
+  "totalArticles": 137,
+  "newArticlesInThisRun": 0,
+  "prunedArticles": 0,
+  "activeFeeds": 8,
+  "feedStatuses": {
+    "hacker-news-frontpage": {
+      "title": "Hacker News: Front Page",
+      "category": "tech-news",
+      "url": "https://hnrss.org/frontpage",
+      "lastChecked": "2026-11-14T13:57:44.115674+00:00",
+      "status": "ok",
+      "articlesFetched": 20,
+      "error": null
+    },
+    "github-blog": {
+      "title": "GitHub Blog",
+      "category": "tech-news",
+      "url": "https://github.blog/feed/",
+      "lastChecked": "2026-11-14T13:57:44.693735+00:00",
+      "status": "ok",
+      "articlesFetched": 10,
+      "error": null
+    },
+    "v2ex-hot": {
+      "title": "V2EX - 最热主题",
+      "category": "tech-news",
+      "url": "https://www.v2ex.com/index.xml",
+      "lastChecked": "2026-11-14T13:57:45.253604+00:00",
+      "status": "ok",
+      "articlesFetched": 50,
+      "error": null
+    },
+    "阮一峰的网络日志": {
+      "title": "阮一峰的网络日志",
+      "category": "weekly",
+      "url": "http://www.ruanyifeng.com/blog/atom.xml",
+      "lastChecked": "2026-11-14T13:57:45.540324+00:00",
+      "status": "ok",
+      "articlesFetched": 3,
+      "error": null
+    },
+    "web-dev": {
+      "title": "web.dev Blog",
+      "category": "frontend",
+      "url": "https://web.dev/feed.xml",
+      "lastChecked": "2026-11-14T13:57:46.725033+00:00",
+      "status": "ok",
+      "articlesFetched": 10,
+      "error": null
+    },
+    "smashing-magazine": {
+      "title": "Smashing Magazine",
+      "category": "frontend",
+      "url": "https://www.smashingmagazine.com/feed/",
+      "lastChecked": "2026-11-14T13:57:48.076631+00:00",
+      "status": "ok",
+      "articlesFetched": 40,
+      "error": null
+    },
+    "mit-tech-review": {
+      "title": "MIT Technology Review",
+      "category": "ai-ml",
+      "url": "https://www.technologyreview.com/feed/",
+      "lastChecked": "2026-11-14T13:57:48.550677+00:00",
+      "status": "ok",
+      "articlesFetched": 10,
+      "error": null
+    },
+    "simon-willison": {
+      "title": "Simon Willison's Weblog",
+      "category": "ai-ml",
+      "url": "https://simonwillison.net/atom/everything/",
+      "lastChecked": "2026-11-14T13:57:49.071033+00:00",
+      "status": "ok",
+      "articlesFetched": 30,
+      "error": null
+    }
+  }
+}

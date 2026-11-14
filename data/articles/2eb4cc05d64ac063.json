@@ -1,0 +1,15 @@
+{
+  "id": "2eb4cc05d64ac063",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Ggml v1.0.0",
+  "link": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+  "author": "cobychapple",
+  "publishedAt": "2026-11-14T02:28:29Z",
+  "snippet": "Article URL: https://github.com/ggml-org/ggml/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50493062 Points: 317 # Comments: 50",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/ggml-org/ggml/releases/tag/v1.0.0\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/ggml-org/ggml/releases/tag/v1.0.0</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50493062\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50493062</a></p>\n<p>Points: 317</p>\n<p># Comments: 50</p>",
+  "attachments": []
+}

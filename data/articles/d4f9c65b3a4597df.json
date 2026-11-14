@@ -1,0 +1,15 @@
+{
+  "id": "d4f9c65b3a4597df",
+  "feedId": "web-dev",
+  "feedTitle": "web.dev: Blog",
+  "category": "frontend",
+  "title": "The Baseline Features audit is now available in Lighthouse",
+  "link": "https://web.dev/blog/baseline-lighthouse-features-audit?hl=en",
+  "author": "web.dev: Blog",
+  "publishedAt": "2026-07-27T07:00:00Z",
+  "snippet": "Learn which web features are used on a page—and their Baseline status—with the new Lighthouse Baseline features audit.",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "Learn which web features are used on a page—and their Baseline status—with the new Lighthouse Baseline features audit.",
+  "attachments": []
+}

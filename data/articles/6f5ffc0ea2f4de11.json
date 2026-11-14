@@ -1,0 +1,15 @@
+{
+  "id": "6f5ffc0ea2f4de11",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "datasette-apps 0.3a0",
+  "link": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-04T00:29:36Z",
+  "snippet": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent....",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.3a0\" rel=\"noopener noreferrer\" target=\"_blank\">datasette-apps 0.3a0</a></p>\n<p>Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette.</p>\n<p>These can be created by hand, but it's easier to create them using LLMs via <a href=\"https://agent.datasette.io/\" rel=\"noopener noreferrer\" target=\"_blank\">Datasette Agent</a>. This release improves that integration:</p>\n<blockquote>\n<ul>\n<li>Apps can now be tagged in Datasette Agent chat messages by typing <code>#</code>, which autocompletes from the apps the user has permission to view.</li>\n<li>New <code>app_add_stored_queries()</code> and <code>app_remove_stored_queries()</code> tools let the agent manage which stored queries an app is allowed to call. Granting a write query requires approval from the user first.</li>\n<li><code>app_create()</code> now checks that each requested stored query exists and that the user can view it, and asks the user to approve any write queries before the app is created.</li>\n<li>The \"View app\" buttons shown by the agent tools, and the links on <code>#</code> app references, now open the app full screen in the Datasette Agent panel.</li>\n</ul>\n</blockquote>\n<p>Tags: <a href=\"https://simonwillison.net/tags/datasette-agent\" rel=\"noopener noreferrer\" target=\"_blank\">datasette-agent</a>, <a href=\"https://simonwillison.net/tags/datasette-apps\" rel=\"noopener noreferrer\" target=\"_blank\">datasette-apps</a>, <a href=\"https://simonwillison.net/tags/datasette\" rel=\"noopener noreferrer\" target=\"_blank\">datasette</a></p>",
+  "attachments": []
+}

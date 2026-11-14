@@ -1,0 +1,15 @@
+{
+  "id": "d0b3a3523ee4809b",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 学习 Steam 和 NetFlix 优雅的揩油定价策略: 让地主老财和穷苦欠发达地区收取不同费用.",
+  "link": "https://www.v2ex.com/t/1257102#reply0",
+  "author": "unibrighter",
+  "publishedAt": "2026-11-14T13:50:13Z",
+  "snippet": "正如标题所见的, Steam 游戏有所谓低价区 Netflix 有所谓低价区. 2010 年前后,南美区的账号几乎是 steam 玩家标配. 阿根廷人在贴吧熙熙攘攘. 购买游戏省一大笔钱,让你轻松具备国际视野(收获南美同志的友谊) 2026 年,吃着咖喱的印度同事会安利 youtube/netflix 会员在印度的订阅价格, 他们自豪的告诉我一年可以省下 100 多澳币. “weihy node?” 所以 indie dev 不妨学习这...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>正如标题所见的,</p>\n<p>Steam 游戏有所谓低价区\nNetflix 有所谓低价区.</p>\n<hr/>\n<p>2010 年前后,南美区的账号几乎是 steam 玩家标配.</p>\n<p>阿根廷人在贴吧熙熙攘攘.</p>\n<p>购买游戏省一大笔钱,让你轻松具备国际视野(收获南美同志的友谊)</p>\n<hr/>\n<p>2026 年,吃着咖喱的印度同事会安利 youtube/netflix 会员在印度的订阅价格,\n他们自豪的告诉我一年可以省下 100 多澳币.\n“weihy node?”</p>\n<hr/>\n<p>所以 indie dev 不妨学习这些大公司的思路.\n对自己的产品,不管是 app 还是 iap 或者 saas.\n让地主老财和穷苦欠发达地区收取不同费用.</p>\n<hr/>\n<p>所以\n写了这个插件,\n后来觉得插件还是太烦,\n直接上 javascript 复制到书签就能用.\n<a href=\"https://bigmacindex.app/app-store-pricing-advisor/\" rel=\"noopener noreferrer\" target=\"_blank\">用 big mac index 给你的 ios app 和 iap item 定价</a></p>\n<p>ios 进行 appstore,直接就可以自动计算了.\n<img alt=\"全自动自动定价\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://bigmacindex.app/videos/big-mac-pricing-fill-10s.gif\"/></p>\n<hr/>\n<p>总而言之,用的经济学人的大麦克指数. (其实更好的是 ppp\n购买力算过来,其实国内人民币还是被刻意压低了.</p>\n<p>根据全球贫富差距和经济水平给你的产品合理定价.</p>\n<p>比如你可以给中东石油王爷们收取和美国一样高的费用. </p>\n<p>同时相对的,你也可以选择狠狠压榨瑞典的骑士贵族姥爷们\n(因为老爷们发部分已经习惯了什么都很贵,你的一天伙食费很可能只有他们的一杯咖啡.)</p>\n<p>大概就是这个思路吧.</p>\n<p>欢迎提意见和批评.</p>",
+  "attachments": []
+}

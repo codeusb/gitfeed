@@ -1,0 +1,16 @@
+{
+  "name": "gitfeed",
+  "version": "1.0.0",
+  "description": "Git-as-Backend serverless RSS reader powered by GitHub Actions, PWA and Cloudflare Pages.",
+  "scripts": {
+    "dev": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "fetch": "[ -f .venv/bin/python3 ] && .venv/bin/python3 scripts/fetch.py || python3 scripts/fetch.py",
+    "opml:export": "[ -f .venv/bin/python3 ] && .venv/bin/python3 scripts/opml_tool.py export feeds.opml || python3 scripts/opml_tool.py export feeds.opml",
+    "opml:import": "[ -f .venv/bin/python3 ] && .venv/bin/python3 scripts/opml_tool.py import || python3 scripts/opml_tool.py import",
+    "postinstall": "npm --prefix web install"
+  },
+  "keywords": ["rss", "git-as-a-backend", "rss-reader", "pwa", "serverless", "github-actions"],
+  "author": "",
+  "license": "MIT"
+}

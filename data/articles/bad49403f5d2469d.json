@@ -1,0 +1,15 @@
+{
+  "id": "bad49403f5d2469d",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+  "link": "https://isometricsf.com/",
+  "author": "juscha1",
+  "publishedAt": "2026-11-13T17:58:37Z",
+  "snippet": "Technical Write-up: https://www.justinchavez.com/blog/isometric-sf-how/Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Photorealistic 3D Tiles and transformed them into a cohes...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Technical Write-up: <a href=\"https://www.justinchavez.com/blog/isometric-sf-how/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.justinchavez.com/blog/isometric-sf-how/</a><p>Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Photorealistic 3D Tiles and transformed them into a cohesive pixel map. It's really fun to explore and stumble upon various famous landmarks like Apple Park, Palace of Fine Arts, or UC Berkeley.<p>The technicals involve using Nano Banana 2 to train a Qwen-Image-Edit 2511 LoRA which is used to prototype the style and generation methods. For final map I used Qwen to train a Klein 4B LoRA which reproduced the style at 1/4 of the cost. More details in the blog post.<p>Let me know what you think! I really enjoyed this process of fine-tuning smaller open source models.<p>If I did the map with Nano Banana 2 it would have cost around 7k USD!<p>Credit for the idea goes to Isometric NYC.</p>\n<hr/>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50487228\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50487228</a></p>\n<p>Points: 227</p>\n<p># Comments: 73</p></p></p></p></p></p>",
+  "attachments": []
+}
