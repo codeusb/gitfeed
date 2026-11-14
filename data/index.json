@@ -7,7 +7,7 @@
     "title": "sherlock-project/sherlock",
     "link": "https://github.com/sherlock-project/sherlock",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Hunt down social media accounts by username across social networkshttps://sherlockproject.xyz Hunt down social media accounts by username across 400+ social networks Installation • Usage • Contributing Installation Warni...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -20,7 +20,7 @@
     "title": "anthropics/skills",
     "link": "https://github.com/anthropics/skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Public repository for Agent Skills Note: This repository contains Anthropic's implementation of skills for Claude. For information about the Agent Skills standard, see agentskills.io. Skills Skills are folders of instruc...",
     "coverImage": "https://skills.sh/b/anthropics/skills",
     "readTime": 1
@@ -33,7 +33,7 @@
     "title": "milind-soni/OpenMausBot",
     "link": "https://github.com/milind-soni/OpenMausBot",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Open-source Grok Bot alternative with a virtual machine that bots can usehttps://www.mausbot.com/ OpenMausBot The open-source Grok Bot alternative: your own team of AI bots, in a chat app. openmausbot.com · Download · Op...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -46,7 +46,7 @@
     "title": "vercel-labs/agent-browser",
     "link": "https://github.com/vercel-labs/agent-browser",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Browser automation CLI for AI agentshttps://agent-browser.devagent-browser Browser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell. agent-browser is a native R...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -59,7 +59,7 @@
     "title": "google/elephant-goldfish-model",
     "link": "https://github.com/google/elephant-goldfish-model",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Open-source plugin for designing and reviewing software with agentshttps://egm.dev Design with an elephant. Review with a goldfish. Install · Quickstart · Documentation · Website Develop ideas with context and review doc...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -72,7 +72,7 @@
     "title": "ZhuLinsen/daily_stock_analysis",
     "link": "https://github.com/ZhuLinsen/daily_stock_analysis",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.ht...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -85,7 +85,7 @@
     "title": "NVIDIA/auto-ontology",
     "link": "https://github.com/NVIDIA/auto-ontology",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows....",
     "coverImage": "https://raw.githubusercontent.com/NVIDIA/auto-ontology/main/docs/assets/arch.png",
     "readTime": 1
@@ -98,7 +98,7 @@
     "title": "google-deepmind/mujoco",
     "link": "https://github.com/google-deepmind/mujoco",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Multi-Joint dynamics with Contact. A general purpose physics simulator.https://mujoco.org MuJoCo stands for Multi-Joint dynamics with Contact. It is a general purpose physics engine that aims to facilitate research and d...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -111,7 +111,7 @@
     "title": "mattpocock/skills",
     "link": "https://github.com/mattpocock/skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Skills for Real Engineers. Straight from my .agents directory.https://aihero.dev/skills Skills For Real Engineers My agent skills that I use every day to do real engineering - not vibe coding. Developing real application...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -124,7 +124,7 @@
     "title": "addyosmani/agent-skills",
     "link": "https://github.com/addyosmani/agent-skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Production-grade engineering skills for AI coding agents.https://skills.addy.ieAgent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that se...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -137,7 +137,7 @@
     "title": "cloudflare/security-audit-skill",
     "link": "https://github.com/cloudflare/security-audit-skill",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findingssecurity-audit A coding-agent skill that turns your agent into a security auditor. It orchestrates isolated agent...",
     "coverImage": null,
     "readTime": 1
@@ -150,7 +150,7 @@
     "title": "zed-industries/zed",
     "link": "https://github.com/zed-industries/zed",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.https://zed.devZed Welcome to Zed, a high-performance, multiplayer code editor from the creators...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -163,7 +163,7 @@
     "title": "anthropics/claude-quickstarts",
     "link": "https://github.com/anthropics/claude-quickstarts",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude APIClaude Quickstarts Claude Quickstarts is a collection of projects designed to help develo...",
     "coverImage": null,
     "readTime": 1
@@ -176,7 +176,7 @@
     "title": "vercel-labs/agent-desktop",
     "link": "https://github.com/vercel-labs/agent-desktop",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "Computer use CLI for AI agentshttps://agent-browser.dev/desktopagent-desktop Computer use for AI agents: see and operate desktop apps on macOS, Windows, and Linux through the OS accessibility tree. agent-desktop gives an...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -189,7 +189,7 @@
     "title": "lobehub/lobehub",
     "link": "https://github.com/lobehub/lobehub",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:21:05Z",
+    "publishedAt": "2026-11-14T14:25:41Z",
     "snippet": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.https://lobehub.com LobeHub Super-Agents on Your Team Add super-agents...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -205,6 +205,19 @@
     "publishedAt": "2026-11-14T14:10:09Z",
     "snippet": "一个人做了这个站： https://rapvideo-ai.io 用法：传一张照片（人、猫狗、卡通都行），写一句主题，比如「奶奶偷偷喂狗吃火腿」，它会写词、配伴奏和人声，再让照片里的角色对口型唱出来。5–15 秒，横屏竖屏都行，2–4 分钟出片。传两张照片可以做双人对唱。 左边是传的照片，右边是生成的片段。GIF 没有声音，带声音的原片可在网站主页查看。 最麻烦的是歌词节奏和口型对不上。现在是先按拍子把每一行切好，再交给视频模型（ Se...",
     "coverImage": "https://i.imgur.com/SZKQrNp.jpeg",
+    "readTime": 1
+  },
+  {
+    "id": "2aec90d445d860c8",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+    "link": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+    "author": "wondersky",
+    "publishedAt": "2026-11-14T14:09:25Z",
+    "snippet": "Article URL: https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/ Comments URL: https://news.ycombinator.com/item?id=50497155 Points: 6 # Comments: 0",
+    "coverImage": null,
     "readTime": 1
   },
   {
@@ -273,6 +286,19 @@
     "readTime": 1
   },
   {
+    "id": "4cfe8191acd75750",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Italy fines Meta $887M over Android users' data access",
+    "link": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+    "author": "giuliomagnifico",
+    "publishedAt": "2026-11-14T13:48:06Z",
+    "snippet": "Article URL: https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/ Comments URL: https://news.ycombinator.com/item?id=50497009 Points: 6 # Comments: 0",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
     "id": "b14f59350b880166",
     "feedId": "v2ex-hot",
     "feedTitle": "V2EX",
@@ -282,6 +308,32 @@
     "author": "kokpk",
     "publishedAt": "2026-11-14T13:46:26Z",
     "snippet": "各位大佬杭州移动用了 10 年的公网动态 IPV4 被回收，要不回来了。现在还有哪些宽带可以有动态公网 IPV4 和 IPV6 的？求性价比比高的套餐可纯宽带或者新入网融合套餐。求各位大佬推荐。",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "c70ad488976662a9",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "The Claude Delusion",
+    "link": "https://www.netmeister.org/blog/claude-delusion.html",
+    "author": "janvdberg",
+    "publishedAt": "2026-11-14T13:36:17Z",
+    "snippet": "Article URL: https://www.netmeister.org/blog/claude-delusion.html Comments URL: https://news.ycombinator.com/item?id=50496921 Points: 6 # Comments: 0",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "5ef95eeb599ff3bb",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Advancing science and engineering with Antigravity's /teamwork",
+    "link": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+    "author": "acossta",
+    "publishedAt": "2026-11-14T13:20:43Z",
+    "snippet": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 5 # Comments: 0",
     "coverImage": null,
     "readTime": 1
   },
@@ -333,7 +385,7 @@
     "link": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
     "author": "gslin",
     "publishedAt": "2026-11-14T12:45:45Z",
-    "snippet": "Article URL: https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again Comments URL: https://news.ycombinator.com/item?id=50496602 Points: 58 # Comments: 7",
+    "snippet": "Article URL: https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again Comments URL: https://news.ycombinator.com/item?id=50496602 Points: 74 # Comments: 11",
     "coverImage": null,
     "readTime": 1
   },
@@ -1152,7 +1204,7 @@
     "link": "https://monkeyisland.pages.dev/",
     "author": "maximilianburke",
     "publishedAt": "2026-11-14T04:23:30Z",
-    "snippet": "Article URL: https://monkeyisland.pages.dev/ Comments URL: https://news.ycombinator.com/item?id=50493904 Points: 265 # Comments: 83",
+    "snippet": "Article URL: https://monkeyisland.pages.dev/ Comments URL: https://news.ycombinator.com/item?id=50493904 Points: 272 # Comments: 83",
     "coverImage": null,
     "readTime": 1
   },
@@ -1178,7 +1230,7 @@
     "link": "https://36kr.com/newsflashes/4069079494775682?f=rss",
     "author": "36氪",
     "publishedAt": "2026-11-14T04:01:42Z",
-    "snippet": "先买后付平台Afterpay联合创始人尼克·莫尔纳宣布，他将于今年年底离开这家公司及其母公司Block。莫尔纳在2014年与安东尼·艾森一同创立了这家澳大利亚先买后付企业，他表示自己希望多陪伴家人。他于周六在领英上发布了这一消息。莫尔纳写道：“我会在年底结束工作，之后我唯一的安排就是多陪陪家人，说不定他们都要不习惯我总待在家里！”（新浪财经）",
+    "snippet": "先买后付平台Afterpay联合创始人尼克·莫尔纳宣布，他将于今年年底离开这家公司及其母公司Block。莫尔纳在2014年与安东尼·艾森一同创立了这家澳大利亚先买后付企业，他表示自己希望多陪伴家人。他于周六在领英上发布了这一消息。莫尔纳写道：“我会在年底结束工作，之后我唯一的安排就���多陪陪家人，说不定他们都要不习惯我总待在家里！”（新浪财经）",
     "coverImage": null,
     "readTime": 1
   },
@@ -1191,7 +1243,7 @@
     "link": "https://36kr.com/newsflashes/4069074198303622?f=rss",
     "author": "36氪",
     "publishedAt": "2026-11-14T03:56:19Z",
-    "snippet": "证监会主席吴清在参加2026中国资本市场学术年会时表示，进一步深化制度包容性适应性研究。资本市场作为市场化资源配置的重要平台，要进一步研究深化投融资综合改革，加快构建适应创新规律、产业规律的直接融资体系，统筹发挥私募市场与公开市场、股票市场与债券市场的协同功能，尤其是要在科学把握节奏的同时，加强对大型和新型科技���业发行上市的制度适配性和风险应对机制研究。同时，要全面准确理解新质生产力发展的科学内涵，深入研究支持新型消费、传统产业升级...",
+    "snippet": "证监会主席吴清在参加2026中国资本市场学术年会时表示，进一步深化制度包容性适应性研究。资本市场作为市场化资源配置的重要平台，要进一步研究深化投融资综合改革，加快构建适应创新规律、产业规律的直接融资体系，统筹发挥私募市场与公开市场、股票市场与债券市场的协同功能，尤其是要在科学把握节奏的同时，加强对大型和新型科技企业发行上市的制度适配性和风险应对机制研究。同时，要全面准确理解新质生产力发展的科学内涵，深入研究支持新型消费、传统产业升级等不...",
     "coverImage": null,
     "readTime": 1
   },
@@ -1204,7 +1256,7 @@
     "link": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
     "author": "speckx",
     "publishedAt": "2026-11-14T02:52:59Z",
-    "snippet": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 790 # Comments: 465",
+    "snippet": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 798 # Comments: 472",
     "coverImage": null,
     "readTime": 1
   },
@@ -1217,7 +1269,7 @@
     "link": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
     "author": "cobychapple",
     "publishedAt": "2026-11-14T02:28:29Z",
-    "snippet": "Article URL: https://github.com/ggml-org/ggml/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50493062 Points: 322 # Comments: 50",
+    "snippet": "Article URL: https://github.com/ggml-org/ggml/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50493062 Points: 330 # Comments: 51",
     "coverImage": null,
     "readTime": 1
   },
@@ -1282,7 +1334,7 @@
     "link": "https://unsloth.ai/docs/models/qwen3.8",
     "author": "Retro_Dev",
     "publishedAt": "2026-11-14T00:06:04Z",
-    "snippet": "Article URL: https://unsloth.ai/docs/models/qwen3.8 Comments URL: https://news.ycombinator.com/item?id=50491980 Points: 195 # Comments: 55",
+    "snippet": "Article URL: https://unsloth.ai/docs/models/qwen3.8 Comments URL: https://news.ycombinator.com/item?id=50491980 Points: 199 # Comments: 56",
     "coverImage": null,
     "readTime": 1
   },
@@ -1295,7 +1347,7 @@
     "link": "https://dfarq.homeip.net/what-happened-to-3com/",
     "author": "gvieri",
     "publishedAt": "2026-11-13T23:48:59Z",
-    "snippet": "Article URL: https://dfarq.homeip.net/what-happened-to-3com/ Comments URL: https://news.ycombinator.com/item?id=50491830 Points: 170 # Comments: 92",
+    "snippet": "Article URL: https://dfarq.homeip.net/what-happened-to-3com/ Comments URL: https://news.ycombinator.com/item?id=50491830 Points: 175 # Comments: 93",
     "coverImage": null,
     "readTime": 1
   },
@@ -1308,7 +1360,7 @@
     "link": "https://grounds.top/",
     "author": "gvsi",
     "publishedAt": "2026-11-13T23:17:39Z",
-    "snippet": "Article URL: https://grounds.top/ Comments URL: https://news.ycombinator.com/item?id=50491545 Points: 172 # Comments: 23",
+    "snippet": "Article URL: https://grounds.top/ Comments URL: https://news.ycombinator.com/item?id=50491545 Points: 174 # Comments: 23",
     "coverImage": null,
     "readTime": 1
   },
@@ -1321,7 +1373,7 @@
     "link": "https://www.joshka.net/cell-borders/",
     "author": "vinhnx",
     "publishedAt": "2026-11-13T23:06:40Z",
-    "snippet": "Article URL: https://www.joshka.net/cell-borders/ Comments URL: https://news.ycombinator.com/item?id=50491423 Points: 328 # Comments: 143",
+    "snippet": "Article URL: https://www.joshka.net/cell-borders/ Comments URL: https://news.ycombinator.com/item?id=50491423 Points: 332 # Comments: 145",
     "coverImage": null,
     "readTime": 1
   },
@@ -1334,7 +1386,7 @@
     "link": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
     "author": "vinhnx",
     "publishedAt": "2026-11-13T23:04:30Z",
-    "snippet": "Article URL: https://alichraghi.github.io/blog/how-not-to-build-a-music-player/ Comments URL: https://news.ycombinator.com/item?id=50491400 Points: 142 # Comments: 62",
+    "snippet": "Article URL: https://alichraghi.github.io/blog/how-not-to-build-a-music-player/ Comments URL: https://news.ycombinator.com/item?id=50491400 Points: 143 # Comments: 62",
     "coverImage": null,
     "readTime": 1
   },
@@ -1373,7 +1425,7 @@
     "link": "https://orcasairband.com/",
     "author": "mmaunder",
     "publishedAt": "2026-11-13T22:04:24Z",
-    "snippet": "Article URL: https://orcasairband.com/ Comments URL: https://news.ycombinator.com/item?id=50490593 Points: 279 # Comments: 65",
+    "snippet": "Article URL: https://orcasairband.com/ Comments URL: https://news.ycombinator.com/item?id=50490593 Points: 280 # Comments: 65",
     "coverImage": null,
     "readTime": 1
   },
@@ -1391,6 +1443,19 @@
     "readTime": 1
   },
   {
+    "id": "744c2f86ff3ed833",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth",
+    "link": "https://atg.science/careers",
+    "author": "dkobran",
+    "publishedAt": "2026-11-13T21:01:11Z",
+    "snippet": "Article URL: https://atg.science/careers Comments URL: https://news.ycombinator.com/item?id=50489589 Points: 0 # Comments: 0",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
     "id": "04391164a919b3c4",
     "feedId": "hacker-news-frontpage",
     "feedTitle": "Hacker News: Front Page",
@@ -1399,7 +1464,7 @@
     "link": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
     "author": "JohnDohnBohn",
     "publishedAt": "2026-11-13T19:58:42Z",
-    "snippet": "Article URL: https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/ Comments URL: https://news.ycombinator.com/item?id=50488835 Points: 124 # Comments: 32",
+    "snippet": "Article URL: https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/ Comments URL: https://news.ycombinator.com/item?id=50488835 Points: 125 # Comments: 33",
     "coverImage": null,
     "readTime": 1
   },
@@ -1412,7 +1477,7 @@
     "link": "https://www.nature.com/articles/d41586-026-03638-3",
     "author": "gumby",
     "publishedAt": "2026-11-13T19:25:21Z",
-    "snippet": "Article URL: https://www.nature.com/articles/d41586-026-03638-3 Comments URL: https://news.ycombinator.com/item?id=50488470 Points: 220 # Comments: 51",
+    "snippet": "Article URL: https://www.nature.com/articles/d41586-026-03638-3 Comments URL: https://news.ycombinator.com/item?id=50488470 Points: 222 # Comments: 52",
     "coverImage": null,
     "readTime": 1
   },
@@ -1425,7 +1490,7 @@
     "link": "https://www.perplexity.ai/hub/blog/perplexity-decider",
     "author": "gmays",
     "publishedAt": "2026-11-13T19:24:47Z",
-    "snippet": "Article URL: https://www.perplexity.ai/hub/blog/perplexity-decider Comments URL: https://news.ycombinator.com/item?id=50488464 Points: 140 # Comments: 25",
+    "snippet": "Article URL: https://www.perplexity.ai/hub/blog/perplexity-decider Comments URL: https://news.ycombinator.com/item?id=50488464 Points: 140 # Comments: 26",
     "coverImage": null,
     "readTime": 1
   },
@@ -1438,7 +1503,7 @@
     "link": "https://open.m-vave.com/fm1-workbench",
     "author": "simonebrunozzi",
     "publishedAt": "2026-11-13T19:14:02Z",
-    "snippet": "Article URL: https://open.m-vave.com/fm1-workbench Comments URL: https://news.ycombinator.com/item?id=50488325 Points: 248 # Comments: 161",
+    "snippet": "Article URL: https://open.m-vave.com/fm1-workbench Comments URL: https://news.ycombinator.com/item?id=50488325 Points: 250 # Comments: 161",
     "coverImage": null,
     "readTime": 1
   },
@@ -1607,7 +1672,7 @@
     "link": "https://36kr.com/p/4067598702384258?f=rss",
     "author": "36氪",
     "publishedAt": "2026-11-13T02:58:31Z",
-    "snippet": "10月28日，Alcantara在北京���大利文化处办了一场关于色彩、材质与表面工艺的沙龙。表面是材料展示，背后是一条清晰信号：汽车内饰的竞争，正从屏幕、芯片、算力，回撤到内饰设计的品质和触感。 过去几十年，Alcantara的标签是超跑。法拉利、兰博基尼、保时捷座舱里的翻毛触感，代表运动与稀缺。但中国市场正在改写这套语法。2026北京车展上，小米SU7 Ultra单车内饰覆盖约5平方米Alcantara，落在座椅、方向盘、仪表台中缝...",
+    "snippet": "10月28日，Alcantara在北京意大利文化处办了一场关于色彩、材质与表面工艺的沙龙。表面是材料展示，背后是一条清晰信号：汽车内饰的竞争，正从屏幕、芯片、算力，回撤到内饰设计的品质和触感。 过去几十年，Alcantara的标签是超跑。法拉利、兰博基尼、保时捷座舱里的翻毛触感，代表运动与稀缺。但中国市场正在改写这套语法。2026北京车展上，小米SU7 Ultra单车内饰覆盖约5平方米Alcantara，落在座椅、方向盘、仪表台中缝和门...",
     "coverImage": "https://img.36krcdn.com/hsossms/20261113/v2_00e7f62b7bcc449ea1be141c2ac50401@5809365_oswg3822593oswg3240oswg2160_img_jpg?x-oss-process=image/quality,q_80/format,jpg/interlace,1",
     "readTime": 1
   },
