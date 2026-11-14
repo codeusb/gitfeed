@@ -59,10 +59,12 @@ jobs:
       - name: Build Android Release APK
         run: |
           cd mobile/android
-          if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
-            curl -sSL -o gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.8.0/gradle/wrapper/gradle-wrapper.jar
-          fi
           chmod +x gradlew
+          # Ensure wrapper works or regenerate with system gradle
+          if ! ./gradlew --version >/dev/null 2>&1; then
+            echo "Regenerating Gradle wrapper using system gradle..."
+            gradle wrapper --gradle-version 8.8
+          fi
           ./gradlew assembleRelease --no-daemon
 
       - name: Prepare APK Artifact
