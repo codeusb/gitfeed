@@ -1,7 +1,5 @@
-const CACHE_NAME = 'gitfeed-cache-v1';
+const CACHE_NAME = 'gitfeed-cache-v2';
 const STATIC_ASSETS = [
-  './',
-  './index.html',
   './manifest.json',
   './icons/icon.svg'
 ];
@@ -30,12 +28,32 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Network-first for JSON data (so latest articles come first, but offline works)
-// Cache-first for static assets
+// Fetch strategy
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // If request is for JSON article data
+  // 1. Navigation requests (HTML documents): Network-First, fallback to cached document
+  if (
+    event.request.mode === 'navigate' ||
+    event.request.destination === 'document' ||
+    url.pathname.endsWith('/index.html') ||
+    url.pathname.endsWith('/')
+  ) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // 2. Dynamic JSON data (feed index, articles, state): Network-First
   if (url.pathname.includes('/data/') || url.pathname.endsWith('.json')) {
     event.respondWith(
       fetch(event.request)
@@ -55,7 +73,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Default: Cache First, fallback to Network
+  // 3. Static assets: Cache First, fallback to Network
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) {
