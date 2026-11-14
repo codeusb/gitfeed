@@ -7,7 +7,7 @@
     "title": "google/elephant-goldfish-model",
     "link": "https://github.com/google/elephant-goldfish-model",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "Open-source plugin for designing and reviewing software with agentshttps://egm.dev Design with an elephant. Review with a goldfish. Install · Quickstart · Documentation · Website Develop ideas with context and review doc...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -20,7 +20,7 @@
     "title": "ZhuLinsen/daily_stock_analysis",
     "link": "https://github.com/ZhuLinsen/daily_stock_analysis",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.ht...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -33,7 +33,7 @@
     "title": "NVIDIA/auto-ontology",
     "link": "https://github.com/NVIDIA/auto-ontology",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows....",
     "coverImage": "https://raw.githubusercontent.com/NVIDIA/auto-ontology/main/docs/assets/arch.png",
     "readTime": 1
@@ -46,7 +46,7 @@
     "title": "google-deepmind/mujoco",
     "link": "https://github.com/google-deepmind/mujoco",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "Multi-Joint dynamics with Contact. A general purpose physics simulator.https://mujoco.org MuJoCo stands for Multi-Joint dynamics with Contact. It is a general purpose physics engine that aims to facilitate research and d...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -59,7 +59,7 @@
     "title": "mattpocock/skills",
     "link": "https://github.com/mattpocock/skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "Skills for Real Engineers. Straight from my .agents directory.https://aihero.dev/skills Skills For Real Engineers My agent skills that I use every day to do real engineering - not vibe coding. Developing real application...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -72,7 +72,7 @@
     "title": "addyosmani/agent-skills",
     "link": "https://github.com/addyosmani/agent-skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "Production-grade engineering skills for AI coding agents.https://skills.addy.ieAgent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that se...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -85,7 +85,7 @@
     "title": "cloudflare/security-audit-skill",
     "link": "https://github.com/cloudflare/security-audit-skill",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findingssecurity-audit A coding-agent skill that turns your agent into a security auditor. It orchestrates isolated agent...",
     "coverImage": null,
     "readTime": 1
@@ -98,7 +98,7 @@
     "title": "zed-industries/zed",
     "link": "https://github.com/zed-industries/zed",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.https://zed.devZed Welcome to Zed, a high-performance, multiplayer code editor from the creators...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -111,7 +111,7 @@
     "title": "anthropics/claude-quickstarts",
     "link": "https://github.com/anthropics/claude-quickstarts",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude APIClaude Quickstarts Claude Quickstarts is a collection of projects designed to help develo...",
     "coverImage": null,
     "readTime": 1
@@ -124,7 +124,7 @@
     "title": "vercel-labs/agent-desktop",
     "link": "https://github.com/vercel-labs/agent-desktop",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "Computer use CLI for AI agentshttps://agent-browser.dev/desktopagent-desktop Computer use for AI agents: see and operate desktop apps on macOS, Windows, and Linux through the OS accessibility tree. agent-desktop gives an...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -137,8 +137,21 @@
     "title": "lobehub/lobehub",
     "link": "https://github.com/lobehub/lobehub",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:13Z",
+    "publishedAt": "2026-11-14T14:42:49Z",
     "snippet": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.https://lobehub.com LobeHub Super-Agents on Your Team Add super-agents...",
+    "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
+    "readTime": 1
+  },
+  {
+    "id": "eb48af0269073d52",
+    "feedId": "github-weekly-trending-repositories",
+    "feedTitle": "GitHub Weekly Trending Repositories",
+    "category": "t-language",
+    "title": "vercel-labs/agent-browser",
+    "link": "https://github.com/vercel-labs/agent-browser",
+    "author": "GitHub Weekly Trending Repositories",
+    "publishedAt": "2026-11-14T14:42:49Z",
+    "snippet": "Browser automation CLI for AI agentshttps://agent-browser.devagent-browser Browser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell. agent-browser is a native R...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
   },
@@ -150,7 +163,7 @@
     "title": "sherlock-project/sherlock",
     "link": "https://github.com/sherlock-project/sherlock",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:12Z",
+    "publishedAt": "2026-11-14T14:42:48Z",
     "snippet": "Hunt down social media accounts by username across social networkshttps://sherlockproject.xyz Hunt down social media accounts by username across 400+ social networks Installation • Usage • Contributing Installation Warni...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
@@ -163,7 +176,7 @@
     "title": "anthropics/skills",
     "link": "https://github.com/anthropics/skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:12Z",
+    "publishedAt": "2026-11-14T14:42:48Z",
     "snippet": "Public repository for Agent Skills Note: This repository contains Anthropic's implementation of skills for Claude. For information about the Agent Skills standard, see agentskills.io. Skills Skills are folders of instruc...",
     "coverImage": "https://skills.sh/b/anthropics/skills",
     "readTime": 1
@@ -176,21 +189,8 @@
     "title": "milind-soni/OpenMausBot",
     "link": "https://github.com/milind-soni/OpenMausBot",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:12Z",
+    "publishedAt": "2026-11-14T14:42:48Z",
     "snippet": "Open-source Grok Bot alternative with a virtual machine that bots can usehttps://www.mausbot.com/ OpenMausBot The open-source Grok Bot alternative: your own team of AI bots, in a chat app. openmausbot.com · Download · Op...",
-    "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
-    "readTime": 1
-  },
-  {
-    "id": "eb48af0269073d52",
-    "feedId": "github-weekly-trending-repositories",
-    "feedTitle": "GitHub Weekly Trending Repositories",
-    "category": "t-language",
-    "title": "vercel-labs/agent-browser",
-    "link": "https://github.com/vercel-labs/agent-browser",
-    "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-14T14:35:12Z",
-    "snippet": "Browser automation CLI for AI agentshttps://agent-browser.devagent-browser Browser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell. agent-browser is a native R...",
     "coverImage": "https://mshibanami.github.io/GitHubTrendingRSS/assets/icons/link.png",
     "readTime": 1
   },
@@ -216,7 +216,59 @@
     "link": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
     "author": "wondersky",
     "publishedAt": "2026-11-14T14:09:25Z",
-    "snippet": "Article URL: https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/ Comments URL: https://news.ycombinator.com/item?id=50497155 Points: 6 # Comments: 0",
+    "snippet": "Article URL: https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/ Comments URL: https://news.ycombinator.com/item?id=50497155 Points: 18 # Comments: 1",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "dac31bb8247e1181",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Show HN: Agweb – a browser for agents that stays out of your way",
+    "link": "https://github.com/paul-nameless/agweb",
+    "author": "paul_nameless",
+    "publishedAt": "2026-11-14T14:08:12Z",
+    "snippet": "Article URL: https://github.com/paul-nameless/agweb Comments URL: https://news.ycombinator.com/item?id=50497147 Points: 4 # Comments: 1",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "46d2045f52b3f22b",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Show HN: Lampka – a Windows PDF reader whose dark mode keeps figures in colour",
+    "link": "https://lampka.app/",
+    "author": "NightPageReader",
+    "publishedAt": "2026-11-14T14:06:56Z",
+    "snippet": "Article URL: https://lampka.app/ Comments URL: https://news.ycombinator.com/item?id=50497141 Points: 4 # Comments: 0",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "e7078dc16a443623",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)",
+    "link": "https://github.com/FURSOY/fursoy-cpu",
+    "author": "fursoy",
+    "publishedAt": "2026-11-14T14:06:34Z",
+    "snippet": "Article URL: https://github.com/FURSOY/fursoy-cpu Comments URL: https://news.ycombinator.com/item?id=50497137 Points: 3 # Comments: 0",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "a753e28af1aae471",
+    "feedId": "hacker-news-frontpage",
+    "feedTitle": "Hacker News: Front Page",
+    "category": "tech-news",
+    "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+    "link": "https://gitlab.com/snipedbywifi/terminactory",
+    "author": "snipedbywifi",
+    "publishedAt": "2026-11-14T14:05:54Z",
+    "snippet": "Hey HN readers!I'm snipedbywifi (https://gitlab.com/snipedbywifi), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish!The game ...",
     "coverImage": null,
     "readTime": 1
   },
@@ -226,7 +278,7 @@
     "feedTitle": "V2EX",
     "category": "tech-news",
     "title": "[问与答] 求助: 想在寝室搞一个小主机 有推荐么?",
-    "link": "https://www.v2ex.com/t/1257109#reply6",
+    "link": "https://www.v2ex.com/t/1257109#reply9",
     "author": "xukuangdi465",
     "publishedAt": "2026-11-14T14:03:54Z",
     "snippet": "目前只有一台 8845H 的笔记本 + iPad air(有点想把 pad 出掉... 记笔记屏幕滑的一 看书不如手机随时随地又小巧 拿着舒服) 预算 4000 左右 用途 挂 agent 跑任务(主要是翻译一些文档 搜集一些资料 完成一些重复小任务 小机器人监控一些任务 有时候有一些想法直接丢给 ai one-shot 先跑三四轮 然后后看一看结果是否收敛 如果有感觉就继续迭代 感觉完成的不好或者是后续投入优化的时间会花费的很大的话就...",
@@ -294,7 +346,7 @@
     "link": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
     "author": "giuliomagnifico",
     "publishedAt": "2026-11-14T13:48:06Z",
-    "snippet": "Article URL: https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/ Comments URL: https://news.ycombinator.com/item?id=50497009 Points: 6 # Comments: 0",
+    "snippet": "Article URL: https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/ Comments URL: https://news.ycombinator.com/item?id=50497009 Points: 17 # Comments: 2",
     "coverImage": null,
     "readTime": 1
   },
@@ -304,7 +356,7 @@
     "feedTitle": "V2EX",
     "category": "tech-news",
     "title": "[宽带症候群] 杭州动态公网家宽求推荐",
-    "link": "https://www.v2ex.com/t/1257101#reply1",
+    "link": "https://www.v2ex.com/t/1257101#reply2",
     "author": "kokpk",
     "publishedAt": "2026-11-14T13:46:26Z",
     "snippet": "各位大佬杭州移动用了 10 年的公网动态 IPV4 被回收，要不回来了。现在还有哪些宽带可以有动态公网 IPV4 和 IPV6 的？求性价比比高的套餐可纯宽带或者新入网融合套餐。求各位大佬推荐。",
@@ -320,7 +372,7 @@
     "link": "https://www.netmeister.org/blog/claude-delusion.html",
     "author": "janvdberg",
     "publishedAt": "2026-11-14T13:36:17Z",
-    "snippet": "Article URL: https://www.netmeister.org/blog/claude-delusion.html Comments URL: https://news.ycombinator.com/item?id=50496921 Points: 6 # Comments: 0",
+    "snippet": "Article URL: https://www.netmeister.org/blog/claude-delusion.html Comments URL: https://news.ycombinator.com/item?id=50496921 Points: 49 # Comments: 20",
     "coverImage": null,
     "readTime": 1
   },
@@ -333,7 +385,7 @@
     "link": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
     "author": "acossta",
     "publishedAt": "2026-11-14T13:20:43Z",
-    "snippet": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 5 # Comments: 0",
+    "snippet": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 10 # Comments: 0",
     "coverImage": null,
     "readTime": 1
   },
@@ -385,7 +437,7 @@
     "link": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
     "author": "gslin",
     "publishedAt": "2026-11-14T12:45:45Z",
-    "snippet": "Article URL: https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again Comments URL: https://news.ycombinator.com/item?id=50496602 Points: 74 # Comments: 11",
+    "snippet": "Article URL: https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again Comments URL: https://news.ycombinator.com/item?id=50496602 Points: 91 # Comments: 16",
     "coverImage": null,
     "readTime": 1
   },
@@ -1035,7 +1087,7 @@
     "link": "https://36kr.com/newsflashes/4069081708876932?f=rss",
     "author": "36氪",
     "publishedAt": "2026-11-14T07:08:50Z",
-    "snippet": "我国自主研制��10吨级电动商用飞机CE-25A在山东滨州完成首次有人驾驶智能飞行。当天，CE-25A飞机搭载2名飞行员、1名试飞工程师，飞机状态正常，各项指标符合预期。这是继CE-25A飞机今年2月2日无人驾驶智能首飞之后，该机研制再迈坚实一步。（新华社）",
+    "snippet": "我国自主研制的10吨级电动商用飞机CE-25A在山东滨州完成首次有人驾驶智能飞行。当天，CE-25A飞机搭载2名飞行员、1名试飞工程师，飞机状态正常，各项指标符合预期。这是继CE-25A飞机今年2月2日无人驾驶智能首飞之后，该机研制再迈坚实一步。（新华社）",
     "coverImage": null,
     "readTime": 1
   },
@@ -1204,7 +1256,7 @@
     "link": "https://monkeyisland.pages.dev/",
     "author": "maximilianburke",
     "publishedAt": "2026-11-14T04:23:30Z",
-    "snippet": "Article URL: https://monkeyisland.pages.dev/ Comments URL: https://news.ycombinator.com/item?id=50493904 Points: 272 # Comments: 83",
+    "snippet": "Article URL: https://monkeyisland.pages.dev/ Comments URL: https://news.ycombinator.com/item?id=50493904 Points: 279 # Comments: 83",
     "coverImage": null,
     "readTime": 1
   },
@@ -1256,7 +1308,7 @@
     "link": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
     "author": "speckx",
     "publishedAt": "2026-11-14T02:52:59Z",
-    "snippet": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 798 # Comments: 472",
+    "snippet": "Article URL: https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus Comments URL: https://news.ycombinator.com/item?id=50493251 Points: 810 # Comments: 480",
     "coverImage": null,
     "readTime": 1
   },
@@ -1269,7 +1321,7 @@
     "link": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
     "author": "cobychapple",
     "publishedAt": "2026-11-14T02:28:29Z",
-    "snippet": "Article URL: https://github.com/ggml-org/ggml/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50493062 Points: 330 # Comments: 51",
+    "snippet": "Article URL: https://github.com/ggml-org/ggml/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50493062 Points: 332 # Comments: 52",
     "coverImage": null,
     "readTime": 1
   },
@@ -1334,7 +1386,7 @@
     "link": "https://unsloth.ai/docs/models/qwen3.8",
     "author": "Retro_Dev",
     "publishedAt": "2026-11-14T00:06:04Z",
-    "snippet": "Article URL: https://unsloth.ai/docs/models/qwen3.8 Comments URL: https://news.ycombinator.com/item?id=50491980 Points: 199 # Comments: 56",
+    "snippet": "Article URL: https://unsloth.ai/docs/models/qwen3.8 Comments URL: https://news.ycombinator.com/item?id=50491980 Points: 201 # Comments: 58",
     "coverImage": null,
     "readTime": 1
   },
@@ -1347,7 +1399,7 @@
     "link": "https://dfarq.homeip.net/what-happened-to-3com/",
     "author": "gvieri",
     "publishedAt": "2026-11-13T23:48:59Z",
-    "snippet": "Article URL: https://dfarq.homeip.net/what-happened-to-3com/ Comments URL: https://news.ycombinator.com/item?id=50491830 Points: 175 # Comments: 93",
+    "snippet": "Article URL: https://dfarq.homeip.net/what-happened-to-3com/ Comments URL: https://news.ycombinator.com/item?id=50491830 Points: 176 # Comments: 93",
     "coverImage": null,
     "readTime": 1
   },
@@ -1360,7 +1412,7 @@
     "link": "https://grounds.top/",
     "author": "gvsi",
     "publishedAt": "2026-11-13T23:17:39Z",
-    "snippet": "Article URL: https://grounds.top/ Comments URL: https://news.ycombinator.com/item?id=50491545 Points: 174 # Comments: 23",
+    "snippet": "Article URL: https://grounds.top/ Comments URL: https://news.ycombinator.com/item?id=50491545 Points: 176 # Comments: 23",
     "coverImage": null,
     "readTime": 1
   },
@@ -1373,7 +1425,7 @@
     "link": "https://www.joshka.net/cell-borders/",
     "author": "vinhnx",
     "publishedAt": "2026-11-13T23:06:40Z",
-    "snippet": "Article URL: https://www.joshka.net/cell-borders/ Comments URL: https://news.ycombinator.com/item?id=50491423 Points: 332 # Comments: 145",
+    "snippet": "Article URL: https://www.joshka.net/cell-borders/ Comments URL: https://news.ycombinator.com/item?id=50491423 Points: 336 # Comments: 147",
     "coverImage": null,
     "readTime": 1
   },
@@ -1425,7 +1477,7 @@
     "link": "https://orcasairband.com/",
     "author": "mmaunder",
     "publishedAt": "2026-11-13T22:04:24Z",
-    "snippet": "Article URL: https://orcasairband.com/ Comments URL: https://news.ycombinator.com/item?id=50490593 Points: 280 # Comments: 65",
+    "snippet": "Article URL: https://orcasairband.com/ Comments URL: https://news.ycombinator.com/item?id=50490593 Points: 280 # Comments: 66",
     "coverImage": null,
     "readTime": 1
   },
