@@ -214,8 +214,8 @@ export default function App() {
             <RefreshControl
               refreshing={refreshing}
               onRefresh={() => loadAllData(settings)}
-              tintColor="#f97316"
-              colors={['#f97316']}
+              tintColor="#EB6E00"
+              colors={['#EB6E00']}
             />
           }
           ListEmptyComponent={
@@ -269,16 +269,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#090d16',
+    backgroundColor: '#1b1b1b',
   },
   header: {
-    height: 52,
+    height: 54,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#1e293b',
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
+    backgroundColor: '#1b1b1b',
   },
   scopeButton: {
     flexDirection: 'row',
@@ -288,12 +289,13 @@ const styles = StyleSheet.create({
     paddingRight: 12,
   },
   scopeTitle: {
-    color: '#f8fafc',
+    color: '#ffffff',
     fontSize: 18,
     fontWeight: 'bold',
+    letterSpacing: -0.3,
   },
   scopeArrow: {
-    color: '#f97316',
+    color: '#EB6E00',
     fontSize: 14,
     fontWeight: 'bold',
   },
@@ -304,49 +306,54 @@ const styles = StyleSheet.create({
   },
   headerIconBtn: {
     padding: 6,
+    borderRadius: 8,
   },
   headerIcon: {
     fontSize: 18,
-    color: '#94a3b8',
+    color: '#9e9e9e',
   },
   filterBar: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 14,
     paddingVertical: 10,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#1e293b',
-    backgroundColor: '#0c111d',
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
+    backgroundColor: '#1b1b1b',
     gap: 8,
   },
   searchInput: {
-    backgroundColor: '#161f31',
-    borderRadius: 8,
-    paddingHorizontal: 12,
-    paddingVertical: 7,
-    color: '#f8fafc',
+    backgroundColor: '#222222',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.08)',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    color: '#ffffff',
     fontSize: 13,
   },
   tabRow: {
     flexDirection: 'row',
-    backgroundColor: '#161f31',
-    borderRadius: 8,
+    backgroundColor: '#222222',
+    borderRadius: 12,
     padding: 3,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.06)',
   },
   tab: {
     flex: 1,
-    paddingVertical: 6,
+    paddingVertical: 7,
     alignItems: 'center',
-    borderRadius: 6,
+    borderRadius: 9,
   },
   tabActive: {
-    backgroundColor: '#f97316',
+    backgroundColor: '#EB6E00',
   },
   tabText: {
-    color: '#94a3b8',
+    color: '#9e9e9e',
     fontSize: 12,
     fontWeight: '600',
   },
   tabTextActive: {
-    color: '#fff',
+    color: '#ffffff',
     fontWeight: 'bold',
   },
   emptyContainer: {
@@ -355,12 +362,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
   },
   emptyTitle: {
-    color: '#64748b',
+    color: '#ffffff',
     fontSize: 16,
     fontWeight: 'bold',
   },
   emptyDesc: {
-    color: '#475569',
+    color: '#888888',
     fontSize: 12,
     marginTop: 6,
     textAlign: 'center',

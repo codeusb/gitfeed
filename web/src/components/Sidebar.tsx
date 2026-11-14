@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Rss,
   Inbox,
   Star,
   BookOpen,
@@ -70,21 +69,23 @@ export const Sidebar: React.FC<SidebarProps> = ({
   };
 
   return (
-    <aside className="w-full md:w-64 lg:w-72 h-full flex flex-col bg-slate-100/90 dark:bg-slate-900/90 border-r border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 select-none">
+    <aside className="w-full md:w-64 lg:w-72 h-full flex flex-col bg-white dark:bg-[#1b1b1b] border-r border-black/[0.08] dark:border-white/[0.1] text-black dark:text-[#f1f1f1] select-none transition-colors duration-175 ease-astryx">
       {/* Brand Header */}
-      <div className="p-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+      <div className="p-4 border-b border-black/[0.08] dark:border-white/[0.1] flex items-center justify-between">
         <div className="flex items-center space-x-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-orange-500 to-amber-500 flex items-center justify-center text-white shadow-sm">
-            <Rss className="w-5 h-5" />
-          </div>
+          <img
+            src="./favicon.png"
+            alt="GitFeed"
+            className="w-8 h-8 rounded-xl object-cover border border-black/10 dark:border-white/15 shadow-sm"
+          />
           <div>
-            <h1 className="font-bold text-base leading-tight tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
+            <h1 className="font-bold text-base leading-tight tracking-tight text-black dark:text-white flex items-center gap-1.5 font-sans">
               GitFeed
-              <span className="text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded bg-orange-500/10 text-orange-600 dark:text-orange-400">
-                PWA
+              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-full bg-[#EB6E00]/10 text-[#EB6E00] dark:bg-[#EB6E00]/20 dark:text-[#FF7A1A]">
+                Astryx
               </span>
             </h1>
-            <p className="text-[11px] text-slate-500 dark:text-slate-400">Git-as-Backend RSS</p>
+            <p className="text-[11px] text-[#474747] dark:text-[#9e9e9e]">Git-as-Backend RSS</p>
           </div>
         </div>
 
@@ -92,9 +93,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
           onClick={onRefresh}
           disabled={isRefreshing}
           title="Refresh feeds"
-          className="p-1.5 rounded-md hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
+          className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] hover:text-black dark:text-[#9e9e9e] dark:hover:text-white transition-all duration-175 ease-astryx"
         >
-          <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin text-orange-500' : ''}`} />
+          <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin text-[#EB6E00]' : ''}`} />
         </button>
       </div>
 
@@ -102,10 +103,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="px-3 pt-3 pb-2 space-y-1">
         <button
           onClick={() => handleSelect({ type: 'unread', title: '未读文章' })}
-          className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+          className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition-all duration-175 ease-astryx ${
             currentSelection.type === 'unread'
-              ? 'bg-orange-500 text-white shadow-sm shadow-orange-500/30'
-              : 'hover:bg-slate-200/60 dark:hover:bg-slate-800/60 text-slate-700 dark:text-slate-300'
+              ? 'bg-[#EB6E00] text-white shadow-sm shadow-[#EB6E00]/25'
+              : 'hover:bg-black/5 dark:hover:bg-white/[0.08] text-[#474747] dark:text-[#d4d4d4] hover:text-black dark:hover:text-white'
           }`}
         >
           <div className="flex items-center space-x-2.5">
@@ -114,10 +115,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </div>
           {unreadCount > 0 && (
             <span
-              className={`text-xs px-2 py-0.5 rounded-full font-bold ${
+              className={`text-xs px-2 py-0.5 rounded-full font-mono font-semibold ${
                 currentSelection.type === 'unread'
                   ? 'bg-white/20 text-white'
-                  : 'bg-orange-500/10 text-orange-600 dark:text-orange-400'
+                  : 'bg-black/5 dark:bg-white/10 text-black dark:text-white'
               }`}
             >
               {unreadCount}
@@ -127,10 +128,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         <button
           onClick={() => handleSelect({ type: 'all', title: '全部文章' })}
-          className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+          className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition-all duration-175 ease-astryx ${
             currentSelection.type === 'all'
-              ? 'bg-orange-500 text-white shadow-sm shadow-orange-500/30'
-              : 'hover:bg-slate-200/60 dark:hover:bg-slate-800/60 text-slate-700 dark:text-slate-300'
+              ? 'bg-[#EB6E00] text-white shadow-sm shadow-[#EB6E00]/25'
+              : 'hover:bg-black/5 dark:hover:bg-white/[0.08] text-[#474747] dark:text-[#d4d4d4] hover:text-black dark:hover:text-white'
           }`}
         >
           <div className="flex items-center space-x-2.5">
@@ -141,10 +142,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         <button
           onClick={() => handleSelect({ type: 'starred', title: '星标收藏' })}
-          className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+          className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-sm font-medium transition-all duration-175 ease-astryx ${
             currentSelection.type === 'starred'
-              ? 'bg-orange-500 text-white shadow-sm shadow-orange-500/30'
-              : 'hover:bg-slate-200/60 dark:hover:bg-slate-800/60 text-slate-700 dark:text-slate-300'
+              ? 'bg-[#EB6E00] text-white shadow-sm shadow-[#EB6E00]/25'
+              : 'hover:bg-black/5 dark:hover:bg-white/[0.08] text-[#474747] dark:text-[#d4d4d4] hover:text-black dark:hover:text-white'
           }`}
         >
           <div className="flex items-center space-x-2.5">
@@ -153,10 +154,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </div>
           {starredCount > 0 && (
             <span
-              className={`text-xs px-2 py-0.5 rounded-full font-semibold ${
+              className={`text-xs px-2 py-0.5 rounded-full font-mono font-semibold ${
                 currentSelection.type === 'starred'
                   ? 'bg-white/20 text-white'
-                  : 'bg-amber-500/10 text-amber-600 dark:text-amber-400'
+                  : 'bg-amber-500/15 text-amber-600 dark:text-amber-400'
               }`}
             >
               {starredCount}
@@ -168,12 +169,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Categories & Feeds Section */}
       <div className="flex-1 overflow-y-auto px-3 py-2 space-y-4">
         <div className="flex items-center justify-between px-1">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-[#919191] dark:text-[#6a6a6a]">
             订阅源列表
           </span>
           <button
             onClick={onOpenFeedManager}
-            className="text-[11px] text-orange-600 dark:text-orange-400 hover:underline font-medium"
+            className="text-[11px] text-[#EB6E00] hover:text-[#d66100] dark:text-[#FF7A1A] hover:underline font-medium transition-colors"
           >
             管理源
           </button>
@@ -193,14 +194,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
           return (
             <div key={category.id} className="space-y-0.5">
               <div
-                className={`group flex items-center justify-between px-2 py-1.5 rounded-md text-xs font-semibold cursor-pointer transition-colors ${
+                className={`group flex items-center justify-between px-2.5 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-all duration-175 ease-astryx ${
                   isCategorySelected
-                    ? 'bg-slate-200 dark:bg-slate-800 text-orange-600 dark:text-orange-400'
-                    : 'text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+                    ? 'bg-black/5 dark:bg-white/10 text-[#EB6E00] dark:text-[#FF7A1A]'
+                    : 'text-[#474747] dark:text-[#9e9e9e] hover:bg-black/[0.04] dark:hover:bg-white/[0.06] hover:text-black dark:hover:text-white'
                 }`}
               >
                 <div
-                  className="flex items-center space-x-1.5 flex-1 min-w-0"
+                  className="flex items-center space-x-2 flex-1 min-w-0"
                   onClick={() => handleSelect({ type: 'category', id: category.id, title: category.name })}
                 >
                   <Folder className="w-3.5 h-3.5 opacity-70 shrink-0" />
@@ -209,7 +210,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
                 <div className="flex items-center space-x-1 shrink-0">
                   {catUnread > 0 && (
-                    <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-slate-300/60 dark:bg-slate-800 font-bold">
+                    <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-black/5 dark:bg-white/10 font-mono font-bold text-[#474747] dark:text-[#d4d4d4]">
                       {catUnread}
                     </span>
                   )}
@@ -218,7 +219,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       e.stopPropagation();
                       toggleCategory(category.id);
                     }}
-                    className="p-0.5 hover:text-slate-900 dark:hover:text-white"
+                    className="p-1 hover:text-black dark:hover:text-white rounded-md"
                   >
                     {isCollapsed ? (
                       <ChevronRight className="w-3.5 h-3.5" />
@@ -231,7 +232,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
               {/* Sub Feeds */}
               {!isCollapsed && (
-                <div className="pl-3.5 space-y-0.5 border-l border-slate-200 dark:border-slate-800 ml-2 mt-1">
+                <div className="pl-3.5 space-y-0.5 border-l border-black/[0.08] dark:border-white/[0.1] ml-2.5 mt-1">
                   {catFeeds.map((feed) => {
                     const isFeedSelected =
                       currentSelection.type === 'feed' && currentSelection.id === feed.id;
@@ -241,15 +242,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <button
                         key={feed.id}
                         onClick={() => handleSelect({ type: 'feed', id: feed.id, title: feed.title })}
-                        className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-md text-xs transition-colors ${
+                        className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-xs transition-all duration-175 ease-astryx ${
                           isFeedSelected
-                            ? 'bg-orange-500/10 text-orange-600 dark:text-orange-400 font-medium'
-                            : 'text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+                            ? 'bg-[#EB6E00]/10 text-[#EB6E00] dark:bg-[#EB6E00]/20 dark:text-[#FF7A1A] font-semibold'
+                            : 'text-[#474747] dark:text-[#9e9e9e] hover:bg-black/[0.03] dark:hover:bg-white/[0.04] hover:text-black dark:hover:text-white'
                         }`}
                       >
                         <span className="truncate pr-1 text-left">{feed.title}</span>
                         {unread > 0 && (
-                          <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 font-semibold shrink-0">
+                          <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-[#EB6E00]/10 text-[#EB6E00] dark:text-[#FF7A1A] font-mono font-semibold shrink-0">
                             {unread}
                           </span>
                         )}
@@ -264,31 +265,31 @@ export const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* Bottom Controls */}
-      <div className="p-3 border-t border-slate-200 dark:border-slate-800 space-y-2">
+      <div className="p-3 border-t border-black/[0.08] dark:border-white/[0.1] space-y-2.5">
         <a
           href="https://github.com/codeusb/gitfeed/releases/latest"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center space-x-1.5 py-1.5 px-3 rounded-lg bg-orange-500/10 hover:bg-orange-500/20 text-orange-600 dark:text-orange-400 text-xs font-semibold transition-colors"
+          className="flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-black/5 hover:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 text-black dark:text-white text-xs font-semibold border border-black/[0.08] dark:border-white/[0.1] transition-all duration-175 ease-astryx shadow-xs"
           title="在 GitHub Releases 下载安卓客户端安装包"
         >
           <span>📲 下载 Android APK</span>
         </a>
 
-        <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+        <div className="flex items-center justify-between text-xs text-[#474747] dark:text-[#9e9e9e]">
           <button
             onClick={onMarkAllRead}
-            className="flex items-center space-x-1.5 px-2 py-1 rounded hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+            className="flex items-center space-x-1.5 px-2 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] hover:text-black dark:text-[#9e9e9e] dark:hover:text-white transition-all duration-175 ease-astryx"
             title="全部标为已读"
           >
-            <CheckCheck className="w-3.5 h-3.5 text-emerald-500" />
+            <CheckCheck className="w-3.5 h-3.5 text-[#0B991F]" />
             <span>全部已读</span>
           </button>
 
           <div className="flex items-center space-x-1">
             <button
               onClick={onToggleTheme}
-              className="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+              className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 hover:text-black dark:hover:text-white transition-all duration-175 ease-astryx"
               title="切换主题"
             >
               {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
@@ -296,7 +297,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
             <button
               onClick={onOpenHelp}
-              className="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+              className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 hover:text-black dark:hover:text-white transition-all duration-175 ease-astryx"
               title="快捷键说明"
             >
               <HelpCircle className="w-4 h-4" />
@@ -304,7 +305,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
             <button
               onClick={onOpenSettings}
-              className="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+              className="p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 hover:text-black dark:hover:text-white transition-all duration-175 ease-astryx"
               title="设置"
             >
               <Settings className="w-4 h-4" />
@@ -313,7 +314,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
 
         {stats?.lastUpdated && (
-          <div className="text-[10px] text-center text-slate-400 dark:text-slate-500 truncate">
+          <div className="text-[10px] text-center text-[#919191] dark:text-[#6a6a6a] font-mono truncate">
             更新于: {new Date(stats.lastUpdated).toLocaleDateString()} {new Date(stats.lastUpdated).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
           </div>
         )}

@@ -24,13 +24,13 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
       const pub = new Date(dateStr).getTime();
       const diffMin = Math.floor((Date.now() - pub) / 60000);
       if (diffMin < 1) return '刚刚';
-      if (diffMin < 60) return `${diffMin}分钟前`;
+      if (diffMin < 60) return `${diffMin}m前`;
       const diffHours = Math.floor(diffMin / 60);
-      if (diffHours < 24) return `${diffHours}小时前`;
+      if (diffHours < 24) return `${diffHours}h前`;
       const diffDays = Math.floor(diffHours / 24);
       if (diffDays === 1) return '昨天';
-      if (diffDays < 7) return `${diffDays}天前`;
-      return new Date(dateStr).toLocaleDateString();
+      if (diffDays < 7) return `${diffDays}d前`;
+      return new Date(dateStr).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
     } catch {
       return '';
     }
@@ -64,7 +64,9 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             style={{ marginLeft: 12 }}
             hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
           >
-            <Text style={styles.actionIcon}>{isRead ? '✓' : '○'}</Text>
+            <Text style={[styles.actionIcon, !isRead && styles.unreadAction]}>
+              {isRead ? '✓' : '○'}
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -94,21 +96,24 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#1e293b',
-    backgroundColor: '#090d16',
+    marginHorizontal: 12,
+    marginVertical: 4,
+    padding: 14,
+    borderRadius: 16,
+    backgroundColor: '#222222',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.08)',
   },
   containerRead: {
-    opacity: 0.65,
-    backgroundColor: 'transparent',
+    opacity: 0.72,
+    backgroundColor: '#1c1c1c',
+    borderColor: 'rgba(255, 255, 255, 0.04)',
   },
   topMeta: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 6,
+    marginBottom: 8,
   },
   leftMeta: {
     flexDirection: 'row',
@@ -117,26 +122,27 @@ const styles = StyleSheet.create({
     paddingRight: 10,
   },
   unreadDot: {
-    width: 7,
-    height: 7,
-    borderRadius: 4,
-    backgroundColor: '#f97316',
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: '#EB6E00',
     marginRight: 6,
   },
   feedTitle: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#cbd5e1',
+    color: '#ffffff',
     maxWidth: 160,
   },
   dotSeparator: {
-    color: '#64748b',
-    marginHorizontal: 5,
+    color: '#666666',
+    marginHorizontal: 6,
     fontSize: 10,
   },
   timeText: {
     fontSize: 11,
-    color: '#64748b',
+    color: '#9e9e9e',
+    fontVariant: ['tabular-nums'],
   },
   rightActions: {
     flexDirection: 'row',
@@ -144,7 +150,10 @@ const styles = StyleSheet.create({
   },
   actionIcon: {
     fontSize: 15,
-    color: '#64748b',
+    color: '#888888',
+  },
+  unreadAction: {
+    color: '#EB6E00',
   },
   starActive: {
     color: '#f59e0b',
@@ -160,23 +169,26 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#f8fafc',
+    color: '#ffffff',
     lineHeight: 21,
     marginBottom: 4,
+    letterSpacing: -0.2,
   },
   titleRead: {
-    color: '#94a3b8',
-    fontWeight: 'normal',
+    color: '#9e9e9e',
+    fontWeight: '400',
   },
   snippet: {
     fontSize: 12,
-    color: '#64748b',
+    color: '#888888',
     lineHeight: 18,
   },
   thumbnail: {
-    width: 60,
-    height: 60,
-    borderRadius: 8,
-    backgroundColor: '#1e293b',
+    width: 62,
+    height: 62,
+    borderRadius: 12,
+    backgroundColor: '#262626',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.08)',
   },
 });

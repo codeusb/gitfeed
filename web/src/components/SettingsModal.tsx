@@ -46,17 +46,17 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-150">
-      <div className="w-full max-w-lg bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col max-h-[90vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 dark:bg-black/80 backdrop-blur-md animate-in fade-in duration-150">
+      <div className="w-full max-w-lg bg-white dark:bg-[#222222] rounded-2xl shadow-2xl border border-black/[0.08] dark:border-white/[0.1] overflow-hidden flex flex-col max-h-[90vh]">
         {/* Header */}
-        <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Sliders className="w-5 h-5 text-orange-500" />
-            <h2 className="text-base font-bold text-slate-900 dark:text-white">系统与同步设置</h2>
+        <div className="px-6 py-4 border-b border-black/[0.08] dark:border-white/[0.1] flex items-center justify-between">
+          <div className="flex items-center space-x-2.5">
+            <Sliders className="w-5 h-5 text-[#EB6E00]" />
+            <h2 className="text-base font-bold text-black dark:text-white tracking-tight">系统与同步设置</h2>
           </div>
           <button
             onClick={onClose}
-            className="p-1 rounded-md text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+            className="p-1.5 rounded-xl text-[#919191] hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-all duration-175"
           >
             <X className="w-5 h-5" />
           </button>
@@ -65,38 +65,38 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         {/* Content */}
         <div className="p-6 overflow-y-auto space-y-6 flex-1 text-sm">
           {/* Section 1: Data Source */}
-          <div className="space-y-3">
-            <div className="flex items-center space-x-2 text-slate-900 dark:text-slate-100 font-semibold">
-              <Database className="w-4 h-4 text-orange-500" />
+          <div className="space-y-2.5">
+            <div className="flex items-center space-x-2 text-black dark:text-white font-semibold">
+              <Database className="w-4 h-4 text-[#EB6E00]" />
               <span>数据源加速地址 (CDN / Pages)</span>
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              国内网络环境下可将仓库连接到 Cloudflare Pages，并在此填入分配的域名（例如 <code className="bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">https://gitfeed.pages.dev/data</code>）。留空则使用默认相对路径 <code className="bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">./data</code>。
+            <p className="text-xs text-[#6a6a6a] dark:text-[#9e9e9e] leading-relaxed">
+              国内网络环境下可将仓库连接到 Cloudflare Pages，并在此填入分配的域名（例如 <code className="bg-black/5 dark:bg-white/10 px-1.5 py-0.5 rounded font-mono text-[11px]">https://gitfeed.pages.dev/data</code>）。留空则使用默认相对路径 <code className="bg-black/5 dark:bg-white/10 px-1.5 py-0.5 rounded font-mono text-[11px]">./data</code>。
             </p>
             <input
               type="text"
               placeholder="默认相对路径: ./data"
               value={formData.dataSourceUrl}
               onChange={(e) => setFormData({ ...formData, dataSourceUrl: e.target.value })}
-              className="w-full px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs focus:border-orange-500 focus:outline-none"
+              className="w-full px-3 py-2 rounded-xl bg-black/[0.03] dark:bg-white/[0.05] border border-black/[0.08] dark:border-white/[0.1] text-xs text-black dark:text-white focus:border-[#EB6E00] focus:ring-1 focus:ring-[#EB6E00]/40 focus:outline-none transition-all duration-175"
             />
           </div>
 
-          <div className="h-[1px] bg-slate-200 dark:bg-slate-800" />
+          <div className="h-[1px] bg-black/[0.08] dark:bg-white/[0.1]" />
 
           {/* Section 2: Git-as-Backend Sync */}
           <div className="space-y-3">
-            <div className="flex items-center space-x-2 text-slate-900 dark:text-slate-100 font-semibold">
-              <Key className="w-4 h-4 text-orange-500" />
+            <div className="flex items-center space-x-2 text-black dark:text-white font-semibold">
+              <Key className="w-4 h-4 text-[#EB6E00]" />
               <span>多设备已读同步 (Git-as-Backend)</span>
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              无需自建或购买数据库，通过 GitHub Fine-grained PAT 读写本仓库的 <code className="bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">data/state.json</code> 实现全平台无缝已读同步。
+            <p className="text-xs text-[#6a6a6a] dark:text-[#9e9e9e] leading-relaxed">
+              无需自建或购买数据库，通过 GitHub Fine-grained PAT 读写本仓库的 <code className="bg-black/5 dark:bg-white/10 px-1.5 py-0.5 rounded font-mono text-[11px]">data/state.json</code> 实现全平台无缝已读同步。
             </p>
 
-            <div className="space-y-2">
+            <div className="space-y-3">
               <div>
-                <label className="text-xs text-slate-600 dark:text-slate-400 block mb-1">
+                <label className="text-xs text-[#474747] dark:text-[#9e9e9e] block mb-1 font-medium">
                   GitHub 仓库 (格式: 用户名/仓库名)
                 </label>
                 <input
@@ -104,12 +104,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   placeholder="例如: yourname/gitfeed"
                   value={formData.githubRepo}
                   onChange={(e) => setFormData({ ...formData, githubRepo: e.target.value })}
-                  className="w-full px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs focus:border-orange-500 focus:outline-none"
+                  className="w-full px-3 py-2 rounded-xl bg-black/[0.03] dark:bg-white/[0.05] border border-black/[0.08] dark:border-white/[0.1] text-xs text-black dark:text-white focus:border-[#EB6E00] focus:ring-1 focus:ring-[#EB6E00]/40 focus:outline-none transition-all duration-175"
                 />
               </div>
 
               <div>
-                <label className="text-xs text-slate-600 dark:text-slate-400 block mb-1">
+                <label className="text-xs text-[#474747] dark:text-[#9e9e9e] block mb-1 font-medium">
                   GitHub Personal Access Token (仅需当前仓库 contents:write 权限)
                 </label>
                 <input
@@ -117,7 +117,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   placeholder="github_pat_..."
                   value={formData.githubToken}
                   onChange={(e) => setFormData({ ...formData, githubToken: e.target.value })}
-                  className="w-full px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs focus:border-orange-500 focus:outline-none font-mono"
+                  className="w-full px-3 py-2 rounded-xl bg-black/[0.03] dark:bg-white/[0.05] border border-black/[0.08] dark:border-white/[0.1] text-xs text-black dark:text-white focus:border-[#EB6E00] focus:ring-1 focus:ring-[#EB6E00]/40 focus:outline-none font-mono transition-all duration-175"
                 />
               </div>
 
@@ -126,15 +126,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   type="button"
                   onClick={handleManualSync}
                   disabled={syncStatus.loading || !formData.githubToken || !formData.githubRepo}
-                  className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 disabled:opacity-50 transition-colors"
+                  className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-semibold bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/15 text-black dark:text-white disabled:opacity-40 transition-all duration-175"
                 >
                   <RefreshCw className={`w-3.5 h-3.5 ${syncStatus.loading ? 'animate-spin' : ''}`} />
                   <span>立即同步远程已读状态</span>
                 </button>
 
                 {syncStatus.message && (
-                  <span className={`text-xs flex items-center gap-1 ${
-                    syncStatus.success ? 'text-emerald-500' : 'text-rose-500'
+                  <span className={`text-xs flex items-center gap-1 font-medium ${
+                    syncStatus.success ? 'text-[#0B991F]' : 'text-rose-500'
                   }`}>
                     {syncStatus.success ? <CheckCircle2 className="w-3.5 h-3.5" /> : <AlertCircle className="w-3.5 h-3.5" />}
                     {syncStatus.message}
@@ -144,35 +144,35 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
           </div>
 
-          <div className="h-[1px] bg-slate-200 dark:bg-slate-800" />
+          <div className="h-[1px] bg-black/[0.08] dark:bg-white/[0.1]" />
 
           {/* Section 3: Reader Preferences */}
           <div className="space-y-3">
-            <span className="text-slate-900 dark:text-slate-100 font-semibold block">阅读器偏好</span>
+            <span className="text-black dark:text-white font-semibold block">阅读器偏好</span>
 
             <div className="flex items-center justify-between">
-              <span className="text-xs text-slate-600 dark:text-slate-400">打开文章时自动标记已读</span>
+              <span className="text-xs text-[#474747] dark:text-[#9e9e9e]">打开文章时自动标记已读</span>
               <input
                 type="checkbox"
                 checked={formData.autoMarkReadOnOpen}
                 onChange={(e) => setFormData({ ...formData, autoMarkReadOnOpen: e.target.checked })}
-                className="w-4 h-4 text-orange-500 rounded focus:ring-orange-500 focus:ring-offset-0"
+                className="w-4 h-4 text-[#EB6E00] rounded-md focus:ring-[#EB6E00] focus:ring-offset-0"
               />
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="px-6 py-3 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 flex items-center justify-end space-x-3">
+        <div className="px-6 py-3.5 border-t border-black/[0.08] dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.02] flex items-center justify-end space-x-3">
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors"
+            className="px-4 py-2 rounded-xl text-xs font-semibold text-[#474747] dark:text-[#9e9e9e] hover:bg-black/5 dark:hover:bg-white/10 transition-all duration-175"
           >
             取消
           </button>
           <button
             onClick={handleSave}
-            className="inline-flex items-center space-x-1.5 px-4 py-2 rounded-lg text-xs font-semibold bg-orange-500 hover:bg-orange-600 text-white shadow-sm transition-colors"
+            className="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-[#EB6E00] hover:bg-[#d66100] text-white shadow-sm shadow-[#EB6E00]/25 transition-all duration-175 ease-astryx"
           >
             <Save className="w-3.5 h-3.5" />
             <span>保存设置</span>

@@ -74,7 +74,7 @@ jobs:
         run: |
           VERSION="${{ github.ref_name }}"
           if [[ "$VERSION" != v* ]]; then
-            VERSION="${{ github.event.inputs.version_name || 'v1.0.2' }}"
+            VERSION="${{ github.event.inputs.version_name || 'v1.0.4' }}"
           fi
           
           SOURCE_APK="mobile/android/app/build/outputs/apk/release/app-release.apk"

@@ -315,7 +315,7 @@ export const App: React.FC = () => {
   }, [articles, readIds]);
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-slate-50 dark:bg-slate-950 font-sans">
+    <div className="flex h-screen w-screen overflow-hidden bg-[#f1f1f1] dark:bg-[#1b1b1b] text-black dark:text-white font-sans selection:bg-[#EB6E00]/20 selection:text-[#EB6E00]">
       {/* 1. Desktop Sidebar */}
       <div className="hidden md:flex h-full shrink-0">
         <Sidebar
@@ -345,7 +345,7 @@ export const App: React.FC = () => {
       {mobileDrawerOpen && (
         <div className="fixed inset-0 z-40 md:hidden flex">
           <div
-            className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs"
+            className="fixed inset-0 bg-black/60 dark:bg-black/80 backdrop-blur-md"
             onClick={() => setMobileDrawerOpen(false)}
           />
           <div className="relative w-72 max-w-[80vw] h-full z-10 shadow-2xl animate-in slide-in-from-left duration-200">

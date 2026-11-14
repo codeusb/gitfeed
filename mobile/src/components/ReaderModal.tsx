@@ -131,11 +131,11 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
 
           {loading ? (
             <View style={styles.loadingContainer}>
-              <ActivityIndicator size="large" color="#f97316" />
+              <ActivityIndicator size="large" color="#EB6E00" />
               <Text style={styles.loadingText}>正在加载正文...</Text>
             </View>
           ) : (
-            <Text style={[styles.prose, { fontSize, lineHeight: fontSize * 1.65 }]}>
+            <Text style={[styles.prose, { fontSize, lineHeight: fontSize * 1.7 }]}>
               {cleanContent}
             </Text>
           )}
@@ -152,16 +152,17 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0a0f1d',
+    backgroundColor: '#1b1b1b',
   },
   navbar: {
-    height: 48,
+    height: 52,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 16,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#1e293b',
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
+    backgroundColor: '#1b1b1b',
   },
   navButton: {
     paddingVertical: 6,
@@ -169,7 +170,7 @@ const styles = StyleSheet.create({
   },
   navButtonText: {
     fontSize: 14,
-    color: '#94a3b8',
+    color: '#9e9e9e',
     fontWeight: '600',
   },
   rightActions: {
@@ -178,19 +179,21 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   toolBtn: {
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    borderRadius: 6,
-    backgroundColor: '#1e293b',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 10,
+    backgroundColor: '#262626',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.08)',
   },
   toolBtnText: {
     fontSize: 12,
     fontWeight: 'bold',
-    color: '#cbd5e1',
+    color: '#ffffff',
   },
   toolIcon: {
     fontSize: 16,
-    color: '#cbd5e1',
+    color: '#ffffff',
   },
   scroll: {
     flex: 1,
@@ -201,27 +204,28 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: 20,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#1e293b',
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.08)',
     paddingBottom: 16,
   },
   feedBadge: {
     alignSelf: 'flex-start',
-    backgroundColor: 'rgba(249, 115, 22, 0.15)',
-    color: '#fb923c',
+    backgroundColor: 'rgba(235, 110, 0, 0.15)',
+    color: '#FF7A1A',
     fontSize: 12,
     fontWeight: 'bold',
-    paddingHorizontal: 8,
+    paddingHorizontal: 9,
     paddingVertical: 3,
-    borderRadius: 6,
-    marginBottom: 8,
+    borderRadius: 8,
+    marginBottom: 10,
   },
   title: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#f8fafc',
+    color: '#ffffff',
     lineHeight: 30,
     marginBottom: 10,
+    letterSpacing: -0.3,
   },
   metaRow: {
     flexDirection: 'row',
@@ -229,15 +233,16 @@ const styles = StyleSheet.create({
   },
   author: {
     fontSize: 12,
-    color: '#94a3b8',
+    color: '#ffffff',
+    fontWeight: '500',
   },
   metaSeparator: {
-    color: '#475569',
+    color: '#666666',
     marginHorizontal: 6,
   },
   metaText: {
     fontSize: 12,
-    color: '#64748b',
+    color: '#9e9e9e',
   },
   loadingContainer: {
     paddingVertical: 60,
@@ -246,21 +251,23 @@ const styles = StyleSheet.create({
   loadingText: {
     marginTop: 12,
     fontSize: 13,
-    color: '#64748b',
+    color: '#9e9e9e',
   },
   prose: {
-    color: '#e2e8f0',
-    letterSpacing: 0.3,
+    color: '#d4d4d4',
+    letterSpacing: 0.2,
   },
   bottomOpenBtn: {
     marginTop: 40,
     paddingVertical: 14,
-    borderRadius: 12,
-    backgroundColor: '#1e293b',
+    borderRadius: 14,
+    backgroundColor: '#262626',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.08)',
     alignItems: 'center',
   },
   bottomOpenText: {
-    color: '#f97316',
+    color: '#EB6E00',
     fontWeight: '600',
     fontSize: 14,
   },

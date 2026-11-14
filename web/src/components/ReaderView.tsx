@@ -7,7 +7,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Share2,
-  Type,
   ArrowLeft,
   BookOpen,
   Volume2
@@ -98,15 +97,15 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
 
   if (!articleSummary) {
     return (
-      <div className="flex-1 hidden md:flex flex-col items-center justify-center p-8 text-center bg-slate-50 dark:bg-slate-950 text-slate-400">
-        <div className="w-16 h-16 rounded-full bg-slate-200 dark:bg-slate-900 flex items-center justify-center mb-4 text-slate-400">
-          <BookOpen className="w-8 h-8" />
+      <div className="flex-1 hidden md:flex flex-col items-center justify-center p-8 text-center bg-[#f1f1f1] dark:bg-[#1b1b1b] text-[#919191] dark:text-[#6a6a6a]">
+        <div className="w-16 h-16 rounded-2xl bg-white dark:bg-[#222222] border border-black/[0.08] dark:border-white/[0.1] shadow-xs flex items-center justify-center mb-4 text-[#919191] dark:text-[#6a6a6a]">
+          <BookOpen className="w-7 h-7" />
         </div>
-        <h3 className="text-base font-semibold text-slate-700 dark:text-slate-300">
+        <h3 className="text-base font-semibold text-black dark:text-white tracking-tight">
           未选择任何文章
         </h3>
-        <p className="text-xs text-slate-400 mt-1 max-w-xs">
-          从左侧列表中选择一篇文章进行阅读，或使用快捷键 J / K 进行快速浏览。
+        <p className="text-xs text-[#6a6a6a] dark:text-[#9e9e9e] mt-1.5 max-w-xs leading-relaxed font-sans">
+          从左侧列表中选择一篇文章进行阅读，或使用快捷键 <span className="font-mono bg-black/5 dark:bg-white/10 px-1 py-0.5 rounded">J</span> / <span className="font-mono bg-black/5 dark:bg-white/10 px-1 py-0.5 rounded">K</span> 快速切换。
         </p>
       </div>
     );
@@ -117,14 +116,14 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
   );
 
   return (
-    <div className="flex-1 h-full flex flex-col bg-slate-50 dark:bg-slate-950 overflow-hidden">
+    <div className="flex-1 h-full flex flex-col bg-[#f1f1f1] dark:bg-[#1b1b1b] overflow-hidden transition-colors duration-175 ease-astryx">
       {/* Top Reading Toolbar */}
-      <div className="h-12 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur px-4 flex items-center justify-between shrink-0">
+      <div className="h-13 border-b border-black/[0.08] dark:border-white/[0.1] bg-white/80 dark:bg-[#1b1b1b]/80 backdrop-blur-md px-4 flex items-center justify-between shrink-0">
         <div className="flex items-center space-x-1">
           {onBackToList && (
             <button
               onClick={onBackToList}
-              className="md:hidden p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 mr-1"
+              className="md:hidden p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] dark:text-[#9e9e9e] mr-1"
               title="返回文章列表"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -134,7 +133,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           <button
             onClick={onPrevArticle}
             disabled={!hasPrev}
-            className="p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 disabled:opacity-30 disabled:pointer-events-none transition-colors"
+            className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white disabled:opacity-20 disabled:pointer-events-none transition-all duration-175 ease-astryx"
             title="上一篇 (K)"
           >
             <ChevronLeft className="w-4 h-4" />
@@ -142,7 +141,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           <button
             onClick={onNextArticle}
             disabled={!hasNext}
-            className="p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 disabled:opacity-30 disabled:pointer-events-none transition-colors"
+            className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white disabled:opacity-20 disabled:pointer-events-none transition-all duration-175 ease-astryx"
             title="下一篇 (J)"
           >
             <ChevronRight className="w-4 h-4" />
@@ -150,14 +149,14 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
         </div>
 
         {/* Action Tools */}
-        <div className="flex items-center space-x-1 sm:space-x-2">
+        <div className="flex items-center space-x-1.5 sm:space-x-2">
           {/* Font Type Toggle */}
           <button
             onClick={() => setIsSerif(!isSerif)}
-            className={`p-1.5 rounded-md text-xs font-semibold px-2 transition-colors ${
+            className={`p-1.5 rounded-xl text-xs font-semibold px-2.5 transition-all duration-175 ease-astryx border ${
               isSerif
-                ? 'bg-orange-500/10 text-orange-600 dark:text-orange-400 font-serif'
-                : 'hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300'
+                ? 'bg-[#EB6E00]/10 border-[#EB6E00]/30 text-[#EB6E00] dark:text-[#FF7A1A] font-serif'
+                : 'border-transparent hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] dark:text-[#9e9e9e]'
             }`}
             title="衬线 / 无衬线字体切换"
           >
@@ -165,17 +164,17 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           </button>
 
           {/* Font Size Adjuster */}
-          <div className="flex items-center bg-slate-100 dark:bg-slate-800 rounded-md p-0.5">
+          <div className="flex items-center bg-black/[0.04] dark:bg-white/[0.06] rounded-xl p-0.5 border border-black/[0.04] dark:border-white/[0.06]">
             <button
               onClick={() => {
                 const sizes: ('sm' | 'md' | 'lg' | 'xl')[] = ['sm', 'md', 'lg', 'xl'];
                 const idx = sizes.indexOf(fontSize);
                 if (idx > 0) setFontSize(sizes[idx - 1]);
               }}
-              className="p-1 text-slate-600 dark:text-slate-300 hover:text-black dark:hover:text-white"
+              className="px-2 py-1 text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white"
               title="减小字号"
             >
-              <span className="text-[10px] font-bold">A-</span>
+              <span className="text-[10px] font-bold font-mono">A-</span>
             </button>
             <button
               onClick={() => {
@@ -183,33 +182,33 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
                 const idx = sizes.indexOf(fontSize);
                 if (idx < sizes.length - 1) setFontSize(sizes[idx + 1]);
               }}
-              className="p-1 text-slate-600 dark:text-slate-300 hover:text-black dark:hover:text-white"
+              className="px-2 py-1 text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white"
               title="增大字号"
             >
-              <span className="text-xs font-bold">A+</span>
+              <span className="text-xs font-bold font-mono">A+</span>
             </button>
           </div>
 
-          <div className="w-[1px] h-4 bg-slate-200 dark:bg-slate-800 my-auto" />
+          <div className="w-[1px] h-4 bg-black/[0.08] dark:border-white/[0.1] my-auto mx-1" />
 
           {/* Toggle Read */}
           <button
             onClick={onToggleRead}
-            className="p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors"
+            className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] dark:text-[#9e9e9e] transition-all duration-175"
             title={isRead ? '标为未读 (M)' : '标为已读 (M)'}
           >
             {isRead ? (
-              <CheckCircle className="w-4 h-4 text-emerald-500" />
+              <CheckCircle className="w-4 h-4 text-[#0B991F]" />
             ) : (
-              <Circle className="w-4 h-4 text-orange-500" />
+              <Circle className="w-4 h-4 text-[#EB6E00]" />
             )}
           </button>
 
           {/* Toggle Star */}
           <button
             onClick={onToggleStar}
-            className={`p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors ${
-              isStarred ? 'text-amber-500' : 'text-slate-600 dark:text-slate-300 hover:text-amber-500'
+            className={`p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-all duration-175 ${
+              isStarred ? 'text-amber-500' : 'text-[#474747] dark:text-[#9e9e9e] hover:text-amber-500'
             }`}
             title={isStarred ? '取消星标 (S)' : '添加星标 (S)'}
           >
@@ -219,12 +218,12 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           {/* Copy link */}
           <button
             onClick={handleCopyLink}
-            className="p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors relative"
+            className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] dark:text-[#9e9e9e] transition-all duration-175 relative"
             title="复制原文链接"
           >
             <Share2 className="w-4 h-4" />
             {copied && (
-              <span className="absolute -bottom-7 right-0 text-[10px] bg-slate-900 text-white px-2 py-0.5 rounded shadow whitespace-nowrap">
+              <span className="absolute -bottom-8 right-0 text-[10px] bg-black dark:bg-white text-white dark:text-black px-2 py-0.5 rounded-lg shadow-md whitespace-nowrap font-mono">
                 已复制!
               </span>
             )}
@@ -235,7 +234,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             href={articleSummary.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors"
+            className="p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white transition-all duration-175"
             title="在新标签页中打开原文 (O)"
           >
             <ExternalLink className="w-4 h-4" />
@@ -245,29 +244,29 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
 
       {/* Article Content Area */}
       <div className="flex-1 overflow-y-auto px-4 md:px-8 py-6">
-        <article className={`max-w-3xl mx-auto ${isSerif ? 'font-serif' : 'font-sans'}`}>
+        <article className={`max-w-3xl mx-auto my-2 p-6 md:p-10 bg-white dark:bg-[#222222] rounded-2xl border border-black/[0.08] dark:border-white/[0.1] shadow-xs ${isSerif ? 'font-serif' : 'font-sans'}`}>
           {/* Header */}
-          <div className="mb-6 border-b border-slate-200 dark:border-slate-800 pb-5">
-            <div className="flex items-center space-x-2 mb-2">
-              <span className="px-2 py-0.5 rounded-md text-xs font-semibold bg-orange-500/10 text-orange-600 dark:text-orange-400">
+          <div className="mb-6 border-b border-black/[0.08] dark:border-white/[0.1] pb-6">
+            <div className="flex items-center space-x-2.5 mb-3">
+              <span className="px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-[#EB6E00]/10 text-[#EB6E00] dark:bg-[#EB6E00]/20 dark:text-[#FF7A1A]">
                 {articleSummary.feedTitle}
               </span>
-              <span className="text-xs text-slate-400">
+              <span className="text-xs font-mono text-[#919191] dark:text-[#6a6a6a]">
                 {articleSummary.readTime} 分钟阅读
               </span>
             </div>
 
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 leading-tight mb-3">
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-black dark:text-white leading-tight mb-4">
               {articleSummary.title}
             </h1>
 
-            <div className="flex items-center text-xs text-slate-500 dark:text-slate-400 space-x-2">
-              <span>{articleSummary.author || articleSummary.feedTitle}</span>
+            <div className="flex items-center text-xs text-[#6a6a6a] dark:text-[#9e9e9e] space-x-2">
+              <span className="font-medium text-black dark:text-white">{articleSummary.author || articleSummary.feedTitle}</span>
               <span>•</span>
-              <time dateTime={articleSummary.publishedAt}>
+              <time dateTime={articleSummary.publishedAt} className="font-mono">
                 {new Date(articleSummary.publishedAt).toLocaleString(undefined, {
                   year: 'numeric',
-                  month: 'long',
+                  month: 'short',
                   day: 'numeric',
                   hour: '2-digit',
                   minute: '2-digit',
@@ -278,8 +277,8 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
 
           {/* Podcast / Audio enclosure player */}
           {audioAttachment && (
-            <div className="mb-6 p-4 rounded-xl bg-orange-50 dark:bg-orange-950/20 border border-orange-200 dark:border-orange-900/40 flex flex-col space-y-2">
-              <div className="flex items-center space-x-2 text-xs font-semibold text-orange-700 dark:text-orange-400">
+            <div className="mb-6 p-4 rounded-2xl bg-[#EB6E00]/5 border border-[#EB6E00]/20 flex flex-col space-y-2">
+              <div className="flex items-center space-x-2 text-xs font-semibold text-[#EB6E00] dark:text-[#FF7A1A]">
                 <Volume2 className="w-4 h-4" />
                 <span>播客音频节目</span>
               </div>
@@ -293,16 +292,16 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           {/* Loading state */}
           {loading && (
             <div className="py-12 space-y-4 animate-pulse">
-              <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-3/4"></div>
-              <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-full"></div>
-              <div className="h-4 bg-slate-200 dark:bg-slate-800 rounded w-5/6"></div>
-              <div className="h-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
+              <div className="h-4 bg-black/5 dark:bg-white/5 rounded-xl w-3/4"></div>
+              <div className="h-4 bg-black/5 dark:bg-white/5 rounded-xl w-full"></div>
+              <div className="h-4 bg-black/5 dark:bg-white/5 rounded-xl w-5/6"></div>
+              <div className="h-32 bg-black/5 dark:bg-white/5 rounded-2xl"></div>
             </div>
           )}
 
           {/* Error state */}
           {error && (
-            <div className="p-4 my-4 rounded-lg bg-red-50 dark:bg-red-950/30 text-red-600 dark:text-red-400 text-xs">
+            <div className="p-4 my-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 text-xs">
               <p className="font-semibold mb-1">加载正文时遇到问题：</p>
               <p>{error}</p>
               <div className="mt-3">
@@ -322,18 +321,18 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           {/* HTML Prose Content */}
           {!loading && detail && (
             <div
-              className={`article-prose ${getFontSizeClass()} text-slate-800 dark:text-slate-200`}
+              className={`article-prose ${getFontSizeClass()} text-black dark:text-[#d4d4d4]`}
               dangerouslySetInnerHTML={{ __html: detail.content || `<p>${articleSummary.snippet}</p>` }}
             />
           )}
 
           {/* Bottom Navigation & Actions */}
-          <div className="mt-12 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="mt-12 pt-6 border-t border-black/[0.08] dark:border-white/[0.1] flex flex-col sm:flex-row items-center justify-between gap-4">
             <a
               href={articleSummary.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-xs font-semibold px-4 py-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 transition-colors"
+              className="inline-flex items-center space-x-2 text-xs font-semibold px-4 py-2.5 rounded-xl bg-black/5 hover:bg-black/10 dark:bg-white/10 dark:hover:bg-white/15 text-black dark:text-white transition-all duration-175 ease-astryx"
             >
               <span>在原网站打开</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -342,7 +341,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             {hasNext && (
               <button
                 onClick={onNextArticle}
-                className="inline-flex items-center space-x-2 text-xs font-semibold px-4 py-2 rounded-lg bg-orange-500 hover:bg-orange-600 text-white shadow-sm transition-colors"
+                className="inline-flex items-center space-x-2 text-xs font-semibold px-4 py-2.5 rounded-xl bg-[#EB6E00] hover:bg-[#d66100] text-white shadow-sm shadow-[#EB6E00]/25 transition-all duration-175 ease-astryx"
               >
                 <span>下一篇</span>
                 <ChevronRight className="w-3.5 h-3.5" />
