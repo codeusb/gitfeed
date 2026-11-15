@@ -1,0 +1,15 @@
+{
+  "id": "3ce74961dd3b3a79",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] deepseek harness 的实际能力远超大多数人的认知，最近深度体验总结",
+  "link": "https://www.v2ex.com/t/1257214#reply21",
+  "author": "ttkit",
+  "publishedAt": "2026-11-15T08:22:58Z",
+  "snippet": "先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。 当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。 从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>先说下本人的 AI Coding 经验，chatgpt 横空出世时，一款名为免费的 Cursor 在 2023 年悄然上线，我当时也算是最先一批把 cursor 用于公司项目的程序员，所以 AI Coding 经验有 2 年半的时间了吧。</p>\n<p>当时惊叹 chatgpt 的能力，我意识到了 AI 真的会思考，AI 不再是算法和程序堆叠的产物。</p>\n<p>从 Cursor 到 Codex 到 Calude Code，再到 deepseek-harness。</p>\n<p>他们都在特定的环境完成了我的任务，从用 Cursor 时自己还会手动改下 AI 写代码遗留下的问题，到用 Codex 时感受到 AI 可以自己完成 UI 设计（前端开发），功能实现，自己用浏览器测试项目。</p>\n<p>后面又用了几个月的 Calude Code，cc 的代码能力的确把 codex 远远的甩在身后，理解需求的能力，设计品味的能力，把任务交给他，很放心，返工也少。</p>\n<p>在深度使用 cc 和 codex 的时候，dsh 只是我的备胎，所以有一段时间很少使用 dsh，事情的转折来自 codex 降智，claude code 弹 kyc，于是我深度使用了半个月的 dsh。</p>\n<p>在实际的项目开发中，dsh 完成了所有的功能！</p>\n<p><strong>从 UI 还原，架构设计，前端代码编写，后端代码编写，复杂原子任务，把代码提交到 github，登录 ECS 服务器部署，排查线上问题，查询服务器日志，修复代码推送，部署！</strong></p>\n<p>一气呵成，当一套组合拳被 dsh 打下来的时候，我才明白为什么人们称那个男人叫 <strong>梁圣！</strong></p>\n<p>原来我认为只有 Claude code 和 codex 完成的任务，被 DSH 同样完成时，我猜明白，原来最好的模型就在身边。</p>\n<p><strong>没有降智，没有 PUA，没有时间限制，不会封号，他是认知对待每一位开发者的可爱大肥鱼！</strong></p>\n<p>如果**AI 最终走向递归自我改进 (RSI)**，那么不论是 CloseAI 还是 A 畜，他们的护城河最终被 AI 打破，这个只是时间问题。</p>\n<p>目前已经放弃了 ClaudeCode，我也相信未来 3 年内，deepseek 将会成为世界第一梯队的模型，如果未来的 AI 神话是真的，那么 AI 将亲手打破封锁，没有任何人能阻止 AI 属于任何人这件事。</p>",
+  "attachments": []
+}

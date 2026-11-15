@@ -1,0 +1,15 @@
+{
+  "id": "3ea0c7c74a48a2cf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Local LLM] 想上手本地 llm，m3max 128gb 内存有没有什么适合和推荐的玩法？",
+  "link": "https://www.v2ex.com/t/1257228#reply0",
+  "author": "spikedingo",
+  "publishedAt": "2026-11-15T11:11:46Z",
+  "snippet": "如题，请各位大佬推荐推荐，测一测日常的编程任务、以及跑一跑本地模型的推理、分析等任务 可能也会玩一玩生图",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>如题，请各位大佬推荐推荐，测一测日常的编程任务、以及跑一跑本地模型的推理、分析等任务</p>\n<p>可能也会玩一玩生图</p>",
+  "attachments": []
+}

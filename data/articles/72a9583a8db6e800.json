@@ -1,0 +1,15 @@
+{
+  "id": "72a9583a8db6e800",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 全平台本地优先的电子书阅读器：笔记自动存成 Markdown，AI 回答能跳回原文.",
+  "link": "https://www.v2ex.com/t/1257220#reply1",
+  "author": "summerain4ever",
+  "publishedAt": "2026-11-15T09:53:20Z",
+  "snippet": "大家好，我是 LibrioX 的开发者。 起因：karpathy 的 ai 伴读讨论让我想将 agent 带入目前的工作流中. 理念: File Over app 痛点: 平时的高亮和笔记被锁在某个阅读器里、想在 Obsidian 里引用原文都不是很顺手. LibrioX 现在能做的： 书库就是电脑上的一个文件夹，子文件夹就是分类；支持 EPUB、PDF、MOBI、AZW3、FB2 等格式 每本做了笔记的书旁边，会自动生成一个同名的 书...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家好，我是 LibrioX 的开发者。</p>\n<p>起因：karpathy 的 ai 伴读讨论让我想将 agent 带入目前的工作流中.</p>\n<p>理念: File Over app</p>\n<p>痛点: 平时的高亮和笔记被锁在某个阅读器里、想在 Obsidian 里引用原文都不是很顺手.</p>\n<p>LibrioX 现在能做的：</p>\n<ul>\n<li>书库就是电脑上的一个文件夹，子文件夹就是分类；支持 EPUB、PDF、MOBI、AZW3、FB2 等格式</li>\n<li>每本做了笔记的书旁边，会自动生成一个同名的 <code><a href=\"http://书名.md\" rel=\"noopener noreferrer\" target=\"_blank\">书名.md</a></code>，可以直接放进 Obsidian</li>\n<li>选中一段就能问 AI、翻译，回答带原文出处；可以用自己的 API Key</li>\n<li>书内和全书库全文搜索</li>\n<li>语音朗读</li>\n<li>用自己的网盘（S3 / WebDAV）同步免费；也有端到端加密的托管同步</li>\n<li>macOS / Windows / Linux / Android/ iOS 内测中</li>\n</ul>\n<p>所有功能免费：阅读、笔记、搜索、自带 Key 的 AI、自带网盘同步，全部免费，不用注册。注册免费账户送 100 MB 同步空间和一份 AI 体验额度。</p>\n<p>还不够好的地方：iOS 版还在内测，没上架；Windows 安装会有 SmartScreen 提示；<code>.md</code> 目前是单向写出，在外部改了不会写回来；只支持无 DRM 文件；</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.libriox.com/2026/11/6b900fefb951d9726aced60c642aca5f.gif\"/></p>\n<p><a href=\"https://libriox.com\" rel=\"noopener noreferrer\" target=\"_blank\">官网</a></p>\n<p><a href=\"https://libriox.com/zh?utm_source=v2ex&amp;utm_campaign=launch\" rel=\"noopener noreferrer\" target=\"_blank\">下载</a>\n反馈：\n<a href=\"https://discord.gg/Pv4HxbTgKB\" rel=\"noopener noreferrer\" target=\"_blank\">Discord</a>,\n<a href=\"https://t.me/+SOJYvesO2OAyZDc1\" rel=\"noopener noreferrer\" target=\"_blank\">Telegram</a></p>\n<p>欢迎大家提出改进建议</p>",
+  "attachments": []
+}
