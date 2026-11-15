@@ -77,34 +77,26 @@ function parseInlineTokens(text: string): InlineToken[] {
     }
 
     if (match[1]) {
-      // <a href="url">text</a>
       tokens.push({
         type: 'link',
         url: match[2],
         text: decodeHtmlEntities(match[3].replace(/<[^>]+>/g, '')),
       });
     } else if (match[4] || match[6]) {
-      // <strong> or <b>
       const inner = match[5] || match[7];
       tokens.push({ type: 'bold', text: decodeHtmlEntities(inner.replace(/<[^>]+>/g, '')) });
     } else if (match[8] || match[10]) {
-      // <em> or <i>
       const inner = match[9] || match[11];
       tokens.push({ type: 'italic', text: decodeHtmlEntities(inner.replace(/<[^>]+>/g, '')) });
     } else if (match[12]) {
-      // <code>
       tokens.push({ type: 'code', text: decodeHtmlEntities(match[13].replace(/<[^>]+>/g, '')) });
     } else if (match[14]) {
-      // Markdown [text](url)
       tokens.push({ type: 'link', text: decodeHtmlEntities(match[15]), url: match[16] });
     } else if (match[17]) {
-      // Markdown **bold**
       tokens.push({ type: 'bold', text: decodeHtmlEntities(match[18]) });
     } else if (match[19]) {
-      // Markdown *italic*
       tokens.push({ type: 'italic', text: decodeHtmlEntities(match[20]) });
     } else if (match[21]) {
-      // Markdown `code`
       tokens.push({ type: 'code', text: decodeHtmlEntities(match[22]) });
     }
 
@@ -146,7 +138,7 @@ export type ContentBlock =
   | { type: 'hr' };
 
 // -------------------------------------------------------------
-// Content Parser
+// Robust Content Parser
 // -------------------------------------------------------------
 function parseContentToBlocks(raw: string, coverImage?: string | null): ContentBlock[] {
   if (!raw) return [];
@@ -156,8 +148,7 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
 
   const rawBlocks: ContentBlock[] = [];
 
-  // 1. Detect Hero Video Block (e.g. daily.juya.uk video section)
-  // <p><strong>视频版</strong>：<a href="youtube">YouTube</a> ｜ <a href="bilibili">哔哩哔哩</a></p>
+  // 1. Detect Hero Video Block (daily.juya.uk video section)
   const videoRegex =
     /<(?:p|section)[^>]*>[\s\S]*?(?:视频版|Video|视频)[\s\S]*?<a\s+[^>]*href=["']([^"']*(?:youtube|youtu\.be)[^"']*)["'][^>]*>[\s\S]*?<\/a>[\s\S]*?<a\s+[^>]*href=["']([^"']*(?:bilibili)[^"']*)["'][^>]*>[\s\S]*?<\/a>[\s\S]*?<\/(?:p|section)>/i;
   const videoMatch = cleaned.match(videoRegex);
@@ -170,8 +161,7 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
     cleaned = cleaned.replace(videoMatch[0], '');
   }
 
-  // 2. Detect "概览" (Overview TOC Card)
-  // <h2 id="s1">概览</h2> followed by categories and lists until next <hr> or <h2
+  // 2. Detect "概览" (TOC Overview Card)
   const overviewRegex =
     /<h2[^>]*>(?:概览|Overview|目录)<\/h2>([\s\S]*?)(?=<hr|<h2|$)/i;
   const overviewMatch = cleaned.match(overviewRegex);
@@ -190,15 +180,9 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
       let liMatch: RegExpExecArray | null;
       while ((liMatch = liRegex.exec(catBody)) !== null) {
         const liHtml = liMatch[1];
-        // Extract link arrow
         const linkMatch = liHtml.match(/<a\s+[^>]*href=["']([^"']+)["'][^>]*>(?:↗|&nearr;)?<\/a>/i);
-        const link = linkMatch ? linkMatch[1] : undefined;
-
-        // Extract anchor ref (#1, #2...)
         const refMatch = liHtml.match(/(?:<code>|&lt;code&gt;)?#(\d+)(?:<\/code>|&lt;\/code&gt;)?/i);
-        const ref = refMatch ? `#${refMatch[1]}` : undefined;
 
-        // Clean text
         let cleanText = liHtml
           .replace(/<a\s+[^>]*href=["'][^"']+["'][^>]*>(?:↗|&nearr;)?<\/a>/gi, '')
           .replace(/(?:<code>|&lt;code&gt;)?#\d+(?:<\/code>|&lt;\/code&gt;)?/gi, '')
@@ -207,8 +191,8 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
 
         items.push({
           text: decodeHtmlEntities(cleanText),
-          link,
-          ref,
+          link: linkMatch ? linkMatch[1] : undefined,
+          ref: refMatch ? `#${refMatch[1]}` : undefined,
         });
       }
 
@@ -223,158 +207,104 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
     }
   }
 
-  // 3. Detect Related Links Card
-  // <p>相关链接：</p><ul><li><a href="...">...</a></li></ul>
-  const relatedRegex =
-    /<p[^>]*>相关链接[：:]?<\/p>\s*<(?:ul|ol)[^>]*class=["']?[^"'>]*event-related-links[^"'>]*["']?[^>]*>([\s\S]*?)<\/(?:ul|ol)>|<p[^>]*>相关链接[：:]?<\/p>\s*<(?:ul|ol)[^>]*>([\s\S]*?)<\/(?:ul|ol)>/i;
-  const relatedMatch = cleaned.match(relatedRegex);
-  if (relatedMatch) {
-    const listBody = relatedMatch[1] || relatedMatch[2];
-    const links: { title?: string; url: string }[] = [];
-    const aRegex = /<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
-    let aMatch: RegExpExecArray | null;
-    while ((aMatch = aRegex.exec(listBody)) !== null) {
-      links.push({
-        url: aMatch[1],
-        title: decodeHtmlEntities(aMatch[2].replace(/<[^>]+>/g, '').trim()),
-      });
-    }
-    if (links.length > 0) {
-      // We will place related links at the end or replace it with a block
-      cleaned = cleaned.replace(relatedMatch[0], `<!--RELATED_LINKS-->`);
-    }
-  }
+  // 3. Strip container wrappers (div, section, article, main, details, summary) so tags inside are flat
+  cleaned = cleaned.replace(/<\/?(div|section|article|main|details|summary)[^>]*>/gi, '');
 
-  // 4. Main Block Tokenizer
+  // 4. Tag-based block parser (bulletproof: avoids fragile group numbering)
   const blockRegex =
-    /(<h([1-6])[^>]*>([\s\S]*?)<\/h\2>)|(<img\s+[^>]*src=["']([^"']+)["'][^>]*>)|(<pre[^>]*><code[^>]*>([\s\S]*?)<\/code><\/pre>)|(<pre[^>]*>([\s\S]*?)<\/pre>)|(<blockquote[^>]*>([\s\S]*?)<\/blockquote>)|(<(ul|ol)[^>]*>([\s\S]*?)<\/(?:ul|ol)>)|(<hr\s*\/?>)|(<!--RELATED_LINKS-->)|(<p[^>]*>([\s\S]*?)<\/p>)/gi;
+    /<(h[1-6]|blockquote|pre|ul|ol|p)([^>]*)>([\s\S]*?)<\/\1>|<img\s+([^>]*)\/?>|<hr\s*\/?>/gi;
 
-  let lastIndex = 0;
   let match: RegExpExecArray | null;
-
   while ((match = blockRegex.exec(cleaned)) !== null) {
-    if (match.index > lastIndex) {
-      const inter = cleaned.slice(lastIndex, match.index).trim();
-      if (inter) {
-        processMarkdownLines(inter, rawBlocks);
+    const tagName = match[1] ? match[1].toLowerCase() : null;
+    const tagAttrs = match[2] || '';
+    const inner = match[3] || '';
+    const isHr = match[0].toLowerCase().startsWith('<hr');
+    const isImg = match[0].toLowerCase().startsWith('<img');
+
+    if (isImg) {
+      const srcMatch = match[0].match(/src=["']([^"']+)["']/i);
+      const altMatch = match[0].match(/alt=["']([^"']*)["']/i);
+      if (srcMatch && srcMatch[1] && !srcMatch[1].startsWith('data:image/svg')) {
+        rawBlocks.push({ type: 'image', src: srcMatch[1], alt: altMatch ? altMatch[1] : undefined });
       }
-    }
-
-    if (match[1]) {
-      // Heading
-      const level = parseInt(match[2], 10) || 2;
-      const innerHtml = match[3];
-
-      // Extract anchor ref (#1, #2)
-      const refMatch = innerHtml.match(/(?:<code>|&lt;code&gt;)?#(\d+)(?:<\/code>|&lt;\/code&gt;)?/i);
-      const anchor = refMatch ? `#${refMatch[1]}` : undefined;
-
-      // Extract link if whole title is wrapped in <a>
-      const aMatch = innerHtml.match(/<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
-      const link = aMatch ? aMatch[1] : undefined;
-
-      let cleanText = innerHtml
+    } else if (isHr) {
+      rawBlocks.push({ type: 'hr' });
+    } else if (tagName && tagName.startsWith('h')) {
+      const level = parseInt(tagName[1], 10) || 2;
+      const refMatch = inner.match(/(?:<code>|&lt;code&gt;)?#(\d+)(?:<\/code>|&lt;\/code&gt;)?/i);
+      const aMatch = inner.match(/<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+      const cleanText = inner
         .replace(/(?:<code>|&lt;code&gt;)?#\d+(?:<\/code>|&lt;\/code&gt;)?/gi, '')
         .replace(/<[^>]+>/g, '')
         .trim();
-
       if (cleanText) {
         rawBlocks.push({
           type: 'heading',
           level,
           text: decodeHtmlEntities(cleanText),
-          anchor,
-          link,
+          anchor: refMatch ? `#${refMatch[1]}` : undefined,
+          link: aMatch ? aMatch[1] : undefined,
         });
       }
-    } else if (match[4]) {
-      // <img>
-      const src = match[5];
-      const altMatch = match[4].match(/alt=["']([^"']*)["']/i);
-      const alt = altMatch ? altMatch[1] : undefined;
-      if (src && !src.startsWith('data:image/svg')) {
-        rawBlocks.push({ type: 'image', src, alt });
+    } else if (tagName === 'blockquote') {
+      const cleanQuote = inner.replace(/<[^>]+>/g, '').trim();
+      if (cleanQuote) {
+        rawBlocks.push({ type: 'quote', text: decodeHtmlEntities(cleanQuote) });
       }
-    } else if (match[6] || match[8]) {
-      // <pre><code>
-      const codeRaw = match[7] || match[9] || '';
-      rawBlocks.push({
-        type: 'code',
-        code: decodeHtmlEntities(codeRaw.replace(/<[^>]+>/g, '')),
-      });
-    } else if (match[10]) {
-      // <blockquote>
-      const quoteText = match[11].replace(/<[^>]+>/g, '').trim();
-      if (quoteText) {
-        rawBlocks.push({ type: 'quote', text: decodeHtmlEntities(quoteText) });
-      }
-    } else if (match[12]) {
-      // <ul> or <ol>
-      const ordered = match[12].toLowerCase() === 'ol';
-      const listContent = match[13] || '';
-      const items: string[] = [];
-      const liRegex = /<li[^>]*>([\s\S]*?)<\/li>/gi;
-      let liMatch: RegExpExecArray | null;
-      while ((liMatch = liRegex.exec(listContent)) !== null) {
-        const itemText = liMatch[1].replace(/<[^>]+>/g, '').trim();
-        if (itemText) items.push(decodeHtmlEntities(itemText));
-      }
-      if (items.length > 0) {
-        rawBlocks.push({ type: 'list', items, ordered });
-      }
-    } else if (match[14]) {
-      // <hr/>
-      rawBlocks.push({ type: 'hr' });
-    } else if (match[15]) {
-      // Related Links
-      if (relatedMatch) {
-        const listBody = relatedMatch[1] || relatedMatch[2];
+    } else if (tagName === 'pre') {
+      const cleanCode = inner.replace(/<[^>]+>/g, '').trim();
+      rawBlocks.push({ type: 'code', code: decodeHtmlEntities(cleanCode) });
+    } else if (tagName === 'ul' || tagName === 'ol') {
+      if (tagAttrs.includes('event-related-links') || inner.includes('event-related-links') || inner.includes('http')) {
         const links: { title?: string; url: string }[] = [];
         const aRegex = /<a\s+[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
-        let aMatch: RegExpExecArray | null;
-        while ((aMatch = aRegex.exec(listBody)) !== null) {
+        let aM: RegExpExecArray | null;
+        while ((aM = aRegex.exec(inner)) !== null) {
           links.push({
-            url: aMatch[1],
-            title: decodeHtmlEntities(aMatch[2].replace(/<[^>]+>/g, '').trim()),
+            url: aM[1],
+            title: decodeHtmlEntities(aM[2].replace(/<[^>]+>/g, '').trim()),
           });
         }
         if (links.length > 0) {
           rawBlocks.push({ type: 'related_links', links });
+        } else {
+          const items: string[] = [];
+          const liRegex = /<li[^>]*>([\s\S]*?)<\/li>/gi;
+          let liM: RegExpExecArray | null;
+          while ((liM = liRegex.exec(inner)) !== null) {
+            const t = liM[1].replace(/<[^>]+>/g, '').trim();
+            if (t) items.push(decodeHtmlEntities(t));
+          }
+          if (items.length > 0) rawBlocks.push({ type: 'list', items, ordered: tagName === 'ol' });
         }
+      } else {
+        const items: string[] = [];
+        const liRegex = /<li[^>]*>([\s\S]*?)<\/li>/gi;
+        let liM: RegExpExecArray | null;
+        while ((liM = liRegex.exec(inner)) !== null) {
+          const t = liM[1].replace(/<[^>]+>/g, '').trim();
+          if (t) items.push(decodeHtmlEntities(t));
+        }
+        if (items.length > 0) rawBlocks.push({ type: 'list', items, ordered: tagName === 'ol' });
       }
-    } else if (match[16]) {
-      // <p>
-      const pContent = match[17].trim();
-      const pImgMatch = pContent.match(/<img\s+[^>]*src=["']([^"']+)["'][^>]*>/i);
-      if (pImgMatch && pImgMatch[1]) {
-        const altMatch = pImgMatch[0].match(/alt=["']([^"']*)["']/i);
-        rawBlocks.push({
-          type: 'image',
-          src: pImgMatch[1],
-          alt: altMatch ? altMatch[1] : undefined,
-        });
-        const remaining = pContent.replace(pImgMatch[0], '').trim();
-        if (remaining) {
-          rawBlocks.push({ type: 'paragraph', text: decodeHtmlEntities(remaining) });
-        }
-      } else if (pContent) {
-        rawBlocks.push({ type: 'paragraph', text: decodeHtmlEntities(pContent) });
+    } else if (tagName === 'p') {
+      const imgM = inner.match(/<img\s+[^>]*src=["']([^"']+)["'][^>]*>/i);
+      if (imgM && imgM[1]) {
+        const altM = imgM[0].match(/alt=["']([^"']*)["']/i);
+        rawBlocks.push({ type: 'image', src: imgM[1], alt: altM ? altM[1] : undefined });
+        const remaining = inner.replace(imgM[0], '').replace(/<[^>]+>/g, '').trim();
+        if (remaining) rawBlocks.push({ type: 'paragraph', text: decodeHtmlEntities(remaining) });
+      } else if (inner.includes('相关链接')) {
+        // Skip pure label since the list follows
+      } else {
+        const cleanP = inner.trim();
+        if (cleanP) rawBlocks.push({ type: 'paragraph', text: decodeHtmlEntities(cleanP) });
       }
     }
-
-    lastIndex = blockRegex.lastIndex;
   }
 
-  if (lastIndex < cleaned.length) {
-    const trailing = cleaned.slice(lastIndex).trim();
-    if (trailing) {
-      processMarkdownLines(trailing, rawBlocks);
-    }
-  }
-
-  // -----------------------------------------------------------
   // 5. Merge Adjacent Images into Multi-Image Gallery
-  // -----------------------------------------------------------
   const finalBlocks: ContentBlock[] = [];
   let pendingImages: { src: string; alt?: string }[] = [];
 
@@ -396,7 +326,6 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
 
   for (const block of rawBlocks) {
     if (block.type === 'image') {
-      // Don't duplicate cover image if it was already rendered at the very top
       if (
         coverImage &&
         finalBlocks.length === 0 &&
@@ -413,86 +342,6 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
   flushImages();
 
   return finalBlocks;
-}
-
-function processMarkdownLines(text: string, blocks: ContentBlock[]) {
-  const lines = text.split('\n');
-  let inCode = false;
-  let codeBuffer: string[] = [];
-  let codeLang = '';
-
-  for (let line of lines) {
-    const trimmed = line.trim();
-
-    if (trimmed.startsWith('```')) {
-      if (inCode) {
-        blocks.push({ type: 'code', code: codeBuffer.join('\n'), lang: codeLang });
-        codeBuffer = [];
-        inCode = false;
-      } else {
-        inCode = true;
-        codeLang = trimmed.replace('```', '').trim();
-      }
-      continue;
-    }
-
-    if (inCode) {
-      codeBuffer.push(line);
-      continue;
-    }
-
-    if (!trimmed) continue;
-
-    // Heading
-    const hMatch = trimmed.match(/^(#{1,6})\s+(.*)$/);
-    if (hMatch) {
-      const headingRaw = hMatch[2];
-      const refMatch = headingRaw.match(/#(\d+)/);
-      const anchor = refMatch ? `#${refMatch[1]}` : undefined;
-      const cleanText = headingRaw.replace(/#\d+/g, '').trim();
-      blocks.push({
-        type: 'heading',
-        level: hMatch[1].length,
-        text: cleanText,
-        anchor,
-      });
-      continue;
-    }
-
-    // Image
-    const imgMatch = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
-    if (imgMatch) {
-      blocks.push({ type: 'image', alt: imgMatch[1], src: imgMatch[2] });
-      continue;
-    }
-
-    // Quote
-    if (trimmed.startsWith('>')) {
-      blocks.push({ type: 'quote', text: trimmed.replace(/^>\s*/, '') });
-      continue;
-    }
-
-    // List
-    const listMatch = trimmed.match(/^([-*]|\d+\.)\s+(.*)$/);
-    if (listMatch) {
-      const isOrdered = /^\d+\./.test(listMatch[1]);
-      blocks.push({ type: 'list', items: [listMatch[2]], ordered: isOrdered });
-      continue;
-    }
-
-    // HR
-    if (/^(\*{3,}|-{3,}|_{3,})$/.test(trimmed)) {
-      blocks.push({ type: 'hr' });
-      continue;
-    }
-
-    // Paragraph
-    blocks.push({ type: 'paragraph', text: trimmed });
-  }
-
-  if (inCode && codeBuffer.length > 0) {
-    blocks.push({ type: 'code', code: codeBuffer.join('\n'), lang: codeLang });
-  }
 }
 
 // -------------------------------------------------------------
@@ -526,7 +375,6 @@ const LightboxModal: React.FC<LightboxModalProps> = ({
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onClose}>
       <View style={styles.lightboxContainer}>
-        {/* Top Bar */}
         <View style={styles.lightboxHeader}>
           <Text style={styles.lightboxCounter}>
             {images.length > 1 ? `${index + 1} / ${images.length}` : '图片预览'}
@@ -536,7 +384,6 @@ const LightboxModal: React.FC<LightboxModalProps> = ({
           </TouchableOpacity>
         </View>
 
-        {/* Center Image */}
         <View style={styles.lightboxImageWrap}>
           <Image
             source={{ uri: current.src }}
@@ -545,7 +392,6 @@ const LightboxModal: React.FC<LightboxModalProps> = ({
           />
         </View>
 
-        {/* Bottom Bar / Gallery Controls */}
         <View style={styles.lightboxFooter}>
           {Boolean(current.alt) ? (
             <Text style={styles.lightboxAltText} numberOfLines={2}>
@@ -618,7 +464,6 @@ const ArticleImage: React.FC<{
 
   if (error || !src) return null;
 
-  // Filter tiny icons or shields badges
   if (src.includes('shields.io') || src.includes('badge')) {
     return (
       <View style={styles.badgeContainer}>
@@ -728,7 +573,6 @@ const ArticleImageGallery: React.FC<{
         ))}
       </ScrollView>
 
-      {/* Gallery Controls (daily.juya.uk style) */}
       <View style={styles.galleryControls}>
         <TouchableOpacity
           disabled={currentIndex <= 0}
@@ -800,7 +644,6 @@ const HeroVideoCard: React.FC<{
         },
       ]}
     >
-      {/* 16:9 Media Preview Frame */}
       <View style={styles.heroVideoFrame}>
         {Boolean(coverImage) ? (
           <Image source={{ uri: coverImage! }} style={styles.heroVideoCover} resizeMode="cover" />
@@ -808,7 +651,6 @@ const HeroVideoCard: React.FC<{
           <View style={[styles.heroVideoCover, { backgroundColor: '#18181b' }]} />
         )}
 
-        {/* Center Play Button Overlay */}
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={handleOpenVideo}
@@ -819,7 +661,6 @@ const HeroVideoCard: React.FC<{
           </View>
         </TouchableOpacity>
 
-        {/* Top Right Floating Pill */}
         <TouchableOpacity
           activeOpacity={0.7}
           onPress={handleOpenVideo}
@@ -829,7 +670,6 @@ const HeroVideoCard: React.FC<{
         </TouchableOpacity>
       </View>
 
-      {/* Bottom Platform Switcher Toolbar */}
       <View style={[styles.heroVideoToolbar, { borderTopColor: tokens.borderSubtle }]}>
         <View style={styles.heroPlatformSwitchRow}>
           {Boolean(video.youtubeUrl) ? (
@@ -896,12 +736,13 @@ const HeroVideoCard: React.FC<{
 };
 
 // -------------------------------------------------------------
-// Component: Issue Overview Card (TOC / 概览)
+// Component: Issue Overview Card (TOC / 概览) with Full Font Scaling
 // -------------------------------------------------------------
 const IssueOverviewCard: React.FC<{
   categories: OverviewCategory[];
+  fontSize: number;
   tokens: ThemeTokens;
-}> = ({ categories, tokens }) => {
+}> = ({ categories, fontSize, tokens }) => {
   return (
     <View
       style={[
@@ -913,27 +754,31 @@ const IssueOverviewCard: React.FC<{
       ]}
     >
       <View style={styles.overviewHeaderRow}>
-        <Text style={[styles.overviewMainTitle, { color: tokens.textPrimary }]}>概览</Text>
+        <Text style={[styles.overviewMainTitle, { color: tokens.textPrimary, fontSize: fontSize * 1.25 }]}>
+          概览
+        </Text>
         <View style={[styles.overviewBadge, { backgroundColor: tokens.accentSubtle }]}>
-          <Text style={[styles.overviewBadgeText, { color: tokens.accent }]}>导读目录</Text>
+          <Text style={[styles.overviewBadgeText, { color: tokens.accent, fontSize: Math.max(10, fontSize * 0.7) }]}>
+            导读目录
+          </Text>
         </View>
       </View>
 
       {categories.map((cat, catIdx) => (
         <View key={catIdx} style={styles.overviewCategorySection}>
-          <Text style={[styles.overviewCategoryTitle, { color: tokens.textPrimary }]}>
+          <Text style={[styles.overviewCategoryTitle, { color: tokens.textPrimary, fontSize: fontSize * 1.05 }]}>
             {cat.title}
           </Text>
           <View style={styles.overviewItemList}>
             {cat.items.map((item, itemIdx) => (
               <View key={itemIdx} style={styles.overviewItemRow}>
-                <Text style={[styles.overviewBullet, { color: tokens.accent }]}>•</Text>
+                <Text style={[styles.overviewBullet, { color: tokens.accent, fontSize: fontSize * 0.95 }]}>•</Text>
                 <View style={styles.overviewItemContent}>
-                  <Text style={[styles.overviewItemText, { color: tokens.textPrimary }]}>
+                  <Text style={[styles.overviewItemText, { color: tokens.textPrimary, fontSize: fontSize * 0.95, lineHeight: fontSize * 1.55 }]}>
                     {item.text}
                     {Boolean(item.link) ? (
                       <Text
-                        style={[styles.overviewExternalArrow, { color: tokens.accent }]}
+                        style={[styles.overviewExternalArrow, { color: tokens.accent, fontSize: fontSize * 0.85 }]}
                         onPress={() => item.link && Linking.openURL(item.link)}
                       >
                         {' '}
@@ -952,7 +797,7 @@ const IssueOverviewCard: React.FC<{
                       },
                     ]}
                   >
-                    <Text style={[styles.overviewAnchorText, { color: tokens.accent }]}>
+                    <Text style={[styles.overviewAnchorText, { color: tokens.accent, fontSize: Math.max(10, fontSize * 0.72) }]}>
                       {item.ref}
                     </Text>
                   </View>
@@ -971,11 +816,14 @@ const IssueOverviewCard: React.FC<{
 // -------------------------------------------------------------
 const RelatedLinksCard: React.FC<{
   links: { title?: string; url: string }[];
+  fontSize: number;
   tokens: ThemeTokens;
-}> = ({ links, tokens }) => {
+}> = ({ links, fontSize, tokens }) => {
   return (
     <View style={styles.relatedLinksContainer}>
-      <Text style={[styles.relatedTitle, { color: tokens.textSecondary }]}>相关链接：</Text>
+      <Text style={[styles.relatedTitle, { color: tokens.textSecondary, fontSize: fontSize * 0.9 }]}>
+        相关链接：
+      </Text>
       <View style={styles.relatedList}>
         {links.map((link, idx) => (
           <TouchableOpacity
@@ -984,8 +832,8 @@ const RelatedLinksCard: React.FC<{
             onPress={() => Linking.openURL(link.url)}
             style={styles.relatedLinkRow}
           >
-            <Text style={[styles.relatedBullet, { color: tokens.textMuted }]}>•</Text>
-            <Text style={[styles.relatedLinkText, { color: tokens.accent }]}>
+            <Text style={[styles.relatedBullet, { color: tokens.textMuted, fontSize: fontSize * 0.9 }]}>•</Text>
+            <Text style={[styles.relatedLinkText, { color: tokens.accent, fontSize: fontSize * 0.85, lineHeight: fontSize * 1.45 }]}>
               {link.title || link.url}
             </Text>
           </TouchableOpacity>
@@ -1016,7 +864,14 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
 
   const blocks = useMemo(() => {
     try {
-      return parseContentToBlocks(content, coverImage);
+      const parsed = parseContentToBlocks(content, coverImage);
+      if (parsed.length > 0) return parsed;
+      return [
+        {
+          type: 'paragraph' as const,
+          text: content ? decodeHtmlEntities(content.replace(/<[^>]+>/g, '')) : '',
+        },
+      ];
     } catch (e) {
       console.warn('Failed to parse rich content:', e);
       return [
@@ -1065,6 +920,7 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
                     backgroundColor: tokens.bgSubtle,
                     color: tokens.accent,
                     borderColor: tokens.borderSubtle,
+                    fontSize: fontSize * 0.88,
                   },
                 ]}
               >
@@ -1122,6 +978,7 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
               <IssueOverviewCard
                 key={index}
                 categories={block.categories}
+                fontSize={fontSize}
                 tokens={tokens}
               />
             );
@@ -1165,7 +1022,7 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
                         },
                       ]}
                     >
-                      <Text style={[styles.headingAnchorText, { color: tokens.accent }]}>
+                      <Text style={[styles.headingAnchorText, { color: tokens.accent, fontSize: Math.max(10, fontSize * 0.72) }]}>
                         {block.anchor}
                       </Text>
                     </View>
@@ -1232,7 +1089,7 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
                   <Text
                     style={[
                       styles.codeText,
-                      { color: tokens.textPrimary, fontSize: Math.max(12, fontSize - 2) },
+                      { color: tokens.textPrimary, fontSize: Math.max(11, fontSize * 0.85), lineHeight: fontSize * 1.35 },
                     ]}
                   >
                     {block.code}
@@ -1246,12 +1103,12 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
               <View key={index} style={styles.listBox}>
                 {block.items.map((item, i) => (
                   <View key={i} style={styles.listItemRow}>
-                    <Text style={[styles.listBullet, { color: tokens.accent }]}>
+                    <Text style={[styles.listBullet, { color: tokens.accent, fontSize: fontSize * 0.95 }]}>
                       {block.ordered ? `${i + 1}.` : '•'}
                     </Text>
                     <View style={styles.listItemContent}>
                       {renderInline(item, {
-                        fontSize,
+                        fontSize: fontSize * 0.95,
                         lineHeight: fontSize * 1.65,
                         color: tokens.textPrimary,
                       })}
@@ -1262,7 +1119,7 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
             );
 
           case 'related_links':
-            return <RelatedLinksCard key={index} links={block.links} tokens={tokens} />;
+            return <RelatedLinksCard key={index} links={block.links} fontSize={fontSize} tokens={tokens} />;
 
           case 'hr':
             return (
@@ -1327,7 +1184,6 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
   },
   headingAnchorText: {
-    fontSize: 12,
     fontWeight: '700',
     fontFamily: 'monospace',
   },
@@ -1359,7 +1215,6 @@ const styles = StyleSheet.create({
   },
   codeText: {
     fontFamily: 'monospace',
-    lineHeight: 20,
   },
   listBox: {
     marginVertical: 10,
@@ -1371,7 +1226,6 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   listBullet: {
-    fontSize: 16,
     marginRight: 8,
     lineHeight: 24,
     fontWeight: '700',
@@ -1555,12 +1409,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
   },
-  // Overview TOC Card styles
+  // Overview TOC Card styles (daily.juya.uk)
   overviewContainer: {
     borderRadius: 20,
     borderWidth: 1,
     padding: 18,
-    marginVertical: 14,
+    marginVertical: 16,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.04,
@@ -1577,7 +1431,6 @@ const styles = StyleSheet.create({
     borderBottomColor: 'rgba(150, 150, 150, 0.15)',
   },
   overviewMainTitle: {
-    fontSize: 20,
     fontWeight: '700',
     letterSpacing: -0.2,
   },
@@ -1587,16 +1440,14 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   overviewBadgeText: {
-    fontSize: 11,
     fontWeight: '700',
   },
   overviewCategorySection: {
-    marginBottom: 14,
+    marginBottom: 16,
   },
   overviewCategoryTitle: {
-    fontSize: 16,
     fontWeight: '700',
-    marginBottom: 8,
+    marginBottom: 10,
     marginTop: 4,
   },
   overviewItemList: {
@@ -1605,44 +1456,38 @@ const styles = StyleSheet.create({
   overviewItemRow: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    marginBottom: 8,
-    gap: 6,
+    marginBottom: 10,
+    gap: 8,
   },
   overviewBullet: {
-    fontSize: 14,
-    lineHeight: 20,
+    lineHeight: 22,
     fontWeight: '700',
   },
   overviewItemContent: {
     flex: 1,
   },
   overviewItemText: {
-    fontSize: 14,
-    lineHeight: 20,
   },
   overviewExternalArrow: {
-    fontSize: 12,
     fontWeight: '700',
   },
   overviewAnchorPill: {
     paddingHorizontal: 6,
-    paddingVertical: 1,
+    paddingVertical: 2,
     borderRadius: 6,
     borderWidth: 1,
     alignSelf: 'flex-start',
   },
   overviewAnchorText: {
-    fontSize: 11,
     fontWeight: '700',
     fontFamily: 'monospace',
   },
-  // Related Links styles (daily.juya.uk style)
+  // Related Links styles (daily.juya.uk .event-related-links style)
   relatedLinksContainer: {
     marginVertical: 16,
     paddingTop: 10,
   },
   relatedTitle: {
-    fontSize: 14,
     fontWeight: '700',
     marginBottom: 10,
   },
@@ -1656,14 +1501,11 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   relatedBullet: {
-    fontSize: 14,
     lineHeight: 20,
     fontWeight: '700',
   },
   relatedLinkText: {
     flex: 1,
-    fontSize: 13,
-    lineHeight: 20,
     fontFamily: 'monospace',
     textDecorationLine: 'none',
   },

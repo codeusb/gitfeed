@@ -8,7 +8,8 @@ export interface ReleaseInfo {
   hasUpdate: boolean;
 }
 
-const CURRENT_VERSION = 'v1.0.0';
+const packageJson = require('../../package.json');
+export const CURRENT_VERSION = 'v' + (packageJson.version || '1.0.12');
 
 export class UpdateService {
   static async checkForUpdates(repo: string = 'codeusb/gitfeed', silent: boolean = false): Promise<ReleaseInfo | null> {
