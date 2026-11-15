@@ -1,0 +1,15 @@
+{
+  "id": "21ec3ae72dd9f75d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 产品想法 - 未来的手机形态",
+  "link": "https://www.v2ex.com/t/1257252#reply6",
+  "author": "jedeft",
+  "publishedAt": "2026-11-15T14:29:49Z",
+  "snippet": "在未来人人可以 ai 编程的情况下，未来的手机将会是这个样子： 硬件设备和底层操作系统，提供丰富的调用接口； 各类 APP 也只提供调用接口，不提供 UI，比如电商、外卖、视频等等； 用户可以基于上面 2 种接口，结合手机内置的编程 Agent, 完全组合定义出符合自己使用习惯的智能设备。 目前比较火的开源硬件 AI Passport 就很符合这一趋势",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>在未来人人可以 ai 编程的情况下，未来的手机将会是这个样子：</p>\n<ol>\n<li>硬件设备和底层操作系统，提供丰富的调用接口；</li>\n<li>各类 APP 也只提供调用接口，不提供 UI，比如电商、外卖、视频等等；</li>\n<li>用户可以基于上面 2 种接口，结合手机内置的编程 Agent, 完全组合定义出符合自己使用习惯的智能设备。</li>\n</ol>\n<p>目前比较火的开源硬件 AI Passport 就很符合这一趋势</p>",
+  "attachments": []
+}

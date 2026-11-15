@@ -1,0 +1,15 @@
+{
+  "id": "91c4a8f3cdc9748a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] I made a site for Mottle, a hide-and-seek game where standing still makes you invisible",
+  "link": "https://www.v2ex.com/t/1257264#reply0",
+  "author": "langren",
+  "publishedAt": "2026-11-15T16:17:03Z",
+  "snippet": "Mottle is a small browser game I got hooked on, so I built a place to play it online: https://mottlegame.im The idea is simple. Drag (or use WASD / arrow keys) to move, and the moment you let go your creature fades into ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Mottle is a small browser game I got hooked on, so I built a place to play it online: <a href=\"https://mottlegame.im\" rel=\"noopener noreferrer\" target=\"_blank\">https://mottlegame.im</a></p>\n<p>The idea is simple. Drag (or use WASD / arrow keys) to move, and the moment you let go your creature fades into the colour of the tile under it. Seekers sweep the garden with cones of light, and if one sees you for too long you lose a life. Grab fireflies for points, survive each round's timer for a bonus, and the Seekers get faster and more numerous every round.</p>\n<ul>\n<li>Plays instantly in the browser, no download or sign-up</li>\n<li>Works on desktop and mobile, with a portrait layout for phones</li>\n<li>A full guide under the game: how the camo and alert meters work, scoring, and tips for surviving later rounds</li>\n</ul>\n<p>One round takes a couple of minutes. Give it a try, and feedback is welcome.</p>",
+  "attachments": []
+}

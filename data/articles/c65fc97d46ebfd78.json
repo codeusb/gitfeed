@@ -1,0 +1,15 @@
+{
+  "id": "c65fc97d46ebfd78",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] [分享发现] 标书里的图，为什么我会留一份可编辑的",
+  "link": "https://www.v2ex.com/t/1257237#reply0",
+  "author": "weishao666",
+  "publishedAt": "2026-11-15T12:15:46Z",
+  "snippet": "标书有个特点：评审意见回来之后，版式经常要动，但内容不太变。 如果图是死的，每次改都要重画；如果留了可编辑版本，改的是标题、调的是顺序，框架不动。尤其是组织架构、实施流程、服务网络这几类图，改动频率很高。 我的习惯是交标时同时留一份可编辑的源文件，放在自己的资料库，下次同类项目直接复用结构。注意别把客户的原图直接改改就用，涉及资质和承诺的内容要重新核对。 工具入口在这里：https://image2ppt.asia?utm_source...",
+  "coverImage": "https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/46_%E6%A0%B8%E5%BF%83%E5%9B%A2%E9%98%9F%E6%9E%84%E6%88%90%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA%E7%A7%91%E7%A0%94PPT/%E5%8E%9F%E5%9B%BE.jpg",
+  "readTime": 1,
+  "content": "<p>标书有个特点：评审意见回来之后，版式经常要动，但内容不太变。</p>\n<p>如果图是死的，每次改都要重画；如果留了可编辑版本，改的是标题、调的是顺序，框架不动。尤其是组织架构、实施流程、服务网络这几类图，改动频率很高。</p>\n<p>我的习惯是交标时同时留一份可编辑的源文件，放在自己的资料库，下次同类项目直接复用结构。注意别把客户的原图直接改改就用，涉及资质和承诺的内容要重新核对。</p>\n<p>工具入口在这里：<a href=\"https://image2ppt.asia?utm_source=v2ex\" rel=\"noopener noreferrer\" target=\"_blank\">https://image2ppt.asia?utm_source=v2ex</a>\n（图片、截图、单页 PDF 都能转成可编辑的 PPTX，成品无水印。）</p>\n<p>一个例子（原图 → 可编辑成品）：</p>\n<p><img alt=\"核心团队构成项目成果展示科研 PPT 原图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/46_%E6%A0%B8%E5%BF%83%E5%9B%A2%E9%98%9F%E6%9E%84%E6%88%90%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA%E7%A7%91%E7%A0%94PPT/%E5%8E%9F%E5%9B%BE.jpg\"/></p>\n<p><img alt=\"核心团队构成项目成果展示科研 PPT 成品\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/46_%E6%A0%B8%E5%BF%83%E5%9B%A2%E9%98%9F%E6%9E%84%E6%88%90%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA%E7%A7%91%E7%A0%94PPT/%E6%88%90%E5%93%81%E9%A2%84%E8%A7%88.jpg\"/></p>\n<p>素材库里随手挑的几页，这类图都能这么转：</p>\n<p><img alt=\"058_智能制造年中总结汇报 PPT 模板_p09\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s040.jpg\"/>\n<img alt=\"154_研究项目演示示例_p05\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s047.jpg\"/></p>",
+  "attachments": []
+}

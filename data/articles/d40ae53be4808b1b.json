@@ -1,0 +1,15 @@
+{
+  "id": "d40ae53be4808b1b",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] AI Infra 是不是目前 LLM 的工作中对数学要求较低，且 Sre 可以考虑转型的？",
+  "link": "https://www.v2ex.com/t/1257239#reply2",
+  "author": "zhoudaiyu",
+  "publishedAt": "2026-11-15T12:24:23Z",
+  "snippet": "我是 k8s SRE，目前运维的服务全是通算的。之前也部署过常见的大模型在 k8s 上，早期折腾过 triton 和 mig 这种 gpu 虚拟化的东西，我觉得 ai 时代 传统的通算运维已经有些过时了，想学习一下 AI Infra 的东西，但是我手里没有卡，也没有实际需求",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我是 k8s SRE，目前运维的服务全是通算的。之前也部署过常见的大模型在 k8s 上，早期折腾过 triton 和 mig 这种 gpu 虚拟化的东西，我觉得 ai 时代 传统的通算运维已经有些过时了，想学习一下 AI Infra 的东西，但是我手里没有卡，也没有实际需求</p>",
+  "attachments": []
+}

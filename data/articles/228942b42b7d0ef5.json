@@ -1,0 +1,15 @@
+{
+  "id": "228942b42b7d0ef5",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] VimPDF：像用 Vim 一样读 PDF",
+  "link": "https://www.v2ex.com/t/1257259#reply0",
+  "author": "rpish",
+  "publishedAt": "2026-11-15T15:12:02Z",
+  "snippet": "多年前初学 Linux 时，为了退出 vi 被迫学了 Vim 快捷键。 后来发现了 Vimium 这款用键盘刷网页的神器，从此一发不可收拾，想方设法不让双手离开键盘。 最近正好要看些 PDF 文档，于是 Vibe Coding 了这个让大家双手不离键盘，便捷阅读批注的阅读器。 功能比较简单，不过难免有些小 bug，欢迎大家使用反馈，给我发 pr，或者 fork 二次开发。 Github 地址：https://github.com/zhp...",
+  "coverImage": "https://github.com/zhpencil/VimPDF/raw/main/docs/hero.png",
+  "readTime": 1,
+  "content": "<p>多年前初学 Linux 时，为了退出 vi 被迫学了 Vim 快捷键。</p>\n<p>后来发现了 Vimium 这款用键盘刷网页的神器，从此一发不可收拾，想方设法不让双手离开键盘。</p>\n<p>最近正好要看些 PDF 文档，于是 Vibe Coding 了这个让大家双手不离键盘，便捷阅读批注的阅读器。</p>\n<p><img alt=\"hero\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://github.com/zhpencil/VimPDF/raw/main/docs/hero.png\"/></p>\n<p>功能比较简单，不过难免有些小 bug，欢迎大家使用反馈，给我发 pr，或者 fork 二次开发。</p>\n<p>Github 地址：<a href=\"https://github.com/zhpencil/VimPDF\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/zhpencil/VimPDF</a></p>",
+  "attachments": []
+}

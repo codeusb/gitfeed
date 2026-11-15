@@ -1,0 +1,15 @@
+{
+  "id": "421ebc2922f3c8d1",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了一个中英双语 GLSL 学习站：改代码就能看到 Shader 效果",
+  "link": "https://www.v2ex.com/t/1257245#reply0",
+  "author": "theron159",
+  "publishedAt": "2026-11-15T13:14:45Z",
+  "snippet": "我做了 Shader Learn，想把 GLSL 的解释、练习和实际画面放在一起，方便前端开发者和创意编程学习者边试边理解。中文学习入口：https://shader-learn.com/zh/learn在线编辑器：https://shader-learn.com/playground目前有学习路径、函数参考、可编辑效果示例，以及实时 Shader Playground。比如在 smoothstep 页面直接修改参数和代码，就能看到边缘...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "我做了 Shader Learn，想把 GLSL 的解释、练习和实际画面放在一起，方便前端开发者和创意编程学习者边试边理解。<br/><br/>中文学习入口：<a href=\"https://shader-learn.com/zh/learn\" rel=\"noopener noreferrer\" target=\"_blank\">https://shader-learn.com/zh/learn</a><br/>在线编辑器：<a href=\"https://shader-learn.com/playground\" rel=\"noopener noreferrer\" target=\"_blank\">https://shader-learn.com/playground</a><br/><br/>目前有学习路径、函数参考、可编辑效果示例，以及实时 Shader Playground。比如在 smoothstep 页面直接修改参数和代码，就能看到边缘过渡的变化：<a href=\"https://shader-learn.com/glsl/smoothstep\" rel=\"noopener noreferrer\" target=\"_blank\">https://shader-learn.com/glsl/smoothstep</a><br/><br/>编辑器也提供时间控制、纹理和 uniform 配置。可以先在浏览器里试效果，再结合解释看代码。<br/><br/>先说明一下：部分教程需要 Pro，公开函数参考、示例和 Playground 可用于体验。<br/><br/>我是作者，想听听大家在学习 Shader 时最容易卡在哪里，以及这套边改边看的方式是否有帮助。",
+  "attachments": []
+}

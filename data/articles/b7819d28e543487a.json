@@ -1,0 +1,15 @@
+{
+  "id": "b7819d28e543487a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[VPS] 有大佬尝试过 tailscale 做梯子吗？",
+  "link": "https://www.v2ex.com/t/1257249#reply5",
+  "author": "lokamir",
+  "publishedAt": "2026-11-15T14:15:01Z",
+  "snippet": "理论上在外面的服务器装个 tailscale 也可以实现 clash 一样的效果，最重要的是现在 tailscalse 还直接出了网络出口，连服务器费用都省了，就是不知道安全不安全，会不会被发现",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "理论上在外面的服务器装个 tailscale 也可以实现 clash 一样的效果，最重要的是现在 tailscalse 还直接出了网络出口，连服务器费用都省了，就是不知道安全不安全，会不会被发现",
+  "attachments": []
+}

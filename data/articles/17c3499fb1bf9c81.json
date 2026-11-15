@@ -1,0 +1,15 @@
+{
+  "id": "17c3499fb1bf9c81",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 一天上线了一个 Roblox 新游戏的资料站",
+  "link": "https://www.v2ex.com/t/1257265#reply0",
+  "author": "yuchuan520",
+  "publishedAt": "2026-11-15T16:20:12Z",
+  "snippet": "最近 Roblox 上有个 JoJo 题材的新游戏 Stand Out 很火，同时在线 5 万多人，官方 Discord 17 万多成员。这类 Roblox 游戏的官方资料一般放在 Trello 上，但 Trello 的内容在 Google 里几乎搜不到（搜索结果只显示 \"No information is available for this page\"），手机上翻 1000 多张卡片也很痛苦。 所以做了一个非官方的资料站：https...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近 Roblox 上有个 JoJo 题材的新游戏 Stand Out 很火，同时在线 5 万多人，官方 Discord 17 万多成员。这类 Roblox 游戏的官方资料一般放在 Trello 上，但 Trello 的内容在 Google 里几乎搜不到（搜索结果只显示 \"No information is available for this page\"），手机上翻 1000 多张卡片也很痛苦。</p>\n<p>所以做了一个非官方的资料站：<a href=\"https://standout-trello.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://standout-trello.com</a></p>\n<p>目前有这些内容：</p>\n<ul>\n<li>兑换码：按官方 Trello 里 Active / Expired 两个分组来区分，附兑换步骤和\"码用不了\"排查表</li>\n<li>全部 Stand：45 个已上线的 Stand，可按稀有度筛选，写了每个怎么获得</li>\n<li>箭的种类：6 种道具的合成配方、排除的稀有度、官方公布的概率</li>\n<li>更新日志、Wiki 索引、Discord 真假辨别</li>\n</ul>\n<p>几个做的时候的体会：</p>\n<ol>\n<li>\n<p>数据准确比内容多重要。上线当天官方就换了一块新 Trello 板，旧板停更；同一天还有 3 个兑换码过期。好几个竞品站还把过期码列成可用。所以每个页面底部都列了数据来自哪几张 Trello 卡片、什么时候核对的，读者可以自己点过去验证。</p>\n</li>\n<li>\n<p>Trello 公开板可以直接读 JSON（/1/boards/{id}/cards），写了个同步脚本，只更新事实字段，人工补充的内容保留不覆盖。</p>\n</li>\n<li>\n<p>技术栈：Next.js 静态导出 + Cloudflare Pages，代码放 GitLab。整站静态，移动端 Lighthouse 基本都在 97–100。下一步准备用 Cloudflare 定时触发重新构建，构建时自动拉 Trello 数据，这样兑换码过期能几小时内同步。</p>\n</li>\n</ol>\n<p>站是非官方的，和开发团队没有关系。欢迎提意见，也欢迎做游戏站的朋友交流。</p>",
+  "attachments": []
+}
