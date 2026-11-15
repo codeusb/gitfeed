@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Save, RefreshCw, Key, Database, Sliders, CheckCircle2, AlertCircle } from 'lucide-react';
 import { UserSettings } from '../types';
 import { SyncService } from '../services/syncService';
@@ -25,6 +25,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     message?: string;
   }>({ loading: false });
 
+  // Sync formData whenever settings prop updates or modal is opened
+  useEffect(() => {
+    if (isOpen) {
+      setFormData({ ...settings });
+      setSyncStatus({ loading: false });
+    }
+  }, [isOpen, settings]);
+
   if (!isOpen) return null;
 
   const handleSave = () => {
@@ -34,6 +42,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
   const handleManualSync = async () => {
     setSyncStatus({ loading: true });
+    // Auto-save form data so user never loses it if they sync and refresh
+    onSaveSettings(formData);
     const res = await SyncService.syncWithGitHub(formData);
     setSyncStatus({
       loading: false,

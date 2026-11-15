@@ -136,7 +136,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     refreshAllData(settings);
-  }, [refreshAllData, settings.dataSourceUrl]);
+  }, [refreshAllData, settings.dataSourceUrl, settings.githubToken, settings.githubRepo]);
 
   // Handle article selection
   const handleSelectArticle = useCallback((art: ArticleSummary) => {

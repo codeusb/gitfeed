@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Modal,
   View,
@@ -35,6 +35,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [syncing, setSyncing] = useState(false);
   const [checkingUpdate, setCheckingUpdate] = useState(false);
 
+  useEffect(() => {
+    if (visible) {
+      setFormData({ ...settings });
+    }
+  }, [visible, settings]);
+
   const handleSave = async () => {
     await Storage.saveSettings(formData);
     onUpdateSettings(formData);
@@ -44,6 +50,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
   const handleSyncNow = async () => {
     setSyncing(true);
+    await Storage.saveSettings(formData);
+    onUpdateSettings(formData);
     const res = await MobileSyncService.syncWithGitHub(formData);
     setSyncing(false);
     Alert.alert(res.success ? '同步成功' : '同步失败', res.message);
