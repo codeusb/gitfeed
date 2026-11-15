@@ -1,0 +1,15 @@
+{
+  "id": "09d5a8967b0961ae",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[操作系统] 用 Zig+Rust 做了个简单的 OS，目前打算全面转向 AI 推进这个项目。 各位大佬们有啥好的建议或者想法么",
+  "link": "https://www.v2ex.com/t/1257147#reply0",
+  "author": "Czzzzzz",
+  "publishedAt": "2026-11-15T00:58:26Z",
+  "snippet": "目前实际运行的设备包括: qemu-system-riscv64 virt， 2 hart Milk DuoS 的 C906 大核， 1 hart 详细在 github 仓库： https://github.com/Czzqq/ziggruatos",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>目前实际运行的设备包括:</p>\n<ul>\n<li>qemu-system-riscv64 virt， 2 hart</li>\n<li>Milk DuoS 的 C906 大核， 1 hart</li>\n</ul>\n<p>详细在 github 仓库：\n<a href=\"https://github.com/Czzqq/ziggruatos\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/Czzqq/ziggruatos</a></p>",
+  "attachments": []
+}

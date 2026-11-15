@@ -1,0 +1,15 @@
+{
+  "id": "d417078faca5964e",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Show HN: Gawain – Require type hints on all Python variables",
+  "link": "https://github.com/matheuzgomes/gawain",
+  "author": "MarinhoD",
+  "publishedAt": "2026-11-15T04:39:25Z",
+  "snippet": "Yes, i really hate \"dict[str, ANY]\" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 31 # Comments: 10",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Yes, i really hate \"dict[str, ANY]\"</p>\n<hr/>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50504072\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50504072</a></p>\n<p>Points: 31</p>\n<p># Comments: 10</p>",
+  "attachments": []
+}

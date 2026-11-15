@@ -1,0 +1,15 @@
+{
+  "id": "6e4e0f2a32aae19c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [分享创造] 拯救每天下午茶选择困难：做了一个支持自由增删和筛选的「饮品抽卡」网页小工具：猫猫今天喝什么",
+  "link": "https://www.v2ex.com/t/1257190#reply0",
+  "author": "songjp1996",
+  "publishedAt": "2026-11-15T06:00:01Z",
+  "snippet": "由于对象每次点奶茶都会纠结喝什么，于是周末 vibe 了一个「饮品抽卡」网页小工具：「猫猫今天喝什么」。主要支持的功能：1. 完全自由的饮品库管理（支持自己增删改查） - 录入专属饮品：可以随时新增你常喝的奶茶或私藏咖啡，品牌、品名、价格、推荐喝法随你填。- 自由添加标签：除了预设标签，还支持自己新建个性化标签（比如打上“周五必喝”、“减脂期可冲”、“神仙隐藏款”）。- 随时编辑与删除：不再喝的饮品随时删掉；店里某款售罄了，也可以一键“...",
+  "coverImage": "https://i.imgur.com/kHgYibP.png",
+  "readTime": 1,
+  "content": "由于对象每次点奶茶都会纠结喝什么，于是周末 vibe 了一个「饮品抽卡」网页小工具：「猫猫今天喝什么」。<br/><br/>主要支持的功能：<br/><br/>1. 完全自由的饮品库管理（支持自己增删改查）  <br/>- 录入专属饮品：可以随时新增你常喝的奶茶或私藏咖啡，品牌、品名、价格、推荐喝法随你填。<br/>- 自由添加标签：除了预设标签，还支持自己新建个性化标签（比如打上“周五必喝”、“减脂期可冲”、“神仙隐藏款”）。<br/>- 随时编辑与删除：不再喝的饮品随时删掉；店里某款售罄了，也可以一键“临时停用”，不用删掉也能排除在抽卡池外。<br/>- 支持设置抽中概率：越喜欢的饮品权重调高，被猫猫抽中的概率就越大。  <br/><br/>2. 支持品牌与风味多选筛选<br/>- 今天只想在 [喜茶 + 霸王茶姬] 里挑？或者今天只想喝 [低卡 / 果茶]？点选标签就能即时缩小卡池范围。<br/><br/>3. 支持导出与导入配置<br/>- 自己整理好的特色饮品库支持一键导出，发给朋友对方点导入就能直接同步。<br/><br/>纯个人兴趣制作，不用注册登录，手机电脑浏览器点开就能用。<br/><br/>体验地址：<a href=\"https://browserutil.com/zh/cat-drinks\" rel=\"noopener noreferrer\" target=\"_blank\">https://browserutil.com/zh/cat-drinks</a><br/><br/>效果截图：<br/><a href=\"https://i.imgur.com/kHgYibP.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/kHgYibP.png\"/></a><br/><a href=\"https://i.imgur.com/LMRXgHM.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/LMRXgHM.png\"/></a><br/><br/>欢迎反馈 ～",
+  "attachments": []
+}

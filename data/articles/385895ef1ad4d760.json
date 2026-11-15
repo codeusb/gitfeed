@@ -1,0 +1,15 @@
+{
+  "id": "385895ef1ad4d760",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] BeatAlarm —— 搭载起床小游戏的安卓闹钟",
+  "link": "https://www.v2ex.com/t/1257171#reply0",
+  "author": "fancyplay",
+  "publishedAt": "2026-11-15T03:46:55Z",
+  "snippet": "嗨，V2EX 的各位，我开发了 BeatAlarm，这是一款安卓闹钟应用，会把晨间闹钟和简短的游戏挑战结合起来。 闹钟响起时，你需要滑入游戏界面，完成挑战才能关闭闹铃。该应用内置 12 款小游戏，涵盖色彩识别、记忆力、节奏感、肢体动作等多种交互类型。 应用使用 Kotlin 与 Jetpack Compose 开发。所有游戏均为原生运行；闹钟、各项设置以及游戏结果全部存储在本机设备上。软件支持 15 种界面语言。 免费版提供 3 款游戏...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>嗨，V2EX 的各位，我开发了 <strong>BeatAlarm</strong>，这是一款安卓闹钟应用，会把晨间闹钟和简短的游戏挑战结合起来。</p>\n<p>闹钟响起时，你需要滑入游戏界面，完成挑战才能关闭闹铃。该应用内置 12 款小游戏，涵盖色彩识别、记忆力、节奏感、肢体动作等多种交互类型。</p>\n<p>应用使用 Kotlin 与 Jetpack Compose 开发。所有游戏均为原生运行；闹钟、各项设置以及游戏结果全部存储在本机设备上。软件支持 15 种界面语言。</p>\n<p>免费版提供 3 款游戏，最多可设置 2 个闹钟。你可以一次性付费升级专业版，解锁全部游戏与更多功能，<strong>无需订阅</strong>。</p>\n<p>希望大家可以就起床体验、游戏挑战难度，以及在不同安卓设备上的闹钟运行表现给我反馈。</p>\n<p>谷歌应用商店地址： <a href=\"https://play.google.com/store/apps/details?id=com.fancyar.beatalarm\" rel=\"noopener noreferrer\" target=\"_blank\">https://play.google.com/store/apps/details?id=com.fancyar.beatalarm</a></p>\n<p>应用截图与简短演示： <a href=\"https://beatalarm.pages.dev/\" rel=\"noopener noreferrer\" target=\"_blank\">https://beatalarm.pages.dev/</a></p>",
+  "attachments": []
+}

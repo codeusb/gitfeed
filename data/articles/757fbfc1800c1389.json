@@ -1,0 +1,15 @@
+{
+  "id": "757fbfc1800c1389",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 领 10 美元 Claude 额度，国内直连",
+  "link": "https://www.v2ex.com/t/1257178#reply0",
+  "author": "aicodinginc",
+  "publishedAt": "2026-11-15T04:48:59Z",
+  "snippet": "export ANTHROPIC_BASE_URL=\"https://api.aicoding.sh\"就这一行，Claude Code 的请求会走国内直连线路，不用再开梯子。Cursor 和 Cline 填同样的地址和 Key，也能直接用。线路由 aicoding.inc 维护，做的是 Claude API 中转，目前有两百多家企业客户在上面跑生产环境，高峰期也扛得住。计费按 1.9 折、2.9 折、4.9 折三档消耗余额，用量后台能查...",
+  "coverImage": "https://i.v2ex.co/3Y8FHYFF.png",
+  "readTime": 1,
+  "content": "export ANTHROPIC_BASE_URL=\"<a href=\"https://api.aicoding.sh\" rel=\"noopener noreferrer\" target=\"_blank\">https://api.aicoding.sh</a>\"<br/><br/>就这一行，Claude Code 的请求会走国内直连线路，不用再开梯子。Cursor 和 Cline 填同样的地址和 Key，也能直接用。<br/><br/>线路由 aicoding.inc 维护，做的是 Claude API 中转，目前有两百多家企业客户在上面跑生产环境，高峰期也扛得住。计费按 1.9 折、2.9 折、4.9 折三档消耗余额，用量后台能查。<br/><br/>加群送 10 美元额度，够把手上的项目跑一轮，实际表现自己看就行。<br/><br/>https://aicoding.inc<br/><a href=\"https://www.v2ex.com/i/3Y8FHYFF.png\" rel=\"noopener noreferrer\" target=\"_blank\" title=\"在新窗口打开图片 3Y8FHYFF.png\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"https://i.v2ex.co/3Y8FHYFF.png\"/></a>",
+  "attachments": []
+}

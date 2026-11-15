@@ -1,0 +1,15 @@
+{
+  "id": "c02c18fe2bc85ca3",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了一个本地工具集合：屏幕翻译、语音转写和朗读，电脑端还有文档处理",
+  "link": "https://www.v2ex.com/t/1257156#reply0",
+  "author": "yybird",
+  "publishedAt": "2026-11-15T02:08:34Z",
+  "snippet": "大家好，我是 Screen Solvely 的开发者，来分享一下这个工具，也想收集一些实际使用反馈。 它主要围绕几个场景： 在其他 App 里读外语内容：选择屏幕区域，翻译结果放在悬浮窗口里，尽量减少来回切换。 听讲座或记录对话：转写 App 音频或麦克风声音，记录保留原文和可选译文，可以导出 PDF；选择保留的音频也可导出。 想听而不想盯着读：朗读文章链接或采集到的屏幕文字，调整语速和音色。 在电脑上处理资料：文档格式转换和 PDF ...",
+  "coverImage": "https://screensolvely.com/assets/desktop-workspace-v110.png",
+  "readTime": 1,
+  "content": "<p>大家好，我是 Screen Solvely 的开发者，来分享一下这个工具，也想收集一些实际使用反馈。</p>\n<p>它主要围绕几个场景：</p>\n<ul>\n<li>在其他 App 里读外语内容：选择屏幕区域，翻译结果放在悬浮窗口里，尽量减少来回切换。</li>\n<li>听讲座或记录对话：转写 App 音频或麦克风声音，记录保留原文和可选译文，可以导出 PDF；选择保留的音频也可导出。</li>\n<li>想听而不想盯着读：朗读文章链接或采集到的屏幕文字，调整语速和音色。</li>\n<li>在电脑上处理资料：文档格式转换和 PDF 工具。转换后的段落、公式和复杂版式仍需要对照原稿检查，不承诺无损还原。</li>\n</ul>\n<p>上面这些工具免费，在设备上处理，首次使用需要准备相应的离线资源。网页内容加载仍需要网络，不能把“本地朗读”理解成能离线打开任意网页。</p>\n<p>另外有独立的 AI 解题入口，需要登录、联网并消耗积分，会在线处理用户选中的题目。它和免费本地工具是两种流程；可选积分购买和赞助均在 iOS App 内，没有自动续费。</p>\n<p>目前有 iPhone、iPad、macOS、Windows 和 Linux 版本，具体功能受平台权限和资源准备影响，文档处理为桌面端功能。iOS 可用地区与内购价格以 App Store 显示为准。</p>\n<p>下面是桌面端实际界面：</p>\n<p><img alt=\"Screen Solvely desktop workspace\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://screensolvely.com/assets/desktop-workspace-v110.png\"/></p>\n<p>官网：<a href=\"https://screensolvely.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://screensolvely.com/</a></p>\n<p>iPhone / iPad：<a href=\"https://apps.apple.com/app/id6829088736\" rel=\"noopener noreferrer\" target=\"_blank\">https://apps.apple.com/app/id6829088736</a></p>\n<p>桌面下载：<a href=\"https://screensolvely.com/downloads.html\" rel=\"noopener noreferrer\" target=\"_blank\">https://screensolvely.com/downloads.html</a></p>\n<p>简短 iPhone 翻译演示：<a href=\"https://youtube.com/shorts/_Ihev_ybXSE\" rel=\"noopener noreferrer\" target=\"_blank\">https://youtube.com/shorts/_Ihev_ybXSE</a> （此前录制的真实界面片段，非当前所有平台的性能对比）。</p>\n<p>比较想听听大家的具体反馈：跨 App 时最需要哪个功能？首次资源准备、悬浮窗阅读，或者文档转换里，哪个环节最影响使用？我会在帖子里继续跟进问题。</p>",
+  "attachments": []
+}

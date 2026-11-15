@@ -1,0 +1,15 @@
+{
+  "id": "a1c3fee9875d3ff6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[服务器] 出租一台美西 LAX 独立服务器，原生 3xIPv4",
+  "link": "https://www.v2ex.com/t/1257150#reply0",
+  "author": "sNullp",
+  "publishedAt": "2026-11-15T01:20:22Z",
+  "snippet": "具体配置： CPU: Intel® Xeon E5-2680 v4 (14 Cores 28 Threads) Memory: 128GB ECC DDR4 Storage: 2x480GB Datacenter SSD Network: 1Gbps, 3x IPv4, 15TB/month IPMI included 价格 $60/m",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>具体配置：</p>\n<p>CPU: Intel® Xeon E5-2680 v4 (14 Cores 28 Threads)\nMemory: 128GB ECC DDR4\nStorage: 2x480GB Datacenter SSD\nNetwork: 1Gbps, 3x IPv4, 15TB/month\nIPMI included</p>\n<p>价格 $60/m</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "e00dd86a6e098c98",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] AI 写代码，看 diff 却要开个几 G 的 IDE？我写了个 4MB 的工具，开源免费。",
+  "link": "https://www.v2ex.com/t/1257203#reply1",
+  "author": "Owen728",
+  "publishedAt": "2026-11-15T07:04:28Z",
+  "snippet": "我有个痛点，不知道大家有没有。现在写代码基本都交给 AI Agent 了，很少再自己手写。手是不用写了，可 AI 改的代码还是得看呀，不看心里实在没底。但为了看 diff，我们还是习惯打开手写代码时用的那些 IDE，比如 Xcode、Android Studio，或者 JetBrains 全家桶。这些 IDE 在手写代码的年代确实离不开，可它们太重了。代码补全、编译、各种插件都集成在里面，一启动动辄就吃掉几个 G 内存。内存不够用，系统...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "我有个痛点，不知道大家有没有。<br/><br/>现在写代码基本都交给 AI Agent 了，很少再自己手写。<br/><br/>手是不用写了，可 AI 改的代码还是得看呀，不看心里实在没底。<br/><br/>但为了看 diff，我们还是习惯打开手写代码时用的那些 IDE，比如 Xcode、Android Studio，或者 JetBrains 全家桶。<br/><br/>这些 IDE 在手写代码的年代确实离不开，可它们太重了。代码补全、编译、各种插件都集成在里面，一启动动辄就吃掉几个 G 内存。内存不够用，系统就拿硬盘做交换，我这台 500G 硬盘的 Mac 天天得清理空间，有时候还会直接卡死。<br/><br/>于是我做了 DiffCode。它不是 IDE，是专门用来 review 代码的，纯 Mac 原生实现。安装包只有 4 MB，启动后内存只占 40 MB 左右，很轻，启动也快，打开就能用。<br/><br/>代码开源，也提供安装包，欢迎大家试用。<br/><br/><a href=\"https://github.com/ihou/DiffCode\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/ihou/DiffCode</a><br/><a href=\"https://ihou.github.io/DiffCode/\" rel=\"noopener noreferrer\" target=\"_blank\">https://ihou.github.io/DiffCode/</a>",
+  "attachments": []
+}

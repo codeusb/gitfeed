@@ -1,0 +1,15 @@
+{
+  "id": "be594e6ecd6b3993",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude] 放一台 mini 主机在国外，通过远程连接 ，发现一个大问题。",
+  "link": "https://www.v2ex.com/t/1257197#reply0",
+  "author": "amzzoo",
+  "publishedAt": "2026-11-15T06:44:24Z",
+  "snippet": "rdp 是用的另外一个显示驱动 网页可以通过分辨率等显示参数发现 rdp 的渲染还是本机渲染。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>rdp 是用的另外一个显示驱动 网页可以通过分辨率等显示参数发现 rdp 的渲染还是本机渲染。</p>",
+  "attachments": []
+}
