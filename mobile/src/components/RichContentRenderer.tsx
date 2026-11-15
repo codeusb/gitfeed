@@ -967,36 +967,30 @@ const IssueOverviewCard: React.FC<{
 };
 
 // -------------------------------------------------------------
-// Component: Related Links Card
+// Component: Related Links Card (daily.juya.uk .event-related-links style)
 // -------------------------------------------------------------
 const RelatedLinksCard: React.FC<{
   links: { title?: string; url: string }[];
   tokens: ThemeTokens;
 }> = ({ links, tokens }) => {
   return (
-    <View
-      style={[
-        styles.relatedCard,
-        {
-          borderColor: tokens.borderSubtle,
-          backgroundColor: tokens.bgSubtle,
-        },
-      ]}
-    >
-      <Text style={[styles.relatedTitle, { color: tokens.textSecondary }]}>相关链接</Text>
-      {links.map((link, idx) => (
-        <TouchableOpacity
-          key={idx}
-          activeOpacity={0.7}
-          onPress={() => Linking.openURL(link.url)}
-          style={styles.relatedLinkRow}
-        >
-          <Text style={[styles.relatedLinkText, { color: tokens.accent }]} numberOfLines={1}>
-            {link.title || link.url}
-          </Text>
-          <Text style={[styles.relatedLinkArrow, { color: tokens.accent }]}>↗</Text>
-        </TouchableOpacity>
-      ))}
+    <View style={styles.relatedLinksContainer}>
+      <Text style={[styles.relatedTitle, { color: tokens.textSecondary }]}>相关链接：</Text>
+      <View style={styles.relatedList}>
+        {links.map((link, idx) => (
+          <TouchableOpacity
+            key={idx}
+            activeOpacity={0.7}
+            onPress={() => Linking.openURL(link.url)}
+            style={styles.relatedLinkRow}
+          >
+            <Text style={[styles.relatedBullet, { color: tokens.textMuted }]}>•</Text>
+            <Text style={[styles.relatedLinkText, { color: tokens.accent }]}>
+              {link.title || link.url}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </View>
     </View>
   );
 };
@@ -1642,34 +1636,36 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontFamily: 'monospace',
   },
-  // Related Links Card styles
-  relatedCard: {
-    borderRadius: 16,
-    borderWidth: 1,
-    padding: 14,
-    marginVertical: 14,
+  // Related Links styles (daily.juya.uk style)
+  relatedLinksContainer: {
+    marginVertical: 16,
+    paddingTop: 10,
   },
   relatedTitle: {
-    fontSize: 13,
+    fontSize: 14,
     fontWeight: '700',
-    marginBottom: 8,
+    marginBottom: 10,
+  },
+  relatedList: {
+    paddingLeft: 4,
   },
   relatedLinkRow: {
     flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingVertical: 6,
+    alignItems: 'flex-start',
+    marginBottom: 8,
+    gap: 8,
+  },
+  relatedBullet: {
+    fontSize: 14,
+    lineHeight: 20,
+    fontWeight: '700',
   },
   relatedLinkText: {
     flex: 1,
-    fontSize: 12,
-    fontFamily: 'monospace',
-    textDecorationLine: 'underline',
-  },
-  relatedLinkArrow: {
     fontSize: 13,
-    fontWeight: '700',
-    marginLeft: 6,
+    lineHeight: 20,
+    fontFamily: 'monospace',
+    textDecorationLine: 'none',
   },
   // Lightbox Modal styles
   lightboxContainer: {
