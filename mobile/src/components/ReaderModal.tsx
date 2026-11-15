@@ -12,11 +12,14 @@ import {
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ArticleDetail, ArticleSummary, MobileSettings } from '../types';
 import { MobileDataService } from '../services/dataService';
 import { useTheme } from '../theme/ThemeContext';
 import { RichContentRenderer } from './RichContentRenderer';
+
+const KEY_FONT_SIZE = '@gitfeed_reader_font_size';
 
 interface ReaderModalProps {
   visible: boolean;
@@ -44,6 +47,24 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
   const [loading, setLoading] = useState(false);
   const [fontSize, setFontSize] = useState<number>(16);
   const [scrollProgress, setScrollProgress] = useState<number>(0);
+
+  // Load persisted font size
+  useEffect(() => {
+    AsyncStorage.getItem(KEY_FONT_SIZE).then((val) => {
+      if (val) {
+        const num = Number(val);
+        if (num >= 12 && num <= 26) setFontSize(num);
+      }
+    });
+  }, []);
+
+  const handleUpdateFontSize = (delta: number) => {
+    setFontSize((prev) => {
+      const next = Math.min(26, Math.max(12, prev + delta));
+      AsyncStorage.setItem(KEY_FONT_SIZE, String(next));
+      return next;
+    });
+  };
 
   useEffect(() => {
     if (!articleSummary || !visible) {
@@ -139,7 +160,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
           {/* Right Action buttons */}
           <View style={styles.rightActions}>
             <TouchableOpacity
-              onPress={() => setFontSize((s) => Math.max(13, s - 2))}
+              onPress={() => handleUpdateFontSize(-2)}
               style={[
                 styles.toolCircleBtn,
                 { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
@@ -150,7 +171,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
             </TouchableOpacity>
 
             <TouchableOpacity
-              onPress={() => setFontSize((s) => Math.min(24, s + 2))}
+              onPress={() => handleUpdateFontSize(2)}
               style={[
                 styles.toolCircleBtn,
                 { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
@@ -231,26 +252,73 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               <Text
                 style={[
                   styles.feedBadge,
-                  { backgroundColor: tokens.accentSubtle, color: tokens.accent },
+                  {
+                    backgroundColor: tokens.accentSubtle,
+                    color: tokens.accent,
+                    fontSize: Math.max(10, fontSize * 0.72),
+                  },
                 ]}
               >
                 {articleSummary.feedTitle}
               </Text>
-              <Text style={[styles.readTimeText, { color: tokens.textMuted }]}>
+              <Text
+                style={[
+                  styles.readTimeText,
+                  {
+                    color: tokens.textMuted,
+                    fontSize: Math.max(10, fontSize * 0.72),
+                  },
+                ]}
+              >
                 {articleSummary.readTime} 分钟阅读
               </Text>
             </View>
 
-            <Text style={[styles.title, { color: tokens.textPrimary }]}>
+            <Text
+              style={[
+                styles.title,
+                {
+                  color: tokens.textPrimary,
+                  fontSize: fontSize * 1.35,
+                  lineHeight: fontSize * 1.8,
+                },
+              ]}
+            >
               {articleSummary.title}
             </Text>
 
             <View style={styles.metaRow}>
-              <Text style={[styles.author, { color: tokens.textSecondary }]}>
+              <Text
+                style={[
+                  styles.author,
+                  {
+                    color: tokens.textSecondary,
+                    fontSize: Math.max(11, fontSize * 0.75),
+                  },
+                ]}
+              >
                 {articleSummary.author || articleSummary.feedTitle}
               </Text>
-              <Text style={[styles.metaSeparator, { color: tokens.textMuted }]}>•</Text>
-              <Text style={[styles.metaDate, { color: tokens.textMuted }]}>
+              <Text
+                style={[
+                  styles.metaSeparator,
+                  {
+                    color: tokens.textMuted,
+                    fontSize: Math.max(11, fontSize * 0.75),
+                  },
+                ]}
+              >
+                •
+              </Text>
+              <Text
+                style={[
+                  styles.metaDate,
+                  {
+                    color: tokens.textMuted,
+                    fontSize: Math.max(11, fontSize * 0.75),
+                  },
+                ]}
+              >
                 {formatPubDate(articleSummary.publishedAt)}
               </Text>
             </View>
