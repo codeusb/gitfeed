@@ -74,7 +74,8 @@ jobs:
         run: |
           VERSION="${{ github.ref_name }}"
           if [[ "$VERSION" != v* ]]; then
-            VERSION="${{ github.event.inputs.version_name || 'v1.0.4' }}"
+            PKG_VER=$(node -p "require('./mobile/package.json').version")
+            VERSION="v${PKG_VER}"
           fi
           
           SOURCE_APK="mobile/android/app/build/outputs/apk/release/app-release.apk"
@@ -97,7 +98,7 @@ jobs:
           path: ${{ steps.prepare_apk.outputs.apk_path }}
 
       - name: Publish to GitHub Releases
-        if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/main' || github.event.inputs.create_release == true
+        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && github.event.inputs.create_release == true)
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.prepare_apk.outputs.version }}
