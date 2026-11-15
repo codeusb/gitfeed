@@ -126,10 +126,15 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 12,
-    marginVertical: 4,
-    padding: 14,
-    borderRadius: 16,
+    marginVertical: 5,
+    padding: 16,
+    borderRadius: 18,
     borderWidth: 1,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.02,
+    shadowRadius: 4,
+    elevation: 1,
   },
   topMeta: {
     flexDirection: 'row',
@@ -178,9 +183,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontSize: 15,
+    fontSize: 16,
     fontWeight: '600',
-    lineHeight: 21,
+    lineHeight: 22,
     marginBottom: 4,
     letterSpacing: -0.2,
   },
@@ -188,13 +193,13 @@ const styles = StyleSheet.create({
     fontWeight: '400',
   },
   snippet: {
-    fontSize: 12,
+    fontSize: 12.5,
     lineHeight: 18,
   },
   thumbnail: {
-    width: 62,
-    height: 62,
-    borderRadius: 12,
+    width: 68,
+    height: 68,
+    borderRadius: 14,
     borderWidth: 1,
   },
 });

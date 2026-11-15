@@ -9,7 +9,8 @@ import {
   Linking,
   Share,
   ActivityIndicator,
-  Image,
+  NativeSyntheticEvent,
+  NativeScrollEvent,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ArticleDetail, ArticleSummary, MobileSettings } from '../types';
@@ -42,17 +43,17 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
   const [detail, setDetail] = useState<ArticleDetail | null>(null);
   const [loading, setLoading] = useState(false);
   const [fontSize, setFontSize] = useState<number>(16);
-  const [heroError, setHeroError] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
 
   useEffect(() => {
     if (!articleSummary || !visible) {
       setDetail(null);
-      setHeroError(false);
+      setScrollProgress(0);
       return;
     }
 
     setLoading(true);
-    setHeroError(false);
+    setScrollProgress(0);
     MobileDataService.fetchArticleDetail(articleSummary.id, settings)
       .then((res) => {
         setDetail(res);
@@ -92,20 +93,19 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
     }
   };
 
-  const hasValidHeroImage = Boolean(
-    articleSummary.coverImage &&
-    !heroError &&
-    typeof articleSummary.coverImage === 'string' &&
-    articleSummary.coverImage.startsWith('http') &&
-    !articleSummary.coverImage.toLowerCase().endsWith('.svg') &&
-    !articleSummary.coverImage.includes('shields.io') &&
-    !articleSummary.coverImage.includes('/assets/icons/')
-  );
+  const handleScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+    const { contentOffset, contentSize, layoutMeasurement } = e.nativeEvent;
+    const maxScroll = contentSize.height - layoutMeasurement.height;
+    if (maxScroll > 0) {
+      const p = Math.min(1, Math.max(0, contentOffset.y / maxScroll));
+      setScrollProgress(p);
+    }
+  };
 
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
       <SafeAreaView style={[styles.container, { backgroundColor: tokens.bgPage }]}>
-        {/* Top Astryx Navigation Bar */}
+        {/* Top Minimal Header (daily.juya.uk style) */}
         <View
           style={[
             styles.navbar,
@@ -115,16 +115,33 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
             },
           ]}
         >
-          <TouchableOpacity onPress={onClose} style={styles.navButton} activeOpacity={0.7}>
-            <Text style={[styles.navButtonText, { color: tokens.textSecondary }]}>✕ 关闭</Text>
+          {/* Back button */}
+          <TouchableOpacity
+            onPress={onClose}
+            style={[styles.closePillBtn, { backgroundColor: tokens.bgSubtle }]}
+            activeOpacity={0.7}
+          >
+            <Text style={[styles.closePillText, { color: tokens.textSecondary }]}>✕ 关闭</Text>
           </TouchableOpacity>
 
+          {/* Center Brand / Feed pill */}
+          <View
+            style={[
+              styles.feedBrandPill,
+              { backgroundColor: tokens.accentSubtle, borderColor: tokens.accentSubtle },
+            ]}
+          >
+            <Text style={[styles.feedBrandText, { color: tokens.accent }]} numberOfLines={1}>
+              {articleSummary.feedTitle}
+            </Text>
+          </View>
+
+          {/* Right Action buttons */}
           <View style={styles.rightActions}>
-            {/* Font Size Scaling */}
             <TouchableOpacity
               onPress={() => setFontSize((s) => Math.max(13, s - 2))}
               style={[
-                styles.toolBtn,
+                styles.toolCircleBtn,
                 { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
               ]}
               activeOpacity={0.7}
@@ -135,7 +152,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
             <TouchableOpacity
               onPress={() => setFontSize((s) => Math.min(24, s + 2))}
               style={[
-                styles.toolBtn,
+                styles.toolCircleBtn,
                 { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
               ]}
               activeOpacity={0.7}
@@ -143,11 +160,10 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               <Text style={[styles.toolBtnText, { color: tokens.textPrimary }]}>A+</Text>
             </TouchableOpacity>
 
-            {/* Toggle Star */}
             <TouchableOpacity
               onPress={onToggleStar}
               style={[
-                styles.toolBtn,
+                styles.toolCircleBtn,
                 { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
               ]}
               activeOpacity={0.7}
@@ -157,11 +173,10 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               </Text>
             </TouchableOpacity>
 
-            {/* Share */}
             <TouchableOpacity
               onPress={handleShare}
               style={[
-                styles.toolBtn,
+                styles.toolCircleBtn,
                 { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
               ]}
               activeOpacity={0.7}
@@ -169,11 +184,10 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               <Text style={[styles.toolIcon, { color: tokens.textPrimary }]}>⇪</Text>
             </TouchableOpacity>
 
-            {/* Open in external browser */}
             <TouchableOpacity
               onPress={handleOpenBrowser}
               style={[
-                styles.toolBtn,
+                styles.toolCircleBtn,
                 { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
               ]}
               activeOpacity={0.7}
@@ -183,8 +197,26 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
           </View>
         </View>
 
+        {/* Reading Progress Line */}
+        <View style={styles.progressTrack}>
+          <View
+            style={[
+              styles.progressBar,
+              {
+                width: `${Math.round(scrollProgress * 100)}%`,
+                backgroundColor: tokens.accent,
+              },
+            ]}
+          />
+        </View>
+
         {/* Article Body Scroll */}
-        <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={styles.scrollContent}
+          onScroll={handleScroll}
+          scrollEventThrottle={16}
+        >
           {/* Article Header Card */}
           <View
             style={[
@@ -222,26 +254,6 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
                 {formatPubDate(articleSummary.publishedAt)}
               </Text>
             </View>
-
-            {/* Hero Cover Image if present */}
-            {hasValidHeroImage ? (
-              <View
-                style={[
-                  styles.heroImageWrapper,
-                  {
-                    borderColor: tokens.borderSubtle,
-                    backgroundColor: tokens.bgSubtle,
-                  },
-                ]}
-              >
-                <Image
-                  source={{ uri: articleSummary.coverImage! }}
-                  style={styles.heroImage}
-                  resizeMode="cover"
-                  onError={() => setHeroError(true)}
-                />
-              </View>
-            ) : null}
           </View>
 
           {/* Article Content Container */}
@@ -266,6 +278,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
                 content={detail?.content || `<p>${articleSummary.snippet}</p>`}
                 fontSize={fontSize}
                 tokens={tokens}
+                coverImage={articleSummary.coverImage}
               />
             )}
           </View>
@@ -313,37 +326,56 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     borderBottomWidth: 1,
   },
-  navButton: {
-    paddingVertical: 8,
-    paddingHorizontal: 10,
+  closePillBtn: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 20,
   },
-  navButtonText: {
-    fontSize: 14,
+  closePillText: {
+    fontSize: 13,
     fontWeight: '600',
+  },
+  feedBrandPill: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 999,
+    maxWidth: 140,
+  },
+  feedBrandText: {
+    fontSize: 12,
+    fontWeight: '700',
   },
   rightActions: {
     flexDirection: 'row',
     alignItems: 'center',
+    gap: 6,
   },
-  toolBtn: {
-    height: 34,
-    minWidth: 34,
-    borderRadius: 10,
-    borderWidth: 1,
-    justifyContent: 'center',
+  toolCircleBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
     alignItems: 'center',
-    marginLeft: 6,
-    paddingHorizontal: 8,
+    justifyContent: 'center',
+    borderWidth: 1,
   },
   toolBtnText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '700',
   },
   toolIcon: {
-    fontSize: 15,
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  progressTrack: {
+    width: '100%',
+    height: 2,
+    backgroundColor: 'transparent',
+  },
+  progressBar: {
+    height: 2,
   },
   scroll: {
     flex: 1,
@@ -353,15 +385,20 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   headerCard: {
-    borderRadius: 16,
+    borderRadius: 20,
     borderWidth: 1,
     padding: 18,
     marginBottom: 12,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.03,
+    shadowRadius: 6,
+    elevation: 1,
   },
   feedRow: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
+    alignItems: 'center',
     marginBottom: 10,
   },
   feedBadge: {
@@ -369,27 +406,27 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     paddingHorizontal: 8,
     paddingVertical: 3,
-    borderRadius: 8,
-    overflow: 'hidden',
+    borderRadius: 6,
   },
   readTimeText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '500',
   },
   title: {
     fontSize: 22,
-    fontWeight: '800',
-    lineHeight: 28,
-    letterSpacing: -0.4,
+    fontWeight: '700',
+    lineHeight: 30,
     marginBottom: 10,
+    letterSpacing: -0.3,
   },
   metaRow: {
     flexDirection: 'row',
     alignItems: 'center',
+    flexWrap: 'wrap',
   },
   author: {
-    fontSize: 13,
-    fontWeight: '600',
+    fontSize: 12,
+    fontWeight: '500',
   },
   metaSeparator: {
     marginHorizontal: 8,
@@ -398,24 +435,18 @@ const styles = StyleSheet.create({
   metaDate: {
     fontSize: 12,
   },
-  heroImageWrapper: {
-    marginTop: 14,
-    borderRadius: 14,
-    borderWidth: 1,
-    overflow: 'hidden',
-  },
-  heroImage: {
-    width: '100%',
-    height: 180,
-  },
   contentCard: {
-    borderRadius: 16,
+    borderRadius: 20,
     borderWidth: 1,
     padding: 18,
-    minHeight: 180,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.03,
+    shadowRadius: 6,
+    elevation: 1,
   },
   loadingContainer: {
-    paddingVertical: 50,
+    paddingVertical: 60,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -424,18 +455,18 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   bottomBar: {
-    marginTop: 16,
     flexDirection: 'row',
     justifyContent: 'space-between',
     gap: 10,
+    marginTop: 16,
   },
   bottomActionBtn: {
     flex: 1,
-    height: 44,
-    borderRadius: 12,
+    paddingVertical: 14,
+    borderRadius: 16,
     borderWidth: 1,
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   bottomBtnText: {
     fontSize: 13,
