@@ -8,7 +8,6 @@ import {
   Settings,
   RefreshCw,
   Folder,
-  HelpCircle,
   Sun,
   Moon,
   CheckCheck
@@ -28,7 +27,6 @@ interface SidebarProps {
   isRefreshing: boolean;
   onOpenSettings: () => void;
   onOpenFeedManager: () => void;
-  onOpenHelp: () => void;
   onMarkAllRead: () => void;
   theme: 'dark' | 'light' | 'system';
   onToggleTheme: () => void;
@@ -48,7 +46,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
   isRefreshing,
   onOpenSettings,
   onOpenFeedManager,
-  onOpenHelp,
   onMarkAllRead,
   theme,
   onToggleTheme,
@@ -292,14 +289,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
               title="切换主题 (日间 / 夜间)"
             >
               {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
-            </button>
-
-            <button
-              onClick={onOpenHelp}
-              className="p-1.5 rounded-xl hover:bg-theme-subtle hover:text-theme-primary transition-all duration-175 ease-astryx"
-              title="快捷键说明"
-            >
-              <HelpCircle className="w-4 h-4" />
             </button>
 
             <button

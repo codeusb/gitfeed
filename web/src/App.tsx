@@ -18,7 +18,6 @@ import { ReaderView } from './components/ReaderView';
 import { MobileNav } from './components/MobileNav';
 import { SettingsModal } from './components/SettingsModal';
 import { FeedManagerModal } from './components/FeedManagerModal';
-import { KeyboardHelpModal } from './components/KeyboardHelpModal';
 
 export const App: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -49,7 +48,6 @@ export const App: React.FC = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
   const [settingsModalOpen, setSettingsModalOpen] = useState(false);
   const [feedManagerModalOpen, setFeedManagerModalOpen] = useState(false);
-  const [helpModalOpen, setHelpModalOpen] = useState(false);
 
   // Debounced auto-sync when read/starred state changes
   const syncTimeoutRef = useRef<any>(null);
@@ -230,96 +228,29 @@ export const App: React.FC = () => {
     handleSelectArticle(visibleArticles[prevIdx]);
   }, [visibleArticles, currentIndex, handleSelectArticle]);
 
-  // Keyboard Shortcuts Handler
+  // Close modals or reader on Escape
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Never intercept browser native shortcuts with modifier keys (Cmd/Ctrl/Alt)
-      // e.g. Cmd+R (Reload page), Cmd+W, Cmd+T, Cmd+S, Cmd+L, etc.
-      if (e.metaKey || e.ctrlKey || e.altKey) {
-        return;
-      }
-
-      // Don't intercept typing in inputs
-      const target = e.target as HTMLElement;
-      if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') {
-        if (e.key === 'Escape') {
-          target.blur();
-        }
-        return;
-      }
-
       if (e.key === 'Escape') {
-        if (settingsModalOpen || feedManagerModalOpen || helpModalOpen) {
+        const target = e.target as HTMLElement;
+        if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') {
+          target.blur();
+          return;
+        }
+        if (settingsModalOpen || feedManagerModalOpen) {
           setSettingsModalOpen(false);
           setFeedManagerModalOpen(false);
-          setHelpModalOpen(false);
         } else if (mobileView === 'reader') {
           setMobileView('list');
         } else if (selectedArticle) {
           setSelectedArticle(null);
         }
-        return;
-      }
-
-      switch (e.key.toLowerCase()) {
-        case 'j':
-          e.preventDefault();
-          handleNextArticle();
-          break;
-        case 'k':
-          e.preventDefault();
-          handlePrevArticle();
-          break;
-        case 'm':
-          if (selectedArticle) {
-            e.preventDefault();
-            handleToggleRead(selectedArticle.id);
-          }
-          break;
-        case 's':
-          if (selectedArticle) {
-            e.preventDefault();
-            handleToggleStar(selectedArticle.id);
-          }
-          break;
-        case 'o':
-        case 'v':
-          if (selectedArticle) {
-            e.preventDefault();
-            window.open(selectedArticle.link, '_blank', 'noopener,noreferrer');
-          }
-          break;
-        case 'r':
-          e.preventDefault();
-          refreshAllData(settings);
-          break;
-        case '?':
-          e.preventDefault();
-          setHelpModalOpen((prev) => !prev);
-          break;
-        case '/':
-          e.preventDefault();
-          const searchInput = document.querySelector('input[type="text"]') as HTMLInputElement;
-          if (searchInput) searchInput.focus();
-          break;
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [
-    selectedArticle,
-    handleNextArticle,
-    handlePrevArticle,
-    handleToggleRead,
-    handleToggleStar,
-    refreshAllData,
-    settings,
-    settingsModalOpen,
-    feedManagerModalOpen,
-    helpModalOpen,
-    mobileView,
-  ]);
+  }, [settingsModalOpen, feedManagerModalOpen, mobileView, selectedArticle]);
 
   // Calculate unread counts
   const totalUnreadCount = useMemo(() => {
@@ -360,7 +291,6 @@ export const App: React.FC = () => {
           isRefreshing={isRefreshing}
           onOpenSettings={() => setSettingsModalOpen(true)}
           onOpenFeedManager={() => setFeedManagerModalOpen(true)}
-          onOpenHelp={() => setHelpModalOpen(true)}
           onMarkAllRead={handleMarkCurrentViewRead}
           theme={settings.theme}
           onToggleTheme={toggleTheme}
@@ -392,7 +322,6 @@ export const App: React.FC = () => {
               isRefreshing={isRefreshing}
               onOpenSettings={() => setSettingsModalOpen(true)}
               onOpenFeedManager={() => setFeedManagerModalOpen(true)}
-              onOpenHelp={() => setHelpModalOpen(true)}
               onMarkAllRead={handleMarkCurrentViewRead}
               theme={settings.theme}
               onToggleTheme={toggleTheme}
@@ -483,11 +412,6 @@ export const App: React.FC = () => {
         categories={categories}
         feeds={feeds}
         stats={stats}
-      />
-
-      <KeyboardHelpModal
-        isOpen={helpModalOpen}
-        onClose={() => setHelpModalOpen(false)}
       />
     </div>
   );
