@@ -109,10 +109,20 @@ GitFeed uses a local-first architecture. It functions with offline caching even 
 2. **Configure Clients for Sync**:
    * Open your GitFeed Web reader or Mobile App, and tap the **⚙️ Settings** icon:
      * **Data Source URL**: `https://<your-github-username>.github.io/gitfeed/data`
-     * **GitHub Repository**: `<your-github-username>/gitfeed`
+     * **GitHub Repository (username/repo)**: `<your-github-username>/gitfeed`
      * **GitHub Token**: Paste your generated PAT
      * Tap **"Sync Remote State"**
    * Both clients now feature debounced background synchronization and automatic HTTP 409 conflict resolution. Reading on one device will automatically sync to your other device upon launch or refresh!
+
+> [!IMPORTANT]
+> **Key Notes for Multi-Device Sync**:
+> 1. **GitHub Repository (username/repo): Must be IDENTICAL on all clients!**
+>    * For example, both Web and Mobile must be configured with: `codeusb/gitfeed`.
+>    * **Why**: GitFeed uses a Git-as-Backend architecture where read and starred states are persisted in `data/state.json` inside that specific repository. If the repository names differ or are left blank, they will not point to the same state file and synchronization will fail.
+> 2. **GitHub Personal Access Token (PAT): Use the EXACT SAME token on all devices!**
+>    * As long as the PAT has `contents:write` access to your repository, both Web and Android can share the same token. There is no need to generate separate tokens.
+> 3. **Automatic Bidirectional Background Sync**:
+>    * Once configured, opening the app, pulling to refresh, reading articles, or starring items will automatically synchronize silently in the background. You do not need to manually click "Sync" every time.
 
 ---
 

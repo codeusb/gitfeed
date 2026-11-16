@@ -109,10 +109,20 @@ GitFeed 采用本地优先（Local-First）机制，即使不配 Token 也能在
 2. **在客户端配置同步**：
    * 打开你的 GitFeed 网页版或手机 App，点击左下角的 **⚙️ 设置** 按钮：
      * **数据源地址**：填入 `https://<你的GitHub用户名>.github.io/gitfeed/data`；
-     * **GitHub 仓库**：填入 `<你的GitHub用户名>/gitfeed`；
+     * **GitHub 仓库 (用户名/仓库名)**：填入 `<你的GitHub用户名>/gitfeed`；
      * **GitHub Token**：粘贴刚才生成的 PAT 令牌；
      * 点击 **“立即同步状态”**。
    * 保存后，双端均已打通后台自动同步与 409 冲突自愈，任何一端阅读标记，另一端启动或刷新时自动拉取！
+
+> [!IMPORTANT]
+> **多端同步配置要点（必读）**：
+> 1. **GitHub 仓库 (用户名/仓库名)：两端必须完全一样！**
+>    * 例如 Web 端和手机端都必须填写：`codeusb/gitfeed`。
+>    * **原因**：GitFeed 采用 Git-as-Backend 架构，已读和星标记录是保存在该仓库的 `data/state.json` 文件中的。如果两端填写的仓库名不同或留空，它们操作的就不是同一个仓库，数据就无法同步。
+> 2. **GitHub Personal Access Token (PAT)：两端填完全相同的同一个 Token 即可！**
+>    * 只要这个 Token 对该仓库勾选了 `contents:write` 权限，Web 端和安卓端使用同一个 Token 读写该文件即可，无需分别生成。
+> 3. **全自动双向静默同步**：
+>    * 配置保存后，在手机或网页上阅读、标记已读或收藏时，系统均会自动在后台静默同步到 GitHub，无需每次手动点击“立即同步”。
 
 ---
 
