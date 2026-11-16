@@ -1,0 +1,15 @@
+{
+  "id": "49c27ef3cd81ef48",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] deepseek harness 装了 dsh-compute-use 后启动不了，重装也不行。",
+  "link": "https://www.v2ex.com/t/1257527#reply0",
+  "author": "blackantt",
+  "publishedAt": "2026-11-16T13:04:20Z",
+  "snippet": "怎么彻底卸载呢？ harness 跟 dsh-compute-use 有版本配套问题吗？ dsh-compute-use 到底该怎么安装呢？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<ol>\n<li>怎么彻底卸载呢？</li>\n<li>harness 跟 dsh-compute-use 有版本配套问题吗？</li>\n<li>dsh-compute-use 到底该怎么安装呢？</li>\n</ol>",
+  "attachments": []
+}
