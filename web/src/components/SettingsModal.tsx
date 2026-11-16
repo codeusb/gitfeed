@@ -116,6 +116,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   onChange={(e) => setFormData({ ...formData, githubRepo: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-black/[0.03] dark:bg-white/[0.05] border border-black/[0.08] dark:border-white/[0.1] text-xs text-black dark:text-white focus:border-[#EB6E00] focus:ring-1 focus:ring-[#EB6E00]/40 focus:outline-none transition-all duration-175"
                 />
+                <p className="text-[11px] text-[#8e8e8e] dark:text-[#7a7a7a] mt-1">
+                  ⚠️ 提示：Web 端与移动端填写的仓库名必须完全相同，才能共享同一个同步状态。
+                </p>
               </div>
 
               <div>
@@ -129,6 +132,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   onChange={(e) => setFormData({ ...formData, githubToken: e.target.value })}
                   className="w-full px-3 py-2 rounded-xl bg-black/[0.03] dark:bg-white/[0.05] border border-black/[0.08] dark:border-white/[0.1] text-xs text-black dark:text-white focus:border-[#EB6E00] focus:ring-1 focus:ring-[#EB6E00]/40 focus:outline-none font-mono transition-all duration-175"
                 />
+                <p className="text-[11px] text-[#8e8e8e] dark:text-[#7a7a7a] mt-1">
+                  💡 提示：Web 端与移动端可填入完全相同的 PAT，两端享有后台自动双向静默同步。
+                </p>
               </div>
 
               <div className="pt-2 flex items-center justify-between">

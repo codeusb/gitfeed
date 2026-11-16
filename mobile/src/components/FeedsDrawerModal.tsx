@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Category, Feed } from '../types';
 import { useTheme } from '../theme/ThemeContext';
 
@@ -35,10 +35,14 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
   feedUnreadCounts,
 }) => {
   const { tokens } = useTheme();
+  const insets = useSafeAreaInsets();
 
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
-      <SafeAreaView style={[styles.container, { backgroundColor: tokens.bgPage }]}>
+      <SafeAreaView
+        edges={['top', 'bottom', 'left', 'right']}
+        style={[styles.container, { backgroundColor: tokens.bgPage }]}
+      >
         <View style={[styles.navbar, { borderBottomColor: tokens.borderSubtle, backgroundColor: tokens.bgPage }]}>
           <Text style={[styles.title, { color: tokens.textPrimary }]}>订阅源与分类</Text>
           <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
@@ -46,7 +50,13 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
           </TouchableOpacity>
         </View>
 
-        <ScrollView style={styles.scroll}>
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={{
+            padding: 16,
+            paddingBottom: Math.max(insets.bottom, 24) + 64,
+          }}
+        >
           {/* All articles option */}
           <TouchableOpacity
             onPress={() => {
@@ -169,7 +179,6 @@ const styles = StyleSheet.create({
   },
   scroll: {
     flex: 1,
-    padding: 16,
   },
   item: {
     paddingVertical: 12,

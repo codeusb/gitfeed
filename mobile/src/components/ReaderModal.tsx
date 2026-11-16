@@ -13,7 +13,7 @@ import {
   NativeScrollEvent,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ArticleDetail, ArticleSummary, MobileSettings } from '../types';
 import { MobileDataService } from '../services/dataService';
 import { useTheme } from '../theme/ThemeContext';
@@ -43,6 +43,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
   onToggleStar,
 }) => {
   const { tokens } = useTheme();
+  const insets = useSafeAreaInsets();
   const [detail, setDetail] = useState<ArticleDetail | null>(null);
   const [loading, setLoading] = useState(false);
   const [fontSize, setFontSize] = useState<number>(16);
@@ -50,13 +51,15 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
 
   // Load persisted font size
   useEffect(() => {
-    AsyncStorage.getItem(KEY_FONT_SIZE).then((val) => {
-      if (val) {
-        const num = Number(val);
-        if (num >= 12 && num <= 26) setFontSize(num);
-      }
-    });
-  }, []);
+    if (visible) {
+      AsyncStorage.getItem(KEY_FONT_SIZE).then((val) => {
+        if (val) {
+          const num = Number(val);
+          if (num >= 12 && num <= 26) setFontSize(num);
+        }
+      });
+    }
+  }, [visible]);
 
   const handleUpdateFontSize = (delta: number) => {
     setFontSize((prev) => {
@@ -125,7 +128,10 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
 
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
-      <SafeAreaView style={[styles.container, { backgroundColor: tokens.bgPage }]}>
+      <SafeAreaView
+        edges={['top', 'bottom', 'left', 'right']}
+        style={[styles.container, { backgroundColor: tokens.bgPage }]}
+      >
         {/* Top Minimal Header (daily.juya.uk style) */}
         <View
           style={[
@@ -234,7 +240,10 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
         {/* Article Body Scroll */}
         <ScrollView
           style={styles.scroll}
-          contentContainerStyle={styles.scrollContent}
+          contentContainerStyle={[
+            styles.scrollContent,
+            { paddingBottom: Math.max(insets.bottom, 24) + 60 },
+          ]}
           onScroll={handleScroll}
           scrollEventThrottle={16}
         >

@@ -9,7 +9,7 @@ import {
   RefreshControl,
   StatusBar,
 } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ArticleSummary, Category, Feed, MobileSettings } from './types';
 import { Storage, DEFAULT_SETTINGS } from './storage';
 import { MobileDataService } from './services/dataService';
@@ -30,6 +30,7 @@ function MainAppContent({
   onUpdateSettings: (s: MobileSettings) => void;
 }) {
   const { tokens } = useTheme();
+  const insets = useSafeAreaInsets();
   const [categories, setCategories] = useState<Category[]>([]);
   const [feeds, setFeeds] = useState<Feed[]>([]);
   const [articles, setArticles] = useState<ArticleSummary[]>([]);
@@ -66,7 +67,7 @@ function MainAppContent({
       // Trigger background silent sync if GitHub token and repo are configured
       if (currentSettings.githubToken && currentSettings.githubRepo) {
         MobileSyncService.syncWithGitHub(currentSettings).then(async (res) => {
-          if (res.success && res.newReadCount > 0) {
+          if (res.success) {
             const [latestReads, latestStars] = await Promise.all([
               Storage.getReadIds(),
               Storage.getStarredIds(),
@@ -97,7 +98,7 @@ function MainAppContent({
     }
     syncTimeoutRef.current = setTimeout(() => {
       MobileSyncService.syncWithGitHub(currentSettings).catch(() => {});
-    }, 4000);
+    }, 2500);
   }, []);
 
   const handleSelectArticle = (art: ArticleSummary) => {
@@ -242,6 +243,7 @@ function MainAppContent({
       <FlatList
         data={filteredArticles}
         keyExtractor={(item) => item.id}
+        contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 24) + 40 }}
         renderItem={({ item }) => (
           <ArticleCard
             article={item}
