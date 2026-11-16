@@ -314,6 +314,7 @@ gitfeed/
 │   ├── index.json           # 轻量化文章索引 (用于高速渲染列表)
 │   ├── stats.json           # 抓取统计与各源健康状态
 │   └── articles/            # 各文章完整正文与媒体附件 JSON
+├── docs/                    # 技术方案调研与规划设计文档
 ├── web/                     # 现代化前端 & PWA 客户端源码
 │   ├── public/              # PWA Manifest、ServiceWorker 离线缓存、应用图标
 │   └── src/
@@ -325,6 +326,19 @@ gitfeed/
 ├── package.json             # 根目录便捷执行脚本
 └── LICENSE                  # MIT 开源协议
 ```
+
+---
+
+## 🗺️ 路线图与规划 (Roadmap / TODO)
+
+- [ ] **英汉双向翻译模式（Web & 移动端）**
+  - [ ] 支持段落双语对照（推荐）与整篇译文一键切换
+  - [ ] 开箱即用免鉴权翻译端点兜底 + 可选配置 DeepL Free API Key / 大语言模型（Gemini 等）极速精翻
+  - [ ] 详细技术方案调研：[docs/TRANSLATION_AND_TTS.md](docs/TRANSLATION_AND_TTS.md)
+- [ ] **中英双语语音朗读功能（TTS - Text-to-Speech）**
+  - [ ] Web 端基于原生 `Web Speech API` 实现零延迟、免 Key、免服务的系统级自然人声朗读
+  - [ ] 移动端基于原生 `TextToSpeech` 引擎实现免流量、离线可用的本地硬件朗读
+  - [ ] 浮动微型播放控制胶囊，支持语速无级微调（`0.5x ~ 2.0x`）、暂停/继续与朗读段落自动跟随高亮
 
 ---
 

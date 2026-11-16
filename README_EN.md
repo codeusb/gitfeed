@@ -314,6 +314,7 @@ gitfeed/
 │   ├── index.json           # Lightweight article summaries for high-speed list rendering
 │   ├── stats.json           # Crawl statistics and feed health monitoring
 │   └── articles/            # Full sanitized article JSON files & media attachments
+├── docs/                    # Technical proposals & design documentation
 ├── web/                     # Modern Web & PWA source code
 │   ├── public/              # PWA manifest, service worker, icons
 │   └── src/
@@ -325,6 +326,19 @@ gitfeed/
 ├── package.json             # Root helper scripts
 └── LICENSE                  # MIT License
 ```
+
+---
+
+## 🗺️ Roadmap & TODO
+
+- [ ] **Bilingual Translation Mode (English ⇋ Chinese, Web & Mobile)**
+  - [ ] Side-by-side paragraph bilingual view (recommended) & one-click full article translation
+  - [ ] Zero-config free endpoint fallback + optional DeepL Free API Key / LLM (Gemini, etc.) translation
+  - [ ] Detailed research proposal: [docs/TRANSLATION_AND_TTS.md](docs/TRANSLATION_AND_TTS.md)
+- [ ] **Bilingual Text-to-Speech (TTS, English & Chinese)**
+  - [ ] Web: Powered by native `Web Speech API` for zero-latency, keyless natural voice playback
+  - [ ] Mobile: Powered by native device `TextToSpeech` engine (offline & zero data consumption)
+  - [ ] Floating podcast-style capsule player with speed controls (`0.5x ~ 2.0x`) and paragraph highlight sync
 
 ---
 
