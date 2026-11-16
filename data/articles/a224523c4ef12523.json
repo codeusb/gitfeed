@@ -1,0 +1,15 @@
+{
+  "id": "a224523c4ef12523",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个本地优先的网站拦截插件 FocusBlock，已上架 Edge 商店",
+  "link": "https://www.v2ex.com/t/1257512#reply0",
+  "author": "bluesky1001",
+  "publishedAt": "2026-11-16T11:52:33Z",
+  "snippet": "FocusBlock，一个本地优先的网站拦截器，现已上架 Microsoft Edge Add-ons 商店。 拦截规则、定时、专注计时、统计全部存在本地，不建账号、不上传数据、不发任何网络请求（拦截页也是本地的） 免费版可加 20 条规则（域名或关键词）；Pro 版（无限规则、定时、密码锁、专注计时、统计）正在准备中 权限只有 storage / declarativeNetRequest / alarms 商店链接：https://...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>FocusBlock，一个本地优先的网站拦截器，现已上架 Microsoft Edge Add-ons 商店。</p>\n<ul>\n<li>拦截规则、定时、专注计时、统计全部存在本地，不建账号、不上传数据、不发任何网络请求（拦截页也是本地的）</li>\n<li>免费版可加 20 条规则（域名或关键词）；Pro 版（无限规则、定时、密码锁、专注计时、统计）正在准备中</li>\n<li>权限只有 storage / declarativeNetRequest / alarms</li>\n</ul>\n<p>商店链接：<a href=\"https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp</a>\n隐私说明：<a href=\"https://alapha888.github.io/focus-block-privacy/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/focus-block-privacy/</a></p>\n<p>欢迎试用和反馈。</p>",
+  "attachments": []
+}

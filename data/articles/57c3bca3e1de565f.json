@@ -1,0 +1,15 @@
+{
+  "id": "57c3bca3e1de565f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [更新] 油管阿特 x 解析工具箱更新日志",
+  "link": "https://www.v2ex.com/t/1257513#reply0",
+  "author": "SamRol",
+  "publishedAt": "2026-11-16T12:01:19Z",
+  "snippet": "微信小程序：油管阿特 x 解析工具箱 更新日志 登录方式调整：将邮箱登录修改为手机号登录。 X 多视频下载：支持下载 X 帖子中的多个视频的帖子。目前版本会将多个视频合并为一个视频，因为支持分批下载的版本还在审核中。 评论区优化：修复评论区输入时输入法自动收回的问题。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<h1>微信小程序：油管阿特 x 解析工具箱</h1>\n<h2>更新日志</h2>\n<ol>\n<li><strong>登录方式调整</strong>：将邮箱登录修改为手机号登录。</li>\n<li><strong>X 多视频下载</strong>：支持下载 X 帖子中的多个视频的帖子。目前版本会将多个视频合并为一个视频，因为支持分批下载的版本还在审核中。</li>\n<li><strong>评论区优化</strong>：修复评论区输入时输入法自动收回的问题。</li>\n</ol>",
+  "attachments": []
+}

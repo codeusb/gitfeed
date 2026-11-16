@@ -1,0 +1,15 @@
+{
+  "id": "559737fca4dbdec4",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] [Sidrune AI] 大客户 CC Max 低至 0.865x，首字中位数 2–3 秒｜留 UID 送 3U",
+  "link": "https://www.v2ex.com/t/1257467#reply5",
+  "author": "a102828706",
+  "publishedAt": "2026-11-16T09:07:32Z",
+  "snippet": "大客户最低 0.865x 无忧使用 Claude CCMAX，首字 2-3 秒，纯血支持 Hvoy/CCtest 等检测 再也不用担心被封号啦～ CC Max：1.0／1.2 倍率，符合返点条件低至 0.865x Claude-Max-cc：1.0 倍率，用于 Claude Code，带标准防封注入。 Claude-Max-外接：1.2 倍率，用于其他客户端。 符合条件的大客户／代理合作可开通最高 13.5% 返点；CC 1.0 组按最...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大客户最低 0.865x 无忧使用 Claude CCMAX，首字 2-3 秒，纯血支持 Hvoy/CCtest 等检测\n再也不用担心被封号啦～</p>\n<h2>CC Max：1.0／1.2 倍率，符合返点条件低至 0.865x</h2>\n<ul>\n<li><strong>Claude-Max-cc：1.0 倍率</strong>，用于 Claude Code，带标准防封注入。</li>\n<li><strong>Claude-Max-外接：1.2 倍率</strong>，用于其他客户端。</li>\n</ul>\n<p>符合条件的大客户／代理合作可开通<strong>最高 13.5% 返点</strong>；CC 1.0 组按最高返点折算，实际倍率最低 <strong>0.865x</strong>。适用分组、开通和结算方式请联系 QQ 群里的 Hans 丨商务。</p>\n<p>这两组推荐日常编程。标准注入会影响回答方式，介意注入或做模型评测的，可以选低注入／0 注入分组。</p>\n<p>中文站 10 月 16 日零点至 11 月 15 日零点，30 个完整自然日的数据：</p>\n<table>\n<thead>\n<tr>\n<th>分组</th>\n<th align=\"right\">使用记录</th>\n<th align=\"right\">首字 P50</th>\n<th align=\"right\">首字 P95</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Claude-Max-cc</td>\n<td align=\"right\">5,950,547 笔</td>\n<td align=\"right\">约 2.8 秒</td>\n<td align=\"right\">约 10.5 秒</td>\n</tr>\n<tr>\n<td>Claude-Max-外接</td>\n<td align=\"right\">3,956,487 笔</td>\n<td align=\"right\">约 2.4 秒</td>\n<td align=\"right\">约 6.6 秒</td>\n</tr>\n</tbody></table><p>这两个分组每天都有使用记录，合计约 <strong>991 万笔、149 亿输出 Token</strong>。首字延迟取有有效 TTFT 的流式样本，反映历史等待情况，不代表全请求成功率或在线率；高峰与上游波动仍可能影响体验。</p>\n<h2>Gemini Vertex 蒸馏持续补货，GPT 0.1 倍率组还在</h2>\n<ul>\n<li><strong>Gemini Vertex 2.5 倍率</strong>：蒸馏支持 <strong>Gemini 4 Carbon、Argon</strong>，资源量有限、持续补货，需求请联系题主或 Hans 商务，具体用量和接入条件单独确认。</li>\n<li><strong>GPT 0.1 倍率限时福利组</strong>：支持 <strong>6.1 Sol、6 Astra</strong>，分组不降智，但高峰期首字不稳定。</li>\n</ul>\n<p>支持开票、对公转账、加密货币支付。中文站<strong>充值 1 元 = 1U 站内额度</strong>；Fable5 单价另上浮 20%，具体计价和支持型号见<a href=\"https://cn.sidrune.ai/model-plaza\" rel=\"noopener noreferrer\" target=\"_blank\">模型广场</a>。</p>\n<h2>V2EX 用户福利：留本人 UID 送$3</h2>\n<p>本帖回复 Sidrune AI 站内数字 UID，无条件送$3U 站内使用额度，之前领过的用户也可以继续领～</p>\n<p>用过产品的，也欢迎到<a href=\"https://www.v2ex.com/t/1254252\" rel=\"noopener noreferrer\" target=\"_blank\">产品评价帖</a>说说实际体验，好评差评都欢迎 0.0</p>\n<p><a href=\"https://cn.sidrune.ai/register?promo=V2EXCCMAX20261116\" rel=\"noopener noreferrer\" target=\"_blank\">进入 Sidrune AI</a></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "d8d9ccb06f3c774d",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "It's always DNS, so why are we running our own?",
+  "link": "https://s2.dev/blog/dns-server",
+  "author": "misker1",
+  "publishedAt": "2026-11-16T09:19:38Z",
+  "snippet": "Article URL: https://s2.dev/blog/dns-server Comments URL: https://news.ycombinator.com/item?id=50515616 Points: 11 # Comments: 6",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://s2.dev/blog/dns-server\" rel=\"noopener noreferrer\" target=\"_blank\">https://s2.dev/blog/dns-server</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50515616\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50515616</a></p>\n<p>Points: 11</p>\n<p># Comments: 6</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "729f78f5d3e6542e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] [分享创造] 周报模板里的图，一年下来改了多少次",
+  "link": "https://www.v2ex.com/t/1257516#reply0",
+  "author": "weishao666",
+  "publishedAt": "2026-11-16T12:10:51Z",
+  "snippet": "我统计过自己的一份周报模板：结构一年没变，图改了四十多次，改的全是标题、指标名和几个数字。 这种事最适合做成可编辑母版：结构固定，文字和数值留成文本框，每周只改内容。反过来，如果每周对着截图重画一遍，时间全花在没有价值的地方。 判断标准很简单：这张图未来还会不会改。会改的，值得一次性做成可编辑的；不会改的，贴图最快。 工具入口在这里：https://image2ppt.asia?utm_source=v2ex （图片、截图、单页 PDF...",
+  "coverImage": "https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%BE%E8%A1%A8%E5%88%86%E6%9E%90/110_%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90%E7%9F%A9%E9%98%B5%E6%A8%A1%E6%9D%BF/%E5%8E%9F%E5%9B%BE.jpg",
+  "readTime": 1,
+  "content": "<p>我统计过自己的一份周报模板：结构一年没变，图改了四十多次，改的全是标题、指标名和几个数字。</p>\n<p>这种事最适合做成可编辑母版：结构固定，文字和数值留成文本框，每周只改内容。反过来，如果每周对着截图重画一遍，时间全花在没有价值的地方。</p>\n<p>判断标准很简单：这张图未来还会不会改。会改的，值得一次性做成可编辑的；不会改的，贴图最快。</p>\n<p>工具入口在这里：<a href=\"https://image2ppt.asia?utm_source=v2ex\" rel=\"noopener noreferrer\" target=\"_blank\">https://image2ppt.asia?utm_source=v2ex</a>\n（图片、截图、单页 PDF 都能转成可编辑的 PPTX，成品无水印。）</p>\n<p>一个例子（原图 → 可编辑成品）：</p>\n<p><img alt=\"竞品分析矩阵模板 原图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%BE%E8%A1%A8%E5%88%86%E6%9E%90/110_%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90%E7%9F%A9%E9%98%B5%E6%A8%A1%E6%9D%BF/%E5%8E%9F%E5%9B%BE.jpg\"/></p>\n<p><img alt=\"竞品分析矩阵模板 成品\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%BE%E8%A1%A8%E5%88%86%E6%9E%90/110_%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90%E7%9F%A9%E9%98%B5%E6%A8%A1%E6%9D%BF/%E6%88%90%E5%93%81%E9%A2%84%E8%A7%88.jpg\"/></p>\n<p>素材库里随手挑的几页，这类图都能这么转：</p>\n<p><img alt=\"118_年度目标拆解流程图模板-战略落地与执行监控蓝图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s027.jpg\"/>\n<img alt=\"067_项目管理汇报 PPT 模板_p04\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s019.jpg\"/></p>",
+  "attachments": []
+}

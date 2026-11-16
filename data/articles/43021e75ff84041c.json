@@ -1,0 +1,15 @@
+{
+  "id": "43021e75ff84041c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Apple] IOS 微信消息不推送到手表的问题",
+  "link": "https://www.v2ex.com/t/1257490#reply0",
+  "author": "ImWright",
+  "publishedAt": "2026-11-16T10:19:38Z",
+  "snippet": "各位 v 友好，可能是最近几个 iOS 或者微信版本更新，现在的微信消息不会推送到手表上了 手机和 Watch 版本 27.2.1 wechat 版本 8.0.80 我确定手机和手表 通知是开的 也尝试重启手机手表，但是没有尝试重新配对，尝试抖音之类其他 IM 的消息推送是正常的 有朋友遇到类似的问题，或有什么可以尝试的解决办法嘛 谢谢各位",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>各位 v 友好，可能是最近几个 iOS 或者微信版本更新，现在的微信消息不会推送到手表上了\n手机和 Watch 版本 27.2.1\nwechat 版本 8.0.80</p>\n<p>我确定手机和手表 通知是开的 也尝试重启手机手表，但是没有尝试重新配对，尝试抖音之类其他 IM 的消息推送是正常的 </p>\n<p>有朋友遇到类似的问题，或有什么可以尝试的解决办法嘛 谢谢各位</p>",
+  "attachments": []
+}

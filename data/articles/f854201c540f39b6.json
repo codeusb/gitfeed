@@ -1,0 +1,15 @@
+{
+  "id": "f854201c540f39b6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 用 Rust + GPUI 做了两个原生应用",
+  "link": "https://www.v2ex.com/t/1257519#reply0",
+  "author": "jarven123",
+  "publishedAt": "2026-11-16T12:24:25Z",
+  "snippet": "1. SnapIt 原生截图工具，支持： 区域截图、窗口截图、多显示器 截图标注、屏幕贴图 OCR 文字识别 区域录制 GIF / MP4 GitHub：https://github.com/gjfei/snapit 2. SwitchHosts Lite 轻量 Hosts 管理工具，支持： 多 Hosts 方案管理和切换 组合方案 自动应用、历史版本 导入导出 SwitchHosts 备份 GitHub：https://github....",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><strong>1. SnapIt</strong></p>\n<p>原生截图工具，支持：</p>\n<ul>\n<li>区域截图、窗口截图、多显示器</li>\n<li>截图标注、屏幕贴图</li>\n<li>OCR 文字识别</li>\n<li>区域录制 GIF / MP4</li>\n</ul>\n<p>GitHub：<a href=\"https://github.com/gjfei/snapit\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/gjfei/snapit</a></p>\n<p><strong>2. SwitchHosts Lite</strong></p>\n<p>轻量 Hosts 管理工具，支持：</p>\n<ul>\n<li>多 Hosts 方案管理和切换</li>\n<li>组合方案</li>\n<li>自动应用、历史版本</li>\n<li>导入导出 SwitchHosts 备份</li>\n</ul>\n<p>GitHub：<a href=\"https://github.com/gjfei/SwitchHostsLite\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/gjfei/SwitchHostsLite</a></p>",
+  "attachments": []
+}

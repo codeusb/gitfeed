@@ -1,0 +1,15 @@
+{
+  "id": "d7e1cf169869af2a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] [插件分享] 自用没意思，分享给有兴趣的人。仿企业微信",
+  "link": "https://www.v2ex.com/t/1257462#reply1",
+  "author": "szabc",
+  "publishedAt": "2026-11-16T08:54:03Z",
+  "snippet": "插件特点 界面仿企业微信。 AI 总结帖子，支持文字、漫画模式（均需自己配置接口）。 自动无感加载帖子最新回复内容，像聊天一样体验。 自动记住帖子上次浏览到的位置，下次打开自动恢复。 浏览历史。 点击通知消息自动定位。 图片自动排版，避免乱七八糟大小不一的布局影响体检，更避免了摸鱼时打开不良帖子显示不良图片的尴尬，缩图还支持放大镜功能。 自动签到。 回复楼中楼(V2EX 仅支持前 200 条，linuxdo 仅支持第 1 页)。 点击用...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<h2>插件特点</h2>\n<ul>\n<li>界面仿企业微信。</li>\n<li>AI 总结帖子，支持文字、漫画模式（均需自己配置接口）。</li>\n<li>自动无感加载帖子最新回复内容，像聊天一样体验。</li>\n<li>自动记住帖子上次浏览到的位置，下次打开自动恢复。</li>\n<li>浏览历史。</li>\n<li>点击通知消息自动定位。</li>\n<li>图片自动排版，避免乱七八糟大小不一的布局影响体检，更避免了摸鱼时打开不良帖子显示不良图片的尴尬，缩图还支持放大镜功能。</li>\n<li>自动签到。</li>\n<li>回复楼中楼(V2EX 仅支持前 200 条，linuxdo 仅支持第 1 页)。</li>\n<li>点击用户名可打开资料卡，到直接看到目标用户最近的回复、主题、加入时间、活跃度，也可以直接操作 block、特别关注。</li>\n<li>换字体，支持读取本地字体，及切换。</li>\n<li>一键切换关闭/开启插件。</li>\n<li>实时通知 badge，让你及时知道收到的回复/点赞。</li>\n<li>base64 划词自动解码，回复编辑框也可以直接转换/插入 base64。</li>\n<li>回复编辑框支持粘贴自动上传图片到 imgur。</li>\n<li>浅色/黑暗模式。</li>\n<li>快速定位跳转楼层。</li>\n<li>多平台支持，linuxdo、知乎、掘金、V2EX</li>\n</ul>\n<p>插件地址：<a href=\"https://greasyfork.org/zh-CN/scripts/595716-linux-do-v2ex-%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E4%B8%BB%E9%A2%98\" rel=\"noopener noreferrer\" target=\"_blank\">https://greasyfork.org/zh-CN/scripts/595716-linux-do-v2ex-%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E4%B8%BB%E9%A2%98</a></p>\n<p><a href=\"https://i.imgur.com/qdNPp9y.png\" rel=\"noopener noreferrer\" target=\"_blank\">https://i.imgur.com/qdNPp9y.png</a>\n<a href=\"https://i.imgur.com/8qcYKY8.png\" rel=\"noopener noreferrer\" target=\"_blank\">https://i.imgur.com/8qcYKY8.png</a>\n<a href=\"https://i.imgur.com/ykVZ5jG.png\" rel=\"noopener noreferrer\" target=\"_blank\">https://i.imgur.com/ykVZ5jG.png</a>\n<a href=\"https://i.imgur.com/8ltMlTQ.png\" rel=\"noopener noreferrer\" target=\"_blank\">https://i.imgur.com/8ltMlTQ.png</a>\n<a href=\"https://i.imgur.com/V2c4sOV.png\" rel=\"noopener noreferrer\" target=\"_blank\">https://i.imgur.com/V2c4sOV.png</a>\n<a href=\"https://i.imgur.com/F9ZLBk0.png\" rel=\"noopener noreferrer\" target=\"_blank\">https://i.imgur.com/F9ZLBk0.png</a></p>\n<blockquote>\n<p>要想实现截图那样的窗口，可以在桌面新建个快捷方式，对象位置可以填写：\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --app=\"<a href=\"https://linux.do\" rel=\"noopener noreferrer\" target=\"_blank\">https://linux.do</a>\"  ，则 chrome 的实际位置，加打开网址。</p>\n</blockquote>\n<blockquote>\n<p>本插件用 AI 开发，可能有很多未优化好的地方。</p>\n</blockquote>\n<blockquote>\n<p>改自：<a href=\"https://github.com/Blackwindow6/linuxdo-wecom-ui\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/Blackwindow6/linuxdo-wecom-ui</a> ，对这个开源项目改了多个地方。并支持 <a href=\"http://v2ex.com\" rel=\"noopener noreferrer\" target=\"_blank\">v2ex.com</a></p>\n</blockquote>",
+  "attachments": []
+}

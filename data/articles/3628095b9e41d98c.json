@@ -1,0 +1,15 @@
+{
+  "id": "3628095b9e41d98c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 用 mygo 自己写了个轻量 Git 客户端替代 SourceTree",
+  "link": "https://www.v2ex.com/t/1257506#reply4",
+  "author": "ysicing",
+  "publishedAt": "2026-11-16T11:23:47Z",
+  "snippet": "51Code 是一款轻量、开源的 macOS 原生 Git 客户端，使用 Go 和 MyGo Native UI 构建 名字没啥特殊含义，当初叫 XSourceTree,怕侵权了 为啥要新造一个,主要是 SourceTree 一打开内存占用就 4G 了,配置有点带不动了。 习惯了 SourceTree,也是陪伴了接近 10 多年的工具了，基本功能借鉴了 SourceTree，满足了基本日常使用 目前主要支持 macOS，其次 Linux...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>51Code 是一款轻量、开源的 macOS 原生 Git 客户端，使用 Go 和 MyGo Native UI 构建</p>\n<p>名字没啥特殊含义，当初叫 XSourceTree,怕侵权了</p>\n<p>为啥要新造一个,主要是 SourceTree 一打开内存占用就 4G 了,配置有点带不动了。</p>\n<p>习惯了 SourceTree,也是陪伴了接近 10 多年的工具了，基本功能借鉴了 SourceTree，满足了基本日常使用</p>\n<p>目前主要支持 macOS，其次 Linux 和 Windows 也打包了，简单找同事安装测试了一下没啥特别大问题，有问题也欢迎反馈。</p>\n<p>有一说一，用 mygo 开发还挺方便的。</p>\n<h2>项目</h2>\n<p><a href=\"https://github.com/ysicing/51code\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/ysicing/51code</a></p>",
+  "attachments": []
+}

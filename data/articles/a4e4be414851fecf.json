@@ -1,0 +1,15 @@
+{
+  "id": "a4e4be414851fecf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个邀请函编辑器：一张底图，给每位来宾生成一张",
+  "link": "https://www.v2ex.com/t/1257485#reply0",
+  "author": "dofy",
+  "publishedAt": "2026-11-16T10:00:58Z",
+  "snippet": "之前做邀请函时遇到一个很朴素的麻烦：版式已经设计好了，但每个人的名字、座位或编号都不同。一个个改、一个个导出，很快就从设计变成了体力活。 于是做了个小工具 Tsudoi，想把这件事缩短成“设计一次，填一份名单，批量导出”。分享给有活动、婚礼、聚会或者其他类似需求的朋友。 在线体验：https://tsudoi.yahaha.net/ 开源仓库：https://github.com/dofy/invite-maker 怎么用 上传一张自己...",
+  "coverImage": "https://raw.githubusercontent.com/dofy/invite-maker/main/public/guide/editor-zh.png",
+  "readTime": 1,
+  "content": "<p>之前做邀请函时遇到一个很朴素的麻烦：版式已经设计好了，但每个人的名字、座位或编号都不同。一个个改、一个个导出，很快就从设计变成了体力活。</p>\n<p>于是做了个小工具 <strong>Tsudoi</strong>，想把这件事缩短成“设计一次，填一份名单，批量导出”。分享给有活动、婚礼、聚会或者其他类似需求的朋友。</p>\n<p>在线体验：<a href=\"https://tsudoi.yahaha.net/\" rel=\"noopener noreferrer\" target=\"_blank\">https://tsudoi.yahaha.net/</a><br/>\n开源仓库：<a href=\"https://github.com/dofy/invite-maker\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/dofy/invite-maker</a></p>\n<p><img alt=\"Tsudoi 编辑器\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/dofy/invite-maker/main/public/guide/editor-zh.png\"/></p>\n<h3>怎么用</h3>\n<ol>\n<li>上传一张自己准备的底图，可以是竖版、横版或方图。</li>\n<li>在画布上添加文字，拖到合适的位置，调整字体、字号和对齐方式。</li>\n<li>只做一张的话，可以直接导出原始分辨率的 PNG；要做很多张，就导入 CSV 或 TXT，用变量填入每行的数据，预览后打包下载 ZIP。</li>\n</ol>\n<p>例如名单里有 <code>name</code> 一列，文字里可以写 <code>{{<a href=\"http://csv.name\" rel=\"noopener noreferrer\" target=\"_blank\">csv.name</a>}}</code>；还可以用日期和序号等变量。每条记录生成一张，单次最多 200 张，避免内存较小的设备被大批量导出拖垮。</p>\n<h3>比较在意的几个细节</h3>\n<ul>\n<li>预览和导出使用同一套坐标及渲染模型，尽量让最终图片和编辑时看到的一致。</li>\n<li>背景图、模板、名单、渲染和 ZIP 打包都留在本地设备，不需要把来宾名单传到服务器。</li>\n<li>模板可以保存成 JSON，之后继续编辑；模板本身不包含底图或导入的数据。</li>\n<li>可以安装成 PWA，首次加载后核心编辑和导出功能支持离线使用。</li>\n</ul>\n<p>项目支持中英文等多种界面语言，也有图文使用指南。现在比较想听到的反馈是：文字布局、CSV 导入和批量导出这几步，有没有容易卡住的地方？如果你正好做过类似的活动物料，也很欢迎分享工作流。</p>",
+  "attachments": []
+}
