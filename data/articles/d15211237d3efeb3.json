@@ -1,0 +1,15 @@
+{
+  "id": "d15211237d3efeb3",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 受够了 Canva [Magic Layer] 和 WPS [图片转 PPT] 的艺术字、中文乱码和底图色块问题，自己做了个工具，2 分钟出可编辑 PPT",
+  "link": "https://www.v2ex.com/t/1257556#reply0",
+  "author": "wck951531191",
+  "publishedAt": "2026-11-16T16:23:45Z",
+  "snippet": "我做了一个工具：3 分钟就能把 GPT 生成的图片转成可编辑的 PPT，艺术字也能保留。 之前做汇报 PPT 时，我发现 AI 生成的幻灯片非常好看，是我这种理科生远远做不出来的。问题是它改不了。AI 只要出现一点小幻觉，或者文案有点 AI 味，就只能重新生成、反复抽卡，结果还不一定比第一次好，让人很恼火😡。我也试过不少 skill，烧了一堆 token，速度和效果都不理想，所以决定自己做一个转换工具。 传送门：https://edit...",
+  "coverImage": "https://i.imgur.com/rQXNnHZ.jpeg",
+  "readTime": 1,
+  "content": "<p>我做了一个工具：3 分钟就能把 GPT 生成的图片转成可编辑的 PPT，艺术字也能保留。</p>\n<p>之前做汇报 PPT 时，我发现 AI 生成的幻灯片非常好看，是我这种理科生远远做不出来的。问题是它改不了。AI 只要出现一点小幻觉，或者文案有点 AI 味，就只能重新生成、反复抽卡，结果还不一定比第一次好，让人很恼火😡。我也试过不少 skill，烧了一堆 token，速度和效果都不理想，所以决定自己做一个转换工具。</p>\n<p>传送门：<a href=\"https://editableppt.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://editableppt.com/</a></p>\n<p>在这之前，我试过 gpt-image-2.5 的透明背景、Seedream5、Canva、Codia，还去闲鱼找过代做。代做明码标价，一页 1～2 元，偏贵。而且我发现他们用的也是 Canva 或 Codia，做得还没有我自己精细。</p>\n<p>转了一圈，我发现现在的做法大致分两派：</p>\n<ul>\n<li><strong>基于生图模型</strong>：先标注并抠出可拆分的元素，再用 OCR 提取文字，最后重新生成背景。优点是可控；缺点是成本高、速度慢，背景补全全靠运气，文字一多就补不好。它也很难处理多层结构，一般只能拆两层，层数一多就更慢，成本也直线上升。</li>\n<li><strong>Canva 路线</strong>：要自己部署分割模型、inpainting 模型、OpenCV 和 OCR 深度模型，普通人很难负担。而且 Canva 识别中文效果差，容易乱码，大段文本还会丢失格式。</li>\n</ul>\n<p>于是我想把两者结合起来：在现有 GPT 模型和一些开源模型的基础上做微调，再拿大量案例让 Claude 反复测试效果。最后真的做成了，目前在我测试的产品里，我做的是最精细的，该转的转，不该转的不转，特别对中文进行了优化，段落换行和中文识别。</p>\n<p>我自己的问题解决了，相信别人也会遇到同样的困扰，所以做了这个网站，希望能帮到同样被做 PPT 困扰的人。</p>\n<p>我给大家准备了免费试用积分，不够用可以私聊我。遇到问题、发现 bug 或者想要新功能，都可以直接回复或发邮件给我。</p>\n<p><img alt=\"预览图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/rQXNnHZ.jpeg\"/></p>",
+  "attachments": []
+}

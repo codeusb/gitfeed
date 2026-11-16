@@ -1,0 +1,15 @@
+{
+  "id": "b6c5b0b6ae894823",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Jolt – Clojure that speaks C",
+  "link": "https://jolt-lang.net/",
+  "author": "michaelsbradley",
+  "publishedAt": "2026-11-16T16:23:01Z",
+  "snippet": "Article URL: https://jolt-lang.net/ Comments URL: https://news.ycombinator.com/item?id=50519345 Points: 38 # Comments: 9",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://jolt-lang.net/\" rel=\"noopener noreferrer\" target=\"_blank\">https://jolt-lang.net/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50519345\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50519345</a></p>\n<p>Points: 38</p>\n<p># Comments: 9</p>",
+  "attachments": []
+}
