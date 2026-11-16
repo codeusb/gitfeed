@@ -9,7 +9,9 @@ import {
   Share2,
   ArrowLeft,
   BookOpen,
-  Volume2
+  Volume2,
+  Maximize2,
+  Minimize2,
 } from 'lucide-react';
 import { ArticleDetail, ArticleSummary, UserSettings } from '../types';
 import { DataService } from '../services/dataService';
@@ -19,6 +21,8 @@ interface ReaderViewProps {
   settings: UserSettings;
   isRead: boolean;
   isStarred: boolean;
+  isImmersive?: boolean;
+  onToggleImmersive?: () => void;
   onToggleRead: () => void;
   onToggleStar: () => void;
   onNextArticle: () => void;
@@ -33,6 +37,8 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
   settings,
   isRead,
   isStarred,
+  isImmersive = false,
+  onToggleImmersive,
   onToggleRead,
   onToggleStar,
   onNextArticle,
@@ -105,7 +111,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           未选择任何文章
         </h3>
         <p className="text-xs text-theme-secondary mt-1.5 max-w-xs leading-relaxed font-sans">
-          从左侧列表中选择一篇文章进行阅读，或使用快捷键 <span className="font-mono bg-theme-subtle px-1 py-0.5 rounded text-theme-primary">J</span> / <span className="font-mono bg-theme-subtle px-1 py-0.5 rounded text-theme-primary">K</span> 快速切换。
+          从左侧列表中选择一篇文章进行阅读。
         </p>
       </div>
     );
@@ -134,7 +140,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             onClick={onPrevArticle}
             disabled={!hasPrev}
             className="p-2 rounded-xl hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary disabled:opacity-20 disabled:pointer-events-none transition-all duration-175 ease-astryx"
-            title="上一篇 (K)"
+            title="上一篇"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
@@ -142,7 +148,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             onClick={onNextArticle}
             disabled={!hasNext}
             className="p-2 rounded-xl hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary disabled:opacity-20 disabled:pointer-events-none transition-all duration-175 ease-astryx"
-            title="下一篇 (J)"
+            title="下一篇"
           >
             <ChevronRight className="w-4 h-4" />
           </button>
@@ -150,6 +156,31 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
 
         {/* Action Tools */}
         <div className="flex items-center space-x-1.5 sm:space-x-2">
+          {/* Immersive / Focus Reading Mode Toggle */}
+          {onToggleImmersive && (
+            <button
+              onClick={onToggleImmersive}
+              className={`p-1.5 px-2.5 rounded-xl text-xs font-medium flex items-center space-x-1.5 transition-all duration-175 ease-astryx border ${
+                isImmersive
+                  ? 'bg-theme-accent text-white border-transparent shadow-xs'
+                  : 'border-theme-subtle hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary'
+              }`}
+              title={isImmersive ? '退出沉浸模式 (Esc)' : '沉浸阅读模式 (隐藏侧边栏)'}
+            >
+              {isImmersive ? (
+                <>
+                  <Minimize2 className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">退出沉浸</span>
+                </>
+              ) : (
+                <>
+                  <Maximize2 className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">沉浸阅读</span>
+                </>
+              )}
+            </button>
+          )}
+
           {/* Font Type Toggle */}
           <button
             onClick={() => setIsSerif(!isSerif)}
@@ -195,7 +226,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
           <button
             onClick={onToggleRead}
             className="p-2 rounded-xl hover:bg-theme-subtle text-theme-secondary transition-all duration-175"
-            title={isRead ? '标为未读 (M)' : '标为已读 (M)'}
+            title={isRead ? '标为未读' : '标为已读'}
           >
             {isRead ? (
               <CheckCircle className="w-4 h-4 text-theme-success" />
@@ -210,7 +241,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             className={`p-2 rounded-xl hover:bg-theme-subtle transition-all duration-175 ${
               isStarred ? 'text-amber-500' : 'text-theme-secondary hover:text-amber-500'
             }`}
-            title={isStarred ? '取消星标 (S)' : '添加星标 (S)'}
+            title={isStarred ? '取消星标' : '添加星标'}
           >
             <Star className={`w-4 h-4 ${isStarred ? 'fill-current' : ''}`} />
           </button>
@@ -235,7 +266,7 @@ export const ReaderView: React.FC<ReaderViewProps> = ({
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-xl hover:bg-theme-subtle text-theme-secondary hover:text-theme-primary transition-all duration-175"
-            title="在新标签页中打开原文 (O)"
+            title="在新标签页中打开原文"
           >
             <ExternalLink className="w-4 h-4" />
           </a>

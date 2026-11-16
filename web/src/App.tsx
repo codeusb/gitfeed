@@ -48,6 +48,7 @@ export const App: React.FC = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
   const [settingsModalOpen, setSettingsModalOpen] = useState(false);
   const [feedManagerModalOpen, setFeedManagerModalOpen] = useState(false);
+  const [isImmersive, setIsImmersive] = useState(false);
 
   // Debounced auto-sync when read/starred state changes
   const syncTimeoutRef = useRef<any>(null);
@@ -240,6 +241,8 @@ export const App: React.FC = () => {
         if (settingsModalOpen || feedManagerModalOpen) {
           setSettingsModalOpen(false);
           setFeedManagerModalOpen(false);
+        } else if (isImmersive) {
+          setIsImmersive(false);
         } else if (mobileView === 'reader') {
           setMobileView('list');
         } else if (selectedArticle) {
@@ -250,7 +253,7 @@ export const App: React.FC = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [settingsModalOpen, feedManagerModalOpen, mobileView, selectedArticle]);
+  }, [settingsModalOpen, feedManagerModalOpen, isImmersive, mobileView, selectedArticle]);
 
   // Calculate unread counts
   const totalUnreadCount = useMemo(() => {
@@ -274,7 +277,7 @@ export const App: React.FC = () => {
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-[#f1f1f1] dark:bg-[#1b1b1b] text-black dark:text-white font-sans selection:bg-[#EB6E00]/20 selection:text-[#EB6E00]">
       {/* 1. Desktop Sidebar */}
-      <div className="hidden md:flex h-full shrink-0">
+      <div className={`h-full shrink-0 ${isImmersive ? 'hidden' : 'hidden md:flex'}`}>
         <Sidebar
           categories={categories}
           feeds={feeds}
@@ -283,6 +286,7 @@ export const App: React.FC = () => {
           onSelect={(sel) => {
             setCurrentSelection(sel);
             setSelectedArticle(null);
+            setIsImmersive(false);
           }}
           unreadCount={totalUnreadCount}
           starredCount={starredCount}
@@ -314,6 +318,7 @@ export const App: React.FC = () => {
                 setCurrentSelection(sel);
                 setSelectedArticle(null);
                 setMobileView('list');
+                setIsImmersive(false);
               }}
               unreadCount={totalUnreadCount}
               starredCount={starredCount}
@@ -333,8 +338,12 @@ export const App: React.FC = () => {
 
       {/* 2. Middle Article List Column */}
       <div
-        className={`h-full flex-col md:flex md:w-80 lg:w-96 shrink-0 ${
-          mobileView === 'list' ? 'flex flex-1' : 'hidden'
+        className={`h-full flex-col shrink-0 ${
+          isImmersive
+            ? 'hidden'
+            : mobileView === 'list'
+            ? 'flex flex-1 md:w-80 lg:w-96'
+            : 'hidden md:flex md:w-80 lg:w-96'
         }`}
       >
         <ArticleList
@@ -370,7 +379,11 @@ export const App: React.FC = () => {
       {/* 3. Right Reader View Column */}
       <div
         className={`h-full flex-col flex-1 ${
-          mobileView === 'reader' ? 'flex' : 'hidden md:flex'
+          isImmersive
+            ? 'flex'
+            : mobileView === 'reader'
+            ? 'flex'
+            : 'hidden md:flex'
         }`}
       >
         <ReaderView
@@ -378,13 +391,18 @@ export const App: React.FC = () => {
           settings={settings}
           isRead={selectedArticle ? readIds.has(selectedArticle.id) : false}
           isStarred={selectedArticle ? starredIds.has(selectedArticle.id) : false}
+          isImmersive={isImmersive}
+          onToggleImmersive={() => setIsImmersive(!isImmersive)}
           onToggleRead={() => selectedArticle && handleToggleRead(selectedArticle.id)}
           onToggleStar={() => selectedArticle && handleToggleStar(selectedArticle.id)}
           onNextArticle={handleNextArticle}
           onPrevArticle={handlePrevArticle}
           hasNext={currentIndex + 1 < visibleArticles.length}
           hasPrev={currentIndex > 0}
-          onBackToList={() => setMobileView('list')}
+          onBackToList={() => {
+            setMobileView('list');
+            setIsImmersive(false);
+          }}
         />
       </div>
 
