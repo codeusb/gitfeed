@@ -10,12 +10,15 @@ import {
   Alert,
   ActivityIndicator,
 } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { MobileSettings, ThemeMode, ColorPalette } from '../types';
 import { Storage } from '../storage';
 import { MobileSyncService } from '../services/syncService';
-import { UpdateService } from '../services/updateService';
+import { UpdateService, CURRENT_VERSION } from '../services/updateService';
 import { useTheme } from '../theme/ThemeContext';
+
+const KEY_FONT_SIZE = '@gitfeed_reader_font_size';
 
 interface SettingsModalProps {
   visible: boolean;
@@ -31,15 +34,28 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onUpdateSettings,
 }) => {
   const { tokens } = useTheme();
+  const insets = useSafeAreaInsets();
   const [formData, setFormData] = useState<MobileSettings>({ ...settings });
   const [syncing, setSyncing] = useState(false);
   const [checkingUpdate, setCheckingUpdate] = useState(false);
+  const [readerFontSize, setReaderFontSize] = useState<number>(16);
 
   useEffect(() => {
     if (visible) {
       setFormData({ ...settings });
+      AsyncStorage.getItem(KEY_FONT_SIZE).then((val) => {
+        if (val) {
+          const num = Number(val);
+          if (num >= 12 && num <= 26) setReaderFontSize(num);
+        }
+      });
     }
   }, [visible, settings]);
+
+  const handleSelectFontSize = async (size: number) => {
+    setReaderFontSize(size);
+    await AsyncStorage.setItem(KEY_FONT_SIZE, String(size));
+  };
 
   const handleSave = async () => {
     await Storage.saveSettings(formData);
@@ -65,7 +81,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
   return (
     <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
-      <SafeAreaView style={[styles.container, { backgroundColor: tokens.bgPage }]}>
+      <SafeAreaView
+        edges={['top', 'bottom', 'left', 'right']}
+        style={[styles.container, { backgroundColor: tokens.bgPage }]}
+      >
         {/* Navbar */}
         <View style={[styles.navbar, { borderBottomColor: tokens.borderSubtle, backgroundColor: tokens.bgPage }]}>
           <TouchableOpacity onPress={onClose} style={styles.navBtn}>
@@ -80,7 +99,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </TouchableOpacity>
         </View>
 
-        <ScrollView style={styles.scroll} contentContainerStyle={styles.content}>
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={[styles.content, { paddingBottom: Math.max(insets.bottom, 24) + 60 }]}
+        >
           {/* Section 1: Appearance & Tokens */}
           <View style={[styles.section, { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle }]}>
             <Text style={[styles.sectionTitle, { color: tokens.textPrimary }]}>外观与主题色系 (Astryx Tokens)</Text>
@@ -158,6 +180,47 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </View>
           </View>
 
+          {/* Section: Reader Font Size */}
+          <View style={[styles.section, { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle }]}>
+            <Text style={[styles.sectionTitle, { color: tokens.textPrimary }]}>阅读正文字体大小</Text>
+            <Text style={[styles.sectionDesc, { color: tokens.textSecondary }]}>
+              设置文章详情页的默认正文字号（阅读文章时也可在顶部栏随时点击【A-】与【A+】无级调节）。
+            </Text>
+
+            <View style={styles.fontSizeRow}>
+              {[
+                { size: 14, label: '小 14' },
+                { size: 16, label: '标准 16' },
+                { size: 18, label: '中 18' },
+                { size: 20, label: '大 20' },
+                { size: 22, label: '特大 22' },
+              ].map((item) => {
+                const isSelected = readerFontSize === item.size;
+                return (
+                  <TouchableOpacity
+                    key={item.size}
+                    onPress={() => handleSelectFontSize(item.size)}
+                    style={[
+                      styles.fontSizeBtn,
+                      { borderColor: tokens.borderSubtle, backgroundColor: tokens.bgSurface },
+                      isSelected && { borderColor: tokens.accent, backgroundColor: tokens.accentSubtle },
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.fontSizeBtnText,
+                        { color: isSelected ? tokens.accent : tokens.textSecondary },
+                        isSelected && { fontWeight: '700' },
+                      ]}
+                    >
+                      {item.label}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
+          </View>
+
           {/* Section 2: Data Source */}
           <View style={[styles.section, { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle }]}>
             <Text style={[styles.sectionTitle, { color: tokens.textPrimary }]}>数据源地址 (CDN / Pages)</Text>
@@ -180,9 +243,9 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
           {/* Section 3: Git-as-Backend Sync */}
           <View style={[styles.section, { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle }]}>
-            <Text style={[styles.sectionTitle, { color: tokens.textPrimary }]}>GitHub 多端已读同步</Text>
+            <Text style={[styles.sectionTitle, { color: tokens.textPrimary }]}>多设备已读同步 (Git-as-Backend)</Text>
             <Text style={[styles.sectionDesc, { color: tokens.textSecondary }]}>
-              填入具有 contents:write 权限的 Personal Access Token 即可与网页端无缝同步已读状态。
+              通过 GitHub Fine-grained PAT 读写本仓库的 data/state.json 实现 Web 端与移动端无缝已读同步。
             </Text>
 
             <Text style={[styles.label, { color: tokens.textPrimary }]}>GitHub 仓库 (用户名/仓库名)</Text>
@@ -197,8 +260,11 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               placeholderTextColor={tokens.textMuted}
               autoCapitalize="none"
             />
+            <Text style={[styles.helperNote, { color: tokens.textMuted }]}>
+              ⚠️ 提示：Web 端与移动端填写的仓库名必须完全一致（例如均为 codeusb/gitfeed），数据才能互通。
+            </Text>
 
-            <Text style={[styles.label, { color: tokens.textPrimary }]}>Personal Access Token</Text>
+            <Text style={[styles.label, { color: tokens.textPrimary }]}>Personal Access Token (PAT)</Text>
             <TextInput
               style={[
                 styles.input,
@@ -211,6 +277,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               secureTextEntry
               autoCapitalize="none"
             />
+            <Text style={[styles.helperNote, { color: tokens.textMuted }]}>
+              💡 提示：Web 端和移动端使用同一个具有 contents:write 权限的 PAT 即可。
+            </Text>
+
+            <View style={[styles.syncInfoCard, { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle }]}>
+              <Text style={[styles.syncInfoText, { color: tokens.textSecondary }]}>
+                ⚡ 自动同步：已开启全自动双向静默同步。打开应用、下拉刷新、打开文章标记已读或加星标时，系统均会自动在后台静默同步，无需手动操作。
+              </Text>
+            </View>
 
             <TouchableOpacity
               onPress={handleSyncNow}
@@ -224,7 +299,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               {syncing ? (
                 <ActivityIndicator size="small" color={tokens.accent} />
               ) : (
-                <Text style={[styles.syncBtnText, { color: tokens.accent }]}>立即同步已读状态</Text>
+                <Text style={[styles.syncBtnText, { color: tokens.accent }]}>立即同步已读状态 (强制拉取)</Text>
               )}
             </TouchableOpacity>
           </View>
@@ -233,7 +308,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           <View style={[styles.section, { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle }]}>
             <Text style={[styles.sectionTitle, { color: tokens.textPrimary }]}>应用版本与更新</Text>
             <Text style={[styles.sectionDesc, { color: tokens.textSecondary }]}>
-              当前版本：v1.0.4。点击下方按钮即可一键检查 GitHub Releases 上的最新 APK 安装包。
+              当前版本：{CURRENT_VERSION}。点击下方按钮即可一键检查 GitHub Releases 上的最新 APK 安装包。
             </Text>
 
             <TouchableOpacity
@@ -357,6 +432,39 @@ const styles = StyleSheet.create({
   paletteText: {
     fontSize: 10,
     fontWeight: '600',
+  },
+  fontSizeRow: {
+    flexDirection: 'row',
+    gap: 6,
+    marginTop: 6,
+  },
+  fontSizeBtn: {
+    flex: 1,
+    paddingVertical: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 12,
+    borderWidth: 1,
+  },
+  fontSizeBtnText: {
+    fontSize: 12,
+    fontWeight: '500',
+  },
+  helperNote: {
+    fontSize: 11,
+    lineHeight: 16,
+    marginTop: 4,
+    marginBottom: 4,
+  },
+  syncInfoCard: {
+    borderRadius: 12,
+    borderWidth: 1,
+    padding: 12,
+    marginTop: 10,
+  },
+  syncInfoText: {
+    fontSize: 12,
+    lineHeight: 18,
   },
   input: {
     borderWidth: 1,
