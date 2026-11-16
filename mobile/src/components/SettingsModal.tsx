@@ -17,6 +17,7 @@ import { Storage } from '../storage';
 import { MobileSyncService } from '../services/syncService';
 import { UpdateService, CURRENT_VERSION } from '../services/updateService';
 import { useTheme } from '../theme/ThemeContext';
+import { Moon, Sun, Laptop, RefreshCw } from 'lucide-react-native';
 
 const KEY_FONT_SIZE = '@gitfeed_reader_font_size';
 
@@ -114,32 +115,38 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             <Text style={[styles.label, { color: tokens.textPrimary }]}>显示模式 (Theme Mode)</Text>
             <View style={styles.modeRow}>
               {[
-                { id: 'dark', label: '深色 🌙' },
-                { id: 'light', label: '浅色 ☀️' },
-                { id: 'system', label: '系统 💻' },
-              ].map((m) => (
-                <TouchableOpacity
-                  key={m.id}
-                  onPress={() => setFormData({ ...formData, theme: m.id as ThemeMode })}
-                  style={[
-                    styles.modeBtn,
-                    { borderColor: tokens.borderSubtle, backgroundColor: tokens.bgSubtle },
-                    formData.theme === m.id && {
-                      borderColor: tokens.accent,
-                      backgroundColor: tokens.accentSubtle,
-                    },
-                  ]}
-                >
-                  <Text
+                { id: 'dark', label: '深色', icon: Moon },
+                { id: 'light', label: '浅色', icon: Sun },
+                { id: 'system', label: '系统', icon: Laptop },
+              ].map((m) => {
+                const IconComponent = m.icon;
+                const isActive = formData.theme === m.id;
+                const iconColor = isActive ? tokens.accent : tokens.textSecondary;
+                return (
+                  <TouchableOpacity
+                    key={m.id}
+                    onPress={() => setFormData({ ...formData, theme: m.id as ThemeMode })}
                     style={[
-                      styles.modeBtnText,
-                      { color: formData.theme === m.id ? tokens.accent : tokens.textSecondary },
+                      styles.modeBtn,
+                      { borderColor: tokens.borderSubtle, backgroundColor: tokens.bgSubtle },
+                      isActive && {
+                        borderColor: tokens.accent,
+                        backgroundColor: tokens.accentSubtle,
+                      },
                     ]}
                   >
-                    {m.label}
-                  </Text>
-                </TouchableOpacity>
-              ))}
+                    <IconComponent size={14} color={iconColor} style={{ marginRight: 6 }} />
+                    <Text
+                      style={[
+                        styles.modeBtnText,
+                        { color: iconColor },
+                      ]}
+                    >
+                      {m.label}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
             </View>
 
             {/* Palette selection */}
@@ -402,8 +409,10 @@ const styles = StyleSheet.create({
   },
   modeBtn: {
     flex: 1,
-    paddingVertical: 8,
+    flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 8,
     borderRadius: 12,
     borderWidth: 1,
   },

@@ -14,6 +14,7 @@ import {
   NativeScrollEvent,
 } from 'react-native';
 import { ThemeTokens } from '../theme/tokens';
+import { X, ExternalLink, Play } from 'lucide-react-native';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -125,6 +126,11 @@ export interface OverviewCategory {
   items: OverviewItem[];
 }
 
+export interface TableRow {
+  isHeader: boolean;
+  cells: string[];
+}
+
 export type ContentBlock =
   | { type: 'video'; youtubeUrl?: string; bilibiliUrl?: string; title?: string }
   | { type: 'overview'; categories: OverviewCategory[] }
@@ -133,7 +139,7 @@ export type ContentBlock =
   | { type: 'image'; src: string; alt?: string }
   | { type: 'image_gallery'; images: { src: string; alt?: string }[] }
   | { type: 'code'; code: string; lang?: string }
-  | { type: 'table'; rows: string[][] }
+  | { type: 'table'; rows: TableRow[] }
   | { type: 'quote'; text: string }
   | { type: 'list'; items: string[]; ordered: boolean }
   | { type: 'related_links'; links: { title?: string; url: string }[] }
@@ -273,18 +279,24 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
       const cleanCode = inner.replace(/<[^>]+>/g, '').replace(/^\n+|\s+$/g, '');
       rawBlocks.push({ type: 'code', code: decodeHtmlEntities(cleanCode) });
     } else if (tagName === 'table') {
-      const rows: string[][] = [];
+      const rows: TableRow[] = [];
       const trRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
       let trM: RegExpExecArray | null;
       while ((trM = trRegex.exec(inner)) !== null) {
         const cells: string[] = [];
-        const cellRegex = /<(?:td|th)[^>]*>([\s\S]*?)<\/(?:td|th)>/gi;
+        let isHeader = false;
+        const cellRegex = /<(td|th)[^>]*>([\s\S]*?)<\/\1>/gi;
         let cellM: RegExpExecArray | null;
         while ((cellM = cellRegex.exec(trM[1])) !== null) {
-          const cellText = decodeHtmlEntities(cellM[1].replace(/<[^>]+>/g, '').trim());
-          cells.push(cellText);
+          if (cellM[1].toLowerCase() === 'th') {
+            isHeader = true;
+          }
+          // Retain inner markup (such as <code>...</code>) so renderInline can render it with rich styles
+          cells.push(cellM[2].trim());
         }
-        if (cells.length > 0) rows.push(cells);
+        if (cells.length > 0) {
+          rows.push({ isHeader, cells });
+        }
       }
       if (rows.length > 0) {
         rawBlocks.push({ type: 'table', rows });
@@ -442,7 +454,7 @@ const LightboxModal: React.FC<LightboxModalProps> = ({
             {images.length > 1 ? `${index + 1} / ${images.length}` : '图片预览'}
           </Text>
           <TouchableOpacity onPress={onClose} style={styles.lightboxCloseBtn} activeOpacity={0.8}>
-            <Text style={styles.lightboxCloseText}>✕</Text>
+            <X size={20} color="#ffffff" />
           </TouchableOpacity>
         </View>
 
@@ -486,7 +498,10 @@ const LightboxModal: React.FC<LightboxModalProps> = ({
               onPress={() => Linking.openURL(current.src)}
               style={styles.lightboxOpenBtn}
             >
-              <Text style={styles.lightboxOpenText}>查看原图 ↗</Text>
+              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <ExternalLink size={13} color="#ffffff" style={{ marginRight: 5 }} />
+                <Text style={styles.lightboxOpenText}>查看原图</Text>
+              </View>
             </TouchableOpacity>
           </View>
         </View>
@@ -721,7 +736,7 @@ const HeroVideoCard: React.FC<{
           style={styles.heroPlayOverlay}
         >
           <View style={[styles.heroPlayCircle, { backgroundColor: '#e11d48' }]}>
-            <Text style={styles.heroPlayTriangle}>▶</Text>
+            <Play size={24} color="#ffffff" fill="#ffffff" style={{ marginLeft: 2 }} />
           </View>
         </TouchableOpacity>
 
@@ -730,7 +745,10 @@ const HeroVideoCard: React.FC<{
           onPress={handleOpenVideo}
           style={styles.heroTopRightBadge}
         >
-          <Text style={styles.heroTopRightText}>前往平台观看 ↗</Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <ExternalLink size={12} color="#ffffff" style={{ marginRight: 4 }} />
+            <Text style={styles.heroTopRightText}>前往平台观看</Text>
+          </View>
         </TouchableOpacity>
       </View>
 
@@ -790,9 +808,12 @@ const HeroVideoCard: React.FC<{
         </View>
 
         <TouchableOpacity onPress={handleOpenVideo} style={styles.heroWatchDirectBtn}>
-          <Text style={[styles.heroWatchDirectText, { color: tokens.accent }]}>
-            立即播放 ↗
-          </Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <Text style={[styles.heroWatchDirectText, { color: tokens.accent, marginRight: 4 }]}>
+              立即播放
+            </Text>
+            <ExternalLink size={13} color={tokens.accent} />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -982,7 +1003,7 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
                   styles.inlineCode,
                   {
                     backgroundColor: tokens.bgSubtle,
-                    color: tokens.accent,
+                    color: tokens.textPrimary,
                     borderColor: tokens.borderSubtle,
                     fontSize: fontSize * 0.88,
                   },
@@ -1148,7 +1169,6 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
                     borderColor: tokens.borderSubtle,
                   },
                 ]}
-                onStartShouldSetResponder={() => true}
               >
                 <View
                   style={[
@@ -1169,18 +1189,17 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
                         },
                       ]}
                     >
-                      CODE / DIAGRAM
-                    </Text>
-                    <Text style={[styles.codeHeaderHint, { color: tokens.textMuted }]}>
-                      ⇄ 支持左右滑动
+                      {block.lang ? block.lang.toUpperCase() : 'CODE'}
                     </Text>
                   </View>
                 </View>
                 <ScrollView
                   horizontal
                   nestedScrollEnabled={true}
-                  showsHorizontalScrollIndicator={true}
-                  persistentScrollbar={true}
+                  directionalLockEnabled={true}
+                  showsHorizontalScrollIndicator={false}
+                  overScrollMode="never"
+                  bounces={false}
                   contentContainerStyle={styles.codeScrollContent}
                 >
                   <Text
@@ -1205,88 +1224,66 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
               <View
                 key={index}
                 style={[
-                  styles.tableBox,
+                  styles.tableCard,
                   {
                     backgroundColor: tokens.bgSurface,
                     borderColor: tokens.borderSubtle,
                   },
                 ]}
-                onStartShouldSetResponder={() => true}
               >
-                <View
-                  style={[
-                    styles.codeHeader,
-                    {
-                      borderBottomColor: tokens.borderSubtle,
-                      backgroundColor: tokens.bgSubtle,
-                    },
-                  ]}
-                >
-                  <View style={styles.codeHeaderLeft}>
-                    <Text
-                      style={[
-                        styles.codeBadge,
-                        {
-                          color: tokens.accent,
-                          backgroundColor: tokens.accentSubtle,
-                        },
-                      ]}
-                    >
-                      TABLE
-                    </Text>
-                    <Text style={[styles.codeHeaderHint, { color: tokens.textMuted }]}>
-                      ⇄ 支持左右滑动
-                    </Text>
-                  </View>
-                </View>
                 <ScrollView
                   horizontal
                   nestedScrollEnabled={true}
-                  showsHorizontalScrollIndicator={true}
-                  persistentScrollbar={true}
+                  directionalLockEnabled={true}
+                  showsHorizontalScrollIndicator={false}
+                  overScrollMode="never"
+                  bounces={false}
                 >
                   <View style={styles.tableInner}>
-                    {block.rows.map((row, rowIdx) => (
-                      <View
-                        key={rowIdx}
-                        style={[
-                          styles.tableRow,
-                          {
-                            backgroundColor:
-                              rowIdx === 0
+                    {block.rows.map((row, rowIdx) => {
+                      const isHeader = row.isHeader || rowIdx === 0;
+                      const isLastRow = rowIdx === block.rows.length - 1;
+                      return (
+                        <View
+                          key={rowIdx}
+                          style={[
+                            styles.tableRow,
+                            {
+                              backgroundColor: isHeader
                                 ? tokens.bgSubtle
                                 : rowIdx % 2 === 1
                                 ? tokens.bgCard
                                 : tokens.bgSurface,
-                            borderBottomColor: tokens.borderSubtle,
-                          },
-                        ]}
-                      >
-                        {row.map((cell, cellIdx) => (
-                          <View
-                            key={cellIdx}
-                            style={[
-                              styles.tableCell,
-                              { borderRightColor: tokens.borderSubtle },
-                            ]}
-                          >
-                            <Text
-                              selectable={true}
-                              style={[
-                                styles.tableCellText,
-                                {
-                                  color: rowIdx === 0 ? tokens.accent : tokens.textPrimary,
-                                  fontWeight: rowIdx === 0 ? '700' : '400',
-                                  fontSize: Math.max(11, fontSize * 0.85),
-                                },
-                              ]}
-                            >
-                              {cell}
-                            </Text>
-                          </View>
-                        ))}
-                      </View>
-                    ))}
+                              borderBottomColor: tokens.borderSubtle,
+                              borderBottomWidth: isLastRow ? 0 : 1,
+                            },
+                          ]}
+                        >
+                          {row.cells.map((cellText, cellIdx) => {
+                            const isLastCell = cellIdx === row.cells.length - 1;
+                            return (
+                              <View
+                                key={cellIdx}
+                                style={[
+                                  styles.tableCell,
+                                  {
+                                    borderRightColor: tokens.borderSubtle,
+                                    borderRightWidth: isLastCell ? 0 : 1,
+                                  },
+                                ]}
+                              >
+                                {renderInline(cellText, {
+                                  color: tokens.textPrimary,
+                                  fontWeight: isHeader ? '600' : '400',
+                                  fontSize: Math.max(12, fontSize * 0.88),
+                                  lineHeight: Math.max(18, fontSize * 1.32),
+                                })}
+                              </View>
+                            );
+                          })}
+                        </View>
+                      );
+                    })}
                   </View>
                 </ScrollView>
               </View>
@@ -1438,10 +1435,10 @@ const styles = StyleSheet.create({
   codeText: {
     fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
   },
-  tableBox: {
+  tableCard: {
     borderWidth: 1,
-    borderRadius: 14,
-    marginVertical: 14,
+    borderRadius: 8,
+    marginVertical: 16,
     overflow: 'hidden',
   },
   tableInner: {
@@ -1449,16 +1446,12 @@ const styles = StyleSheet.create({
   },
   tableRow: {
     flexDirection: 'row',
-    borderBottomWidth: 1,
   },
   tableCell: {
-    paddingHorizontal: 12,
-    paddingVertical: 9,
-    borderRightWidth: 1,
-    minWidth: 85,
-  },
-  tableCellText: {
-    fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    justifyContent: 'center',
+    minWidth: 100,
   },
   listBox: {
     marginVertical: 10,

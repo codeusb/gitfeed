@@ -10,6 +10,7 @@ import {
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Category, Feed } from '../types';
 import { useTheme } from '../theme/ThemeContext';
+import { X, Folder, Rss } from 'lucide-react-native';
 
 interface FeedsDrawerModalProps {
   visible: boolean;
@@ -50,7 +51,7 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
             style={[styles.closeCircleBtn, { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle }]}
             activeOpacity={0.7}
           >
-            <Text style={[styles.closeIcon, { color: tokens.textPrimary }]}>✕</Text>
+            <X size={18} color={tokens.textPrimary} />
           </TouchableOpacity>
         </View>
 
@@ -73,6 +74,7 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
               !selectedCategory && !selectedFeed && { backgroundColor: tokens.accentSubtle },
             ]}
           >
+            <Rss size={16} color={!selectedCategory && !selectedFeed ? tokens.accent : tokens.textSecondary} style={{ marginRight: 8 }} />
             <Text
               style={[
                 styles.itemText,
@@ -101,13 +103,14 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
                     isCatActive && { backgroundColor: tokens.accentSubtle },
                   ]}
                 >
+                  <Folder size={15} color={isCatActive ? tokens.accent : tokens.textSecondary} style={{ marginRight: 7 }} />
                   <Text
                     style={[
                       styles.catTitle,
                       { color: isCatActive ? tokens.accent : tokens.textSecondary },
                     ]}
                   >
-                    📁 {cat.name}
+                    {cat.name}
                   </Text>
                 </TouchableOpacity>
 
@@ -190,6 +193,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   item: {
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingVertical: 12,
     paddingHorizontal: 14,
     borderRadius: 12,
@@ -203,6 +208,8 @@ const styles = StyleSheet.create({
     marginTop: 12,
   },
   catHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingVertical: 10,
     paddingHorizontal: 14,
     borderRadius: 12,

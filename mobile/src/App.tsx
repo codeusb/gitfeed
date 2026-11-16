@@ -21,6 +21,7 @@ import { SettingsModal } from './components/SettingsModal';
 import { FeedsDrawerModal } from './components/FeedsDrawerModal';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { ThemeProvider, useTheme } from './theme/ThemeContext';
+import { RefreshCw, Settings, ChevronDown, Inbox } from 'lucide-react-native';
 
 function MainAppContent({
   settings,
@@ -189,15 +190,15 @@ function MainAppContent({
           <Text style={[styles.scopeTitle, { color: tokens.textPrimary }]} numberOfLines={1}>
             {currentViewTitle}
           </Text>
-          <Text style={[styles.scopeArrow, { color: tokens.accent }]}>▾</Text>
+          <ChevronDown size={14} color={tokens.accent} style={{ marginLeft: 6 }} />
         </TouchableOpacity>
 
         <View style={styles.headerActions}>
-          <TouchableOpacity onPress={() => loadAllData(settings)} style={styles.headerIconBtn}>
-            <Text style={[styles.headerIcon, { color: tokens.textSecondary }]}>↻</Text>
+          <TouchableOpacity onPress={() => loadAllData(settings)} style={styles.headerIconBtn} activeOpacity={0.7}>
+            <RefreshCw size={19} color={tokens.textSecondary} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => setSettingsVisible(true)} style={styles.headerIconBtn}>
-            <Text style={[styles.headerIcon, { color: tokens.textSecondary }]}>⚙</Text>
+          <TouchableOpacity onPress={() => setSettingsVisible(true)} style={styles.headerIconBtn} activeOpacity={0.7}>
+            <Settings size={19} color={tokens.textSecondary} />
           </TouchableOpacity>
         </View>
       </View>
@@ -264,6 +265,7 @@ function MainAppContent({
         }
         ListEmptyComponent={
           <View style={styles.emptyContainer}>
+            <Inbox size={44} color={tokens.textMuted} strokeWidth={1.5} style={{ marginBottom: 12 }} />
             <Text style={[styles.emptyTitle, { color: tokens.textPrimary }]}>暂无文章</Text>
             <Text style={[styles.emptyDesc, { color: tokens.textMuted }]}>
               所有文章都已读完或当前分类下无文章

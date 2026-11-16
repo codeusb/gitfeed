@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Save, RefreshCw, Key, Database, Sliders, CheckCircle2, AlertCircle } from 'lucide-react';
+import { X, Save, RefreshCw, Key, Database, Sliders, CheckCircle2, AlertCircle, Moon, Sun, Laptop } from 'lucide-react';
 import { UserSettings } from '../types';
 import { SyncService } from '../services/syncService';
 
@@ -173,23 +173,27 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               </label>
               <div className="grid grid-cols-3 gap-2">
                 {[
-                  { id: 'dark', label: '深色模式 🌙' },
-                  { id: 'light', label: '浅色模式 ☀️' },
-                  { id: 'system', label: '跟随系统 💻' },
-                ].map((m) => (
-                  <button
-                    key={m.id}
-                    type="button"
-                    onClick={() => setFormData({ ...formData, theme: m.id as any })}
-                    className={`py-2 px-3 rounded-xl text-xs font-semibold border transition-all duration-175 ${
-                      formData.theme === m.id
-                        ? 'border-[#EB6E00] bg-[#EB6E00]/10 text-[#EB6E00] dark:text-[#FF7A1A]'
-                        : 'border-black/[0.08] dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.04] text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white'
-                    }`}
-                  >
-                    {m.label}
-                  </button>
-                ))}
+                  { id: 'dark', label: '深色模式', icon: Moon },
+                  { id: 'light', label: '浅色模式', icon: Sun },
+                  { id: 'system', label: '跟随系统', icon: Laptop },
+                ].map((m) => {
+                  const IconComp = m.icon;
+                  return (
+                    <button
+                      key={m.id}
+                      type="button"
+                      onClick={() => setFormData({ ...formData, theme: m.id as any })}
+                      className={`py-2 px-3 rounded-xl text-xs font-semibold border inline-flex items-center justify-center gap-1.5 transition-all duration-175 ${
+                        formData.theme === m.id
+                          ? 'border-[#EB6E00] bg-[#EB6E00]/10 text-[#EB6E00] dark:text-[#FF7A1A]'
+                          : 'border-black/[0.08] dark:border-white/[0.1] bg-black/[0.02] dark:bg-white/[0.04] text-[#474747] dark:text-[#9e9e9e] hover:text-black dark:hover:text-white'
+                      }`}
+                    >
+                      <IconComp className="w-3.5 h-3.5" />
+                      <span>{m.label}</span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 

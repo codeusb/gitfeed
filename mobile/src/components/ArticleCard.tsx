@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { ArticleSummary } from '../types';
 import { useTheme } from '../theme/ThemeContext';
+import { Star, CheckCircle2, Circle } from 'lucide-react-native';
 
 interface ArticleCardProps {
   article: ArticleSummary;
@@ -75,19 +76,25 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         </View>
 
         <View style={styles.rightActions}>
-          <TouchableOpacity onPress={onToggleStar} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
-            <Text style={[styles.actionIcon, { color: isStarred ? '#f59e0b' : tokens.textMuted }]}>
-              {isStarred ? '★' : '☆'}
-            </Text>
+          <TouchableOpacity onPress={onToggleStar} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }} activeOpacity={0.7}>
+            <Star
+              size={16}
+              color={isStarred ? '#f59e0b' : tokens.textMuted}
+              fill={isStarred ? '#f59e0b' : 'none'}
+              strokeWidth={2}
+            />
           </TouchableOpacity>
           <TouchableOpacity
             onPress={onToggleRead}
             style={{ marginLeft: 12 }}
             hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+            activeOpacity={0.7}
           >
-            <Text style={[styles.actionIcon, { color: isRead ? tokens.textMuted : tokens.accent }]}>
-              {isRead ? '✓' : '○'}
-            </Text>
+            {isRead ? (
+              <CheckCircle2 size={16} color={tokens.textMuted} strokeWidth={2} />
+            ) : (
+              <Circle size={16} color={tokens.accent} strokeWidth={2} />
+            )}
           </TouchableOpacity>
         </View>
       </View>

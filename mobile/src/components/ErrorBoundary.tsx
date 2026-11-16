@@ -1,5 +1,6 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { AlertTriangle } from 'lucide-react-native';
 
 interface Props {
   children: ReactNode;
@@ -34,7 +35,7 @@ export class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
         <View style={styles.container}>
-          <Text style={styles.icon}>⚡</Text>
+          <AlertTriangle size={48} color="#f59e0b" style={{ marginBottom: 16 }} />
           <Text style={styles.title}>GitFeed 运行遇到轻微异常</Text>
           <Text style={styles.subtitle}>已自动拦截异常并保护数据，点击下方按钮即可恢复：</Text>
           <ScrollView style={styles.errorBox}>

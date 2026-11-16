@@ -19,6 +19,7 @@ import { ArticleDetail, ArticleSummary, MobileSettings } from '../types';
 import { MobileDataService } from '../services/dataService';
 import { useTheme } from '../theme/ThemeContext';
 import { RichContentRenderer } from './RichContentRenderer';
+import { X, Star, CheckCircle2, Circle, ArrowUp, ExternalLink, Share2 } from 'lucide-react-native';
 
 const KEY_FONT_SIZE = '@gitfeed_reader_font_size';
 
@@ -154,7 +155,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
             ]}
             activeOpacity={0.7}
           >
-            <Text style={[styles.toolIcon, { color: tokens.textSecondary }]}>✕</Text>
+            <X size={18} color={tokens.textSecondary} />
           </TouchableOpacity>
 
           {/* Center Brand / Feed pill */}
@@ -199,6 +200,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
         <ScrollView
           style={styles.scroll}
           nestedScrollEnabled={true}
+          directionalLockEnabled={true}
           contentContainerStyle={[
             styles.scrollContent,
             { paddingBottom: Math.max(insets.bottom, 16) + 80 },
@@ -330,8 +332,9 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               ]}
               activeOpacity={0.7}
             >
+              <ExternalLink size={15} color={tokens.accent} style={{ marginRight: 6 }} />
               <Text style={[styles.bottomBtnText, { color: tokens.accent }]}>
-                在浏览器中打开原网页 ↗
+                在浏览器中打开原网页
               </Text>
             </TouchableOpacity>
 
@@ -343,8 +346,13 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               ]}
               activeOpacity={0.7}
             >
+              {isRead ? (
+                <Circle size={15} color={tokens.textPrimary} style={{ marginRight: 6 }} />
+              ) : (
+                <CheckCircle2 size={15} color={tokens.accent} style={{ marginRight: 6 }} />
+              )}
               <Text style={[styles.bottomBtnText, { color: tokens.textPrimary }]}>
-                {isRead ? '标记为未读 ○' : '标记为已读 ✓'}
+                {isRead ? '标记为未读' : '标记为已读'}
               </Text>
             </TouchableOpacity>
           </View>
@@ -389,9 +397,12 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               style={styles.floatingActionBtn}
               activeOpacity={0.7}
             >
-              <Text style={[styles.floatingIcon, { color: isStarred ? '#f59e0b' : tokens.textPrimary }]}>
-                {isStarred ? '★' : '☆'}
-              </Text>
+              <Star
+                size={18}
+                color={isStarred ? '#f59e0b' : tokens.textPrimary}
+                fill={isStarred ? '#f59e0b' : 'none'}
+                strokeWidth={2}
+              />
             </TouchableOpacity>
 
             {/* Read toggle */}
@@ -400,9 +411,11 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               style={styles.floatingActionBtn}
               activeOpacity={0.7}
             >
-              <Text style={[styles.floatingIcon, { color: isRead ? tokens.accent : tokens.textMuted }]}>
-                {isRead ? '✓' : '○'}
-              </Text>
+              {isRead ? (
+                <CheckCircle2 size={18} color={tokens.accent} strokeWidth={2} />
+              ) : (
+                <Circle size={18} color={tokens.textMuted} strokeWidth={2} />
+              )}
             </TouchableOpacity>
 
             <View style={[styles.floatingDivider, { backgroundColor: tokens.borderSubtle }]} />
@@ -413,7 +426,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               style={styles.floatingActionBtn}
               activeOpacity={0.7}
             >
-              <Text style={[styles.floatingIcon, { color: tokens.textPrimary }]}>⇪</Text>
+              <Share2 size={18} color={tokens.textPrimary} strokeWidth={2} />
             </TouchableOpacity>
 
             {/* Open Browser */}
@@ -422,7 +435,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
               style={styles.floatingActionBtn}
               activeOpacity={0.7}
             >
-              <Text style={[styles.floatingIcon, { color: tokens.textPrimary }]}>↗</Text>
+              <ExternalLink size={18} color={tokens.textPrimary} strokeWidth={2} />
             </TouchableOpacity>
           </View>
         )}
@@ -615,6 +628,7 @@ const styles = StyleSheet.create({
   },
   bottomActionBtn: {
     flex: 1,
+    flexDirection: 'row',
     paddingVertical: 14,
     borderRadius: 16,
     borderWidth: 1,
