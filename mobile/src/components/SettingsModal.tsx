@@ -101,7 +101,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
         <ScrollView
           style={styles.scroll}
-          contentContainerStyle={[styles.content, { paddingBottom: Math.max(insets.bottom, 24) + 60 }]}
+          contentContainerStyle={[styles.content, { paddingBottom: Math.max(insets.bottom, 16) + 24 }]}
         >
           {/* Section 1: Appearance & Tokens */}
           <View style={[styles.section, { backgroundColor: tokens.bgCard, borderColor: tokens.borderSubtle }]}>

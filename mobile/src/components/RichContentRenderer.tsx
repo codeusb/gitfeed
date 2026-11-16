@@ -145,6 +145,7 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
 
   let cleaned = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   cleaned = cleaned.replace(/<(script|style|noscript)[^>]*>[\s\S]*?<\/\1>/gi, '');
+  cleaned = cleaned.replace(/<\/?(source|picture)[^>]*>/gi, '');
 
   const rawBlocks: ContentBlock[] = [];
 
@@ -225,8 +226,22 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
     if (isImg) {
       const srcMatch = match[0].match(/src=["']([^"']+)["']/i);
       const altMatch = match[0].match(/alt=["']([^"']*)["']/i);
-      if (srcMatch && srcMatch[1] && !srcMatch[1].startsWith('data:image/svg')) {
-        rawBlocks.push({ type: 'image', src: srcMatch[1], alt: altMatch ? altMatch[1] : undefined });
+      const heightMatch = match[0].match(/height=["']?(\d+)/i);
+      const widthMatch = match[0].match(/width=["']?(\d+)/i);
+      const h = heightMatch ? parseInt(heightMatch[1], 10) : 0;
+      const w = widthMatch ? parseInt(widthMatch[1], 10) : 0;
+      const src = srcMatch ? srcMatch[1] : '';
+
+      const isSmallIcon =
+        (h > 0 && h <= 48) ||
+        (w > 0 && w <= 48) ||
+        src.includes('/icons/') ||
+        src.includes('link.png') ||
+        src.includes('badge') ||
+        src.includes('shields.io');
+
+      if (src && !isSmallIcon && !src.startsWith('data:image/svg')) {
+        rawBlocks.push({ type: 'image', src, alt: altMatch ? altMatch[1] : undefined });
       }
     } else if (isHr) {
       rawBlocks.push({ type: 'hr' });
@@ -289,17 +304,45 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
         if (items.length > 0) rawBlocks.push({ type: 'list', items, ordered: tagName === 'ol' });
       }
     } else if (tagName === 'p') {
-      const imgM = inner.match(/<img\s+[^>]*src=["']([^"']+)["'][^>]*>/i);
-      if (imgM && imgM[1]) {
-        const altM = imgM[0].match(/alt=["']([^"']*)["']/i);
-        rawBlocks.push({ type: 'image', src: imgM[1], alt: altM ? altM[1] : undefined });
-        const remaining = inner.replace(imgM[0], '').replace(/<[^>]+>/g, '').trim();
-        if (remaining) rawBlocks.push({ type: 'paragraph', text: decodeHtmlEntities(remaining) });
+      const imgM = inner.match(/<img\s+([^>]*)\/?>/i);
+      if (imgM) {
+        const imgAttrs = imgM[1];
+        const srcM = imgAttrs.match(/src=["']([^"']+)["']/i);
+        const altM = imgAttrs.match(/alt=["']([^"']*)["']/i);
+        const heightM = imgAttrs.match(/height=["']?(\d+)/i);
+        const widthM = imgAttrs.match(/width=["']?(\d+)/i);
+        const h = heightM ? parseInt(heightM[1], 10) : 0;
+        const w = widthM ? parseInt(widthM[1], 10) : 0;
+        const src = srcM ? srcM[1] : '';
+
+        const isSmallIcon =
+          (h > 0 && h <= 48) ||
+          (w > 0 && w <= 48) ||
+          src.includes('/icons/') ||
+          src.includes('link.png') ||
+          src.includes('badge') ||
+          src.includes('shields.io');
+
+        const hasOtherContent = inner.replace(/<img\s+[^>]*\/?>/gi, '').trim().length > 0;
+
+        if (isSmallIcon || hasOtherContent) {
+          let cleanP = inner.replace(/<img\s+[^>]*src=["'][^"']*link\.png["'][^>]*\/?>/gi, '🔗 ');
+          cleanP = cleanP.replace(/<img\s+[^>]*alt=["']([^"']+)["'][^>]*\/?>/gi, '$1 ');
+          cleanP = cleanP.replace(/<img\s+[^>]*\/?>/gi, '');
+          cleanP = cleanP.trim();
+          if (cleanP && cleanP.replace(/<[^>]+>/g, '').trim().length > 0) {
+            rawBlocks.push({ type: 'paragraph', text: cleanP });
+          }
+        } else if (src && !src.startsWith('data:image/svg')) {
+          rawBlocks.push({ type: 'image', src, alt: altM ? altM[1] : undefined });
+        }
       } else if (inner.includes('相关链接')) {
         // Skip pure label since the list follows
       } else {
         const cleanP = inner.trim();
-        if (cleanP) rawBlocks.push({ type: 'paragraph', text: decodeHtmlEntities(cleanP) });
+        if (cleanP && cleanP.replace(/<[^>]+>/g, '').trim().length > 0) {
+          rawBlocks.push({ type: 'paragraph', text: cleanP });
+        }
       }
     }
   }

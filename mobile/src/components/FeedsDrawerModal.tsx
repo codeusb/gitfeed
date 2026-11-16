@@ -45,8 +45,12 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
       >
         <View style={[styles.navbar, { borderBottomColor: tokens.borderSubtle, backgroundColor: tokens.bgPage }]}>
           <Text style={[styles.title, { color: tokens.textPrimary }]}>订阅源与分类</Text>
-          <TouchableOpacity onPress={onClose} style={styles.closeBtn}>
-            <Text style={[styles.closeBtnText, { color: tokens.accent }]}>完成</Text>
+          <TouchableOpacity
+            onPress={onClose}
+            style={[styles.closeCircleBtn, { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle }]}
+            activeOpacity={0.7}
+          >
+            <Text style={[styles.closeIcon, { color: tokens.textPrimary }]}>✕</Text>
           </TouchableOpacity>
         </View>
 
@@ -54,7 +58,7 @@ export const FeedsDrawerModal: React.FC<FeedsDrawerModalProps> = ({
           style={styles.scroll}
           contentContainerStyle={{
             padding: 16,
-            paddingBottom: Math.max(insets.bottom, 24) + 64,
+            paddingBottom: Math.max(insets.bottom, 16) + 16,
           }}
         >
           {/* All articles option */}
@@ -170,12 +174,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     letterSpacing: -0.2,
   },
-  closeBtn: {
-    padding: 6,
+  closeCircleBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  closeBtnText: {
-    fontWeight: 'bold',
+  closeIcon: {
     fontSize: 14,
+    fontWeight: 'bold',
   },
   scroll: {
     flex: 1,
