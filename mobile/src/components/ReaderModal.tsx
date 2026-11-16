@@ -49,8 +49,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
   const [loading, setLoading] = useState(false);
   const [fontSize, setFontSize] = useState<number>(16);
   const [scrollProgress, setScrollProgress] = useState<number>(0);
-  const [showControls, setShowControls] = useState<boolean>(true);
-  const lastScrollY = useRef<number>(0);
+  const [showBottomBar, setShowBottomBar] = useState<boolean>(false);
 
   // Load persisted font size
   useEffect(() => {
@@ -79,8 +78,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
       return;
     }
 
-    setShowControls(true);
-    lastScrollY.current = 0;
+    setShowBottomBar(false);
     setLoading(true);
     setScrollProgress(0);
     MobileDataService.fetchArticleDetail(articleSummary.id, settings)
@@ -129,15 +127,6 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
       const p = Math.min(1, Math.max(0, contentOffset.y / maxScroll));
       setScrollProgress(p);
     }
-
-    const currentY = contentOffset.y;
-    const diff = currentY - lastScrollY.current;
-    if (currentY > 80 && diff > 15 && showControls) {
-      setShowControls(false);
-    } else if (diff < -25 && !showControls) {
-      setShowControls(true);
-    }
-    lastScrollY.current = currentY;
   };
 
   return (
@@ -146,70 +135,52 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
         edges={['top', 'bottom', 'left', 'right']}
         style={[styles.container, { backgroundColor: tokens.bgPage }]}
       >
-        {/* Top Minimal Header (Clean, only Close + Feed Title + Progress) */}
-        {showControls ? (
-          <View
-            style={[
-              styles.navbar,
-              {
-                borderBottomColor: tokens.borderSubtle,
-                backgroundColor: tokens.bgSurface,
-              },
-            ]}
-          >
-            {/* Back button */}
-            <TouchableOpacity
-              onPress={onClose}
-              style={[
-                styles.toolCircleBtn,
-                { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
-              ]}
-              activeOpacity={0.7}
-            >
-              <Text style={[styles.toolIcon, { color: tokens.textSecondary }]}>✕</Text>
-            </TouchableOpacity>
-
-            {/* Center Brand / Feed pill */}
-            <View
-              style={[
-                styles.feedBrandPill,
-                { backgroundColor: tokens.accentSubtle, borderColor: tokens.accentSubtle },
-              ]}
-            >
-              <Text style={[styles.feedBrandText, { color: tokens.accent }]} numberOfLines={1}>
-                {articleSummary.feedTitle}
-              </Text>
-            </View>
-
-            {/* Progress pill */}
-            <View
-              style={[
-                styles.progressPill,
-                { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
-              ]}
-            >
-              <Text style={[styles.progressPillText, { color: tokens.textSecondary }]}>
-                {Math.round(scrollProgress * 100)}%
-              </Text>
-            </View>
-          </View>
-        ) : (
-          /* Subtle floating back button in immersive mode */
+        {/* Top Header (Permanently stable, never shifts or disappears on scroll) */}
+        <View
+          style={[
+            styles.navbar,
+            {
+              borderBottomColor: tokens.borderSubtle,
+              backgroundColor: tokens.bgSurface,
+            },
+          ]}
+        >
+          {/* Back button */}
           <TouchableOpacity
             onPress={onClose}
             style={[
-              styles.floatingBackBtn,
-              {
-                top: Math.max(insets.top, 10) + 6,
-                backgroundColor: tokens.bgSurface,
-                borderColor: tokens.borderSubtle,
-              },
+              styles.toolCircleBtn,
+              { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
             ]}
             activeOpacity={0.7}
           >
             <Text style={[styles.toolIcon, { color: tokens.textSecondary }]}>✕</Text>
           </TouchableOpacity>
-        )}
+
+          {/* Center Brand / Feed pill */}
+          <View
+            style={[
+              styles.feedBrandPill,
+              { backgroundColor: tokens.accentSubtle, borderColor: tokens.accentSubtle },
+            ]}
+          >
+            <Text style={[styles.feedBrandText, { color: tokens.accent }]} numberOfLines={1}>
+              {articleSummary.feedTitle}
+            </Text>
+          </View>
+
+          {/* Progress pill */}
+          <View
+            style={[
+              styles.progressPill,
+              { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
+            ]}
+          >
+            <Text style={[styles.progressPillText, { color: tokens.textSecondary }]}>
+              {Math.round(scrollProgress * 100)}%
+            </Text>
+          </View>
+        </View>
 
         {/* Reading Progress Line */}
         <View style={styles.progressTrack}>
@@ -229,12 +200,12 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
           style={styles.scroll}
           contentContainerStyle={[
             styles.scrollContent,
-            { paddingBottom: Math.max(insets.bottom, 16) + (showControls ? 84 : 32) },
+            { paddingBottom: Math.max(insets.bottom, 16) + 80 },
           ]}
           onScroll={handleScroll}
           scrollEventThrottle={16}
         >
-          <Pressable onPress={() => setShowControls((prev) => !prev)}>
+          <Pressable onPress={() => setShowBottomBar((prev) => !prev)}>
           {/* Article Header Card */}
           <View
             style={[
@@ -379,8 +350,8 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
           </Pressable>
         </ScrollView>
 
-        {/* Floating Bottom Control Bar (Tap to toggle / Immersive Reader) */}
-        {showControls && (
+        {/* Floating Bottom Control Capsule (Click to toggle on / off) */}
+        {showBottomBar && (
           <View
             style={[
               styles.bottomFloatingBar,
@@ -491,22 +462,6 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '700',
     fontFamily: 'monospace',
-  },
-  floatingBackBtn: {
-    position: 'absolute',
-    left: 16,
-    zIndex: 99,
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    borderWidth: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.15,
-    shadowRadius: 4,
-    elevation: 4,
   },
   bottomFloatingBar: {
     position: 'absolute',
