@@ -198,6 +198,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
         {/* Article Body Scroll */}
         <ScrollView
           style={styles.scroll}
+          nestedScrollEnabled={true}
           contentContainerStyle={[
             styles.scrollContent,
             { paddingBottom: Math.max(insets.bottom, 16) + 80 },

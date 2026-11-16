@@ -9,6 +9,7 @@ import {
   ScrollView,
   Dimensions,
   Modal,
+  Platform,
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from 'react-native';
@@ -132,6 +133,7 @@ export type ContentBlock =
   | { type: 'image'; src: string; alt?: string }
   | { type: 'image_gallery'; images: { src: string; alt?: string }[] }
   | { type: 'code'; code: string; lang?: string }
+  | { type: 'table'; rows: string[][] }
   | { type: 'quote'; text: string }
   | { type: 'list'; items: string[]; ordered: boolean }
   | { type: 'related_links'; links: { title?: string; url: string }[] }
@@ -213,7 +215,7 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
 
   // 4. Tag-based block parser (bulletproof: avoids fragile group numbering)
   const blockRegex =
-    /<(h[1-6]|blockquote|pre|ul|ol|p)([^>]*)>([\s\S]*?)<\/\1>|<img\s+([^>]*)\/?>|<hr\s*\/?>/gi;
+    /<(h[1-6]|blockquote|pre|ul|ol|p|table)([^>]*)>([\s\S]*?)<\/\1>|<img\s+([^>]*)\/?>|<hr\s*\/?>/gi;
 
   let match: RegExpExecArray | null;
   while ((match = blockRegex.exec(cleaned)) !== null) {
@@ -268,8 +270,25 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
         rawBlocks.push({ type: 'quote', text: decodeHtmlEntities(cleanQuote) });
       }
     } else if (tagName === 'pre') {
-      const cleanCode = inner.replace(/<[^>]+>/g, '').trim();
+      const cleanCode = inner.replace(/<[^>]+>/g, '').replace(/^\n+|\s+$/g, '');
       rawBlocks.push({ type: 'code', code: decodeHtmlEntities(cleanCode) });
+    } else if (tagName === 'table') {
+      const rows: string[][] = [];
+      const trRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
+      let trM: RegExpExecArray | null;
+      while ((trM = trRegex.exec(inner)) !== null) {
+        const cells: string[] = [];
+        const cellRegex = /<(?:td|th)[^>]*>([\s\S]*?)<\/(?:td|th)>/gi;
+        let cellM: RegExpExecArray | null;
+        while ((cellM = cellRegex.exec(trM[1])) !== null) {
+          const cellText = decodeHtmlEntities(cellM[1].replace(/<[^>]+>/g, '').trim());
+          cells.push(cellText);
+        }
+        if (cells.length > 0) rows.push(cells);
+      }
+      if (rows.length > 0) {
+        rawBlocks.push({ type: 'table', rows });
+      }
     } else if (tagName === 'ul' || tagName === 'ol') {
       if (tagAttrs.includes('event-related-links') || inner.includes('event-related-links') || inner.includes('http')) {
         const links: { title?: string; url: string }[] = [];
@@ -491,8 +510,9 @@ const ArticleImage: React.FC<{
   useEffect(() => {
     if (!src || src.startsWith('data:')) return;
     try {
+      const safeUrl = src.includes('%') ? src : encodeURI(src);
       Image.getSize(
-        encodeURI(src),
+        safeUrl,
         (w, h) => {
           if (w > 0 && h > 0) {
             setAspectRatio(Math.min(2.5, Math.max(0.65, w / h)));
@@ -574,10 +594,11 @@ const ArticleImageGallery: React.FC<{
   };
 
   return (
-    <View style={styles.galleryContainer}>
+    <View style={styles.galleryContainer} onStartShouldSetResponder={() => true}>
       <ScrollView
         ref={scrollRef}
         horizontal
+        nestedScrollEnabled={true}
         showsHorizontalScrollIndicator={false}
         pagingEnabled
         snapToInterval={cardWidth}
@@ -1127,16 +1148,146 @@ export const RichContentRenderer: React.FC<RichContentRendererProps> = ({
                     borderColor: tokens.borderSubtle,
                   },
                 ]}
+                onStartShouldSetResponder={() => true}
               >
-                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                <View
+                  style={[
+                    styles.codeHeader,
+                    {
+                      borderBottomColor: tokens.borderSubtle,
+                      backgroundColor: tokens.bgSubtle,
+                    },
+                  ]}
+                >
+                  <View style={styles.codeHeaderLeft}>
+                    <Text
+                      style={[
+                        styles.codeBadge,
+                        {
+                          color: tokens.accent,
+                          backgroundColor: tokens.accentSubtle,
+                        },
+                      ]}
+                    >
+                      CODE / DIAGRAM
+                    </Text>
+                    <Text style={[styles.codeHeaderHint, { color: tokens.textMuted }]}>
+                      ⇄ 支持左右滑动
+                    </Text>
+                  </View>
+                </View>
+                <ScrollView
+                  horizontal
+                  nestedScrollEnabled={true}
+                  showsHorizontalScrollIndicator={true}
+                  persistentScrollbar={true}
+                  contentContainerStyle={styles.codeScrollContent}
+                >
                   <Text
+                    selectable={true}
                     style={[
                       styles.codeText,
-                      { color: tokens.textPrimary, fontSize: Math.max(11, fontSize * 0.85), lineHeight: fontSize * 1.35 },
+                      {
+                        color: tokens.textPrimary,
+                        fontSize: Math.max(11, fontSize * 0.84),
+                        lineHeight: Math.max(16, fontSize * 1.35),
+                      },
                     ]}
                   >
                     {block.code}
                   </Text>
+                </ScrollView>
+              </View>
+            );
+
+          case 'table':
+            return (
+              <View
+                key={index}
+                style={[
+                  styles.tableBox,
+                  {
+                    backgroundColor: tokens.bgSurface,
+                    borderColor: tokens.borderSubtle,
+                  },
+                ]}
+                onStartShouldSetResponder={() => true}
+              >
+                <View
+                  style={[
+                    styles.codeHeader,
+                    {
+                      borderBottomColor: tokens.borderSubtle,
+                      backgroundColor: tokens.bgSubtle,
+                    },
+                  ]}
+                >
+                  <View style={styles.codeHeaderLeft}>
+                    <Text
+                      style={[
+                        styles.codeBadge,
+                        {
+                          color: tokens.accent,
+                          backgroundColor: tokens.accentSubtle,
+                        },
+                      ]}
+                    >
+                      TABLE
+                    </Text>
+                    <Text style={[styles.codeHeaderHint, { color: tokens.textMuted }]}>
+                      ⇄ 支持左右滑动
+                    </Text>
+                  </View>
+                </View>
+                <ScrollView
+                  horizontal
+                  nestedScrollEnabled={true}
+                  showsHorizontalScrollIndicator={true}
+                  persistentScrollbar={true}
+                >
+                  <View style={styles.tableInner}>
+                    {block.rows.map((row, rowIdx) => (
+                      <View
+                        key={rowIdx}
+                        style={[
+                          styles.tableRow,
+                          {
+                            backgroundColor:
+                              rowIdx === 0
+                                ? tokens.bgSubtle
+                                : rowIdx % 2 === 1
+                                ? tokens.bgCard
+                                : tokens.bgSurface,
+                            borderBottomColor: tokens.borderSubtle,
+                          },
+                        ]}
+                      >
+                        {row.map((cell, cellIdx) => (
+                          <View
+                            key={cellIdx}
+                            style={[
+                              styles.tableCell,
+                              { borderRightColor: tokens.borderSubtle },
+                            ]}
+                          >
+                            <Text
+                              selectable={true}
+                              style={[
+                                styles.tableCellText,
+                                {
+                                  color: rowIdx === 0 ? tokens.accent : tokens.textPrimary,
+                                  fontWeight: rowIdx === 0 ? '700' : '400',
+                                  fontSize: Math.max(11, fontSize * 0.85),
+                                },
+                              ]}
+                            >
+                              {cell}
+                            </Text>
+                          </View>
+                        ))}
+                      </View>
+                    ))}
+                  </View>
                 </ScrollView>
               </View>
             );
@@ -1253,11 +1404,61 @@ const styles = StyleSheet.create({
   codeBox: {
     borderWidth: 1,
     borderRadius: 14,
-    padding: 14,
     marginVertical: 14,
+    overflow: 'hidden',
+  },
+  codeHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+    borderBottomWidth: 1,
+  },
+  codeHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  codeBadge: {
+    fontSize: 10,
+    fontWeight: '700',
+    fontFamily: 'monospace',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+    marginRight: 8,
+  },
+  codeHeaderHint: {
+    fontSize: 11,
+    fontWeight: '500',
+  },
+  codeScrollContent: {
+    padding: 12,
   },
   codeText: {
-    fontFamily: 'monospace',
+    fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
+  },
+  tableBox: {
+    borderWidth: 1,
+    borderRadius: 14,
+    marginVertical: 14,
+    overflow: 'hidden',
+  },
+  tableInner: {
+    flexDirection: 'column',
+  },
+  tableRow: {
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+  },
+  tableCell: {
+    paddingHorizontal: 12,
+    paddingVertical: 9,
+    borderRightWidth: 1,
+    minWidth: 85,
+  },
+  tableCellText: {
+    fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
   },
   listBox: {
     marginVertical: 10,
