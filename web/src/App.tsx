@@ -233,6 +233,12 @@ export const App: React.FC = () => {
   // Keyboard Shortcuts Handler
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      // Never intercept browser native shortcuts with modifier keys (Cmd/Ctrl/Alt)
+      // e.g. Cmd+R (Reload page), Cmd+W, Cmd+T, Cmd+S, Cmd+L, etc.
+      if (e.metaKey || e.ctrlKey || e.altKey) {
+        return;
+      }
+
       // Don't intercept typing in inputs
       const target = e.target as HTMLElement;
       if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') {
