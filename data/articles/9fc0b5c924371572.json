@@ -1,0 +1,15 @@
+{
+  "id": "9fc0b5c924371572",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 开源了一个纯 Rust + NSH 编写的原生 HTTP(S) 抓包调试工具：zniff 🦀🔍",
+  "link": "https://www.v2ex.com/t/1257538#reply1",
+  "author": "treexie",
+  "publishedAt": "2026-11-16T14:20:13Z",
+  "snippet": "单二进制开箱即用，同一套界面还能编译成 WebAssembly，支持 zniff --web / Docker 部署为远程网页控制台。✨ 核心能力： • 全协议透视：HTTP/1.1、HTTP/2（ALPN 协商不降级）、WebSocket 与 SSE • 深度解码：JSON 树形视图、GraphQL、无模式 Protobuf/gRPC、MessagePack、行内 JWT/时间戳/Base64、行级 Diff 与瀑布图/时序图 • 1...",
+  "coverImage": "https://i.imgur.com/zu4pvMb.png",
+  "readTime": 1,
+  "content": "单二进制开箱即用，同一套界面还能编译成 WebAssembly，支持 zniff --web / Docker 部署为远程网页控制台。<br/><br/><br/>✨ 核心能力：<br/><br/>  • 全协议透视：HTTP/1.1、HTTP/2（ALPN 协商不降级）、WebSocket 与 SSE<br/>  • 深度解码：JSON 树形视图、GraphQL、无模式 Protobuf/gRPC、MessagePack、行内 JWT/时间戳/Base64、行级 Diff 与瀑布图/时序图<br/>  • 15 项改写规则与断点：map-local、map-remote、break、json 改写、限速、自定义解析等，支持 cURL/多语言代码导出<br/>  • AI 原生接入：内置 MCP Server（zniff --mcp / POST /mcp），Claude / Cursor 可直接查流、重放与改规则<br/><br/>支持 macOS / Windows / Linux / Docker · Apache-2.0<br/>🔗 <a href=\"https://github.com/vicanso/zniff\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/vicanso/zniff</a><br/><br/><a href=\"https://i.imgur.com/zu4pvMb.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/zu4pvMb.png\"/></a>",
+  "attachments": []
+}

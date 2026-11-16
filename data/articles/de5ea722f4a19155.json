@@ -1,0 +1,15 @@
+{
+  "id": "de5ea722f4a19155",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] 谷歌服务下载转圈附解决方案",
+  "link": "https://www.v2ex.com/t/1257544#reply2",
+  "author": "ftwindycn",
+  "publishedAt": "2026-11-16T15:01:49Z",
+  "snippet": "可能很多人不知道 Clash 的覆写可以指定应用走某一个代理，如\"PROCESS-NAME,com.android.vending,香港\",\"PROCESS-NAME,com.google.android.gms,香港\",后面的香港可以自定义策略组，不知道怎么加的可以问 AI我是最近玩怪物猎人旅人时和更新 playstore 时发现这一问题的，旅人老是登录不上，分析的时候发现里面有腾讯的域名导致登录时一直走的是直连，谷歌商店也有直连的问...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "可能很多人不知道 Clash 的覆写可以指定应用走某一个代理，如<br/>\"PROCESS-NAME,com.android.vending,香港\",<br/>\"PROCESS-NAME,com.google.android.gms,香港\",<br/>后面的香港可以自定义策略组，不知道怎么加的可以问 AI<br/><br/>我是最近玩怪物猎人旅人时和更新 playstore 时发现这一问题的，旅人老是登录不上，分析的时候发现里面有腾讯的域名导致登录时一直走的是直连，谷歌商店也有直连的问题<br/>因为我平时一直开着代理，但是将农业银行强制直连时依旧报风险，可能银行应用会额外做一层判断<br/>额外提一嘴我用过的很多安卓代理软件的分应用代理都是摆设，黑白名单没有用，唯一的作用是方便找软件的包名",
+  "attachments": []
+}
