@@ -1,0 +1,15 @@
+{
+  "id": "5583f63cfb1c1c0a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] 微信小游戏，一个 bug 卡了我四天",
+  "link": "https://www.v2ex.com/t/1257389#reply4",
+  "author": "DearFox",
+  "publishedAt": "2026-11-16T05:25:09Z",
+  "snippet": "11 号开始，突然发现游戏会出现卡死的情况，我没有安卓，微信开发平台用 ios 调试会黑屏，或者其他问题，反正就是没有办法锁定具体原因，问 ai 也找不出来，gpt，Claude，Gemini 全都没有头绪，笨办法弄个报错打印，一把把测试，本来就是偶发的，更心累，好不容易找到卡顿的时候，日志却没有报错，几度崩溃，昨晚灵光一闪，每次上线都用官方的游戏保护固件，我取消试试，然后到现在还没发现卡顿，我 xxx. 求测试",
+  "coverImage": "https://i.imgur.com/DkK88er.jpg",
+  "readTime": 1,
+  "content": "<p>11 号开始，突然发现游戏会出现卡死的情况，我没有安卓，微信开发平台用 ios 调试会黑屏，或者其他问题，反正就是没有办法锁定具体原因，问 ai 也找不出来，gpt，Claude，Gemini 全都没有头绪，笨办法弄个报错打印，一把把测试，本来就是偶发的，更心累，好不容易找到卡顿的时候，日志却没有报错，几度崩溃，昨晚灵光一闪，每次上线都用官方的游戏保护固件，我取消试试，然后到现在还没发现卡顿，我 xxx.</p>\n<p>求测试<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/DkK88er.jpg\"/></p>",
+  "attachments": []
+}

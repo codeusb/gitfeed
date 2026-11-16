@@ -1,0 +1,15 @@
+{
+  "id": "effec0f845dcccc5",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[iOS] 苹果为什么不让用户看到钥匙串里的所有数据？",
+  "link": "https://www.v2ex.com/t/1257421#reply1",
+  "author": "ShowYourPrompt",
+  "publishedAt": "2026-11-16T07:10:14Z",
+  "snippet": "钥匙串已经被大部分开发者滥用成追踪器了吧？删除 app 都清不掉app 往里面写入了什么数据，开放给用户，让用户选择删除不行吗？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "钥匙串已经被大部分开发者滥用成追踪器了吧？<br/>删除 app 都清不掉<br/>app 往里面写入了什么数据，开放给用户，让用户选择删除不行吗？",
+  "attachments": []
+}

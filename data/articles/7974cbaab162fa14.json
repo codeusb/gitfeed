@@ -1,0 +1,15 @@
+{
+  "id": "7974cbaab162fa14",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] V2EX 的帖子真的发生了翻天覆地的变化",
+  "link": "https://www.v2ex.com/t/1257385#reply11",
+  "author": "coolrequest",
+  "publishedAt": "2026-11-16T04:39:28Z",
+  "snippet": "今天突然心血来潮，翻了翻 V2EX 几年前的老帖子，感触挺深的。 以前的 V2EX，很多帖子都是在讨论技术： 这个功能是怎么实现的？ 有没有更好的技术方案？ 某个底层原理是怎样的？ 自己折腾了一个东西，分享一下实现过程。 遇到了一个奇怪的问题，大家一起研究。 评论区也经常能看到各种技术思路的碰撞，有时候光看评论就能学到不少东西。 再看看现在，明显感觉画风变了。 越来越多的帖子变成了： 借助 AI，花了一晚上做了个网站。 用 Cursor...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>今天突然心血来潮，翻了翻 V2EX 几年前的老帖子，感触挺深的。</p>\n<p>以前的 V2EX，很多帖子都是在讨论技术：</p>\n<ul>\n<li>这个功能是怎么实现的？</li>\n<li>有没有更好的技术方案？</li>\n<li>某个底层原理是怎样的？</li>\n<li>自己折腾了一个东西，分享一下实现过程。</li>\n<li>遇到了一个奇怪的问题，大家一起研究。</li>\n</ul>\n<p>评论区也经常能看到各种技术思路的碰撞，有时候光看评论就能学到不少东西。</p>\n<p>再看看现在，明显感觉画风变了。</p>\n<p>越来越多的帖子变成了：</p>\n<ul>\n<li>借助 AI，花了一晚上做了个网站。</li>\n<li>用 Cursor / Claude Code 做了个 App，欢迎体验。</li>\n<li>零基础用 AI 开发了一个产品。</li>\n<li>独立开发了一个工具，求大家提提意见。</li>\n<li>做了个 SaaS，聊聊怎么推广和变现。</li>\n</ul>\n<p>以前大家讨论的是<strong>「这个东西怎么实现」</strong>，现在更多讨论的是<strong>「我做了个什么东西」</strong>。</p>\n<p>感觉 AI 正在改变整个开发者社区的氛围。</p>\n<p>以前实现一个想法，可能需要花几周研究技术、搭建项目、解决各种问题。现在借助 AI，可能一两天就能做出一个能用的产品。</p>\n<p>技术门槛降低了，大家似乎也不再那么关注实现过程，而是更关注产品本身、用户需求和商业化。</p>\n<p>倒也不是说这种变化不好，反而觉得挺有意思的。</p>\n<p><strong>以前是技术驱动想法，现在好像变成了想法驱动技术。</strong></p>\n<p>只是偶尔翻到以前那些纯粹讨论技术的帖子，还是有点怀念。</p>\n<p>顺便也推广下我的产品（狗头）</p>\n<p><a href=\"https://www.alechuan.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.alechuan.com/</a> (大模型，可以找我申请免费额度)</p>\n<p><a href=\"https://coolrequest.dev/\" rel=\"noopener noreferrer\" target=\"_blank\">https://coolrequest.dev/</a> （IDEA 插件，开发调试使用）</p>",
+  "attachments": []
+}

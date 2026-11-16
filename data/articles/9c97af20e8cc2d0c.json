@@ -1,0 +1,15 @@
+{
+  "id": "9c97af20e8cc2d0c",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "datasette 0.65.6",
+  "link": "https://simonwillison.net/2026/Nov/15/datasette-2/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-15T23:18:17Z",
+  "snippet": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be dow...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/0.65.6\" rel=\"noopener noreferrer\" target=\"_blank\">datasette 0.65.6</a></p>\n<p>I backported a minor security fix from 1.0a43:</p>\n<blockquote>\n<p>Fixed a security issue where a database registered using <code>add_database(db, name=..., route=...)</code> with a route that differs from its name could be downloaded from <code>/&lt;route&gt;.db</code> by actors who were denied access to it. [...]</p>\n</blockquote>\n<p>Tags: <a href=\"https://simonwillison.net/tags/security\" rel=\"noopener noreferrer\" target=\"_blank\">security</a>, <a href=\"https://simonwillison.net/tags/datasette\" rel=\"noopener noreferrer\" target=\"_blank\">datasette</a></p>",
+  "attachments": []
+}

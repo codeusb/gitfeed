@@ -1,0 +1,15 @@
+{
+  "id": "df76b851fcb3f37c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[DeepSeek] DeepSeek 把 App 里那些能力接到 API 了",
+  "link": "https://www.v2ex.com/t/1257402#reply0",
+  "author": "chunyucaitom",
+  "publishedAt": "2026-11-16T05:52:40Z",
+  "snippet": "看到 DeepSeek 11 月 13 日的 changelog，说把 App 里那些能力开放到现有 API 了。https://api-docs.deepseek.com/updates/搜索四月就有人在站里聊过，十月也单独开过 Search 和 Fetch。这次主要是文件和读链接进了对话接口。官方写在 deepseek-flash 上打开对应参数就行，工具调用和上下文由服务端拼好，不用自己在客户端再跑一轮 tool call。OCR...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "看到 DeepSeek 11 月 13 日的 changelog，说把 App 里那些能力开放到现有 API 了。<br/><br/><a href=\"https://api-docs.deepseek.com/updates/\" rel=\"noopener noreferrer\" target=\"_blank\">https://api-docs.deepseek.com/updates/</a><br/><br/>搜索四月就有人在站里聊过，十月也单独开过 Search 和 Fetch。这次主要是文件和读链接进了对话接口。官方写在 deepseek-flash 上打开对应参数就行，工具调用和上下文由服务端拼好，不用自己在客户端再跑一轮 tool call。OCR、ASR、TTS 也能单独调。定价页上 TTS 现在是限时五折，一万字符 $0.225。<br/><br/>这篇把对话里怎么开工具、以及 OCR 和语音单独调用的价格列得比较清楚<br/><a href=\"https://lotook.com/articles/deepseek-api-web-search-ocr-voice/\" rel=\"noopener noreferrer\" target=\"_blank\">https://lotook.com/articles/deepseek-api-web-search-ocr-voice/</a><br/><br/>有没有人已经把文件解析或语音接到自己的 agent 上了？",
+  "attachments": []
+}

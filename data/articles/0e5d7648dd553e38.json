@@ -1,0 +1,15 @@
+{
+  "id": "0e5d7648dd553e38",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[酷工作] 杭州本地求职，移动端开发，10 年经验，坐班或远程都可以。",
+  "link": "https://www.v2ex.com/t/1257403#reply4",
+  "author": "MoonlitClover",
+  "publishedAt": "2026-11-16T05:57:04Z",
+  "snippet": "本人一直在杭州，做移动端 10 年，之前以 Android 为主后来也写 flutter 。做过的产品包含数字交易产品，电商产品，教育产品相关。近两年重点投入 AI 辅助研发：Codex / Claude Code / Cursor 多工具协作、上下文与规则工程、MCP 集成，擅长把 AI 从“个人效率工具”变成团队可复用的开发流程。。 基本情况 坐标杭州，10 年 Android 开发经验 方向：Android 客户端为主（Flutt...",
+  "coverImage": "https://www.lamonco.asia/resume/resume-1.png",
+  "readTime": 1,
+  "content": "<p>本人一直在杭州，做移动端 10 年，之前以 Android 为主后来也写 flutter 。做过的产品包含数字交易产品，电商产品，教育产品相关。近两年重点投入 AI 辅助研发：Codex / Claude Code / Cursor 多工具协作、上下文与规则工程、MCP 集成，擅长把 AI 从“个人效率工具”变成团队可复用的开发流程。。</p>\n<h2>基本情况</h2>\n<ul>\n<li>坐标杭州，10 年 Android 开发经验</li>\n<li>方向：Android 客户端为主（Flutter / 小程序也能接）</li>\n<li>形式：杭州坐班、远程、混合办公都可以</li>\n<li>到岗时间：随时</li>\n</ul>\n<h2>拥有的 AI 能力</h2>\n<p><strong>工具链</strong></p>\n<ul>\n<li>日常同时使用 Codex、Claude Code、Cursor，按任务分工：批量重构 / 自动化任务走 CLI agent，界面层业务开发用 Cursor，复杂问题分析用 Claude Code</li>\n</ul>\n<p><strong>上下文与规则工程</strong></p>\n<ul>\n<li>上下文管理：项目上下文分层加载、按需注入、会话拆分与压缩，在控制 token 成本的同时保证输出质量</li>\n<li>规则文件：用 <a href=\"http://CLAUDE.md\" rel=\"noopener noreferrer\" target=\"_blank\">CLAUDE.md</a> / <a href=\"http://AGENTS.md\" rel=\"noopener noreferrer\" target=\"_blank\">AGENTS.md</a> / .cursor/rules 把编码规范、架构约定、业务背景沉淀成模型可执行的规则，让 AI 产出直接符合项目约束</li>\n<li>常用任务（重构、补单测、Code Review、代码迁移）沉淀成可复用的 prompt / skill 模板</li>\n</ul>\n<p><strong>MCP</strong></p>\n<ul>\n<li>接入 MCP（Model Context Protocol）扩展 AI 能力：把代码库、文档、内部系统接给模型使用</li>\n<li>配置、调试 MCP server，控制工具权限和上下文开销</li>\n</ul>\n<h2>技术栈</h2>\n<ul>\n<li>Android：Kotlin / Java，Jetpack Compose、View 体系、自定义 View</li>\n<li>架构：MVVM / MVI、模块化、组件化</li>\n<li>常用：协程、Flow、Room、Retrofit、OkHttp</li>\n<li>性能：启动优化、内存泄漏、卡顿掉帧</li>\n<li>工程化：Gradle、CI/CD、多渠道打包、混淆加固</li>\n<li>跨端：（Flutter）</li>\n<li>其他：（服务端  / AI 工具链）\n还有就是一直没有什么面试，各位大佬能指导下是我的简历哪里有啥问题吗？\n<img alt=\"简历-1\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://www.lamonco.asia/resume/resume-1.png\"/></li>\n</ul>\n<p><img alt=\"简历-2\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://www.lamonco.asia/resume/resume-2.png\"/></p>",
+  "attachments": []
+}

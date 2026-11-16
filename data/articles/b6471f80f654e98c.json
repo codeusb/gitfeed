@@ -1,0 +1,15 @@
+{
+  "id": "b6471f80f654e98c",
+  "feedId": "36氪",
+  "feedTitle": "36氪",
+  "category": "t-language",
+  "title": "华为云发布并开源昇腾原生具身世界模型",
+  "link": "https://36kr.com/newsflashes/4072049518924935?f=rss",
+  "author": "36氪",
+  "publishedAt": "2026-11-16T06:22:58Z",
+  "snippet": "36氪获悉，华为云“行业AI梦工厂”11月16日发布昇腾原生具身世界模型CloudRobo-WM1.2，并宣布开源。该模型采用共享世界模型骨干网络实现预测增强的世界表征，基于世界模型原生DualAct架构，实现了世界模型原生动作生成，在RoboTwin 2.0、LiberoPro 2.0两个评测基准中均排名第一。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "36氪获悉，华为云“行业AI梦工厂”11月16日发布昇腾原生具身世界模型CloudRobo-WM1.2，并宣布开源。该模型采用共享世界模型骨干网络实现预测增强的世界表征，基于世界模型原生DualAct架构，实现了世界模型原生动作生成，在RoboTwin 2.0、LiberoPro 2.0两个评测基准中均排名第一。",
+  "attachments": []
+}

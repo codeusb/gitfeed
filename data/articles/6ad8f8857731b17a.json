@@ -1,0 +1,15 @@
+{
+  "id": "6ad8f8857731b17a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 让 AI 处理你的 github issue",
+  "link": "https://www.v2ex.com/t/1257369#reply0",
+  "author": "codeskyblue",
+  "publishedAt": "2026-11-16T03:34:14Z",
+  "snippet": "背景 最近深受 magpie 的作者(yetone)还有 dsh-superagent 的启发。既然 AI 都这么牛逼了，为什么不能帮我把 github 的 issue 处理一下呢。 我先搜索了一下有没有类似的项目，处理 issue 的。下载了几个，用的都不是很顺心。 我说：“要不咱 vibe coding 一个出来”。说干就干，我先用 nodejs 写了一个简单的版本，用于监控 issue，然后回复一个 smile 表情。结果非常快的...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<h1>背景</h1>\n<p>最近深受 magpie 的作者(yetone)还有 dsh-superagent 的启发。既然 AI 都这么牛逼了，为什么不能帮我把 github 的 issue 处理一下呢。</p>\n<p>我先搜索了一下有没有类似的项目，处理 issue 的。下载了几个，用的都不是很顺心。</p>\n<p>我说：“要不咱 vibe coding 一个出来”。说干就干，我先用 nodejs 写了一个简单的版本，用于监控 issue，然后回复一个 smile 表情。结果非常快的就写出来了。看来 AI 的潜力很大呀。然后我用 go 开始正式开整，用了一个周末，就弄出来了，还是在手机上搓出来的。</p>\n<h1>现状</h1>\n<p>现在这个项目是什么水平呢。</p>\n<ol>\n<li>自维护：给他提 issue 之后，它自己能写 plan -&gt; pr -&gt; merge -&gt; hotreload</li>\n<li>定时发版。（现在是按天维护发布）</li>\n<li>自推广。（自己去其他平台上介绍自己，推广自己）</li>\n</ol>\n<p>举个 issue 的例子</p>\n<p><a href=\"https://github.com/uiautodev/gh-issue-killer/issues/16\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/uiautodev/gh-issue-killer/issues/16</a></p>\n<p>我提了一个增加定时发版的功能需求，它先写了个计划，我确认没问题，他就提了 pr，我再次确认没问题。它就合并并自更新了。</p>\n<p>不过这篇文章还是我自己写的，不能让 AI 把这么好的活给我抢了。</p>\n<p>项目地址：<a href=\"https://github.com/uiautodev/gh-issue-killer\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/uiautodev/gh-issue-killer</a></p>",
+  "attachments": []
+}

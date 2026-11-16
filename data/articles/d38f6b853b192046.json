@@ -1,0 +1,15 @@
+{
+  "id": "d38f6b853b192046",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Dropbox] 感觉兜兜转转这么多年还是 Dropbox 同步盘最稳定",
+  "link": "https://www.v2ex.com/t/1257423#reply0",
+  "author": "GoogolChrome111",
+  "publishedAt": "2026-11-16T07:13:52Z",
+  "snippet": "因为真正做到了“文件交给我们，剩下的我们来处理” OneDrive 总会有卡死等；谷歌云端硬盘 25 年才加入差分编码 Dropbox 从来不会卡死、初始化也是最快的、我没见过没法差分编码的",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>因为真正做到了“文件交给我们，剩下的我们来处理”</p>\n<p>OneDrive 总会有卡死等；谷歌云端硬盘 25 年才加入差分编码</p>\n<p>Dropbox 从来不会卡死、初始化也是最快的、我没见过没法差分编码的</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "b33be1f465929d2e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 用 ai 开发了一个记账系统，开源了",
+  "link": "https://www.v2ex.com/t/1257375#reply3",
+  "author": "markliu2013",
+  "publishedAt": "2026-11-16T03:50:11Z",
+  "snippet": "可以用 docker 一键部署 可以接入自己的大模型用 Agent 记账 通过这个项目也算是把怎么开发 Agent，怎么用 ai 写代码的大框架搞明白了。 https://github.com/getmoneynote/moneynote-api",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>可以用 docker 一键部署\n可以接入自己的大模型用 Agent 记账</p>\n<p>通过这个项目也算是把怎么开发 Agent，怎么用 ai 写代码的大框架搞明白了。</p>\n<p><a href=\"https://github.com/getmoneynote/moneynote-api\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/getmoneynote/moneynote-api</a></p>",
+  "attachments": []
+}

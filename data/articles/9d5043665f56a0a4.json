@@ -1,0 +1,15 @@
+{
+  "id": "9d5043665f56a0a4",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Eclipse Mosquitto – An open source MQTT broker",
+  "link": "https://github.com/eclipse-mosquitto/mosquitto",
+  "author": "gregsadetsky",
+  "publishedAt": "2026-11-15T18:36:40Z",
+  "snippet": "Article URL: https://github.com/eclipse-mosquitto/mosquitto Comments URL: https://news.ycombinator.com/item?id=50509416 Points: 86 # Comments: 30",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/eclipse-mosquitto/mosquitto\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/eclipse-mosquitto/mosquitto</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50509416\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50509416</a></p>\n<p>Points: 86</p>\n<p># Comments: 30</p>",
+  "attachments": []
+}

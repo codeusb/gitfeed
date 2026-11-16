@@ -1,0 +1,15 @@
+{
+  "id": "02e5e0a595cc3cdc",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Universal XSS in uBlock Origin from website-driven element picker",
+  "link": "https://iter.ca/post/ubo-uxss/",
+  "author": "zaik",
+  "publishedAt": "2026-11-16T02:04:48Z",
+  "snippet": "Article URL: https://iter.ca/post/ubo-uxss/ Comments URL: https://news.ycombinator.com/item?id=50513160 Points: 279 # Comments: 71",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://iter.ca/post/ubo-uxss/\" rel=\"noopener noreferrer\" target=\"_blank\">https://iter.ca/post/ubo-uxss/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50513160\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50513160</a></p>\n<p>Points: 279</p>\n<p># Comments: 71</p>",
+  "attachments": []
+}

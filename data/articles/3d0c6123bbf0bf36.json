@@ -1,0 +1,15 @@
+{
+  "id": "3d0c6123bbf0bf36",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 做了一个 AI GIF Maker，分享给大家体验一下",
+  "link": "https://www.v2ex.com/t/1257399#reply0",
+  "author": "chaoziCoder",
+  "publishedAt": "2026-11-16T05:49:57Z",
+  "snippet": "最近在研究 GIF 制作，发现传统工具大多还是以视频转换、多图合成为主，于是尝试结合 AI 做了一个 GIF Maker。 目前支持四种生成方式： Text to GIF：通过文字描述生成 GIF Image to GIF：让静态图片动起来 Images to GIF：多张图片合成 GIF Video to GIF：视频转换成 GIF 生成后还可以进行一些简单的编辑和调整。 网站：https://gif-maker.org/ 目前刚上线...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近在研究 GIF 制作，发现传统工具大多还是以视频转换、多图合成为主，于是尝试结合 AI 做了一个 GIF Maker。</p>\n<p>目前支持四种生成方式：</p>\n<ul>\n<li><strong>Text to GIF</strong>：通过文字描述生成 GIF</li>\n<li><strong>Image to GIF</strong>：让静态图片动起来</li>\n<li><strong>Images to GIF</strong>：多张图片合成 GIF</li>\n<li><strong>Video to GIF</strong>：视频转换成 GIF</li>\n</ul>\n<p>生成后还可以进行一些简单的编辑和调整。</p>\n<p>网站：<a href=\"https://gif-maker.org/\" rel=\"noopener noreferrer\" target=\"_blank\">https://gif-maker.org/</a></p>\n<p>目前刚上线 MVP 版本，分享给大家体验一下，欢迎交流建议。</p>",
+  "attachments": []
+}

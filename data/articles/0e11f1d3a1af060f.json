@@ -1,0 +1,15 @@
+{
+  "id": "0e11f1d3a1af060f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] [ DNS Assistant] 迫于 Nintendo Switch 下载很慢，我制作了下载加速的工具",
+  "link": "https://www.v2ex.com/t/1257381#reply0",
+  "author": "leoskey",
+  "publishedAt": "2026-11-16T04:19:35Z",
+  "snippet": "NS 每每下载或更新游戏，几百 KB 的走，等得我是急躁无比。网上找几组 DNS 测试也挺繁琐。 参考 xbox-download 项目的加速原理，我制作这款专为 NS 与家庭网络设计的工具。 支持在 NS 配置 DNS 或代理两种方式。DNS 方式可以让 NS 直接连接下载节点，代理模式是电脑作为代理中转下载流量，能更及时更新最快节点。 https://github.com/leoskey/dns-assistant 支持 Windo...",
+  "coverImage": "https://i.imgur.com/0DJssd7.png",
+  "readTime": 1,
+  "content": "<p>NS 每每下载或更新游戏，几百 KB 的走，等得我是急躁无比。网上找几组 DNS 测试也挺繁琐。</p>\n<p>参考 xbox-download 项目的加速原理，我制作这款专为 NS 与家庭网络设计的工具。</p>\n<p>支持在 NS 配置 DNS 或代理两种方式。DNS 方式可以让 NS 直接连接下载节点，代理模式是电脑作为代理中转下载流量，能更及时更新最快节点。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/0DJssd7.png\"/> </p>\n<p><a href=\"https://github.com/leoskey/dns-assistant\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/leoskey/dns-assistant</a></p>\n<p>支持 Windows 、Docker 部署。</p>\n<p>第一次分享，献丑了。希望能给 xdm 带来帮助</p>",
+  "attachments": []
+}

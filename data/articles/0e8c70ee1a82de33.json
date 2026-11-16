@@ -1,0 +1,15 @@
+{
+  "id": "0e8c70ee1a82de33",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 分享个油猴脚本，修复 V2EX 里的 Imgur 图片显示不出来",
+  "link": "https://www.v2ex.com/t/1257374#reply5",
+  "author": "Parva",
+  "publishedAt": "2026-11-16T03:49:25Z",
+  "snippet": "我这边用的节点访问 Imgur 会报 429 错误码，估计是这个出口 IP 被限了。分享一下油猴脚本，装上后就能解决在 V2EX 里看不到 Imgur 图片的问题。[Greasy Fork 安装页](https://greasyfork.org/zh-CN/scripts/605733)开启前：开启后：脚本让 AI 写的，灵感来自：[《解决 imgur 图片无法加载的问题》](https://shiquda.link/load-imgu...",
+  "coverImage": "https://i.imgur.com/Rwtt3UI.png",
+  "readTime": 1,
+  "content": "我这边用的节点访问 Imgur 会报 429 错误码，估计是这个出口 IP 被限了。<br/><br/>分享一下油猴脚本，装上后就能解决在 V2EX 里看不到 Imgur 图片的问题。[Greasy Fork 安装页](<a href=\"https://greasyfork.org/zh-CN/scripts/605733\" rel=\"noopener noreferrer\" target=\"_blank\">https://greasyfork.org/zh-CN/scripts/605733</a>)<br/><br/><br/>开启前：<br/><a href=\"https://i.imgur.com/Rwtt3UI.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/Rwtt3UI.png\"/></a><br/><br/>开启后：<br/><a href=\"https://i.imgur.com/TBO8ZYb.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/TBO8ZYb.png\"/></a><br/><br/><br/>脚本让 AI 写的，灵感来自：[《解决 imgur 图片无法加载的问题》](<a href=\"https://shiquda.link/load-imgur-images/\" rel=\"noopener noreferrer\" target=\"_blank\">https://shiquda.link/load-imgur-images/</a>)",
+  "attachments": []
+}

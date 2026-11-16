@@ -1,0 +1,15 @@
+{
+  "id": "dfb675efb5a18351",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] AI 离谱越权操作一则，大家引以为戒",
+  "link": "https://www.v2ex.com/t/1257395#reply32",
+  "author": "tmtstudio",
+  "publishedAt": "2026-11-16T05:38:21Z",
+  "snippet": "前情提要： 我自己写了一个用于服务器监控运维的的项目，能查看服务器状态，日志解析，自动运维等功能 项目中存储了服务器的 ssh 密钥，运维功不让 ai 直接 ssh 到服务器，写了一个中间层 ai 想操作服务器给中间层申请，中转获取命令执行结果，中间层查看类命令全部放行，修改命令需要审核 ai 越权操作 然后因为之前有项目配置了负载均衡导致日志分析出问题了，所以在运维项目的 codex 工作窗口询问是什么原因，有什么差异，还给贴了出问题...",
+  "coverImage": "https://i.mji.rip/2026/11/16/a66a3b5ef605522c86dad307c5e64bd0.png",
+  "readTime": 1,
+  "content": "<h2>前情提要：</h2>\n<p>我自己写了一个用于服务器监控运维的的项目，能查看服务器状态，日志解析，自动运维等功能\n项目中存储了服务器的 ssh 密钥，运维功不让 ai 直接 ssh 到服务器，写了一个中间层 ai 想操作服务器给中间层申请，中转获取命令执行结果，中间层查看类命令全部放行，修改命令需要审核</p>\n<h2>ai 越权操作</h2>\n<p>然后因为之前有项目配置了负载均衡导致日志分析出问题了，所以在运维项目的 codex 工作窗口询问是什么原因，有什么差异，还给贴了出问题项目的 nginx 配置文件，然后 ai 跑了半天告诉我改好了，我想去服务器修改一下配置文件呢，一看和 ai 修改的一模一样，当场愣住了，回去看 ai 的回复才发现他妈的把重载都做了，这幸亏修改的没问题，一阵后怕</p>\n<p><img alt=\"ScreenShot 2026 11 16 133020 653@2x\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.mji.rip/2026/11/16/a66a3b5ef605522c86dad307c5e64bd0.png\"/></p>",
+  "attachments": []
+}
