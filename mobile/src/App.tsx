@@ -243,7 +243,7 @@ function MainAppContent({
       <FlatList
         data={filteredArticles}
         keyExtractor={(item) => item.id}
-        contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 24) + 40 }}
+        contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 16) + 20 }}
         renderItem={({ item }) => (
           <ArticleCard
             article={item}

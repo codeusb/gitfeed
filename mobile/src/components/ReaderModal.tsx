@@ -145,10 +145,13 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
           {/* Back button */}
           <TouchableOpacity
             onPress={onClose}
-            style={[styles.closePillBtn, { backgroundColor: tokens.bgSubtle }]}
+            style={[
+              styles.toolCircleBtn,
+              { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle },
+            ]}
             activeOpacity={0.7}
           >
-            <Text style={[styles.closePillText, { color: tokens.textSecondary }]}>✕ 关闭</Text>
+            <Text style={[styles.toolIcon, { color: tokens.textSecondary }]}>✕</Text>
           </TouchableOpacity>
 
           {/* Center Brand / Feed pill */}
@@ -242,7 +245,7 @@ export const ReaderModal: React.FC<ReaderModalProps> = ({
           style={styles.scroll}
           contentContainerStyle={[
             styles.scrollContent,
-            { paddingBottom: Math.max(insets.bottom, 24) + 60 },
+            { paddingBottom: Math.max(insets.bottom, 16) + 24 },
           ]}
           onScroll={handleScroll}
           scrollEventThrottle={16}
@@ -403,32 +406,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 12,
+    paddingHorizontal: 10,
     borderBottomWidth: 1,
   },
-  closePillBtn: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 20,
-  },
-  closePillText: {
-    fontSize: 13,
-    fontWeight: '600',
-  },
   feedBrandPill: {
-    paddingHorizontal: 10,
+    paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 999,
-    maxWidth: 140,
+    maxWidth: 95,
   },
   feedBrandText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '700',
   },
   rightActions: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
+    gap: 4,
   },
   toolCircleBtn: {
     width: 32,
