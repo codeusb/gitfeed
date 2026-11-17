@@ -1,0 +1,15 @@
+{
+  "id": "f12804b4ab05a075",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 如何合法合规的使用海外模型？",
+  "link": "https://www.v2ex.com/t/1257817#reply15",
+  "author": "fang2hou",
+  "publishedAt": "2026-11-17T13:52:54Z",
+  "snippet": "打算 12 月回国旅游+过年，远程工作 2-3 个月。Claude 和 OpenAI 最近都更新了使用政策不允许在中国大陆地区调用模型，甚至 Amazon Bedrock 上的 Claude 现在也是管辖范围没法用了。Claude 就不想了，有没有什么比较正规的方式可以用其他比如 GPT 模型？我现在查下来 Azure 和 GitHub Copilot 好像可以，有没有类似经验的朋友？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "打算 12 月回国旅游+过年，远程工作 2-3 个月。<br/>Claude 和 OpenAI 最近都更新了使用政策不允许在中国大陆地区调用模型，甚至 Amazon Bedrock 上的 Claude 现在也是管辖范围没法用了。<br/><br/>Claude 就不想了，有没有什么比较正规的方式可以用其他比如 GPT 模型？<br/>我现在查下来 Azure 和 GitHub Copilot 好像可以，有没有类似经验的朋友？",
+  "attachments": []
+}

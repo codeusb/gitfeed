@@ -1,0 +1,15 @@
+{
+  "id": "611dec6c54f7f912",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] Pi Bot 上线了！",
+  "link": "https://www.v2ex.com/t/1257829#reply7",
+  "author": "leen0zhou",
+  "publishedAt": "2026-11-17T15:18:38Z",
+  "snippet": "大家好，我做了一个桌面应用 Pi Bot。可以给写代码、做调研、写文档的 Bot 分别设角色和模型，再让它们在同一个群里分工。比如让一个 Bot 做调研、交一份资料，另一个接着写报告。过程中谁做了什么、改了哪些文件，都能回头看。 第一版目前有这些功能： Bot 和群协作：可以单聊、拉群、@ 指定成员。复杂任务由统筹 Bot 拆成几步，列出负责人、依赖和交付物。你可以先看计划，再决定是否执行。 在指定文件夹里干活：Bot 可以读写文件、跑...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家好，我做了一个桌面应用 Pi Bot。可以给写代码、做调研、写文档的 Bot 分别设角色和模型，再让它们在同一个群里分工。比如让一个 Bot 做调研、交一份资料，另一个接着写报告。过程中谁做了什么、改了哪些文件，都能回头看。</p>\n<p>第一版目前有这些功能：</p>\n<ul>\n<li>Bot 和群协作：可以单聊、拉群、<code>@</code> 指定成员。复杂任务由统筹 Bot 拆成几步，列出负责人、依赖和交付物。你可以先看计划，再决定是否执行。</li>\n<li>在指定文件夹里干活：Bot 可以读写文件、跑命令、打开内置浏览器。可以查看文件差异、撤回改动，或者请另一个 Bot 独立审查。每轮有工作收据，能看到命令、审批和交付物。</li>\n<li>接入已有的 Agent：可以把已安装的 Codex、Claude Code、Cursor 或 OpenCode 加为 Bot，让它接群任务或例行任务。</li>\n<li>例行任务和待办：支持定时、只跑一次、文件夹变化等触发方式。任务可以先试跑，再设置本任务的预授权。个人待办可以用列表或日历看。</li>\n<li>模型和扩展：每个 Bot 可以用不同模型。支持云模型 API、Ollama、LM Studio 和自定义网关。可以导入 MCP、技能和插件，也能把 Obsidian 或 Notion 接成只读知识库。</li>\n<li>Android 和远程执行：手机扫码配对后可以发任务、看结果、处理审批。也可以给另一台电脑或服务器装 Runner，让 Bot 在那台机器的指定目录里工作。</li>\n<li>权限和数据：可以分开设置 Bot 和群的权限。macOS 和 Linux 支持命令沙箱。聊天记录、记忆和操作记录默认保存在本机，使用云模型时，相关请求会发给你选择的服务商。\n桌面端有 macOS、Windows、Linux，手机端目前提供 Android APK。Apple 芯片版也可以下载，官网标为「未实机测试」。</li>\n</ul>\n<p>官网下载：<a href=\"https://pibot.space/\" rel=\"noopener noreferrer\" target=\"_blank\">https://pibot.space/</a></p>",
+  "attachments": []
+}

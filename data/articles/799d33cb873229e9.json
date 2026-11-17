@@ -1,0 +1,15 @@
+{
+  "id": "799d33cb873229e9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[macOS] Mac mini 放美国朋友家 长期 远程 用，怎么做到尽量不麻烦他？选什么 MDM？",
+  "link": "https://www.v2ex.com/t/1257847#reply2",
+  "author": "peakviber",
+  "publishedAt": "2026-11-17T16:30:52Z",
+  "snippet": "准备把一台 Mac mini 放在美国朋友家，我自己远程用。朋友可以帮忙接线、用 iPhone 扫一下，但不想让他帮我设置管理员密码、登录桌面、装一堆软件，更不想以后每次重启都找他。 主要考虑是 隐私 和 方便的重启恢复。 我现在所有设备都在用 Tailscale，所以打算继续用。 Apple Business 已经弄好了（用我的美国 LLC 注册的） 目前想的是： 首次开机朋友用 Apple Configurator 扫码把设备 as...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>准备把一台 Mac mini 放在美国朋友家，我自己远程用。朋友可以帮忙接线、用 iPhone 扫一下，但不想让他帮我设置管理员密码、登录桌面、装一堆软件，更不想以后每次重启都找他。</p>\n<p>主要考虑是 <strong>隐私</strong> 和 <strong>方便的重启恢复</strong>。</p>\n<p>我现在所有设备都在用 Tailscale，所以打算继续用。\nApple Business 已经弄好了（用我的美国 LLC 注册的）</p>\n<p>目前想的是：</p>\n<ul>\n<li>首次开机朋友用 Apple Configurator 扫码把设备 assign 给我的 org</li>\n<li>然后通过 MDM 自动建管理员，再装 CLI 版 tailscaled，作为系统服务运行</li>\n<li>以后重启就停在登录窗口，不用有人进桌面，我也能 SSH 连上去。</li>\n<li>MDM 留着当备用通道，万一 Tailscale 挂了，还能下发东西修一下。</li>\n</ul>\n<p>FileVault 打算不开，自动登录也不开。主要还是想让断电恢复简单一点。\n暂时不打算买 KVM，实在不行再麻烦他。</p>\n<p>MDM 还没选定：\nSimpleMDM 一台每年 30 美元，也可以折腾 NanoMDM + NanoDEP 自建，只是不知道为一台机器搞这套值不值。</p>\n<p>目前只是方案，还没实机跑过。有没有长期这样用 Mac mini 的朋友？尤其是第一次还没登录过账户，靠 MDM 把管理员和 tailscaled 配好，这一步实际顺不顺？</p>\n<p>或者我想复杂了，有更省事、重启后也能稳定连回来的办法？</p>",
+  "attachments": []
+}

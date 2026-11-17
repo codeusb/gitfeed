@@ -1,0 +1,15 @@
+{
+  "id": "1cc220baea0485bd",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Rust] [Rust Root] 第一章：不写一行 Rust 语法，带你把所有权和借用重新推演一遍",
+  "link": "https://www.v2ex.com/t/1257819#reply0",
+  "author": "sh25867",
+  "publishedAt": "2026-11-17T13:57:52Z",
+  "snippet": "很多有 Java、Go、Python 或 C++ 经验的朋友学 Rust，都卡在同一个地方： 翻开教程，迎面就是著名的「所有权三条规则」——每个值有一个所有者；同一时刻只能有一个所有者；所有者离开作用域时值被释放。 字面意思三分钟就看懂了。可一旦合上文档自己拆函数、传参数，编译器立刻满屏飘红。为了先让程序跑通，只好顺着提示四处补 .clone()，越写越别扭。 问题不在于规则没记熟，而在于我们直接拿到了总结好的「条文结论」，却跳过了这些...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>很多有 Java、Go、Python 或 C++ 经验的朋友学 Rust，都卡在同一个地方：</p>\n<p>翻开教程，迎面就是著名的「所有权三条规则」——每个值有一个所有者；同一时刻只能有一个所有者；所有者离开作用域时值被释放。</p>\n<p>字面意思三分钟就看懂了。可一旦合上文档自己拆函数、传参数，编译器立刻满屏飘红。为了先让程序跑通，只好顺着提示四处补 <code>.clone()</code>，越写越别扭。</p>\n<p>问题不在于规则没记熟，而在于<strong>我们直接拿到了总结好的「条文结论」，却跳过了这些规则被逼出来的「案发现场」</strong>。</p>\n<p>开源指南 <strong>Rust Root（<a href=\"http://rustroot.cn\" rel=\"noopener noreferrer\" target=\"_blank\">rustroot.cn</a>）</strong> 第一章《从自动释放到所有权》现已精修上线。这一章的前五节做了一个尝试：<strong>不写一行真实的 Rust 语法，也不预先搬出「所有权」「借用」这些条文</strong>，而是请你坐到语言设计者的位置上，只解决一个看似矛盾的目标——</p>\n<blockquote>\n<p><strong>如果既不让人手写每一次 <code>free</code>，又不允许后台跑垃圾回收（GC），程序到底怎么安全地自动回收内存？</strong></p>\n</blockquote>\n<p>顺着栈帧与堆块的物理事实往下推，你会发现没有一条规则是凭空捏造的教条，全是上一步留下的安全缺口倒逼出来的结果：</p>\n<ul>\n<li>为什么一行再普通不过的 <code>t = s</code>，会击穿最简回收模型？当语言把它重塑为「移动（Move）」时，<strong>物理内存里真的把数据搬走了吗？</strong></li>\n<li>只是传给函数读一眼数据，为什么不能直接照搬 C 语言现成的指针，非要重新设计受限的「引用」？</li>\n<li>引用在运行时只是一个孤零零的 8 字节地址，程序还没跑起来，编译器凭什么提前断定它会悬垂？</li>\n<li>剥开「所有权、移动、借用、生命周期」这一串专有名词的外壳，<strong>整套机制在底层其实只替程序员干了哪一件极朴素的事？</strong></li>\n</ul>\n<p>把这几步因果亲手推通一次，原本处处拦路的报错就会瞬间顺理成章。</p>\n<h3>本章在线目录（共 6 节，配套内存拆解图与自测推演）</h3>\n<ol>\n<li><strong>困难三角</strong>：自动释放要付出什么代价</li>\n<li><strong>栈与堆</strong>：为什么堆需要单独释放</li>\n<li><strong>复制与移动</strong>：从旧变量失效到移动语义</li>\n<li><strong>引用</strong>：怎样使用数据而不接手释放责任</li>\n<li><strong>悬垂引用</strong>：怎样保证引用指向的数据有效</li>\n<li><strong>所有权与借用</strong>：在正确的位置自动插入 <code>free</code> 函数</li>\n</ol>\n<p><strong>Rust Root</strong> 是一份面向有编程经验开发者的免费开源 Rust 指南，不堆砌零散的语法词典，带你跨越过往语言的习惯，从内存与类型出发建立自洽的 Rust 心智模型。</p>\n<p><strong><a href=\"https://rustroot.cn/memory/ownership/\" rel=\"noopener noreferrer\" target=\"_blank\">https://rustroot.cn/memory/ownership/</a></strong></p>",
+  "attachments": []
+}

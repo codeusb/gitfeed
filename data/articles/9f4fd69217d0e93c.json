@@ -1,0 +1,15 @@
+{
+  "id": "9f4fd69217d0e93c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude] 早先 Opus 5.5 出来时 one-shot 的一个生存者类游戏 Demo",
+  "link": "https://www.v2ex.com/t/1257840#reply2",
+  "author": "mogita",
+  "publishedAt": "2026-11-17T16:01:08Z",
+  "snippet": "Vibe 游戏 demo 已经满天飞了，也不多我这一个，希望能供大家消遣一、两分钟。 Opus 5.5 刚出来时确实惊艳到了，只有一次 prompt，生成后除了微调炸眼的亮光之外没做其他任何修改。美术让它调用 Codex CLI 自行创建。音乐也是它写的。游戏 demo 通货膨胀的时代来了。 试玩 https://emberwake.mogita.rocks 源码 https://github.com/mogita/emberwake",
+  "coverImage": "https://i.v2ex.co/kkmN025C.jpeg",
+  "readTime": 1,
+  "content": "<p>Vibe 游戏 demo 已经满天飞了，也不多我这一个，希望能供大家消遣一、两分钟。</p>\n<p>Opus 5.5 刚出来时确实惊艳到了，只有一次 prompt，生成后除了微调炸眼的亮光之外没做其他任何修改。美术让它调用 Codex CLI 自行创建。音乐也是它写的。游戏 demo 通货膨胀的时代来了。</p>\n<ul>\n<li>试玩 <a href=\"https://emberwake.mogita.rocks\" rel=\"noopener noreferrer\" target=\"_blank\">https://emberwake.mogita.rocks</a></li>\n<li>源码 <a href=\"https://github.com/mogita/emberwake\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/mogita/emberwake</a></li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.v2ex.co/kkmN025C.jpeg\"/></p>",
+  "attachments": []
+}

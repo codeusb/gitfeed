@@ -1,0 +1,15 @@
+{
+  "id": "b208920465d7747c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Telegram] telegram 官方通知 必须使用 stars 支付",
+  "link": "https://www.v2ex.com/t/1257818#reply0",
+  "author": "sdsaaeee",
+  "publishedAt": "2026-11-17T13:53:00Z",
+  "snippet": "telegram 官方通知 必须使用 stars 支付？ 🚨 数字商品与服务支付规范 亲爱的开发者： 🚩 苹果（Apple）和谷歌（Google）要求，应用内售卖的数字商品与服务必须通过其官方的应用内购买（IAP）机制进行支付（详见《App Store 审核指南》第 3.1.1、4.7 条款及 Google Play 支付政策）。由于 Telegram Stars 是通过上述应用内购买渠道获取的，因此在 Bot（机器人）和 Mini A...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>telegram 官方通知 必须使用 stars 支付？</p>\n<pre><code>🚨 数字商品与服务支付规范\n\n亲爱的开发者：\n\n🚩 苹果（Apple）和谷歌（Google）要求，应用内售卖的数字商品与服务必须通过其官方的应用内购买（IAP）机制进行支付（详见《App Store 审核指南》第 3.1.1、4.7 条款及 Google Play 支付政策）。由于 Telegram Stars 是通过上述应用内购买渠道获取的，因此在 Bot（机器人）和 Mini App（小程序）中，数字商品仅可使用 Telegram Stars 进行销售。\n\n💵 数字商品与服务涵盖你的 Bot 或 Mini App 中所有以数字形式交付的收费项目：包括 Bot 本身的订阅服务、基于其 Telegram 集成构建的付费工具、第三方 AI 模型的访问权限，以及用于上述任何服务的积分或代币（Credits / Tokens）。\n\n💎 如果你的 Bot 或 Mini App 涉及超出单纯存储、兑换（Exchange）或闪兑（Swaps）范围的加密货币交易，则仅允许使用 GRAM。\n\n🔜 本周，我们将继续对所有 Bot 和 Mini App（包括你的在内）的支付活动进行主动排查。任何被发现在 Telegram Stars 之外接受数字商品付款的 Bot 或 Mini App，都可能随时被封禁，且不再另行警告。\n\n特此通告，恕不另行通知。\n\nTelegram 团队\n</code></pre>\n<pre><code>🚨 PAYMENTS FOR DIGITAL GOODS AND SERVICES\n\nDear Developer,\n\n🚩 Apple and Google require digital goods and services sold inside apps to be paid for through their in-app purchases (App Review Guidelines 3.1.1, 4.7; Google Play Payments policy). Telegram Stars are bought through these in-app purchases, so in bots and Mini Apps, digital goods can only be sold for Telegram Stars.\n\n💵 Digital goods and services include anything your bot or Mini App charges for that is delivered digitally: a subscription to the bot itself, a paid tool built on its Telegram integration, access to third-party AI models, or credits and tokens for any of these.\n\n💎 If your bot or Mini App facilitates cryptocurrency transactions beyond storage, exchange or swaps, it may use only GRAM.\n\n🔜  This week, we’re continuing our proactive analysis of payment activity across all bots and Mini Apps, including yours. Any bot or Mini App found accepting payment for digital goods outside Telegram Stars may be blocked at any time, without warning.\n\nThere will be no further notice.\n\nThe Telegram Team\n</code></pre>",
+  "attachments": []
+}

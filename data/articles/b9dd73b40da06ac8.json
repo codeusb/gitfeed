@@ -1,0 +1,15 @@
+{
+  "id": "b9dd73b40da06ac8",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 基于 v86 的 iOS 6.1.3 模拟器，在浏览器中完全模拟 iPhone4 硬件和 iOS",
+  "link": "https://www.v2ex.com/t/1257813#reply2",
+  "author": "professionaler",
+  "publishedAt": "2026-11-17T13:30:18Z",
+  "snippet": "最近没事做了点好玩的东西，魔改 v86 模拟了 iPhone4 硬件和 armv7 指令集，加上 GLES 后端，让浏览器能够直接动态的运行 iOS6 系统，可以运行旧的 32 位 iOS app，已经测试了部分游戏：愤怒的小鸟，植物大战僵尸，无尽之剑都能运行，虽然还不太流畅。演示：https://www.bilibili.com/video/BV1xBsr6REg6网站地址：https://v64-2ys.pages.dev/Firm...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "最近没事做了点好玩的东西，魔改 v86 模拟了 iPhone4 硬件和 armv7 指令集，加上 GLES 后端，让浏览器能够直接动态的运行 iOS6 系统，可以运行旧的 32 位 iOS app，已经测试了部分游戏：愤怒的小鸟，植物大战僵尸，无尽之剑都能运行，虽然还不太流畅。<br/><br/>演示：<a href=\"https://www.bilibili.com/video/BV1xBsr6REg6\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.bilibili.com/video/BV1xBsr6REg6</a><br/><br/>网站地址：<a href=\"https://v64-2ys.pages.dev/\" rel=\"noopener noreferrer\" target=\"_blank\">https://v64-2ys.pages.dev/</a><br/><br/>Firmware 下载: <a href=\"https://ipsw.me/download/iPhone3,1/10B329/\" rel=\"noopener noreferrer\" target=\"_blank\">https://ipsw.me/download/iPhone3,1/10B329/</a><br/><br/>Key 下载：<a href=\"https://theapplewiki.com/wiki/Special:Ask/-5B-5B-2DHas-20subobject::Keys:BrightonMaps-2010B329-20(iPhone3,1)-5D-5D/-3FHas-20filename%3Dfilename/-3FHas-20firmware-20device%3Ddevice/-3FHas-20key%3Dkey/-3FKey-20DevKBAG%3Ddevkbag/-3FHas-20key-20IV%3Div/-3FKey-20KBAG%3Dkbag/mainlabel%3Dfilename/limit%3D100/offset%3D0/format%3Djson/searchlabel%3DKeys/type%3Dsimple\" rel=\"noopener noreferrer\" target=\"_blank\">https://theapplewiki.com/wiki/Special:Ask/-5B-5B-2DHas-20subobject::Keys:BrightonMaps-2010B329-20(iPhone3,1)-5D-5D/-3FHas-20filename%3Dfilename/-3FHas-20firmware-20device%3Ddevice/-3FHas-20key%3Dkey/-3FKey-20DevKBAG%3Ddevkbag/-3FHas-20key-20IV%3Div/-3FKey-20KBAG%3Dkbag/mainlabel%3Dfilename/limit%3D100/offset%3D0/format%3Djson/searchlabel%3DKeys/type%3Dsimple</a>",
+  "attachments": []
+}

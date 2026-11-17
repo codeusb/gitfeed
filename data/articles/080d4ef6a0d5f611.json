@@ -1,0 +1,15 @@
+{
+  "id": "080d4ef6a0d5f611",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 一个简洁快速的打印纸生成器",
+  "link": "https://www.v2ex.com/t/1257823#reply1",
+  "author": "defcc",
+  "publishedAt": "2026-11-17T14:44:22Z",
+  "snippet": "我做了个小工具，用来生成可以打印的方格纸：MakePaperFast。 之前用过几个方格纸生成器，有的界面挺有早期互联网的味道，所以这个产品主打一个所见即所得的功能 ，界面的主体就是一张纸，底部有一个工具条可以对生成的纸进行一些精细化的控制。 除了方格纸，也做了点阵纸、横线纸、练字纸、五线谱纸这些。都可以在线调，调完直接打印。 这个是纯前端的项目，代码放在 GitHub 了，有需要的朋友可以试试。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我做了个小工具，用来生成可以打印的方格纸：<a href=\"https://makepaperfast.com/\" rel=\"noopener noreferrer\" target=\"_blank\">MakePaperFast</a>。</p>\n<p>之前用过几个方格纸生成器，有的界面挺有早期互联网的味道，所以这个产品主打一个所见即所得的功能 ，界面的主体就是一张纸，底部有一个工具条可以对生成的纸进行一些精细化的控制。</p>\n<p>除了方格纸，也做了点阵纸、横线纸、练字纸、五线谱纸这些。都可以在线调，调完直接打印。</p>\n<p>这个是纯前端的项目，代码放在 <a href=\"https://github.com/defcc/makepaperfast\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub</a> 了，有需要的朋友可以试试。</p>",
+  "attachments": []
+}

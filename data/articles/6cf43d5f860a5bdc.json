@@ -1,0 +1,15 @@
+{
+  "id": "6cf43d5f860a5bdc",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] WorkBuddy 使用数据可视化看板",
+  "link": "https://www.v2ex.com/t/1257853#reply0",
+  "author": "coffees",
+  "publishedAt": "2026-11-17T17:40:53Z",
+  "snippet": "https://github.com/EvanTop/WorkBuddy-Dashboard 把 WorkBuddy 留在你本机的用量数据，画成一块实时看板。零依赖、只读、双击即用。",
+  "coverImage": "https://i.imgur.com/ucuT7lj.png",
+  "readTime": 1,
+  "content": "<blockquote>\n<p><a href=\"https://github.com/EvanTop/WorkBuddy-Dashboard\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/EvanTop/WorkBuddy-Dashboard</a></p>\n</blockquote>\n<ul>\n<li>把 WorkBuddy 留在你本机的用量数据，画成一块实时看板。零依赖、只读、双击即用。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/ucuT7lj.png\"/></p>",
+  "attachments": []
+}

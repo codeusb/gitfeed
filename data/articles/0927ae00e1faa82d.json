@@ -1,0 +1,15 @@
+{
+  "id": "0927ae00e1faa82d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 我做了一个小红书养号助手：自动浏览互动 + 评论区截流，Chrome / Edge 都能装",
+  "link": "https://www.v2ex.com/t/1257809#reply0",
+  "author": "gybin02",
+  "publishedAt": "2026-11-17T12:47:51Z",
+  "snippet": "大家好，我是开发者本人。做小红书最耗时间的其实不是写笔记，是每天重复的那套动作：刷推荐流、停留、点赞收藏、去评论区找人回复。一个号还行，号一多就全耗在这上面了，所以我做了这个浏览器扩展，把这套日常运营收进一个面板里。 它现在有三条工作流，都是自己点启动、随时能停： 发现页养号 — 按你设的节奏浏览笔记，概率点赞、收藏；今日浏览 / 点赞 / 收藏 / 评论在看板上一眼能看到。 评论区截流 — 用意向词筛评论（比如求、怎么、哪里、推荐、私...",
+  "coverImage": "https://i.postimg.cc/VNKWwxr5/store-image-hero-v2.png",
+  "readTime": 1,
+  "content": "<p>大家好，我是开发者本人。做小红书最耗时间的其实不是写笔记，是每天重复的那套动作：刷推荐流、停留、点赞收藏、去评论区找人回复。一个号还行，号一多就全耗在这上面了，所以我做了这个浏览器扩展，把这套日常运营收进一个面板里。</p>\n<p><img alt=\"主图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.postimg.cc/VNKWwxr5/store-image-hero-v2.png\"/></p>\n<p>它现在有三条工作流，都是自己点启动、随时能停：</p>\n<p><strong>发现页养号</strong> — 按你设的节奏浏览笔记，概率点赞、收藏；今日浏览 / 点赞 / 收藏 / 评论在看板上一眼能看到。</p>\n<p><img alt=\"一键启动\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.postimg.cc/50jq2sLj/store-image-1-popup.png\"/></p>\n<p><strong>评论区截流</strong> — 用意向词筛评论（比如求、怎么、哪里、推荐、私这类），黑名单词自动跳过，再生成贴近语境的互动建议，不用一条条翻着找人。</p>\n<p><img alt=\"评论区截流\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.postimg.cc/9MztQLZr/store-image-3-comments.png\"/></p>\n<p><strong>博主主页养号</strong> — 把目标博主主页加进来，依次浏览笔记、概率关注。</p>\n<p>参数都能自己控：每篇停留的时长、点赞收藏评论的概率、单日最多浏览多少篇，到了上限就停。建议都从保守值开始，生成的回复先自己看一眼再发，也请遵守平台规则使用。</p>\n<p><img alt=\"精细配置\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.postimg.cc/LXhB8xLJ/store-image-2-options.png\"/></p>\n<p>安装：</p>\n<ul>\n<li>官网：<a href=\"https://xhs.tihub.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://xhs.tihub.com</a></li>\n<li>Chrome：<a href=\"https://chromewebstore.google.com/detail/iokmpbpakmcjmmpjeefhhnjmbgcphhbh\" rel=\"noopener noreferrer\" target=\"_blank\">https://chromewebstore.google.com/detail/iokmpbpakmcjmmpjeefhhnjmbgcphhbh</a></li>\n<li>Edge：<a href=\"https://microsoftedge.microsoft.com/addons/detail/jidbkgheipnafopdgfodcdnpdnampedi\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/jidbkgheipnafopdgfodcdnpdnampedi</a></li>\n</ul>\n<p>可以先免费试用，觉得顺手再继续用。欢迎拍砖，尤其想听听做矩阵的朋友：你们养号时最想省掉哪一步？</p>",
+  "attachments": []
+}

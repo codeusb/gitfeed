@@ -1,0 +1,15 @@
+{
+  "id": "b2478b780816514a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] YouTube Transcript Export：把单个视频的字幕导出成 TXT / Markdown / SRT / VTT",
+  "link": "https://www.v2ex.com/t/1257854#reply0",
+  "author": "bluesky1001",
+  "publishedAt": "2026-11-17T17:47:09Z",
+  "snippet": "这是我在做的浏览器扩展：把单个 YouTube 视频的字幕/文稿导出成 TXT、Markdown、SRT 或 VTT 四种格式。扩展目前在 Edge 审核中，暂不可安装，先分享实测结果。 实测（视频 dQw4w9WgXcQ）：从字幕面板取到 24 条、2,066 字符；四种格式文件分别为 TXT 2,335 / MD 2,668 / SRT 3,142 / VTT 3,162 字节。测试 120 项全过。 一个实测发现：YouTube ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>这是我在做的浏览器扩展：把单个 YouTube 视频的字幕/文稿导出成 TXT、Markdown、SRT 或 VTT 四种格式。扩展目前在 Edge 审核中，暂不可安装，先分享实测结果。</p>\n<p>实测（视频 dQw4w9WgXcQ）：从字幕面板取到 24 条、2,066 字符；四种格式文件分别为 TXT 2,335 / MD 2,668 / SRT 3,142 / VTT 3,162 字节。测试 120 项全过。</p>\n<p>一个实测发现：YouTube 字幕面板的 DOM 已变，旧的 ytd-transcript-segment-renderer 选择器返回 0 行，现在渲染的是 &lt;transcript-segment-view-model&gt;（时间戳 .ytwTranscriptSegmentViewModelTimestamp、正文 span[role=\"text\"]）。扩展先试新选择器，再回退旧的。</p>\n<p>两点诚实说明：</p>\n<ol>\n<li>timedtext 接口从数据中心 IP 拉取会返回空体（真实浏览器内同样测到），住宅 IP 的真实用户预期可用；面板路径只给当前已渲染的行（首屏 24 条，非全量）。</li>\n<li>Pro（播放列表批量导出等）尚未开售，计划价 ¥19.90 一次性激活码。</li>\n</ol>\n<p>隐私页：<a href=\"https://alapha888.github.io/yt-transcript-export-privacy/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/yt-transcript-export-privacy/</a>\n同系列已上架：FocusBlock <a href=\"https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp</a></p>",
+  "attachments": []
+}

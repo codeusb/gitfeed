@@ -1,0 +1,15 @@
+{
+  "id": "3a66b3010d964e0e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] SessionSnap：跨浏览器会话管理器，Edge / Firefox 版，本地优先",
+  "link": "https://www.v2ex.com/t/1257849#reply0",
+  "author": "bluesky1001",
+  "publishedAt": "2026-11-17T16:44:54Z",
+  "snippet": "为什么做这个：Session Buddy 有 100 万用户、3.3 分（约 25,100 条评价），2026-04-28 之后没有再更新；官网只提 Chrome 商店，没有官方 Firefox / Edge 版。OneTab 约 200 万用户，同样只有 Chrome 版。想在 Edge / Firefox 上用会话管理器的人，只能等。 SessionSnap v0.1.0 做了什么：自动保存窗口 / 标签会话快照，关闭标签日志，搜索...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>为什么做这个：Session Buddy 有 100 万用户、3.3 分（约 25,100 条评价），2026-04-28 之后没有再更新；官网只提 Chrome 商店，没有官方 Firefox / Edge 版。OneTab 约 200 万用户，同样只有 Chrome 版。想在 Edge / Firefox 上用会话管理器的人，只能等。\nSessionSnap v0.1.0 做了什么：自动保存窗口 / 标签会话快照，关闭标签日志，搜索恢复，支持导入 Session Buddy / OneTab 的导出文件；免费档快照保留 14 天；本地存储，零网络请求；权限只有 tabs / storage / alarms。\n验证：测试 166 项全过；真实浏览器加载实测 19/19；提交前修掉 2 个 service worker 缺陷（background import 路径写错、onMessage 异步回调未调用）。\n状态：已提交 Edge Add-ons，正在审核（2026-11-16 提交），暂时还不能安装。Pro 版（365 天快照 + 每日备份导出）尚未开售，计划价 ¥19.90 一次性。\n隐私页：<a href=\"https://alapha888.github.io/session-snap-privacy/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/session-snap-privacy/</a>\n同系列已上架产品：FocusBlock（本地优先网站拦截器）<a href=\"https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/focusblock/kdpeddhiegpfadpjiaieoaeiloebgdhp</a></p>",
+  "attachments": []
+}
