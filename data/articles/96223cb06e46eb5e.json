@@ -1,0 +1,15 @@
+{
+  "id": "96223cb06e46eb5e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 仿 paste 做了个 windows 剪贴板",
+  "link": "https://www.v2ex.com/t/1257745#reply0",
+  "author": "Soulboy",
+  "publishedAt": "2026-11-17T08:37:01Z",
+  "snippet": "我用 Codex 做了个 Windows 剪贴板工具：ClipShelf 一直挺喜欢 Paste 用起来那种丝滑的感觉，就参考它的交互，用 Codex 做了个 Windows 版的剪贴板历史工具。 目前我自己也在日常用。剪贴板历史存在本机，没有云同步。 分享出来给感兴趣的朋友试试，欢迎反馈使用感受。 下载 ClipShelf v0.6.0（Windows x64）",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<h2>我用 Codex 做了个 Windows 剪贴板工具：ClipShelf</h2>\n<p>一直挺喜欢 <strong>Paste</strong> 用起来那种丝滑的感觉，就参考它的交互，用 <strong>Codex</strong> 做了个 Windows 版的剪贴板历史工具。</p>\n<p>目前我自己也在日常用。剪贴板历史存在本机，<strong>没有云同步</strong>。</p>\n<p>分享出来给感兴趣的朋友试试，欢迎反馈使用感受。</p>\n<p><a href=\"https://github.com/khalil-wei/ClipShelf/releases/tag/v0.6.0\" rel=\"noopener noreferrer\" target=\"_blank\">下载 ClipShelf v0.6.0（Windows x64）</a></p>",
+  "attachments": []
+}

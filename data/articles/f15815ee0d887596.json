@@ -1,0 +1,15 @@
+{
+  "id": "f15815ee0d887596",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 求助：找一个合适的 token plan，每天消耗大概 10 亿 token",
+  "link": "https://www.v2ex.com/t/1257742#reply1",
+  "author": "DisastrousNet",
+  "publishedAt": "2026-11-17T08:34:45Z",
+  "snippet": "目前主要是 glm max 套餐，每天跑 glm 5.3 flash 模型，抗不住 每天平均差不多 8 亿 到 10 亿 token 的消耗。 倾向于 deepseek flash、glm 5.3 flash，我今天测试了 hy4 flash 也可以。但 hy 的 token plan 是积分的，我并不知道相当于多少 token。 海外的模型，例如 gpt 6 luna 暂时不考虑。 大家有推荐么？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>目前主要是 glm max 套餐，每天跑 glm 5.3 flash 模型，抗不住</p>\n<p>每天平均差不多 8 亿 到 10 亿 token 的消耗。</p>\n<p>倾向于 deepseek flash、glm 5.3 flash，我今天测试了 hy4 flash 也可以。但 hy 的 token plan 是积分的，我并不知道相当于多少 token。</p>\n<p>海外的模型，例如 gpt 6 luna 暂时不考虑。</p>\n<p>大家有推荐么？</p>",
+  "attachments": []
+}

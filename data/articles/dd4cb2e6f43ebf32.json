@@ -1,0 +1,15 @@
+{
+  "id": "dd4cb2e6f43ebf32",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [送码] 最近看英语直播学习有点费劲，于是做了个实时翻译工具 Liveglot，送授权码",
+  "link": "https://www.v2ex.com/t/1257741#reply8",
+  "author": "cai314494687",
+  "publishedAt": "2026-11-17T08:32:21Z",
+  "snippet": "最近一直在学习，看了不少英语直播。内容是想学的，但英语听起来还是有点费劲，有时一句没听明白，后面就跟不上了。 所以给自己做了个 Mac App，叫 Liveglot。一边听直播，一边看实时的双语字幕，理解起来轻松不少。 不过光翻译还不够。有时候每个字都看懂了，还是没理解他到底在说什么。所以我在旁边加了个聊天窗口，可以根据这场直播的字幕接着问：刚才这段是什么意思？能不能换个说法？也可以让它总结一下前面讲了什么。 对我来说，这比单纯看字幕有...",
+  "coverImage": "https://liveglot.app/screenshots/app-zh-hans-dark.webp",
+  "readTime": 1,
+  "content": "<p>最近一直在学习，看了不少英语直播。内容是想学的，但英语听起来还是有点费劲，有时一句没听明白，后面就跟不上了。</p>\n<p>所以给自己做了个 Mac App，叫 Liveglot。一边听直播，一边看实时的双语字幕，理解起来轻松不少。</p>\n<p>不过光翻译还不够。有时候每个字都看懂了，还是没理解他到底在说什么。所以我在旁边加了个聊天窗口，可以根据这场直播的字幕接着问：刚才这段是什么意思？能不能换个说法？也可以让它总结一下前面讲了什么。</p>\n<p>对我来说，这比单纯看字幕有用：不用来回复制内容，也不用重新给 AI 交代上下文，边看边问就行。看完还能把原文和译文存成 Markdown 笔记，之后回顾。</p>\n<p><strong>另一个我很在意的点，是不想再多一个订阅。</strong></p>\n<p>所以 Liveglot 做成了买断制，$19.99，支持两台 Mac，不收月费。语音识别可以用本机 Whisper，翻译也可以接自己下载的免费本地模型；如果想用云端模型，配自己的 API Key 就行。用本地模型不用另外付 API 费用，用云端则按自己的实际用量付费。</p>\n<p>目前需要 Apple 芯片的 Mac、macOS 14 及以上。可以先免费试用 7 天，不用绑卡。</p>\n<p>官网：<a href=\"https://liveglot.app/zh-hans/\" rel=\"noopener noreferrer\" target=\"_blank\">Liveglot</a></p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://liveglot.app/screenshots/app-zh-hans-dark.webp\"/></p>\n<p>这次拿出 <strong>10 个买断授权免费送给大家</strong>。如果你也在看外语直播、网课，想试试的话，可以在评论里留下邮箱，我会陆续发限免码，每个码限兑换一次。</p>\n<p>这是从我自己的学习需求里做出来的工具，也想看看对其他人有没有帮助。用着有什么不顺手的地方，欢迎直接说。</p>",
+  "attachments": []
+}

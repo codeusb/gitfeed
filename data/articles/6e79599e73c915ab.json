@@ -1,0 +1,15 @@
+{
+  "id": "6e79599e73c915ab",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "Quoting Go Proverbs",
+  "link": "https://simonwillison.net/2026/Nov/17/go-proverbs/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-17T06:16:26Z",
+  "snippet": "A little copying is better than a little dependency. — Go Proverbs, via Tags: go, programming",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<blockquote cite=\"https://go-proverbs.github.io\"><p>A little copying is better than a little dependency.</p></blockquote>\n<p class=\"cite\">— <a href=\"https://go-proverbs.github.io\" rel=\"noopener noreferrer\" target=\"_blank\">Go Proverbs</a>, <a href=\"https://news.ycombinator.com/item?id=50516689#50526408\" rel=\"noopener noreferrer\" target=\"_blank\">via</a></p>\n<p>Tags: <a href=\"https://simonwillison.net/tags/go\" rel=\"noopener noreferrer\" target=\"_blank\">go</a>, <a href=\"https://simonwillison.net/tags/programming\" rel=\"noopener noreferrer\" target=\"_blank\">programming</a></p>",
+  "attachments": []
+}

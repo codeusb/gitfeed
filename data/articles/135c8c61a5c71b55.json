@@ -1,0 +1,15 @@
+{
+  "id": "135c8c61a5c71b55",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[数据库] PostgreSQL 发布安全更新，修复 52 项安全漏洞",
+  "link": "https://www.v2ex.com/t/1257719#reply0",
+  "author": "btpanel",
+  "publishedAt": "2026-11-17T07:20:29Z",
+  "snippet": "11 月 12 日，PostgreSQL 官方发布新一轮安全更新，修复了 52 项安全漏洞及 140 余项 Bug，涉及任意代码执行、权限控制及信息泄露等安全风险。 本次更新包含多项高危漏洞，其中 CVE-2026-6460 的 CVSS 评分为 8.8。具备数据库对象创建权限的攻击者，在特定条件下可能利用类型混淆问题，以 PostgreSQL 服务运行账户的权限执行任意代码。 本次安全修复版本： PostgreSQL 分支 修复版本 ...",
+  "coverImage": "https://i.mji.rip/2026/11/17/44fbab1e3c1ddf9aae6f419d2fb6eae3.png",
+  "readTime": 1,
+  "content": "<p>11 月 12 日，PostgreSQL 官方发布新一轮安全更新，修复了 52 项安全漏洞及 140 余项 Bug，涉及任意代码执行、权限控制及信息泄露等安全风险。</p>\n<p>本次更新包含多项高危漏洞，其中 CVE-2026-6460 的 CVSS 评分为 8.8。具备数据库对象创建权限的攻击者，在特定条件下可能利用类型混淆问题，以 PostgreSQL 服务运行账户的权限执行任意代码。</p>\n<p><strong>本次安全修复版本：</strong></p>\n<table>\n<thead>\n<tr>\n<th>PostgreSQL 分支</th>\n<th>修复版本</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>18.x</td>\n<td>18.7</td>\n</tr>\n<tr>\n<td>17.x</td>\n<td>17.12</td>\n</tr>\n<tr>\n<td>16.x</td>\n<td>16.16</td>\n</tr>\n<tr>\n<td>15.x</td>\n<td>15.20</td>\n</tr>\n<tr>\n<td>14.x</td>\n<td>14.25</td>\n</tr>\n</tbody></table><p>PostgreSQL 14 已于 2026 年 11 月 12 日结束官方支持，14.25 为该分支最后一个版本，建议仍在使用的用户规划迁移。</p>\n<p><strong>升级建议：</strong></p>\n<ol>\n<li>检查实际运行的 PostgreSQL 版本，确认是否低于对应分支的安全修复版本。</li>\n<li>升级前备份数据库及相关配置，并确认备份可恢复。</li>\n<li>同一大版本内的小版本更新通常无需执行 <code>pg_upgrade</code>，跨大版本升级则需要单独制定迁移方案。</li>\n<li>根据官方发布说明，检查是否需要重新编译 C 语言扩展、重建相关索引或重新制作完整备份。</li>\n</ol>\n<p>可以通过以下 SQL 查询实际运行版本：</p>\n<pre><code class=\"language-sql\">SHOW server_version;\n</code></pre>\n<p>目前宝塔 PostgreSQL 管理器 3.2 也已提供对应的安全修复版本。通过宝塔安装 PostgreSQL 的用户，需要先更新管理器，再进入「设置 → 版本管理」升级数据库本身。</p>\n<p><img alt=\"image\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.mji.rip/2026/11/17/44fbab1e3c1ddf9aae6f419d2fb6eae3.png\"/></p>\n<p><strong>管理器更新与数据库版本升级是两个独立步骤，建议升级完成后再次核对实际运行版本。</strong></p>\n<p>参考资料：</p>\n<p>PostgreSQL 官方安全更新公告：\n<a href=\"https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/</a></p>\n<p>宝塔 PostgreSQL 安全更新说明：\n<a href=\"https://docs.bt.cn/notices/postgresql-security-update-2026-11-17/\" rel=\"noopener noreferrer\" target=\"_blank\">https://docs.bt.cn/notices/postgresql-security-update-2026-11-17/</a></p>",
+  "attachments": []
+}

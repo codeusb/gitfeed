@@ -1,0 +1,15 @@
+{
+  "id": "cf3093e88e76afaf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 把多年前做的 iOS 输入法 Remoboard 做了 Android 版：用电脑键盘给手机打字，求内测",
+  "link": "https://www.v2ex.com/t/1257720#reply0",
+  "author": "everettjf",
+  "publishedAt": "2026-11-17T07:26:37Z",
+  "snippet": "Remoboard 是我很多年前写的一个 iOS 输入法 https://atomsprout.com/remoboard/ ，功能：用电脑键盘给手机打字。 手机切到这个输入法，键盘上会显示一个地址和 PIN，电脑浏览器打开，输入 PIN，然后在电脑上打字，手机上就出字。走的是局域网，不用注册，电脑上也不用装东西。 最早期做了 Android 版本，但后来没投入时间，google playstore 也因为一个 privacy 网址不能...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Remoboard 是我很多年前写的一个 iOS 输入法 <a href=\"https://atomsprout.com/remoboard/\" rel=\"noopener noreferrer\" target=\"_blank\">https://atomsprout.com/remoboard/</a> ，功能：用电脑键盘给手机打字。</p>\n<p>手机切到这个输入法，键盘上会显示一个地址和 PIN，电脑浏览器打开，输入 PIN，然后在电脑上打字，手机上就出字。走的是局域网，不用注册，电脑上也不用装东西。</p>\n<p>最早期做了 Android 版本，但后来没投入时间，google playstore 也因为一个 privacy 网址不能访问问题把 app 给下架了。一直有人问有没有 Android 版，我自己也懒着没动力就一直拖着。最近用 Claude 和 Codex 把它做出来了，功能和 iOS 版基本一样，剪贴板互传、常用语这些都有，目前全部免费。</p>\n<p>结果发现 Google Play 现在要求新的个人开发者，先找 12 个人内测满 14 天，才让正式上架。苹果那边我的应用几个月没人用都能上架，哈哈，Google 这个是真麻烦。</p>\n<p>所以来求助一下。有 Android 手机（8.0 以上，能用 Google Play）的朋友，有兴趣的话帮忙装一下：</p>\n<ol>\n<li>先加入群组： <a href=\"https://groups.google.com/g/atomsprout\" rel=\"noopener noreferrer\" target=\"_blank\">https://groups.google.com/g/atomsprout</a></li>\n<li>再点成为测试者： <a href=\"https://play.google.com/apps/testing/com.atomsprout.remoboard\" rel=\"noopener noreferrer\" target=\"_blank\">https://play.google.com/apps/testing/com.atomsprout.remoboard</a></li>\n<li>然后去 Google Play 安装： <a href=\"https://play.google.com/store/apps/details?id=com.atomsprout.remoboard\" rel=\"noopener noreferrer\" target=\"_blank\">https://play.google.com/store/apps/details?id=com.atomsprout.remoboard</a></li>\n</ol>\n<p>有问题直接回帖，或者来群里说：</p>\n<p>Discord： <a href=\"https://discord.gg/eGzEaP6TzR\" rel=\"noopener noreferrer\" target=\"_blank\">https://discord.gg/eGzEaP6TzR</a>\nTelegram： <a href=\"http://t.me/atomsprout\" rel=\"noopener noreferrer\" target=\"_blank\">http://t.me/atomsprout</a></p>\n<p>先谢谢了。</p>",
+  "attachments": []
+}
