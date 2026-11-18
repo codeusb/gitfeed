@@ -1,0 +1,15 @@
+{
+  "id": "ef05f0661b274442",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] Java Base64 解码器漏洞可实现远程代码执行 CVE-2026-114938",
+  "link": "https://www.v2ex.com/t/1257968#reply4",
+  "author": "felixsama969",
+  "publishedAt": "2026-11-18T05:48:15Z",
+  "snippet": "OpenJDK 的 Base64 解码器存在内存损坏漏洞。远程攻击者无需任何凭据即可覆盖堆内存，以类似 Heartbleed 的方式读取内存，并实现远程代码执行。输入 64 或 128 个字符“A”跟一个“=”即可触发为了加快 Base64 解码速度，OpenJDK 在支持的 x86-64 处理器上使用专门的 AVX-512 VBMI 指令。问题出在处理最后几个字符的手工汇编代码中。对于上面提到的 65 个字符的输入，OpenJDK 分...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "OpenJDK 的 Base64 解码器存在内存损坏漏洞。远程攻击者无需任何凭据即可覆盖堆内存，以类似 Heartbleed 的方式读取内存，并实现远程代码执行。<br/><br/>输入 64 或 128 个字符“A”跟一个“=”即可触发<br/><br/>为了加快 Base64 解码速度，OpenJDK 在支持的 x86-64 处理器上使用专门的 AVX-512 VBMI 指令。问题出在处理最后几个字符的手工汇编代码中。对于上面提到的 65 个字符的输入，OpenJDK 分配了一个 50 字节的结果数组。解码前 64 个字符后，该例程错误地处理了剩余的字符=，计算出了一个负的输出长度。这个无效的长度被写入了完整的 64 字节，超出了数组的末尾 62 字节。Java 最终会拒绝这个输入，但此时相邻的对象可能已经被损坏了。<br/><br/>受影响范围覆盖 OpenJDK 17.0.6 及更高版本",
+  "attachments": []
+}

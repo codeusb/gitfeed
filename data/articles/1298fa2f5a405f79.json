@@ -1,0 +1,15 @@
+{
+  "id": "1298fa2f5a405f79",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 刚觉 claude 最近杀疯了，ban 了我的 id ip iq, 有啥替代方案吗",
+  "link": "https://www.v2ex.com/t/1257969#reply2",
+  "author": "24marshall",
+  "publishedAt": "2026-11-18T05:54:05Z",
+  "snippet": "现在我只要输入我的支付方式，KYC 用我之前用过的 ID,就立马 restrict. 之前只是我处理一些潜在敏感数据的时候才封。已经封了我 N 个号，浪费了我一百多美金了，无爱了。 现在买了 100 块的 astra max, 当做弱版 opus 用。通过 claude-codex 可以无缝衔接之前 cli 的 session, 比较方便。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>现在我只要输入我的支付方式，KYC 用我之前用过的 ID,就立马 restrict. 之前只是我处理一些潜在敏感数据的时候才封。已经封了我 N 个号，浪费了我一百多美金了，无爱了。</p>\n<p>现在买了 100 块的 astra max, 当做弱版 opus 用。通过 claude-codex 可以无缝衔接之前 cli 的 session, 比较方便。</p>",
+  "attachments": []
+}

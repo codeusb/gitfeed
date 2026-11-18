@@ -1,0 +1,15 @@
+{
+  "id": "a592522ebfd2b1ae",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude Code] Claude Code 的登陆信息显示为 Unknown",
+  "link": "https://www.v2ex.com/t/1257992#reply0",
+  "author": "henryforward",
+  "publishedAt": "2026-11-18T06:40:13Z",
+  "snippet": "当我使用网页端访问 Claude 登陆的时候，点击 Account 之后，发现 Where you’re logged in 里面的 Device 和 Location 都能正常显示 VPN 对应的信息，且目前 Claude 网页端可以正常使用 Pro 的所有功能。 但是，如果 Claude Code 登陆并 Authorize 的时候，Location 就会显示为 Unknown，感觉这是个潜在的风险，不敢继续使用害怕被封。请问大家使...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>当我使用网页端访问 Claude 登陆的时候，点击 Account 之后，发现 Where you’re logged in 里面的 Device 和 Location 都能正常显示 VPN 对应的信息，且目前 Claude 网页端可以正常使用 Pro 的所有功能。</p>\n<p>但是，如果 Claude Code 登陆并 Authorize 的时候，Location 就会显示为 Unknown，感觉这是个潜在的风险，不敢继续使用害怕被封。请问大家使用的时候遇到过这种情况吗？</p>",
+  "attachments": []
+}

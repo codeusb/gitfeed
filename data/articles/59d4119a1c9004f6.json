@@ -1,0 +1,15 @@
+{
+  "id": "59d4119a1c9004f6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [开源] SwipeSay：轻量的 Mac 划词翻译，也方便顺手学英语",
+  "link": "https://www.v2ex.com/t/1257986#reply0",
+  "author": "AvalonKing",
+  "publishedAt": "2026-11-18T06:19:01Z",
+  "snippet": "之前用的一款翻译软件提示我付费注册，我就卸载了。一方面觉得用着不太顺手，另一方面自己已经有 ChatGPT 订阅，就想做个轻量的工具，复用现有订阅来翻译，顺便辅助自己学英语。于是有了 SwipeSay。 它是一个 macOS 菜单栏工具，选中文字后按 ⌥D，或者点光标旁的小按钮，就能弹出翻译。能读到周围段落时，也会结合上下文理解选中的内容。 除了看译文，我还想知道一句话为什么这么写、哪些表达值得记下来，所以做了这些功能： 翻译后直接追问...",
+  "coverImage": "https://raw.githubusercontent.com/jiaqianjing/SwipeSay/main/docs/images/hero.jpg",
+  "readTime": 1,
+  "content": "<p><img alt=\"SwipeSay 主界面\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/jiaqianjing/SwipeSay/main/docs/images/hero.jpg\"/></p>\n<p>之前用的一款翻译软件提示我付费注册，我就卸载了。一方面觉得用着不太顺手，另一方面自己已经有 ChatGPT 订阅，就想做个轻量的工具，复用现有订阅来翻译，顺便辅助自己学英语。于是有了 SwipeSay。</p>\n<p>它是一个 macOS 菜单栏工具，选中文字后按 ⌥D，或者点光标旁的小按钮，就能弹出翻译。能读到周围段落时，也会结合上下文理解选中的内容。</p>\n<p>除了看译文，我还想知道一句话为什么这么写、哪些表达值得记下来，所以做了这些功能：</p>\n<ul>\n<li>翻译后直接追问，比如某个词能不能替换、口语里怎么说。</li>\n<li>按需展开句子分析，看看主干和句子结构。</li>\n<li>提取重点词组、搭配，收进生词本，支持间隔复习和 CSV 导出。</li>\n<li>本地缓存，命中后直接显示已有结果，减少等待和重复调用。</li>\n<li>用量统计，可以查看 token 消耗和估算费用。</li>\n</ul>\n<p>模型可以复用自己的 ChatGPT 订阅，也支持自行配置 API 或兼容接口的本地模型。软件本身开源免费，模型服务的费用取决于自己的配置。</p>\n<p>界面也花了些心思，我自己觉得还挺好看，尽量让翻译和学习都在一个小弹窗里完成。</p>\n<p>目前版本是 0.3.0，支持 macOS 14 及以上，Apple 芯片和 Intel 都能用，已做苹果公证，支持自动更新。</p>\n<p>欢迎经常在 Mac 上读英文的朋友试试。尤其想听听上下文读取在不同 App 里的表现，以及追问、句子分析这些功能是否顺手。</p>\n<p>项目地址与下载：<a href=\"https://github.com/jiaqianjing/SwipeSay\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub · SwipeSay</a></p>",
+  "attachments": []
+}

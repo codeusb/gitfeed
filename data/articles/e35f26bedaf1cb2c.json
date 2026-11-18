@@ -1,0 +1,15 @@
+{
+  "id": "e35f26bedaf1cb2c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个整理旅行照片的 iOS App，纯本地，无联网，完全免费，支持 iPhone Duo",
+  "link": "https://www.v2ex.com/t/1258001#reply1",
+  "author": "murongxdb",
+  "publishedAt": "2026-11-18T07:11:04Z",
+  "snippet": "出门拍了很多照片，回来之后基本就堆在相册里了。想把这些照片按一次次旅行整理起来，就做了这个 App。 旅印会根据照片的拍摄时间和地点整理行程，也可以手动创建旅行、添加照片。每次旅行会生成一枚印章，可以查看每天的照片和地图，写几句游记，或者导出明信片、旅行海报。 用 SwiftUI 写的，目前还在 TestFlight 测试阶段，功能免费，支持实况照片和视频。 想发出来请大家试试。哪里不好用、有什么想法，都欢迎直接说。 https://t...",
+  "coverImage": "https://img.cdn1.vip/i/6afd4f2877638_1794985768.webp",
+  "readTime": 1,
+  "content": "<p>出门拍了很多照片，回来之后基本就堆在相册里了。想把这些照片按一次次旅行整理起来，就做了这个 App。</p>\n<p>旅印会根据照片的拍摄时间和地点整理行程，也可以手动创建旅行、添加照片。每次旅行会生成一枚印章，可以查看每天的照片和地图，写几句游记，或者导出明信片、旅行海报。</p>\n<p>用 SwiftUI 写的，目前还在 TestFlight 测试阶段，功能免费，支持实况照片和视频。</p>\n<p>想发出来请大家试试。哪里不好用、有什么想法，都欢迎直接说。</p>\n<p><a href=\"https://testflight.apple.com/join/ZUy5PRmf\" rel=\"noopener noreferrer\" target=\"_blank\">https://testflight.apple.com/join/ZUy5PRmf</a></p>\n<p><img alt=\"01-旅行日记.png · 2275\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.cdn1.vip/i/6afd4f2877638_1794985768.webp\"/></p>\n<p>用户反馈群：\n<img alt=\"群聊：旅印 App 用户群.png · 125\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.cdn1.vip/i/6afd4f72bf2b4_1794985842.webp\"/></p>",
+  "attachments": []
+}

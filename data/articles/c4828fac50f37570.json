@@ -1,0 +1,15 @@
+{
+  "id": "c4828fac50f37570",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "jQuery 4.1.0",
+  "link": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+  "author": "petecooper",
+  "publishedAt": "2026-11-17T19:50:40Z",
+  "snippet": "Article URL: https://github.com/jquery/jquery/releases/tag/4.1.0 Comments URL: https://news.ycombinator.com/item?id=50537156 Points: 311 # Comments: 160",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/jquery/jquery/releases/tag/4.1.0\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/jquery/jquery/releases/tag/4.1.0</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50537156\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50537156</a></p>\n<p>Points: 311</p>\n<p># Comments: 160</p>",
+  "attachments": []
+}

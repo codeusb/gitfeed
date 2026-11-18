@@ -1,0 +1,15 @@
+{
+  "id": "398a8f8ca00cca35",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[JavaScript] 让 claude 帮我搓了一个 3dskill 的集合站！",
+  "link": "https://www.v2ex.com/t/1258004#reply1",
+  "author": "996supporter",
+  "publishedAt": "2026-11-18T07:23:53Z",
+  "snippet": "最近做了个站叫 SkillBay.dev。起因是我看到一些 3D Skill 做出来的效果很惊艳，就想试试能不能把这些能力复现出来，再把实现流程和模板整理成可以复用的 Skill 包。 现在站上能直接试玩一些 Demo，比如能漂移的卡丁车、能点开看航班状态的机场地勤模拟，还有一个可以开船绕灯塔的小岛。看中哪个，可以下载对应的 Skill 包，按自己用的 Agent 的方式装进去，再拿自己的需求跑一遍。卡丁车的包可以免费下。 我自己觉得最...",
+  "coverImage": "https://skillbay.dev/previews/card/critter-kart-racer.avif?v=5064a183ebffed43",
+  "readTime": 1,
+  "content": "<p>最近做了个站叫 SkillBay.dev。起因是我看到一些 3D Skill 做出来的效果很惊艳，就想试试能不能把这些能力复现出来，再把实现流程和模板整理成可以复用的 Skill 包。</p>\n<p>现在站上能直接试玩一些 Demo，比如能漂移的卡丁车、能点开看航班状态的机场地勤模拟，还有一个可以开船绕灯塔的小岛。看中哪个，可以下载对应的 Skill 包，按自己用的 Agent 的方式装进去，再拿自己的需求跑一遍。卡丁车的包可以免费下。</p>\n<p>我自己觉得最实用的是省掉从零试错的那部分 token。比如做一个可交互场景，有了现成模板和流程，就可以少让模型来回重搭场景、改镜头、补交互。具体能省多少，还是得看任务和模型。</p>\n<p>接下来我会挑几套 3D Skill，用同一份 Skill 和同一个需求让不同模型各跑一遍，再把能操作的结果并排放出来。之前试的时候，观感上的差距确实有点天差地别。我想看看换成同题之后，差距具体出在哪儿，是画面完成度、镜头和交互，还是得返工几轮才能跑起来。</p>\n<p>如果你也试过让模型做 3D，欢迎回帖说说你最想看哪几个模型比、拿什么场景比。</p>\n<p>3D Skill 目录 <a href=\"https://skillbay.dev/skills?topic=3d\" rel=\"noopener noreferrer\" target=\"_blank\">https://skillbay.dev/skills?topic=3d</a></p>\n<p><a href=\"https://skillbay.dev/demos/critter-kart-racer/\" rel=\"noopener noreferrer\" target=\"_blank\">卡丁车竞速 · 试玩</a></p>\n<p><img alt=\"卡丁车竞速\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://skillbay.dev/previews/card/critter-kart-racer.avif?v=5064a183ebffed43\"/></p>\n<p><a href=\"https://skillbay.dev/demos/airport-stand-3d-ops/\" rel=\"noopener noreferrer\" target=\"_blank\">机场地勤模拟 · 试玩</a></p>\n<p><img alt=\"机场地勤模拟\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://skillbay.dev/previews/card/airport-stand-3d-ops.avif?v=640909a8b39cd2f3\"/></p>\n<p><a href=\"https://skillbay.dev/demos/toon-boat-diorama/\" rel=\"noopener noreferrer\" target=\"_blank\">卡通小岛 · 试玩</a></p>\n<p><img alt=\"卡通小岛\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://skillbay.dev/previews/card/toon-boat-diorama.avif?v=62d8b4f5379bdcfe\"/></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "9918978f69986052",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 做了个足球冷知识小游戏：答得越冷门，球场越大，想请球迷试试",
+  "link": "https://www.v2ex.com/t/1257993#reply3",
+  "author": "Dragoing",
+  "publishedAt": "2026-11-18T06:47:56Z",
+  "snippet": "最近做了一个浏览器足球问答游戏 Footbillion: Stadium Growth，放在 https://soccerfootbillion.com/ 。想请喜欢足球的 V 友试试，尤其想听听手机输入答案的体验。 玩法是：根据题目写出符合条件的球员、球队、国家等名字，答对后得到游戏分值，把一块小球场逐步变成大球场。符合题目条件的冷门答案通常分值更高，答对一次就结算这一题。 Daily seven：每天七题，北京时间每天早上 8 点更...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近做了一个浏览器足球问答游戏 <strong>Footbillion: Stadium Growth</strong>，放在 <a href=\"https://soccerfootbillion.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://soccerfootbillion.com/</a> 。想请喜欢足球的 V 友试试，尤其想听听手机输入答案的体验。</p>\n<p>玩法是：根据题目写出符合条件的球员、球队、国家等名字，答对后得到游戏分值，把一块小球场逐步变成大球场。符合题目条件的冷门答案通常分值更高，答对一次就结算这一题。</p>\n<ul>\n<li><strong>Daily seven</strong>：每天七题，北京时间每天早上 8 点更新（00:00 UTC）。</li>\n<li><strong>Endless run</strong>：可反复玩，自己选择世界杯、英超、欧冠等赛事；选定题池内打乱顺序，遍历完才重新洗牌。</li>\n<li>每题最多三次不同的错误尝试，可选 30 秒倒计时，也可用 Relaxed 关闭计时。答错或跳过也能继续。</li>\n<li>免费，不用注册、下载或安装。现在是<strong>英文界面和英文题库</strong>，手机和电脑浏览器都可以打开。</li>\n</ul>\n<p>题库是有署名的开放数据改编，目前 1,393 道题；我主要做的是球场成长、无尽模式连胜奖励和交互界面。数据来源、修改说明和 CC BY-SA 4.0 许可放在 <a href=\"https://soccerfootbillion.com/credits\" rel=\"noopener noreferrer\" target=\"_blank\">https://soccerfootbillion.com/credits</a> 。这是本站的独立改编版本，和其他同名站点、足球联盟没有官方关联。球场插画由 AI 生成，代码和文案制作也使用了 AI 辅助。</p>\n<p>想请大家帮忙看两个点：手机选名字、提交答案是否顺手；30 秒计时和不计时模式，哪个更愿意继续玩。发现题目或答案有问题的话，带上题目和所填答案反馈就很有帮助。</p>\n<p>PS：游戏里的 £10m–£150m 是虚拟分值，没有下注、现金奖励或充值。</p>",
+  "attachments": []
+}

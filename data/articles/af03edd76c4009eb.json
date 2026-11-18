@@ -1,0 +1,15 @@
+{
+  "id": "af03edd76c4009eb",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 为了 Google 定位不干到家门口，我做了这些操作",
+  "link": "https://www.v2ex.com/t/1257973#reply0",
+  "author": "freeAndy",
+  "publishedAt": "2026-11-18T05:58:54Z",
+  "snippet": "我就是想网页用下 Gemini， 无奈定位一变就熄火。 痛定思痛，做了以下操作。截止目前状况良好，可以起飞。 先说我的情况：MacOs + Chrome 无痕模式下在 Google 搜索页底部正常显示 IP 所在地址，后面跟的描述信息是 “是根据您的 IP 地址推断出来的”。普通模式显示的是 “根据地理位置推断” 。打开 Gemini 显示地域不允许。 1、修改结果区域 https://www.google.com/preference...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我就是想网页用下 Gemini， 无奈定位一变就熄火。</p>\n<p>痛定思痛，做了以下操作。截止目前状况良好，可以起飞。</p>\n<p>先说我的情况：MacOs + Chrome 无痕模式下在 Google 搜索页底部正常显示 IP 所在地址，后面跟的描述信息是 “是根据您的 IP 地址推断出来的”。普通模式显示的是 “根据地理位置推断” 。打开 Gemini 显示地域不允许。</p>\n<p>1、修改结果区域</p>\n<p><a href=\"https://www.google.com/preferences#tabVal=1\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.google.com/preferences#tabVal=1</a></p>\n<p>“语言和地区 / 结果区域” 手动改成代理所在位置（观察了下这个值 Google 会自动修改为 “当前区域” 不过先改他妈的）。</p>\n<p>2、关闭 “个性化搜索” </p>\n<p><a href=\"https://www.google.com/search-personalization/?utm_source=google&amp;utm_medium=pref-page&amp;hl=zh-CN&amp;utm_campaign\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.google.com/search-personalization/?utm_source=google&amp;utm_medium=pref-page&amp;hl=zh-CN&amp;utm_campaign</a></p>\n<p>个性化推荐肯定就会分析人物画像，所以关掉他。</p>\n<p>3、关闭 “时间轴”。</p>\n<p><a href=\"https://myactivity.google.com/myactivity?hl=zh-CN&amp;utm_source=google-account&amp;utm_medium=web\" rel=\"noopener noreferrer\" target=\"_blank\">https://myactivity.google.com/myactivity?hl=zh-CN&amp;utm_source=google-account&amp;utm_medium=web</a></p>\n<p>这里有一句描述 “通过在您的每部设备上自动将您的到访记录和路线保存到地图中，帮助您回顾和记住到访过的地点” ，所以关掉他。</p>\n<p>4、Chrome 禁用 QUIC 协议。</p>\n<p>地址栏输入 chrome://flags，搜索 QUIC 设置为 Disabled。</p>\n<p>强制所有流量走标准 TCP 代理（QUIC 的 UDP 数据包不走隧道）。</p>\n<p>5、预防 WebRTC 泄漏</p>\n<p>WebRTC 会尝试获取你设备的底层网络信息。</p>\n<p>可安装并开启扩展 <a href=\"https://chromewebstore.google.com/detail/webrtc-leak-prevent/eiadekoaikejlgdbkbdfeijglgfdalml\" rel=\"noopener noreferrer\" target=\"_blank\">https://chromewebstore.google.com/detail/webrtc-leak-prevent/eiadekoaikejlgdbkbdfeijglgfdalml</a></p>\n<p>6、Chrome 不允许网站查看位置信息</p>\n<p>打开找到并关闭：chrome://settings/content/location?search=%E4%BD%8D%E7%BD%AE</p>\n<p>7、操作系统里面不给 Chrome 定位权限。 </p>\n<p>“Mac 设置 / 隐私与安全性 / 定位服务 / Google Chrome” 关闭授权。</p>\n<p>8、代理自定义分流。</p>\n<p>这步是防止代理遗漏掉 Google 相关域名。</p>\n<p>当然你也可以走全局或者 TUN，我的情况是分流比较适合。</p>\n<p>把 google 相关域名都进行添加，最好再做一个域名关键词匹配（比如 google）。</p>\n<p>做完上面的操作，Google 搜索页底部显示 “代理 IP 位置 - 是根据您的 IP 地址推断出来的” 旁边还有一个更新位置按钮，点击会提示无法更新你的位置。</p>",
+  "attachments": []
+}

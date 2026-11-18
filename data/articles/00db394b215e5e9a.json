@@ -1,0 +1,15 @@
+{
+  "id": "00db394b215e5e9a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] Dito：本地模型优先的语音输入，语音指令，会议记录工具",
+  "link": "https://www.v2ex.com/t/1257977#reply0",
+  "author": "fang2hou",
+  "publishedAt": "2026-11-18T06:06:14Z",
+  "snippet": "⚠️ 纯 Vibe 项目，没有一行手写代码，主打一个不参与 介绍视频 https://imgur.com/a/qq2qvJp 个人觉得比较牛逼的功能 HUD 动画很帅气！也支持跟随鼠标 支持为每个 App 设定不同润色风格 随便换模型，用云端的情况下完全可以媲美主流闭源工具 支持多模型 PK，自己录音用真实体验来提升使用效果 GitHub 目前 Apple 开发者证书还在申请中，暂时只能通过源码自行编译使用，预计过两天会直接提供可下载的...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>⚠️ 纯 Vibe 项目，没有一行手写代码，主打一个不参与</p>\n<h2>介绍视频</h2>\n<p><a href=\"https://imgur.com/a/qq2qvJp\" rel=\"noopener noreferrer\" target=\"_blank\">https://imgur.com/a/qq2qvJp</a></p>\n<h2>个人觉得比较牛逼的功能</h2>\n<ol>\n<li>HUD 动画很帅气！也支持跟随鼠标</li>\n<li>支持为每个 App 设定不同润色风格</li>\n<li>随便换模型，用云端的情况下完全可以媲美主流闭源工具</li>\n<li>支持多模型 PK，自己录音用真实体验来提升使用效果</li>\n</ol>\n<h2>GitHub</h2>\n<p><strong>目前 Apple 开发者证书还在申请中，暂时只能通过源码自行编译使用，预计过两天会直接提供可下载的 DMG 安装包。</strong></p>\n<p><a href=\"https://github.com/fang2hou/dito\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/fang2hou/dito</a></p>\n<h2>为什么做这个工具</h2>\n<p>工作环境对数据安全比较敏感，很多业务内容发送到海外的 LLM 服务商会导致违反公司规章，能在本地处理就是最优解。同时有些支持本地的也不开源，不好安装。</p>\n<p>我自己私下是 Typeless 年费用户，语音输入一旦习惯了，在工作时候用不了非常难受。同时指挥多个 Agent 时一直打字很累，而 macOS 自带听写不仅准确率一般，不同语言混合输入也是一坨，还没法按语境自动润色。看到最近不少人都在用 GPUI 写桌面应用，就顺手研究了一下，Vibe 了一个自己用着顺手、界面也舒服的语音输入工具。</p>\n<h2>主要特性</h2>\n<ul>\n<li>简单的模型管理：快速下载管理各种开源量化版本模型（已经通过自制 benchmark 精挑细选过了），充分利用 macOS 硬件加速</li>\n<li>语音听写与润色：按下快捷键说话，转写并润色后直接输入到当前光标位置，支持按不同应用设置润色风格与专有词库。</li>\n<li>选中文本语音指令：在任意应用中选中文字，直接语音下达改写、翻译、总结、回复或提问指令。</li>\n<li>会议实时转写：支持同时录制系统音频与麦克风，实时转写并在结束后按上下文自动润色、生成标题。</li>\n<li>本地对话与接口：支持用本地模型直接对话，也可开启 OpenAI 兼容的本地 API 给其他工具调用。</li>\n</ul>",
+  "attachments": []
+}

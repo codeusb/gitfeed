@@ -1,0 +1,15 @@
+{
+  "id": "3a753ff190dc58a9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 前后端实在太难找了，花一周搓了个学习 Agent 强行上车 AI",
+  "link": "https://www.v2ex.com/t/1257966#reply3",
+  "author": "mtan",
+  "publishedAt": "2026-11-18T05:41:33Z",
+  "snippet": "最近岗位确实太难找了，老焦虑了，只能强行给自己贴个 AI 标签。 花了一周时间，用 Go 从零搓出了一个开源的个人学习 Agent —— Vekr。把 “学习大纲梳理 -> 知识图谱笔记 -> 自动出题批改 -> 错题薄弱点归因” 串起来的闭环工具。技术栈主打轻量克制，没套重型框架，纯用 Go + templ + Hotwire + PostgreSQL 手写了核心的 Agent Loop 和流式交互，兼容本地 Ollama 或任意 O...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近岗位确实太难找了，老焦虑了，只能强行给自己贴个 AI 标签。</p>\n<p>花了一周时间，用 Go 从零搓出了一个开源的个人学习 Agent —— Vekr。把 “学习大纲梳理 -&gt; 知识图谱笔记 -&gt; 自动出题批改 -&gt; 错题薄弱点归因” 串起来的闭环工具。技术栈主打轻量克制，没套重型框架，纯用 Go + templ + Hotwire + PostgreSQL 手写了核心的 Agent Loop 和流式交互，兼容本地 Ollama 或任意 OpenAI 格式模型。</p>\n<ol>\n<li>欢迎大家来提 PR 一起“变身” <strong>Agent 工程师</strong> —— 毕竟出门在外，身份都是自己给的，简历上多一个开源 Agent 贡献者经历不好么！</li>\n<li>评论区互 Star 抱团取暖 —— 欢迎大家在评论区直接留 GitHub 地址，我看到一定挨个点 Star（不过前提是必须也先 Star 一下我的 😂）。</li>\n</ol>\n<p><strong>GitHub 地址：</strong> <a href=\"https://github.com/vekrai/vekr\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/vekrai/vekr</a></p>",
+  "attachments": []
+}

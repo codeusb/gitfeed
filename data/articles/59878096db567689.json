@@ -1,0 +1,15 @@
+{
+  "id": "59878096db567689",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 一人活成一支团队:企业级全链路 ai 个人博客项目",
+  "link": "https://www.v2ex.com/t/1258018#reply0",
+  "author": "jiuxiaoyinji",
+  "publishedAt": "2026-11-18T07:51:16Z",
+  "snippet": "为什么做这个 市面上的博客要么是模板，千篇一律没有辨识度；要么数据不在自己手里。我想要一个真正「私有」、跑在自己服务器上、还带 AI 能力的个人博客，于是干脆自己写了一个，叫「回声日记 Echo Diary」。 做的过程中我没只把它当写代码，而是按大厂的真实流程，一个人依次扮演产品、项目、技术、测试、运维五个角色，把一个项目从需求一路做到部署监控，顺便把这套流程也整理成了教程。 做了什么 全栈 TypeScript：Bun + Next...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<h2>为什么做这个</h2>\n<p>市面上的博客要么是模板，千篇一律没有辨识度；要么数据不在自己手里。我想要一个真正「私有」、跑在自己服务器上、还带 AI 能力的个人博客，于是干脆自己写了一个，叫「回声日记 Echo Diary」。</p>\n<p>做的过程中我没只把它当写代码，而是按大厂的真实流程，一个人依次扮演产品、项目、技术、测试、运维五个角色，把一个项目从需求一路做到部署监控，顺便把这套流程也整理成了教程。</p>\n<h2>做了什么</h2>\n<ul>\n<li>全栈 TypeScript：Bun + Next.js 16 + Hono + oRPC + Drizzle，前后端类型自动推导，只有一份真相；</li>\n<li>八大功能模块、11 张数据表、180+ 测试用例，是真实项目体量，不是 Demo；</li>\n<li>内置 AI 写作、网页剪藏、高阶提示词，同时做了 SEO + GEO 双引流，让搜索引擎和 AI 搜索都能收录；</li>\n<li>Docker Compose 一键部署到 NAS，Gitea 自动构建，Grafana + Loki 监控，备份、回滚都有预案。</li>\n</ul>\n<h2>几个技术选型的思考</h2>\n<ul>\n<li>为什么用 oRPC 而不是传统 REST：类型安全、端到端自动推导，前后端联调几乎不用对接口文档；</li>\n<li>为什么用 Drizzle 而不是更重的 ORM：贴近 SQL、轻、类型推断好，迁移可控；</li>\n<li>为什么坚持容器化部署：环境一致、可复制、回滚快，一个人也能稳住生产环境。</li>\n</ul>\n<h2>现状和计划</h2>\n<p>项目在持续迭代：环境部署、前置干货、五大岗位 102 道面试题、项目流程已经完整；正式项目课在按模块更新，目前做到文章创作页，后面的 AI 集成、定时任务、测试、部署会陆续放出，一次加入永久跟更新。</p>\n<h2>相关链接</h2>\n<p>星球链接:<a href=\"https://t.zsxq.com/8yAjQ\" rel=\"noopener noreferrer\" target=\"_blank\">https://t.zsxq.com/8yAjQ</a>\n博客链接:<a href=\"https://apricotdream.cn\" rel=\"noopener noreferrer\" target=\"_blank\">https://apricotdream.cn</a></p>",
+  "attachments": []
+}

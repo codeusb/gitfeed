@@ -1,0 +1,15 @@
+{
+  "id": "46f786dadde12bde",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+  "link": "https://calif.io/java4shell/",
+  "author": "werrett",
+  "publishedAt": "2026-11-17T21:11:28Z",
+  "snippet": "Article URL: https://calif.io/java4shell/ Comments URL: https://news.ycombinator.com/item?id=50538240 Points: 827 # Comments: 215",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://calif.io/java4shell/\" rel=\"noopener noreferrer\" target=\"_blank\">https://calif.io/java4shell/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50538240\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50538240</a></p>\n<p>Points: 827</p>\n<p># Comments: 215</p>",
+  "attachments": []
+}

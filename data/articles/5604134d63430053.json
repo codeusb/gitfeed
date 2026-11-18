@@ -1,0 +1,15 @@
+{
+  "id": "5604134d63430053",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude] 别折腾 Claude 了各位",
+  "link": "https://www.v2ex.com/t/1258014#reply6",
+  "author": "joannemtk1",
+  "publishedAt": "2026-11-18T07:45:56Z",
+  "snippet": "我知道你会想到这几点：设备指纹、IP（家宽）、MAC 地址、Kyc 身份、支付方式、github 仓库标记，还去各种网站上测试自己 ip 纯净度...... 但亲测，claude 还会看：你开发的项目是不是涉及到中国相关的，这点就很致命，哪几个国内开发者能不涉及到国内的项目，专心一意搞海外项目呢？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我知道你会想到这几点：设备指纹、IP（家宽）、MAC 地址、Kyc 身份、支付方式、github 仓库标记，还去各种网站上测试自己 ip 纯净度......\n但亲测，claude 还会看：你开发的项目是不是涉及到中国相关的，这点就很致命，哪几个国内开发者能不涉及到国内的项目，专心一意搞海外项目呢？</p>",
+  "attachments": []
+}

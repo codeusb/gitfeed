@@ -1,0 +1,15 @@
+{
+  "id": "2262b1b38ab4697b",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[上海] 全栈开发招聘",
+  "link": "https://www.v2ex.com/t/1258020#reply0",
+  "author": "skyxiao118",
+  "publishedAt": "2026-11-18T07:57:47Z",
+  "snippet": "[岗位名称] 全栈开发(.Net + Vue) [岗位内容]： 在原有的产品框架上进行功能板块的独立开发，包括网页端、移动端等应用，并进行代码维护工作，优化代码质量 深度参与产品需求评审，提出可行的技术方案，确保产品具有优质的用户体验 协助系统功能的测试，及时修复对应的问题，对项目功能的可交付落地负责 承担前端 UI、交互设计，以及后端接口、服务器运维等开发工作 关注前后端前沿技术，可以在新项目中新技术进行开发 [岗位要求]： 5 年以...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>[岗位名称] 全栈开发(.Net + Vue)\n[岗位内容]：\n在原有的产品框架上进行功能板块的独立开发，包括网页端、移动端等应用，并进行代码维护工作，优化代码质量\n深度参与产品需求评审，提出可行的技术方案，确保产品具有优质的用户体验\n协助系统功能的测试，及时修复对应的问题，对项目功能的可交付落地负责\n承担前端 UI、交互设计，以及后端接口、服务器运维等开发工作\n关注前后端前沿技术，可以在新项目中新技术进行开发</p>\n<p>[岗位要求]：\n5 <a href=\"http://年以上.Net\" rel=\"noopener noreferrer\" target=\"_blank\">年以上.Net</a> 后端开发+Vue 前端开发(至少 2 年以上 vue 或 react 前端独立开发经验)+MS SQL Server 数据库开发经验\n一、技术要求：（重点）</p>\n<ol>\n<li>前端：Vue 技术栈\nVue2 或 Vue3 框架（至少熟练其一，优先 Vue3）\n生命周期、组件化、props、emit、v-model、路由 Router、状态管理。</li>\n<li>工程化：Vue CLI / Vite 项目搭建</li>\n<li>UI 组件库：Quasar/Element Plus</li>\n<li>网络请求：Axios 封装、请求拦截、响应拦截、接口对接\nHTML + CSS + JavaScript 基础（JS 原型、数组方法、异步）</li>\n<li>理解同源策略、CORS 预检请求机制，能独立排查跨域问题；了解 XSS/CSRF 的基本防护。</li>\n<li>能独立完成前端项目打包后的部署配置</li>\n</ol>\n<p>二. 后端：C# .NET 核心</p>\n<ol>\n<li>C# 基础语法精通：面向对象、类、接口、继承、多态、泛型、委托、异步 Task、Lambda。\n.NET Core / .NET 6+ Web API 框架使用\n熟练掌握 C#<a href=\"http://语言及相关.Net\" rel=\"noopener noreferrer\" target=\"_blank\">语言及相关.Net</a> 技术，熟练使用 MVC 开发模式\n熟悉 NHibernate 架构，EF 架构</li>\n<li>Controller、路由、参数接收、统一返回模型、过滤器、依赖注入 DI</li>\n<li>ORM 框架：Entity Framework Core (EF Core)\n实体映射、增删改查、关联查询、迁移\nMigration，企业标配硬性技能。\n4）精通数据库设计与开发(SQL Server 等)，具备丰富的数据库开发经验</li>\n</ol>\n<p>三. 其他\n1）熟悉 CI/CD 持续集成工具和流程\n2）具有丰富的企业信息系统开发经验，能够独立完成系统需求的分析及设计\n3）具有良好的沟通协调能力，及团队合作精神，较强的自学能力\n4）熟悉敏捷开发流程\n5）熟悉媒体行业系统者优先</p>\n<p>项目大概 4-6 个月，项目期间需要全职，base 上海</p>\n<p>[联系方式] <a href=\"mailto:skylar@sekaiapp.com\" rel=\"noopener noreferrer\" target=\"_blank\">skylar@sekaiapp.com</a></p>",
+  "attachments": []
+}

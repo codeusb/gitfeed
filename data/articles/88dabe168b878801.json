@@ -1,0 +1,15 @@
+{
+  "id": "88dabe168b878801",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[macOS] MacOS27 如何稳定的使用 New Siri",
+  "link": "https://www.v2ex.com/t/1258002#reply2",
+  "author": "jiaoshou610",
+  "publishedAt": "2026-11-18T07:12:00Z",
+  "snippet": "国行 Mac（M4），从 OS15 开始一直到 26 都能稳定使用跑马灯版 Siri，现升级 27 后通过 https://github.com/SkyBlue997/enableMacosAI 此帖顺利强开 New Siri，所有 AI 功能都能稳定使用（无论本地还是联网），唯独 New Siri 时灵时不灵的，同样的代理规则在港币 iPhone17PM 上稳定使用，求助！在网上研究半天，参照此帖 https://github.com...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "国行 Mac（M4），从 OS15 开始一直到 26 都能稳定使用跑马灯版 Siri，现升级 27 后通过 <a href=\"https://github.com/SkyBlue997/enableMacosAI\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/SkyBlue997/enableMacosAI</a> 此帖顺利强开 New Siri，所有 AI 功能都能稳定使用（无论本地还是联网），唯独 New Siri 时灵时不灵的，同样的代理规则在港币 iPhone17PM 上稳定使用，求助！在网上研究半天，参照此帖 <a href=\"https://github.com/RonZhu/apple-intelligence-china-mac\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/RonZhu/apple-intelligence-china-mac</a> 开了 Tun 模式也没用。",
+  "attachments": []
+}

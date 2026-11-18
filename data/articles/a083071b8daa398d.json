@@ -1,0 +1,15 @@
+{
+  "id": "a083071b8daa398d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [开源] mitmAny：让 AI 通过 MCP 分析真实抓包流量，支持 Windows / macOS",
+  "link": "https://www.v2ex.com/t/1257981#reply0",
+  "author": "Leosys",
+  "publishedAt": "2026-11-18T06:10:07Z",
+  "snippet": "大家好，我开源了 mitmAny，一个把 HTTP/HTTPS 抓包连接到 AI 的桌面工具。 它内置 MCP 服务：操作网站或 App 并捕获请求后，可以让 Codex 等 MCP 客户端读取真实请求与响应，分析接口、登录和分页流程。例如：“帮我解释这组请求的分页逻辑，引用请求编号，并标出不确定的推断。” 支持 Windows、macOS 和 Android USB 抓包，也有 JSON 查看、HAR 导入导出、cURL 导出。软件界...",
+  "coverImage": "https://raw.githubusercontent.com/wonderfulsuccess/mitmAny/main/docs/assets/workspace.png",
+  "readTime": 1,
+  "content": "<p>大家好，我开源了 mitmAny，一个把 HTTP/HTTPS 抓包连接到 AI 的桌面工具。</p>\n<p>它内置 MCP 服务：操作网站或 App 并捕获请求后，可以让 Codex 等 MCP 客户端读取真实请求与响应，分析接口、登录和分页流程。例如：“帮我解释这组请求的分页逻辑，引用请求编号，并标出不确定的推断。”</p>\n<p>支持 Windows、macOS 和 Android USB 抓包，也有 JSON 查看、HAR 导入导出、cURL 导出。软件界面提供中英文。</p>\n<p><strong>MIT 开源，所有软件功能免费，没有付费版、订阅或功能解锁。</strong> 可选捐赠支持维护；外部 AI 客户端或模型服务的费用另计。</p>\n<p>项目与使用说明：<a href=\"https://github.com/wonderfulsuccess/mitmAny\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/wonderfulsuccess/mitmAny</a></p>\n<p>直接下载：<a href=\"https://github.com/wonderfulsuccess/mitmAny/releases/tag/v1.2.1\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/wonderfulsuccess/mitmAny/releases/tag/v1.2.1</a></p>\n<p><img alt=\"mitmAny 深色界面（示例流量）\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/wonderfulsuccess/mitmAny/main/docs/assets/workspace.png\"/></p>\n<p>目前安装包未签名，macOS 未公证。MCP 只用于检查已捕获流量，不重放请求或绕过证书固定。请用于自己的或获授权调试的应用；连接的 AI 客户端可能会把工具结果发送给其模型服务商。</p>\n<p>欢迎反馈安装、MCP 配置或接口分析中遇到的问题，也想了解大家最希望 AI 帮忙处理哪一类抓包分析。</p>",
+  "attachments": []
+}

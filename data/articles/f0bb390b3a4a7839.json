@@ -1,0 +1,15 @@
+{
+  "id": "f0bb390b3a4a7839",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 家庭网络有没有必要上 ikuai",
+  "link": "https://www.v2ex.com/t/1258021#reply0",
+  "author": "skyfore",
+  "publishedAt": "2026-11-18T07:59:17Z",
+  "snippet": "现在的家庭网络构建是 电信光猫（拨号，端口映射） --> ikuai(PVE) -> istoreos（PVE） 有个内网服务然后在 ikuai 上做了 dns 代理，自从开启了这个后发现比如访问 B 站老实出现图片加载失败，多刷新几次又好了，然后玩 LOL 也会发现有时候进不了游戏。 所以想问下家庭网络中有没有必要上 ikuai，看起来 istoreos 好像就能够承载所有的能力了，比如 dnsmasq 或者流量分析这些。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>现在的家庭网络构建是\n电信光猫（拨号，端口映射） --&gt; ikuai(PVE) -&gt; istoreos（PVE）</p>\n<p>有个内网服务然后在 ikuai 上做了 dns 代理，自从开启了这个后发现比如访问 B 站老实出现图片加载失败，多刷新几次又好了，然后玩 LOL 也会发现有时候进不了游戏。</p>\n<p>所以想问下家庭网络中有没有必要上 ikuai，看起来 istoreos 好像就能够承载所有的能力了，比如 dnsmasq 或者流量分析这些。</p>",
+  "attachments": []
+}
