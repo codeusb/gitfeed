@@ -1,0 +1,15 @@
+{
+  "id": "6b1aaefe63c2d238",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "Quoting Daniel Stenberg",
+  "link": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-18T15:58:27Z",
+  "snippet": "During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<blockquote cite=\"https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/\"><p>During the time these agents converted 185,000 lines of C code into 340,000 lines of Rust code (I counted), we merged over 300 commits in the actual curl project. We actually improved curl during these a little more than three weeks. A little over 200 bugfixes actually. 200 bugfixes that none of those rust rewrites have. We also fixed a few vulnerabilities. In another month we have done another 200 and maybe fixed a few more vulnerabilities. Will these clones keep up?</p></blockquote>\n<p class=\"cite\">— <a href=\"https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/\" rel=\"noopener noreferrer\" target=\"_blank\">Daniel Stenberg</a>, Actual curl rewrites in Rust</p>\n<p>Tags: <a href=\"https://simonwillison.net/tags/daniel-stenberg\" rel=\"noopener noreferrer\" target=\"_blank\">daniel-stenberg</a>, <a href=\"https://simonwillison.net/tags/curl\" rel=\"noopener noreferrer\" target=\"_blank\">curl</a>, <a href=\"https://simonwillison.net/tags/rust\" rel=\"noopener noreferrer\" target=\"_blank\">rust</a>, <a href=\"https://simonwillison.net/tags/security\" rel=\"noopener noreferrer\" target=\"_blank\">security</a>, <a href=\"https://simonwillison.net/tags/coding-agents\" rel=\"noopener noreferrer\" target=\"_blank\">coding-agents</a>, <a href=\"https://simonwillison.net/tags/c\" rel=\"noopener noreferrer\" target=\"_blank\">c</a>, <a href=\"https://simonwillison.net/tags/ai\" rel=\"noopener noreferrer\" target=\"_blank\">ai</a>, <a href=\"https://simonwillison.net/tags/llms\" rel=\"noopener noreferrer\" target=\"_blank\">llms</a>, <a href=\"https://simonwillison.net/tags/generative-ai\" rel=\"noopener noreferrer\" target=\"_blank\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/vibe-porting\" rel=\"noopener noreferrer\" target=\"_blank\">vibe-porting</a></p>",
+  "attachments": []
+}

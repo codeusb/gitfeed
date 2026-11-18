@@ -1,0 +1,15 @@
+{
+  "id": "8b846ad6c3d706b0",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] antigravity 真的站起来了",
+  "link": "https://www.v2ex.com/t/1258128#reply2",
+  "author": "indexError",
+  "publishedAt": "2026-11-18T15:48:14Z",
+  "snippet": "最近在做魔兽世界手机版，之前用了 deepseek 官方 API（消费两百多）、opencode go、GLM-5.3-flash，法术特效部分整体还是一坨，经常是改对一个错一片。 下午让 deepseek 改了一个法术，改了三次没改对，就试了试 3.8 flash，一次成功。 晚上开了个学生优惠，冲了个 pro，用 4H 测了个之前有 bug 的法术特效，10 分钟一次成功。 现在国模生成的 markdown 部分根本就看不懂，感觉他...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近在做魔兽世界手机版，之前用了 deepseek 官方 API（消费两百多）、opencode go、GLM-5.3-flash，法术特效部分整体还是一坨，经常是改对一个错一片。</p>\n<p>下午让 deepseek 改了一个法术，改了三次没改对，就试了试 3.8 flash，一次成功。</p>\n<p>晚上开了个学生优惠，冲了个 pro，用 4H 测了个之前有 bug 的法术特效，10 分钟一次成功。</p>\n<p>现在国模生成的 markdown 部分根本就看不懂，感觉他们对自己干的事儿一点概念都没有，全是自己造的词。本来就看不懂吧，还扔给你俩问题，有的时候不得不让网页版的 gemini 翻译下。</p>\n<p>现在 gemini 的模型比之前慢了好多。</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "26eb7cb6d11c4bd4",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "The PSF end-of-year fundraiser",
+  "link": "https://simonwillison.net/2026/Nov/18/psf-end-of-year-fundraiser/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-18T14:44:48Z",
+  "snippet": "The PSF end-of-year fundraiser With my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community. If your com...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><strong><a href=\"https://donate.python.org\" rel=\"noopener noreferrer\" target=\"_blank\">The PSF end-of-year fundraiser</a></strong></p>\nWith my Python Software Foundation board director hat on: we've launched our end-of-year fundraiser for the non-profit that supports Python development and the Python community.\n<p>If your company or your work benefits from Python, please consider donating this year!</p>\n<p>The PSF looks after the IP behind Python, operates PyPI, sponsors core developer sprints, supports community events (including running PyCon US every year), and employs a small and excellent staff team to keep everything running.</p>\n<p>We also operate the <a href=\"https://www.python.org/psf/developersinresidence/\" rel=\"noopener noreferrer\" target=\"_blank\">Developers in Residence program</a>, which now includes three security developers (welcome, Brett Smith) focused on helping secure Python, PyPI, and the wider ecosystem.\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/python\" rel=\"noopener noreferrer\" target=\"_blank\">python</a>, <a href=\"https://simonwillison.net/tags/psf\" rel=\"noopener noreferrer\" target=\"_blank\">psf</a></p></p>",
+  "attachments": []
+}

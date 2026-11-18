@@ -1,0 +1,15 @@
+{
+  "id": "0789acf3aaa8ae1c",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "CVE-2026-99312: KVM Guest-to-Host Escape",
+  "link": "https://www.terra.security/blog/kvm-guest-to-host-escape",
+  "author": "Kozmik1",
+  "publishedAt": "2026-11-18T16:06:21Z",
+  "snippet": "Article URL: https://www.terra.security/blog/kvm-guest-to-host-escape Comments URL: https://news.ycombinator.com/item?id=50548004 Points: 113 # Comments: 63",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://www.terra.security/blog/kvm-guest-to-host-escape\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.terra.security/blog/kvm-guest-to-host-escape</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50548004\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50548004</a></p>\n<p>Points: 113</p>\n<p># Comments: 63</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fa4b8a0b31f72192",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[OpenAI] gpt 6.2 astra 说检查到我的 T14：CPU 暴露了 Intel Processor Trace，Ubuntu 也看到了两个遥测设备",
+  "link": "https://www.v2ex.com/t/1258080#reply0",
+  "author": "szdosar",
+  "publishedAt": "2026-11-18T10:14:24Z",
+  "snippet": "……但没有发现已连接的调试探针、可导出的 Trace Hub 通道，或能读回上一次交接指令轨迹的记录。 我好奇，这是 intel cpu 的杰作吗？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>……但没有发现已连接的调试探针、可导出的 Trace Hub 通道，或能读回上一次交接指令轨迹的记录。\n我好奇，这是 intel cpu 的杰作吗？</p>",
+  "attachments": []
+}

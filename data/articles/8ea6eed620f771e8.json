@@ -1,0 +1,15 @@
+{
+  "id": "8ea6eed620f771e8",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 做了一个七宗罪人格测验站 deadlysinsquiz.com，35 道题测出你的七项罪分",
+  "link": "https://www.v2ex.com/t/1258111#reply1",
+  "author": "seventuning77",
+  "publishedAt": "2026-11-18T14:05:42Z",
+  "snippet": "周末做的 side project：基于七宗罪概念的在线测验，35 道题、按七项特质分别打分并生成解读页。支持英/西/葡/德四种语言，无需注册。技术栈是静态站 + 原生 JS。欢迎体验和拍砖：https://deadlysinsquiz.com",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>周末做的 side project：基于七宗罪概念的在线测验，35 道题、按七项特质分别打分并生成解读页。支持英/西/葡/德四种语言，无需注册。技术栈是静态站 + 原生 JS。欢迎体验和拍砖：<a href=\"https://deadlysinsquiz.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://deadlysinsquiz.com</a></p>",
+  "attachments": []
+}

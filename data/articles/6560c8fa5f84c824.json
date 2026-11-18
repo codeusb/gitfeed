@@ -1,0 +1,15 @@
+{
+  "id": "6560c8fa5f84c824",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 没有海外信用卡，怎么开阿里云国际 / AWS 账号？",
+  "link": "https://www.v2ex.com/t/1258105#reply0",
+  "author": "shonspd",
+  "publishedAt": "2026-11-18T13:00:20Z",
+  "snippet": "我们是「云大哥」，官网只有这一个：https://www.clouddage.com 官方 Telegram：@clouddage 邮箱：contact@clouddage.com 谷歌搜「云大哥」时，有时会看到「大哥云」dageyun.net。那是另一家网站，和我们没有关系。付款、查订单、对官方渠道，请只认 clouddage.com。 云大哥做的是国际云账号的开通和续充，不是云厂商官方，也不是授权代理。目前可以办： 阿里云国际、腾讯...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我们是「云大哥」，官网只有这一个：<a href=\"https://www.clouddage.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.clouddage.com</a>\n官方 Telegram：@clouddage\n邮箱：<a href=\"mailto:contact@clouddage.com\" rel=\"noopener noreferrer\" target=\"_blank\">contact@clouddage.com</a></p>\n<p>谷歌搜「云大哥」时，有时会看到「大哥云」<a href=\"http://dageyun.net\" rel=\"noopener noreferrer\" target=\"_blank\">dageyun.net</a>。那是另一家网站，和我们没有关系。付款、查订单、对官方渠道，请只认 <a href=\"http://clouddage.com\" rel=\"noopener noreferrer\" target=\"_blank\">clouddage.com</a>。</p>\n<p>云大哥做的是国际云账号的开通和续充，不是云厂商官方，也不是授权代理。目前可以办：</p>\n<ul>\n<li>阿里云国际、腾讯云国际、AWS：网页自助下单</li>\n<li>Azure、Google Cloud：先和顾问沟通，再报价办理</li>\n</ul>\n<p>主要解决的是这几个实际问题：没有境外信用卡、不想走传统对公开户、希望开户和后续充值都能在订单页查到记录。结算用 USDT，应付金额以下单页报价为准，我们不挂固定价目表。</p>\n<p>流程大致是四步：</p>\n<ol>\n<li>选平台，确定是新开账号，还是给已有账号续充</li>\n<li>填邮箱和到账金额，核对页看清楚应付金额再确认</li>\n<li>按订单页上的网络、地址和金额转账，不要用聊天里单独发来的收款地址</li>\n<li>交付信息写在订单页。新账号建议先改密码、开 MFA；续充的到云平台账单页确认余额</li>\n</ol>\n<p>补充几点，避免期望错位：</p>\n<ul>\n<li>充值只受理通过云大哥开通的账号。阿里云国际用 UID，腾讯云国际用账号 ID，AWS 用登录账号，系统核验后再按该账号折扣计价</li>\n<li>不注册也能下单，但一定要保存订单号和查询码</li>\n<li>账号在云厂商侧注册和运行，配额、实名、风控都由厂商决定。我们不能保证账号不会被限制，违反厂商条款的用法请不要做</li>\n<li>云大哥不会通过私信发送收款地址，也不会索要控制台密码或验证码。碰到这类信息，直接当冒充处理</li>\n</ul>\n<p>有开户或续充需求，走官网即可。如果这篇有写错或你们实际办理中踩过坑，也欢迎直接指出，我补到官网说明里。</p>",
+  "attachments": []
+}

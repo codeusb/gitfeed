@@ -1,0 +1,15 @@
+{
+  "id": "118a1afc20ad90ba",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] Nginx http2 漏洞结合内核漏洞可实现 root 远程代码执行",
+  "link": "https://www.v2ex.com/t/1258134#reply0",
+  "author": "felixsama969",
+  "publishedAt": "2026-11-18T17:07:20Z",
+  "snippet": "nginx2root公网可识别 nginx 版本的主机中 98.9%在影响范围内（nginx 版本 1.9.5 – 1.31.8）将此漏洞与 Linux 内核 SCTP 子系统中的另一个漏洞结合使用，从而获得了主机上的 root 权限。在测试中，该漏洞链还成功绕过了运行 nginx 的 Docker 容器，并获得了底层主机的 root 权限。由 AI 耗费 90 分钟发现详细情况和缓解方案：https://nginx2root.com/...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "nginx2root<br/>公网可识别 nginx 版本的主机中 98.9%在影响范围内（nginx 版本 1.9.5 – 1.31.8）<br/><br/>将此漏洞与 Linux 内核 SCTP 子系统中的另一个漏洞结合使用，从而获得了主机上的 root 权限。在测试中，该漏洞链还成功绕过了运行 nginx 的 Docker 容器，并获得了底层主机的 root 权限。<br/><br/>由 AI 耗费 90 分钟发现<br/><br/>详细情况和缓解方案：<br/><a href=\"https://nginx2root.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://nginx2root.com/</a><br/><a href=\"https://xint.io/blog/nginx2root-remote-code-execution\" rel=\"noopener noreferrer\" target=\"_blank\">https://xint.io/blog/nginx2root-remote-code-execution</a>",
+  "attachments": []
+}

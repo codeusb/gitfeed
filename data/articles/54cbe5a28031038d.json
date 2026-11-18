@@ -1,0 +1,15 @@
+{
+  "id": "54cbe5a28031038d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了一个免翻墙 Chrome/Edge 扩展直装 + Manifest 权限体检站（CRX8）",
+  "link": "https://www.v2ex.com/t/1258089#reply3",
+  "author": "gybin02",
+  "publishedAt": "2026-11-18T11:11:11Z",
+  "snippet": "之前帮朋友找插件，经常遇到第三方下载站夹带私货、或者要关注公众号取提取码，索性自己做了个站：https://crx8.com/zh 目前主要做了三件事： 官方原包直装：不经第三方二手包，拿到的是商店里的官方原包，还能直接转成可加载的 ZIP，商店装不上时也能用； Manifest 权限体检：装之前先看清它要了哪些权限，<all_urls>、cookies、webRequest 这类高危的会标出来，帮你避坑； 独立开发者互推工作台（htt...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>之前帮朋友找插件，经常遇到第三方下载站夹带私货、或者要关注公众号取提取码，索性自己做了个站：<a href=\"https://crx8.com/zh\" rel=\"noopener noreferrer\" target=\"_blank\">https://crx8.com/zh</a></p>\n<p>目前主要做了三件事：</p>\n<ol>\n<li>官方原包直装：不经第三方二手包，拿到的是商店里的官方原包，还能直接转成可加载的 ZIP，商店装不上时也能用；</li>\n<li>Manifest 权限体检：装之前先看清它要了哪些权限，<code>&lt;all_urls&gt;</code>、cookies、webRequest 这类高危的会标出来，帮你避坑；</li>\n<li>独立开发者互推工作台（<a href=\"https://crx8.com/zh/exchange\" rel=\"noopener noreferrer\" target=\"_blank\">https://crx8.com/zh/exchange</a> ）：给做浏览器扩展的同行一个换真实试用反馈的地方，不刷评、不碰商店红线，靠积分互换冷启动。</li>\n</ol>\n<p>欢迎体验拍砖，也欢迎把你自己的扩展提交上来：<a href=\"https://crx8.com/zh/submit\" rel=\"noopener noreferrer\" target=\"_blank\">https://crx8.com/zh/submit</a></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "9c70ab96bd32aa37",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] 作为 shell 的 deepseek harness",
+  "link": "https://www.v2ex.com/t/1258115#reply2",
+  "author": "beyondstars",
+  "publishedAt": "2026-11-18T14:25:39Z",
+  "snippet": "纯好奇，多少人像我一样把 deepseek harness 当作是操作系统的一个 shell 来用的？同样是文字输入和文字输出，dsh shell 相当于提供了以自然语言方式输入输出的能力，界面和可扩展性也都挺不错的，也支持服务器 headless 部署透过 web 来访问，某种意义上，也相当于一个高级的面板/webshell 了我觉得。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>纯好奇，多少人像我一样把 deepseek harness 当作是操作系统的一个 shell 来用的？同样是文字输入和文字输出，dsh shell 相当于提供了以自然语言方式输入输出的能力，界面和可扩展性也都挺不错的，也支持服务器 headless 部署透过 web 来访问，某种意义上，也相当于一个高级的面板/webshell 了我觉得。</p>",
+  "attachments": []
+}

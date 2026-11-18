@@ -1,0 +1,15 @@
+{
+  "id": "63671930de64acb2",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个 Mac 小工具「淡出 DockQuit」：从 Dock 悬停点 × 或中键退出应用",
+  "link": "https://www.v2ex.com/t/1258131#reply0",
+  "author": "JULY235",
+  "publishedAt": "2026-11-18T15:52:47Z",
+  "snippet": "大家好，最近做了个 Mac 小工具，叫「淡出」（DockQuit），想来分享一下，也听听大家的意见。 它解决的是一个很小的问题：不用打开 Dock 的右键菜单，就能退出正在运行的应用。不替换原生 Dock，也不是强退或清理内存工具。 两种手动操作，都是免费的 鼠标停在应用图标上，点出现的 ×。 用鼠标中键点击应用图标。 它发出的是正常退出请求，未保存内容仍由应用自己提示，不会替你点「不保存」，也不会在退出失败后升级为强退。 如果操作的是...",
+  "coverImage": "https://dockquit.heino.top/assets/screenshots/settings-zh-light-20261118.webp",
+  "readTime": 1,
+  "content": "<p>大家好，最近做了个 Mac 小工具，叫「淡出」（DockQuit），想来分享一下，也听听大家的意见。</p>\n<p>它解决的是一个很小的问题：不用打开 Dock 的右键菜单，就能退出正在运行的应用。不替换原生 Dock，也不是强退或清理内存工具。</p>\n<h3>两种手动操作，都是免费的</h3>\n<ul>\n<li>鼠标停在应用图标上，点出现的 ×。</li>\n<li>用鼠标中键点击应用图标。</li>\n</ul>\n<p>它发出的是正常退出请求，未保存内容仍由应用自己提示，不会替你点「不保存」，也不会在退出失败后升级为强退。</p>\n<p>如果操作的是 Dock 中单独显示的最小化窗口缩略图，则会先还原，再关闭那一个窗口，而不是退出整个应用。收进应用图标里的窗口和浏览器标签页不在这个范围内。</p>\n<p><img alt=\"淡出设置：悬停 ×、鼠标中键和可选自动退出\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://dockquit.heino.top/assets/screenshots/settings-zh-light-20261118.webp\"/></p>\n<h3>还有一个可选的自动退出</h3>\n<p>可以给指定应用开启：当它已经没有窗口，并且你切换到其他应用后，再请求正常退出。等待时间可以选立即、15、30 或 60 秒；「立即」也要先切走并完成检查，不是一关窗口就退出。</p>\n<p>隐藏、最小化不算关窗。没有窗口也不代表没有后台任务，所以播放音乐、下载、编译这类应用，需要谨慎选择。</p>\n<p>这一项可以在 App 内主动开启 7 天试用，中国大陆目前标价 29 元一次买断，税费和最终总额以结账为准。试用不会自动扣款，到期后手动退出和单窗口操作仍然免费。</p>\n<p>给 V 友准备了 Auto-quit 的五折早鸟优惠码，需要的话在评论区留个言就可以领取。手动功能本身免费，不需要优惠码。</p>\n<p><img alt=\"淡出自动退出设置：选择应用和等待时间\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://dockquit.heino.top/assets/screenshots/autoQuit-zh-light-20261118.webp\"/></p>\n<h3>安装和下载</h3>\n<p>需要开启辅助功能权限。官网提供 Developer ID 签名并公证的 DMG，系统要求 macOS 14+，提供 Universal 安装包。</p>\n<p>官网和下载：<a href=\"https://dockquit.heino.top/zh/\" rel=\"noopener noreferrer\" target=\"_blank\">淡出 DockQuit</a></p>\n<p>如果你已经习惯 Command-Q，可能不需要它；如果更习惯用鼠标在 Dock 上处理应用，可以试试看。</p>\n<p>也想听听大家的具体反馈：悬停 × 和中键哪种更顺手？应用退出与单窗口关闭会不会容易混淆？如果遇到误触、识别不准或不该退出的情况，也欢迎告诉我对应应用和系统版本。谢谢。</p>",
+  "attachments": []
+}

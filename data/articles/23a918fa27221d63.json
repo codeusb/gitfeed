@@ -1,0 +1,15 @@
+{
+  "id": "23a918fa27221d63",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] 最近有什么场景让你发出了「AI 真有用的」感叹？",
+  "link": "https://www.v2ex.com/t/1258077#reply1",
+  "author": "scriptB0y",
+  "publishedAt": "2026-11-18T10:00:37Z",
+  "snippet": "我列一些： 在一个小的购物网站下单之前让 AI 去搜一下有没有优惠码，居然真的搜到了可以用的，立省 20% 通过 AI 学习心得技术，让 AI 给我搭建一个实验环境，然后通过 tmux socket 读我的 terminal，一步一步指导我做实验 下班时间给我推荐视频看，相比于平台算法推荐的视频，可以打破（一点）知识茧房，推荐一些自己之前不知道的东西",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我列一些：</p>\n<ul>\n<li>在一个小的购物网站下单之前让 AI 去搜一下有没有优惠码，居然真的搜到了可以用的，立省 20%</li>\n<li>通过 AI 学习心得技术，让 AI 给我搭建一个实验环境，然后通过 tmux socket 读我的 terminal，一步一步指导我做实验</li>\n<li>下班时间给我推荐视频看，相比于平台算法推荐的视频，可以打破（一点）知识茧房，推荐一些自己之前不知道的东西</li>\n</ul>",
+  "attachments": []
+}
