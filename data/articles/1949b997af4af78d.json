@@ -1,0 +1,15 @@
+{
+  "id": "1949b997af4af78d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[宽带症候群] 境外公共数据集搬运国内",
+  "link": "https://www.v2ex.com/t/1258392#reply3",
+  "author": "hanh1985",
+  "publishedAt": "2026-11-19T15:52:21Z",
+  "snippet": "想把境外的公共数据集（一般几百 G 一批）下载搬运到网盘上（比如百度网盘），搞了个海外的不限流量的 VPS，下载到 VPS 上再上传网盘，但是感觉这样有点亏硬盘空间（也探索过 alist 这样的方案）。有没有流式传输的方法，尽量减少对硬盘的占用。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "想把境外的公共数据集（一般几百 G 一批）下载搬运到网盘上（比如百度网盘），搞了个海外的不限流量的 VPS，下载到 VPS 上再上传网盘，但是感觉这样有点亏硬盘空间（也探索过 alist 这样的方案）。有没有流式传输的方法，尽量减少对硬盘的占用。",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "9a349920f3e72b26",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "I built Cornhole News. A Hacker News inspired site for news across the Midwest",
+  "link": "https://cornholenews.news",
+  "author": "cornholemedia",
+  "publishedAt": "2026-11-19T15:38:32Z",
+  "snippet": "Article URL: https://cornholenews.news Comments URL: https://news.ycombinator.com/item?id=50561515 Points: 80 # Comments: 40",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://cornholenews.news\" rel=\"noopener noreferrer\" target=\"_blank\">https://cornholenews.news</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50561515\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50561515</a></p>\n<p>Points: 80</p>\n<p># Comments: 40</p>",
+  "attachments": []
+}

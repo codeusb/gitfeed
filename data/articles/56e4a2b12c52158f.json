@@ -1,0 +1,15 @@
+{
+  "id": "56e4a2b12c52158f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 使用 t3 code 会导致封号吗？",
+  "link": "https://www.v2ex.com/t/1258351#reply0",
+  "author": "CodeY99",
+  "publishedAt": "2026-11-19T10:57:39Z",
+  "snippet": "最近看 t3 code 好像宣发很猛。感觉 Codex 最近好像越来越臃肿而且 UI 偶尔渲染 markdown 还有问题。就想着试试 t3 code 不过前两天在 B 站还看到创始人的一些分享。看到他建议大家用 CLI Proxy 。按理来说这种反代是不被允许的吧。他是不是没考虑过这种风险问题？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近看 t3 code 好像宣发很猛。感觉 Codex 最近好像越来越臃肿而且 UI 偶尔渲染 markdown 还有问题。就想着试试 t3 code\n不过前两天在 B 站还看到创始人的一些分享。看到他建议大家用 CLI Proxy 。按理来说这种反代是不被允许的吧。他是不是没考虑过这种风险问题？</p>",
+  "attachments": []
+}

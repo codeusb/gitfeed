@@ -1,0 +1,15 @@
+{
+  "id": "4d2a98e0e17682ab",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 有没有人帮忙测试一下这个网站 https://thesafety.us/check-ip 看看有没有 dns 泄露",
+  "link": "https://www.v2ex.com/t/1258388#reply1",
+  "author": "fcoo",
+  "publishedAt": "2026-11-19T15:07:26Z",
+  "snippet": "我在这个 https://browserleaks.com/dns 这个网站检测全是 Google 的 dns 地址，以及搜索了其他几个 dns 检测网站也全是 Google 的。唯独这个 https://thesafety.us/check-ip 这个能检测出来包含中国的 dns，以前用这个网站检测过都检测不出的。不知道最近他们是更新了什么还是什么其他原因，我这个配置也没有改动过，突然就给我检测出来，工具是 v2rayN，不管是绕过大...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "我在这个 <a href=\"https://browserleaks.com/dns\" rel=\"noopener noreferrer\" target=\"_blank\">https://browserleaks.com/dns</a> 这个网站检测全是 Google 的 dns 地址，以及搜索了其他几个 dns 检测网站也全是 Google 的。<br/><br/>唯独这个 <a href=\"https://thesafety.us/check-ip\" rel=\"noopener noreferrer\" target=\"_blank\">https://thesafety.us/check-ip</a> 这个能检测出来包含中国的 dns，以前用这个网站检测过都检测不出的。<br/><br/>不知道最近他们是更新了什么还是什么其他原因，我这个配置也没有改动过，突然就给我检测出来，<br/><br/>工具是 v2rayN，不管是绕过大陆还是全局在这个网站都能检测出来，但是开 TUN 就检测不出来了。",
+  "attachments": []
+}

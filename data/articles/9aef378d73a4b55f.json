@@ -1,0 +1,15 @@
+{
+  "id": "9aef378d73a4b55f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 给 Google Antigravity 做了套状态监控套件：支持 2.0 桌面端右侧常驻面板 + CLI 状态栏（实时 tok/s 速度趋势、缓存命中率、剩余额度，100% 本地只读零风控）",
+  "link": "https://www.v2ex.com/t/1258361#reply1",
+  "author": "2fa0",
+  "publishedAt": "2026-11-19T11:55:27Z",
+  "snippet": "最近 Gemini 也是支棱起来了， 但是不敢搞反代只能用 agy 体验是真的抽象，平时写代码时经常有几个痛点： 体感变慢时不知道是幻觉还是真降速了：有时模型思考半天，想知道上一轮到底跑了多少 tok/s，有没有掉到 50 tok/s 以下； 上下文和 Prompt 缓存是个黑盒：会话长了之后不知道 Ctx 占了多少比例、Cache hit 命中率高不高； CLI 下看不同模型池的剩余额度不直观：Gemini / Argon / Cla...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近 Gemini 也是支棱起来了， 但是不敢搞反代只能用 agy 体验是真的抽象，平时写代码时经常有几个痛点：</p>\n<ul>\n<li>体感变慢时不知道是幻觉还是真降速了：有时模型思考半天，想知道上一轮到底跑了多少 tok/s，有没有掉到 50 tok/s 以下；</li>\n<li>上下文和 Prompt 缓存是个黑盒：会话长了之后不知道 Ctx 占了多少比例、Cache hit 命中率高不高；</li>\n<li>CLI 下看不同模型池的剩余额度不直观：Gemini / Argon / Claude (3p) 的 5h 和周额度希望能一眼看到。</li>\n</ul>\n<p>然后我就缝了一套代码，覆盖 Antigravity 2.0 桌面端 和 Antigravity CLI 的轻量状态监控工具。</p>\n<p>GitHub 仓库：<a href=\"https://github.com/2fa0/agy-statusline\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/2fa0/agy-statusline</a></p>\n<p>有兴趣的 v2er 可以试试？顺便给我点点 star 哈哈</p>",
+  "attachments": []
+}

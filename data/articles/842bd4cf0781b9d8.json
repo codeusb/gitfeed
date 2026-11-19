@@ -1,0 +1,15 @@
+{
+  "id": "842bd4cf0781b9d8",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [开源推广] Antigravity 实时遥测仪表盘",
+  "link": "https://www.v2ex.com/t/1258346#reply0",
+  "author": "lukaktus6768",
+  "publishedAt": "2026-11-19T10:14:28Z",
+  "snippet": "开源地址 https://github.com/DDG0808/antigravity-viewer-pulse 支持功能 端到端 tok/s 真实生成速度校准 渐进式 Prompt 缓存命中率监控 上下文监控 提示词防幻觉精简 一键汉化 Antigravity",
+  "coverImage": "https://ny-1s.enzonix.com/bucket-1869-2508/2026/11/9b3ee4c1d6ca48f5cb06fd175250489f.png",
+  "readTime": 1,
+  "content": "<p>开源地址\n<a href=\"https://github.com/DDG0808/antigravity-viewer-pulse\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/DDG0808/antigravity-viewer-pulse</a></p>\n<p>支持功能</p>\n<ol>\n<li>端到端 tok/s 真实生成速度校准</li>\n<li>渐进式 Prompt 缓存命中率监控</li>\n<li>上下文监控</li>\n<li>提示词防幻觉精简</li>\n<li>一键汉化 Antigravity</li>\n</ol>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://ny-1s.enzonix.com/bucket-1869-2508/2026/11/9b3ee4c1d6ca48f5cb06fd175250489f.png\"/>\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://ny-1s.enzonix.com/bucket-1869-2508/2026/11/dc5b3c01854f781aef464bb570b13801.png\"/>\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://ny-1s.enzonix.com/bucket-1869-2508/2026/11/ea9f564740f841df6276a90b8831e45a.png\"/>\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://ny-1s.enzonix.com/bucket-1869-2508/2026/11/fb07db53da6dd52a0a00070b077c40ae.png\"/></p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://ny-1s.enzonix.com/bucket-1869-2508/2026/11/6cc601346a64f0caccb47d0f11db6172.png\"/></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "5b100e6199afb48b",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [开发者自荐] 不想给第二台电脑再买一套键鼠，做了 SynDesk",
+  "link": "https://www.v2ex.com/t/1258376#reply3",
+  "author": "createitv",
+  "publishedAt": "2026-11-19T13:29:01Z",
+  "snippet": "买第二台电脑的时候，我想的是它能帮自己做什么。真正摆到桌上，才发现还得考虑：键盘和鼠标怎么办？ 同样用途的设备再买一遍，多花一笔钱，桌上也更挤。如果还要在另一台开会，麦克风和耳机又得重新安排。于是我做了 SynDesk，希望已经用顺手的一套设备，也能照顾另一台电脑。 现在能做什么 同一局域网内，按实际屏幕布局跨电脑移动鼠标，键盘跟随输入。 共享剪贴板，接续文字、链接和代码片段，具体格式取决于系统和版本。 共享真实麦克风，接收端会议软件可...",
+  "coverImage": "https://syndesk.app/articles/share-your-desk/%E5%B7%A5%E4%BD%9C%E5%8C%BA-%E7%94%A8%E6%88%B7%E5%AE%9E%E6%8B%8D.png",
+  "readTime": 1,
+  "content": "<p>买第二台电脑的时候，我想的是它能帮自己做什么。真正摆到桌上，才发现还得考虑：键盘和鼠标怎么办？</p>\n<p>同样用途的设备再买一遍，多花一笔钱，桌上也更挤。如果还要在另一台开会，麦克风和耳机又得重新安排。于是我做了 SynDesk，希望已经用顺手的一套设备，也能照顾另一台电脑。</p>\n<h2>现在能做什么</h2>\n<ul>\n<li>同一局域网内，按实际屏幕布局跨电脑移动鼠标，键盘跟随输入。</li>\n<li>共享剪贴板，接续文字、链接和代码片段，具体格式取决于系统和版本。</li>\n<li>共享真实麦克风，接收端会议软件可选择 SynDesk Microphone。</li>\n<li>把另一台电脑的选定声音回传到主机播放。</li>\n</ul>\n<h3>实际工作区</h3>\n<p>在工作区查看电脑布局、连接状态，以及音频、麦克风和安全连接选项。</p>\n<p><img alt=\"SynDesk 实际工作区：电脑布局、连接状态与音频共享\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://syndesk.app/articles/share-your-desk/%E5%B7%A5%E4%BD%9C%E5%8C%BA-%E7%94%A8%E6%88%B7%E5%AE%9E%E6%8B%8D.png\"/></p>\n<h3>按桌面的实际位置排列电脑</h3>\n<p>在服务端配置中调整各台电脑的位置，让鼠标移动方向对应真实桌面布局。</p>\n<p><img alt=\"SynDesk 服务端配置：按实际位置排列电脑\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://syndesk.app/articles/share-your-desk/%E7%94%B5%E8%84%91%E5%B8%83%E5%B1%80-%E7%94%A8%E6%88%B7%E5%AE%9E%E6%8B%8D.png\"/></p>\n<p>两端分别安装应用，配置共享端、接收端和屏幕位置，核对连接设备与 TLS 指纹。音频需要相应组件和系统权限，并在实际会议软件里检查输入；外放场景还需配置回声处理。</p>\n<p>官网和下载：<a href=\"https://syndesk.app/\" rel=\"noopener noreferrer\" target=\"_blank\">https://syndesk.app/</a></p>\n<p>产品介绍与界面截图：<a href=\"https://syndesk.app/articles/share-your-desk/\" rel=\"noopener noreferrer\" target=\"_blank\">https://syndesk.app/articles/share-your-desk/</a></p>\n<p>我就是这个产品的开发者，欢迎反馈自己的双机配置，以及现在最麻烦的切换发生在哪里。</p>\n<h2>首发体验授权</h2>\n<p>本次准备了 300 份免费码：1 个月 120 份、半年 40 份、1 年 40 份、永久 100 份，每份最多支持 3 台电脑。</p>\n<p>活动页：<a href=\"https://syndesk.app/campaigns/app-launch-redemption-code-campaign/\" rel=\"noopener noreferrer\" target=\"_blank\">https://syndesk.app/campaigns/app-launch-redemption-code-campaign/</a></p>\n<p>兑换方法：登录活动页 → 点击开码 → 复制兑换码 → 前往账号页兑换。揭晓会绑定账号，但不会开始授权计时；限时授权从兑换开始计算。</p>\n<p>北京时间 2026 年 11 月 22 日 11:02:36 截止。每个账号、邮箱及公网 IP 各限兑换一次，共用网络可能共用名额。兑换时需同意展示脱敏邮箱及兑换时间。请先确认桌面版本支持该授权。</p>\n<h2>加入用户群</h2>\n<p>欢迎扫码交流双机体验、反馈问题和功能建议。二维码标注有效期至 2026 年 11 月 26 日前。</p>\n<p><img alt=\"SynDesk 用户群二维码\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://typora-1300715298.cos.ap-shanghai.myqcloud.com/uPic/articles/syndesk-20261119/user-group.jpg\"/></p>",
+  "attachments": []
+}

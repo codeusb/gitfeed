@@ -1,0 +1,15 @@
+{
+  "id": "91929716ff30529c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[OpenAI] codex 配置成 http 模式是不是好点？",
+  "link": "https://www.v2ex.com/t/1258386#reply4",
+  "author": "jiuzhougege",
+  "publishedAt": "2026-11-19T14:52:21Z",
+  "snippet": "最近两天总是正在连接 5/5。然后 stream disconnected before completion: error sending request默认 websocket 对网络要求太高了",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "最近两天总是正在连接 5/5。然后 stream disconnected before completion: error sending request<br/><br/>默认 websocket 对网络要求太高了",
+  "attachments": []
+}

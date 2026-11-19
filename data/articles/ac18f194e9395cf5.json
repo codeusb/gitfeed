@@ -1,0 +1,15 @@
+{
+  "id": "ac18f194e9395cf5",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Someone reported java4shell bug in September 2026",
+  "link": "https://github.com/openjdk/jdk/pull/32781",
+  "author": "notmine1337",
+  "publishedAt": "2026-11-19T11:47:03Z",
+  "snippet": "Article URL: https://github.com/openjdk/jdk/pull/32781 Comments URL: https://news.ycombinator.com/item?id=50558906 Points: 208 # Comments: 51",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/openjdk/jdk/pull/32781\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/openjdk/jdk/pull/32781</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50558906\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50558906</a></p>\n<p>Points: 208</p>\n<p># Comments: 51</p>",
+  "attachments": []
+}

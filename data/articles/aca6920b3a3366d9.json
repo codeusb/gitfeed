@@ -1,0 +1,15 @@
+{
+  "id": "aca6920b3a3366d9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 一个 chatgpt 聊天优化插件",
+  "link": "https://www.v2ex.com/t/1258399#reply0",
+  "author": "dtsd",
+  "publishedAt": "2026-11-19T17:04:05Z",
+  "snippet": "这是一个 codex 客户端 chat 端的优化小插件，主要用于在 chatgpt 回答的内容上进行提问，与原版提问不同的是，我这个是额外开一个小框来提问，这样就可以避免进行提问后需要回上文找中断的地方，可以不用那么麻烦，github 链接为：https://github.com/x549d/context-notes-native 该插件目前还比较早期，希望大家体验后能提供一些需要改进的问题",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>这是一个 codex 客户端 chat 端的优化小插件，主要用于在 chatgpt 回答的内容上进行提问，与原版提问不同的是，我这个是额外开一个小框来提问，这样就可以避免进行提问后需要回上文找中断的地方，可以不用那么麻烦，github 链接为：<a href=\"https://github.com/x549d/context-notes-native\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/x549d/context-notes-native</a></p>\n<p>该插件目前还比较早期，希望大家体验后能提供一些需要改进的问题</p>",
+  "attachments": []
+}

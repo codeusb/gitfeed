@@ -1,0 +1,15 @@
+{
+  "id": "508b18fb67af34e8",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[VPS] 我的搬瓦工 IP 能 ping ，但 reality 和 hy2 都用不了",
+  "link": "https://www.v2ex.com/t/1258365#reply6",
+  "author": "hookybaby",
+  "publishedAt": "2026-11-19T12:18:06Z",
+  "snippet": "RT，昨天还好好的，今天就用不了了，换端口也不行，但能 ping 通， ping.pe 国内也是通的，你们的 vps 有没有这样的问题呀？协议要换了？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "RT，昨天还好好的，今天就用不了了，换端口也不行，但能 ping 通， <a href=\"http://ping.pe\" rel=\"noopener noreferrer\" target=\"_blank\">ping.pe</a> 国内也是通的，你们的 vps 有没有这样的问题呀？协议要换了？",
+  "attachments": []
+}

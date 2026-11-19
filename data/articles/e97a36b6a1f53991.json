@@ -1,0 +1,15 @@
+{
+  "id": "e97a36b6a1f53991",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] 本地部署的大模型 Edge0",
+  "link": "https://www.v2ex.com/t/1258389#reply0",
+  "author": "osilinka",
+  "publishedAt": "2026-11-19T15:21:27Z",
+  "snippet": "https://github.com/Edge0-AI/Edge0 Device-native foundation models: 145B on a laptop, 35B on a phone. Latent MoE, SSD-streamed weights, a router that predicts loads a step ahead. Mac, iPhone, Android, Windows. 感觉这个，加上一些订阅...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><a href=\"https://github.com/Edge0-AI/Edge0\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/Edge0-AI/Edge0</a>\nDevice-native foundation models: 145B on a laptop, 35B on a phone. Latent MoE, SSD-streamed weights, a router that predicts loads a step ahead. Mac, iPhone, Android, Windows.</p>\n<p>感觉这个，加上一些订阅的模型\n可以省很多成本啊</p>",
+  "attachments": []
+}

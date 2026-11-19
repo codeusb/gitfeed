@@ -1,0 +1,15 @@
+{
+  "id": "e93e7a362b42eb99",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[网络安全] PHP 今晚将发布严重安全更新，宝塔已安排技术人员跟进",
+  "link": "https://www.v2ex.com/t/1258358#reply3",
+  "author": "btpanel",
+  "publishedAt": "2026-11-19T11:37:13Z",
+  "snippet": "PHP 安全团队于 11 月 18 日发布预告，计划在北京时间 11 月 19 日 22:00–22:30 发布安全修复版本。 此次更新属于 PHP 常规发布周期，将修复影响所有受支持版本的安全漏洞，其中最高严重等级为 CRITICAL。 需要注意的是，官方明确说明，相关 CRITICAL 级别漏洞需要非默认配置或不常见的运行环境才会触发，具体漏洞细节及修复版本号尚未公布。 宝塔已安排技术人员今晚值守，在 PHP 官方发布新版本后尽快开...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>PHP 安全团队于 11 月 18 日发布预告，计划在北京时间 11 月 19 日 22:00–22:30 发布安全修复版本。</p>\n<p>此次更新属于 PHP 常规发布周期，将修复影响所有受支持版本的安全漏洞，其中最高严重等级为 CRITICAL。</p>\n<p>需要注意的是，官方明确说明，相关 CRITICAL 级别漏洞需要非默认配置或不常见的运行环境才会触发，具体漏洞细节及修复版本号尚未公布。</p>\n<p>宝塔已安排技术人员今晚值守，在 PHP 官方发布新版本后尽快开展构建、兼容性测试和验证工作，测试通过后推送面板更新。</p>\n<p>我们会持续跟进上游安全更新，并尽可能缩短从官方发布到面板可用的时间。</p>\n<p>PHP 官方公告：\n<a href=\"https://www.php.net/archive/2026.php#2026-11-18-1\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.php.net/archive/2026.php#2026-11-18-1</a></p>",
+  "attachments": []
+}
