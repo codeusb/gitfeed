@@ -1,0 +1,15 @@
+{
+  "id": "af26c99b5629b323",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Multiple vulnerabilities in Regexp and String case conversion",
+  "link": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+  "author": "runesoerensen",
+  "publishedAt": "2026-11-18T23:52:50Z",
+  "snippet": "Article URL: https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/ Comments URL: https://news.ycombinator.com/item?id=50554038 Points: 217 # Comments: 71",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50554038\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50554038</a></p>\n<p>Points: 217</p>\n<p># Comments: 71</p>",
+  "attachments": []
+}

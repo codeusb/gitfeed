@@ -1,0 +1,15 @@
+{
+  "id": "8ece48ebe5df24aa",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 给大家分享一下我历时多年呕心沥血的作品 Meep「送会员」",
+  "link": "https://www.v2ex.com/t/1258305#reply0",
+  "author": "zy199226",
+  "publishedAt": "2026-11-19T07:56:08Z",
+  "snippet": "这是我前几年就想要做的产品，那个时候还没有 AI，技术选型 nestjs + Flutter，断断续续的做了一部分，中间有事情要忙就停了 直到今年才又捡起来想要好好的做起来，重新用 go+RN 实现，产品方向还是保持不变 这个产品首先是一个日程管理，但也不单纯是一个日程管理，按我的想法是，人的一生是有很多事情想要去做的，目前正在做的，未来确定要做的，正在和确定要做的只需要提醒就好了，普通的日程管理就能实现 但想要去做的呢，今天想想，明天...",
+  "coverImage": "https://i.imgur.com/xQtXSoi.png",
+  "readTime": 1,
+  "content": "<p>这是我前几年就想要做的产品，那个时候还没有 AI，技术选型 nestjs + Flutter，断断续续的做了一部分，中间有事情要忙就停了</p>\n<p>直到今年才又捡起来想要好好的做起来，重新用 go+RN 实现，产品方向还是保持不变</p>\n<p><img alt=\"700\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/xQtXSoi.png\"/></p>\n<p>这个产品首先是一个日程管理，但也不单纯是一个日程管理，按我的想法是，人的一生是有很多事情想要去做的，目前正在做的，未来确定要做的，正在和确定要做的只需要提醒就好了，普通的日程管理就能实现</p>\n<p>但想要去做的呢，今天想想，明天想想，偶尔想想，然后就忘记了，所以第一个特别的功能是，可以添加未来计划，不设置明确的时间，就是想去做的事情，只要你不删，就一直在待完成列表里面</p>\n<p><img alt=\"syqvAR1.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/syqvAR1.png\"/></p>\n<p>人类的绝大多数爱好总是类似的，想要做的事情也总会有同好，那么这些想要去做的事情是否可以分享呢？</p>\n<p>我个人认为是可以分享的，当前在坚持能让人向好的计划，吃过好吃的店，去过的好玩的地方，未来想要实现的计划，这些都可以在自己的计划时间线里面，也可以把这些已完成的、待完成的通过聊天、发布笔记分享出去</p>\n<p>让其他的同好一键添加为自己的计划，也可以加入别人分享的计划，我们的计划是可以允许其他人加入的，可以是一群人计划出去玩，大家一起完成一份出行计划，由你们的发起人发布并分享，其他人加入，这样大家就都能看到这一份实时更新的出行计划</p>\n<p><img alt=\"UnOVoNd.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/HTqDWgS.png\"/></p>\n<p>还有一个功能是为各位喜欢运动的朋友做的，这个功能也是我认为和日程计划相关度最高的，就是在新建计划里面可以添加运动（健身），你可以安排明确的训练计划，三分化、五分化、每天有氧计划等，计划完成之后数值也会保存的，可以隔一段时间就回顾一下历史数据变化，看自己是否有变得更强</p>\n<p>内置有基础能用的训练分类，也可以是自己或别人发布的运动笔记，都可以添加到运动计划内，运动笔记可设置项还是蛮多的，我个人觉得是够用了</p>\n<p>还有一个当前比较鸡肋的专业号功能，就是专业号是可以发布橱窗计划的，相当于一个预约系统，一个在某方面特别厉害的人，其实是可以传授这些知识、技能的，分享自己的有趣时间的</p>\n<p>举个例子：一个健身教练是可以出售分享自己课时的，其他人可以通过这个橱窗计划预约上课时间，约好之后会在双方的日程计划内显示这个计划提醒上课（有针对健身特定开发了一个老师查看对方历史运动训练数据的功能）</p>\n<p>我觉得会吃、会玩、有特别技能的都可以向别人分享自己的时间，可以带别人在自己的城市玩一整天，可以教别人乐器，可以为别人做一顿好吃的，只要有需求总有人会愿意付费尝试的，当然现在这个橱窗功能还比较简陋，只有预约管理计划功能</p>\n<p>客户端名是 Meep，苹果、OPPO、vivo、小米、荣耀、华为、应用宝都已上架，或者<a href=\"https://www.meepmeep.cn/download\" rel=\"noopener noreferrer\" target=\"_blank\">官网下载</a>，希望这是一个有用的产品，各位大哥靓女可以多给点建议，如果使用过程中有问题可以直接找我，下面是我的 v</p>\n<p><img alt=\"JvgUS9q.jpeg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/JvgUS9q.jpeg\"/></p>\n<p>现在愁的是怎么推广产品，各位帅哥美女如果有好的建议，请一定要联系我，确实有效的，我会另外准备奖励的（当前还比较穷，请不要介意）</p>\n<p>最后奉上专业号兑换码，客户端扫码就可以领取 3 个月的专业号，或者<a href=\"https://www.meepmeep.cn/promo/redeem/ABHD6UQVV4JG\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.meepmeep.cn/promo/redeem/ABHD6UQVV4JG</a>打开这个兑换码链接领取</p>\n<p><img alt=\"3mdSNw4.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/3mdSNw4.png\"/></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fcfef940e1dc641d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] YAMLResume v0.18 更新：全新 Typst 排版引擎",
+  "link": "https://www.v2ex.com/t/1258289#reply0",
+  "author": "xiaohanyu",
+  "publishedAt": "2026-11-19T07:15:45Z",
+  "snippet": "各位好， YAMLResume 最近发布了 v0.18，在这里简单分享一下。 全新的 Typst 排版引擎 之前 YAMLResume 只支持 LaTeX 一条 PDF 排版路径，这个版本加入了 Typst 引擎。现在同一份 YAML 简历可以同时输出 LaTeX 和 Typst 两份源码，并分别编译成 PDF（分别命名为 resume.tex.pdf 和 resume.typ.pdf）。Typst 本身安装体积小、编译快，官方 Doc...",
+  "coverImage": "https://yamlresume.dev/static/images/docs/layouts/typst/templates/jake-template.webp",
+  "readTime": 1,
+  "content": "<p>各位好，</p>\n<p><a href=\"https://yamlresume.dev\" rel=\"noopener noreferrer\" target=\"_blank\">YAMLResume</a> 最近发布了 <a href=\"https://yamlresume.dev/zh-cn/blog/v0.18\" rel=\"noopener noreferrer\" target=\"_blank\">v0.18</a>，在这里简单分享一下。</p>\n<h2>全新的 Typst 排版引擎</h2>\n<p>之前 YAMLResume 只支持 LaTeX 一条 PDF 排版路径，这个版本加入了 <a href=\"https://typst.app/\" rel=\"noopener noreferrer\" target=\"_blank\">Typst</a> 引擎。现在同一份 YAML 简历可以同时输出 LaTeX 和 Typst 两份源码，并分别编译成 PDF（分别命名为 <code>resume.tex.pdf</code> 和 <code>resume.typ.pdf</code>）。Typst 本身安装体积小、编译快，<a href=\"https://yamlresume.dev/docs/contributing/docker\" rel=\"noopener noreferrer\" target=\"_blank\">官方 Docker 镜像</a> 已内置 Typst 0.15.1，不需要额外安装。</p>\n<p>首个 Typst 模板是 <a href=\"https://yamlresume.dev/gallery/templates/typst/jake\" rel=\"noopener noreferrer\" target=\"_blank\">jake</a>，移植了简洁、ATS 友好的 Jake 设计，支持本地化术语、Markdown 摘要、强调色、图标、CJK 字体回退等：</p>\n<p><img alt=\"YAMLResume Typst Jake Template\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://yamlresume.dev/static/images/docs/layouts/typst/templates/jake-template.webp\"/></p>\n<p>写法大概是这样：</p>\n<pre><code>layouts:\n  - engine: typst\n    template: jake\n    typography:\n      fontSize: 10pt\n    theme:\n      colors:\n        accent: burgundy\n</code></pre>\n<p>YAMLResume typst 引擎支持各种定制选项，包括字体、字体大小、页边距、页码、主题色等等</p>\n<h2>样例简历翻倍至 20 份，新增了对意大利语的支持</h2>\n<p>样例库从 10 份扩充到 20 份，覆盖技术、设计、商业、医疗、公共服务等更多职位，每份样例都有全部 13 个语言区域版本。</p>\n<pre><code>yamlresume samples list\n</code></pre>\n<p>同时新增 Italian（it），现在支持 11 种语言、13 个区域代码。</p>\n<h2>统一的链接下划线控制</h2>\n<p>typography.links.underline 选项现在可以一致地应用于 LaTeX、Typst、HTML、DOCX 四种引擎，链接样式约定全平台统一。</p>\n<p>其他改进：</p>\n<ul>\n<li>PDF 构建诊断更清晰：编译器警告直接显示，成功前会校验产物存在且非空</li>\n<li>内置 AI 生成/翻译命令更新默认模型（DeepSeek、Kimi、OpenAI、Ollama）</li>\n</ul>\n<p>希望有用哈！</p>\n<p>Playground 在线体验：<a href=\"https://yamlresume.dev/zh-cn/playground?sample=software-engineer&amp;locale=en&amp;engine=typst&amp;template=jake\" rel=\"noopener noreferrer\" target=\"_blank\">https://yamlresume.dev/zh-cn/playground?sample=software-engineer&amp;locale=en&amp;engine=typst&amp;template=jake</a></p>\n<p>GitHub 上的 showcase: <a href=\"https://github.com/yamlresume/yamlresume/discussions/50\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/yamlresume/yamlresume/discussions/50</a></p>",
+  "attachments": []
+}

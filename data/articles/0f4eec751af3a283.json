@@ -1,0 +1,15 @@
+{
+  "id": "0f4eec751af3a283",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[酷工作] [Microsoft] GPU Model Optimization 实习生 - 北京/苏州/上海",
+  "link": "https://www.v2ex.com/t/1258287#reply0",
+  "author": "sxw",
+  "publishedAt": "2026-11-19T07:15:19Z",
+  "snippet": "最近我们组在招 GPU Model Optimization 实习生，如果你对 LLM、GPU、CUDA、AI Infra 感兴趣，欢迎来聊～ 我们做的不是 Demo，也不是简单调 API，而是真正让大模型能够高效跑在生产环境。 平时主要会接触到： ✅ LLM / Multimodal Model Serving ✅ GPU Kernel Optimization ✅ CUDA / Triton ✅ Quantization ✅ Spe...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近我们组在招 GPU Model Optimization 实习生，如果你对 LLM、GPU、CUDA、AI Infra 感兴趣，欢迎来聊～\n我们做的不是 Demo，也不是简单调 API，而是真正让大模型能够高效跑在生产环境。</p>\n<p>平时主要会接触到：</p>\n<p>✅ LLM / Multimodal Model Serving</p>\n<p>✅ GPU Kernel Optimization</p>\n<p>✅ CUDA / Triton</p>\n<p>✅ Quantization</p>\n<p>✅ Speculative Decoding</p>\n<p>✅ KV Cache &amp; Batching</p>\n<p>✅ Distributed Training &amp; Inference</p>\n<p>✅ AI Agent for Model Optimization</p>\n<p>一句话来说，就是研究如何让大模型更快、更便宜、更稳定地运行。</p>\n<p>⸻</p>\n<h1>你可能会做什么</h1>\n<p>优化 LLM 和多模态模型推理性能</p>\n<p>做 GPU Profiling，分析性能瓶颈</p>\n<p>编写 CUDA / Triton Kernel</p>\n<p>优化模型延迟、吞吐和 GPU 利用率</p>\n<p>开发自动化 Benchmark 和 Performance Tool</p>\n<p>和模型研究员一起探索新的模型架构和推理方案</p>\n<p>⸻</p>\n<h1>希望你</h1>\n<p>✔️ CS/EE/AI 等相关专业</p>\n<p>✔️ 有不错的算法和工程基础</p>\n<p>✔️ 做过 ML、LLM 或 GPU 相关项目</p>\n<p>如果会下面这些会非常加分：</p>\n<p>⭐ CUDA</p>\n<p>⭐ Triton</p>\n<p>⭐ PyTorch</p>\n<p>⭐ vLLM</p>\n<p>⭐ TensorRT-LLM</p>\n<p>⭐ SGLang</p>\n<p>⭐ FlashAttention</p>\n<p>⭐ CUTLASS</p>\n<p>⸻</p>\n<h1>为什么值得来？</h1>\n<p>我们希望实习生能够真正参与核心项目，而不仅仅是完成一些边缘任务。</p>\n<p>你将有机会：</p>\n<p>🚀 接触世界领先的大模型生产系统</p>\n<p>🚀 优化运行在数千张 GPU 上的模型</p>\n<p>🚀 与模型研究员、架构师和基础设施工程师合作</p>\n<p>🚀 学习工业界 AI Serving 的完整链路</p>\n<p>🚀 做出的优化有机会直接上线，为真实业务带来性能提升</p>\n<h1>实习信息</h1>\n<p>到岗时间：近 1-2 个月可以到岗</p>\n<p>投递方式：简历请发送至 <a href=\"mailto:yiqxia@microsoft.com\" rel=\"noopener noreferrer\" target=\"_blank\">yiqxia@microsoft.com</a></p>",
+  "attachments": []
+}

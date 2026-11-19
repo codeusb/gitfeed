@@ -1,0 +1,15 @@
+{
+  "id": "df389dbcae1b88d2",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 终于解决了 GPT 的降智问题",
+  "link": "https://www.v2ex.com/t/1258273#reply3",
+  "author": "zw1196650986",
+  "publishedAt": "2026-11-19T06:32:27Z",
+  "snippet": "最近一直苦于 GPT 的“降智”问题，折腾了一段时间，尝试通过 ChatGPT Excel / Basispoints（BPS）通道调用模型，现在把相关实现整理开源了，欢迎大家测试交流。 项目叫 bps-local，使用 Go 编写，在本地提供 Responses API 接口，将请求转换为 BPS WebSocket 请求。支持浏览器授权和设备码授权，方便接入已有的客户端。 项目地址：https://github.com/sunboy...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近一直苦于 GPT 的“降智”问题，折腾了一段时间，尝试通过 ChatGPT Excel / Basispoints（BPS）通道调用模型，现在把相关实现整理开源了，欢迎大家测试交流。</p>\n<p>项目叫 <strong>bps-local</strong>，使用 Go 编写，在本地提供 Responses API 接口，将请求转换为 BPS WebSocket 请求。支持浏览器授权和设备码授权，方便接入已有的客户端。</p>\n<p>项目地址：<a href=\"https://github.com/sunboyzoey/bps-local-public\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/sunboyzoey/bps-local-public</a></p>\n<p>这里的“解决”是针对我遇到的问题和目前的测试体验，不保证所有账号、所有场景都有相同效果。项目并非 OpenAI 官方产品，上游接口和模型权限也可能变化。具体使用方法见仓库 README，欢迎提交 Issue、分享对比结果，一起完善。</p>\n<p>觉得有用的朋友，可以帮忙点个 <strong>Star ⭐</strong>，谢谢！</p>",
+  "attachments": []
+}

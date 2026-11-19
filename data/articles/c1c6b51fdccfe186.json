@@ -1,0 +1,15 @@
+{
+  "id": "c1c6b51fdccfe186",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Visual Studio Code] 你们有没有感觉 vscode 更新很慢？",
+  "link": "https://www.v2ex.com/t/1258261#reply0",
+  "author": "DawnMoon",
+  "publishedAt": "2026-11-19T06:03:36Z",
+  "snippet": "vscode 更新用的是 vscode.download.prss.microsoft.com 这个域名，但在我这边（江苏）会解析到天津、黑龙江那边的电信 CDN，下载很慢（300kB/s 左右），还不如全走代理出国。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>vscode 更新用的是 <a href=\"http://vscode.download.prss.microsoft.com\" rel=\"noopener noreferrer\" target=\"_blank\">vscode.download.prss.microsoft.com</a> 这个域名，但在我这边（江苏）会解析到天津、黑龙江那边的电信 CDN，下载很慢（300kB/s 左右），还不如全走代理出国。</p>",
+  "attachments": []
+}

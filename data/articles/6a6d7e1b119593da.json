@@ -1,0 +1,15 @@
+{
+  "id": "6a6d7e1b119593da",
+  "feedId": "36氪",
+  "feedTitle": "36氪",
+  "category": "t-language",
+  "title": "火山引擎上线豆包实时音视频通话模型API服务",
+  "link": "https://36kr.com/newsflashes/4076323154154632?f=rss",
+  "author": "36氪",
+  "publishedAt": "2026-11-19T06:50:20Z",
+  "snippet": "36氪获悉，火山引擎正式上线豆包实时音视频通话模型(SeedRealtime1.0)API服务，带来全模态交互的新体验。SeedRealtime将声音、画面、时序与表达统一到同一个端到端模型中，能在连续的多模态信息流上实时交互，带来“边看、边听、边说”的全新体验。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "36氪获悉，火山引擎正式上线豆包实时音视频通话模型(SeedRealtime1.0)API服务，带来全模态交互的新体验。SeedRealtime将声音、画面、时序与表达统一到同一个端到端模型中，能在连续的多模态信息流上实时交互，带来“边看、边听、边说”的全新体验。",
+  "attachments": []
+}

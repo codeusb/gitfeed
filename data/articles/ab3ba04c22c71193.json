@@ -1,0 +1,15 @@
+{
+  "id": "ab3ba04c22c71193",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[OpenAI] 为什么这个月开始，GPT 很少看到报 overload 的问题了",
+  "link": "https://www.v2ex.com/t/1258292#reply3",
+  "author": "ulpyxua",
+  "publishedAt": "2026-11-19T07:30:16Z",
+  "snippet": "大概从 9 月底开始，GPT 就开始大量的报：Our servers are currently overloaded. Please try again later.错误，但是从 11 月开始，就很少看到 OpenAI 报这个问题了，是算力恢复了吗？还是其他原因？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "大概从 9 月底开始，GPT 就开始大量的报：Our servers are currently overloaded. Please try again later.错误，但是从 11 月开始，就很少看到 OpenAI 报这个问题了，是算力恢复了吗？还是其他原因？",
+  "attachments": []
+}

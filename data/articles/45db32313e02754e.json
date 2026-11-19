@@ -1,0 +1,15 @@
+{
+  "id": "45db32313e02754e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 一不小心搞了个游戏掌机启动器-PocketDeck，求 star",
+  "link": "https://www.v2ex.com/t/1258278#reply0",
+  "author": "ibcker",
+  "publishedAt": "2026-11-19T06:44:18Z",
+  "snippet": "前阵子入了台 KONKR Pocket Block 这种 4:3 小屏掌机，折腾了一圈常见前端总觉得太重，加上传 ROM 和改分类经常要插拔卡，干脆用 Kotlin + Jetpack Compose 自己写了个轻量启动器，叫 PocketDeck，代码已开源。 打包出来大概 3MB，Android 8.0 到 16 都能跑，主要照着 4:3 小屏和全手柄操作去打磨的，16:9 机器也适配。 做了画廊、列表、网格、气泡四种视图。小屏下我...",
+  "coverImage": "https://raw.githubusercontent.com/tinyc-z/PocketDeck/main/docs/images/hero-pocket-block.jpg",
+  "readTime": 1,
+  "content": "<p>前阵子入了台 KONKR Pocket Block 这种 4:3 小屏掌机，折腾了一圈常见前端总觉得太重，加上传 ROM 和改分类经常要插拔卡，干脆用 Kotlin + Jetpack Compose 自己写了个轻量启动器，叫 <strong>PocketDeck</strong>，代码已开源。</p>\n<p>打包出来大概 3MB，Android 8.0 到 16 都能跑，主要照着 4:3 小屏和全手柄操作去打磨的，16:9 机器也适配。</p>\n<p><img alt=\"PocketDeck on KONKR Pocket Block\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/tinyc-z/PocketDeck/main/docs/images/hero-pocket-block.jpg\"/></p>\n<p>做了画廊、列表、网格、气泡四种视图。小屏下我比较抠空间利用，像网格和气泡就没留底部固定标题栏，改成焦点上下避让的悬浮胶囊，4:3 屏幕能多放一排封面。</p>\n<p><img alt=\"4 View Modes\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/tinyc-z/PocketDeck/main/docs/images/views-showcase.jpg\"/></p>\n<p>另外顺手解决了小屏上整理库麻烦的问题，内置了两个局域网小工具：</p>\n<ul>\n<li><strong>Web 后台</strong>：掌机开服务后电脑浏览器直接连上来管库，网页配色会自动同步掌机主题，能拖拽改分类排序、传文件夹、在线看目录和解压压缩包，改完掌机桌面实时生效。</li>\n<li><strong>无线快传</strong>：除了掌机间互传，直接兼容了 <strong>LocalSend</strong>，平时用电脑或手机上的 LocalSend 就能把 ROM 隔空发到掌机里，不用额外装传输软件。</li>\n</ul>\n<p><img alt=\"Web Manager &amp; LocalSend\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/tinyc-z/PocketDeck/main/docs/images/web-manager-showcase.jpg\"/></p>\n<p>像常规的多源刮削（Libretro / ScreenScraper / IGDB 等）、RetroArch 和三四十个常见独立模拟器启动也都在里面了，有同款小屏或 Android 复古掌机的 V 友欢迎拿去试玩：</p>\n<p>Powered by Genmini 4 </p>\n<p><a href=\"https://github.com/tinyc-z/PocketDeck\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/tinyc-z/PocketDeck</a></p>",
+  "attachments": []
+}

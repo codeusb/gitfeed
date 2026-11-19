@@ -1,0 +1,15 @@
+{
+  "id": "44f00ec9216f4a3f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[macOS] Mac OS 27.2 菜单栏图标 ToolTip 随机刷新在屏幕某个位置的 bug，有人遇到么",
+  "link": "https://www.v2ex.com/t/1258272#reply3",
+  "author": "luoxmc",
+  "publishedAt": "2026-11-19T06:30:20Z",
+  "snippet": "如图，顶部菜单栏中，只要是鼠标移上去会显示提示气泡的图标，就有可能随机不定时的出现在屏幕任意位置，摸不透规律。 这个气泡就纯恶心人，也不影响操作，就是移入、点击或者右键，不管怎么样都无法让它消失，必须在顶部菜单栏找到对应的软件，鼠标在菜单栏对应软件的上放一下，这个气泡才会消失。 升级 27.2 之后就出现这个问题，现在 27.2.1 还没解决，两台 Mac 电脑都有这个问题，网上也没搜到案例，各位 v 友遇到这个问题了么！！！",
+  "coverImage": "https://cdn.nodeimage.com/i/kblPt2AS07jg6ByaTPSkDpgQhX1cOIDV.webp",
+  "readTime": 1,
+  "content": "<p>如图，顶部菜单栏中，只要是鼠标移上去会显示提示气泡的图标，就有可能随机不定时的出现在屏幕任意位置，摸不透规律。</p>\n<p><img alt=\"kblPt2AS07jg6ByaTPSkDpgQhX1cOIDV.webp\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://cdn.nodeimage.com/i/kblPt2AS07jg6ByaTPSkDpgQhX1cOIDV.webp\"/></p>\n<p>这个气泡就纯恶心人，也不影响操作，就是移入、点击或者右键，不管怎么样都无法让它消失，必须在顶部菜单栏找到对应的软件，鼠标在菜单栏对应软件的上放一下，这个气泡才会消失。</p>\n<p>升级 27.2 之后就出现这个问题，现在 27.2.1 还没解决，两台 Mac 电脑都有这个问题，网上也没搜到案例，各位 v 友遇到这个问题了么！！！</p>",
+  "attachments": []
+}

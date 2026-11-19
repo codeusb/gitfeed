@@ -1,0 +1,15 @@
+{
+  "id": "f2a3d87a240d51c3",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 独立站 想进军俄罗斯，但是支付方式搞不定",
+  "link": "https://www.v2ex.com/t/1258303#reply1",
+  "author": "LMark",
+  "publishedAt": "2026-11-19T07:54:12Z",
+  "snippet": "rt，听说毛子用 Mir 支付，找了一圈，没找到快捷的方式收款，不知道大家有没有做俄罗斯站点的，请教一下收款经验。我有： 美国公司主体 + stripe + 美卡 + 港卡可以是第三方代收公司，靠谱就行，独立站流水不是很大，最好能直接入我自己账户。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "rt，听说毛子用 Mir 支付，找了一圈，没找到快捷的方式收款，不知道大家有没有做俄罗斯站点的，请教一下收款经验。<br/><br/>我有：<br/> 美国公司主体 + stripe + 美卡 + 港卡<br/><br/>可以是第三方代收公司，靠谱就行，独立站流水不是很大，最好能直接入我自己账户。",
+  "attachments": []
+}
