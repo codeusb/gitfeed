@@ -1,0 +1,15 @@
+{
+  "id": "3fdd90429bafe8d0",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "RegExr: Temporarily Offline",
+  "link": "https://regexr.com/",
+  "author": "somebudyelse",
+  "publishedAt": "2026-11-19T22:27:07Z",
+  "snippet": "Article URL: https://regexr.com/ Comments URL: https://news.ycombinator.com/item?id=50567374 Points: 73 # Comments: 38",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://regexr.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://regexr.com/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50567374\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50567374</a></p>\n<p>Points: 73</p>\n<p># Comments: 38</p>",
+  "attachments": []
+}

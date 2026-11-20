@@ -1,0 +1,15 @@
+{
+  "id": "c85a5e70033096ed",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "PostgreSQL 19",
+  "link": "https://www.postgresql.org/docs/release/19.0/",
+  "author": "linzhangrun",
+  "publishedAt": "2026-11-20T03:45:45Z",
+  "snippet": "Article URL: https://www.postgresql.org/docs/release/19.0/ Comments URL: https://news.ycombinator.com/item?id=50569890 Points: 94 # Comments: 3",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://www.postgresql.org/docs/release/19.0/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.postgresql.org/docs/release/19.0/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50569890\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50569890</a></p>\n<p>Points: 94</p>\n<p># Comments: 3</p>",
+  "attachments": []
+}

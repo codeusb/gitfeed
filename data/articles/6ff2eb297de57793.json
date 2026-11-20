@@ -1,0 +1,15 @@
+{
+  "id": "6ff2eb297de57793",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Postgres 19 is out, and it's available on Neon and Databricks Lakebase",
+  "link": "https://www.databricks.com/blog/postgresql-19-available-lakebase",
+  "author": "sp_from_db",
+  "publishedAt": "2026-11-20T00:37:31Z",
+  "snippet": "Article URL: https://www.databricks.com/blog/postgresql-19-available-lakebase Comments URL: https://news.ycombinator.com/item?id=50568643 Points: 60 # Comments: 20",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://www.databricks.com/blog/postgresql-19-available-lakebase\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.databricks.com/blog/postgresql-19-available-lakebase</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50568643\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50568643</a></p>\n<p>Points: 60</p>\n<p># Comments: 20</p>",
+  "attachments": []
+}

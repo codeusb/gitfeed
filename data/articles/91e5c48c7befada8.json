@@ -1,0 +1,15 @@
+{
+  "id": "91e5c48c7befada8",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 又是一个记账程序，但其实无关技术，我只是想做一个真正好用的记账软件（未来更新规划）",
+  "link": "https://www.v2ex.com/t/1258546#reply0",
+  "author": "zty920317",
+  "publishedAt": "2026-11-20T06:39:20Z",
+  "snippet": "最近自己做了个微信记账小程序，叫「牛马存钱记账」。 起因是之前用过不少记账软件，总觉得有些地方不太顺手，所以干脆自己做了一个。 目前实现了日常记账、预算管理、年度储蓄预测、消费统计和心愿单等功能。 截图示例（就先不放太多了）： 做的时候主要坚持几个想法： 面向未来记账 不止回顾过去 不强制逐笔记账，也可以通过预算管理收支。 尽量减少操作，不想为了增加功能而增加功能。 记账不一定是为了省钱，也可以帮助人更了解自己的生活。 后面准备做微信、...",
+  "coverImage": "https://mmbiz.qpic.cn/mmbiz_png/zgZ4D9nwqgFyRa0arbFxJPRibzvHmsfXAmPaS2dcCUhMYSvfsvgZSmGZBH69u19DOSoeUibDy8k5r8ptJkz2JxiajF1Tb9ibscypUNgxqApS70k/640?wx_fmt=png&from=appmsg",
+  "readTime": 1,
+  "content": "<p>最近自己做了个微信记账小程序，叫「牛马存钱记账」。</p>\n<p>起因是之前用过不少记账软件，总觉得有些地方不太顺手，所以干脆自己做了一个。</p>\n<p>目前实现了日常记账、预算管理、年度储蓄预测、消费统计和心愿单等功能。</p>\n<p>截图示例（就先不放太多了）：</p>\n<p><img alt=\"储蓄预测与存钱人格卡\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://mmbiz.qpic.cn/mmbiz_png/zgZ4D9nwqgFyRa0arbFxJPRibzvHmsfXAmPaS2dcCUhMYSvfsvgZSmGZBH69u19DOSoeUibDy8k5r8ptJkz2JxiajF1Tb9ibscypUNgxqApS70k/640?wx_fmt=png&amp;from=appmsg\"/></p>\n<p>做的时候主要坚持几个想法：</p>\n<ul>\n<li>面向未来记账 不止回顾过去</li>\n<li>不强制逐笔记账，也可以通过预算管理收支。</li>\n<li>尽量减少操作，不想为了增加功能而增加功能。</li>\n<li>记账不一定是为了省钱，也可以帮助人更了解自己的生活。</li>\n</ul>\n<p>后面准备做微信、支付宝账单导入，以及 AI 个性化生活报告。</p>\n<p><img alt=\"产品技术与版本迭代路线\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://mmbiz.qpic.cn/sz_mmbiz_png/zgZ4D9nwqgFJrWBXqicK4vrKYYr1iacqiaF6gd1lo93E7za5OVbKZfKK56lFx8eibDZQrGGnVSAPj4N5n4iaXFzWp76BBl5Pc40Oib3hPLPctuV0A/640?wx_fmt=png&amp;from=appmsg\"/></p>\n<p>技术上不算什么创新项目，更多是自己对产品体验的一些想法。</p>\n<p>目前基础功能差不多完成了，想听听大家的意见：<strong>你们觉得一款真正好用的记账软件，最重要的是什么？</strong></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "8bb105f8d7f595f9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[iPhone] 我做了一个把滑雪轨迹画成山脉的 iOS App Pisteo，求一波内测反馈",
+  "link": "https://www.v2ex.com/t/1258570#reply0",
+  "author": "looplearngotoloo",
+  "publishedAt": "2026-11-20T07:40:21Z",
+  "snippet": "主页 https://pisteo.fireloop.xyz/zh/大家好，平时喜欢滑雪，一直想要一种比较安静的方式来回顾自己在雪场度过的每一天，于是自己写了一个叫 Pisteo 的 iOS 小应用。它的功能很简单：你可以直接导入 GPX 文件，或者直接读取 Apple Health（健康）里的滑雪体能训练记录。App 会自动把一天的行程拆分成滑行（Runs）和缆车（Lifts），计算出距离、垂直落差、速度和坡度，最后把整座雪山和你的滑...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "主页 <a href=\"https://pisteo.fireloop.xyz/zh/\" rel=\"noopener noreferrer\" target=\"_blank\">https://pisteo.fireloop.xyz/zh/</a><br/><br/>大家好，平时喜欢滑雪，一直想要一种比较安静的方式来回顾自己在雪场度过的每一天，于是自己写了一个叫 Pisteo 的 iOS 小应用。<br/><br/>它的功能很简单：你可以直接导入 GPX 文件，或者直接读取 Apple Health（健康）里的滑雪体能训练记录。App 会自动把一天的行程拆分成滑行（Runs）和缆车（Lifts），计算出距离、垂直落差、速度和坡度，最后把整座雪山和你的滑行轨迹一起画出来。目前内置了两种渲染风格：一种是极简线条风，另一种是水墨画风。<br/><br/>它没有做的事：不需要注册账号、没有云同步、没有广告、也没有社交信息流，所有数据完全留在本地手机里。另外它目前还不支持直接记录轨迹，只负责把你已有的滑行数据可视化呈现出来。<br/><br/>目前还在 TestFlight 内测阶段，功能比较早期。之前我只用自己在国内几个雪场的轨迹做过测试，所以非常希望能听到大家的反馈：<br/><br/>你常去的雪场地形渲染得准不准？<br/><br/>滑行和缆车段的自动拆分是否准确？<br/><br/>数据导入是否顺畅（特别是来自其他运动手表或第三方 App 导出的 GPX 文件）？<br/><br/>交互上有没有什么用起来别扭的地方？<br/><br/>系统要求为 iOS 26 或更高版本（支持 iPhone / iPad）。<br/><br/>欢迎在帖子下方回复，或者直接在 TestFlight 里给我发反馈，感谢阅读！",
+  "attachments": []
+}

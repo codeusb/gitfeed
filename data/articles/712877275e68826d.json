@@ -1,0 +1,15 @@
+{
+  "id": "712877275e68826d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 蹭热词做了个小站，没想到小爆了一下",
+  "link": "https://www.v2ex.com/t/1258578#reply1",
+  "author": "phil502",
+  "publishedAt": "2026-11-20T07:47:29Z",
+  "snippet": "前几天做了个 Fortnite 宝箱追踪器：fortnitechesttracker.org。本来只是想试一试，一个人能不能在活动还热的时候做出一个有人用的小工具，没想到上线几天后，Google Search Console 的单日搜索点击从几十涨到了 10k 多，Adsense 审核太慢，先挂了 adsterra，赚回了 gpt pro 的 token 费，今天排名突然掉了，估计跟广告也有关系，这种短期互动也就热这么几天。 复盘一下 ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>前几天做了个 Fortnite 宝箱追踪器：<a href=\"https://fortnitechesttracker.org/\" rel=\"noopener noreferrer\" target=\"_blank\">fortnitechesttracker.org</a>。本来只是想试一试，一个人能不能在活动还热的时候做出一个有人用的小工具，没想到上线几天后，Google Search Console 的单日搜索点击从几十涨到了 10k 多，Adsense 审核太慢，先挂了 adsterra，赚回了 gpt pro 的 token 费，今天排名突然掉了，估计跟广告也有关系，这种短期互动也就热这么几天。</p>\n<h2>复盘一下</h2>\n<h3>做了个什么？</h3>\n<p>《堡垒之夜》的 Treasure Hunt 活动里，玩家要开箱、找奖励和地图碎片。游戏内的任务进度是按具体目标显示的，如果想自己记跨局开了多少箱、哪些奖励已经找到了，就得另外记一份。</p>\n<p>所以我做了个浏览器里的小账本：可以一键开箱计数，也可以打完一局再补记；奖励和碎片用清单勾选，掉率计算器可以估算开 N 个箱至少出一次的概率。不需要注册或绑定 Epic 账号，记录保存在本地，可以导出备份。计数靠手动，地图也只是路线规划，不会读游戏数据或告诉你哪里必刷宝箱。</p>\n<h3>这波流量教了我什么？</h3>\n<ul>\n<li><strong>先把最小的工具做出来。</strong> 核心其实就两件事：把开过的箱子加进记录，把找到的奖励勾掉。概率、活动说明和路线用来解决接下来的问题。技术上是 Astro + React，部署在 Cloudflare Workers；进度用 localStorage，省掉了账号和数据库。</li>\n<li><strong>搜索量和实际需求有时间差。</strong> 关键词工具给的历史搜索量并不大。但活动进行时，玩家会突然开始搜怎么统计宝箱、令牌怎么拿。事后看，11 月 11 日注册域名，14 日达到 5k 次点击,18 日峰值 15k 点击。</li>\n<li><strong>手机上，用户第一眼要看到能用的东西。</strong> 我后来把广告挪到了主操作之后，也给查询类页面把答案写在开头。至于排名后来波动是不是和广告有关，现有数据还分不清，我就先不把两件事绑在一起下结论。</li>\n</ul>\n<p>这站最有意思的部分是：一个看起来很窄的需求，在合适的时间点也有人用；但活动一结束，工具还能不能留下用户，是另一道题。</p>\n<p>想听听大家的经验：做这种跟活动走的小站，你们会在热度回落后把计数和存档做成常青工具，还是保留旧页、拿这套模板继续做下一个活动？如果正好玩 Fortnite，也欢迎说说哪个步骤最值得省掉。</p>\n<p>另外还做了个 <a href=\"http://fortnitechestcounter.org\" rel=\"noopener noreferrer\" target=\"_blank\">fortnitechestcounter.org</a>  流量就差很多了</p>",
+  "attachments": []
+}

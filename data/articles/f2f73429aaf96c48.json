@@ -1,0 +1,15 @@
+{
+  "id": "f2f73429aaf96c48",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] AI 邪修--算命大师，最近 gemini Neon 很厉害，有人用来八字排布等算命吗",
+  "link": "https://www.v2ex.com/t/1258530#reply2",
+  "author": "wyfig",
+  "publishedAt": "2026-11-20T06:02:42Z",
+  "snippet": "八字算命等都会遵循一定的规律来排布和推演，之前发现在这方面能力最强的是 Claude 的 fable。 最近 gemini Neon 出来后，除了写代码，也试了下“算命大师”的能力，相当精准，不输 fable。 比大部分所谓的真人大师应该都厉害，大家有没有试过。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>八字算命等都会遵循一定的规律来排布和推演，之前发现在这方面能力最强的是 Claude 的 fable。 最近 gemini Neon 出来后，除了写代码，也试了下“算命大师”的能力，相当精准，不输 fable。 比大部分所谓的真人大师应该都厉害，大家有没有试过。</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3d499fb92c35fe80",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 受够了 AI Agent 用浏览器疯狂抢焦点，写了个零依赖工具把 Chrome 登录态无锁分叉到无头浏览器",
+  "link": "https://www.v2ex.com/t/1258533#reply2",
+  "author": "wasabihu",
+  "publishedAt": "2026-11-20T06:08:40Z",
+  "snippet": "平时用 Claude Code / Cursor / Antigravity 搭 Playwright MCP 干活，一直被一个很烦的问题卡住： 用全新无头浏览器：每次都要重新登录，2FA/扫码折腾半天； 直接 attach 到本机 Chrome：AI 一干活就把我浏览器抢到前台、乱切标签页，写代码或看文档直接被打断，还把其他所有标签页都暴露给 Agent。 忍不了自己写了个纯 Python 标准库的小工具 sessfork，把“前台窗...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>平时用 Claude Code / Cursor / Antigravity 搭 Playwright MCP 干活，一直被一个很烦的问题卡住：</p>\n<ul>\n<li>用全新无头浏览器：每次都要重新登录，2FA/扫码折腾半天；</li>\n<li>直接 attach 到本机 Chrome：AI 一干活就把我浏览器抢到前台、乱切标签页，写代码或看文档直接被打断，还把其他所有标签页都暴露给 Agent。</li>\n</ul>\n<p>忍不了自己写了个纯 Python 标准库的小工具 <strong>sessfork</strong>，把“前台窗口”和“登录态”拆开：</p>\n<h3>原理大概是这样</h3>\n<ol>\n<li>对运行中的 Chrome 做无锁快照，同时读 SQLite <code>Cookies</code> 和 LevelDB <code>Local Storage</code>（很多现代 SPA/JWT 站点其实把 token 放在 localStorage 里，顺手把 LevelDB 的 MVCC 墓碑消解也做了）；</li>\n<li>通过系统原生 API 在内存里解密，只按域名白名单导出指定站点（比如 <code>sessfork <a href=\"http://github.com\" rel=\"noopener noreferrer\" target=\"_blank\">github.com</a></code>），写成 <code>0600</code> 权限的 Playwright <code>storageState</code>；</li>\n<li>自动帮本机装好的 Claude Code / Cursor / Antigravity 配好后台无头 Playwright MCP（<code>sessfork-browser</code>），之后直接用自然语言让 AI 去后台查页面就行，全程不抢前台焦点。</li>\n</ol>\n<h3>项目地址</h3>\n<ul>\n<li>GitHub（MIT，零第三方依赖）：<a href=\"https://github.com/wasabihu/sessfork\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/wasabihu/sessfork</a></li>\n<li>交互式图文原理页：<a href=\"https://wasabihu.github.io/sessfork/\" rel=\"noopener noreferrer\" target=\"_blank\">https://wasabihu.github.io/sessfork/</a></li>\n</ul>\n<h3>快速试跑</h3>\n<p>支持 <code>uvx</code> 免安装试跑：</p>\n<pre><code class=\"language-bash\">uvx --from git+https://github.com/wasabihu/sessfork sessfork github.com\n</code></pre>\n<p>或者一键自动配置本机 AI 工具的 MCP 与全局 Skill：</p>\n<pre><code class=\"language-bash\">curl -fsSL https://raw.githubusercontent.com/wasabihu/sessfork/main/install.sh | bash\n</code></pre>\n<p>顺便说下安全边界：为了不滥用凭证，默认必须手动传域名白名单，macOS 读 Cookie 时会弹一次系统钥匙串确认（纯 localStorage 站点加 <code>--no-cookies</code> 可以零弹窗）。</p>\n<p>欢迎大家试用拍砖，如果有遇到奇葩站点登录态同步失败的，直接提 Issue 我来修。</p>",
+  "attachments": []
+}

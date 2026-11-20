@@ -1,0 +1,15 @@
+{
+  "id": "4407504a9e86f7c9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] Go 语言的优点是什么？适合物联网吗？",
+  "link": "https://www.v2ex.com/t/1258548#reply8",
+  "author": "dsw0719",
+  "publishedAt": "2026-11-20T06:43:36Z",
+  "snippet": "10 年 java 开发，3 年 python 开发，现在入职的公司业务系统使用的是 go 语言。背景：本科专业是软件开发，开始接触 java 语言，工作后一直用 java 开发各种业务系统，直到接触到无人机要进行影像目标、分析标注和三维建模时开始接触 python,一直认为 java 配 python 天长地久了。这辈子不会再在其他开发语言上花费时间了。但是入职的新公司技术栈 却是 go,入职时就不是很理解。同样做无人机管理系统，大疆...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "10 年 java 开发，3 年 python 开发，现在入职的公司业务系统使用的是 go 语言。<br/><br/>背景：本科专业是软件开发，开始接触 java 语言，工作后一直用 java 开发各种业务系统，直到接触到无人机要进行影像目标、分析标注和三维建模时开始接触 python,一直认为 java 配 python 天长地久了。这辈子不会再在其他开发语言上花费时间了。<br/>但是入职的新公司技术栈 却是 go,入职时就不是很理解。同样做无人机管理系统，大疆上云 API demo 用的也是 java 语言，但是新公司用的却是 go。go 在这个领域有什么优点吗？<br/>想问问 物联网开发用 go 有优势吗？",
+  "attachments": []
+}

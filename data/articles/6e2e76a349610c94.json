@@ -1,0 +1,15 @@
+{
+  "id": "6e2e76a349610c94",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] openccode go 使用感觉，不知道有没有问题",
+  "link": "https://www.v2ex.com/t/1258544#reply2",
+  "author": "luotuoxiaohui",
+  "publishedAt": "2026-11-20T06:31:42Z",
+  "snippet": "会话统计 1 轮 76 步模型用时 22 分 13 秒工具调用用时 45.3 秒首 token 平均(TTFT) 5 秒输出速度(TPS) 83 tok/s官方 API 的话是 200-300 tok/s这个感觉是不是跟 GPT 一样，把你速度降下来，让你感觉耐用，其实都一样(⊙o⊙)…",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "会话统计              1 轮 76 步<br/>模型用时              22 分 13 秒<br/>工具调用用时           45.3 秒<br/>首 token 平均(TTFT)    5 秒<br/>输出速度(TPS)          83 tok/s<br/><br/><br/>官方 API 的话是  200-300 tok/s<br/><br/>这个感觉是不是跟 GPT 一样，把你速度降下来，让你感觉耐用，其实都一样(⊙o⊙)…",
+  "attachments": []
+}

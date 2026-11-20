@@ -1,0 +1,15 @@
+{
+  "id": "72ca4875b0fcb539",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+  "link": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
+  "author": "craigkerstiens",
+  "publishedAt": "2026-11-20T02:43:49Z",
+  "snippet": "Article URL: https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/ Comments URL: https://news.ycombinator.com/item?id=50569516 Points: 65 # Comments: 8",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50569516\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50569516</a></p>\n<p>Points: 65</p>\n<p># Comments: 8</p>",
+  "attachments": []
+}

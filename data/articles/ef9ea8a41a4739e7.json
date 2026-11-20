@@ -1,0 +1,15 @@
+{
+  "id": "ef9ea8a41a4739e7",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[🤖Vibe Coding] deepseek 又慢又贵，这对嘛？",
+  "link": "https://www.v2ex.com/t/1258532#reply0",
+  "author": "xiapipi",
+  "publishedAt": "2026-11-20T06:07:59Z",
+  "snippet": "用 deepseek harness 的 v4.1 flash high 创建做一个： 提示词： 在根目录下创建一个 html，内容是 svg 绘制一个鹈鹕骑自行车的 2d 动画。你不需要任何测试，后续我自己验收。 用时 13 分 32 秒，花费 9715463 tokens，0.82cny，api 请求次数 76 次。 这对吗？又贵又慢的。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>用 deepseek harness 的 v4.1 flash high 创建做一个：\n提示词：\n在根目录下创建一个 html，内容是 svg 绘制一个鹈鹕骑自行车的 2d 动画。你不需要任何测试，后续我自己验收。</p>\n<p>用时 13 分 32 秒，花费 9715463 tokens，0.82cny，api 请求次数 76 次。\n这对吗？又贵又慢的。</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "5b16b7eba5274a65",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] ConvoExport 已上架 Edge：把 ChatGPT / Claude 对话导出为 Markdown、TXT、Word 或 PDF，完全本地",
+  "link": "https://www.v2ex.com/t/1258551#reply0",
+  "author": "bluesky1001",
+  "publishedAt": "2026-11-20T06:53:06Z",
+  "snippet": "刚上架 Edge 的浏览器扩展 ConvoExport：把当前打开的 ChatGPT / Claude 对话导出为 Markdown、TXT、Word（.docx）或 PDF（打印视图）。免费每天 3 次导出（Markdown / TXT）。完全本地：无账号、无上传、无统计、无任何网络请求。支持 chatgpt.com、chat.openai.com、claude.ai。商店链接：https://microsoftedge.micros...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "刚上架 Edge 的浏览器扩展 ConvoExport：把当前打开的 ChatGPT / Claude 对话导出为 Markdown、TXT、Word（.docx）或 PDF（打印视图）。免费每天 3 次导出（Markdown / TXT）。完全本地：无账号、无上传、无统计、无任何网络请求。支持 <a href=\"http://chatgpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">chatgpt.com</a>、<a href=\"http://chat.openai.com\" rel=\"noopener noreferrer\" target=\"_blank\">chat.openai.com</a>、<a href=\"http://claude.ai\" rel=\"noopener noreferrer\" target=\"_blank\">claude.ai</a>。<br/><br/>商店链接：<a href=\"https://microsoftedge.microsoft.com/addons/detail/akkapiafnelednmcejjeihoggdccbhle\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/akkapiafnelednmcejjeihoggdccbhle</a><br/><br/>隐私页：<a href=\"https://alapha888.github.io/convo-export-privacy/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/convo-export-privacy/</a>",
+  "attachments": []
+}

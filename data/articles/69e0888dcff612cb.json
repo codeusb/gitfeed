@@ -1,0 +1,15 @@
+{
+  "id": "69e0888dcff612cb",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Linux] 给 Linux +fcitx5+kimpanel 扩展设计了几套输入法候选框主题，一键安装",
+  "link": "https://www.v2ex.com/t/1258571#reply0",
+  "author": "ko20",
+  "publishedAt": "2026-11-20T07:41:22Z",
+  "snippet": "已在 Debian 13 + GNOME Shell 48 + Wayland + fcitx5 + fcitx5-rime 下测试 执行 ./install list 列出主题列表，执行 ./install xxx 即可安装。一键安装，无需登出再登入。 github: https://github.com/hellodk34/gnome-kimpanel-themes 说个插曲：最近用了 wowtype，一开始很不错，但是更新到 wo...",
+  "coverImage": "https://image.940304.xyz/i/2026/11/20/6afff7e94acaa.jpg",
+  "readTime": 1,
+  "content": "<p>已在 Debian 13 + GNOME Shell 48 + Wayland + fcitx5 + fcitx5-rime 下测试</p>\n<p>执行 ./install list 列出主题列表，执行 ./install xxx 即可安装。一键安装，无需登出再登入。</p>\n<p>github: <a href=\"https://github.com/hellodk34/gnome-kimpanel-themes\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/hellodk34/gnome-kimpanel-themes</a></p>\n<blockquote>\n<p>说个插曲：最近用了 wowtype，一开始很不错，但是更新到 wowtype_0.4.0_debian13_amd64.deb 这个版本，发现有非常影响体验的 bug，影响的是输入体验。最终切回了稳定流畅的 fcitx5-rime</p>\n</blockquote>\n<p>截图</p>\n<p><img alt=\"preview.jpg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://image.940304.xyz/i/2026/11/20/6afff7e94acaa.jpg\"/></p>\n<p>欢迎使用！</p>",
+  "attachments": []
+}

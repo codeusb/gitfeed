@@ -1,0 +1,15 @@
+{
+  "id": "b7756ab9e91b7b4a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 现在你们的 AI 搭配是怎么样的？claude opus5.5 指挥 ds4.1-flash 执行是最优解吗",
+  "link": "https://www.v2ex.com/t/1258541#reply1",
+  "author": "johanbo",
+  "publishedAt": "2026-11-20T06:30:15Z",
+  "snippet": "如题，我有时候会使用 Fusion，也有时候用 swe-2-max 全程走 我听说有人是用 claude opus-5.5 指挥，ds4.1-flash 执行，也有 claude opus-5.5 指挥，gpt6.2-sol 执行，你们是怎么使用的",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>如题，我有时候会使用 Fusion，也有时候用 swe-2-max 全程走</p>\n<p>我听说有人是用 claude opus-5.5 指挥，ds4.1-flash 执行，也有 claude opus-5.5 指挥，gpt6.2-sol 执行，你们是怎么使用的</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "95d42e342381ec2d",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+  "link": "https://github.com/openssl/openssl/pull/33652",
+  "author": "JacobHenner",
+  "publishedAt": "2026-11-20T02:01:09Z",
+  "snippet": "Article URL: https://github.com/openssl/openssl/pull/33652 Comments URL: https://news.ycombinator.com/item?id=50569226 Points: 179 # Comments: 111",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/openssl/openssl/pull/33652\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/openssl/openssl/pull/33652</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50569226\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50569226</a></p>\n<p>Points: 179</p>\n<p># Comments: 111</p>",
+  "attachments": []
+}

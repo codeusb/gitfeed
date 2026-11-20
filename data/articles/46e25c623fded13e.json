@@ -1,0 +1,15 @@
+{
+  "id": "46e25c623fded13e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [分享创造] 回声口袋：中文音视频转文字，带时间轴和说话人区分，可导出字幕",
+  "link": "https://www.v2ex.com/t/1258557#reply0",
+  "author": "yutify",
+  "publishedAt": "2026-11-20T07:02:10Z",
+  "snippet": "大家好，分享一下我做的中文音视频转文字工具「回声口袋」：https://huishengkoudai.cn/ — 上传 MP3/M4A/WAV/MP4，或贴公开媒体链接，生成带时间戳的中文文稿 — 自动区分说话人；点击文字可以跳回对应音频回听 — 导出 TXT / DOCX / CSV / SRT / VTT — 「极速」和「精准」两种模型，精准模型支持更多方言 — 数据存储在国内，文件可删除，分享链接可撤回 — 网页版和微信小程序共用...",
+  "coverImage": "https://huishengkoudai.cn/share/huishengkoudai-home.png",
+  "readTime": 1,
+  "content": "<p>大家好，分享一下我做的中文音视频转文字工具「回声口袋」：<a href=\"https://huishengkoudai.cn/\" rel=\"noopener noreferrer\" target=\"_blank\">https://huishengkoudai.cn/</a></p>\n<p>— 上传 MP3/M4A/WAV/MP4，或贴公开媒体链接，生成带时间戳的中文文稿\n— 自动区分说话人；点击文字可以跳回对应音频回听\n— 导出 TXT / DOCX / CSV / SRT / VTT\n— 「极速」和「精准」两种模型，精准模型支持更多方言\n— 数据存储在国内，文件可删除，分享链接可撤回\n— 网页版和微信小程序共用一个账号</p>\n<p>适合会议记录、采访整理、课堂笔记、播客文稿和做字幕。欢迎试用，有任何建议或 bug 都可以直接回帖告诉我，谢谢！</p>\n<p><img alt=\"首页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://huishengkoudai.cn/share/huishengkoudai-home.png\"/>\n<img alt=\"上传设置\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://huishengkoudai.cn/share/huishengkoudai-upload.png\"/>\n<img alt=\"导出与分享\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://huishengkoudai.cn/share/huishengkoudai-export.png\"/></p>",
+  "attachments": []
+}

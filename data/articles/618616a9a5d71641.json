@@ -1,0 +1,15 @@
+{
+  "id": "618616a9a5d71641",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个儿童英语绘本的 WorkBuddy skill，晒一本生成的样例",
+  "link": "https://www.v2ex.com/t/1258565#reply1",
+  "author": "fatelei",
+  "publishedAt": "2026-11-20T07:23:58Z",
+  "snippet": "最近做了个「儿童英语绘本助手」，刚通过 WorkBuddy 审核，上架价格是 1 元买断。 告诉它孩子几岁、喜欢什么，就能做一本英语绘本。比如：“给 5 岁、喜欢恐龙的孩子做一本 8 页英语绘本，每页一两句，简单一点。”可以导出 PDF，打印出来一起看。 下面这本《Where Is My Little Dinosaur?》是之前生成的样例，讲小朋友到处找小恐龙，最后找到它，一起说晚安。 想试的话，可以在 WorkBuddy 里搜索「儿童...",
+  "coverImage": "https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-1.png",
+  "readTime": 1,
+  "content": "<p>最近做了个「儿童英语绘本助手」，刚通过 WorkBuddy 审核，上架价格是 1 元买断。</p>\n<p>告诉它孩子几岁、喜欢什么，就能做一本英语绘本。比如：“给 5 岁、喜欢恐龙的孩子做一本 8 页英语绘本，每页一两句，简单一点。”可以导出 PDF，打印出来一起看。</p>\n<p>下面这本《Where Is My Little Dinosaur?》是之前生成的样例，讲小朋友到处找小恐龙，最后找到它，一起说晚安。</p>\n<p><img alt=\"我的小恐龙在哪里 · 第 1 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-1.png\"/></p>\n<p><img alt=\"我的小恐龙在哪里 · 第 2 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-2.png\"/></p>\n<p><img alt=\"我的小恐龙在哪里 · 第 3 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-3.png\"/></p>\n<p><img alt=\"我的小恐龙在哪里 · 第 4 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-4.png\"/></p>\n<p><img alt=\"我的小恐龙在哪里 · 第 5 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-5.png\"/></p>\n<p><img alt=\"我的小恐龙在哪里 · 第 6 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-6.png\"/></p>\n<p><img alt=\"我的小恐龙在哪里 · 第 7 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-7.png\"/></p>\n<p><img alt=\"我的小恐龙在哪里 · 第 8 页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/fatelei/photo-sticker-samples/main/images/kids-english-picturebook/page-8.png\"/></p>\n<p>想试的话，可以在 WorkBuddy 里搜索「儿童英语绘本助手」，开发者是「拾光造像」。1 元是助手的购买价格，生成图片时的模型用量按平台规则另算。</p>",
+  "attachments": []
+}
