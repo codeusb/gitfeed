@@ -1,0 +1,15 @@
+{
+  "id": "362b42cfce355ddf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] [自荐中转] 微澜 Latentide：1X 倍率 opus5.5 原生 Claude max 号池",
+  "link": "https://www.v2ex.com/t/1258655#reply0",
+  "author": "latentide",
+  "publishedAt": "2026-11-20T13:54:55Z",
+  "snippet": "最近做了一个 Claude Opus 5.5 的中转，主打 1X 倍率 + 原生 Claude Max 号池。 支持 Claude Code 和 Anthropic Messages。 当前价格： 输入 $0.60 / 1M 输出 $3.00 / 1M 缓存读取 $0.03 / 1M Claude Code 用户、长上下文任务和代码项目可以试试。 https://latentide.com",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近做了一个 Claude Opus 5.5 的中转，主打 <strong>1X 倍率 + 原生 Claude Max 号池</strong>。</p>\n<p>支持 Claude Code 和 Anthropic Messages。</p>\n<p>当前价格：</p>\n<pre><code>输入 $0.60 / 1M\n输出 $3.00 / 1M\n缓存读取 $0.03 / 1M\n</code></pre>\n<p>Claude Code 用户、长上下文任务和代码项目可以试试。</p>\n<p><a href=\"https://latentide.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://latentide.com</a></p>",
+  "attachments": []
+}

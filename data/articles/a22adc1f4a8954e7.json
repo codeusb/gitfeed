@@ -1,0 +1,15 @@
+{
+  "id": "a22adc1f4a8954e7",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 我做了个英文猜词小游戏，想请大家帮我试试",
+  "link": "https://www.v2ex.com/t/1258623#reply0",
+  "author": "jaslong",
+  "publishedAt": "2026-11-20T10:10:04Z",
+  "snippet": "我挑了 190 对英文单词，做成了一个叫 Guess the Rarest Word 的网页游戏。先贴一道给大家猜猜：denim（牛仔布）和 velvet（天鹅绒），你觉得哪个词在英语里用得更少？ 我用 wordfreq 的英文词频来判答案。你点一下自己猜的那个词，就能看到这两个词每百万词里大约各出现几次。要是你想到别的组合，也可以自己输两个词比一比。 默认玩法有三颗心，第一题可以慢慢想，从第二题开始每题 12 秒。你要是跟我一样，碰到...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我挑了 190 对英文单词，做成了一个叫 Guess the Rarest Word 的网页游戏。先贴一道给大家猜猜：<strong>denim（牛仔布）和 velvet（天鹅绒），你觉得哪个词在英语里用得更少？</strong></p>\n<p>我用 wordfreq 的英文词频来判答案。你点一下自己猜的那个词，就能看到这两个词每百万词里大约各出现几次。要是你想到别的组合，也可以自己输两个词比一比。</p>\n<p>默认玩法有三颗心，第一题可以慢慢想，从第二题开始每题 12 秒。你要是跟我一样，碰到拿不准的词就想翻字典，可以直接选不限时的 Chill 模式。</p>\n<p><a href=\"https://guesstherarestword.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://guesstherarestword.com/</a></p>",
+  "attachments": []
+}

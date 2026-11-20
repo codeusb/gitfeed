@@ -1,0 +1,15 @@
+{
+  "id": "c54e4eafac5b15cf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude] 记录一次弹门户验证到解除",
+  "link": "https://www.v2ex.com/t/1258675#reply0",
+  "author": "Rowlvy",
+  "publishedAt": "2026-11-20T16:42:47Z",
+  "snippet": "从弹出 portal 验证，到 KYC 验证自动检测到停用账号，恢复，历时 8 天。 账号以及使用情况： 23 年 7 月 14 日通过 gmail 注册的 Claude 账号，早期对话删除了些，最早的对话目前在 2026 年 7 月 10 日。 2026 年 10 月 16 日通过 Google play 美区+国内 visa 卡支付 20 美元 pro 使用。 期间大部分时间使用 Claude desktop 进行 vibe cod...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>从弹出 portal 验证，到 KYC 验证自动检测到停用账号，恢复，历时 8 天。</p>\n<h3>账号以及使用情况：</h3>\n<p>23 年 7 月 14 日通过 gmail 注册的 Claude 账号，早期对话删除了些，最早的对话目前在 2026 年 7 月 10 日。</p>\n<p>2026 年 10 月 16 日通过 Google play 美区+国内 visa 卡支付 20 美元 pro 使用。</p>\n<p>期间大部分时间使用 Claude desktop 进行 vibe coding 做代码视频玩 hh，以及一些代理相关的部分</p>\n<p>2026 年 11 月 10 日晚停了自建的美中节点，改成美西，换了 ip，让 Claude 配置的(这个也可疑)</p>\n<p>2026 年 11 月 12 日晚把 fable5.2 周额度用完(个人怀疑这是重点)</p>\n<p>2026 年 11 月 13 日早上弹出需要门户验证，当天导出的 Claude 数据显示我曾经有 34 次登录：\n地址有 US,JP,TW。</p>\n<p>2026 年 11 月 14 日取消自动续费，16 日 pro 到期。</p>\n<p>2026 年 11 月 19 日中午拿新办的护照(无任何签证)，进行认证，地址选择 China\n对护照拍照，人脸比对，通过后，Claude 网页立即显示账号需要申诉：</p>\n<p>2026 年 11 月 19 日 12:38 gmail： </p>\n<pre><code>Your account has been suspended (您的账户已被暂停)\n你好，\n\n我们的自动化系统检测到与您的帐户相关的信号，表明您违反了我们的支持国家/地区政策。因此，我们已撤销您对 Claude 的访问权限。\n</code></pre>\n<p>然后我让antigravity的gemini根据我的使用情况如实写英文申请，我未修改，直接粘贴：</p>\n<p>2026年11月19日 12:49 gmail：</p>\n<pre><code>We received your request for a review (我们已收到您的复审请求。)\n你好，\n\n我们已收到您关于复核贵组织暂停资格的申请。您目前无需进行任何其他操作。\n\n做出决定后，我们会通过电子邮件通知您。\n</code></pre>\n<p>2026年11月19日 15:50 gmail：</p>\n<pre><code>Your account has been reinstated (您的账户已恢复。)\n你好，\n\n本周早些时候，您的账户因违反我们的使用政策而被停用。收到您的申诉后，我们对此决定进行了调查，并已恢复您的账户。由此给您带来的不便，我们深表歉意。\n</code></pre>\n<h3>对照</h3>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>我</th>\n<th>我朋友</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>账号来源</td>\n<td>自己gmail 23年注册的Claude</td>\n<td>我帮他用邮箱注册的 应该是2026年10月25号注册的Claude</td>\n</tr>\n<tr>\n<td>KYC</td>\n<td>注册时未弹，11月13日弹</td>\n<td>注册时未弹，至今未弹</td>\n</tr>\n<tr>\n<td>节点</td>\n<td>我自建</td>\n<td>我给的配置</td>\n</tr>\n<tr>\n<td>环境</td>\n<td>v2rayN系统代理配合进程代理软件(我有使用uu的需求)</td>\n<td>v2rayN tun模式</td>\n</tr>\n<tr>\n<td>支付方式</td>\n<td>Google play 国内visa卡</td>\n<td>apple美区余额</td>\n</tr>\n<tr>\n<td>fable使用情况</td>\n<td>我首周3天内用完周额度</td>\n<td>未使用</td>\n</tr>\n</tbody></table><p>截至至2026年11月21日00：30，Claude free账号正常</p>\n<p>想先放一个礼拜观察一下，不知道会不会在封，\n不过已经拥抱学生Gemini了 ，太香</p>",
+  "attachments": []
+}

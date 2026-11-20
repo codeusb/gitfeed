@@ -1,0 +1,15 @@
+{
+  "id": "5ad592360eebf0f0",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 复刻了一个三国志英杰传网页版的",
+  "link": "https://www.v2ex.com/t/1258674#reply1",
+  "author": "Vitta",
+  "publishedAt": "2026-11-20T16:36:38Z",
+  "snippet": "三国志英杰传 网页版复刻，从序章打到结局 1995 年 DOS 版那个英杰传，256 色、走格子、单挑、一堆策略书。 我用 AI 做了个网页版，浏览器直接开，不用装模拟器。 在线试玩：https://yj.vitta.dev.tc/ 源码：https://github.com/Attiv/yingjiezhuan-web 做到了什么 全部剧情：从「群雄起兵讨伐董卓」到结局，610 幕 70 场战斗、59 张战场地图、129 名武将 原版...",
+  "coverImage": "https://raw.githubusercontent.com/Attiv/yingjiezhuan-web/main/docs/screenshots/01-title.png",
+  "readTime": 1,
+  "content": "<h1>三国志英杰传 网页版复刻，从序章打到结局</h1>\n<p>1995 年 DOS 版那个英杰传，256 色、走格子、单挑、一堆策略书。\n我用 AI 做了个网页版，浏览器直接开，不用装模拟器。</p>\n<p><strong>在线试玩</strong>：<a href=\"https://yj.vitta.dev.tc/\" rel=\"noopener noreferrer\" target=\"_blank\">https://yj.vitta.dev.tc/</a>\n<strong>源码</strong>：<a href=\"https://github.com/Attiv/yingjiezhuan-web\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/Attiv/yingjiezhuan-web</a></p>\n<p><img alt=\"标题画面\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/Attiv/yingjiezhuan-web/main/docs/screenshots/01-title.png\"/></p>\n<p><img alt=\"剧情：陈留宫殿\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/Attiv/yingjiezhuan-web/main/docs/screenshots/story-chenliu.png\"/></p>\n<p><img alt=\"战场：汜水关\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/Attiv/yingjiezhuan-web/main/docs/screenshots/03-battle-start.png\"/></p>\n<p><img alt=\"单挑：关羽对华雄\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/Attiv/yingjiezhuan-web/main/docs/screenshots/19-duel.png\"/></p>\n<h2>做到了什么</h2>\n<ul>\n<li>全部剧情：从「群雄起兵讨伐董卓」到结局，610 幕</li>\n<li>70 场战斗、59 张战场地图、129 名武将</li>\n<li>原版 BGM、240 张头像、31 张插画、18 兵种战斗特写，逐像素从 DOS 版提取</li>\n<li>营地编成、商店、部队配置、装备转职、37 条策略、单挑演出</li>\n<li>六个手动档 + 一个自动档，纯前端，无后端</li>\n</ul>\n<h2>怎么做的</h2>\n<p>三个阶段接力：</p>\n<ol>\n<li><strong>fable5.2 打底</strong>：只搭了架构，没接原版素材——它处理原盘图片有几个已知问题，\n所以那版观感和 fable5、gpt-a 做出来的差不多。</li>\n<li><strong>deepseek v4.1 flash 补内容</strong>：把原版的图、音乐、地图全接了进来，画面这才对上。</li>\n<li><strong>dsv4.1f + gpt6.1-sol</strong>：后续的剧情流程、状态机、地图调度和镜头。</li>\n</ol>\n<p>规则：攻防公式、玉玺回复量、地形消耗，都对着原版 DOS 程序反汇编核对过，</p>\n<h2>适合谁</h2>\n<p>玩过这游戏、想在地铁上再来一局的老伙计。手机横屏能玩，触屏操作适配过。</p>\n<p>目前正常玩已经没有问题了,小细节还是有不完善的</p>\n<hr/>\n<p>原版美术与音乐版权归 KOEI 所有。这里是非商业的个人复刻研究，不提供原版游戏文件。</p>",
+  "attachments": []
+}

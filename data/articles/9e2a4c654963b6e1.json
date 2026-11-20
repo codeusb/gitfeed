@@ -1,0 +1,15 @@
+{
+  "id": "9e2a4c654963b6e1",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 各位的 opencode 近期速度是多少",
+  "link": "https://www.v2ex.com/t/1258657#reply4",
+  "author": "xyooyx",
+  "publishedAt": "2026-11-20T14:01:58Z",
+  "snippet": "一直只用 deepseek-4.1-1017，不是用 free 的。刚开通时候能到 160+，现在稳定只在 80+ tok/s，都是 100 以内，我都有点动摇是否取消换 workbuddy 了（实测今天 workbuddy 都能到 300+）",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>一直只用 deepseek-4.1-1017，不是用 free 的。刚开通时候能到 160+，现在稳定只在 80+ tok/s，都是 100 以内，我都有点动摇是否取消换 workbuddy 了（实测今天 workbuddy 都能到 300+）</p>",
+  "attachments": []
+}

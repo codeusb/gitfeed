@@ -1,0 +1,15 @@
+{
+  "id": "68b493bb82eacac4",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 许愿式编程会取代程序员吗？",
+  "link": "https://www.v2ex.com/t/1258629#reply21",
+  "author": "grandlq",
+  "publishedAt": "2026-11-20T10:39:11Z",
+  "snippet": "在这周 Tab 星期四认识一个团队，他们在做一个用 app 许愿编程做 app 的 agent app，开发了几个月，已经拿到天使轮。 团队自己的开发也在用许愿式编程，跟我 chat 那位开发者认为绝大部分编码能力很快会被模型吃掉、且前沿模型（specifically, Fable 5.2）已经超越大多数程序员。 按这个预测观点的势头下去，不久之后不仅编码不需要，架构都不用人去学了。开发者还是早点转行为妙。 不知使用前沿模型的各位，日常...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>在这周 <a href=\"https://tabthursday.com/about\" rel=\"noopener noreferrer\" target=\"_blank\">Tab 星期四</a>认识一个团队，他们在做一个用 app 许愿编程做 app 的 agent app，开发了几个月，已经拿到天使轮。</p>\n<p>团队自己的开发也在用许愿式编程，跟我 chat 那位开发者认为绝大部分编码能力很快会被模型吃掉、且前沿模型（specifically, Fable 5.2）已经超越大多数程序员。</p>\n<p>按这个预测观点的势头下去，不久之后不仅编码不需要，架构都不用人去学了。开发者还是早点转行为妙。</p>\n<p>不知使用前沿模型的各位，日常用模型编码的感觉更多是相似、还是相反？你认为这个场景还有多久到达，亦或不可能？如果这部分的能力被替代了，开发者能去做什么？</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fe1242759e7192b9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[NAS] [紧急提醒] 群晖 DSM 出现 9.8 分严重漏洞 无需登录即可远程读写 NAS 中的文件.",
+  "link": "https://www.v2ex.com/t/1258663#reply1",
+  "author": "spykids",
+  "publishedAt": "2026-11-20T14:46:19Z",
+  "snippet": "群晖日前发布新安全公告披露评分达到 9.8 分的 CVE-2026-120382 安全漏洞，该漏洞允许攻击者在未经身份验证的情况下直接读写群晖 NAS 上存储的文件。漏洞涉及群晖 DSM 采用的开放授权 (OAuth) 认证组件，群晖建议用户暂时停用开放认证套件。 目前为止 7.1/7.2.1/7.2.2 系统还没有修复补丁。 https://www.landian.news/archives/128629.html",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>群晖日前发布新安全公告披露评分达到 9.8 分的 CVE-2026-120382 安全漏洞，该漏洞允许攻击者在未经身份验证的情况下直接读写群晖 NAS 上存储的文件。漏洞涉及群晖 DSM 采用的开放授权 (OAuth) 认证组件，群晖建议用户暂时停用开放认证套件。</p>\n<p>目前为止 7.1/7.2.1/7.2.2 系统还没有修复补丁。</p>\n<p><a href=\"https://www.landian.news/archives/128629.html\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.landian.news/archives/128629.html</a></p>",
+  "attachments": []
+}

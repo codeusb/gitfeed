@@ -1,0 +1,15 @@
+{
+  "id": "cd145ecb43020014",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] CVE-2026-128064 这个漏洞我也震惊了，通过判断 http(s) 第 5 五位是否小写 s 来启用 tls，存在 20 年了。",
+  "link": "https://www.v2ex.com/t/1258664#reply4",
+  "author": "irvinglove",
+  "publishedAt": "2026-11-20T14:48:30Z",
+  "snippet": "httpS/HTTPS 都哭晕在厕所，「：」成为最大赢家。 这个 bug 充分证明了，世界就是个草台班子。 完全像我以前手下实习生能干出来的事，只要完成功能，就上交，压根不考虑边界情况。一个问题要反复好几轮，说一个改一个，最后还是他劝转行了。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>httpS/HTTPS 都哭晕在厕所，「：」成为最大赢家。</p>\n<p>这个 bug 充分证明了，世界就是个草台班子。</p>\n<p>完全像我以前手下实习生能干出来的事，只要完成功能，就上交，压根不考虑边界情况。一个问题要反复好几轮，说一个改一个，最后还是他劝转行了。</p>",
+  "attachments": []
+}

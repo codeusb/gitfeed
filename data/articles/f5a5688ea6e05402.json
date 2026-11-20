@@ -1,0 +1,15 @@
+{
+  "id": "f5a5688ea6e05402",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] [分享发现] 整理旧资料时，我把三年前的图都转了一遍",
+  "link": "https://www.v2ex.com/t/1258650#reply0",
+  "author": "weishao666",
+  "publishedAt": "2026-11-20T13:25:26Z",
+  "snippet": "整理旧项目资料，发现大量只有截图的图：当时的 PPT 早就找不到了，图还留着。 这些图短期没用，但下次做同类项目时，结构和配色能直接复用。所以我把它们转成可编辑的，按主题归档：流程类、架构类、数据类、对比类。 现在做新项目，先翻一遍归档，找到结构相近的改一改，比从空白页开始快很多。归档的价值不在存，在能不能改。 工具入口在这里：https://image2ppt.asia?utm_source=v2ex （图片、截图、单页 PDF 都能...",
+  "coverImage": "https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/46_%E6%A0%B8%E5%BF%83%E5%9B%A2%E9%98%9F%E6%9E%84%E6%88%90%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA%E7%A7%91%E7%A0%94PPT/%E5%8E%9F%E5%9B%BE.jpg",
+  "readTime": 1,
+  "content": "<p>整理旧项目资料，发现大量只有截图的图：当时的 PPT 早就找不到了，图还留着。</p>\n<p>这些图短期没用，但下次做同类项目时，结构和配色能直接复用。所以我把它们转成可编辑的，按主题归档：流程类、架构类、数据类、对比类。</p>\n<p>现在做新项目，先翻一遍归档，找到结构相近的改一改，比从空白页开始快很多。归档的价值不在存，在能不能改。</p>\n<p>工具入口在这里：<a href=\"https://image2ppt.asia?utm_source=v2ex\" rel=\"noopener noreferrer\" target=\"_blank\">https://image2ppt.asia?utm_source=v2ex</a>\n（图片、截图、单页 PDF 都能转成可编辑的 PPTX，成品无水印。）</p>\n<p>一个例子（原图 → 可编辑成品）：</p>\n<p><img alt=\"核心团队构成项目成果展示科研 PPT 原图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/46_%E6%A0%B8%E5%BF%83%E5%9B%A2%E9%98%9F%E6%9E%84%E6%88%90%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA%E7%A7%91%E7%A0%94PPT/%E5%8E%9F%E5%9B%BE.jpg\"/></p>\n<p><img alt=\"核心团队构成项目成果展示科研 PPT 成品\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/46_%E6%A0%B8%E5%BF%83%E5%9B%A2%E9%98%9F%E6%9E%84%E6%88%90%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA%E7%A7%91%E7%A0%94PPT/%E6%88%90%E5%93%81%E9%A2%84%E8%A7%88.jpg\"/></p>\n<p>素材库里随手挑的几页，这类图都能这么转：</p>\n<p><img alt=\"067_项目管理汇报 PPT 模板_p04\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s019.jpg\"/>\n<img alt=\"101_项目状态报告 PPT 模板_p04\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s035.jpg\"/></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "44e02038c6fdfe44",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 有些中转站就像俄罗斯套娃，一层套一层，有办法鉴别吗？",
+  "link": "https://www.v2ex.com/t/1258627#reply1",
+  "author": "godleon",
+  "publishedAt": "2026-11-20T10:19:46Z",
+  "snippet": "不管是推理，图片，视频，有些些中转站大多都会做套娃式调用； 比如我在 A 中转站调用，A 去调 B 中转，B 调 C 中转， ...N； 这东西有办法鉴别出来吗；",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>不管是推理，图片，视频，有些些中转站大多都会做套娃式调用；</p>\n<p>比如我在 A 中转站调用，A 去调 B 中转，B 调 C 中转， ...N；</p>\n<p>这东西有办法鉴别出来吗；</p>",
+  "attachments": []
+}

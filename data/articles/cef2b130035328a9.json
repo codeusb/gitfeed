@@ -1,0 +1,15 @@
+{
+  "id": "cef2b130035328a9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] 一个关闭运营商视频彩铃的方法",
+  "link": "https://www.v2ex.com/t/1258633#reply8",
+  "author": "MacTavish123",
+  "publishedAt": "2026-11-20T10:54:05Z",
+  "snippet": "之前在这个（https://www.v2ex.com/t/1258390 ）帖子里网友讨论关闭视频彩铃的方法，最近我又发现了一个方法。以中国移动的号码举例，下载“咪咕音乐”，然后在设置里关闭，如下图。经过测试，效果是无论你拨打别人的号码还是别人拨打你的号码都看不到，甚至连音乐彩铃都没有。回归最原始的： 嘟 ..嘟 ...嘟 ....嘟.....",
+  "coverImage": "https://i.imgur.com/F7aOEpH.png",
+  "readTime": 1,
+  "content": "之前在这个（<a href=\"https://www.v2ex.com/t/1258390\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.v2ex.com/t/1258390</a> ）帖子里网友讨论关闭视频彩铃的方法，最近我又发现了一个方法。<br/>以中国移动的号码举例，下载“咪咕音乐”，然后在设置里关闭，如下图。<br/>经过测试，效果是无论你拨打别人的号码还是别人拨打你的号码都看不到，甚至连音乐彩铃都没有。<br/>回归最原始的：   嘟 ..嘟 ...嘟 ....嘟.....<br/><a href=\"https://i.imgur.com/F7aOEpH.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/F7aOEpH.png\"/></a>",
+  "attachments": []
+}

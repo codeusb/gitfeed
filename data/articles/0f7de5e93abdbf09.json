@@ -1,0 +1,15 @@
+{
+  "id": "0f7de5e93abdbf09",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "Quoting Levent Alpöge",
+  "link": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-20T16:30:48Z",
+  "snippet": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<blockquote cite=\"https://alpo.ge/remark.pdf\"><p>I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a principal guiding light, but what I saw during the course of progress so amazed me that I believe it is one dawn across science of something far greater. [...]</p>\n<p>Claude and I have had a great time together with such breadth in recent months, but this time Claude far outpaced me near the finish line. No, Claude flew, and danced, and sparkled near that finish line.</p></blockquote>\n<p class=\"cite\">— <a href=\"https://alpo.ge/remark.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Levent Alpöge</a>, alpo.ge/remark.pdf</p>\n<p>Tags: <a href=\"https://simonwillison.net/tags/anthropic\" rel=\"noopener noreferrer\" target=\"_blank\">anthropic</a>, <a href=\"https://simonwillison.net/tags/claude\" rel=\"noopener noreferrer\" target=\"_blank\">claude</a>, <a href=\"https://simonwillison.net/tags/generative-ai\" rel=\"noopener noreferrer\" target=\"_blank\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/mathematics\" rel=\"noopener noreferrer\" target=\"_blank\">mathematics</a>, <a href=\"https://simonwillison.net/tags/ai\" rel=\"noopener noreferrer\" target=\"_blank\">ai</a>, <a href=\"https://simonwillison.net/tags/llms\" rel=\"noopener noreferrer\" target=\"_blank\">llms</a>, <a href=\"https://simonwillison.net/tags/levent-alpoge\" rel=\"noopener noreferrer\" target=\"_blank\">levent-alpoge</a></p>",
+  "attachments": []
+}
