@@ -1,0 +1,15 @@
+{
+  "id": "3be2d53683381747",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] [问与答] 带公式的图，转出来为什么容易乱",
+  "link": "https://www.v2ex.com/t/1258797#reply2",
+  "author": "weishao666",
+  "publishedAt": "2026-11-21T12:40:49Z",
+  "snippet": "公式是这类工具最容易翻车的地方。原因不复杂：公式不是普通文字，它有上下标、分式、希腊字母和特殊符号，识别成纯文本之后结构就散了。 我的处理办法是：转完之后，把公式部分单独用公式编辑器重打一遍，其他文字照用。这样既省了大部分打字，又不至于被公式拖死。 如果是整页都是公式的图，我会直接放弃转换，老老实实重排。判断成本比硬转更划算。 工具入口在这里：https://image2ppt.asia?utm_source=v2ex （图片、截图、单...",
+  "coverImage": "https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/003_%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96PPT%E6%A8%A1%E6%9D%BF_p01/%E5%8E%9F%E5%9B%BE.jpg",
+  "readTime": 1,
+  "content": "<p>公式是这类工具最容易翻车的地方。原因不复杂：公式不是普通文字，它有上下标、分式、希腊字母和特殊符号，识别成纯文本之后结构就散了。</p>\n<p>我的处理办法是：转完之后，把公式部分单独用公式编辑器重打一遍，其他文字照用。这样既省了大部分打字，又不至于被公式拖死。</p>\n<p>如果是整页都是公式的图，我会直接放弃转换，老老实实重排。判断成本比硬转更划算。</p>\n<p>工具入口在这里：<a href=\"https://image2ppt.asia?utm_source=v2ex\" rel=\"noopener noreferrer\" target=\"_blank\">https://image2ppt.asia?utm_source=v2ex</a>\n（图片、截图、单页 PDF 都能转成可编辑的 PPTX，成品无水印。）</p>\n<p>一个例子（原图 → 可编辑成品）：</p>\n<p><img alt=\"年终总结数据可视化 PPT 模板 原图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/003_%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96PPT%E6%A8%A1%E6%9D%BF_p01/%E5%8E%9F%E5%9B%BE.jpg\"/></p>\n<p><img alt=\"年终总结数据可视化 PPT 模板 成品\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/003_%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96PPT%E6%A8%A1%E6%9D%BF_p01/%E6%88%90%E5%93%81%E9%A2%84%E8%A7%88.jpg\"/></p>\n<p>素材库里随手挑的几页，这类图都能这么转：</p>\n<p><img alt=\"103_项目状态报告 PPT 模板_p06\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s021.jpg\"/>\n<img alt=\"59_创意环形结构图新能源科研 PPT\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s004.jpg\"/></p>",
+  "attachments": []
+}

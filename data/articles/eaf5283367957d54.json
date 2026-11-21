@@ -1,0 +1,15 @@
+{
+  "id": "eaf5283367957d54",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] Edge 插件审核被拒一次的教训：认证备注里要写清怎么测，不写账号",
+  "link": "https://www.v2ex.com/t/1258806#reply0",
+  "author": "bluesky1001",
+  "publishedAt": "2026-11-21T13:50:02Z",
+  "snippet": "做了几个 Edge 浏览器插件，ConvoExport 第一版提交后被拒了一次，记录一下教训。 被拒：v1.0.0 提交后收到拒信，政策 1.3 / 1.3.1「Product is Testable」，理由是没提供测试步骤和账号说明。报告 ID：941eda84-8d06-4d2b-83c5-0c8a1cc23b99。 重提：v1.0.2 的认证备注（Notes for certification）写了 1,237 字，内容是公开 C...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>做了几个 Edge 浏览器插件，ConvoExport 第一版提交后被拒了一次，记录一下教训。</p>\n<p>被拒：v1.0.0 提交后收到拒信，政策 1.3 / 1.3.1「Product is Testable」，理由是没提供测试步骤和账号说明。报告 ID：941eda84-8d06-4d2b-83c5-0c8a1cc23b99。</p>\n<p>重提：v1.0.2 的认证备注（Notes for certification）写了 1,237 字，内容是公开 ChatGPT 分享链接的逐步测试法，并明确声明无需测试账号、没有编造任何凭据。之后通过审核上架，v1.0.3 更新也正常通过。</p>\n<p>三点体会：</p>\n<ol>\n<li>审核员测不了你的产品时，给一条公开可复现的测试路径，比给测试账号更管用（没有账号可给的时候尤其如此）。</li>\n<li>备注要写「怎么测」，不是写「产品是什么」。</li>\n<li>版本状态分开写：已开发、已提交审核、已上架是三件事。我自己就在跟帖里把「已开发完成」写成过「已提交审核」，当天发了更正。</li>\n</ol>\n<p>现状：</p>\n<ul>\n<li>ConvoExport v1.0.3 已上架 Edge</li>\n<li>YT 字幕导出 v0.1.0 已上架，v0.1.3 在审</li>\n<li>SessionSnap v0.1.0 在审</li>\n<li>FocusBlock v0.1.0 已上架，v0.1.1 在审\n汇总页：<a href=\"https://alapha888.github.io/muse-plugins/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/muse-plugins/</a></li>\n</ul>",
+  "attachments": []
+}

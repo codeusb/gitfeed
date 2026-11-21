@@ -1,0 +1,15 @@
+{
+  "id": "3941ccd9e7d54123",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude] 被 kyc 搞服帖了，给 Claude 搭了个小工具，网络一不对劲自动杀死所有线程。",
+  "link": "https://www.v2ex.com/t/1258801#reply12",
+  "author": "SLboat",
+  "publishedAt": "2026-11-21T13:10:07Z",
+  "snippet": "为了这破东西，弄了专门的 ip，然后还要专门伺候。现在锁屏就是自动关 clash，自动关 claude。除非必要，都不碰它。然后将 cc 作为（claude）启动命令，检查 ip 环境一致，否则警告不启动。总之，虽然迟早都会阵亡的，还是安慰下心理吧。目前有的也在适应用 agy 替代，感觉最近的 agy 还蛮好的，对我的情况能替代很多场景，也不是非 Claude 不可了。最让人失望还是 codex，一本正经的聊天王，就是不爱干事。",
+  "coverImage": "https://i.imgur.com/gZTOCQq.png",
+  "readTime": 1,
+  "content": "为了这破东西，弄了专门的 ip，然后还要专门伺候。<br/>现在锁屏就是自动关 clash，自动关 claude。<br/>除非必要，都不碰它。<br/>然后将 cc 作为（claude）启动命令，检查 ip 环境一致，否则警告不启动。<br/><br/><a href=\"https://i.imgur.com/gZTOCQq.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/gZTOCQq.png\"/></a><br/><br/><a href=\"https://i.imgur.com/TFWT0kO.jpeg\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/TFWT0kO.jpeg\"/></a><br/><br/><a href=\"https://i.imgur.com/TwyTXsS.jpeg\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/TwyTXsS.jpeg\"/></a><br/><br/>总之，虽然迟早都会阵亡的，还是安慰下心理吧。<br/><br/>目前有的也在适应用 agy 替代，感觉最近的 agy 还蛮好的，对我的情况能替代很多场景，也不是非 Claude 不可了。<br/>最让人失望还是 codex，一本正经的聊天王，就是不爱干事。",
+  "attachments": []
+}

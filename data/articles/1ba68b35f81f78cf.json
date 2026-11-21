@@ -1,0 +1,15 @@
+{
+  "id": "1ba68b35f81f78cf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个在线工具：一键移除 GIF 背景并保留动画",
+  "link": "https://www.v2ex.com/t/1258803#reply0",
+  "author": "rickylee",
+  "publishedAt": "2026-11-21T13:24:33Z",
+  "snippet": "大家好，做了个小工具上线了：TransparentGIFMaker —— https://transparentgifmaker.online 这是个什么？上传一个动画 GIF，去掉背景，下载一个还能动的透明 GIF。 为什么做这个 想给 Slack / Discord 做透明贴纸的时候发现，市面上叫 \"GIF background remover\" 的工具大部分不好用： 有的要先手动选取/输入要去掉的背景色（类似抠绿幕），遇到渐变背景...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家好，做了个小工具上线了：<strong>TransparentGIFMaker</strong> —— <a href=\"https://transparentgifmaker.online\" rel=\"noopener noreferrer\" target=\"_blank\">https://transparentgifmaker.online</a></p>\n<p>这是个什么？上传一个动画 GIF，去掉背景，下载一个还能动的透明 GIF。</p>\n<p><strong>为什么做这个</strong></p>\n<p>想给 Slack / Discord 做透明贴纸的时候发现，市面上叫 \"GIF background remover\" 的工具大部分不好用：</p>\n<ul>\n<li>有的要先手动选取/输入要去掉的背景色（类似抠绿幕），遇到渐变背景、抗锯齿边缘就漏抠，主体周围一圈白边；</li>\n<li>有的虽然号称 AI 抠图，用的模型效果很差，边缘毛糙、主体残缺，动起来更没法看；</li>\n<li>有的只抠第一帧，后面帧还是带背景的；</li>\n<li>有的导出 PNG 图片序列，想得到透明动画 GIF 还得自己拼回去。</li>\n</ul>\n<p>所以自己写了一个：不用指定背景色，AI 模型逐帧识别前景/背景直接抠，保留原帧延时后重新编码成透明动画 GIF，一次到位。</p>\n<p><strong>怎么做的</strong></p>\n<ul>\n<li>全栈 TanStack Start + React 19，跑在 Cloudflare Workers 上（D1 + Drizzle 存数据，R2 存文件走同源代理）</li>\n<li>抠图用的 Replicate 上的 BirefNet 模型，服务端逐帧批处理，保留原帧延时后重新编码</li>\n<li>按帧数扣积分，处理失败会自动退回</li>\n</ul>\n<p><strong>使用说明 / 已知限制</strong></p>\n<ul>\n<li>需要 GIF ≤ 10MB、≤ 300 帧，注册后可用</li>\n<li>GIF 格式本身是 1-bit 透明，没有半透明，所以边缘是硬边（FAQ 里写明了，不藏着）</li>\n<li>注册送 3 积分，大概能处理 60 帧，够试两三个小 GIF；用完才需要付费，$4.99 / 10 积分起，不付费也能一直用免费额度</li>\n</ul>\n<p><strong>求反馈</strong></p>\n<ul>\n<li>你平时会在什么场景用透明 GIF？（贴纸、网页 loading、教程配图？）</li>\n<li>边缘效果、处理速度、积分定价，有觉得不合理的地方欢迎直接喷</li>\n<li>想加的功能也欢迎提（自定义底色、批量处理之类）</li>\n</ul>\n<p>感谢。</p>",
+  "attachments": []
+}

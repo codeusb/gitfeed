@@ -1,0 +1,15 @@
+{
+  "id": "691c25a1b8f92408",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[嵌入式开发] 各位搞嵌入式的老哥，keil 新出的那个版本，Keil MDK v6 版本有谁使用过没？",
+  "link": "https://www.v2ex.com/t/1258776#reply0",
+  "author": "Cu635",
+  "publishedAt": "2026-11-21T09:28:44Z",
+  "snippet": "看官方推出了Keil MDK v6这个新版本，比老旧的版本要更适应新的开发流程，对版本管理以及配置的文本化也更友好，有谁使用过没？会踩什么坑不？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>看官方推出了<code>Keil MDK v6</code>这个新版本，比老旧的版本要更适应新的开发流程，对版本管理以及配置的文本化也更友好，有谁使用过没？会踩什么坑不？</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "7bd2a68718dbbacc",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "RCE in Gnupg",
+  "link": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+  "author": "gdgghhhhh",
+  "publishedAt": "2026-11-21T08:32:58Z",
+  "snippet": "Article URL: https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html Comments URL: https://news.ycombinator.com/item?id=50587208 Points: 149 # Comments: 50",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html\" rel=\"noopener noreferrer\" target=\"_blank\">https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50587208\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50587208</a></p>\n<p>Points: 149</p>\n<p># Comments: 50</p>",
+  "attachments": []
+}

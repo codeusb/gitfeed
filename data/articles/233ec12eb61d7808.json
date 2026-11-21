@@ -1,0 +1,15 @@
+{
+  "id": "233ec12eb61d7808",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 请教一个问题, 大家建设的网站,发送邮箱验证码, 怎么实现的?",
+  "link": "https://www.v2ex.com/t/1258787#reply6",
+  "author": "yigemeirenyongde",
+  "publishedAt": "2026-11-21T11:29:29Z",
+  "snippet": "我想搭建一个网站, 用户注册时, 想像大家一样使用邮件验证码,想问一下你们是怎么实现的? 自己搭建, 还是使用的哪家的邮箱服务呀?",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我想搭建一个网站, 用户注册时, 想像大家一样使用邮件验证码,想问一下你们是怎么实现的?\n自己搭建, 还是使用的哪家的邮箱服务呀?</p>",
+  "attachments": []
+}

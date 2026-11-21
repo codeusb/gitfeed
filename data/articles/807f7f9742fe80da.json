@@ -1,0 +1,15 @@
+{
+  "id": "807f7f9742fe80da",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[宽带症候群] 中国移动 cmnet 代理上网的 IPv4 池子这么大啊 ？",
+  "link": "https://www.v2ex.com/t/1258774#reply3",
+  "author": "intoext",
+  "publishedAt": "2026-11-21T09:21:49Z",
+  "snippet": "带了两步中国移动手机出来。因为有嫖的 2GB 日包流量。使用第一步手机时，IP 是 223.104.150.X。 换第二个手机时，IP 居然变成了 39.144.156.X。 两个手机在一个地方，一个基站之下。 这 IP 的距离也相差太远了。 难道是这 IP NAT POOL 就是一些零碎地址组成的？？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>带了两步中国移动手机出来。因为有嫖的 2GB 日包流量。使用第一步手机时，IP 是 223.104.150.X。\n换第二个手机时，IP 居然变成了 39.144.156.X。  两个手机在一个地方，一个基站之下。 这 IP 的距离也相差太远了。 难道是这 IP NAT POOL 就是一些零碎地址组成的？？</p>",
+  "attachments": []
+}

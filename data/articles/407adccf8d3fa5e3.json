@@ -1,0 +1,15 @@
+{
+  "id": "407adccf8d3fa5e3",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 我用 GFS 建站引擎做了一个 Krillion 专题游戏",
+  "link": "https://www.v2ex.com/t/1258804#reply0",
+  "author": "Errat1c",
+  "publishedAt": "2026-11-21T13:27:33Z",
+  "snippet": "最近关注独立开发和出海建站，发现两个挺有意思的热点： 一个是 Krillion 游戏突然爆火，另一个是 哥飞的建站引擎也越来越火。 Krillion 的玩法很有意思，不是考你能不能答对，而是考你能不能想到别人想不到的答案。 比如给你一个开放式问题，大家都能回答，但越常见的答案得分越低，越冷门且符合要求的答案反而得分越高。 这种反直觉的玩法挺容易让人上头，也特别适合朋友之间互相比较成绩。 看到 Krillion 的热度后，我就想：既然游戏...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近关注独立开发和出海建站，发现两个挺有意思的热点：</p>\n<p>一个是 <strong>Krillion 游戏突然爆火</strong>，另一个是 <strong>哥飞的建站引擎也越来越火</strong>。</p>\n<p>Krillion 的玩法很有意思，不是考你能不能答对，而是考你能不能想到别人想不到的答案。</p>\n<p>比如给你一个开放式问题，大家都能回答，但越常见的答案得分越低，越冷门且符合要求的答案反而得分越高。</p>\n<p>这种反直觉的玩法挺容易让人上头，也特别适合朋友之间互相比较成绩。</p>\n<p>看到 Krillion 的热度后，我就想：既然游戏这么火，哥飞的建站引擎又能快速搭建网站，能不能把两者结合起来，自己做一个小游戏网站？</p>\n<p>于是就有了 <strong><a href=\"http://DailyGame.gg\" rel=\"noopener noreferrer\" target=\"_blank\">DailyGame.gg</a></strong>。</p>\n<p>网站地址：<a href=\"https://dailygame.gg/\" rel=\"noopener noreferrer\" target=\"_blank\">https://dailygame.gg/</a></p>\n<h3>目前上线了两个游戏版本</h3>\n<p><strong>1. Krillion Lite（自己开发的原创版本）</strong></p>\n<p>参考 Krillion 的冷门答案玩法，自己做了一个轻量版，每天提供一组挑战题目。</p>\n<p>核心思路是：</p>\n<ul>\n<li>不只是回答正确，还要尽量避免大众化答案</li>\n<li>鼓励玩家发散思维，寻找更独特的回答</li>\n<li>每天一道挑战流程，适合利用碎片时间玩一会儿</li>\n<li>浏览器直接打开就能玩，不需要下载安装</li>\n</ul>\n<p>希望保留 Krillion 最有趣的部分，同时让游戏体验更轻量。</p>\n<p><strong>2. Krillion Unlimited（嵌入的游戏版本）</strong></p>\n<p>除了自己开发的 Lite 版本，网站还嵌入了 <a href=\"http://PlayDaily.org\" rel=\"noopener noreferrer\" target=\"_blank\">PlayDaily.org</a> 提供的 Krillion Unlimited 游戏。</p>\n<p>这个版本没有每天只能玩一次的限制，一局包含 7 道题，每道题限时 25 秒。</p>\n<p>如果觉得每天一局不过瘾，可以一直挑战，看看自己能想出多少冷门答案。</p>\n<p>这里也说明一下：Unlimited 不是我开发的，网站只是提供了嵌入式游玩入口；Lite 才是自己开发的版本。</p>\n<h3>关于哥飞的建站引擎</h3>\n<p>这次也算是一次快速建站实践。</p>\n<p>以前做一个小游戏网站，从页面设计、游戏开发到上线部署，往往需要花不少时间。</p>\n<p>这次借助哥飞的建站引擎搭建网站，再结合自己的游戏开发，整个从想法到上线的过程轻量了不少。</p>\n<p>对独立开发者来说，我觉得这类工具最大的价值不是单纯省去写代码的时间，而是能够更快验证一个想法。</p>\n<p>看到一个有意思的玩法，可以先做出能玩的版本，再根据玩家反馈继续完善。</p>\n<h3>后续准备继续做什么？</h3>\n<p>目前网站刚上线，功能还比较简单。</p>\n<p>接下来打算用建站引擎完善自己的 Krillion Lite 版本，同时也考虑加入更多适合浏览器直接玩的轻量小游戏。</p>\n<p>网站：<a href=\"https://dailygame.gg/\" rel=\"noopener noreferrer\" target=\"_blank\">https://dailygame.gg/</a></p>\n<p>欢迎 V 友体验，尤其想听听大家对原创 Lite 版本的意见：</p>\n<ol>\n<li>冷门答案这种玩法有没有意思？</li>\n<li>Lite 版本还有哪些值得增加的功能？</li>\n<li>如果做成一个每日小游戏合集，大家会愿意经常回来玩吗？</li>\n</ol>\n<p>第一次尝试用这种方式快速上线小游戏网站，欢迎交流，也欢迎拍砖 : )</p>",
+  "attachments": []
+}

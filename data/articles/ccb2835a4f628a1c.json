@@ -1,0 +1,15 @@
+{
+  "id": "ccb2835a4f628a1c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 自动保存项目快照，再也不用担心 ai 乱改代码了",
+  "link": "https://www.v2ex.com/t/1258809#reply2",
+  "author": "Need4more",
+  "publishedAt": "2026-11-21T14:22:02Z",
+  "snippet": "每轮对话结束后自动提交所有的改动到本地 git，提交信息由当前可用的 llm 生成，会自动排除掉敏感文件。如果你的日常 agent 是 zcode、workbuddy，欢迎试用、反馈。项目地址：https://github.com/netcaty/skill",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "每轮对话结束后自动提交所有的改动到本地 git，提交信息由当前可用的 llm 生成，会自动排除掉敏感文件。<br/><br/>如果你的日常 agent 是 zcode、workbuddy，欢迎试用、反馈。<br/><br/>项目地址：<a href=\"https://github.com/netcaty/skill\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/netcaty/skill</a>",
+  "attachments": []
+}

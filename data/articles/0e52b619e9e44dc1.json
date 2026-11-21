@@ -1,0 +1,15 @@
+{
+  "id": "0e52b619e9e44dc1",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Apple] 国行机器上的 iWork 貌似可以使用由 OpenAI 提供的 Apple Intelligence 功能",
+  "link": "https://www.v2ex.com/t/1258805#reply1",
+  "author": "lloyds",
+  "publishedAt": "2026-11-21T13:48:39Z",
+  "snippet": "如题，使用美区 Apple Account 订阅了 Apple Creator Studio。在没有魔改过的 MacBook Air M1 CH/A 上可以使用由 OpenAI 提供的 AI 功能。（在首次使用的时候会提示将数据传输给第三方公司，那时候显示的是 OpenAI；需要将几个 Apple Intelligence 相关的域名代理后才能使用）",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "如题，使用美区 Apple Account 订阅了 Apple Creator Studio。在没有魔改过的 MacBook Air M1 CH/A 上可以使用由 OpenAI 提供的 AI 功能。<br/><br/>（在首次使用的时候会提示将数据传输给第三方公司，那时候显示的是 OpenAI；需要将几个 Apple Intelligence 相关的域名代理后才能使用）",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "25a40d03774dd711",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 一个能在终端中运行 Web APIs 的工具",
+  "link": "https://www.v2ex.com/t/1258788#reply2",
+  "author": "Spxg",
+  "publishedAt": "2026-11-21T11:34:05Z",
+  "snippet": "一些示例：https://spxg.github.io/limo Github 地址：https://github.com/Spxg/limo limo 基于 moli 源码开发，moli 是一个基于 V8 引擎并实现了 Web APIs 的无头浏览器，能够以较低的内存占用和较快的速度运行。 开发背景是我在维护一些主要运行在浏览器上的 WebAssembly 项目，所以要和 JavaScript 和 Web APIs 打交道。但我在终端...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>一些示例：<a href=\"https://spxg.github.io/limo\" rel=\"noopener noreferrer\" target=\"_blank\">https://spxg.github.io/limo</a></p>\n<p>Github 地址：<a href=\"https://github.com/Spxg/limo\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/Spxg/limo</a></p>\n<p>limo 基于 <a href=\"https://github.com/lexmount/moli\" rel=\"noopener noreferrer\" target=\"_blank\">moli</a> 源码开发，moli 是一个基于 V8 引擎并实现了 Web APIs 的无头浏览器，能够以较低的内存占用和较快的速度运行。</p>\n<p>开发背景是我在维护一些主要运行在浏览器上的 WebAssembly 项目，所以要和 JavaScript 和 Web APIs 打交道。但我在终端环境下编写代码，要测试的话需要本地启动一个 http server，之后通过有桌面环境的打开它，或者通过 chromedriver 或者其他的 driver 进行测试（有时候 chromedriver 和 chrome 版本对不上还启动不了）。感觉这不符合人体工学，我在想如果能像 node 和 deno 一样直接执行 JS 就好了，可惜它们没有实现完整的 Web APIs，然后就整了这个工具。</p>\n<p>个人认为 limo 可以用在日常调试和 CI 上，或者一些自动化任务。</p>\n<p>欢迎大家尝试</p>",
+  "attachments": []
+}

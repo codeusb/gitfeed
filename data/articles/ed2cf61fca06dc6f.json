@@ -1,0 +1,15 @@
+{
+  "id": "ed2cf61fca06dc6f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [分享创造] 磁带猫：把 NAS / WebDAV 上的影音整理成私人媒体库，送 20 个兑换码",
+  "link": "https://www.v2ex.com/t/1258790#reply15",
+  "author": "kaihli",
+  "publishedAt": "2026-11-21T11:54:23Z",
+  "snippet": "大家好，独立开发了一个 iOS App：磁带猫（Tape Cat），一个 WebDAV 影音播放器 🐱 起因很简单：影片和音乐都放在 NAS 上，想要一个能直接连 WebDAV、又能把媒体库整理好看的播放器。 和 Plex / Emby 比 Plex 和 Emby 我都买过，用了挺久，它们很强大，但对我来说有几个不顺手的地方，所以才有了磁带猫： 不用装服务端。 Plex / Emby 要在 NAS 或电脑上跑一个媒体服务器，还要维护它的...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家好，独立开发了一个 iOS App：<strong>磁带猫（Tape Cat）</strong>，一个 WebDAV 影音播放器 🐱</p>\n<p>起因很简单：影片和音乐都放在 NAS 上，想要一个能直接连 WebDAV、又能把媒体库整理好看的播放器。</p>\n<p><strong>和 Plex / Emby 比</strong></p>\n<p>Plex 和 Emby 我都买过，用了挺久，它们很强大，但对我来说有几个不顺手的地方，所以才有了磁带猫：</p>\n<ul>\n<li><strong>不用装服务端。</strong> Plex / Emby 要在 NAS 或电脑上跑一个媒体服务器，还要维护它的更新、转码、数据库。磁带猫直接连 WebDAV，NAS 上开个 WebDAV 就行，换台设备连上同一个地址就是同一个媒体库。</li>\n<li><strong>音乐的歌手归类。</strong> 合唱、feat. 和群星合辑一直是我的痛点，经常一首歌只挂在一个歌手下面，或者一张合辑被拆成好几张。磁带猫里一首歌会出现在每位参与歌手下面，专辑保持完整，中英文名也能合并成同一位。</li>\n</ul>\n<p>当然，需要多人共享、远程转码、电视端的话，Plex / Emby 还是更合适，磁带猫目前专注 iPhone / iPad 上自己用。</p>\n<p><strong>影视</strong></p>\n<ul>\n<li>海报墙、分季分集，看到一半接着看</li>\n<li>读本地 NFO，也能用 TMDB 匹配片名、演员、简介</li>\n<li>直接播放，支持内嵌和外挂字幕、多音轨</li>\n</ul>\n<p><strong>音乐</strong></p>\n<ul>\n<li>合唱、feat. 的歌会同时出现在每位歌手下面，比如一首周杰伦 feat. 张惠妹，在两个人的歌手页都找得到；群星合辑里的歌也各自归到原唱，专辑本身不会被拆散</li>\n<li>按歌手、专辑、曲风浏览，多碟专辑分碟显示</li>\n<li>同一个歌手被拆成中英文两个名字时，可以合并</li>\n<li>FLAC / MP3 / M4A，用 MusicBrainz 补全歌名、专辑、封面</li>\n<li>歌词（LRC / TXT / 内嵌）、整轨 + .cue 分轨、睡眠定时</li>\n</ul>\n<p><strong>其他</strong></p>\n<ul>\n<li>扫描只读文件列表，大库也能很快开始浏览</li>\n<li>找出重复的电影、剧集、歌曲</li>\n<li>离线下载，没网也能看</li>\n</ul>\n<p><strong>下载：</strong> <a href=\"https://apps.apple.com/app/id6828028168\" rel=\"noopener noreferrer\" target=\"_blank\">https://apps.apple.com/app/id6828028168</a></p>\n<p><strong>送码</strong></p>\n<p>20 个兑换码，2026-12-19 前有效。先放 10 个，base64：</p>\n<pre><code>RkFQM0VNN1dUV1BQClhOUFBGOVhGTFlQTgpBRkpXM0tKQUZYRVAKSlBUS1BUM1hQOUZSCk1LUjM3TlBUV1dGUgo5VEs3WDlIWFRBNjkKMzZKRVk3TDdMTTdMCjlYRUFUSlhNQVk2RgpYTlA2VzNMN1JNUFcKTFRUVFhNTExIWTMz\n</code></pre>\n<p>用掉的麻烦回帖说一声，省得别人白试。剩下 10 个晚点在楼里放。</p>\n<p>有问题或建议欢迎留言，都会看 🙏</p>",
+  "attachments": []
+}

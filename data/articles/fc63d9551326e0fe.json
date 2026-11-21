@@ -1,0 +1,15 @@
+{
+  "id": "fc63d9551326e0fe",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了一个在线刷 JLPT 日语真题的网站，求拍砖",
+  "link": "https://www.v2ex.com/t/1258813#reply1",
+  "author": "melowwxfakenews",
+  "publishedAt": "2026-11-21T14:54:35Z",
+  "snippet": "自己准备日语考试的时候发现，历年真题大多是网盘里的 PDF：缺听力、答案对不上、手机上没法做。所以做了 https://okjlpt.com ： 2010–2026 年 N1–N5 的历年真题，在线作答，听力直接播放，交卷自动估分，每题有答案和解析 可以按题型分开练，比如只练 N2 的听力即时应答 N5–N1 的单词表和语法，单词标了在真题里考过几次 《大家的日语》《标准日本语》按课整理的单词和语法 有 iOS 和安卓 App，进度和网...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>自己准备日语考试的时候发现，历年真题大多是网盘里的 PDF：缺听力、答案对不上、手机上没法做。所以做了 <a href=\"https://okjlpt.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://okjlpt.com</a> ：</p>\n<ul>\n<li>2010–2026 年 N1–N5 的历年真题，在线作答，听力直接播放，交卷自动估分，每题有答案和解析</li>\n<li>可以按题型分开练，比如只练 N2 的听力即时应答</li>\n<li>N5–N1 的单词表和语法，单词标了在真题里考过几次</li>\n<li>《大家的日语》《标准日本语》按课整理的单词和语法</li>\n<li>有 iOS 和安卓 App，进度和网页同步</li>\n</ul>\n<p>N5、N4 全部免费，N1–N3 每级一套免费，其余需要买通行证（一次付清，不自动续费）。</p>\n<p>技术上：网页是 vinext（Vite 上跑的 Next.js）部署在 Cloudflare Workers，后端是 Go + Postgres。做的过程中碰到 Cloudflare 在国内访问慢，最后让大陆和台湾的访客直连东京的服务器，延迟从 0.69 秒降到 0.22 秒左右。</p>\n<p>想听听大家的意见，尤其是在准备 JLPT 的朋友：哪里不好用、缺什么，都可以直接说。</p>",
+  "attachments": []
+}
