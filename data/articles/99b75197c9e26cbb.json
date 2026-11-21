@@ -1,0 +1,15 @@
+{
+  "id": "99b75197c9e26cbb",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] OnDemand Agent 更新：Claude 已稳定交付几十个 PR，继续找人测试",
+  "link": "https://www.v2ex.com/t/1258757#reply0",
+  "author": "1wlinesperday",
+  "publishedAt": "2026-11-21T07:51:40Z",
+  "snippet": "昨天发了个帖子介绍 OnDemand Agent（一键用 Claude Code Opus 5.5，不用折腾账号和 API），谢谢大家的反馈和测试：https://www.v2ex.com/t/1258640 这几天跑下来，Claude 已经稳定交付了几十个 PR，流程还是先给方案、你确认了才动手、写完直接提 PR。 继续找更多人来测试、给反馈，免费送 500 Credits，感兴趣的留言，我发你。 👉 ondemandagent.de...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>昨天发了个帖子介绍 OnDemand Agent（一键用 Claude Code Opus 5.5，不用折腾账号和 API），谢谢大家的反馈和测试：<a href=\"https://www.v2ex.com/t/1258640\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.v2ex.com/t/1258640</a></p>\n<p>这几天跑下来，Claude 已经稳定交付了几十个 PR，流程还是先给方案、你确认了才动手、写完直接提 PR。</p>\n<p>继续找更多人来测试、给反馈，免费送 500 Credits，感兴趣的留言，我发你。\n👉 ondemandagent.dev</p>",
+  "attachments": []
+}

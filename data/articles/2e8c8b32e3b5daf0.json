@@ -1,0 +1,15 @@
+{
+  "id": "2e8c8b32e3b5daf0",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了 4 个 Edge 浏览器插件：对话导出 / YouTube 字幕导出 / 会话快照 / 专注拦截",
+  "link": "https://www.v2ex.com/t/1258704#reply0",
+  "author": "bluesky1001",
+  "publishedAt": "2026-11-21T02:48:28Z",
+  "snippet": "过去一周做了 4 个浏览器插件，都是解决自己日常遇到的小问题。3 个已在 Edge Add-ons 上架，第 4 个正在审核。汇总页：https://alapha888.github.io/muse-plugins/1. ConvoExport —— 导出 ChatGPT / Claude 单条对话为 Markdown / DOCX / HTML / 打印版，每天免费 3 次；Pro ¥19.9 一次性，解锁无限次数与批量导出。商店：h...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "过去一周做了 4 个浏览器插件，都是解决自己日常遇到的小问题。3 个已在 Edge Add-ons 上架，第 4 个正在审核。汇总页：<a href=\"https://alapha888.github.io/muse-plugins/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/muse-plugins/</a><br/><br/>1. ConvoExport —— 导出 ChatGPT / Claude 单条对话为 Markdown / DOCX / HTML / 打印版，每天免费 3 次；Pro ¥19.9 一次性，解锁无限次数与批量导出。<br/>商店：<a href=\"https://microsoftedge.microsoft.com/addons/detail/akkapiafnelednmcejjeihoggdccbhle\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/akkapiafnelednmcejjeihoggdccbhle</a><br/>Pro：<a href=\"https://afdian.com/item/cbe69798e4ae11f1ad295254001e7c00\" rel=\"noopener noreferrer\" target=\"_blank\">https://afdian.com/item/cbe69798e4ae11f1ad295254001e7c00</a><br/><br/>2. YT Transcript Export —— 导出任意 YouTube 视频字幕为 TXT / Markdown / SRT / VTT，支持播放列表批量导出；Pro ¥19.9 一次性。<br/>商店：<a href=\"https://microsoftedge.microsoft.com/addons/detail/glplffbabkidmgboinalcdjelenheall\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/glplffbabkidmgboinalcdjelenheall</a><br/>Pro：<a href=\"https://afdian.com/item/b1184b22e48c11f18ad052540025c377\" rel=\"noopener noreferrer\" target=\"_blank\">https://afdian.com/item/b1184b22e48c11f18ad052540025c377</a><br/><br/>3. FocusBlock —— 按域名 / 关键词拦截分心网站，免费版限 20 条规则；Pro ¥19.9 一次性，解锁无限规则、定时、密码锁、专注计时、统计。<br/>商店：<a href=\"https://microsoftedge.microsoft.com/addons/detail/kdpeddhiegpfadpjiaieoaeiloebgdhp\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/kdpeddhiegpfadpjiaieoaeiloebgdhp</a><br/>Pro：<a href=\"https://afdian.com/item/df4f2b96e25211f1843a52540025c377\" rel=\"noopener noreferrer\" target=\"_blank\">https://afdian.com/item/df4f2b96e25211f1843a52540025c377</a><br/><br/>4. SessionSnap —— 跨浏览器会话快照管理器，保存 / 恢复窗口与标签组，正在 Edge 审核中，暂无安装链接，上架后会更新到汇总页。<br/><br/>四个插件全部本地处理，不上传数据，不要求账号。欢迎试用反馈。",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "9a49cb18e92540c6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[iPhone] 打开一个网页就能被黑？聊聊 Coruna、DarkSword 和 worse_query 这几个 iPhone 漏洞",
+  "link": "https://www.v2ex.com/t/1258706#reply0",
+  "author": "alonemonkey",
+  "publishedAt": "2026-11-21T03:01:27Z",
+  "snippet": "打开一个网页，没输密码、没装 App，iPhone 也可能被入侵吗？在受影响的 iOS 版本上，访问被植入攻击代码的网页就可能触发攻击。 Coruna 和 DarkSword 都属于这类案例。最近引发钱包安全讨论的 worse_query，触发条件则是手机上已经运行了恶意 App。 网页里的代码，怎么从 Safari 影响到整台手机？ 正常情况下，网页代码被限制在浏览器进程里，能读写什么由系统约束。Coruna 和 DarkSword ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>打开一个网页，没输密码、没装 App，iPhone 也可能被入侵吗？在受影响的 iOS 版本上，访问被植入攻击代码的网页就可能触发攻击。 Coruna 和 DarkSword 都属于这类案例。最近引发钱包安全讨论的 worse_query，触发条件则是手机上已经运行了恶意 App。</p>\n<p>网页里的代码，怎么从 Safari 影响到整台手机？</p>\n<p>正常情况下，网页代码被限制在浏览器进程里，能读写什么由系统约束。Coruna 和 DarkSword 之所以被称为「攻击链」，是因为攻击者可以把多个漏洞接起来，逐步突破浏览器和操作系统的隔离。对用户来说，最值得注意的是网页从哪里来的：一个平时常访问的网站，一旦被植入恶意内容，也可能成为入口。</p>\n<p>装进手机的 App，又为什么能碰到别的 App 的文件？</p>\n<p>iOS 的应用沙盒默认把各个 App 的私有数据隔开。worse_query 破坏了这层隔离：如果恶意 App 已经安装并运行，就可能读取其他 App 存在本机的文件。如果钱包把助记词、私钥或登录凭据明文落盘，这些文件就可能暴露。这也提醒做 iOS 开发的朋友，设计敏感数据的存储方式时，要考虑沙盒隔离失效会有什么后果。</p>\n<p>手里的 iPhone 该怎么处理？</p>\n<ol>\n<li>打开「设置 → 通用 → 软件更新」，安装设备能收到的最新正式版。旧机型也值得查，苹果曾为无法升级到新系统的设备单独提供安全更新。</li>\n<li>避免安装从群聊、网盘或陌生网站拿到的 App 和描述文件。对于依赖恶意 App 先运行的问题，安装这一步就是可以直接控制的风险。</li>\n<li>如果可能遭遇高度定向攻击，或设备暂时无法更新，可以了解苹果的「锁定模式」。它会限制部分网页和消息功能，开启前可以先看看对日常使用的影响。\n这次在 HotRepo 整理这几个案例时，我觉得最值得讲清的是触发条件：一个漏洞从网页进来，另一个要等 App 在本机运行，用户能采取的防护也不同。也想请教做 iOS 的朋友：你们在审查 App 的本地存储时，怎么查日志、缓存或导出文件里有没有留下敏感数据？</li>\n</ol>\n<p>原文来源: <a href=\"https://hotrepo.ai/zh/stories/ios-exploits-coruna-darksword?utm_source=v2ex&amp;utm_medium=community&amp;utm_campaign=ios_exploits_coruna_darksword&amp;utm_content=iphone_topic\" rel=\"noopener noreferrer\" target=\"_blank\">https://hotrepo.ai/zh/stories/ios-exploits-coruna-darksword</a></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "396bdbaa5de9dc1b",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Google] gemini neon 不堪大任",
+  "link": "https://www.v2ex.com/t/1258716#reply20",
+  "author": "shinession",
+  "publishedAt": "2026-11-21T03:48:24Z",
+  "snippet": "前几天 Google 促销, 7.98 新币买了个 pro, 第一天试用 opus, 结果一行代码没写, 5 小时额度没了,昨天看到有人吹 neon, 我也试了下, 让写个小程序, 成功,今天让它改个下载的爬虫, 每次调用网站都要授权不说, 20 分钟写完了, 说写了文档/unittest, 结果 9 个飘红, 根本无法运行, 生气还是让 cc 去改, 一下安心多了",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "前几天 Google 促销, 7.98 新币买了个 pro, 第一天试用 opus, 结果一行代码没写, 5 小时额度没了,<br/><br/>昨天看到有人吹 neon, 我也试了下, 让写个小程序, 成功,<br/><br/>今天让它改个下载的爬虫, 每次调用网站都要授权不说, 20 分钟写完了, 说写了文档/unittest, 结果 9 个飘红, 根本无法运行, 生气还是让 cc 去改, 一下安心多了",
+  "attachments": []
+}

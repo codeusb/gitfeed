@@ -1,0 +1,15 @@
+{
+  "id": "cd93b0c76373ccba",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Linux] 做了个简单明了实用的日程管理工具，可本地可远程同步 caldav，支持苹果、统信、Windows",
+  "link": "https://www.v2ex.com/t/1258699#reply3",
+  "author": "maichaide",
+  "publishedAt": "2026-11-21T02:18:54Z",
+  "snippet": "g 一直在手机 termux 和 Linux 下使用 TUI 界面的 calcurse，干脆做个 GUI 的日程管理工具，完整复刻 calcurse 核心能力并扩展现代日历生态在统信和 Windows 上都试过，苹果系统也手头没电脑未做测试https://github.com/maichaide/rustcal/releases/tag/rustcal特色优势 单文件运行在多个平台，多个架构 日历搜索时可以切换到年视图，会自动显示全年包...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "g 一直在手机 termux 和 Linux 下使用 TUI 界面的 calcurse，干脆做个 GUI 的日程管理工具，完整复刻 calcurse 核心能力并扩展现代日历生态<br/><br/>在统信和 Windows 上都试过，苹果系统也手头没电脑未做测试<br/><a href=\"https://github.com/maichaide/rustcal/releases/tag/rustcal\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/maichaide/rustcal/releases/tag/rustcal</a><br/><br/>特色优势<br/><br/>    单文件运行在多个平台，多个架构<br/>    日历搜索时可以切换到年视图，会自动显示全年包含搜索关键字的日程数量，并在右边即时显示相关日程，特别方便年终总结回顾<br/>    同步时出错会有详细出错信息，便于用户排查原因<br/><br/>功能<br/><br/>    导入导出标准日历格式 .ics 文件<br/>    解析多语言（英语、中文、日语等）<br/>    搜索所有日程（月视图、周视图、日视图、年视图）<br/>    日程安排（红色为重要紧急，紫色为重要不紧急，蓝色为一般不紧急，橙色为一般紧急，黑色为事项提醒<br/>    待办任务（9 个优先级别）<br/>    支持工作、生活和自定义等多个日历<br/>    支持全键盘快捷键操作<br/>    支持导入、导出与全量备份至本地 sqlite 数据库，支持 JSON 格式备份与恢复<br/>    支持云端同步，支持 CalDAV、WebDAV 协议<br/>    所有处理在本机完成",
+  "attachments": []
+}

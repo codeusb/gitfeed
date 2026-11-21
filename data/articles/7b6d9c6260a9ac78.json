@@ -1,0 +1,15 @@
+{
+  "id": "7b6d9c6260a9ac78",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 入了 Gemini Pro 之后，已经严肃取消 GPT plus",
+  "link": "https://www.v2ex.com/t/1258745#reply10",
+  "author": "jindeq",
+  "publishedAt": "2026-11-21T06:44:16Z",
+  "snippet": "Neon 干活确实挺漂亮的，也没 GPT 那么多废话 但是缺点也有： 额度消耗很快，一个对话，几轮任务下来 week 消耗 92% 反重力不好用，不过官方表示即将支持接入其他 agent，未来应该不是问题 当前尚存订阅 GLM max(年费，到期看情况续不续）、opencode go（GLM 用完消耗它）、Gemini Pro（代替 GPT 做管理、规划、设计）、GPT（12-01 到期不续）",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Neon 干活确实挺漂亮的，也没 GPT 那么多废话\n但是缺点也有：</p>\n<ol>\n<li>额度消耗很快，一个对话，几轮任务下来 week 消耗 92%</li>\n<li>反重力不好用，不过官方表示即将支持接入其他 agent，未来应该不是问题</li>\n</ol>\n<p>当前尚存订阅 GLM max(年费，到期看情况续不续）、opencode go（GLM 用完消耗它）、Gemini Pro（代替 GPT 做管理、规划、设计）、GPT（12-01 到期不续）</p>",
+  "attachments": []
+}

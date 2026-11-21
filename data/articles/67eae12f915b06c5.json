@@ -1,0 +1,15 @@
+{
+  "id": "67eae12f915b06c5",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[🤖Vibe Coding] 用 Codex 给 Geometry Dash 抽卡小游戏加了中文版，聊聊多语言评论怎么做",
+  "link": "https://www.v2ex.com/t/1258714#reply1",
+  "author": "XiaoDu1987",
+  "publishedAt": "2026-11-21T03:35:21Z",
+  "snippet": "我做了个 Geometry Dash 同人网页小游戏 Demon Gacha，把 Extreme Demon 难度的关卡做成可以收集的卡牌。现在有三个卡池、共 1000 张卡。打开网页就能免费十连，重复卡会换成碎片，收藏进度存在当前浏览器。也做了两个可以随手玩的小挑战：猜哪个关卡更难，以及闪卡配对。最近用 Codex 做了两处改动：给网站加简体中文，以及把各语言的评论区连起来。之前评论按页面路径存储，切到另一种语言就看不到原来的讨论。处...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "我做了个 Geometry Dash 同人网页小游戏 Demon Gacha，把 Extreme Demon 难度的关卡做成可以收集的卡牌。现在有三个卡池、共 1000 张卡。打开网页就能免费十连，重复卡会换成碎片，收藏进度存在当前浏览器。也做了两个可以随手玩的小挑战：猜哪个关卡更难，以及闪卡配对。<br/><br/>最近用 Codex 做了两处改动：给网站加简体中文，以及把各语言的评论区连起来。之前评论按页面路径存储，切到另一种语言就看不到原来的讨论。处理时让各语言页面读取同一组讨论，新主题统一写到一个入口，对旧评论的回复仍回到原线程。发布前用浏览器跑了一遍语言切换、十连翻牌和评论展示，确认几个入口都能正常用。<br/><br/>中文版试玩：<a href=\"https://demongacha.site/zh\" rel=\"noopener noreferrer\" target=\"_blank\">https://demongacha.site/zh</a><br/><br/>想请大家帮忙看两点：手机上第一次抽卡到翻完牌，哪里容易卡住或看不懂？多语言评论混在一个区、保留原文，这种体验你们能接受吗？欢迎直接吐槽。",
+  "attachments": []
+}

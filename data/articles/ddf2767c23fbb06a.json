@@ -1,0 +1,15 @@
+{
+  "id": "ddf2767c23fbb06a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[生活] 农业银行 app 你们都正常嘛？",
+  "link": "https://www.v2ex.com/t/1258756#reply0",
+  "author": "duduv2ex",
+  "publishedAt": "2026-11-21T07:47:32Z",
+  "snippet": "真正的根因农行 11.3.1 内置的风控 SDK 与这台 Android 17 系统不兼容，导致误判。•日志抓到了触发链路：START {act=Erisk ... com.android.bankabc/.MainActivity}——是农行自己的风控模块在进入首页约 8 秒后异步拉起拦截页。首页其实加载得好好的，风控引擎是梆梆安全的威胁感知 SDK（com.coralline.sea）。日志里它的核心探针反复报 hiddenapi ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>真正的根因农行 11.3.1 内置的风控 SDK 与这台 Android 17 系统不兼容，导致误判。•日志抓到了触发链路：START {act=Erisk ... com.android.bankabc/.MainActivity}——是农行自己的风控模块在进入首页约 8 秒后异步拉起拦截页。首页其实加载得好好的，风控引擎是梆梆安全的威胁感知 SDK（com.coralline.sea）。日志里它的核心探针反复报 hiddenapi denied——在 Android 17 上反射相机隐藏 API 被系统拒绝，采不到它需要的环境信号，于是把一台正常设备判成了风险设备。•APK 对比坐实了差异：农行带 <a href=\"http://libRiskStub.so/libAkSdk.so\" rel=\"noopener noreferrer\" target=\"_blank\">libRiskStub.so/libAkSdk.so</a> （梆梆/爱加密体系），工行用完全不同的 <a href=\"http://libswsoft_engine.so\" rel=\"noopener noreferrer\" target=\"_blank\">libswsoft_engine.so</a>。所以工行正常、只有农行拦。•时间线也对得上：这台农行是昨天 11-20 刚从应用市场更新到 11.3.1，而所有\"可疑环境\"其实升级前就存在——唯一的新变量就是版本。</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "63b543c1b352d108",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] grokbot 不支持通过 codex/claude code 编辑本地带有.git 目录的仓库",
+  "link": "https://www.v2ex.com/t/1258700#reply0",
+  "author": "liujan",
+  "publishedAt": "2026-11-21T02:33:17Z",
+  "snippet": "grokbot 说是不允许编辑，很奇怪，两台电脑都安装了 grokbot，登录同一个 grokbot 账号，一台能正常通过 grokbot 派发任务给本地的 codex，修改项目代码，但是另一台就说不允许派发任务给 codex 编辑项目，但是编辑不带.git 的项目就正常。请问下其他人有遇到类似的问题，咋解决的",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "grokbot 说是不允许编辑，很奇怪，两台电脑都安装了 grokbot，登录同一个 grokbot 账号，一台能正常通过 grokbot 派发任务给本地的 codex，修改项目代码，但是另一台就说不允许派发任务给 codex 编辑项目，但是编辑不带.git 的项目就正常。<br/>请问下其他人有遇到类似的问题，咋解决的",
+  "attachments": []
+}

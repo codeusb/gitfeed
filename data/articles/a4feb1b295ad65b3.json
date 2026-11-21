@@ -1,0 +1,15 @@
+{
+  "id": "a4feb1b295ad65b3",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Java] IDEA 2026.3 在 Linux 下原生支持 Wayland+Vulkan 渲染",
+  "link": "https://www.v2ex.com/t/1258742#reply2",
+  "author": "Devifish",
+  "publishedAt": "2026-11-21T06:17:49Z",
+  "snippet": "IDEA 在 AI 失利后，这么大的改进也没宣传。看代码滚动动画非常丝滑， 在我 144hz 显示器上应该满帧率了看着 JetBrains 在宣传重新造轮简陋又难用的 Air，真是可悲。 早期用户量大不考虑用户体验，现在才想起我这群 Linux 用户的体验（当然这里也有 java awt 的锅）",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "IDEA 在 AI 失利后，这么大的改进也没宣传。<br/>看代码滚动动画非常丝滑， 在我 144hz 显示器上应该满帧率了<br/><br/>看着 JetBrains 在宣传重新造轮简陋又难用的 Air，真是可悲。 <br/>早期用户量大不考虑用户体验，现在才想起我这群 Linux 用户的体验（当然这里也有 java awt 的锅）",
+  "attachments": []
+}

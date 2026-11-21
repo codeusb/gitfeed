@@ -1,0 +1,15 @@
+{
+  "id": "ad325bdebcfeb151",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] vibe 了一个 终端论坛 motd",
+  "link": "https://www.v2ex.com/t/1258728#reply4",
+  "author": "thinkwei2012",
+  "publishedAt": "2026-11-21T04:48:36Z",
+  "snippet": "motd 是一个 SSH 终端论坛：连上 ssh，用键盘和斜杠命令逛版块、发帖、投票、搜索，无需浏览器。支持 GitHub 登录，还藏了签到成就和数字雨彩蛋。在线试玩：ssh -p 2222 guest@jeeinn.com开源地址：https://github.com/jeeinn/motd ，欢迎 start、体验、反馈---PS：motd 发音同 mode，motd 文件（/etc/motd）😁感叹，从想法到实现不过 2 天就具备...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "motd 是一个 SSH 终端论坛：<br/>连上 ssh，用键盘和斜杠命令逛版块、发帖、投票、搜索，无需浏览器。<br/>支持 GitHub 登录，还藏了签到成就和数字雨彩蛋。<br/>在线试玩：ssh -p 2222 guest@jeeinn.com<br/>开源地址：<a href=\"https://github.com/jeeinn/motd\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/jeeinn/motd</a> ，欢迎 start、体验、反馈<br/><br/>---<br/>PS：<br/>motd 发音同 mode，motd 文件（/etc/motd）😁<br/>感叹，从想法到实现不过 2 天就具备雏形了，还全程使用的 hy4 flash",
+  "attachments": []
+}

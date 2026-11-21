@@ -1,0 +1,15 @@
+{
+  "id": "e0860b0bf4bdfbaf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了一个 B 站浏览器插件，屏蔽低质量或者不喜欢类型的 UP",
+  "link": "https://www.v2ex.com/t/1258744#reply0",
+  "author": "guoyunhe",
+  "publishedAt": "2026-11-21T06:37:00Z",
+  "snippet": "比如 B 站上有大量 AI 短剧，但是有些用户不喜欢 AI 短剧，就可以开启 AI 短剧规则进行屏蔽。同时也可通过 UP 用户详情页面的“评分/打标”按钮对 UP 视频的一些特征进行打标投票，或者评分。通过众筹的方式来不断扩充规则列表。 插件下载： Chrome https://chromewebstore.google.com/detail/bilibili-blocker/egfeldkfhdbjcmpjbipdaafnopgpgl...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>比如 B 站上有大量 AI 短剧，但是有些用户不喜欢 AI 短剧，就可以开启 AI 短剧规则进行屏蔽。同时也可通过 UP 用户详情页面的“评分/打标”按钮对 UP 视频的一些特征进行打标投票，或者评分。通过众筹的方式来不断扩充规则列表。</p>\n<p>插件下载：</p>\n<ul>\n<li>Chrome <a href=\"https://chromewebstore.google.com/detail/bilibili-blocker/egfeldkfhdbjcmpjbipdaafnopgpglje\" rel=\"noopener noreferrer\" target=\"_blank\">https://chromewebstore.google.com/detail/bilibili-blocker/egfeldkfhdbjcmpjbipdaafnopgpglje</a></li>\n<li>Edge <a href=\"https://microsoftedge.microsoft.com/addons/detail/bilibili-blocker/opmgomhndfglgnbkbiijnknljnopfahc\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/bilibili-blocker/opmgomhndfglgnbkbiijnknljnopfahc</a></li>\n<li>Firefox <a href=\"https://addons.mozilla.org/zh-CN/firefox/addon/bilibili-blocker/\" rel=\"noopener noreferrer\" target=\"_blank\">https://addons.mozilla.org/zh-CN/firefox/addon/bilibili-blocker/</a></li>\n<li>Github <a href=\"https://github.com/guoyunhe/bilibili-blocker\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/guoyunhe/bilibili-blocker</a></li>\n</ul>\n<p>网站：</p>\n<ul>\n<li>地址 <a href=\"https://bilibili-blocker.guoyunhe.me/\" rel=\"noopener noreferrer\" target=\"_blank\">https://bilibili-blocker.guoyunhe.me/</a></li>\n<li>源码 <a href=\"https://github.com/guoyunhe/bilibili-blocker-server\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/guoyunhe/bilibili-blocker-server</a></li>\n</ul>",
+  "attachments": []
+}

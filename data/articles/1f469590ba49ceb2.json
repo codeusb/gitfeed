@@ -1,0 +1,15 @@
+{
+  "id": "1f469590ba49ceb2",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [持续更新] 做了一个专注 软考 -- 系统架构师 刷题的网站",
+  "link": "https://www.v2ex.com/t/1258754#reply2",
+  "author": "MySixGod",
+  "publishedAt": "2026-11-21T07:30:46Z",
+  "snippet": "考完了 26 年下半年的软考系统架构师，目前还在等成绩。 备考那阵子在网上找了一圈刷题工具，要么界面梦回十年前，要么花几千块买机构资料，结果题库年久失修，连基础概念和答案都错误百出。没找到顺手的，干脆自己动手写了一个，专门做系统架构师的备考。 本来只是写来纯自用的，考完回头看觉得体验还行，就部署出来分享下。 目前做的一些小设计： 克制与沉浸：作为程序员实在受不了花里胡哨的界面，整个 UI 尽量往 Linear 的风格靠，去掉了所有无关干...",
+  "coverImage": "https://mentorai.top/forum-images/2026-11-21/overview-038e937dfcff247a48f1.png",
+  "readTime": 1,
+  "content": "<p>考完了 26 年下半年的软考系统架构师，目前还在等成绩。</p>\n<p>备考那阵子在网上找了一圈刷题工具，要么界面梦回十年前，要么花几千块买机构资料，结果题库年久失修，连基础概念和答案都错误百出。没找到顺手的，干脆自己动手写了一个，专门做系统架构师的备考。</p>\n<p>本来只是写来纯自用的，考完回头看觉得体验还行，就部署出来分享下。</p>\n<p><strong>目前做的一些小设计：</strong></p>\n<ul>\n<li><strong>克制与沉浸</strong>：作为程序员实在受不了花里胡哨的界面，整个 UI 尽量往 Linear 的风格靠，去掉了所有无关干扰，打开就能直接做题。</li>\n<li><strong>纯键盘流</strong>：针对刷题场景做了快捷键适配，选择题切换、提交、看解析基本可以脱离鼠标，刷起来比较跟手。</li>\n<li><strong>仿真机考案例</strong>：案例分析参考实际机考的界面布局，平时怎么练、上考场就怎么写，省得考试时还要花时间适应环境。</li>\n</ul>\n<p><strong>目前的进度：</strong></p>\n<p>因为题目和解析都是我自己重新校对、整理的，进度不会太快，但会持续连载更新。第一波先上架了 3 章的核心选择题，以及 3 道高频案例分析题（每道案例都做了针对性的答题拆解）。</p>\n<p>网站地址：<a href=\"https://mentorai.top/\" rel=\"noopener noreferrer\" target=\"_blank\">https://mentorai.top/</a>\n<img alt=\"图片说明\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://mentorai.top/forum-images/2026-11-21/overview-038e937dfcff247a48f1.png\"/>\n<img alt=\"图片说明\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://mentorai.top/forum-images/2026-11-21/chapter-practice-c386532d5f08b07fc2b8.png\"/>\n<img alt=\"图片说明\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://mentorai.top/forum-images/2026-11-21/case-practice-5f7a73fde147c8e0b6dc.png\"/></p>",
+  "attachments": []
+}

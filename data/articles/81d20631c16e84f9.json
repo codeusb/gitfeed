@@ -1,0 +1,15 @@
+{
+  "id": "81d20631c16e84f9",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "Quoting Ravi Vakil",
+  "link": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-20T19:21:49Z",
+  "snippet": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking go...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<blockquote cite=\"https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\"><p>Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft.</p></blockquote>\n<p class=\"cite\">— <a href=\"https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\" rel=\"noopener noreferrer\" target=\"_blank\">Ravi Vakil</a>, Hurried Announcement: Alessandro Masullo GRH</p>\n<p>Tags: <a href=\"https://simonwillison.net/tags/mathematics\" rel=\"noopener noreferrer\" target=\"_blank\">mathematics</a></p>",
+  "attachments": []
+}
