@@ -1,0 +1,15 @@
+{
+  "id": "31e2fe81428cc46d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 分享 Gemini、反重力不在支持区域走过的坑，关键是购买的区域，还有隐私区域。",
+  "link": "https://www.v2ex.com/t/1258882#reply1",
+  "author": "SLboat",
+  "publishedAt": "2026-11-22T06:05:42Z",
+  "snippet": "之前付了 Google One，结果反重力还是普通套餐，折腾了老半天。 最有用的是这个官方的帖子：https://discuss.ai.google.dev/t/active-google-ai-pro-subscription-showing-starter-quota-in-antigravity/190722/7 以下几点是我走过的坑： 隐私信息页要确保你的账号在可支持区域，不支持的话，用一段时间不同 ip，申请换区。 确保年龄审...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>之前付了 Google One，结果反重力还是普通套餐，折腾了老半天。</p>\n<p>最有用的是这个官方的帖子：<a href=\"https://discuss.ai.google.dev/t/active-google-ai-pro-subscription-showing-starter-quota-in-antigravity/190722/7\" rel=\"noopener noreferrer\" target=\"_blank\">https://discuss.ai.google.dev/t/active-google-ai-pro-subscription-showing-starter-quota-in-antigravity/190722/7</a></p>\n<p>以下几点是我走过的坑：</p>\n<ul>\n<li>隐私信息页要确保你的账号在可支持区域，不支持的话，用一段时间不同 ip，申请换区。</li>\n<li>确保年龄审核过，符合要求。</li>\n<li>确保 Google Pay 里的区域是支持国家，添加付款方式增加地址来选择区域。</li>\n</ul>\n<p>这里还有个坑就是如果在香港地区订阅了，就改了也不能生效，必须想办法退订，或者一个奇怪的方法（我是这个，做一个家庭组，再解散），刷新订阅。\n之后就可以随便用了。</p>",
+  "attachments": []
+}

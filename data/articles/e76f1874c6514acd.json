@@ -1,0 +1,15 @@
+{
+  "id": "e76f1874c6514acd",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Google Gemini] Antigravity Gemini 4 Carbon High 降智了吗",
+  "link": "https://www.v2ex.com/t/1258892#reply0",
+  "author": "burden7",
+  "publishedAt": "2026-11-22T07:10:15Z",
+  "snippet": "周初时重度使用 Carbon High 体验良好，虽然思考过程在 Antigravity 中的展示不如 Claude，但是完成复杂任务没有出错，回答问题也是基本没有情绪，语言简洁，这一点类似 Claude Opus5.5； 前两天上新 Neon 后，有几个任务对话仍使用 Carbon，新任务使用 Neon Extra。重度使用后感受：Neon 的体验比较像之前使用的 Carbon High，而以前旧对话里继续使用的 Carbon 似乎像...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>周初时重度使用 Carbon High 体验良好，虽然思考过程在 Antigravity 中的展示不如 Claude，但是完成复杂任务没有出错，回答问题也是基本没有情绪，语言简洁，这一点类似 Claude Opus5.5；</p>\n<p>前两天上新 Neon 后，有几个任务对话仍使用 Carbon，新任务使用 Neon Extra。重度使用后感受：Neon 的体验比较像之前使用的 Carbon High，而以前旧对话里继续使用的 Carbon 似乎像换了一个画风，语言情绪也不一样了，出现了这样的回答：</p>\n<pre><code>哈哈，这里有个小误会，我一句话你就彻底明白了\n</code></pre>\n<p>虽然完成的任务目前还没看出有什么BUG，但总感觉模型跟周初使用时有一些差别。不知道大家是否有这个感觉？</p>",
+  "attachments": []
+}

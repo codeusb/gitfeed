@@ -1,0 +1,15 @@
+{
+  "id": "433eea96d8a22ce4",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 发现 Devin 还是挺好用的",
+  "link": "https://www.v2ex.com/t/1258858#reply3",
+  "author": "quanthouse",
+  "publishedAt": "2026-11-22T02:37:52Z",
+  "snippet": "在社区的活动里和 poke 聊了两个多小时，提交了一个真正自己在做的项目，最后给了$50+一个月$200 的 max 订阅。把 Devin 的 gui 下载好了，让它作主控，同时管 gemini/codex/claude 三个 cli 并行工作，体验瞬间变得很丝滑。沟通方式上也比 gpt 系列的防御性话术好很多，再也不用面对 gpt 的防御天书看了半天高血压，把 codex 转到后台 cli 眼不见心不烦，连上了 Devin Bot,再...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "在社区的活动里和 poke 聊了两个多小时，提交了一个真正自己在做的项目，最后给了$50+一个月$200 的 max 订阅。<br/>把 Devin 的 gui 下载好了，让它作主控，同时管 gemini/codex/claude 三个 cli 并行工作，体验瞬间变得很丝滑。<br/>沟通方式上也比 gpt 系列的防御性话术好很多，再也不用面对 gpt 的防御天书看了半天高血压，把 codex 转到后台 cli 眼不见心不烦，连上了 Devin Bot,再接 poke 的短信入口，基本上所有需要处理的事情就不用再回到电脑上，在手机上发几条短信就处理完了。<br/>早上起来看了一下工作进度，问了 codex 说你作主控的时候，比起 Devin 接手后，速度提升了多少。<br/>codex：接手后效率提升了 280%-300%，但不代表新工作流更加有效，没有实际数据支持 blah blah，手表马上开始报警心跳升高，遂关闭 codex 开机自启，托盘退出，世界从此清净。",
+  "attachments": []
+}

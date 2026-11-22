@@ -1,0 +1,15 @@
+{
+  "id": "35c0856a7f3b6b09",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 意外！reasonix 停更了！",
+  "link": "https://www.v2ex.com/t/1258852#reply10",
+  "author": "cirenbucunzai",
+  "publishedAt": "2026-11-22T02:03:41Z",
+  "snippet": "https://github.com/esengine/DeepSeek-Reasonix/blob/studio/README.zh-CN.md Reasonix 已于 2026-11-12 起停止维护。 最后一个版本为 v2.61.0，此后不再发布新版本、修复缺陷或处理 Issue。项目采用 MIT 协议，欢迎 fork。详见公告。 挺好的一个 ai code agent 居然停更了，太突然了，还有别的好用的吗?",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><a href=\"https://github.com/esengine/DeepSeek-Reasonix/blob/studio/README.zh-CN.md\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/esengine/DeepSeek-Reasonix/blob/studio/README.zh-CN.md</a></p>\n<p>Reasonix 已于 2026-11-12 起停止维护。 最后一个版本为 v2.61.0，此后不再发布新版本、修复缺陷或处理 Issue。项目采用 MIT 协议，欢迎 fork。详见公告。</p>\n<p>挺好的一个 ai code agent 居然停更了，太突然了，还有别的好用的吗?</p>",
+  "attachments": []
+}

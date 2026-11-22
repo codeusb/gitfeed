@@ -1,0 +1,15 @@
+{
+  "id": "0ac9a04f50ccaa0f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] iOS 土耳其 App Store 半价订阅 google one Ultra 方法",
+  "link": "https://www.v2ex.com/t/1258860#reply6",
+  "author": "zw2019",
+  "publishedAt": "2026-11-22T03:10:22Z",
+  "snippet": "搬运的 L 站的 Wender 大佬的帖子 稍微修改了下 可惜我已经有 gpt 100 了-。- , 有想买便宜稳定的 VPS 的可以 看看（RN） https://v2ex.com/t/1258457 ^https://one.google.com/ai\\?.*$ # 下面是20倍的 20tb\\.m\\.v2 20tb.m # 下面是30倍的 30tb\\.ai\\.pro\\.m 30tb.m 土区iOS账号自备 积分卡自备，1989.99...",
+  "coverImage": "https://img.121516.xyz/i/2026/11/22/hbktwb.png",
+  "readTime": 1,
+  "content": "<h2>搬运的 L 站的 Wender 大佬的帖子 稍微修改了下</h2>\n<h3>可惜我已经有 gpt 100 了-。-  ,</h3>\n<p>有想买便宜稳定的 VPS 的可以 看看（RN）  <a href=\"https://v2ex.com/t/1258457\" rel=\"noopener noreferrer\" target=\"_blank\">https://v2ex.com/t/1258457</a></p>\n<p><img alt=\"IMG_0006\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.121516.xyz/i/2026/11/22/hbktwb.png\"/></p>\n<pre><code class=\"language-log\">^https://one.google.com/ai\\?.*$\n\n# 下面是20倍的\n20tb\\.m\\.v2 20tb.m\n\n# 下面是30倍的\n30tb\\.ai\\.pro\\.m 30tb.m\n\n\n\n</code></pre>\n<ol>\n<li>土区iOS账号自备</li>\n<li>积分卡自备，1989.99，成本265左右，要是能绑银行卡最好</li>\n<li>小火箭（shadowrocket）</li>\n<li>下载 Google one 或者 Gemini 都可以，不是 Google 浏览器</li>\n<li>在 google one 中可能显示还是原价，不要急，直接点击订阅，跳转到 ios 付款界面就是半价了</li>\n</ol>\n<p>下面直接上图小火箭的配置，配置完记得打开魔法，要不然不生效。<br/>\n<strong>小火箭的配置描述文件要先信任再去信任证书 设置-&gt;通用-&gt;VPN与设备管理</strong></p>\n<p>还有证书安装完，记得去设置-&gt;通用-&gt;关于本机-&gt;证书信任设置，里面，还有个开关要打开的！！</p>\n<p><img alt=\"1\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.121516.xyz/i/2026/11/22/ic0z2n.jpeg\"/>\n<img alt=\"2\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.121516.xyz/i/2026/11/22/ic11uh.jpeg\"/>\n<img alt=\"3\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.121516.xyz/i/2026/11/22/ic9uy2.jpeg\"/>\n<img alt=\"4\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.121516.xyz/i/2026/11/22/ic9ytr.jpeg\"/>\n<img alt=\"5\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.121516.xyz/i/2026/11/22/ic9yzn.png\"/>\n<img alt=\"6\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.121516.xyz/i/2026/11/22/ica1z9.png\"/></p>",
+  "attachments": []
+}

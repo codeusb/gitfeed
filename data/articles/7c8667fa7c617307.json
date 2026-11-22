@@ -1,0 +1,15 @@
+{
+  "id": "7c8667fa7c617307",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Apple] 如何解决 gemini、gpt 与豆包、微信的 mac 客户端 app 不能同时使用代理的问题？",
+  "link": "https://www.v2ex.com/t/1258838#reply6",
+  "author": "lamls",
+  "publishedAt": "2026-11-21T22:51:53Z",
+  "snippet": "用 tun 模式时，gemini 和 gpt 的 mac 客户端就可用，但微信、豆包访问不了；如果只用系统代理，微信、豆包的 mac 客户端可用，但是 gemini 和 gpt 的就挂了，恳请大大们指点迷津",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>用 tun 模式时，gemini 和 gpt 的 mac 客户端就可用，但微信、豆包访问不了；如果只用系统代理，微信、豆包的 mac 客户端可用，但是 gemini 和 gpt 的就挂了，恳请大大们指点迷津</p>",
+  "attachments": []
+}

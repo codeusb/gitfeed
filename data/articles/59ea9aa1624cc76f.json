@@ -1,0 +1,15 @@
+{
+  "id": "59ea9aa1624cc76f",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Upload2Shell (CVE-2026-125396)",
+  "link": "https://pwn.ai/upload2shell",
+  "author": "f311a",
+  "publishedAt": "2026-11-21T18:29:29Z",
+  "snippet": "Article URL: https://pwn.ai/upload2shell Comments URL: https://news.ycombinator.com/item?id=50592097 Points: 111 # Comments: 49",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://pwn.ai/upload2shell\" rel=\"noopener noreferrer\" target=\"_blank\">https://pwn.ai/upload2shell</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50592097\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50592097</a></p>\n<p>Points: 111</p>\n<p># Comments: 49</p>",
+  "attachments": []
+}

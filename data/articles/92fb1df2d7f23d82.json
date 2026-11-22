@@ -1,0 +1,15 @@
+{
+  "id": "92fb1df2d7f23d82",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 独立开发了一个极简心理学人格自测站 24Traits，上线一周 Google 刚进首页，求各位 V 友体验挑刺",
+  "link": "https://www.v2ex.com/t/1258896#reply0",
+  "author": "fancylifeyrs",
+  "publishedAt": "2026-11-22T07:35:31Z",
+  "snippet": "大家好，最近业余时间用全栈技术搭了一个聚焦“人性暗面与性格特质”的自测工具站：24Traits（ https://24traits.com/ ）。 为什么做这个站？ 海外很多性格测试网站（比如测七宗罪、黑暗特质的）普遍体验很差。 所以我自己设计了一套更克制的版本，目前第一个模块 7 Deadly Sins Test（七宗罪行为模式测试） 已经上线： 21 道日常行为题：全部用具体的生活行为描述代替晦涩的心理学术语（大约 2-3 分钟测完...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家好，最近业余时间用全栈技术搭了一个聚焦“人性暗面与性格特质”的自测工具站：<strong>24Traits</strong>（ <a href=\"https://24traits.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://24traits.com/</a> ）。</p>\n<h3>为什么做这个站？</h3>\n<p>海外很多性格测试网站（比如测七宗罪、黑暗特质的）普遍体验很差。</p>\n<p>所以我自己设计了一套更克制的版本，目前第一个模块 <strong>7 Deadly Sins Test（七宗罪行为模式测试）</strong> 已经上线：</p>\n<ul>\n<li><strong>21 道日常行为题</strong>：全部用具体的生活行为描述代替晦涩的心理学术语（大约 2-3 分钟测完）。</li>\n<li><strong>7 个维度独立计分 + 雷达图</strong>：不搞非黑即白的标签，而是算出你在傲慢、贪婪、愤怒、嫉妒、色欲、暴食、懒惰 7 个维度上的独立百分比，并给出对应的“七美德”改善建议。</li>\n<li><strong>完全免费、无需注册、零广告弹窗</strong>：做完直接出完整分数和可分享结果卡片。</li>\n</ul>\n<p>欢迎各位 V 友有空点进去测一下看看准不准（支持右上角切换中文/英文），也欢迎对<strong>题库设计、UI 交互或者出海 SEO 细节</strong>提点改进建议，感激不尽！</p>\n<p>传送门：<a href=\"https://24traits.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://24traits.com/</a></p>",
+  "attachments": []
+}

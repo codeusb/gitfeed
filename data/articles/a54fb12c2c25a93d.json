@@ -1,0 +1,15 @@
+{
+  "id": "a54fb12c2c25a93d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 我写了个分析聊天记录的 skill",
+  "link": "https://www.v2ex.com/t/1258847#reply0",
+  "author": "snowsui",
+  "publishedAt": "2026-11-22T01:37:02Z",
+  "snippet": "前段时间上班无聊，发现好友群群里经常回忆某年做过的事情，然后双方记忆对不上，就把一个聊天记录导出来了（我是同步到 pc 上，然后直接扔给 claude 分析） 然后基于这个聊天记录，做了一点有趣的分析，部署在自己的网站上给群里的大家找乐子。后面觉得可以沉淀一下，就写了个 skill。大家闲着没事可以玩玩看。 数据页：话痨榜、打卡榜、夜猫子、谁总接谁的话（纯统计，不花 token） 大事记：按月整理群里发生的事，带原文出处，还有年度十大 ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>前段时间上班无聊，发现好友群群里经常回忆某年做过的事情，然后双方记忆对不上，就把一个聊天记录导出来了（我是同步到 pc 上，然后直接扔给 claude 分析）</p>\n<p>然后基于这个聊天记录，做了一点有趣的分析，部署在自己的网站上给群里的大家找乐子。后面觉得可以沉淀一下，就写了个 skill。大家闲着没事可以玩玩看。</p>\n<ul>\n<li>数据页：话痨榜、打卡榜、夜猫子、谁总接谁的话（纯统计，不花 token）</li>\n<li>大事记：按月整理群里发生的事，带原文出处，还有年度十大</li>\n<li>人物志：给每个群友写一篇小传</li>\n<li>小剧场：用化名把群友写进武侠、推理之类的故事</li>\n<li>性格分析：给每个人建一个性格模型，还能拿来盲测像不像本人</li>\n</ul>\n<p>ps：性格分析这个特别烧 token，max5 的 5 小时用了三个（鉴于 800w 字的群聊记录）</p>\n<p><a href=\"https://github.com/snowsui/chatbook\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/snowsui/chatbook</a></p>",
+  "attachments": []
+}

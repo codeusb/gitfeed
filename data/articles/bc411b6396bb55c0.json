@@ -1,0 +1,15 @@
+{
+  "id": "bc411b6396bb55c0",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [送码] 感恩节送 88 个 Readori（iOS 阅读 App）年度 Pro",
+  "link": "https://www.v2ex.com/t/1258870#reply2",
+  "author": "1024ba",
+  "publishedAt": "2026-11-22T04:17:32Z",
+  "snippet": "大家好，我是 Readori 的开发者。Readori 是一款 iOS 阅读 App，完美适配阅读 3.0 书源、支持本地书（EPUB / TXT 等）、离线朗读（11 个官方语音包、900+ 本地音色、中英混读）、RSS 订阅等。 感恩节想谢谢一直在用的朋友，也希望更多人来试试，所以拿出 88 个年度 Pro（App Store 一次性优惠码，在 App Store 里兑换）免费抽。 时间（北京时间） 报名：11/21 00:00 –...",
+  "coverImage": "https://raw.githubusercontent.com/readori/Case-word/main/Readori/thanksgiving2-qr.png",
+  "readTime": 1,
+  "content": "<p><img alt=\"Readori 感恩节 88 份年度 Pro\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/readori/Case-word/main/Readori/thanksgiving2-qr.png\"/></p>\n<p>大家好，我是 Readori 的开发者。Readori 是一款 iOS 阅读 App，完美适配阅读 3.0 书源、支持本地书（EPUB / TXT 等）、离线朗读（11 个官方语音包、900+ 本地音色、中英混读）、RSS 订阅等。</p>\n<p>感恩节想谢谢一直在用的朋友，也希望更多人来试试，所以拿出 88 个<strong>年度 Pro</strong>（App Store 一次性优惠码，在 App Store 里兑换）免费抽。</p>\n<p><strong>时间（北京时间）</strong></p>\n<ul>\n<li>报名：11/21 00:00 – 11/25 23:59</li>\n<li>开奖：11/26 07:00</li>\n</ul>\n<p><strong>参加方式（二选一）</strong></p>\n<ol>\n<li>官网：用手机相机扫海报上的二维码直达活动页（或打开 Readori 官网，首页弹窗进入），填邮箱 + App 绑定码（设置 → 读友中心 → 修仙等级 → 生成绑定码）。不需要梯子。报名后会给你「抽奖券号 + 领奖密钥」，开奖后用它在活动页查自己的结果和兑换码。</li>\n<li>Telegram：在 App 里绑定 Telegram 后，私聊 Readori 机器人发送 <code>/thanks</code>。中奖后机器人会私信发码。</li>\n</ol>\n<p><strong>邀请加成</strong>\n活动期间通过你的邀请卡（设置 → 读友中心 → 朗读体验卡）安装、并且自己也报名了本次活动（或订阅了 Pro）的好友，每人 +1 权重。权重 = 1 + 有效邀请数，上限 21。</p>\n<p><strong>防作弊</strong></p>\n<ul>\n<li>每个报名都要绑定一台 App 安装（绑定码由设备会话签发，10 分钟有效、一次性），官网报名还有人机验证。</li>\n<li>每台设备、每个邮箱、每个 IP（IPv6 按 /64，并限制同一 /48 的报名数）、每个 Telegram 账号都只能报名一次。</li>\n<li>邀请只有在好友也通过同样的校验报名（或付费订阅）后才计入，刷假安装没有用。</li>\n<li>邮箱做了别名归一（<code>+tag</code>、Gmail 的点号），一次性邮箱域名直接拒绝。</li>\n<li>服务端不存原始邮箱和 IP，只存加盐 HMAC 和打码后的邮箱。</li>\n</ul>\n<p><strong>开奖方式</strong>\n截止后名单锁定、权重冻结。开奖种子由名单摘要和 drand quicknet 第 34281412 轮随机数（11/26 07:00 才产生）共同决定，按权重整数抽样，系统自动完成，人工无法干预。</p>\n<p>有问题欢迎在帖子里问，谢谢大家这一年的支持。</p>",
+  "attachments": []
+}

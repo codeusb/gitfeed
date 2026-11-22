@@ -1,0 +1,15 @@
+{
+  "id": "3113c43eac693026",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "PostgreSQL Extensions in Go",
+  "link": "https://jespino.github.io/gopgext/",
+  "author": "valyala",
+  "publishedAt": "2026-11-21T17:08:04Z",
+  "snippet": "Article URL: https://jespino.github.io/gopgext/ Comments URL: https://news.ycombinator.com/item?id=50591260 Points: 138 # Comments: 23",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://jespino.github.io/gopgext/\" rel=\"noopener noreferrer\" target=\"_blank\">https://jespino.github.io/gopgext/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50591260\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50591260</a></p>\n<p>Points: 138</p>\n<p># Comments: 23</p>",
+  "attachments": []
+}

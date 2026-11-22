@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-21T17:01:55.115398+00:00",
+  "lastUpdated": "2026-11-22T07:39:08.255436+00:00",
   "totalArticles": 1000,
-  "newArticlesInThisRun": 62,
+  "newArticlesInThisRun": 89,
   "prunedArticles": 0,
   "activeFeeds": 19,
   "feedStatuses": {
@@ -9,7 +9,7 @@
       "title": "橘鸦AI早报",
       "category": "tech",
       "url": "https://daily.juya.uk/rss.xml",
-      "lastChecked": "2026-11-21T17:01:44.179352+00:00",
+      "lastChecked": "2026-11-22T07:38:57.408597+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -18,7 +18,7 @@
       "title": "Changelog",
       "category": "tech",
       "url": "http://feeds.feedburner.com/thechangelog",
-      "lastChecked": "2026-11-21T17:01:44.654222+00:00",
+      "lastChecked": "2026-11-22T07:38:57.804130+00:00",
       "status": "ok",
       "articlesFetched": 50,
       "error": null
@@ -27,7 +27,7 @@
       "title": "JavaScript Weekly",
       "category": "tech",
       "url": "http://javascriptweekly.com/rss",
-      "lastChecked": "2026-11-21T17:01:44.988963+00:00",
+      "lastChecked": "2026-11-22T07:38:58.152096+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -36,7 +36,7 @@
       "title": "Node Weekly",
       "category": "tech",
       "url": "http://nodeweekly.com/rss/1j9a0ll9",
-      "lastChecked": "2026-11-21T17:01:45.234447+00:00",
+      "lastChecked": "2026-11-22T07:38:58.636498+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -45,7 +45,7 @@
       "title": "Frontend Focus",
       "category": "tech",
       "url": "https://frontendfoc.us/rss",
-      "lastChecked": "2026-11-21T17:01:45.714030+00:00",
+      "lastChecked": "2026-11-22T07:38:59.101190+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -54,7 +54,7 @@
       "title": "React Status",
       "category": "tech",
       "url": "https://react.statuscode.com/rss",
-      "lastChecked": "2026-11-21T17:01:46.043599+00:00",
+      "lastChecked": "2026-11-22T07:38:59.530197+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -63,7 +63,7 @@
       "title": "selfh.st",
       "category": "tech",
       "url": "https://selfh.st/rss/",
-      "lastChecked": "2026-11-21T17:01:46.367695+00:00",
+      "lastChecked": "2026-11-22T07:38:59.961319+00:00",
       "status": "ok",
       "articlesFetched": 25,
       "error": null
@@ -72,7 +72,7 @@
       "title": "Golang Weekly",
       "category": "t-language",
       "url": "http://golangweekly.com/rss",
-      "lastChecked": "2026-11-21T17:01:46.711383+00:00",
+      "lastChecked": "2026-11-22T07:39:00.490738+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -81,7 +81,7 @@
       "title": "36氪",
       "category": "t-language",
       "url": "http://www.36kr.com/feed",
-      "lastChecked": "2026-11-21T17:01:50.031784+00:00",
+      "lastChecked": "2026-11-22T07:39:03.503336+00:00",
       "status": "ok",
       "articlesFetched": 30,
       "error": null
@@ -90,7 +90,7 @@
       "title": "GitHub Weekly Trending Repositories",
       "category": "t-language",
       "url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
-      "lastChecked": "2026-11-21T17:01:50.972300+00:00",
+      "lastChecked": "2026-11-22T07:39:04.213113+00:00",
       "status": "ok",
       "articlesFetched": 13,
       "error": null
@@ -99,7 +99,7 @@
       "title": "Postgres Weekly",
       "category": "t-language",
       "url": "http://postgresweekly.com/rss/1g42j1di",
-      "lastChecked": "2026-11-21T17:01:51.240353+00:00",
+      "lastChecked": "2026-11-22T07:39:04.592245+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -108,7 +108,7 @@
       "title": "Hacker News: Front Page",
       "category": "tech-news",
       "url": "https://hnrss.org/frontpage",
-      "lastChecked": "2026-11-21T17:01:51.502418+00:00",
+      "lastChecked": "2026-11-22T07:39:04.933117+00:00",
       "status": "ok",
       "articlesFetched": 20,
       "error": null
@@ -117,7 +117,7 @@
       "title": "GitHub Blog",
       "category": "tech-news",
       "url": "https://github.blog/feed/",
-      "lastChecked": "2026-11-21T17:01:51.669102+00:00",
+      "lastChecked": "2026-11-22T07:39:05.262497+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -126,16 +126,16 @@
       "title": "V2EX - 最热主题",
       "category": "tech-news",
       "url": "https://www.v2ex.com/index.xml",
-      "lastChecked": "2026-11-21T17:01:51.920397+00:00",
+      "lastChecked": "2026-11-22T07:39:05.404306+00:00",
       "status": "ok",
-      "articlesFetched": 50,
+      "articlesFetched": 49,
       "error": null
     },
     "阮一峰的网络日志": {
       "title": "阮一峰的网络日志",
       "category": "weekly",
       "url": "http://www.ruanyifeng.com/blog/atom.xml",
-      "lastChecked": "2026-11-21T17:01:52.072824+00:00",
+      "lastChecked": "2026-11-22T07:39:06.179666+00:00",
       "status": "ok",
       "articlesFetched": 3,
       "error": null
@@ -144,7 +144,7 @@
       "title": "web.dev Blog",
       "category": "frontend",
       "url": "https://web.dev/feed.xml",
-      "lastChecked": "2026-11-21T17:01:53.437932+00:00",
+      "lastChecked": "2026-11-22T07:39:06.802990+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -153,7 +153,7 @@
       "title": "Smashing Magazine",
       "category": "frontend",
       "url": "https://www.smashingmagazine.com/feed/",
-      "lastChecked": "2026-11-21T17:01:54.743699+00:00",
+      "lastChecked": "2026-11-22T07:39:07.980365+00:00",
       "status": "ok",
       "articlesFetched": 40,
       "error": null
@@ -162,7 +162,7 @@
       "title": "MIT Technology Review",
       "category": "ai-ml",
       "url": "https://www.technologyreview.com/feed/",
-      "lastChecked": "2026-11-21T17:01:54.880249+00:00",
+      "lastChecked": "2026-11-22T07:39:08.071683+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -171,7 +171,7 @@
       "title": "Simon Willison's Weblog",
       "category": "ai-ml",
       "url": "https://simonwillison.net/atom/everything/",
-      "lastChecked": "2026-11-21T17:01:55.098255+00:00",
+      "lastChecked": "2026-11-22T07:39:08.240423+00:00",
       "status": "ok",
       "articlesFetched": 30,
       "error": null

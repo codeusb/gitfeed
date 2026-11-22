@@ -1,0 +1,15 @@
+{
+  "id": "7a1234403d5b6306",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 彻底不让 Codex 碰业务代码了，留着打杂清静不少",
+  "link": "https://www.v2ex.com/t/1258866#reply3",
+  "author": "FantasyChen",
+  "publishedAt": "2026-11-22T03:56:05Z",
+  "snippet": "临下班改完最后一个 bug，看着 Gemini 调 codex exec 在后台吭哧吭哧跑测试，突然觉得吃灰的订阅总算没白留。 以前让 Codex 写代码真是折寿，两行能搞定的事非套三层校验再包个 wrapper，每次看 diff 都火大。现在代码只归 Gemini 4 管，脏活累活全甩出去跑，瞬间舒坦多了。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>临下班改完最后一个 bug，看着 Gemini 调 codex exec 在后台吭哧吭哧跑测试，突然觉得吃灰的订阅总算没白留。</p>\n<p>以前让 Codex 写代码真是折寿，两行能搞定的事非套三层校验再包个 wrapper，每次看 diff 都火大。现在代码只归 Gemini 4 管，脏活累活全甩出去跑，瞬间舒坦多了。</p>",
+  "attachments": []
+}
