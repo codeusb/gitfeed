@@ -1,0 +1,15 @@
+{
+  "id": "db469d983a90e50d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] MD Publisher：写一篇 Markdown，一次排好微信 / 知乎 / 掘金三家版式",
+  "link": "https://www.v2ex.com/t/1258941#reply1",
+  "author": "bluesky1001",
+  "publishedAt": "2026-11-22T12:46:08Z",
+  "snippet": "写技术文章用 Markdown 的人都遇到过最后一步的麻烦：文章写完了，代码块、表格、公式都有，粘贴到公众号编辑器里格式就垮了——代码丢了背景色、表格塌成纯文本、图片要一张张重新传。手工修的时间有时比最后校对还长。知乎和掘金对 Markdown 友好一些，但每家渲染还是略有差别，维护三份手调过的副本是另一笔税。我做 MD Publisher 就是为了把这一步省掉：只留一个 Markdown 源文件，它在浏览器里按三家各自的粘贴格式各渲染...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "写技术文章用 Markdown 的人都遇到过最后一步的麻烦：文章写完了，代码块、表格、公式都有，粘贴到公众号编辑器里格式就垮了——代码丢了背景色、表格塌成纯文本、图片要一张张重新传。手工修的时间有时比最后校对还长。<br/><br/>知乎和掘金对 Markdown 友好一些，但每家渲染还是略有差别，维护三份手调过的副本是另一笔税。<br/><br/>我做 MD Publisher 就是为了把这一步省掉：只留一个 Markdown 源文件，它在浏览器里按三家各自的粘贴格式各渲染一份。<br/><br/>- 微信 Tab：带样式的 HTML 预览，复制后粘贴进公众号编辑器。<br/>- 知乎 Tab：干净 Markdown 预览，一键复制（统一换行、清行尾空白）。<br/>- 掘金 Tab：同上，另加代码块语言别名规范化（js→javascript、py→python、sh→bash 等 16 组，未知语言原样保留）。<br/><br/>它是基于开源项目 doocs/md 做的浏览器插件，纯前端排版加复制，不调用公众号 API，没有账号体系。图床默认 GitHub，需要自己配 Token。<br/><br/>现状（实话实说，量很小）：<br/><br/>- Edge 商店免费版 v2.1.3，2026-10-05 上架；网页版不用安装也能用。<br/>- 周活跃用户 6 → 8 → 7 → 9（10 月 25 日到 11 月 15 日四周）；评分 / 评论 0 / 0。<br/>- Pro 版（三平台一键打包导出：微信 HTML + 知乎 / 掘金 Markdown → zip）还在准备，暂时没有购买链接。<br/><br/>它不会替你写文章，粘贴后还是建议检查一下代码块和表格——各家编辑器会变。但重复排版这一步，确实不用再花一晚上。<br/><br/>Edge 商店：<a href=\"https://microsoftedge.microsoft.com/addons/detail/md-%E6%8E%92%E7%89%88%E5%8A%A9%E6%89%8B/ggimifkpgpbnpempalpkmnnlplklgkdi\" rel=\"noopener noreferrer\" target=\"_blank\">https://microsoftedge.microsoft.com/addons/detail/md-%E6%8E%92%E7%89%88%E5%8A%A9%E6%89%8B/ggimifkpgpbnpempalpkmnnlplklgkdi</a><br/>网页版：<a href=\"https://alapha888.github.io/md-publisher/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/md-publisher/</a><br/>六款插件合集：<a href=\"https://alapha888.github.io/muse-plugins/\" rel=\"noopener noreferrer\" target=\"_blank\">https://alapha888.github.io/muse-plugins/</a>",
+  "attachments": []
+}

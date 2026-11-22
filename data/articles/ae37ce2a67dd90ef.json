@@ -1,0 +1,15 @@
+{
+  "id": "ae37ce2a67dd90ef",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 我把 VS Code 搬到了终端里，10 MB 大小，用于 Code Review 和快速编辑",
+  "link": "https://www.v2ex.com/t/1258968#reply0",
+  "author": "ourongxing",
+  "publishedAt": "2026-11-22T15:50:52Z",
+  "snippet": "VL 将 VS Code 绝佳的 Code Review 体验搬到了终端里，同时编辑器使用 Vim 键位，方便进行快速编辑。 VL 提供三种模式， Workbench, 工作台模式，也就是 VS Code 的样子, 打开文件夹，支持代码编辑，Code Review，PR 查看。 Editor，编辑器模式，类似 VIM，打开单文件，快速查看，快速编辑。 Preview，代码高亮预览，类似 bat。使用 VS Code 同款代码高亮，支持所...",
+  "coverImage": "https://github.com/user-attachments/assets/89aa39a5-e6ef-4fdc-a199-2ea65e783943",
+  "readTime": 1,
+  "content": "<img alt=\"workbench\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://github.com/user-attachments/assets/89aa39a5-e6ef-4fdc-a199-2ea65e783943\"/>\n<p>VL 将 VS Code 绝佳的 Code Review 体验搬到了终端里，同时编辑器使用 Vim 键位，方便进行快速编辑。</p>\n<p>VL 提供三种模式，</p>\n<ul>\n<li>Workbench, 工作台模式，也就是 VS Code 的样子, 打开文件夹，支持代码编辑，Code Review，PR 查看。</li>\n<li>Editor，编辑器模式，类似 VIM，打开单文件，快速查看，快速编辑。</li>\n<li>Preview，代码高亮预览，类似 bat。使用 VS Code 同款代码高亮，支持所有主题。</li>\n</ul>\n<p>Github: <a href=\"https://github.com/foursmith/vl\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/foursmith/vl</a></p>\n<p>Home: <a href=\"https://vl.foursmith.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://vl.foursmith.com</a></p>",
+  "attachments": []
+}

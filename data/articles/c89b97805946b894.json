@@ -1,0 +1,15 @@
+{
+  "id": "c89b97805946b894",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 写了个生成插画头像的 Skill：统一画风，换构图和配色（附效果图）",
+  "link": "https://www.v2ex.com/t/1258961#reply1",
+  "author": "karashoukpan",
+  "publishedAt": "2026-11-22T14:52:09Z",
+  "snippet": "最近写了一个小 Skill，叫 illustration-logo-skill，想解决一个挺具体的问题：给项目做一组人物插画时，几张图能看出是同一套风格，又不至于只是换个颜色。 先放两张仓库里的示例，分别是植物配色的头像和暖色的阅读场景： 植物配色头像 暖色阅读插画 仓库地址和完整六张示例 我把范围收得比较窄：简洁的人物线条、圆角方框、少量颜色，再加一本书、一片叶子之类的小元素。主要适合头像、个人项目的插画标识，以及需要一点人物感的产品...",
+  "coverImage": "https://raw.githubusercontent.com/yuluo-yx/illustration-logo-skill/main/assets/olive-retro.png",
+  "readTime": 1,
+  "content": "<p>最近写了一个小 Skill，叫 illustration-logo-skill，想解决一个挺具体的问题：给项目做一组人物插画时，几张图能看出是同一套风格，又不至于只是换个颜色。</p>\n<p>先放两张仓库里的示例，分别是植物配色的头像和暖色的阅读场景：</p>\n<table>\n<thead>\n<tr>\n<th>植物配色头像</th>\n<th>暖色阅读插画</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img alt=\"Olive Retro\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/yuluo-yx/illustration-logo-skill/main/assets/olive-retro.png\"/></td>\n<td><img alt=\"Terracotta Reader\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/yuluo-yx/illustration-logo-skill/main/assets/terracotta-reader.png\"/></td>\n</tr>\n</tbody></table><p><a href=\"https://github.com/yuluo-yx/illustration-logo-skill\" rel=\"noopener noreferrer\" target=\"_blank\">仓库地址和完整六张示例</a></p>\n<p>我把范围收得比较窄：简洁的人物线条、圆角方框、少量颜色，再加一本书、一片叶子之类的小元素。主要适合头像、个人项目的插画标识，以及需要一点人物感的产品。虽然名字里有 logo，它目前做的是这类人物插画，不是所有类型的品牌设计。</p>\n<p>流程也写进了 Skill：先读项目背景，再给三个方向；确认后默认出六张，每张都是独立图片。构图会在面部轮廓、肩部肖像、半身人物之间变化，配色也分开安排，避免一批图全是同一种蓝色。生成后全部交给你挑，不自动替你删掉某张，也不反复重抽。</p>\n<p>它本身就是一份 SKILL.md 加参考图，没有运行脚本。使用时把整个目录放到你所用 Agent 的 skills 目录，保留 assets，然后让 Agent 调用 illustration-logo-skill。前提是这个 Agent 能使用图片生成工具；Skill 只负责约束流程和画面，出图能力、费用和最终效果还是取决于你接的模型。</p>\n<p>比如可以这样提需求：</p>\n<blockquote>\n<p>给我的阅读小工具做六张人物插画，保留简洁线条和圆角方框，试试暖纸色、植物绿和梅子紫。构图有头像也有拿书的半身像，分别输出，直接开始。</p>\n</blockquote>\n<p>规则里还要求考虑缩到 32 × 32、64 × 64 后的辨识度，不过实际选图时还是要自己缩小看看，尤其是带手和道具的半身像。</p>\n<p>项目用 MIT 协议开源。喜欢这类风格的可以拿去试试；如果跑出来总是同一个姿势，或者缩小以后细节糊在一起，也欢迎带图反馈，正好继续改这部分约束。</p>",
+  "attachments": []
+}

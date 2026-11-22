@@ -1,0 +1,15 @@
+{
+  "id": "4a0b926d6804d213",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个小网站，整理 CZ、Vitalik 等 Web3 人物的公开访谈",
+  "link": "https://www.v2ex.com/t/1258936#reply0",
+  "author": "bluescorpio",
+  "publishedAt": "2026-11-22T12:28:30Z",
+  "snippet": "最近业余时间做了个小网站，叫 PeopleAtlas： https://www.peopleatlas.org/zh/ 起因是平时看一些 Web3 人物的访谈，发现内容散落在 YouTube、播客和各种媒体里。想找某个人以前到底说过什么，经常要翻很久。 所以做了个公开访谈档案站，目前整理了 CZ、Vitalik、Balaji 的一些访谈、演讲和公开视频，支持中英文浏览。 后面想继续完善视频字幕、时间戳和观点搜索，让大家能更方便地找到人物...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近业余时间做了个小网站，叫 PeopleAtlas：</p>\n<p><a href=\"https://www.peopleatlas.org/zh/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.peopleatlas.org/zh/</a></p>\n<p>起因是平时看一些 Web3 人物的访谈，发现内容散落在 YouTube、播客和各种媒体里。想找某个人以前到底说过什么，经常要翻很久。</p>\n<p>所以做了个公开访谈档案站，目前整理了 CZ、Vitalik、Balaji 的一些访谈、演讲和公开视频，支持中英文浏览。</p>\n<p>后面想继续完善视频字幕、时间戳和观点搜索，让大家能更方便地找到人物的原始发言，而不只是看二手解读。</p>\n<p>网站还比较早期，很多地方不完善，想听听 V 友们的建议：</p>\n<ul>\n<li>这种人物访谈档案有没有实际使用价值？</li>\n<li>除了 Web3，你们还希望收录哪些领域、哪些人物？</li>\n<li>有什么功能是你们觉得真正有用的？</li>\n</ul>\n<p>纯个人项目，欢迎拍砖 😄</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "13fac1ed7486d589",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个 GitHub 热榜小游戏：看一句简介猜项目，每天 5 道题",
+  "link": "https://www.v2ex.com/t/1258952#reply1",
+  "author": "alonemonkey",
+  "publishedAt": "2026-11-22T14:01:07Z",
+  "snippet": "一个刚冒头的项目和一个几万星的老熟人，昨天谁涨的 Star 更多？如果把项目名遮住，只留一句简介，你还能认出来吗？ 我把 HotRepo 每天收集的榜单数据做成了一个网页小游戏，叫「每日竞猜」。每天 5 道题，题目取自前一天的榜单。除了看简介猜项目，还会猜谁涨星更多、一个仓库创建了多久、某个项目连续上榜了几天。 有一道题容易凭直觉答错：看到一个几万星的项目，就下意识觉得它更热门。但题目比的是昨天新增多少星。选完会揭晓实际数字和答案，碰到...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>一个刚冒头的项目和一个几万星的老熟人，昨天谁涨的 Star 更多？如果把项目名遮住，只留一句简介，你还能认出来吗？</p>\n<p>我把 HotRepo 每天收集的榜单数据做成了一个网页小游戏，叫「每日竞猜」。每天 5 道题，题目取自前一天的榜单。除了看简介猜项目，还会猜谁涨星更多、一个仓库创建了多久、某个项目连续上榜了几天。</p>\n<p>有一道题容易凭直觉答错：看到一个几万星的项目，就下意识觉得它更热门。但题目比的是<strong>昨天新增多少星</strong>。选完会揭晓实际数字和答案，碰到没见过的仓库，也可以顺手点进去看看它做什么。</p>\n<p>不用登录，打开就能玩。每天北京时间早上 8 点换题，同一天大家答的是同一套题，顺序和选项会打乱。答完能分享成绩。</p>\n<p><a href=\"https://hotrepo.ai/zh/game?utm_source=v2ex&amp;utm_medium=community&amp;utm_campaign=daily_guess_launch&amp;utm_content=create_topic\" rel=\"noopener noreferrer\" target=\"_blank\">来玩今天的每日竞猜</a></p>\n<p>欢迎来交卷。也想听听哪类题最好玩：看简介猜项目、猜涨星，还是猜项目年龄？</p>",
+  "attachments": []
+}

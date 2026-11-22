@@ -1,0 +1,15 @@
+{
+  "id": "774b6dbf45257a3f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[grok] grok 这东西太烂了啊",
+  "link": "https://www.v2ex.com/t/1258944#reply1",
+  "author": "nutting",
+  "publishedAt": "2026-11-22T13:05:42Z",
+  "snippet": "说了一个东西，直接开始给我改代码了，让他回退他改的，结果把我本地未提交的也给回退 head 状态了",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>说了一个东西，直接开始给我改代码了，让他回退他改的，结果把我本地未提交的也给回退 head 状态了</p>",
+  "attachments": []
+}

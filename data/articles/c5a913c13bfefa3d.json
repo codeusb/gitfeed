@@ -1,0 +1,15 @@
+{
+  "id": "c5a913c13bfefa3d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[macOS] macOS 27.2.1 + 豆包输入法：Cmd+Tab 切换有时要按两次",
+  "link": "https://www.v2ex.com/t/1258955#reply4",
+  "author": "C64NRD",
+  "publishedAt": "2026-11-22T14:16:21Z",
+  "snippet": "最近发现 Cmd+Tab 切换有点异常：有时按一次就能切，有时需要连按两次。我平时高频使用 Cmd+Tab，起初以为是系统或其他软件的问题，但最近越来越明显。 今天对比测试了一下：切换到其他输入法时，Cmd+Tab 正常；切到豆包输入法时，基本需要按两次才能完成切换。 系统版本：macOS 27.2.1 想问下有没有人遇到同样的问题？是否有临时解决办法？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近发现 Cmd+Tab 切换有点异常：有时按一次就能切，有时需要连按两次。我平时高频使用 Cmd+Tab，起初以为是系统或其他软件的问题，但最近越来越明显。</p>\n<p>今天对比测试了一下：切换到其他输入法时，Cmd+Tab 正常；切到豆包输入法时，基本需要按两次才能完成切换。</p>\n<p>系统版本：macOS 27.2.1\n想问下有没有人遇到同样的问题？是否有临时解决办法？</p>",
+  "attachments": []
+}

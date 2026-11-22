@@ -1,0 +1,15 @@
+{
+  "id": "6f9b1088b5c70c42",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] deepseek 和哪家终端 CLI 工具搭配效果最好",
+  "link": "https://www.v2ex.com/t/1258974#reply1",
+  "author": "Stem",
+  "publishedAt": "2026-11-22T17:00:51Z",
+  "snippet": "公司提供的是 DS flash，个人比较喜欢用终端，想了解下现在哪个终端 cli 和 DS flash 搭配效果比较好，尝试了 dsh tui 和 omp，omp 用的比较多，加了 skill 和约束还是不太行，个人用的是 gpt，所以不太清楚情况",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>公司提供的是 DS flash，个人比较喜欢用终端，想了解下现在哪个终端 cli 和 DS flash 搭配效果比较好，尝试了 dsh tui 和 omp，omp 用的比较多，加了 skill 和约束还是不太行，个人用的是 gpt，所以不太清楚情况</p>",
+  "attachments": []
+}

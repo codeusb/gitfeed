@@ -1,0 +1,15 @@
+{
+  "id": "271f12599ecd89c6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] [分享发现] 表格截图转 PPT，我踩过的几个坑",
+  "link": "https://www.v2ex.com/t/1258935#reply0",
+  "author": "weishao666",
+  "publishedAt": "2026-11-22T12:20:25Z",
+  "snippet": "表格看起来结构简单，实际转换比流程图更容易出问题。 第一个坑是合并单元格：转出来经常被拆成一格一格的文本框，行列表格结构没了。第二个坑是行高不一致，文字被挤在一起。第三个是表头没识别出来，整张表变成一堆散字。 我的做法是：结构复杂的表格，转完直接用 PPT 的表格重画，把文字复制进去；结构简单的，才用转出来的结果修一修。 工具入口在这里：https://image2ppt.asia?utm_source=v2ex （图片、截图、单页 P...",
+  "coverImage": "https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E7%A7%91%E7%A0%94%E5%AD%A6%E6%9C%AF/01_%E6%96%B0%E6%8B%9F%E6%80%81%E9%A3%8E%E7%A0%94%E7%A9%B6%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6PPT/%E5%8E%9F%E5%9B%BE.jpg",
+  "readTime": 1,
+  "content": "<p>表格看起来结构简单，实际转换比流程图更容易出问题。</p>\n<p>第一个坑是合并单元格：转出来经常被拆成一格一格的文本框，行列表格结构没了。第二个坑是行高不一致，文字被挤在一起。第三个是表头没识别出来，整张表变成一堆散字。</p>\n<p>我的做法是：结构复杂的表格，转完直接用 PPT 的表格重画，把文字复制进去；结构简单的，才用转出来的结果修一修。</p>\n<p>工具入口在这里：<a href=\"https://image2ppt.asia?utm_source=v2ex\" rel=\"noopener noreferrer\" target=\"_blank\">https://image2ppt.asia?utm_source=v2ex</a>\n（图片、截图、单页 PDF 都能转成可编辑的 PPTX，成品无水印。）</p>\n<p>一个例子（原图 → 可编辑成品）：</p>\n<p><img alt=\"新拟态风研究框架结构生物医学 PPT 原图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E7%A7%91%E7%A0%94%E5%AD%A6%E6%9C%AF/01_%E6%96%B0%E6%8B%9F%E6%80%81%E9%A3%8E%E7%A0%94%E7%A9%B6%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6PPT/%E5%8E%9F%E5%9B%BE.jpg\"/></p>\n<p><img alt=\"新拟态风研究框架结构生物医学 PPT 成品\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E7%A7%91%E7%A0%94%E5%AD%A6%E6%9C%AF/01_%E6%96%B0%E6%8B%9F%E6%80%81%E9%A3%8E%E7%A0%94%E7%A9%B6%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6PPT/%E6%88%90%E5%93%81%E9%A2%84%E8%A7%88.jpg\"/></p>\n<p>素材库里随手挑的几页，这类图都能这么转：</p>\n<p><img alt=\"158_研究项目演示示例_p09\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s038.jpg\"/>\n<img alt=\"108_OKR 规划思维导图-新年团队目标与关键结果制定图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s041.jpg\"/></p>",
+  "attachments": []
+}

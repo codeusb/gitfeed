@@ -1,0 +1,15 @@
+{
+  "id": "e60c080dabb7f066",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个微信小程序「熊熊时间工具」，来试试盲按 10 秒",
+  "link": "https://www.v2ex.com/t/1258972#reply0",
+  "author": "corona",
+  "publishedAt": "2026-11-22T16:37:40Z",
+  "snippet": "最开始是看到网上很多人在玩时间感知挑战：不看秒表，凭感觉判断时间到了没。我觉得这个玩法挺有意思，就做了「熊熊时间工具」，想让更多人打开微信就能玩一局。 选 10 秒，按开始。计时数字会隐藏，觉得 10 秒到了就按结束，马上看到实际用时和误差。也能发起好友挑战，大家用同一个目标，每人一次，看谁按得最准。 微信搜「熊熊时间工具」就能玩，也可以用微信扫下面的正式版小程序码。 欢迎回帖报第一把的实际用时，想看看大家都按出了多少秒。",
+  "coverImage": "https://raw.githubusercontent.com/zollero/bear-time-challenge/main/wechat-mini-program.png",
+  "readTime": 1,
+  "content": "<p>最开始是看到网上很多人在玩时间感知挑战：不看秒表，凭感觉判断时间到了没。我觉得这个玩法挺有意思，就做了「熊熊时间工具」，想让更多人打开微信就能玩一局。</p>\n<p>选 10 秒，按开始。计时数字会隐藏，觉得 10 秒到了就按结束，马上看到实际用时和误差。也能发起好友挑战，大家用同一个目标，每人一次，看谁按得最准。</p>\n<p>微信搜「熊熊时间工具」就能玩，也可以用微信扫下面的正式版小程序码。</p>\n<p><img alt=\"熊熊时间工具正式版小程序码\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/zollero/bear-time-challenge/main/wechat-mini-program.png\"/></p>\n<p>欢迎回帖报第一把的实际用时，想看看大家都按出了多少秒。</p>",
+  "attachments": []
+}

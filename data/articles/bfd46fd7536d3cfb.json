@@ -1,0 +1,15 @@
+{
+  "id": "bfd46fd7536d3cfb",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 求问 MacOS Vibe Coding 怎么设置网络",
+  "link": "https://www.v2ex.com/t/1258965#reply3",
+  "author": "syh2",
+  "publishedAt": "2026-11-22T15:39:33Z",
+  "snippet": "如题，我说一下我的情况：我有充 GPT Plus + Gemini 的 pro日常常规任务，主要用 Workbuddy （因为公司买了企业版+有本地模型，可以创建共享文档，所以轻量任务都走 workbuddy）。只有在复杂的任务才会动用到 GPT 和 gemini。但是现在 MacOS 下，我好像没有很好的解决这些 AI 的使用方案，首先 GPT 和 Gemini 需要外网环境，但是 Workbuddy 又不能开着外网用，所以现在用起来...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "如题，我说一下我的情况：<br/>我有充 GPT Plus  +  Gemini 的 pro<br/>日常常规任务，主要用 Workbuddy （因为公司买了企业版+有本地模型，可以创建共享文档，所以轻量任务都走 workbuddy）。<br/>只有在复杂的任务才会动用到 GPT 和 gemini。<br/><br/>但是现在 MacOS 下，我好像没有很好的解决这些 AI 的使用方案，首先 GPT 和 Gemini 需要外网环境，但是 Workbuddy 又不能开着外网用，所以现在用起来就好麻烦。<br/><br/>我之前用 v2Ray 、或者 hiddify 开全局，然后 GPT 是可以用了，但是又不能访问公司的服务、不能访问 workbuddy，切来切去时间就浪费了<br/><br/>试来试去没有特别好的方案。所以想听听大家都是怎么配置的，是不是有什么工具，只让 GPT 走代理，然后我的电脑本身不走代理？如果这样应该是最好的，只有 Gemini 和 GPT 可以走外网，其他我访问公司服务、使用公司模型走 workbuddy 都不影响。",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "7d39c70921036816",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] Seedance 2.5 Flash 实测解析：速度翻倍、成本降 34%",
+  "link": "https://www.v2ex.com/t/1258973#reply0",
+  "author": "seedance25",
+  "publishedAt": "2026-11-22T16:53:11Z",
+  "snippet": "2026 年 11 月，字节跳动在 Seedance 2.5 系列中推出了轻量加速版——Seedance 2.5 Flash。它并非简单的“缩水版”，而是专门针对高频迭代、预览测试与社媒短视频生产优化的算力档位：生成速度提升至标准版的约 2 倍，综合成本降低约 34%。 如果你正在寻找一套兼顾效果与预算的接入方案，可以通过 Seedance 2.5 Flash 在线体验与 API 接入 快速了解实际出片表现。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>2026 年 11 月，字节跳动在 Seedance 2.5 系列中推出了轻量加速版——<strong>Seedance 2.5 Flash</strong>。它并非简单的“缩水版”，而是专门针对高频迭代、预览测试与社媒短视频生产优化的算力档位：生成速度提升至标准版的约 2 倍，综合成本降低约 34%。</p>\n<p>如果你正在寻找一套兼顾效果与预算的接入方案，可以通过 <a href=\"https://seedance2-5.co/zh\" rel=\"noopener noreferrer\" target=\"_blank\">Seedance 2.5 Flash 在线体验与 API 接入</a> 快速了解实际出片表现。</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "c6d52f11883ddbaa",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Fast-Anything: Don't rewrite it in Rust. Rewrite the 5% that's slow",
+  "link": "https://github.com/EL4CTEO/fast-anything",
+  "author": "BaselAshraf81",
+  "publishedAt": "2026-11-22T04:10:09Z",
+  "snippet": "Article URL: https://github.com/EL4CTEO/fast-anything Comments URL: https://news.ycombinator.com/item?id=50596155 Points: 124 # Comments: 94",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/EL4CTEO/fast-anything\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/EL4CTEO/fast-anything</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50596155\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50596155</a></p>\n<p>Points: 124</p>\n<p># Comments: 94</p>",
+  "attachments": []
+}

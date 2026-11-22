@@ -1,0 +1,15 @@
+{
+  "id": "c9ef94da024f1cb6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[宽带症候群] 兜兜转转还是用回了运营商 DNS",
+  "link": "https://www.v2ex.com/t/1258956#reply0",
+  "author": "aa11ss55",
+  "publishedAt": "2026-11-22T14:16:31Z",
+  "snippet": "最开始用的是阿里和腾讯的 DoQ/DoT, 看日志发现某些查询延迟高得吓人. 换成 DoH 以后好了不少. 但是失败率依然很高, 推测是撞 QPS 墙了. 最后还是换回了运营商的 DNS, 加上分流也不用太担心污染的问题. 我自用的 vibe 的小项目, 基于 coredns: Kamishirasawa-keine/coredns 支持 geosite 分流 与广告屏蔽. 欢迎来提 issue. 预编译包见 ci. 我的 Corefi...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最开始用的是阿里和腾讯的 DoQ/DoT, 看日志发现某些查询延迟高得吓人. 换成 DoH 以后好了不少. 但是失败率依然很高, 推测是撞 QPS 墙了. 最后还是换回了运营商的 DNS, 加上分流也不用太担心污染的问题. <br/><br/>\n我自用的 vibe 的小项目, 基于 coredns: <a href=\"https://github.com/Kamishirasawa-keine/coredns\" rel=\"noopener noreferrer\" target=\"_blank\">Kamishirasawa-keine/coredns</a> 支持 geosite 分流 与广告屏蔽. 欢迎来提 issue. 预编译包见 ci.<br/><br/>\n我的 Corefile 配置:</p>\n<pre><code>.:53 {\n    bind ::\n    prometheus 127.0.0.1:9153\n    errors\n    bufsize 1232\n    blocklist oisd.txt pcdn.txt {\n        block_response NXDOMAIN\n        allowlist allowlist.txt\n    }\n    cache {\n        success 32768 86400 5\n        denial 32768 3600 5\n        serve_stale 86400s immediate 30s\n    }\n    splitroute {\n        mode local_first\n        reload 10m\n        fallback 500ms\n#        bootstrap-dns 2400:3200::1\n        local udp://[240e:1f:1::1] udp://202.96.128.86 udp://202.96.134.33 {\n            concurrent 2\n            timeout 2s\n            ignore-rcode SERVFAIL\n        }\n        remote tls://[2606:4700:4700::1111] tls://[2606:4700:4700::1001] {\n            concurrent 2\n            timeout 5s\n            pipeline\n        }\n    }\n}\n</code></pre>",
+  "attachments": []
+}

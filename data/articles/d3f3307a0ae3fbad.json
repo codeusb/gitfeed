@@ -1,0 +1,15 @@
+{
+  "id": "d3f3307a0ae3fbad",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 用 Deepseek 从 0 开始 3 小时，造了个轮子，iOS 代理工具",
+  "link": "https://www.v2ex.com/t/1258970#reply3",
+  "author": "yueji",
+  "publishedAt": "2026-11-22T15:55:44Z",
+  "snippet": "造了个轮子，iOS 版本的 VPN 客户端，类似 v2ray,clash也上架成功了~https://github.com/ji4ozhu-wq/wproxy协议：VMess、VLESS、Trojan、Shadowsocks、SOCKS5导入 ：粘贴共享链接、扫描二维码或添加订阅路由： 全局模式或基于规则的分段路由，包含绕过国家/地区和局域网绕过 无账户、无分析、无广告或追踪;节点和设置会保留在您的设备上",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "造了个轮子，iOS 版本的 VPN 客户端，类似 v2ray,clash<br/>也上架成功了~<br/><a href=\"https://github.com/ji4ozhu-wq/wproxy\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/ji4ozhu-wq/wproxy</a><br/><br/>协议：VMess、VLESS、Trojan、Shadowsocks、SOCKS5<br/>导入 ：粘贴共享链接、扫描二维码或添加订阅<br/>路由： 全局模式或基于规则的分段路由，包含绕过国家/地区和局域网绕过<br/> 无账户、无分析、无广告或追踪;节点和设置会保留在您的设备上",
+  "attachments": []
+}

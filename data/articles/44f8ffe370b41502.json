@@ -1,0 +1,15 @@
+{
+  "id": "44f8ffe370b41502",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 开发了冬季特斯拉开门 App，希望大家给点意见，准备上架 App Store",
+  "link": "https://www.v2ex.com/t/1258951#reply3",
+  "author": "xdtx",
+  "publishedAt": "2026-11-22T13:58:56Z",
+  "snippet": "利用特斯拉门栓弹出功能，点按弹开对应车门目前支持，四个车门，前后备箱App 设计师考虑，帮助别人开门，帮助老人和小孩提前打开防止冬季隐藏式门把手锁定希望得到大家建议，如果上架过 App Store 的同学，希望也能分享经验仓库地址：https://github.com/xdtxAM/model3-door-assistant#readmeIPA 安装包各位也可以下载参考，目前开发了苹果端",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "利用特斯拉门栓弹出功能，点按弹开对应车门<br/><br/>目前支持，四个车门，前后备箱<br/>App 设计师考虑，帮助别人开门，帮助老人和小孩提前打开<br/><br/>防止冬季隐藏式门把手锁定<br/><br/>希望得到大家建议，如果上架过 App Store 的同学，希望也能分享经验<br/><br/>仓库地址：<a href=\"https://github.com/xdtxAM/model3-door-assistant#readme\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/xdtxAM/model3-door-assistant#readme</a><br/>IPA 安装包各位也可以下载参考，目前开发了苹果端",
+  "attachments": []
+}

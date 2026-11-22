@@ -1,0 +1,15 @@
+{
+  "id": "f54736f1f71439d8",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] 趁着 GTA 6 热度，用 MapLibre + OpenFreeMap 做了个把任意城市变成 3D 霓虹地图的纯前端小工具",
+  "link": "https://www.v2ex.com/t/1258928#reply0",
+  "author": "zorov",
+  "publishedAt": "2026-11-22T11:27:11Z",
+  "snippet": "最近外网 \"GTA My City\"（把自己的城市做成 GTA 6 风格）热度挺高，看到大部分人都是用 AI 生成静态图，文字和街道经常崩，就干脆用 MapLibre GL JS + OpenFreeMap 的开源 3D 建筑矢量瓦片，搓了一个能在浏览器里 360° 旋转的 3D 城市地图工具。 在线体验（免登录、纯前端、无水印）： https://www.gamecompendium.com/tools/gta-my-city 主要做...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近外网 \"GTA My City\"（把自己的城市做成 GTA 6 风格）热度挺高，看到大部分人都是用 AI 生成静态图，文字和街道经常崩，就干脆用 MapLibre GL JS + OpenFreeMap 的开源 3D 建筑矢量瓦片，搓了一个能在浏览器里 360° 旋转的 3D 城市地图工具。</p>\n<p>在线体验（免登录、纯前端、无水印）：\n<a href=\"https://www.gamecompendium.com/tools/gta-my-city\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.gamecompendium.com/tools/gta-my-city</a></p>\n<p>主要做了几个好玩的细节：</p>\n<ol>\n<li>支持搜全球任意城市/地标，跨城市切换时做了一个模仿 GTA 经典的「卫星雷达锁定 + 3D 螺旋空降」过渡动画，同时在遮罩后预加载 z14 建筑瓦片避免黑屏；</li>\n<li>内置 3 套 3D 着色主题（Leonida Neon 霓虹风 / 80s 迈阿密粉青风 / Tactical 暗黑战术风）；</li>\n<li>可以在自己家门口放置 Safehouse（安全屋）、Heist（抢劫）、Mission 发光坐标钉，一键导出带五星通缉 HUD 的高清 PNG；</li>\n<li>另外两个 Tab 附带了 AI 城市提示词生成器和纯本地 Canvas 照片 GTA 滤镜。</li>\n</ol>\n<p>欢迎大家搜自己所在的城市试试，求轻拍和反馈！</p>",
+  "attachments": []
+}

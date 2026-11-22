@@ -1,0 +1,15 @@
+{
+  "id": "992c505fdc699f94",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 重复造了个轮子：搞了一个浏览器里本地跑的人声分离",
+  "link": "https://www.v2ex.com/t/1258924#reply0",
+  "author": "foryou2023",
+  "publishedAt": "2026-11-22T10:59:48Z",
+  "snippet": "https://aivocalremoverlab.com 尝试出海的小站，尝试做 ai 订阅的项目。 技术主要是还是浏览器里面跑大模型。 功能目前是免费的人声分离，然后又找了一个 api，接了在线的付费订阅模式。 目前测试免费的人声分离基本够用，也没有找到竞争对手的付费点，没有搞懂付费点在哪里，不过支付先接入了再说，万一有人付费呢。 目前没有去碰 ai 生成图片，生成视频，这些赛道竞争太激烈了，当然也很赚钱，不过经验不多怕当炮灰，先从...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><a href=\"https://aivocalremoverlab.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://aivocalremoverlab.com</a></p>\n<p>尝试出海的小站，尝试做 ai 订阅的项目。</p>\n<p>技术主要是还是浏览器里面跑大模型。</p>\n<p>功能目前是免费的人声分离，然后又找了一个 api，接了在线的付费订阅模式。</p>\n<p>目前测试免费的人声分离基本够用，也没有找到竞争对手的付费点，没有搞懂付费点在哪里，不过支付先接入了再说，万一有人付费呢。</p>\n<p>目前没有去碰 ai 生成图片，生成视频，这些赛道竞争太激烈了，当然也很赚钱，不过经验不多怕当炮灰，先从小赛道入手积累经验。</p>",
+  "attachments": []
+}
