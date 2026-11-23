@@ -1,0 +1,15 @@
+{
+  "id": "3789b25b229c8ef6",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Don't keep your SSH keys on disk",
+  "link": "https://jola.dev/posts/you-cant-afford-ssh-keys-disk",
+  "author": "shintoist",
+  "publishedAt": "2026-11-23T09:55:38Z",
+  "snippet": "Article URL: https://jola.dev/posts/you-cant-afford-ssh-keys-disk Comments URL: https://news.ycombinator.com/item?id=50609579 Points: 125 # Comments: 86",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://jola.dev/posts/you-cant-afford-ssh-keys-disk\" rel=\"noopener noreferrer\" target=\"_blank\">https://jola.dev/posts/you-cant-afford-ssh-keys-disk</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50609579\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50609579</a></p>\n<p>Points: 125</p>\n<p># Comments: 86</p>",
+  "attachments": []
+}

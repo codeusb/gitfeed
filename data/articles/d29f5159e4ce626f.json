@@ -1,0 +1,15 @@
+{
+  "id": "d29f5159e4ce626f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [开源] 做了个 macOS 工具，批量保存 Telegram 频道附件",
+  "link": "https://www.v2ex.com/t/1259272#reply0",
+  "author": "shuaixiaoxiao",
+  "publishedAt": "2026-11-23T15:08:23Z",
+  "snippet": "我想把 Telegram 频道里的一批视频存到 NAS，逐条复制链接挺费时间，于是做了 TG NestFetch。扫码登录后，选频道和日期，筛出视频、图片或文档，勾选就能一起保存。视频可以先试看，下载完也能在应用里离线播放。 免费开源，支持 macOS 13+，Apple 芯片和 Intel 都有安装包。如果你也会把频道里的资料存到本地或 NAS，欢迎试试，尤其想听听从找附件到保存这一段哪里还费劲。 GitHub 和演示 https:/...",
+  "coverImage": "https://raw.githubusercontent.com/TNT-Likely/telegram-nestfetch/main/docs/media/channel-attachments.png",
+  "readTime": 1,
+  "content": "<p>我想把 Telegram 频道里的一批视频存到 NAS，逐条复制链接挺费时间，于是做了 TG NestFetch。扫码登录后，选频道和日期，筛出视频、图片或文档，勾选就能一起保存。视频可以先试看，下载完也能在应用里离线播放。</p>\n<p><img alt=\"频道附件截图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/TNT-Likely/telegram-nestfetch/main/docs/media/channel-attachments.png\"/></p>\n<p><img alt=\"视频试看和批量下载演示\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/TNT-Likely/telegram-nestfetch/main/docs/media/demo.gif\"/></p>\n<p>免费开源，支持 macOS 13+，Apple 芯片和 Intel 都有安装包。如果你也会把频道里的资料存到本地或 NAS，欢迎试试，尤其想听听从找附件到保存这一段哪里还费劲。</p>\n<p>GitHub 和演示\n<a href=\"https://github.com/TNT-Likely/telegram-nestfetch\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/TNT-Likely/telegram-nestfetch</a></p>",
+  "attachments": []
+}

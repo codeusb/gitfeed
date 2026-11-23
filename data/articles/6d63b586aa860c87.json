@@ -1,0 +1,15 @@
+{
+  "id": "6d63b586aa860c87",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 在 GPT 的帮助下做了个 Windows 解压工具 Unbox，双击就能解压，高仿 Win11 原生复制窗口",
+  "link": "https://www.v2ex.com/t/1259270#reply0",
+  "author": "Yukine",
+  "publishedAt": "2026-11-23T15:03:38Z",
+  "snippet": "我做了个开源小工具，想让 Windows 下的解压也像 macOS 一样顺手，抛弃国产软件的广告捆绑和多余功能，于是用 GPT 搓了个套壳 7z-zs 的小工具~ Unbox 高仿 Windows 11 原生文件复制窗口，自动识别暗色和浅色主题，默认只显示进度，展开后可以看实时速度曲线，也能随时暂停。 把 Unbox 设为默认应用后，双击压缩包就会解到旁边的同名文件夹。遇到同名目录会自动编号，避免覆盖。支持 ZIP、7z、RAR、TAR...",
+  "coverImage": "https://github.com/Snowail/Unbox/raw/main/assets/banner.png",
+  "readTime": 1,
+  "content": "<p><img alt=\"Unbox 解压界面\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://github.com/Snowail/Unbox/raw/main/assets/banner.png\"/></p>\n<p>我做了个开源小工具，想让 Windows 下的解压也像 macOS 一样顺手，抛弃国产软件的广告捆绑和多余功能，于是用 GPT 搓了个套壳 7z-zs 的小工具~</p>\n<p>Unbox 高仿 Windows 11 原生文件复制窗口，自动识别暗色和浅色主题，默认只显示进度，展开后可以看实时速度曲线，也能随时暂停。</p>\n<p>把 Unbox 设为默认应用后，双击压缩包就会解到旁边的同名文件夹。遇到同名目录会自动编号，避免覆盖。支持 ZIP、7z、RAR、TAR、Zstandard、LZ4 等格式。</p>\n<p>便携版支持 Windows 10/11 x64，需要 .NET 10 桌面运行时，安装卸载通过脚本，绿色完全无残留。</p>\n<p>后续计划加入多语言，以及按住 <strong>Shift 双击</strong>打开归档管理器，方便浏览、修改和打包文件。</p>\n<p>欢迎试用，有解不开的包或不顺手的地方，可以留言或提 Issue。</p>\n<p><a href=\"https://github.com/Snowail/Unbox\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub 源码</a> · <a href=\"https://github.com/Snowail/Unbox/releases\" rel=\"noopener noreferrer\" target=\"_blank\">下载便携版</a></p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "486d75b9e0aeac44",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Claude] 大约从 10 天前开始，我的 claude 特别费，并且 Fable 和 all models 的值 基本相同，怪不怪？",
+  "link": "https://www.v2ex.com/t/1259281#reply0",
+  "author": "blackantt",
+  "publishedAt": "2026-11-23T16:28:48Z",
+  "snippet": "通常 Fable 定 plan，然后派给 opus 5.5，最后结果再回给主 Fable 来 review。 照理说 fable 跟 opus 的用量应该不一样才对。 10 天前 2 者相差很多，fable 都用完了，all models 用不完。 但现在，2 种消耗的差不多，顶多差 1% 是不是哪里出问题了？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>通常 Fable 定 plan，然后派给 opus 5.5，最后结果再回给主 Fable 来 review。  照理说 fable 跟 opus 的用量应该不一样才对。 10 天前 2 者相差很多，fable 都用完了，all models 用不完。 但现在，2 种消耗的差不多，顶多差 1%</p>\n<p>是不是哪里出问题了？</p>",
+  "attachments": []
+}

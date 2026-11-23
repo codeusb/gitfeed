@@ -1,0 +1,15 @@
+{
+  "id": "e3de1816fd88837e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[iPhone] 最近几天 APNS 挂上代理也无法收到海外 App 的推送了",
+  "link": "https://www.v2ex.com/t/1259253#reply7",
+  "author": "VinsonGuo",
+  "publishedAt": "2026-11-23T13:42:20Z",
+  "snippet": "之前都是用的这个帖子的规则，可以收到海外 app 的推送：https://www.v2ex.com/t/1210130 但是最近 2 天又突然不推送了，不清楚是因为升级了 iOS 27.3 测试版，还是苹果又改了规则了，有遇到这个问题的 V 友吗？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>之前都是用的这个帖子的规则，可以收到海外 app 的推送：<a href=\"https://www.v2ex.com/t/1210130\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.v2ex.com/t/1210130</a></p>\n<p>但是最近 2 天又突然不推送了，不清楚是因为升级了 iOS 27.3 测试版，还是苹果又改了规则了，有遇到这个问题的 V 友吗？</p>",
+  "attachments": []
+}
