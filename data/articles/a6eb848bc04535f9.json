@@ -1,0 +1,15 @@
+{
+  "id": "a6eb848bc04535f9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 马上 2027 年了，现在有什么高吞吐低延迟又便宜的 Redis 替代品么",
+  "link": "https://www.v2ex.com/t/1259144#reply3",
+  "author": "inza9hi",
+  "publishedAt": "2026-11-23T07:05:18Z",
+  "snippet": "需求：找一个在线的存储来做设备级的人群画像 想便宜貌似只能走 NVMe 了 研究了下，这类产品还挺多的，像 Lavik，老牌的 Aerospike，阿里云磁盘型 Tair 各位大佬有生产上的实践吗",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>需求：找一个在线的存储来做设备级的人群画像</p>\n<p>想便宜貌似只能走 NVMe 了\n研究了下，这类产品还挺多的，像 Lavik，老牌的 Aerospike，阿里云磁盘型 Tair</p>\n<p>各位大佬有生产上的实践吗</p>",
+  "attachments": []
+}

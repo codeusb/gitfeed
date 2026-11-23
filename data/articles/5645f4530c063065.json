@@ -1,0 +1,15 @@
+{
+  "id": "5645f4530c063065",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个纯浏览器本地运行的免费 OCR 工具，免登录不上传，支持粘贴截图对照校对",
+  "link": "https://www.v2ex.com/t/1259146#reply0",
+  "author": "albericoyjq",
+  "publishedAt": "2026-11-23T07:09:28Z",
+  "snippet": "平时经常要从报错截图、文档或收据里提文字，市面上的在线 OCR 要么得登录限次，要么得传图到服务器，带敏感信息的图传上去总觉得膈应。干脆自己做了个纯浏览器本地跑的 OCR 工具，发来 V 站请大家体验和拍砖： 中文版：https://ocrmind.com/zh/ 英文版：https://ocrmind.com/ 主要特性： 100% 本地推理，图片不出设备：基于 PaddleOCR 在浏览器内完成识别，不上传原图和文本，欢迎开 F12...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>平时经常要从报错截图、文档或收据里提文字，市面上的在线 OCR 要么得登录限次，要么得传图到服务器，带敏感信息的图传上去总觉得膈应。干脆自己做了个纯浏览器本地跑的 OCR 工具，发来 V 站请大家体验和拍砖：</p>\n<ul>\n<li>中文版：<a href=\"https://ocrmind.com/zh/\" rel=\"noopener noreferrer\" target=\"_blank\">https://ocrmind.com/zh/</a></li>\n<li>英文版：<a href=\"https://ocrmind.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://ocrmind.com/</a></li>\n</ul>\n<p><strong>主要特性：</strong></p>\n<ul>\n<li><strong>100% 本地推理，图片不出设备</strong>：基于 PaddleOCR 在浏览器内完成识别，不上传原图和文本，欢迎开 F12 抓包验证。</li>\n<li><strong>零门槛、适合高频截图</strong>：免费、免登录、不限次。支持拖拽选图和直接 <code>Ctrl/Cmd + V</code> 粘贴剪贴板截图，首页带内置示例图可直接试效果。</li>\n<li><strong>支持对照原图校对</strong>：识别后可直接在图上划选区域、对照修改文字，不只甩一坨纯文本。</li>\n<li><strong>多语言与导出</strong>：支持中、英、日、韩等 9 种语言（默认自动检测，也可手动指定），支持一键复制或导出 <code>.txt</code> / <code>.md</code> / <code>.docx</code>。</li>\n</ul>\n<p><strong>目前短板：</strong></p>\n<ul>\n<li>首次识别（或切新语言）需联网拉取模型，会等几秒；还没做完整离线 PWA，暂不支持断网刷新使用。</li>\n<li>数据仅暂存在当前页内存，刷新或切语言会清空，记得先导出。</li>\n<li>导出仅保留纯文本与基础段落，暂不还原复杂表格/排版，不支持 PDF 和 Excel。</li>\n</ul>\n<p>还在持续迭代中，遇到 Bug、兼容问题，或者你最刚需的功能（真离线 PWA、批量识别、PDF、表格/公式等），欢迎直接在楼下留言或吐槽，每条都会看。</p>",
+  "attachments": []
+}

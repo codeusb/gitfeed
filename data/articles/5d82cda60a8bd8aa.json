@@ -1,0 +1,15 @@
+{
+  "id": "5d82cda60a8bd8aa",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 智谱 GLM5.4 上线",
+  "link": "https://www.v2ex.com/t/1259155#reply0",
+  "author": "yxy19980304",
+  "publishedAt": "2026-11-23T07:28:47Z",
+  "snippet": "智谱官方运营发布的告示：GLM-5.4 已经上线 Coding Plan。过去三个月，我们同时激进的 Scaling Loop 和模型大小，大家首先看到的是 Loop Transformer 带来的惊喜。GLM-5.4 新增视觉能力与更强的泛 Coding 能力。V2、V3 及团队版用户使用 GLM-5.4 模型额度已提升至 1.5 倍，将模型名设置为 glm-5.4 即可。同时还补充：1. Claude Code 中使用模型须设置为：...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "智谱官方运营发布的告示：<br/><br/>GLM-5.4 已经上线 Coding Plan。过去三个月，我们同时激进的 Scaling Loop 和模型大小，大家首先看到的是 Loop Transformer 带来的惊喜。GLM-5.4 新增视觉能力与更强的泛 Coding 能力。V2、V3 及团队版用户使用 GLM-5.4 模型额度已提升至 1.5 倍，将模型名设置为 glm-5.4 即可。<br/><br/>同时还补充：<br/>1. Claude Code 中使用模型须设置为：glm-5.4[1m]，其他工具 t 中设置为 glm-5.4 即可<br/>2. 模型额度 1.5 倍指相较于 GLM-5.3 可消耗的 tokens 量<br/>3. ZCode、AutoClaw 的额外 1.5 倍限时活动已结束，与其他套餐支持的工具享受同样额度。",
+  "attachments": []
+}

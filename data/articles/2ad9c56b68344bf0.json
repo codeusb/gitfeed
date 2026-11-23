@@ -1,0 +1,15 @@
+{
+  "id": "2ad9c56b68344bf0",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享发现] Mac 复制， iPhone 总是粘出旧内容。查了几天，发现微信输入法干的。",
+  "link": "https://www.v2ex.com/t/1259159#reply1",
+  "author": "yuanbz666",
+  "publishedAt": "2026-11-23T07:35:47Z",
+  "snippet": "Mac 上复制，iPhone 总粘出上一条，最后查到是微信输入法干的 我用的是 MacBook Pro（macOS 15.1）和 iPhone 15 Pro。最近共享剪贴板又出了个老问题：Mac 上刚复制一段文字，在 Mac 本地粘贴是对的，拿起 iPhone 一粘，还是上一条。反过来从 iPhone 复制，Mac 倒是马上就能收到。 上回我来回折腾两端的接力和蓝牙，最后重启 iPhone 才恢复，所以这次一开始也怀疑手机。结果手机压根...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<h1>Mac 上复制，iPhone 总粘出上一条，最后查到是微信输入法干的</h1>\n<p>我用的是 MacBook Pro（macOS 15.1）和 iPhone 15 Pro。最近共享剪贴板又出了个老问题：Mac 上刚复制一段文字，在 Mac 本地粘贴是对的，拿起 iPhone 一粘，还是上一条。反过来从 iPhone 复制，Mac 倒是马上就能收到。</p>\n<p>上回我来回折腾两端的接力和蓝牙，最后重启 iPhone 才恢复，所以这次一开始也怀疑手机。结果手机压根没动，只重启了 Mac 上负责接力的 <code>useractivityd</code>，把那段文字重新复制一次，iPhone 就能粘到了。</p>\n<p>我让 Codex 继续查本机日志。11 月 20 日 11:46:15，好几个应用同时跟 Mac 的剪贴板进程 <code>pboard</code> 断了连接。顺着这个时间找下去，在微信输入法自己的更新日志 <code>~/Library/Caches/WeType/Logs/updater_*.log</code> 里看到了这两行：</p>\n<pre><code class=\"language-text\">11:46:15 [pid:78020] install committed: previous=3.0.1(684), target=3.0.2(689), …\n11:46:15 [pid:78020] restart pboard\n</code></pre>\n<p>微信输入法刚从 3.0.1 升到 3.0.2，更新器就重启了 <code>pboard</code>。看了下当前 3.0.2 版更新器的代码，<code>reloadPasteboard(shouldSkip:)</code> 里确实还有一个分支会执行 <code>killall -9 pboard</code>。</p>\n<p>那 <code>pboard</code> 都重新起来了，为什么 Mac 能正常复制，iPhone 却一直拿到旧内容？我让 Codex 连着 iPhone 镜像做了个实验，全程保持接力服务不动，只重启一次 <code>pboard</code>。</p>\n<table>\n<thead>\n<tr>\n<th>测试时点</th>\n<th>Mac 刚复制的文字</th>\n<th>iPhone 实际粘出的文字</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>重启前，序号是 64</td>\n<td><code>MBPBase372</code></td>\n<td><code>MBPBase372</code></td>\n</tr>\n<tr>\n<td>重启后，序号从 1 开始</td>\n<td><code>MBPAfter816</code></td>\n<td><code>MBPBase372</code></td>\n</tr>\n<tr>\n<td>新序号回到 64</td>\n<td><code>MBPEqual64</code></td>\n<td><code>MBPBase372</code></td>\n</tr>\n<tr>\n<td>再复制一次，序号到 65</td>\n<td><code>MBPAbove65</code></td>\n<td><code>MBPAbove65</code></td>\n</tr>\n</tbody></table><p>从 1 到 64，接力服务都收到了本地剪贴板的更新，但没有发出新的广播。到了 65，Mac 发出了广播，iPhone 随即取到了新文字。64 只是重启前碰巧用到的序号：在我这台 Mac 上，新序号得<strong>超过重启前的值</strong>，接力才会继续往外发。</p>\n<p>这下也能解释为什么它有时放着放着就好了：中间照常用 Mac，复制的次数够多，序号累加了。</p>\n<p>解决方式：</p>\n<pre><code class=\"language-sh\">killall -TERM useractivityd\n</code></pre>\n<p>然后把重新复制一次就好了</p>",
+  "attachments": []
+}

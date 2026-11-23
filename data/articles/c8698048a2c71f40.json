@@ -1,0 +1,15 @@
+{
+  "id": "c8698048a2c71f40",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] Crew 客户端已集成 Antigravity、Claude、Codex，并且支持自定义模型，兼容 magpie，支持 Git、文件浏览、网格化，可通过 Crew 的 SSH 功能利用 AI 操作远程服务器",
+  "link": "https://www.v2ex.com/t/1259179#reply0",
+  "author": "lsls931011",
+  "publishedAt": "2026-11-23T08:26:05Z",
+  "snippet": "嗯，对于自己的客户端的碎碎念又来了。 https://github.com/elioinvest/Crew1、现在集成 Antigravity、Claude、Codex，主要是使用他们的官方 cli，不是反代，安全又稳定。2、软件支持自定义模型，因此，可以启动 magpie，将 magpie 的 api 导入到 Crew，间接使用其他模型，建议使用 OpenAI 兼容模式3、在侧边栏可以通过 SSH 连接到服务器后，可以使用自定义模型、...",
+  "coverImage": "https://i.imgur.com/y0v5Ipl.png",
+  "readTime": 1,
+  "content": "嗯，对于自己的客户端的碎碎念又来了。 <br/><br/><a href=\"https://github.com/elioinvest/Crew\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/elioinvest/Crew</a><br/><br/>1、现在集成 Antigravity、Claude、Codex，主要是使用他们的官方 cli，不是反代，安全又稳定。<br/>2、软件支持自定义模型，因此，可以启动 magpie，将 magpie 的 api 导入到 Crew，间接使用其他模型，建议使用 OpenAI 兼容模式<br/>3、在侧边栏可以通过 SSH 连接到服务器后，可以使用自定义模型、Antigravity、Claude、Codex，直接操作服务器。<br/><br/>我还是喜欢在一个项目里面，每个模型都有自己的会话。<br/><br/><a href=\"https://i.imgur.com/y0v5Ipl.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/y0v5Ipl.png\"/></a>",
+  "attachments": []
+}
