@@ -1,0 +1,15 @@
+{
+  "id": "3117bb5e08ff8b96",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 聊聊独立开发者如何用 AWS 对象存储低成本搞定 APK 分发与防拦截",
+  "link": "https://www.v2ex.com/t/1259493#reply0",
+  "author": "rebornszoro",
+  "publishedAt": "2026-11-24T08:51:47Z",
+  "snippet": "很多做独立开发或者海外小团队的朋友，在没有上架 Google Play 之前，都会遇到一个头疼的问题：官网放的 APK 下载链接，要么国内下载慢如蜗牛，要么在社交平台分享时直接被拦截提示风险，甚至部分手机自带浏览器直接拦截下载。 最近帮几个团队做架构迁移，发现直接用 AWS 亚马逊云对象存储（S3） 是个非常省心的方案，分享几个实际体验： 为什么推荐用 AWS S3 做分发？ 成本极低，按量付费 初期用户量不大的时候，每个月的存储和流量...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>很多做独立开发或者海外小团队的朋友，在没有上架 Google Play 之前，都会遇到一个头疼的问题：官网放的 APK 下载链接，要么国内下载慢如蜗牛，要么在社交平台分享时直接被拦截提示风险，甚至部分手机自带浏览器直接拦截下载。</p>\n<p>最近帮几个团队做架构迁移，发现直接用 <strong>AWS 亚马逊云对象存储（S3）</strong> 是个非常省心的方案，分享几个实际体验：</p>\n<h3>为什么推荐用 AWS S3 做分发？</h3>\n<ol>\n<li>\n<p><strong>成本极低，按量付费</strong><br/>\n初期用户量不大的时候，每个月的存储和流量费用几乎可以忽略不计，比专门租一台大带宽服务器划算太多。</p>\n</li>\n<li>\n<p><strong>域名权重高，减少误报</strong><br/>\n很多时候系统报毒或链接被红，是因为托管文件的服务器 IP 曾经被污染过。AWS S3 配合 CloudFront 的默认域名信誉度很高，加上规范的 APK 签名，基本能解决 80% 以上的无故拦截问题。</p>\n</li>\n<li>\n<p><strong>运维零负担</strong><br/>\n不需要自己维护 Nginx、防盗链规则或者担心服务器宕机，后台直接传包即可生成直链，支持高并发满速下载。</p>\n</li>\n</ol>\n<hr/>\n<h3>关于账号开通的一点补充</h3>\n<p>不少朋友卡在 AWS 官网注册需要双币信用卡，或者新号容易触发人工审核风控。</p>\n<p>我们这边本身在做 AWS 的企业级渠道代理，专门针对开发者开了一个 <strong>24 小时自助开户和充值平台</strong>：</p>\n<ul>\n<li><strong>免绑卡开通</strong>：无需海外信用卡，注册即用</li>\n<li><strong>全天候自助</strong>：支持 24 小时在线充值与续费，账单透明</li>\n<li><strong>账号独立安全</strong>：拥有完整的独立控制台权限，稳定防封</li>\n</ul>\n<p>如果大家在配置 S3 权限、CDN 加速或者解决分发拦截上有什么问题，欢迎在评论区一起探讨。</p>\n<p>📩 客服 Telegram： @<a href=\"https://www.v2ex.com/member/cloudcup\" rel=\"noopener noreferrer\" target=\"_blank\">cloudcup</a><br/>\n🔥 合作平台： 阿里云国际｜腾讯云国际｜华为云国际｜ AWS ｜ GCP ｜ Azure<br/>\n🔗 官方网站： <a href=\"https://cloudcup.online\" rel=\"noopener noreferrer\" target=\"_blank\">https://cloudcup.online</a><br/>\n✈️自助开户充值：@cloudcup_bot</p>",
+  "attachments": []
+}

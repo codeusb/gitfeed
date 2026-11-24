@@ -1,0 +1,15 @@
+{
+  "id": "83b3111578ebe36a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 老黄回归英伟达？福利来了",
+  "link": "https://www.v2ex.com/t/1259524#reply0",
+  "author": "xgguest",
+  "publishedAt": "2026-11-24T10:19:31Z",
+  "snippet": "充值加赠进行中，到 12 月 1 日 23:59（北京时间）。选预设档位，所有用户加赠是这样： 充 50 美元，送 5 美元，到账 55 美元 充 100 美元，送 12 美元，到账 112 美元 充 200 美元，送 20 美元，到账 220 美元 充 500 美元，送 80 美元，到账 580 美元 充 1000 美元，送 160 美元，到账 1160 美元 首充再加码：50 美元起，最高共送 200 美元（活动赠送 + 首充赠送合...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>充值加赠进行中，到 <strong>12 月 1 日 23:59（北京时间）</strong>。选预设档位，所有用户加赠是这样：</p>\n<ul>\n<li>充 <strong>50 美元</strong>，送 <strong>5 美元</strong>，到账 <strong>55 美元</strong></li>\n<li>充 <strong>100 美元</strong>，送 <strong>12 美元</strong>，到账 <strong>112 美元</strong></li>\n<li>充 <strong>200 美元</strong>，送 <strong>20 美元</strong>，到账 <strong>220 美元</strong></li>\n<li>充 <strong>500 美元</strong>，送 <strong>80 美元</strong>，到账 <strong>580 美元</strong></li>\n<li>充 <strong>1000 美元</strong>，送 <strong>160 美元</strong>，到账 <strong>1160 美元</strong></li>\n</ul>\n<p>首充再加码：<strong>50 美元起，最高共送 200 美元</strong>（活动赠送 + 首充赠送合计）。自定义金额不参加本次活动。充值按 1 元人民币 = 1 美元额度。走 <a href=\"https://cheapai.info/billing?utm_source=v2ex&amp;utm_medium=community&amp;utm_campaign=v2ex_bf\" rel=\"noopener noreferrer\" target=\"_blank\">充值页</a> 的预设档位就行。站：<a href=\"https://cheapai.info/?utm_source=v2ex&amp;utm_medium=community&amp;utm_campaign=v2ex_bf\" rel=\"noopener noreferrer\" target=\"_blank\">cheapai.info</a></p>\n<p>日常大致是这样：GPT 低价组低至 0.06（相对官方 API 标价，具体模型看 <a href=\"https://cheapai.info/pricing?utm_source=v2ex&amp;utm_medium=community&amp;utm_campaign=v2ex_bf\" rel=\"noopener noreferrer\" target=\"_blank\">价格页</a>）；满 50 美元解锁 gpt-特惠等原有权益还在。后台有调用日志，Token 和扣费能对上。并发不按「买几个席位」那种卖，批量 / 多用户一起打会灵活一点；上游抖动或负载上来时还是会受影响，有情况站内会说。</p>\n<p>下游要对接的，楼里直接丢：大概量级、要不要独立分组 / 账单、需不需要对公。量大的可以单独谈。</p>\n<p>有问题楼里问就行。</p>",
+  "attachments": []
+}

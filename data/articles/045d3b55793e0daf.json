@@ -1,0 +1,15 @@
+{
+  "id": "045d3b55793e0daf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] Leaflow - 新时代的 Agent Infra ，帮你从 Vibe Coding 到 Vibe Shipping",
+  "link": "https://www.v2ex.com/t/1259492#reply1",
+  "author": "wilsonJ",
+  "publishedAt": "2026-11-24T08:48:53Z",
+  "snippet": "Leaflow 是什么？ Leaflow.net 是我们给开发者做的 AI 基础设施平台。我们把云服务器、模型 API、Fleet 机器管理、监控和 DNS 放在同一个项目里，也做了一个能和你一起使用这些资源的 AI Agent，叫「随行」（Shipping）。我们把这种协作方式叫作 Vibe Shipping。 Leaflow 提供怎么样的服务？ Fleet —— 机器舰队 Fleet 让你在浏览器里管理多台机器。除了 Leaflow...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Leaflow 是什么？</p>\n<p><a href=\"http://Leaflow.net\" rel=\"noopener noreferrer\" target=\"_blank\">Leaflow.net</a> 是我们给开发者做的 AI 基础设施平台。我们把云服务器、模型 API、Fleet 机器管理、监控和 DNS 放在同一个项目里，也做了一个能和你一起使用这些资源的 AI Agent，叫「随行」（Shipping）。我们把这种协作方式叫作 Vibe Shipping。</p>\n<p>Leaflow 提供怎么样的服务？</p>\n<p>Fleet —— 机器舰队<br/>\nFleet 让你在浏览器里管理多台机器。除了 Leaflow 云服务器，你也可以把自己已有的 Linux 服务器和电脑接进来，打开终端、管理文件，或者直接访问桌面。也可以用随行接管 Fleet，从 Shell 到 Computer use。<br/>\nFleet 拥有权限分割属性，团队成员可以用各自的账号登录，整个过程不用共享 root 密码 sudo 提权就可以无风险的管理团队基础设施资产。</p>\n<p>云服务器 —— 我们也卖服务器<br/>\n你可以把它理解成 Leaflow 自己的 ECS。底层按高可用标准搭建，用 VPC 做网络隔离，用 Ceph 做分布式存储。你可以在机器上跑网站、数据库、后台任务，也可以把它当成一台随时能从浏览器打开的开发机。</p>\n<p>模型 API —— 我们也卖 Token（但是是高可用有 SLA 的大厂 Token）<br/>\n如果你在做自己的应用、脚本或 Agent，可以通过 Leaflow 调用模型。模型 API 可以单独使用，哪怕应用一直跑在你自己的服务器上，也可以直接接入。<br/>\n模型来源是我们比较在意的一件事。我们直接从云厂商接入模型资源，不使用第三方中转或订阅账号逆向出来的接口。也避免用户数据泄露，投毒等 P0 级事故发生。</p>\n<p>监控<br/>\n监控用来看资源的运行状态，也方便回头排查问题。比如有人反馈「刚才网站有点慢」，等你打开网站时，它可能已经恢复了。这时可以先看反馈时段的指标，再到 Fleet 打开对应机器的日志，对照同一时间发生了什么。<br/>\n我们也做了公开状态页（Status Page）和团队内部的告警协作。你可以给状态页绑上自己的域名，让用户随时查看服务状态。团队这边，每条告警都会带上触发时的读数和指标曲线。看到告警的同事可以直接认领，也可以指派给负责这个服务的人。换人接手时，看一眼处理时间线，就知道前面已经查到了哪一步。</p>",
+  "attachments": []
+}

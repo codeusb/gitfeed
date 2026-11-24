@@ -1,0 +1,15 @@
+{
+  "id": "8b8301d0005529c1",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [Windows/mac]搭手 2.5.0 更新：项目改为了插件基座，上架了大量高质量插件，送 20 个年度会员",
+  "link": "https://www.v2ex.com/t/1259484#reply2",
+  "author": "q2316367743",
+  "publishedAt": "2026-11-24T08:21:54Z",
+  "snippet": "一个月前在这儿发过一篇，当时它是个搜索条加可视化自动化的工具。这次换了方向，做成插件平台：主入口还是搜索条和刘海岛，能力全部下沉成插件，插件中心现在有 11 款。 官网和下载：https://www.da-shou.cn/download 先说免费的，也是我自己每天在用的。 搭手快传：兼容 LocalSend v2.2 协议。同一个 Wi-Fi 下跟手机、另一台电脑互传文件和文字，走局域网，不经过云端，不用登录。装了 LocalSend...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>一个月前在这儿<a href=\"https://www.v2ex.com/t/1253518\" rel=\"noopener noreferrer\" target=\"_blank\">发过一篇</a>，当时它是个搜索条加可视化自动化的工具。这次换了方向，做成插件平台：主入口还是搜索条和刘海岛，能力全部下沉成插件，插件中心现在有 11 款。</p>\n<p>官网和下载：<a href=\"https://www.da-shou.cn/download\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.da-shou.cn/download</a></p>\n<p>先说免费的，也是我自己每天在用的。</p>\n<p><strong>搭手快传</strong>：兼容 LocalSend v2.2 协议。同一个 Wi-Fi 下跟手机、另一台电脑互传文件和文字，走局域网，不经过云端，不用登录。装了 LocalSend 的设备会直接出现在列表里，反过来也一样。还有个网页模式，开一下，对方用浏览器就能给你发文件，什么都不用装。</p>\n<p><strong>衣姿 PoseWear</strong>：参考开源项目 posewear 重写的换装生图工具。五个库（姿势 / 深度姿势 / 服装 / 动画服装 / 人像）带中英提示词，可以组合起来生成。相比原版加了本地图片缓存，第二次打开不用等远程资源；还能在本地把一张普通照片拆成人物、姿势、动作三类素材，直接丢进工作台当参考。素材数据是原项目作者整理的，我只是重做了客户端。图库免费，生图走内置额度，按张扣积分。</p>\n<p>下面三款是会员功能，也是三款体力活。</p>\n<p><strong>小岛监控</strong>：常驻后台的服务存活监控，窗口关了 core 还在跑，挂了立刻推通知。32 种检测类型，从 HTTP、Ping、TCP 到 MySQL、Redis、MongoDB、MQTT、Kafka、RabbitMQ、SNMP、RADIUS、SQL Server。没引任何第三方驱动，数据库和中间件的协议握手全是手写的，插件包因此很小。它把「故障」和「状态」分开了：直播下播不算故障，不标红、不计入可用率。每个监控项会同步成搭手的定时任务，能在定时任务页统一启停。</p>\n<p><strong>小岛 PDF</strong>：全本地的 PDF 工具箱，阅读、页面管理、合并拆分、压缩、转图片、加页码水印、加解密，可以多标签同时处理几份。</p>\n<p><strong>小岛 epub</strong>：本地 EPUB 编辑制作，打开已有文件、从空白新建，也能把 TXT 按目录规则做成 EPUB 3。</p>\n<p>另外几款：微光白板（Excalidraw 的壳，加了多白板管理、缩略图、落笔即存）、微光订阅（本地 RSS）、微光论坛（Discourse 客户端）、微光阅读（TXT / EPUB / MOBI / PDF 书架）、小岛去水印（短视频和图集链接解析）。</p>\n<p>会员：11 款里 3 款是会员（监控、PDF、epub），其余随便用。</p>\n<p><strong>20 个 1 年会员兑换码</strong>（在设置中注册后，直接输入激活码即可）</p>\n<ul>\n<li>DS-5MU3-9FB2-23Z9</li>\n<li>DS-E9D2-KJKB-S47C</li>\n<li>DS-YKQ6-4DQX-FG9R</li>\n<li>DS-TYAW-EJBN-BAX5</li>\n<li>DS-CYZB-7JNA-9S4K</li>\n<li>DS-2N85-R2AK-NAGR</li>\n<li>DS-XYB6-DR5R-PDP7</li>\n<li>DS-JCVN-CW8G-34PX</li>\n<li>DS-3PR6-3C2N-HQ9E</li>\n<li>DS-ZFMR-N3CZ-5RCB</li>\n<li>DS-3FV5-7MVG-F5M5</li>\n<li>DS-JMB6-JD2J-CQ6G</li>\n<li>DS-KLD3-PDB9-NH8G</li>\n<li>DS-BFQT-MFTN-E9ZL</li>\n<li>DS-P2K6-N86E-RS3Q</li>\n<li>DS-TVVL-UP9Q-4PK3</li>\n<li>DS-5A2G-Y92N-KWF4</li>\n<li>DS-NFKJ-N6T2-CFQ9</li>\n<li>DS-QF57-MM7F-6ZVG</li>\n<li>DS-PDXN-Z2Y2-XLBA</li>\n</ul>",
+  "attachments": []
+}

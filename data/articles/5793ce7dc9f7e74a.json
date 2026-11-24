@@ -1,0 +1,15 @@
+{
+  "id": "5793ce7dc9f7e74a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了个在线 AI 照片编辑器 PomiGen，看到喜欢的图，可以直接用它的 prompt 做同款",
+  "link": "https://www.v2ex.com/t/1259498#reply0",
+  "author": "hanmen9527",
+  "publishedAt": "2026-11-24T09:02:42Z",
+  "snippet": "大家好，最近做了个在线 AI 照片编辑器，叫 PomiGen。站里可以改自己的照片，也放了一个能直接拿来用的图片提示词库。 可以先从图逛起。比如你想做一张人像写真，在 ChatGPT Photo Prompts、Nano Banana Prompts、AI 写真提示词这几个合集中看到喜欢的效果，点进详情就能看原 prompt。点「做同款」，提示词会自动填到生成器里。比如原图拍的是咖啡，你可以保留里面描述布光和构图的几句，把咖啡换成自己的...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家好，最近做了个在线 AI 照片编辑器，叫 PomiGen。站里可以改自己的照片，也放了一个能直接拿来用的图片提示词库。</p>\n<p>可以先从图逛起。比如你想做一张人像写真，在 ChatGPT Photo Prompts、Nano Banana Prompts、AI 写真提示词这几个合集中看到喜欢的效果，点进详情就能看原 prompt。点「做同款」，提示词会自动填到生成器里。比如原图拍的是咖啡，你可以保留里面描述布光和构图的几句，把咖啡换成自己的产品。想让模型也看看原图，还可以直接把那张图当参考图。</p>\n<p>如果手头已经有照片，就上传自己的图，用画笔涂一下要改的位置，再写一句要求。比如合照里有两个人，只想把其中一个人的外套换成深蓝色，涂一下那件外套就说清楚了。站里也有单独的背景移除、图片放大和照片转漫画工具。</p>\n<p>注册会送一些积分。想先看看能做出什么效果，可以直接逛提示词库。</p>\n<p><a href=\"https://pomigen.com/?utm_source=v2ex&amp;utm_medium=community&amp;utm_campaign=share_creation\" rel=\"noopener noreferrer\" target=\"_blank\">PomiGen 首页</a> · <a href=\"https://pomigen.com/nano-banana-prompts?utm_source=v2ex&amp;utm_medium=community&amp;utm_campaign=share_creation\" rel=\"noopener noreferrer\" target=\"_blank\">Nano Banana 提示词库</a></p>\n<p>也想听听大家平时会反复用哪类图片 prompt。我自己挺想知道，哪些效果是大家收藏完，过两天真的会翻出来再用的。</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "37e227d5b7034463",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Rune: Rust VM for Emacs",
+  "link": "https://github.com/CeleritasCelery/rune",
+  "author": "whacked_new",
+  "publishedAt": "2026-11-24T02:30:47Z",
+  "snippet": "Article URL: https://github.com/CeleritasCelery/rune Comments URL: https://news.ycombinator.com/item?id=50622804 Points: 41 # Comments: 11",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/CeleritasCelery/rune\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/CeleritasCelery/rune</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50622804\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50622804</a></p>\n<p>Points: 41</p>\n<p># Comments: 11</p>",
+  "attachments": []
+}
