@@ -1,0 +1,15 @@
+{
+  "id": "a02bdaf5587c3859",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[浏览器] 感慨一下，居然现在还有人把 IE 浏览器当主力",
+  "link": "https://www.v2ex.com/t/1259739#reply9",
+  "author": "qwedcxsaz",
+  "publishedAt": "2026-11-25T07:22:33Z",
+  "snippet": "很早的一个项目，laravel 5.2 的 blade 渲染的网页 一直用户抱怨加载慢，加上我也觉得加载慢，所以现在借 ai 改成了 SSR Next，结果第二天一堆用户说网站打不开了 一看原来都是 IE 用户，甚至还有几个 IE9 的",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>很早的一个项目，laravel 5.2 的 blade 渲染的网页</p>\n<p>一直用户抱怨加载慢，加上我也觉得加载慢，所以现在借 ai 改成了 SSR Next，结果第二天一堆用户说网站打不开了</p>\n<p>一看原来都是 IE 用户，甚至还有几个 IE9 的</p>",
+  "attachments": []
+}

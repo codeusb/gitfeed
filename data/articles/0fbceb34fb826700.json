@@ -1,0 +1,15 @@
+{
+  "id": "0fbceb34fb826700",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 宝塔新用户首次安装，可免费领取一年期商用 SSL 证书",
+  "link": "https://www.v2ex.com/t/1259765#reply0",
+  "author": "btpanel",
+  "publishedAt": "2026-11-25T08:53:05Z",
+  "snippet": "宝塔近期推出了一项面向新用户的福利活动。 新注册用户首次安装并登录宝塔 Linux 面板正式版 13.2.0，可免费领取一张一年期指定 DV 单域名商用 SSL 证书。 本次活动共提供 4000 张证书，每个账号限领一张，领完即止。 领取截止时间为 2026 年 11 月 30 日 23:59，领取后可在 2026 年 12 月 30 日 23:59 前完成域名验证及证书签发。 领取入口位于面板的「SSL → 证书管理 → 商用 SSL...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>宝塔近期推出了一项面向新用户的福利活动。</p>\n<p>新注册用户首次安装并登录宝塔 Linux 面板正式版 13.2.0，可免费领取一张一年期指定 DV 单域名商用 SSL 证书。</p>\n<p>本次活动共提供 4000 张证书，每个账号限领一张，领完即止。</p>\n<p>领取截止时间为 2026 年 11 月 30 日 23:59，领取后可在 2026 年 12 月 30 日 23:59 前完成域名验证及证书签发。</p>\n<p>领取入口位于面板的「SSL → 证书管理 → 商用 SSL」页面，支持 DNS（CNAME）及 HTTP/HTTPS 文件验证。</p>\n<p>如果近期有建站计划，或有意体验宝塔面板，可以了解一下本次活动。</p>\n<p>面板下载：<br/>\n<a href=\"https://www.bt.cn/new/download.html?bt_ly=obbs\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.bt.cn/new/download.html?bt_ly=obbs</a></p>\n<p>完整活动说明及领取教程：<br/>\n<a href=\"https://docs.bt.cn/notices/bt-panel-13-2-0-free-ssl/\" rel=\"noopener noreferrer\" target=\"_blank\">https://docs.bt.cn/notices/bt-panel-13-2-0-free-ssl/</a></p>",
+  "attachments": []
+}

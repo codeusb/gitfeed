@@ -1,0 +1,15 @@
+{
+  "id": "33daed948077ebbc",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] [推广] 美国 AT&T 家宽云服务器适合哪些场景、不适合哪些？整理了一份 FAQ",
+  "link": "https://www.v2ex.com/t/1259757#reply0",
+  "author": "Carbule",
+  "publishedAt": "2026-11-25T08:30:12Z",
+  "snippet": "之前发过两篇介绍 ResiUX 的帖子，收到一些疑问，这里整理成 FAQ，尽量说清楚适合谁、不适合谁，避免大家买错。 它是什么 美国 AT&T 住宅宽带出口的 KVM 云服务器，独立 IPv4（暂无 IPv6），完整 root。 配置：1C / 1G / 10G SSD，100Mbps 共享上下行，不限流量（合理使用） 价格：¥118/月，半年 9 折，年付 8 折（¥1132.80） 开通：付款后约 2 分钟自动交付，系统可选 Deb...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>之前发过两篇介绍 ResiUX 的帖子，收到一些疑问，这里整理成 FAQ，尽量说清楚适合谁、不适合谁，避免大家买错。</p>\n<p><strong>它是什么</strong></p>\n<p>美国 AT&amp;T 住宅宽带出口的 KVM 云服务器，独立 IPv4（暂无 IPv6），完整 root。</p>\n<ul>\n<li>配置：1C / 1G / 10G SSD，100Mbps 共享上下行，不限流量（合理使用）</li>\n<li>价格：¥118/月，半年 9 折，年付 8 折（¥1132.80）</li>\n<li>开通：付款后约 2 分钟自动交付，系统可选 Debian / Ubuntu / Rocky / AlmaLinux / CentOS Stream</li>\n<li>支付：Stripe、支付宝、余额</li>\n</ul>\n<p><strong>比较适合</strong></p>\n<ul>\n<li>跨境电商店铺日常运营、需要固定美国住宅出口的场景</li>\n<li>社媒账号日常管理</li>\n<li>广告投放 / 落地页在美国住宅网络下的展示检查</li>\n</ul>\n<p><strong>不适合</strong></p>\n<ul>\n<li>建站、高配置计算、需要大带宽的业务：配置只有 1C1G，选普通机房 VPS 更划算</li>\n<li>需要三网优化回国线路的个人用途</li>\n<li>代理池、代理转售、攻击、群发垃圾信息、挖矿：条款明确禁止，发现会处理</li>\n</ul>\n<p><strong>几个常被问的问题</strong></p>\n<p>Q：能保证通过某平台的检测吗？<br/>\nA：不能，也不会这么承诺。我们提供的是真实的 AT&amp;T 住宅出口和干净的使用环境，平台怎么判断取决于平台自身规则和你的使用方式。</p>\n<p>Q：可以退款吗？<br/>\nA：不支持退款。如果是我们自身原因导致的故障，会按影响时长顺延服务期补偿。建议先买月付试用。</p>\n<p>Q：为什么禁止代理池？<br/>\nA：家宽 IP 一旦被拿去做池子、被大量陌生流量使用，很快会被污染，对所有正常用户都是伤害。详见上一篇：<a href=\"https://www.v2ex.com/t/1259369\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.v2ex.com/t/1259369</a></p>\n<p>官网：<a href=\"https://resiux.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://resiux.com/</a><br/>\n服务条款：<a href=\"https://resiux.com/terms.php\" rel=\"noopener noreferrer\" target=\"_blank\">https://resiux.com/terms.php</a><br/>\n联系：<a href=\"mailto:support@resiux.com\" rel=\"noopener noreferrer\" target=\"_blank\">support@resiux.com</a></p>\n<p>有问题欢迎在帖子里直接问，我会如实回答，不清楚的会确认后补充。</p>",
+  "attachments": []
+}

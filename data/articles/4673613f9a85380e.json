@@ -1,0 +1,15 @@
+{
+  "id": "4673613f9a85380e",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 请教关于 claude code 智能体问题",
+  "link": "https://www.v2ex.com/t/1259759#reply1",
+  "author": "Super8",
+  "publishedAt": "2026-11-25T08:35:12Z",
+  "snippet": "最近在给业务系统开发多智能协同处理任务，突然想到，有没有人尝试把 claude code 智能体打包进业务系统，这样就可以不用专门开发多智能体系统了。当然了 claude code 定位是个人编程助手和业务有冲突是有可能的。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近在给业务系统开发多智能协同处理任务，突然想到，有没有人尝试把 claude code 智能体打包进业务系统，这样就可以不用专门开发多智能体系统了。当然了 claude code 定位是个人编程助手和业务有冲突是有可能的。</p>",
+  "attachments": []
+}

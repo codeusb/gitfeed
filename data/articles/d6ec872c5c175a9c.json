@@ -1,0 +1,15 @@
+{
+  "id": "d6ec872c5c175a9c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 给科研宝宝的工具： EasyReader 升级到 1.3.4",
+  "link": "https://www.v2ex.com/t/1259751#reply1",
+  "author": "crazyvbmxm",
+  "publishedAt": "2026-11-25T08:07:44Z",
+  "snippet": "我们的团队做了一个论文阅读软件 EasyReader： 这款工具的亮点： 1 ，全文翻译，不是普通机翻，是 llm 大模型 AI 翻译，对学术语言风格进行了调校。可以选择你的学科，这样翻译更准确！ 2 ，排版还原，公式图表不乱码；基本上（ 90%）常见的论文的排版都是完美还原。 3 ，大模型辅助阅读：一键生成思维导图、论文导读、提取 LaTeX 公式等 4 ，跨库搜文献 + 语义匹配查询（目前语义匹配只支持在 arxiv 内的论文库查询...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我们的团队做了一个论文阅读软件 EasyReader：<br/>\n这款工具的亮点：<br/>\n1 ，全文翻译，不是普通机翻，是 llm 大模型 AI 翻译，对学术语言风格进行了调校。可以选择你的学科，这样翻译更准确！<br/>\n2 ，排版还原，公式图表不乱码；基本上（ 90%）常见的论文的排版都是完美还原。<br/>\n3 ，大模型辅助阅读：一键生成思维导图、论文导读、提取 LaTeX 公式等<br/>\n4 ，跨库搜文献 + 语义匹配查询（目前语义匹配只支持在 arxiv 内的论文库查询）</p>\n<p>新增功能：<br/>\n根据论文内容，智能获取相关论文<br/>\n优化标签显示，增加自定义标签的功能</p>\n<p>网址： <a href=\"https://www.easyreader.com.cn/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.easyreader.com.cn/</a></p>\n<p>目前我们正在不断完善软件，还有些 bug 。欢迎提供对于软件的使用建议。</p>\n<p>另外，从 1.1.9 开始，已经支持 macos 系统</p>\n<p>分享资源：<br/>\n1 ，注册后会有一个免费的使用额度。<br/>\n2 ，在软件中有一个免费资源，关注公众号以后可以再获得一个资源包</p>",
+  "attachments": []
+}

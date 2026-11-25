@@ -1,0 +1,15 @@
+{
+  "id": "8d0838413cbfcd85",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+  "link": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+  "author": "E-Reverance",
+  "publishedAt": "2026-11-25T01:19:26Z",
+  "snippet": "Article URL: https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf Comments URL: https://news.ycombinator.com/item?id=50637220 Points: 601 # Comm...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50637220\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50637220</a></p>\n<p>Points: 601</p>\n<p># Comments: 306</p>",
+  "attachments": []
+}

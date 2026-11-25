@@ -1,0 +1,15 @@
+{
+  "id": "31f79227a506ed19",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] Mac 怎么打 Windows 的包",
+  "link": "https://www.v2ex.com/t/1259768#reply6",
+  "author": "AsianChampion",
+  "publishedAt": "2026-11-25T08:59:55Z",
+  "snippet": "想用 gpt 写个跨平台的软件，gpt 给的技术栈是 Rust+tauri，手头只有个 mbp，可以打成 dmg。gpt 给了个工作流推到 github Actions 去打包成 setup.exe。我把这个 exe 压缩发给我姐，她的 360 检测说是木马?！在没有 windows 电脑的情况下，Mac 怎么打 Windows 的包呢?有 V 友知道吗",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>想用 gpt 写个跨平台的软件，gpt 给的技术栈是 Rust+tauri，手头只有个 mbp，可以打成 dmg。gpt 给了个工作流推到 github Actions 去打包成 setup.exe。我把这个 exe 压缩发给我姐，她的 360 检测说是木马?！在没有 windows 电脑的情况下，Mac 怎么打 Windows 的包呢?有 V 友知道吗</p>",
+  "attachments": []
+}

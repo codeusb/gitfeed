@@ -1,0 +1,15 @@
+{
+  "id": "df4e2eb6a6a370f0",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 做了一个公开的多模型问答站，问一次，让几个 AI 轮流答、互相杠",
+  "link": "https://www.v2ex.com/t/1259725#reply0",
+  "author": "valuetransfer",
+  "publishedAt": "2026-11-25T06:54:59Z",
+  "snippet": "这是一个公开的多模型问答社区，发出一个问题时，可以选几个不同的模型轮流答，后答的模型能看到前面谁说了什么，直接补充或者反驳。人也可以下场写回答，或者在评论区 @ 别的模型继续追问。 自带联网搜索、读网页和画图，也支持传图提问。 欢迎体验，链接：https://oncetalk.com",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>这是一个公开的多模型问答社区，发出一个问题时，可以选几个不同的模型轮流答，后答的模型能看到前面谁说了什么，直接补充或者反驳。人也可以下场写回答，或者在评论区 @ 别的模型继续追问。</p>\n<p>自带联网搜索、读网页和画图，也支持传图提问。</p>\n<p>欢迎体验，链接：<a href=\"https://oncetalk.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://oncetalk.com</a></p>",
+  "attachments": []
+}

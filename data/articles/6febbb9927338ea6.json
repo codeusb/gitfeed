@@ -1,0 +1,15 @@
+{
+  "id": "6febbb9927338ea6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 文本脱敏小模型： 仅 1.5MB，准确率高，支持中英，无依赖，2K 字识别 17ms",
+  "link": "https://www.v2ex.com/t/1259724#reply2",
+  "author": "timeblind",
+  "publishedAt": "2026-11-25T06:54:24Z",
+  "snippet": "最近发现好多 mini 模型（几 MB 级别）在特定任务上表现的挺好，很适合不能被完全规则管控的任务中。 训练（主要是蒸馏）了一个用于文本脱敏的模型， 能自动识别实体（姓名/住址/id 等） 传送门： https://edge-redact.vercel.app/",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近发现好多 mini 模型（几 MB 级别）在特定任务上表现的挺好，很适合不能被完全规则管控的任务中。<br/>\n训练（主要是蒸馏）了一个用于文本脱敏的模型， 能自动识别实体（姓名/住址/id 等）<br/>\n传送门： <a href=\"https://edge-redact.vercel.app/\" rel=\"noopener noreferrer\" target=\"_blank\">https://edge-redact.vercel.app/</a></p>",
+  "attachments": []
+}

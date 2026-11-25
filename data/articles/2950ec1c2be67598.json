@@ -1,0 +1,15 @@
+{
+  "id": "2950ec1c2be67598",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 准确率 99.9% 的丑丑头像屏蔽脚本",
+  "link": "https://www.v2ex.com/t/1259714#reply15",
+  "author": "csrocks",
+  "publishedAt": "2026-11-25T06:37:49Z",
+  "snippet": "安装地址 很早就想屏蔽这类头像, 一直没找到太好的方式. 最近又看到这类头像, 然后试着让 Gemini 提供的屏蔽方案, 代码是 gemini 训练一个超轻量的 4 层 CNN 图像二分类模型，Int8 量化后塞进一个独立的油猴脚本里跑的. 安装后可以在这个帖子看效果.",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><a href=\"https://greasyfork.org/zh-CN/scripts/607215-v2ex-ugly-avatar-ai-%E5%B1%8F%E8%94%BD%E5%99%A8-%E7%BA%AF%E6%9C%AC%E5%9C%B0%E5%BE%AE%E5%9E%8B-cnn\" rel=\"noopener noreferrer\" target=\"_blank\">安装地址</a></p>\n<p>很早就想屏蔽这类头像, 一直没找到太好的方式.</p>\n<p>最近又看到这类头像, 然后试着让 Gemini 提供的屏蔽方案, 代码是 gemini 训练一个超轻量的 4 层 CNN 图像二分类模型，Int8 量化后塞进一个独立的油猴脚本里跑的.</p>\n<p>安装后可以在<a href=\"https://www.v2ex.com/t/1039456\" rel=\"noopener noreferrer\" target=\"_blank\">这个帖子</a>看效果.</p>",
+  "attachments": []
+}

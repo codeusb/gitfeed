@@ -1,0 +1,15 @@
+{
+  "id": "3d7f8fbf57e6e73e",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+  "link": "https://news.ycombinator.com/item?id=50630809",
+  "author": "weli",
+  "publishedAt": "2026-11-24T16:45:44Z",
+  "snippet": "Basically the title.Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.Our only usage which I think could get us flagged is automated regression benchm...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Basically the title.<p>Anthropic is accusing me and my company of using their API for distillation. We are not. We do not train our own models.<p>Our only usage which I think could get us flagged is automated regression benchmarks whenever we change some AI settings. But this is not against their policy?<p>Now I've got 24h to prove we didn't.<p>Has anyone dealt with this too? How can you prove that you are not distilling Anthropic models without breaking your user's privacy?</p>\n<hr/>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50630809\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50630809</a></p>\n<p>Points: 269</p>\n<p># Comments: 211</p></p></p></p></p>",
+  "attachments": []
+}

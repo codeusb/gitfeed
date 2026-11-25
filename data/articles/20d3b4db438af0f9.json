@@ -1,0 +1,15 @@
+{
+  "id": "20d3b4db438af0f9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Google Gemini] 大家为什么都在吹 Gemini 4 Neon，但是我感觉 Neon 做复杂任务的可用性几乎为 0？",
+  "link": "https://www.v2ex.com/t/1259711#reply24",
+  "author": "heyjei",
+  "publishedAt": "2026-11-25T06:32:24Z",
+  "snippet": "小任务没问题，也看不出和其他模型有什么区别。 但是一用来执行复杂的任务，每次都是做一小会就 Model unavailable, retrying in 180s (attempt 7/9) 做复杂任务的可用性几乎为 0 啊 是我的网络问题（自己的 VPS），还是我的账号级别的问题？",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>小任务没问题，也看不出和其他模型有什么区别。</p>\n<p>但是一用来执行复杂的任务，每次都是做一小会就 Model unavailable, retrying in 180s (attempt 7/9)<br/>\n做复杂任务的可用性几乎为 0 啊</p>\n<p>是我的网络问题（自己的 VPS），还是我的账号级别的问题？</p>",
+  "attachments": []
+}
