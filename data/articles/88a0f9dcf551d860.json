@@ -1,0 +1,15 @@
+{
+  "id": "88a0f9dcf551d860",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[技术栈] 分享我与这两天饱受争议的 T3 Code 的协作片段与相关 Skills",
+  "link": "https://www.v2ex.com/t/1259817#reply0",
+  "author": "JieyueXing",
+  "publishedAt": "2026-11-25T12:56:42Z",
+  "snippet": "视频： https://x.com/JieyueXing/status/2125558568359477683 其中的 HTML 面板渲染 T3 自带的，想让你的 Agent 也尽量可视化交流可以参考： https://github.com/jieyuexing/inline-brief-skill 想配置多模型互相协作参考： https://github.com/jieyuexing/modelpace 不一定要那么死板，非得用上面说...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>视频：<br/>\n<a href=\"https://x.com/JieyueXing/status/2125558568359477683\" rel=\"noopener noreferrer\" target=\"_blank\">https://x.com/JieyueXing/status/2125558568359477683</a></p>\n<p>其中的 HTML 面板渲染 T3 自带的，想让你的 Agent 也尽量可视化交流可以参考：<br/>\n<a href=\"https://github.com/jieyuexing/inline-brief-skill\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/jieyuexing/inline-brief-skill</a></p>\n<p>想配置多模型互相协作参考：<br/>\n<a href=\"https://github.com/jieyuexing/modelpace\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/jieyuexing/modelpace</a></p>\n<p>不一定要那么死板，非得用上面说的 T3，原 Skill/代码。<br/>\n而是把链接发给 AI 说我们也想要一个这样的，适用于任何工具的话题展开。</p>",
+  "attachments": []
+}

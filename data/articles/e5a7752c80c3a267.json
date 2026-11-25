@@ -1,0 +1,15 @@
+{
+  "id": "e5a7752c80c3a267",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] antigravity 的 swarm 是个好东西啊",
+  "link": "https://www.v2ex.com/t/1259851#reply0",
+  "author": "imqiyue",
+  "publishedAt": "2026-11-25T16:35:18Z",
+  "snippet": "给我的感觉像是发现了新大陆，以前用 gpt/claude 最多是用 /plan 、/goal 指令来处理任务，现在用了 /swarm 后体验提升了好一大截，知道有哪些“小蜜蜂”角色，在做什么，进度到哪里了，结论是什么。 并发运行，也给 gemini4 提速不少，gemini4 模型速度相比较 gpt 都还是太慢了， 用的是 neon high。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>给我的感觉像是发现了新大陆，以前用 gpt/claude 最多是用 /plan 、/goal 指令来处理任务，现在用了 /swarm 后体验提升了好一大截，知道有哪些“小蜜蜂”角色，在做什么，进度到哪里了，结论是什么。</p>\n<p>并发运行，也给 gemini4 提速不少，gemini4 模型速度相比较 gpt 都还是太慢了， 用的是 neon high。</p>",
+  "attachments": []
+}

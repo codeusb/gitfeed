@@ -1,0 +1,15 @@
+{
+  "id": "05d60883ded983b6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 如何保质量下减少 token 消耗",
+  "link": "https://www.v2ex.com/t/1259833#reply7",
+  "author": "jeffsun",
+  "publishedAt": "2026-11-25T14:35:04Z",
+  "snippet": "最近在使用 AI Coding 从零开始开发一个中型项目，涉及前后端、数据库、第三方系统集成。 目前手上有 Google AI Pro 和 OpenCode Go 订阅，但 Antigravity 的 Pro 额度消耗太快，单独使用很难支撑持续开发。 初步想法是： Antigravity 负责需求分析、架构设计、复杂功能开发、疑难问题处理和代码审查。 OpenCode Go 主要使用 DeepSeek 等模型，负责常规功能开发、代码重构...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>最近在使用 AI Coding 从零开始开发一个中型项目，涉及前后端、数据库、第三方系统集成。</p>\n<p>目前手上有 Google AI Pro 和 OpenCode Go 订阅，但 Antigravity 的 Pro 额度消耗太快，单独使用很难支撑持续开发。</p>\n<p>初步想法是：</p>\n<p>Antigravity 负责需求分析、架构设计、复杂功能开发、疑难问题处理和代码审查。</p>\n<p>OpenCode Go 主要使用 DeepSeek 等模型，负责常规功能开发、代码重构、测试和 Bug 修复。</p>\n<p>想请教一下是以 Antigravity 为主调用 OpenCode，还是以 OpenCode 为主，遇到复杂任务再交给 Antigravity？</p>\n<p>如何实现两个工具之间的任务分发、上下文共享和开发进度同步，尽量减少人工介入？</p>\n<p>对于从零开始开发的中型项目，使用桌面客户端还是 CLI + WSL 的方式更合适？</p>\n<p>保证最终交付的软件质量和可维护性，同时降低 Token 消耗及订阅成本。</p>\n<p>希望有类似实践的 V 友分享一下经验。</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "84b90d8c7c7a75da",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 分享我做的 emoji 挑选工具，里面加了点自己的小创意",
+  "link": "https://www.v2ex.com/t/1259805#reply0",
+  "author": "cl003",
+  "publishedAt": "2026-11-25T12:04:15Z",
+  "snippet": "我自己平时挺喜欢用 emoji 和各种符号的，不光聊天，做开发、写文本的时候也经常顺手敲几个进去。前阵子突然有个感觉，当年 iphone 刚火那会儿，emoji 存在感特别强，但我感觉现在我用一些聊天软件，它好像慢慢被淡化了。像我平时常用 discord，点开表情面板，最先看到的经常是群里自定义的表情和贴图，不过也不怪他们，各家平台大概也是想靠这些做出点自己的特色吧。 比起各家自己的表情或贴纸，我觉得 emoji 最不可替代的地方在于它...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我自己平时挺喜欢用 emoji 和各种符号的，不光聊天，做开发、写文本的时候也经常顺手敲几个进去。前阵子突然有个感觉，当年 iphone 刚火那会儿，emoji 存在感特别强，但我感觉现在我用一些聊天软件，它好像慢慢被淡化了。像我平时常用 discord，点开表情面板，最先看到的经常是群里自定义的表情和贴图，不过也不怪他们，各家平台大概也是想靠这些做出点自己的特色吧。</p>\n<p>比起各家自己的表情或贴纸，我觉得 emoji 最不可替代的地方在于它能跟着纯文本走。比方说，手机上打出来，复制到电脑文档里，再发给用另一个软件的朋友，也能跟着文字一起发过去。要是哪天这种通用图形语言真被各家封闭的表情包挤没了，还挺可惜的。后来整理资料的时候，我还去翻了不少 emoji 的来历，甚至跑去读了 unicode 官网的原始提案，越看越觉得有意思，它们其实不只是几个黄脸表情那么简单，里面其实藏着很多多元文化和进步的价值观，很有趣，也很有传播价值。所以就想着，如果能让更多人了解这些背后的东西，这种通用符号应该也能被用得更多吧～</p>\n<p>之前查这些 emoji，我经常会搜到 emojipedia。它本身是个英文站起家的，英文资料确实全，但中文部分说实话很敷衍😓，基本都是生硬的机翻，想多看点背景介绍也没几句话。特别是用手机打开的时候，本来就想顺手复制个符号走人，结果还得在广告堆里翻半天。反正看来看去找了一圈没遇到特别顺手的，尤其是移动端体验好的，前阵子干脆自己动手写了一个，叫绘文字星空：<a href=\"https://emojiastra.com/\" rel=\"noopener noreferrer\" target=\"_blank\">emojiastra.com</a>。因为我自己用手机查 emoji 比较多，所以重点把移动端体验用心打磨了一下。用<a href=\"https://emojiastra.com/emoji-picker\" rel=\"noopener noreferrer\" target=\"_blank\">emoji 选择器</a>挑表情的时候可以一边往下翻一边点选，选好几个之后还能直接拖动调整顺序，最后一次性全复制走。另外把<a href=\"https://emojiastra.com/groups/flags/country-flag\" rel=\"noopener noreferrer\" target=\"_blank\">国旗</a>、<a href=\"https://emojiastra.com/collections/faces\" rel=\"noopener noreferrer\" target=\"_blank\">表情</a>和<a href=\"https://emojiastra.com/collections/hearts\" rel=\"noopener noreferrer\" target=\"_blank\">爱心</a>单独拎出来做了入口，比如想找某面国旗但死活想不起那个国家的英文名，直接按大洲翻就行。</p>\n<p>我还按中文网上聊天的流行用语整理了一套<a href=\"https://emojiastra.com/emoji-tags\" rel=\"noopener noreferrer\" target=\"_blank\">emoji 标签</a>。比如说，“暗中观察”，可以挑个👀或者🫣，再比如说“尴尬又不失礼貌的微笑”，可以搭配“🙂”、“😅”、“😬”，再比如说“懵逼”，可以搭配“🫪”使用，我觉得咱们中文用户使用的 emoji，肯定要搭配我们自己这边的网络流行语用才得劲儿～</p>\n<p>词条里的简体中文释义和例句都是我一个一个动手敲的😂，虽然调研时也会咨询 ai 或者查询维基百科，但是整体文案质量我是要一个一个亲自把关的，主要就是想贴合中文互联网的语境。站里还放了些我自己做的小动画，顺便把 twemoji、谷歌 noto 这些开源图标的下载也接进了词条里，平时写页面需要素材可以直接拿。</p>\n<p>站里还顺手做了两个我觉得挺好玩的小工具：一个是<a href=\"https://emojiastra.com/emoji-platform-comparison\" rel=\"noopener noreferrer\" target=\"_blank\">把同一个 emoji 在不同平台上的渲染样子并排放着对比</a>，另一个是<a href=\"https://emojiastra.com/emoji-to-kaomoji\" rel=\"noopener noreferrer\" target=\"_blank\">把一句话里的 emoji 自动替换成意思相近的颜文字</a>。</p>\n<p>算是纯为爱发电折腾出来的一个小站吧，发出来跟同样开发或者文案中喜欢使用 emoji 和各种符号的朋友分享一下，有觉得不好用的地方也欢迎随时吐槽吐槽呗🤪</p>",
+  "attachments": []
+}

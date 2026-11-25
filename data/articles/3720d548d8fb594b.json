@@ -1,0 +1,15 @@
+{
+  "id": "3720d548d8fb594b",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 我也开源个自己的博客主题",
+  "link": "https://www.v2ex.com/t/1259848#reply1",
+  "author": "moonoops",
+  "publishedAt": "2026-11-25T16:00:36Z",
+  "snippet": "静态博客，AI 友好，约束都用 agents.md 和 design.md 定好了。 做这个磨了我好几个晚上，感兴趣的佬们可以拿去许愿式修改 项目链接：https://github.com/moonoops/astro-phosphor DEMO：https://moonoops.github.io/astro-phosphor/ 个人站： 个人站里面一些涉及后端服务的功能就没放 github 上啦，许愿编程很快 https://git...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>静态博客，AI 友好，约束都用 <a href=\"http://agents.md\" rel=\"noopener noreferrer\" target=\"_blank\">agents.md</a> 和 <a href=\"http://design.md\" rel=\"noopener noreferrer\" target=\"_blank\">design.md</a> 定好了。</p>\n<p>做这个磨了我好几个晚上，感兴趣的佬们可以拿去许愿式修改</p>\n<p>项目链接：<a href=\"https://github.com/moonoops/astro-phosphor\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/moonoops/astro-phosphor</a><br/>\nDEMO：<a href=\"https://moonoops.github.io/astro-phosphor/\" rel=\"noopener noreferrer\" target=\"_blank\">https://moonoops.github.io/astro-phosphor/</a></p>\n<p>个人站：<br/>\n个人站里面一些涉及后端服务的功能就没放 github 上啦，许愿编程很快</p>\n<p><a href=\"https://github.com/moonoops/astro-phosphor/raw/main/docs/screenshots/desktop-afternoon.webp\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/moonoops/astro-phosphor/raw/main/docs/screenshots/desktop-afternoon.webp</a></p>",
+  "attachments": []
+}

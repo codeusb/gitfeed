@@ -1,0 +1,15 @@
+{
+  "id": "60f1da16903893a0",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] AI 改卷有什么现成的方案？",
+  "link": "https://www.v2ex.com/t/1259820#reply0",
+  "author": "kilims",
+  "publishedAt": "2026-11-25T13:08:27Z",
+  "snippet": "如题，一般现在改卷都是扫描学生答卷，然后上智学网操作 倒是试过 vibe coding，让 AI 用操作网页，然后截图识别手写，但是识别正确率不尽如人意 有没有什么好的方案可以规避？或者提高正确率，再或者可以能让人共介入检验，让 AI 能尽可能辅助也可 求分享各位大神的想法",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>如题，一般现在改卷都是扫描学生答卷，然后上智学网操作<br/>\n倒是试过 vibe coding，让 AI 用操作网页，然后截图识别手写，但是识别正确率不尽如人意<br/>\n有没有什么好的方案可以规避？或者提高正确率，再或者可以能让人共介入检验，让 AI 能尽可能辅助也可</p>\n<p>求分享各位大神的想法</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "446157d5781269f6",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[问与答] 一模一样的设备网络，cluade 都能用，为什么 muse 把我识别出来了",
+  "link": "https://www.v2ex.com/t/1259841#reply5",
+  "author": "wyl986",
+  "publishedAt": "2026-11-25T15:17:47Z",
+  "snippet": "我为了用 claude 单独买了一台 windows 机器（老款 ThinkPad X1） 重装了英文系统：语言 English（US）+ 美西时区 wireguard 软路由 + 美西家庭 ip：往返延迟不一致/dns 泄露/webRTC 泄露 都没有 全新的 google 账号 who.1ms.dog 和 cleanip.io 都显示是美国用户 在这个机器上我用 Claude Pro 已经 1 个月了， KYC 都没跳 但是我注册 ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我为了用 claude 单独买了一台 windows 机器（老款 ThinkPad X1）</p>\n<ul>\n<li>重装了英文系统：语言 English（US）+ 美西时区</li>\n<li>wireguard 软路由 + 美西家庭 ip：往返延迟不一致/dns 泄露/webRTC 泄露 都没有</li>\n<li>全新的 google 账号</li>\n</ul>\n<p>who.1ms.dog 和 <a href=\"http://cleanip.io\" rel=\"noopener noreferrer\" target=\"_blank\">cleanip.io</a> 都显示是美国用户</p>\n<p>在这个机器上我用 Claude Pro 已经 1 个月了， KYC 都没跳</p>\n<hr/>\n<p><strong>但是我注册 muse 提示地区不支持</strong></p>\n<hr/>\n<p>meta 是怎么检查的地区？</p>\n<p>我在哪里可以买到成品号呢？</p>",
+  "attachments": []
+}

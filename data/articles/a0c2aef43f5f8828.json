@@ -1,0 +1,15 @@
+{
+  "id": "a0c2aef43f5f8828",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 如何从全世界找到离你最快的 vps",
+  "link": "https://www.v2ex.com/t/1259829#reply4",
+  "author": "felix1st",
+  "publishedAt": "2026-11-25T14:04:46Z",
+  "snippet": "马上要黑五了，想买 vps， 又不知道买哪个，就让 gemini 写了个免费小玩具，送给大家。 有 5 个小功能： 一键测试主流厂商的所有公开机房 * 所有线路 * （ IPv4+IPv6 ） 的延迟 演示 vps 的 TCP/Ping 延迟曲线图， 去程+回程路由 CloudFlare 优选 IP 国内 3 网 * 31 省测试 ip （欧洲、北美、亚太地区）到国内 * 三网的所有 [跨境骨干网] 延迟曲线图 https://www....",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>马上要黑五了，想买 vps， 又不知道买哪个，就让 gemini 写了个免费小玩具，送给大家。</p>\n<p>有 5 个小功能：</p>\n<ol>\n<li>一键测试主流厂商的所有公开机房 * 所有线路 * （ IPv4+IPv6 ） 的延迟</li>\n<li>演示 vps 的 TCP/Ping 延迟曲线图， 去程+回程路由 </li>\n<li>CloudFlare 优选 IP</li>\n<li>国内 3 网 * 31 省测试 ip</li>\n<li>（欧洲、北美、亚太地区）到国内 *  三网的所有 [跨境骨干网] 延迟曲线图</li>\n</ol>\n<p><a href=\"https://www.findping.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.findping.com/</a><br/>\n从你的网络出发，找到速度最快的 vps</p>",
+  "attachments": []
+}

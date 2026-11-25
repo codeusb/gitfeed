@@ -1,0 +1,15 @@
+{
+  "id": "2d17c6f89cd6508f",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
+  "link": "https://github.com/xoxorwr/pw-loudness-eq",
+  "author": "ThrowNotAway",
+  "publishedAt": "2026-11-25T11:34:25Z",
+  "snippet": "Article URL: https://github.com/xoxorwr/pw-loudness-eq Comments URL: https://news.ycombinator.com/item?id=50641171 Points: 266 # Comments: 158",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://github.com/xoxorwr/pw-loudness-eq\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/xoxorwr/pw-loudness-eq</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50641171\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50641171</a></p>\n<p>Points: 266</p>\n<p># Comments: 158</p>",
+  "attachments": []
+}

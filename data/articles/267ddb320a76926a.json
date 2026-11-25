@@ -1,0 +1,15 @@
+{
+  "id": "267ddb320a76926a",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] # 墨牍（Modu）：极小极简本地 RSS 阅读器",
+  "link": "https://www.v2ex.com/t/1259845#reply1",
+  "author": "Yunz93",
+  "publishedAt": "2026-11-25T15:25:11Z",
+  "snippet": "市面上的 RSS 阅读器越做越重了。 很多产品动辄几百 MB 的安装包，打开后塞满了 AI 总结、社交动态、复杂的过滤规则和五花八门的侧边栏。我只是想安静地看几篇订阅的文章，却总觉得自己在操作一套企业级后台系统。 于是我做了 墨牍（Modu）（modu.yunz93.dev）。 它的设计目标非常单纯：极小体积，以及极度简洁。 为什么做墨牍？ 6MB 极小体积，轻装上阵：去掉了所有不必要的冗余，安装包只有 6MB，启动飞快，常驻后台也几乎...",
+  "coverImage": "https://raw.githubusercontent.com/Yunz93/PicRepo/main/images/%E5%A2%A8%E7%89%8D-1795620193697-8afa89b84047035a5e0a85dd788da1a3-d1e720d8.png",
+  "readTime": 1,
+  "content": "<p>市面上的 RSS 阅读器越做越重了。</p>\n<p>很多产品动辄几百 MB 的安装包，打开后塞满了 AI 总结、社交动态、复杂的过滤规则和五花八门的侧边栏。我只是想安静地看几篇订阅的文章，却总觉得自己在操作一套企业级后台系统。</p>\n<p>于是我做了 <strong>墨牍（Modu）</strong>（<a href=\"https://modu.yunz93.dev/\" rel=\"noopener noreferrer\" target=\"_blank\">modu.yunz93.dev</a>）。</p>\n<p>它的设计目标非常单纯：<strong>极小体积</strong>，以及<strong>极度简洁</strong>。</p>\n<p><img alt=\"墨牍-1795620193697-8afa89b84047035a5e0a85dd788da1a3\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/Yunz93/PicRepo/main/images/%E5%A2%A8%E7%89%8D-1795620193697-8afa89b84047035a5e0a85dd788da1a3-d1e720d8.png\"/></p>\n<h2>为什么做墨牍？</h2>\n<ul>\n<li>\n<p><strong>6MB 极小体积，轻装上阵</strong>：去掉了所有不必要的冗余，安装包只有 <strong>6MB</strong>，启动飞快，常驻后台也几乎没有存在感。</p>\n</li>\n<li>\n<p><strong>极度简洁，回归阅读</strong>：默认三栏布局，订阅、文章列表和正文同屏呈现；读长文时可一键切入专注模式。外观沿用了墨知的纸质白与金属灰，支持自定义主题色，界面和正文的字体、字号也能分别微调。</p>\n</li>\n<li>\n<p><strong>克制，但阅读细节不含糊</strong>：</p>\n<ul>\n<li>\n<p><strong>按需获取全文</strong>：遇到只给摘要的源，一键抓取全文，而且订阅原文和全文会各自记住阅读位置。</p>\n</li>\n<li>\n<p><strong>对技术文章友好</strong>：代码块支持语法高亮、一键复制和长行横向滚动；公式、表格、图注完整呈现，脚注和目录可直接在阅读区内跳转。</p>\n</li>\n<li>\n<p><strong>图文与音视频</strong>：支持图片懒加载、响应式图片和直链音视频，保留字幕与附件入口，加载失败也能直接跳回原链接。</p>\n</li>\n<li>\n<p><strong>随手整理订阅</strong>：粘贴网址即可自动查找 RSS/Atom 源，支持导入带分组的 OPML 和跨订阅正文搜索；刷新后的新文章等你手动载入，不打断当前阅读节奏。</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>纯本地阅读库</strong>：无需注册账号，订阅、收藏、已读状态和阅读进度全部保存在本机。缓存正文支持离线阅读，也随时可以导出完整备份。</p>\n</li>\n</ul>\n<h2>适合谁？</h2>\n<p>如果你也厌倦了臃肿的客户端，平时爱看技术博客或长文，只想找一个启动飞快、界面干净、数据完全掌握在自己手里的 RSS 工具，墨牍应该会合你的胃口。</p>\n<p>Apple Silicon Mac 支持一键安装，装好后可以直接在应用内检查更新、下载并验签升级。欢迎去体验和反馈：</p>\n<p>👉 <strong>官网地址</strong>：<a href=\"https://modu.yunz93.dev/\" rel=\"noopener noreferrer\" target=\"_blank\">https://modu.yunz93.dev/</a></p>",
+  "attachments": []
+}

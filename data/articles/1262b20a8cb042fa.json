@@ -1,0 +1,15 @@
+{
+  "id": "1262b20a8cb042fa",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[OpenAI] SpaceX 主任工程師教你：讓 AI 少寫垃圾",
+  "link": "https://www.v2ex.com/t/1259819#reply0",
+  "author": "a629",
+  "publishedAt": "2026-11-25T13:06:32Z",
+  "snippet": "大家都在罵 AI 寫的程式碼是垃圾。SpaceXSI 主任工程師 Lauren Tan（@poteto）在 AI Engineer Code Summit 2026 的演講〈All Code Is Slop (Except Mine)〉說：寫垃圾的從來不只 AI，AI 只會把它身邊的環境放大。 她的團隊一個月合併一萬多個 PR，撤回比例反而從 0.98% 降到 0.47%。這支影片整理她怎麼做到：把每次糾正變成確定性檢查、拿掉難用的東西...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家都在罵 AI 寫的程式碼是垃圾。SpaceXSI 主任工程師 Lauren Tan（@poteto）在 AI Engineer Code Summit 2026 的演講〈All Code Is Slop (Except Mine)〉說：寫垃圾的從來不只 AI，AI 只會把它身邊的環境放大。</p>\n<p>她的團隊一個月合併一萬多個 PR，撤回比例反而從 0.98% 降到 0.47%。這支影片整理她怎麼做到：把每次糾正變成確定性檢查、拿掉難用的東西、把驗證做好，最後才輪到軟體工廠。</p>\n<div class=\"embedded_video_wrapper\"></div>",
+  "attachments": []
+}

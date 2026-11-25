@@ -1,0 +1,15 @@
+{
+  "id": "2fa325d1c387d4d9",
+  "feedId": "36氪",
+  "feedTitle": "36氪",
+  "category": "t-language",
+  "title": "Claude现已支持将Artifacts安装为桌面应用程序",
+  "link": "https://36kr.com/newsflashes/4085102372268418?f=rss",
+  "author": "36氪",
+  "publishedAt": "2026-11-25T11:53:50Z",
+  "snippet": "Anthropic为Claude推出了一项新功能，允许用户在macOS和Windows系统上将Artifacts（作品）安装为桌面应用程序。 Anthropic还提供了一些示例应用程序供用户试用，帮助用户了解这项功能可以实现哪些用途。Anthropic表示，创建应用程序以及应用程序向Claude发起的任何调用，都会计入用户的使用额度。该功能目前仍处于测试阶段，已面向所有订阅方案的Claude Desktop用户开放，但企业版（Enter...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "Anthropic为Claude推出了一项新功能，允许用户在macOS和Windows系统上将Artifacts（作品）安装为桌面应用程序。　Anthropic还提供了一些示例应用程序供用户试用，帮助用户了解这项功能可以实现哪些用途。Anthropic表示，创建应用程序以及应用程序向Claude发起的任何调用，都会计入用户的使用额度。该功能目前仍处于测试阶段，已面向所有订阅方案的Claude Desktop用户开放，但企业版（Enterprise）用户需要先手动启用。（新浪财经）",
+  "attachments": []
+}

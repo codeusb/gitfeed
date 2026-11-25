@@ -1,0 +1,15 @@
+{
+  "id": "50c392f47ce2244c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 我做了个苹果备忘录平替，像飞书文档一样编辑，用 iCloud 同步",
+  "link": "https://www.v2ex.com/t/1259818#reply5",
+  "author": "qhhonx",
+  "publishedAt": "2026-11-25T12:57:52Z",
+  "snippet": "我是 iCloud 重度用户，习惯随时访问自己的文档，但备忘录的编辑体验太糟糕了。 我想同时拥有飞书文档的编辑体验、iCloud 多端同步和多人实时协作，于是基于开源的 Quiet.md 做了飞记。 首发内测支持 Mac / iPhone / iPad，欢迎体验。 TestFlight 公开测试入口 如果你也经常在几台苹果设备之间切换着写，欢迎试试。同步或协作有哪里不顺手，可以直接回帖告诉我。",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>我是 iCloud 重度用户，习惯随时访问自己的文档，但备忘录的编辑体验太糟糕了。</p>\n<p>我想同时拥有飞书文档的编辑体验、iCloud 多端同步和多人实时协作，于是基于开源的 <a href=\"http://Quiet.md\" rel=\"noopener noreferrer\" target=\"_blank\">Quiet.md</a> 做了飞记。</p>\n<p>首发内测支持 Mac / iPhone / iPad，欢迎体验。</p>\n<p><a href=\"https://feinotes.app/\" rel=\"noopener noreferrer\" target=\"_blank\">TestFlight 公开测试入口</a></p>\n<p>如果你也经常在几台苹果设备之间切换着写，欢迎试试。同步或协作有哪里不顺手，可以直接回帖告诉我。</p>",
+  "attachments": []
+}

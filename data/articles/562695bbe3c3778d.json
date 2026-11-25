@@ -1,0 +1,15 @@
+{
+  "id": "562695bbe3c3778d",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] [推广] 38 页产品说明书 PDF，我拆回 PPT 花了两小时",
+  "link": "https://www.v2ex.com/t/1259839#reply0",
+  "author": "weishao666",
+  "publishedAt": "2026-11-25T15:08:32Z",
+  "snippet": "上周三下午，做硬件的朋友发来一份 38 页的产品说明书 PDF，说客户要改第 12 到 17 页的几张参数表和三条图注，其他不动。文件是设计那边出的，前面十几页是矢量文字，后面夹了几页扫描的检测报告。 我的做法是先按页拆开，一页一页判断是文字页还是图片页。文字页把文本框和图片按原坐标提出来，扫描页走识别。38 页跑下来大概二十分钟，参数表基本能对上。但有两处必须手工收尾：一是跨页断开的表格，第 14 页末尾那行被切到了第 15 页，还原...",
+  "coverImage": "https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/48_%E5%95%86%E5%8A%A1%E9%A3%8E%E6%88%90%E5%91%98%E4%BB%8B%E7%BB%8D%E5%B7%A5%E4%B8%9APPT/%E5%8E%9F%E5%9B%BE.jpg",
+  "readTime": 1,
+  "content": "<p>上周三下午，做硬件的朋友发来一份 38 页的产品说明书 PDF，说客户要改第 12 到 17 页的几张参数表和三条图注，其他不动。文件是设计那边出的，前面十几页是矢量文字，后面夹了几页扫描的检测报告。</p>\n<p>我的做法是先按页拆开，一页一页判断是文字页还是图片页。文字页把文本框和图片按原坐标提出来，扫描页走识别。38 页跑下来大概二十分钟，参数表基本能对上。但有两处必须手工收尾：一是跨页断开的表格，第 14 页末尾那行被切到了第 15 页，还原后是两张独立的表，得自己把行挪回去；二是字体，PDF 里嵌的字体我本机没有，落到默认字体后字号和行距都会跳，得手动对一遍。</p>\n<p>也有做不到的。第 16 页那张带渐变的示意图，图层在 PDF 里早就合并了，拆出来就是一整张图，改不了里面的字，只能当图贴。页脚的页码是设计时画上去的图形，不是文本框，转完变成一堆散的小块，我最后全删了重新加。</p>\n<p>想问问大家，遇到跨页断开的表格，你们是接受拆成两张，还是宁愿花时间拼回去？我现在看客户后面还要不要改，会改就拼，不改就算。</p>\n<p>工具入口在这里：<a href=\"https://image2ppt.asia?utm_source=v2ex\" rel=\"noopener noreferrer\" target=\"_blank\">https://image2ppt.asia?utm_source=v2ex</a><br/>\n（图片、截图、单页 PDF 都能转成可编辑的 PPTX，成品无水印。）</p>\n<p>一个例子（原图 → 可编辑成品）：</p>\n<p><img alt=\"商务风成员介绍工业 PPT 原图\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/48_%E5%95%86%E5%8A%A1%E9%A3%8E%E6%88%90%E5%91%98%E4%BB%8B%E7%BB%8D%E5%B7%A5%E4%B8%9APPT/%E5%8E%9F%E5%9B%BE.jpg\"/></p>\n<p><img alt=\"商务风成员介绍工业 PPT 成品\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/%E5%9B%A2%E9%98%9F%E4%BA%BA%E7%89%A9/48_%E5%95%86%E5%8A%A1%E9%A3%8E%E6%88%90%E5%91%98%E4%BB%8B%E7%BB%8D%E5%B7%A5%E4%B8%9APPT/%E6%88%90%E5%93%81%E9%A2%84%E8%A7%88.jpg\"/></p>\n<p>素材库里随手挑的几页，这类图都能这么转：</p>\n<p><img alt=\"73_开题报告结构模板 06\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s036.jpg\"/><br/>\n<img alt=\"069_项目管理汇报 PPT 模板_p06\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://raw.githubusercontent.com/showerberich/editable-ppt-materials/main/materials/_showcase/s014.jpg\"/></p>",
+  "attachments": []
+}

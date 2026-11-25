@@ -1,0 +1,15 @@
+{
+  "id": "ad63542260c383e5",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[推广] 不用注册就能直接试 MAGI-2，还挺省事",
+  "link": "https://www.v2ex.com/t/1259842#reply0",
+  "author": "rozenroseking",
+  "publishedAt": "2026-11-25T15:17:51Z",
+  "snippet": "最近想试一下 MAGI-2，主要还是对它的音视频同步生成比较感兴趣——以前用视频模型大多只能出“默片”，音效和配音还得后期另找工具补，这次可以直接把画面、对白、环境音和镜头节奏一起带出来。 看到 magi-2.run 这边正好开放了免注册的在线试用：https://magi-2.run 打开就能直接进到生成界面，不用先走一套繁琐的注册流程，对于只想先看看模型底子、测测提示词响应的人来说挺友好的。 简单逛了一圈界面，实用功能给得挺全的： ...",
+  "coverImage": "https://i.ibb.co/WWBxZBnZ/magi2-home.jpg",
+  "readTime": 1,
+  "content": "<p>最近想试一下 MAGI-2，主要还是对它的音视频同步生成比较感兴趣——以前用视频模型大多只能出“默片”，音效和配音还得后期另找工具补，这次可以直接把画面、对白、环境音和镜头节奏一起带出来。</p>\n<p>看到 magi-2.run 这边正好开放了免注册的在线试用：<a href=\"https://magi-2.run\" rel=\"noopener noreferrer\" target=\"_blank\">https://magi-2.run</a></p>\n<p><img alt=\"首页\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.ibb.co/WWBxZBnZ/magi2-home.jpg\"/></p>\n<p>打开就能直接进到生成界面，不用先走一套繁琐的注册流程，对于只想先看看模型底子、测测提示词响应的人来说挺友好的。</p>\n<p><img alt=\"生成器\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.ibb.co/1WJczyg/magi2-generator.jpg\"/></p>\n<p>简单逛了一圈界面，实用功能给得挺全的：</p>\n<ul>\n<li>左侧支持 <strong>Text to Video（文生视频）</strong> 和 <strong>Image to Video（图生视频）</strong>，如果一时想不到写什么，输入框下面也自带了几个现成的示例标签（像 Beach sunrise、Neon rain、Window cat 这些），点一下就能直接跑；</li>\n<li>参数这块可以选画幅比例（16:9 等多种常见比例）、720p 分辨率以及 4 秒的免费试用时长；</li>\n<li>比较有意思的是下面还带了 <strong>Generate Audio</strong>（生成音频）、<strong>Web Search</strong> 和 <strong>Return Last Frame</strong>（返回尾帧）几个开关，平时如果想拍连续镜头，用尾帧接着往下续一段会顺手很多；</li>\n<li>右侧可以直接切换 Preview 和 History，跑完的结果能直接在线看。</li>\n</ul>\n<p>目前站内开放了每天几条 4 秒预览的免费试用额度。大家如果最近正好在折腾 AI 视频，或者想找个带环境音的脑洞场景测试一下成片效果，可以直接点进去试两把，有跑出什么有意思的 Prompt 也可以在楼下交流。</p>",
+  "attachments": []
+}

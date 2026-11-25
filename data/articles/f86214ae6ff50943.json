@@ -1,0 +1,15 @@
+{
+  "id": "f86214ae6ff50943",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "In C++, = default and {} are not the same constructor",
+  "link": "https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/",
+  "author": "surprisetalk",
+  "publishedAt": "2026-11-25T15:20:15Z",
+  "snippet": "Article URL: https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/ Comments URL: https://news.ycombinator.com/item?id=50643199 Points: 62 # Comments: 122",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/\" rel=\"noopener noreferrer\" target=\"_blank\">https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50643199\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50643199</a></p>\n<p>Points: 62</p>\n<p># Comments: 122</p>",
+  "attachments": []
+}
