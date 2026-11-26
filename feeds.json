@@ -13,24 +13,6 @@
       "icon": "code"
     },
     {
-      "id": "frontend",
-      "name": "前端与工程",
-      "nameEn": "Frontend & Web",
-      "icon": "layout"
-    },
-    {
-      "id": "ai-ml",
-      "name": "AI 前沿",
-      "nameEn": "AI & Machine Learning",
-      "icon": "bot"
-    },
-    {
-      "id": "tech-news",
-      "name": "科技热点",
-      "nameEn": "Tech News",
-      "icon": "newspaper"
-    },
-    {
       "id": "weekly",
       "name": "优质周刊",
       "nameEn": "Weekly Digests",
@@ -129,57 +111,12 @@
       "enabled": true
     },
     {
-      "id": "github-blog",
-      "title": "GitHub Blog",
-      "url": "https://github.blog/feed/",
-      "siteUrl": "https://github.blog",
-      "category": "tech-news",
-      "description": "Updates, ideas, and inspiration from GitHub",
-      "enabled": true
-    },
-    {
       "id": "阮一峰的网络日志",
       "title": "阮一峰的网络日志",
       "url": "https://feeds.feedburner.com/ruanyifeng",
       "siteUrl": "https://www.ruanyifeng.com/blog/",
       "category": "weekly",
       "description": "科技爱好者周刊与技术随笔",
-      "enabled": true
-    },
-    {
-      "id": "web-dev",
-      "title": "web.dev Blog",
-      "url": "https://web.dev/feed.xml",
-      "siteUrl": "https://web.dev",
-      "category": "frontend",
-      "description": "Google Chrome team guidance for modern web development",
-      "enabled": true
-    },
-    {
-      "id": "smashing-magazine",
-      "title": "Smashing Magazine",
-      "url": "https://www.smashingmagazine.com/feed/",
-      "siteUrl": "https://www.smashingmagazine.com",
-      "category": "frontend",
-      "description": "For Web Designers And Developers",
-      "enabled": true
-    },
-    {
-      "id": "mit-tech-review",
-      "title": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/feed/",
-      "siteUrl": "https://www.technologyreview.com",
-      "category": "ai-ml",
-      "description": "In-depth reporting on emerging tech and AI",
-      "enabled": true
-    },
-    {
-      "id": "simon-willison",
-      "title": "Simon Willison's Weblog",
-      "url": "https://simonwillison.net/atom/everything/",
-      "siteUrl": "https://simonwillison.net",
-      "category": "ai-ml",
-      "description": "LLM experiments, open source, and web development",
       "enabled": true
     }
   ]
