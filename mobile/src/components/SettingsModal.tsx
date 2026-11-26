@@ -268,7 +268,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               autoCapitalize="none"
             />
             <Text style={[styles.helperNote, { color: tokens.textMuted }]}>
-              ⚠️ 提示：Web 端与移动端填写的仓库名必须完全一致（例如均为 codeusb/gitfeed），数据才能互通。
+              提示：Web 端与移动端填写的仓库名必须完全一致（例如均为 codeusb/gitfeed），数据才能互通。
             </Text>
 
             <Text style={[styles.label, { color: tokens.textPrimary }]}>Personal Access Token (PAT)</Text>
@@ -285,12 +285,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               autoCapitalize="none"
             />
             <Text style={[styles.helperNote, { color: tokens.textMuted }]}>
-              💡 提示：Web 端和移动端使用同一个具有 contents:write 权限的 PAT 即可。
+              提示：Web 端和移动端使用同一个具有 contents:write 权限的 PAT 即可。
             </Text>
 
             <View style={[styles.syncInfoCard, { backgroundColor: tokens.bgSubtle, borderColor: tokens.borderSubtle }]}>
               <Text style={[styles.syncInfoText, { color: tokens.textSecondary }]}>
-                ⚡ 自动同步：已开启全自动双向静默同步。打开应用、下拉刷新、打开文章标记已读或加星标时，系统均会自动在后台静默同步，无需手动操作。
+                自动同步：已开启全自动双向静默同步。打开应用、下拉刷新、打开文章标记已读或加星标时，系统均会自动在后台静默同步，无需手动操作。
               </Text>
             </View>
 

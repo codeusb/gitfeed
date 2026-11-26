@@ -72,7 +72,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <img
             src="./favicon.png"
             alt="GitFeed"
-            className="w-8 h-8 rounded-xl object-cover border border-theme-subtle shadow-sm"
+            className="w-8 h-8 rounded-xl object-cover border border-theme-subtle shadow-sm bg-white"
           />
           <div>
             <h1 className="font-bold text-base leading-tight tracking-tight text-theme-primary flex items-center gap-1.5 font-sans">
@@ -262,16 +262,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* Bottom Controls */}
       <div className="p-3 border-t border-theme-subtle space-y-2.5">
-        <a
-          href="https://github.com/codeusb/gitfeed/releases/latest"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-theme-subtle hover:bg-theme-subtle-hover text-theme-primary text-xs font-semibold border border-theme-subtle transition-all duration-175 ease-astryx shadow-xs"
-          title="在 GitHub Releases 下载安卓客户端安装包"
-        >
-          <span>📲 下载 Android APK</span>
-        </a>
-
         <div className="flex items-center justify-between text-xs text-theme-secondary">
           <button
             onClick={onMarkAllRead}
