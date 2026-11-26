@@ -1,0 +1,15 @@
+{
+  "id": "b2cfa802e1fb0496",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 真的不喜欢丑丑头像吗？ 那就全部变成丑丑 🎭",
+  "link": "https://www.v2ex.com/t/1260052#reply1",
+  "author": "Wxh16144",
+  "publishedAt": "2026-11-26T08:32:43Z",
+  "snippet": "非杠，纯整活! 好早以前写了油猴做了一个每天自动换头像脚本， 见：https://v2ex.com/t/1182457#reply11 谁能想到丑丑头像被卡颜了？ 现场 https://v2ex.com/t/1259714 @superrichman: 有么有反向开关，只显示丑丑头像 🐶 它来了： https://greasyfork.org/en/scripts/607428-v2ex-avatar-mask GitHub：https...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>非杠，纯整活!</p>\n<p>好早以前写了油猴做了一个每天自动换头像脚本， 见：<a href=\"https://v2ex.com/t/1182457#reply11\" rel=\"noopener noreferrer\" target=\"_blank\">https://v2ex.com/t/1182457#reply11</a></p>\n<p>谁能想到丑丑头像被卡颜了？ 现场 <a href=\"https://v2ex.com/t/1259714\" rel=\"noopener noreferrer\" target=\"_blank\">https://v2ex.com/t/1259714</a></p>\n<blockquote>\n<p>@<a href=\"https://www.v2ex.com/member/superrichman\" rel=\"noopener noreferrer\" target=\"_blank\">superrichman</a>: 有么有反向开关，只显示丑丑头像 🐶</p>\n</blockquote>\n<p>它来了： <a href=\"https://greasyfork.org/en/scripts/607428-v2ex-avatar-mask\" rel=\"noopener noreferrer\" target=\"_blank\">https://greasyfork.org/en/scripts/607428-v2ex-avatar-mask</a><br/>\nGitHub：<a href=\"https://github.com/Wxh16144/daily-avatar/tree/master/src/userScripts/v2ex-avatar-mask\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/Wxh16144/daily-avatar/tree/master/src/userScripts/v2ex-avatar-mask</a></p>\n<p>刚好 GitHub 送我的 Copilot Pro 正愁没地方花呢 (溜了..</p>",
+  "attachments": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3726247f3e7abf2c",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [开源] 受够了后台挂着吃内存的 Android Studio，用 Swift 写了个菜单栏「开发工具箱」",
+  "link": "https://www.v2ex.com/t/1260051#reply0",
+  "author": "Leon821",
+  "publishedAt": "2026-11-26T08:26:49Z",
+  "snippet": "不知道有没有跟我一样的：现在日常写代码早就切到轻量编辑器 / AI IDE（比如 Antigravity、Cursor 这类）了，但只要做 Android 或鸿蒙开发，电脑后台还是得常年挂着一个巨吃内存的 Android Studio（甚至还要再加一个 DevEco Studio）。 很多时候我根本不需要它那个笨重的编辑器，仅仅是想： 打包、装到手机上并启动 看看 logcat / hilog 实时日志，顺手筛个关键字 给测试机截个图 ...",
+  "coverImage": "https://i.imgur.com/xAbFbQw.png",
+  "readTime": 1,
+  "content": "<p>不知道有没有跟我一样的：现在日常写代码早就切到轻量编辑器 / AI IDE（比如 Antigravity、Cursor 这类）了，但只要做 Android 或鸿蒙开发，电脑后台还是得常年挂着一个巨吃内存的 Android Studio（甚至还要再加一个 DevEco Studio）。</p>\n<p>很多时候我根本不需要它那个笨重的编辑器，仅仅是想：</p>\n<p>打包、装到手机上并启动<br/>\n看看 logcat / hilog 实时日志，顺手筛个关键字<br/>\n给测试机截个图<br/>\n传一下 Bugly 符号表，或者清理膨胀的构建产物 / Gradle 缓存</p>\n<p>为了这几个高频操作一直扛着几个 G 的内存占用实在太难受了，干脆自己用原生 Swift（AppKit）写了个 「开发工具箱」 常驻在 macOS 菜单栏，把这些日常操作全收进一个轻量面板里。<br/>\n<a href=\"https://i.imgur.com/xAbFbQw.png\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://i.imgur.com/xAbFbQw.png\"/></a> </p>\n<p>用起来大概是这样<br/>\n极低占用，常驻菜单栏：纯 Swift + AppKit 手搓，不套 Electron 也不需要开 Xcode 工程，仓库里跑一下 <a href=\"http://build.sh\" rel=\"noopener noreferrer\" target=\"_blank\">build.sh</a> 直接编译成 .app，支持开机自启。<br/>\n直接替代 IDE 的日常杂活：<br/>\n一键打包安装：支持 Android 和鸿蒙，顶部选好连接中的真机、切 Debug / Release，点一下直接走构建 + 安装 + 拉起 App，底部面板实时看输出；<br/>\n实时设备日志：直接接管 adb logcat 和 hdc hilog，支持搜索筛选、简洁模式和收藏常用筛选条件，不用为了看日志开着 IDE；<br/>\n手机截图：同时识别已连接的 Android / 鸿蒙设备，一键截屏预览、保存桌面；<br/>\n符号上传与清理：支持 Bugly 符号表上传、一键清理项目构建产物和 Gradle 缓存；<br/>\n额外附带：平时顺手还给 Antigravity 做了个一键汉化（自动匹配本机版本、校验官方签名和 SHA-256、自动备份原版）。<br/>\nGUI / 脚本双形态：菜单栏里所有操作底层都对应仓库里独立的 .command 脚本，想在图形界面点也行，直接双击脚本在终端跑也行。</p>\n<p>项目地址：<a href=\"https://github.com/LeonShannon/developer-toolbox-macos\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/LeonShannon/developer-toolbox-macos</a></p>\n<p>配置全都在 toolbox.example.plist 里按自己本地工程改一下路径就能用。刚刚把项目整理开源出来，欢迎同样嫌 IDE 太重的老哥试试，有任何顺手需求或者吐槽欢迎直接提 Issue 或回帖交流！</p>",
+  "attachments": []
+}

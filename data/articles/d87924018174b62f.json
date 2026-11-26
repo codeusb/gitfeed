@@ -1,0 +1,15 @@
+{
+  "id": "d87924018174b62f",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[Google Gemini] 写了一个 Antigravity 汉化助手，无侵入、0 依赖、0 常驻。目前没有在 mac 上测试，希望有大佬帮忙测试测试",
+  "link": "https://www.v2ex.com/t/1260060#reply1",
+  "author": "toubi",
+  "publishedAt": "2026-11-26T08:52:46Z",
+  "snippet": "这两天不是开了 Google AI Pro 的黑五半价套餐。 但是发现 Antigravity 纯英文，使用不习惯。于是使用 AI 搞了这个无侵入、0 依赖、0 常驻的汉化助手。 是在 win 环境开发测试的，没有在 mac 上测试，现在看看有没有大佬原因在 mac 上帮忙测试优化一下不。直接 PR 到 GIT 仓库就可以，非常感谢。 github 地址 https://github.com/keinx/AntigravityZH 顺便...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>这两天不是开了 Google AI Pro 的黑五半价套餐。  </p>\n<p>但是发现 Antigravity 纯英文，使用不习惯。于是使用 AI 搞了这个无侵入、0 依赖、0 常驻的汉化助手。  </p>\n<p>是在 win 环境开发测试的，没有在 mac 上测试，现在看看有没有大佬原因在 mac 上帮忙测试优化一下不。直接 PR 到 GIT 仓库就可以，非常感谢。</p>\n<p>github 地址 <a href=\"https://github.com/keinx/AntigravityZH\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/keinx/AntigravityZH</a><br/>\n顺便宣传一下写的 AI 小卖部： <a href=\"https://storemini.com/store/works/3019\" rel=\"noopener noreferrer\" target=\"_blank\">https://storemini.com/store/works/3019</a></p>",
+  "attachments": []
+}

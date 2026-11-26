@@ -1,0 +1,15 @@
+{
+  "id": "db1c85472ffe6acf",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] Rigdepot：把团队的 Skill、MCP、工作流统一管起来，同步到 Claude Code / Codex / OpenCode（开源，Go）",
+  "link": "https://www.v2ex.com/t/1260026#reply0",
+  "author": "heyzen",
+  "publishedAt": "2026-11-26T07:19:46Z",
+  "snippet": "团队里大家各用各的 AI 编码工具之后，我们碰到的问题很具体：同一个 Jira MCP 要在每个工具里按各自的格式配一遍；好用的 Skill 留在某个人电脑上，靠群里转压缩包；个人令牌明文写进配置；换个工具一切重来。 所以做了 Rigdepot，今天发了 0.1.0，Apache-2.0。 它做什么 把 Skill、MCP、工作流、Agent 放在一个 Git 仓库里，rgd sync 装进本机检测到的 Claude Code、Code...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>团队里大家各用各的 AI 编码工具之后，我们碰到的问题很具体：同一个 Jira MCP 要在每个工具里按各自的格式配一遍；好用的 Skill 留在某个人电脑上，靠群里转压缩包；个人令牌明文写进配置；换个工具一切重来。</p>\n<p>所以做了 Rigdepot，今天发了 0.1.0，Apache-2.0。</p>\n<p><strong>它做什么</strong></p>\n<p>把 Skill、MCP、工作流、Agent 放在一个 Git 仓库里，<code>rgd sync</code> 装进本机检测到的 Claude Code、Codex、OpenCode。资源只写一次，适配器翻译成每个工具自己的格式：同一个 MCP，在 Claude Code 里是 <code>~/.claude.json</code> 的 <code>mcpServers</code>，Codex 里是 <code>config.toml</code> 的 <code>[mcp_servers.*]</code>，OpenCode 里是 <code>mcp.servers</code>。工具不支持的形态会降级并告诉你，比如 Codex 没有斜杠命令，工作流就以同名 Skill 下发。</p>\n<p><strong>几条硬规矩</strong>（毕竟要改你电脑上别的工具的配置）</p>\n<ul>\n<li><code>rgd sync --plan</code> 在临时目录里把写入真跑一遍再 diff，预览和真正写入是同一段代码；</li>\n<li>只增删带 <code>rgd-</code> 前缀的条目；JSON / JSONC / TOML 都是保留格式地改（注释、尾逗号、CRLF、BOM 都在），改之前备份；</li>\n<li>改全局配置之前先问；没有终端又没加 <code>--yes-global</code> 时一个字节都不改；</li>\n<li>每处写入记在本机清单里，<code>rgd uninstall</code> 按清单撤，没人动过的文件逐字节还原；</li>\n<li>入库前 8 条确定性检查（密钥、危险命令、提示词注入等），不靠模型判断。</li>\n</ul>\n<p>真实输出长这样：</p>\n<pre><code>$ rgd sync --plan --repo ./resources\n检测到 AI 工具：Claude Code 2.1.330 · Codex 0.172.0 · OpenCode 2.4.1\n将要写入  共 13 处 · 什么都还没改\n+ ~/.claude/commands/rgd-change-to-merge.md    新文件\n+ ~/.agents/skills/rgd-change-to-merge/        新目录 · 这个工具没有斜杠命令，工作流以同名的 Skill 下发\n~ ~/.codex/config.toml                         mcp_servers.rgd-jira：新增\n...\n</code></pre>\n<p><strong>团队服务端（可选，自部署）</strong></p>\n<p><code>rgd-server</code>：产品 / 成员 / 角色、OIDC 和 GitLab 登录、资源从 Git 定时导入（草稿、版本、发布、回滚）、个人密钥按设备公钥 HPKE 封装下发、哈希链审计、反馈和通知，带网页控制台。单个二进制，SQLite 或 PostgreSQL；有 Compose、deb/rpm 和多架构镜像。</p>\n<p><strong>技术栈</strong>：Go 1.26，前端 Preact + Vite，控制台嵌进二进制。</p>\n<p><strong>试一下</strong></p>\n<pre><code class=\"language-sh\">brew install --cask code2rich/tap/rigdepot\nHOME=\"$(mktemp -d)\" rgd sync --plan --repo https://github.com/code2rich/rigdepot.git --dir examples/resources\n</code></pre>\n<p><strong>已知限制</strong>：Windows 这一版是预览（还有测试没过）；安装包没签名；使用洞察、更多工具的适配器在下一阶段。</p>\n<ul>\n<li>GitHub：<a href=\"https://github.com/code2rich/rigdepot\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/code2rich/rigdepot</a></li>\n<li>官网 / 在线演示：<a href=\"https://rigdepot.code2rich.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://rigdepot.code2rich.com</a></li>\n</ul>\n<p>一个小插曲：这个项目的代码由 AI Agent 编写、评审和发版，人负责方向和拍板，设计文档里定的规则（比如「不静默改全局配置」）都有测试守着。想听大家吐槽：你们团队现在怎么管这些 Skill 和 MCP？</p>",
+  "attachments": []
+}

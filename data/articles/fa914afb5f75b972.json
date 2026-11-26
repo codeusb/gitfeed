@@ -1,0 +1,15 @@
+{
+  "id": "fa914afb5f75b972",
+  "feedId": "simon-willison",
+  "feedTitle": "Simon Willison's Weblog",
+  "category": "ai-ml",
+  "title": "datasette-charts 0.2a1",
+  "link": "https://simonwillison.net/2026/Nov/24/datasette-charts-2/",
+  "author": "Simon Willison's Weblog",
+  "publishedAt": "2026-11-24T06:07:19Z",
+  "snippet": "Release: datasette-charts 0.2a1 Minor UI improvements: Collapsing the suggested charts section now leaves the chart visible. Following a link to a chart opens it with the suggestions collapsed for that visit. On table pa...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-charts/releases/tag/0.2a1\" rel=\"noopener noreferrer\" target=\"_blank\">datasette-charts 0.2a1</a></p>\n<blockquote>\n<p>Minor UI improvements:</p>\n<ul>\n<li>Collapsing the <strong>suggested charts</strong> section now leaves the chart visible.</li>\n<li>Following a link to a chart opens it with the suggestions collapsed for that visit.</li>\n<li>On table pages the panel now sits below the \"4,235 rows where country = CHN\" line.</li>\n<li>The \"Data\" table under each chart has been replaced by <strong>Copy TSV</strong> and <strong>Copy CSV</strong> buttons.</li>\n<li>Removed the \"Chart this data\" item from the table, view and query action menus.</li>\n<li>More space between lines in chart tooltips.</li>\n</ul>\n</blockquote>\n<p>Tags: <a href=\"https://simonwillison.net/tags/datasette\" rel=\"noopener noreferrer\" target=\"_blank\">datasette</a>, <a href=\"https://simonwillison.net/tags/visualization\" rel=\"noopener noreferrer\" target=\"_blank\">visualization</a>, <a href=\"https://simonwillison.net/tags/datasette-charts\" rel=\"noopener noreferrer\" target=\"_blank\">datasette-charts</a></p>",
+  "attachments": []
+}

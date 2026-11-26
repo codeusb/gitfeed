@@ -1,0 +1,15 @@
+{
+  "id": "0bfebb964544d7a3",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] [开源] 拿了 GOAI 30w 奖金 + DeepSeek 官方推荐插件：我把 Zotero/Obsidian/Overleaf 整合成一个本地工作台，让 Agent 接管从读论文到写论文的全流程",
+  "link": "https://www.v2ex.com/t/1260064#reply0",
+  "author": "chenqiyuan1012",
+  "publishedAt": "2026-11-26T08:57:18Z",
+  "snippet": "项目地址（求个 Star ！）：https://github.com/poco-ai/Agentero 官网下载（超级精美，可以点进去看看！）：https://agentero.app 先汇报两个近期的小里程碑：我们开源的本地科研工作台 Agentero 在 GOAI 拿了二等奖（奖金 30 万元），配套的 DeepSeek Harness 插件也获得了 DeepSeek 官方推荐。趁热来分享一下，顺便听听大家的反馈和建议！ 为什么要做...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>项目地址（求个 Star ！）：<a href=\"https://github.com/poco-ai/Agentero\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/poco-ai/Agentero</a><br/>\n官网下载（超级精美，可以点进去看看！）：<a href=\"https://agentero.app\" rel=\"noopener noreferrer\" target=\"_blank\">https://agentero.app</a></p>\n<p>先汇报两个近期的小里程碑：我们开源的本地科研工作台 Agentero 在 GOAI 拿了二等奖（奖金 30 万元），配套的 DeepSeek Harness 插件也获得了 DeepSeek 官方推荐。趁热来分享一下，顺便听听大家的反馈和建议！</p>\n<h2>为什么要做这个？</h2>\n<p>做科研或者平时读大量论文的同学应该深有体会：日常干活基本要在 Zotero + 沉浸式翻译 + Obsidian + Claude Code/Codex + Benchling + Overleaf 这 6 个工具之间来回切窗口。</p>\n<p>以前大家的痛点只是觉得工具太多，但进入 Agent 时代后，痛点进一步变成了：你的 PDF 在 Zotero 里、笔记在 Obsidian 里、实验数据在表格里、论文源码在 Overleaf 上，本地的 Coding Agent 根本拿不到完整的上下文。</p>\n<p>Agentero 做的事情很简单：把文献、笔记、实验数据和 LaTeX 写作全部收拢到本地同一个工作区里，既方便人操作，更方便你的本地 Agent 一次性读取完整上下文。</p>\n<h2>核心功能</h2>\n<ul>\n<li>\n<p>文献管理与阅读（对标 Zotero）：支持从学术网站和本地一键导入 PDF，原版高亮、批注，同时在后台提取结构化文本供 Agent 直接读取。</p>\n</li>\n<li>\n<p>双语翻译与论文问答（对标沉浸式翻译 / ChatPDF）：划词提问、全文翻译、双语对照阅读，支持直接导出排版还原的双语 PDF。</p>\n</li>\n<li>\n<p>双链笔记（对标 Obsidian / Notion）：内置 Markdown 编辑器，支持数学公式和双向链接，可以把笔记、实验数据和 PDF 里的具体段落直接关联。</p>\n</li>\n<li>\n<p>直连本地 Agent（零额外订阅费）：直接接入你电脑上已有的 Claude Code、Codex 等工具和现有订阅，不用二次付费。最实用的一点是，Agent 回答中引用的文献内容支持点击直接跳回本地 PDF 原文核对，防幻觉。</p>\n</li>\n<li>\n<p>实验与文献数据表（对标 Benchling / Airtable）：在工作区建研究表格记录实验指标，既能手动填，也能让 Agent 批量读完一堆论文后自动提取指标填进去。</p>\n</li>\n<li>\n<p>本地 LaTeX 写作（对标 Overleaf）：内置 LaTeX 编写、实时预览、源码与 PDF 双向跳转、一键插本地文献引用；编译报错直接丢给 Agent 修。</p>\n</li>\n</ul>\n<h2>快速体验</h2>\n<p>桌面客户端支持 macOS / Windows / Linux，所有研究数据完全留在本地，开箱即用：</p>\n<p>GitHub 仓库（求个 Star ！）：<a href=\"https://github.com/poco-ai/Agentero\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/poco-ai/Agentero</a></p>\n<p>官网直接下载安装包（超级精美，可以点进去看看！）：<a href=\"https://agentero.app\" rel=\"noopener noreferrer\" target=\"_blank\">https://agentero.app</a></p>\n<p>项目还在快速迭代中，特别欢迎做学术、读论文或者重度使用本地 Agent 的朋友来试用、提 Issue，评论区我都会看和回复。</p>",
+  "attachments": []
+}

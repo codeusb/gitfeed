@@ -1,0 +1,15 @@
+{
+  "id": "17b50c443c47d713",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 自己做的本地影片播放器，接 NAS / Jellyfin / Emby / Plex，参加就送 3 个月 Pro",
+  "link": "https://www.v2ex.com/t/1260034#reply1",
+  "author": "kangzj",
+  "publishedAt": "2026-11-26T07:40:00Z",
+  "snippet": "大家好，我在做杨桃播放器（Yonto Player），一个看自己影片的播放器：NAS（SMB、WebDAV）、Jellyfin、Emby、Plex、网盘都能接，MKV、杜比视界（含 Profile 5）、DTS、TrueHD 和外挂字幕都能播，文件夹里的影片会整理成带海报的影片库，看到哪里可以在设备之间接着看。 现在有 Android TV、Android 手机平板、Windows 和 Mac，iPhone、iPad、Apple TV ...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>大家好，我在做杨桃播放器（Yonto Player），一个看自己影片的播放器：NAS（SMB、WebDAV）、Jellyfin、Emby、Plex、网盘都能接，MKV、杜比视界（含 Profile 5）、DTS、TrueHD 和外挂字幕都能播，文件夹里的影片会整理成带海报的影片库，看到哪里可以在设备之间接着看。</p>\n<p>现在有 Android TV、Android 手机平板、Windows 和 Mac，iPhone、iPad、Apple TV 和 Google Play 即将推出。免费版不用注册账号，可以接一个服务器或文件夹；Pro 是一次买断，5 台设备，没有订阅。</p>\n<p>顺便办个活动：参加的每个人都送 3 个月 Pro，另外随机抽 10 位送永久 Pro 授权（原价 US$14.95），不用买任何东西。参加方式二选一：</p>\n<ol>\n<li>发邮件到 support@yonto.app，标题写「Giveaway」</li>\n<li>或者加我们的 Discord：<a href=\"https://discord.gg/zeb8QBbTAT\" rel=\"noopener noreferrer\" target=\"_blank\">https://discord.gg/zeb8QBbTAT</a> ，在 #show-your-setup 发一条</li>\n</ol>\n<p>内容就三件事：你用什么看（电视盒、手机、电脑）、影片放在哪（NAS、Plex、Jellyfin、Emby 或网盘），还有那个总是播不好的文件。3 个月 Pro 的授权码一天内发到你的邮箱（Discord 参加的请私信机器人 Yonto Helper 留个邮箱），到期后回到免费版，设置和观看记录都不会丢。截止 12 月 14 日 16:00（北京时间），12 月 15 日抽出 10 位永久授权，用邮件或 Discord 通知。</p>\n<p>下载：<a href=\"https://player.yonto.app/zh-cn/download/?utm_source=v2ex&amp;utm_medium=social&amp;utm_campaign=giveaway-2026-12\" rel=\"noopener noreferrer\" target=\"_blank\">https://player.yonto.app/zh-cn/download/?utm_source=v2ex&amp;utm_medium=social&amp;utm_campaign=giveaway-2026-12</a></p>\n<p>那个「总是播不好的文件」对我帮助最大，会决定接下来先修什么。有问题直接在这里问，我都会回。</p>\n<p><del>偷偷讲一句，播放器部分支持 XPTV 和 MACCMS 源，懂的都懂。</del></p>",
+  "attachments": []
+}

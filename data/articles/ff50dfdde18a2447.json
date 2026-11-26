@@ -1,0 +1,15 @@
+{
+  "id": "ff50dfdde18a2447",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 怎么统计 APP 的安装数",
+  "link": "https://www.v2ex.com/t/1260063#reply0",
+  "author": "AsianChampion",
+  "publishedAt": "2026-11-26T08:55:29Z",
+  "snippet": "V 友们，写了个多平台(目前是 Mac 和 Win，后续看情况上移动端)的软件，怎么统计用户的安装数量和功能使用频率埋点呢，最好是墙内墙外都能统计到",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>V 友们，写了个多平台(目前是 Mac 和 Win，后续看情况上移动端)的软件，怎么统计用户的安装数量和功能使用频率埋点呢，最好是墙内墙外都能统计到</p>",
+  "attachments": []
+}

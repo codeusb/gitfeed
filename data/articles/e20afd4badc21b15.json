@@ -1,0 +1,15 @@
+{
+  "id": "e20afd4badc21b15",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+  "link": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+  "author": "dm",
+  "publishedAt": "2026-11-25T20:35:50Z",
+  "snippet": "Article URL: https://opensec.in/blog/nfs2root-cve-2026-99362 Comments URL: https://news.ycombinator.com/item?id=50647161 Points: 135 # Comments: 51",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>Article URL: <a href=\"https://opensec.in/blog/nfs2root-cve-2026-99362\" rel=\"noopener noreferrer\" target=\"_blank\">https://opensec.in/blog/nfs2root-cve-2026-99362</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50647161\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50647161</a></p>\n<p>Points: 135</p>\n<p># Comments: 51</p>",
+  "attachments": []
+}

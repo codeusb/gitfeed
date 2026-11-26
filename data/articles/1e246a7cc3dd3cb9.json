@@ -1,0 +1,15 @@
+{
+  "id": "1e246a7cc3dd3cb9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] 分享一下新发现的 go 语言 GUI 框架 Nsgo",
+  "link": "https://www.v2ex.com/t/1260032#reply4",
+  "author": "wojiugaiming",
+  "publishedAt": "2026-11-26T07:34:23Z",
+  "snippet": "本来想看看 mygo 这框架怎么样，发现的了这个框架。看了一下野心不小，这是要把这些（macOS、Windows、Linux、ios、Android、鸿蒙、tvOS、watchOS、轻 App、Web、还有微信支付宝抖音小程序）一套方案全搞定。 瞬间感觉 wails 这种非原生开发的不香了，感觉 ai 时代，既然让 ai 写代码，就应该用纯原生的 GUI 框架，人均每个应用套壳浏览器的软件真的是用吐了。感觉看好这个 mygo 还有这个框...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>本来想看看 mygo 这框架怎么样，发现的了这个框架。看了一下野心不小，这是要把这些（macOS、Windows、Linux、ios、Android、鸿蒙、tvOS、watchOS、轻 App、Web、还有微信支付宝抖音小程序）一套方案全搞定。</p>\n<p>瞬间感觉 wails 这种非原生开发的不香了，感觉 ai 时代，既然让 ai 写代码，就应该用纯原生的 GUI 框架，人均每个应用套壳浏览器的软件真的是用吐了。感觉看好这个 mygo 还有这个框架。</p>\n<p><a href=\"https://github.com/nsgo-dev/nsgo\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/nsgo-dev/nsgo</a></p>",
+  "attachments": []
+}

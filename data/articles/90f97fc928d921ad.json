@@ -1,0 +1,15 @@
+{
+  "id": "90f97fc928d921ad",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[分享创造] 给搭手写了个邮件插件：多邮箱 + AI 批注 + 刘海岛通知",
+  "link": "https://www.v2ex.com/t/1260055#reply0",
+  "author": "q2316367743",
+  "publishedAt": "2026-11-26T08:39:53Z",
+  "snippet": "微光邮箱是搭手的一个插件，一个安静的多账号邮件客户端，支持 Windows、macOS。 核心亮点 多账号统一收件箱：QQ / Gmail / 网易 / 公司邮箱接进一个窗口，按时间混排，未读分开算 AI 自动批注：新邮件标出要做什么、多少钱、截止哪天，识别到待办自动标记 今日简报：按天归纳收件箱，打开就知道今天有什么事 刘海岛提醒：关窗也后台收信，未读常驻刘海岛角标，点通知直达那封邮件 本地优先：IMAP 直连不过云，邮件、附件、AI...",
+  "coverImage": "https://img.cdn1.vip/i/6b07eb2f7b0a2_1795681071.webp",
+  "readTime": 1,
+  "content": "<p>微光邮箱是<a href=\"https://www.v2ex.com/t/1259484\" rel=\"noopener noreferrer\" target=\"_blank\">搭手</a>的一个插件，一个安静的多账号邮件客户端，支持 Windows、macOS。</p>\n<p><img alt=\"插件\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.cdn1.vip/i/6b07eb2f7b0a2_1795681071.webp\"/></p>\n<p>核心亮点</p>\n<ul>\n<li>多账号统一收件箱：QQ / Gmail / 网易 / 公司邮箱接进一个窗口，按时间混排，未读分开算</li>\n<li>AI 自动批注：新邮件标出要做什么、多少钱、截止哪天，识别到待办自动标记</li>\n<li>今日简报：按天归纳收件箱，打开就知道今天有什么事</li>\n<li>刘海岛提醒：关窗也后台收信，未读常驻刘海岛角标，点通知直达那封邮件</li>\n<li>本地优先：IMAP 直连不过云，邮件、附件、AI Key 都在本机</li>\n</ul>\n<p>适用场景</p>\n<ul>\n<li>同时用多个邮箱、每天来回切换的人</li>\n<li>不想为了等一封邮件一直开着窗口或网页的人</li>\n<li>想让 AI 帮忙看邮件、但不想跟它聊天的人</li>\n</ul>\n<p>注：</p>\n<ul>\n<li>AI 需要自己填 OpenAI 兼容的 Key（内置 DeepSeek / 智谱 / Moonshot / Ollama 预设）</li>\n<li>后台轮询收件箱，默认 10 分钟，最短 5 分钟</li>\n<li>邮箱登录一般需要授权码或独立密码，添加账号里有说明</li>\n</ul>\n<p>安装</p>\n<ul>\n<li>搭手客户端 <a href=\"https://www.da-shou.cn\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.da-shou.cn</a> （Windows / macOS）</li>\n<li>装好后插件中心搜「微光邮箱」，免费，需要 2.4.0 以上</li>\n</ul>",
+  "attachments": []
+}

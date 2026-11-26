@@ -1,0 +1,15 @@
+{
+  "id": "85fdad81f80f3ac9",
+  "feedId": "v2ex-hot",
+  "feedTitle": "V2EX",
+  "category": "tech-news",
+  "title": "[程序员] Work Buddy Hy4 falsh 真棒！",
+  "link": "https://www.v2ex.com/t/1260053#reply1",
+  "author": "SeanYou",
+  "publishedAt": "2026-11-26T08:34:21Z",
+  "snippet": "为什么会夸它，用它帮我 hook 了一个 APP。 个人是前端开发，然后做的业务需要往移动端兑数据，今年 5 年规划又是新的开始，APP 接口发生了变动，用 Fiddler 抓到包，所有数据都是通过一个接口提交，请求参数里面做了文章。 用了半天的 workbuddy 把 APP hook 了，抓到了加密前的参数，以及加密方法。 搁着要是这个 APP 是去年更新的，我真的会累死。要手动录入或者花钱找人解决了。运气真好!",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>为什么会夸它，用它帮我 hook 了一个 APP。<br/>\n个人是前端开发，然后做的业务需要往移动端兑数据，今年 5 年规划又是新的开始，APP 接口发生了变动，用 Fiddler 抓到包，所有数据都是通过一个接口提交，请求参数里面做了文章。<br/>\n用了半天的 workbuddy 把 APP hook 了，抓到了加密前的参数，以及加密方法。<br/>\n搁着要是这个 APP 是去年更新的，我真的会累死。要手动录入或者花钱找人解决了。运气真好!</p>",
+  "attachments": []
+}

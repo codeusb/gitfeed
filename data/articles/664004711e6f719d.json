@@ -1,0 +1,15 @@
+{
+  "id": "664004711e6f719d",
+  "feedId": "hacker-news-frontpage",
+  "feedTitle": "Hacker News: Front Page",
+  "category": "tech-news",
+  "title": "Tell HN: Lots of Ask HNs again",
+  "link": "https://news.ycombinator.com/item?id=50649864",
+  "author": "dang",
+  "publishedAt": "2026-11-26T00:43:34Z",
+  "snippet": "There have been questions about why the /ask page (https://news.ycombinator.com/ask) was running dry of Ask HNs - e.g.:Ask HN: Why is Ask HN only showing me 14 posts? - https://news.ycombinator.com/item?id=49984484 - Oct...",
+  "coverImage": null,
+  "readTime": 1,
+  "content": "<p>There have been questions about why the /ask page (<a href=\"https://news.ycombinator.com/ask\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/ask</a>) was running dry of Ask HNs - e.g.:<p><i>Ask HN: Why is Ask HN only showing me 14 posts?</i> - <a href=\"https://news.ycombinator.com/item?id=49984484\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=49984484</a> - Oct 2026 (47 comments)<p><i>Ask HN: Why is pagination gone on \"Ask HN\", and showing only 19 items?</i> - <a href=\"https://news.ycombinator.com/item?id=50280719\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50280719</a> - Oct 2026 (3 comments)<p>I believe I found the problem. The pool of stories for <a href=\"https://news.ycombinator.com/ask\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/ask</a> has traditionally been drawn from the ranked stories list from which we generate the frontpage. That list is restricted to the top 1500 ranked submissions, and it seems the % of submissions which are text posts (i.e. no linked URL) had declined enough to starve the Ask HN feed. The solution is to compute a separate list of ranked Ask HNs.<p>p.s. \"Ask HN\" is the conventional name but it means text posts. The title can also start with \"Tell HN\" or nothing in particular. They're just posts which were submitted without a URL.</p>\n<hr/>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50649864\" rel=\"noopener noreferrer\" target=\"_blank\">https://news.ycombinator.com/item?id=50649864</a></p>\n<p>Points: 249</p>\n<p># Comments: 91</p></p></p></p></p>",
+  "attachments": []
+}
