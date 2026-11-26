@@ -357,7 +357,7 @@ function parseContentToBlocks(raw: string, coverImage?: string | null): ContentB
         const hasOtherContent = inner.replace(/<img\s+[^>]*\/?>/gi, '').trim().length > 0;
 
         if (isSmallIcon || hasOtherContent) {
-          let cleanP = inner.replace(/<img\s+[^>]*src=["'][^"']*link\.png["'][^>]*\/?>/gi, '🔗 ');
+          let cleanP = inner.replace(/<img\s+[^>]*src=["'][^"']*link\.png["'][^>]*\/?>/gi, '');
           cleanP = cleanP.replace(/<img\s+[^>]*alt=["']([^"']+)["'][^>]*\/?>/gi, '$1 ');
           cleanP = cleanP.replace(/<img\s+[^>]*\/?>/gi, '');
           cleanP = cleanP.trim();
@@ -575,7 +575,7 @@ const ArticleImage: React.FC<{
         </View>
       ) : null}
       <View style={[styles.imageZoomBadge, { backgroundColor: 'rgba(0,0,0,0.5)' }]}>
-        <Text style={styles.imageZoomText}>🔍 点击放大</Text>
+        <Text style={styles.imageZoomText}>查看大图</Text>
       </View>
     </TouchableOpacity>
   );
