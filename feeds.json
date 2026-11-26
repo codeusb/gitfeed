@@ -11,78 +11,9 @@
       "name": "编程与语言",
       "nameEn": "T-language",
       "icon": "code"
-    },
-    {
-      "id": "weekly",
-      "name": "优质周刊",
-      "nameEn": "Weekly Digests",
-      "icon": "book-open"
     }
   ],
   "feeds": [
-    {
-      "id": "橘鸦ai早报",
-      "title": "橘鸦AI早报",
-      "url": "https://daily.juya.uk/rss.xml",
-      "siteUrl": "https://daily.juya.uk/",
-      "category": "tech",
-      "description": "AI 每日动态与技术早报",
-      "enabled": true
-    },
-    {
-      "id": "changelog",
-      "title": "Changelog",
-      "url": "http://feeds.feedburner.com/thechangelog",
-      "siteUrl": "https://changelog.com/",
-      "category": "tech",
-      "description": "Software news and podcast episodes",
-      "enabled": true
-    },
-    {
-      "id": "javascript-weekly",
-      "title": "JavaScript Weekly",
-      "url": "http://javascriptweekly.com/rss",
-      "siteUrl": "https://javascriptweekly.com/",
-      "category": "tech",
-      "description": "Weekly roundup of JavaScript news and articles",
-      "enabled": true
-    },
-    {
-      "id": "node-weekly",
-      "title": "Node Weekly",
-      "url": "http://nodeweekly.com/rss/1j9a0ll9",
-      "siteUrl": "https://nodeweekly.com/",
-      "category": "tech",
-      "description": "Weekly Node.js newsletter",
-      "enabled": true
-    },
-    {
-      "id": "frontend-focus",
-      "title": "Frontend Focus",
-      "url": "https://frontendfoc.us/rss",
-      "siteUrl": "https://frontendfoc.us/",
-      "category": "tech",
-      "description": "Once-weekly HTML, CSS and Web dev roundup",
-      "enabled": true
-    },
-    {
-      "id": "react-status",
-      "title": "React Status",
-      "url": "https://react.statuscode.com/rss",
-      "siteUrl": "https://react.statuscode.com/",
-      "category": "tech",
-      "description": "Weekly curated React ecosystem newsletter",
-      "enabled": true
-    },
-    {
-      "id": "selfh-st",
-      "title": "selfh.st",
-      "url": "https://selfh.st/rss/",
-      "siteUrl": "https://selfh.st",
-      "category": "tech",
-      "description": "Self-hosting newsletter and directory",
-      "enabled": true
-    },
     {
       "id": "golang-weekly",
       "title": "Golang Weekly",
@@ -111,12 +42,75 @@
       "enabled": true
     },
     {
+      "id": "changelog",
+      "title": "Changelog",
+      "url": "http://feeds.feedburner.com/thechangelog",
+      "siteUrl": "https://changelog.com/",
+      "category": "tech",
+      "description": "Software news and podcast episodes",
+      "enabled": true
+    },
+    {
+      "id": "javascript-weekly",
+      "title": "JavaScript Weekly",
+      "url": "http://javascriptweekly.com/rss",
+      "siteUrl": "https://javascriptweekly.com/",
+      "category": "tech",
+      "description": "Weekly roundup of JavaScript news and articles",
+      "enabled": true
+    },
+    {
+      "id": "橘鸦ai早报",
+      "title": "橘鸦AI早报",
+      "url": "https://daily.juya.uk/rss.xml",
+      "siteUrl": "https://daily.juya.uk/",
+      "category": "tech",
+      "description": "AI 每日动态与技术早报",
+      "enabled": true
+    },
+    {
+      "id": "node-weekly",
+      "title": "Node Weekly",
+      "url": "http://nodeweekly.com/rss/1j9a0ll9",
+      "siteUrl": "https://nodeweekly.com/",
+      "category": "tech",
+      "description": "Weekly Node.js newsletter",
+      "enabled": true
+    },
+    {
       "id": "阮一峰的网络日志",
       "title": "阮一峰的网络日志",
-      "url": "https://feeds.feedburner.com/ruanyifeng",
-      "siteUrl": "https://www.ruanyifeng.com/blog/",
-      "category": "weekly",
+      "url": "http://feeds.feedburner.com/ruanyifeng",
+      "siteUrl": "http://www.ruanyifeng.com/blog/",
+      "category": "tech",
       "description": "科技爱好者周刊与技术随笔",
+      "enabled": true
+    },
+    {
+      "id": "frontend-focus",
+      "title": "Frontend Focus",
+      "url": "https://frontendfoc.us/rss",
+      "siteUrl": "https://frontendfoc.us/",
+      "category": "tech",
+      "description": "Once-weekly HTML, CSS and Web dev roundup",
+      "enabled": true
+    },
+    {
+      "id": "react-status",
+      "title": "React Status",
+      "url": "https://react.statuscode.com/rss",
+      "siteUrl": "https://react.statuscode.com/",
+      "category": "tech",
+      "description": "Weekly curated React ecosystem newsletter",
+      "enabled": true
+    },
+    {
+      "id": "selfh-st",
+      "title": "selfh.st",
+      "url": "https://selfh.st/rss/",
+      "siteUrl": "https://selfh.st",
+      "category": "tech",
+      "description": "Self-hosting newsletter and directory",
       "enabled": true
     }
   ]

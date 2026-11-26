@@ -1,78 +1,15 @@
 {
-  "lastUpdated": "2026-11-26T15:08:06.352420+00:00",
+  "lastUpdated": "2026-11-26T15:18:24.028984+00:00",
   "totalArticles": 84,
   "newArticlesInThisRun": 0,
   "prunedArticles": 0,
   "activeFeeds": 11,
   "feedStatuses": {
-    "橘鸦ai早报": {
-      "title": "橘鸦AI早报",
-      "category": "tech",
-      "url": "https://daily.juya.uk/rss.xml",
-      "lastChecked": "2026-11-26T15:08:02.329283+00:00",
-      "status": "ok",
-      "articlesFetched": 10,
-      "error": null
-    },
-    "changelog": {
-      "title": "Changelog",
-      "category": "tech",
-      "url": "http://feeds.feedburner.com/thechangelog",
-      "lastChecked": "2026-11-26T15:08:02.853023+00:00",
-      "status": "ok",
-      "articlesFetched": 50,
-      "error": null
-    },
-    "javascript-weekly": {
-      "title": "JavaScript Weekly",
-      "category": "tech",
-      "url": "http://javascriptweekly.com/rss",
-      "lastChecked": "2026-11-26T15:08:03.150717+00:00",
-      "status": "ok",
-      "articlesFetched": 4,
-      "error": null
-    },
-    "node-weekly": {
-      "title": "Node Weekly",
-      "category": "tech",
-      "url": "http://nodeweekly.com/rss/1j9a0ll9",
-      "lastChecked": "2026-11-26T15:08:03.415344+00:00",
-      "status": "ok",
-      "articlesFetched": 4,
-      "error": null
-    },
-    "frontend-focus": {
-      "title": "Frontend Focus",
-      "category": "tech",
-      "url": "https://frontendfoc.us/rss",
-      "lastChecked": "2026-11-26T15:08:03.805715+00:00",
-      "status": "ok",
-      "articlesFetched": 4,
-      "error": null
-    },
-    "react-status": {
-      "title": "React Status",
-      "category": "tech",
-      "url": "https://react.statuscode.com/rss",
-      "lastChecked": "2026-11-26T15:08:04.228018+00:00",
-      "status": "ok",
-      "articlesFetched": 4,
-      "error": null
-    },
-    "selfh-st": {
-      "title": "selfh.st",
-      "category": "tech",
-      "url": "https://selfh.st/rss/",
-      "lastChecked": "2026-11-26T15:08:04.488649+00:00",
-      "status": "ok",
-      "articlesFetched": 25,
-      "error": null
-    },
     "golang-weekly": {
       "title": "Golang Weekly",
       "category": "t-language",
       "url": "http://golangweekly.com/rss",
-      "lastChecked": "2026-11-26T15:08:04.850779+00:00",
+      "lastChecked": "2026-11-26T15:18:08.885133+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -81,7 +18,7 @@
       "title": "GitHub Weekly Trending Repositories",
       "category": "t-language",
       "url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
-      "lastChecked": "2026-11-26T15:08:05.779419+00:00",
+      "lastChecked": "2026-11-26T15:18:10.846374+00:00",
       "status": "ok",
       "articlesFetched": 14,
       "error": null
@@ -90,18 +27,81 @@
       "title": "Postgres Weekly",
       "category": "t-language",
       "url": "http://postgresweekly.com/rss/1g42j1di",
-      "lastChecked": "2026-11-26T15:08:06.056468+00:00",
+      "lastChecked": "2026-11-26T15:18:12.711565+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "changelog": {
+      "title": "Changelog",
+      "category": "tech",
+      "url": "http://feeds.feedburner.com/thechangelog",
+      "lastChecked": "2026-11-26T15:18:13.824808+00:00",
+      "status": "ok",
+      "articlesFetched": 50,
+      "error": null
+    },
+    "javascript-weekly": {
+      "title": "JavaScript Weekly",
+      "category": "tech",
+      "url": "http://javascriptweekly.com/rss",
+      "lastChecked": "2026-11-26T15:18:15.769535+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "橘鸦ai早报": {
+      "title": "橘鸦AI早报",
+      "category": "tech",
+      "url": "https://daily.juya.uk/rss.xml",
+      "lastChecked": "2026-11-26T15:18:17.746208+00:00",
+      "status": "ok",
+      "articlesFetched": 10,
+      "error": null
+    },
+    "node-weekly": {
+      "title": "Node Weekly",
+      "category": "tech",
+      "url": "http://nodeweekly.com/rss/1j9a0ll9",
+      "lastChecked": "2026-11-26T15:18:19.400012+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
     },
     "阮一峰的网络日志": {
       "title": "阮一峰的网络日志",
-      "category": "weekly",
-      "url": "https://feeds.feedburner.com/ruanyifeng",
-      "lastChecked": "2026-11-26T15:08:06.337804+00:00",
+      "category": "tech",
+      "url": "http://feeds.feedburner.com/ruanyifeng",
+      "lastChecked": "2026-11-26T15:18:20.360873+00:00",
       "status": "ok",
       "articlesFetched": 6,
+      "error": null
+    },
+    "frontend-focus": {
+      "title": "Frontend Focus",
+      "category": "tech",
+      "url": "https://frontendfoc.us/rss",
+      "lastChecked": "2026-11-26T15:18:21.666957+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "react-status": {
+      "title": "React Status",
+      "category": "tech",
+      "url": "https://react.statuscode.com/rss",
+      "lastChecked": "2026-11-26T15:18:22.883574+00:00",
+      "status": "ok",
+      "articlesFetched": 4,
+      "error": null
+    },
+    "selfh-st": {
+      "title": "selfh.st",
+      "category": "tech",
+      "url": "https://selfh.st/rss/",
+      "lastChecked": "2026-11-26T15:18:24.016250+00:00",
+      "status": "ok",
+      "articlesFetched": 25,
       "error": null
     }
   }
