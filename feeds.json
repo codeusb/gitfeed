@@ -111,15 +111,6 @@
       "enabled": true
     },
     {
-      "id": "36氪",
-      "title": "36氪",
-      "url": "http://www.36kr.com/feed",
-      "siteUrl": "http://36kr.com",
-      "category": "t-language",
-      "description": "中国新经济与科技商业媒体",
-      "enabled": true
-    },
-    {
       "id": "github-weekly-trending-repositories",
       "title": "GitHub Weekly Trending Repositories",
       "url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
@@ -138,15 +129,6 @@
       "enabled": true
     },
     {
-      "id": "hacker-news-frontpage",
-      "title": "Hacker News: Front Page",
-      "url": "https://hnrss.org/frontpage",
-      "siteUrl": "https://news.ycombinator.com",
-      "category": "tech-news",
-      "description": "Hacker News front page top stories",
-      "enabled": true
-    },
-    {
       "id": "github-blog",
       "title": "GitHub Blog",
       "url": "https://github.blog/feed/",
@@ -156,19 +138,10 @@
       "enabled": true
     },
     {
-      "id": "v2ex-hot",
-      "title": "V2EX - 最热主题",
-      "url": "https://www.v2ex.com/index.xml",
-      "siteUrl": "https://www.v2ex.com",
-      "category": "tech-news",
-      "description": "V2EX 每日精选最热讨论",
-      "enabled": true
-    },
-    {
       "id": "阮一峰的网络日志",
       "title": "阮一峰的网络日志",
-      "url": "http://www.ruanyifeng.com/blog/atom.xml",
-      "siteUrl": "http://www.ruanyifeng.com/blog/",
+      "url": "https://feeds.feedburner.com/ruanyifeng",
+      "siteUrl": "https://www.ruanyifeng.com/blog/",
       "category": "weekly",
       "description": "科技爱好者周刊与技术随笔",
       "enabled": true

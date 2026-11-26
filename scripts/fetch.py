@@ -31,6 +31,8 @@ FEEDS_CACHE_PATH = os.path.join(DATA_DIR, "feeds.json")
 # Rolling retention limit: keep latest 1000 articles or up to 60 days
 MAX_INDEX_ARTICLES = 1000
 RETENTION_DAYS = 60
+MAX_ARTICLES_PER_FEED = 60  # Prevent high-frequency feeds from flooding the index
+MIN_ARTICLES_PER_FEED = 15  # Guarantee low-frequency weeklies are never crowded out
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -370,21 +372,52 @@ def run():
             }
             existing_map[art_id] = summary_item
 
-    # Convert existing_map back to sorted list (descending by publishedAt)
-    combined_index = list(existing_map.values())
-    combined_index.sort(key=lambda x: x.get("publishedAt", ""), reverse=True)
+    # 1. Filter out articles belonging to feeds that no longer exist or are disabled
+    active_feed_ids = {f["id"] for f in feeds if f.get("enabled", True)}
+    valid_articles = [art for art in existing_map.values() if art.get("feedId") in active_feed_ids]
 
-    # Prune index to retention limit
+    # 2. Sort by publishedAt descending
+    valid_articles.sort(key=lambda x: x.get("publishedAt", ""), reverse=True)
+
+    # 3. Two-pass balanced retention:
+    #    Pass 1: Ensure every active feed gets up to MIN_ARTICLES_PER_FEED
+    #    Pass 2: Fill remaining capacity with articles within RETENTION_DAYS and MAX_ARTICLES_PER_FEED
     cutoff_date = (datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    trimmed_index = []
-    active_ids = set()
 
-    for item in combined_index:
-        pub = item.get("publishedAt", "")
-        # Keep if within retention days or we haven't reached min 100 articles
-        if len(trimmed_index) < 100 or (pub >= cutoff_date and len(trimmed_index) < MAX_INDEX_ARTICLES):
-            trimmed_index.append(item)
-            active_ids.add(item["id"])
+    feed_buckets: Dict[str, List[Dict[str, Any]]] = {}
+    for art in valid_articles:
+        fid = art.get("feedId", "")
+        feed_buckets.setdefault(fid, []).append(art)
+
+    selected_ids = set()
+    trimmed_index: List[Dict[str, Any]] = []
+
+    # Pass 1: Guarantee minimum articles per active feed
+    for fid, arts in feed_buckets.items():
+        for art in arts[:MIN_ARTICLES_PER_FEED]:
+            selected_ids.add(art["id"])
+            trimmed_index.append(art)
+
+    # Pass 2: Fill up with remaining articles within retention limits
+    feed_counts = {fid: min(len(arts), MIN_ARTICLES_PER_FEED) for fid, arts in feed_buckets.items()}
+    for art in valid_articles:
+        art_id = art["id"]
+        if art_id in selected_ids:
+            continue
+        fid = art.get("feedId", "")
+        pub = art.get("publishedAt", "")
+        if (
+            len(trimmed_index) < MAX_INDEX_ARTICLES
+            and pub >= cutoff_date
+            and feed_counts.get(fid, 0) < MAX_ARTICLES_PER_FEED
+        ):
+            selected_ids.add(art_id)
+            trimmed_index.append(art)
+            feed_counts[fid] = feed_counts.get(fid, 0) + 1
+
+    # Final sort descending by published date
+    trimmed_index.sort(key=lambda x: x.get("publishedAt", ""), reverse=True)
+    active_ids = {x["id"] for x in trimmed_index}
 
     # Write data/index.json
     with open(INDEX_PATH, "w", encoding="utf-8") as f:
