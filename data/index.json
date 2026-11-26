@@ -7,7 +7,7 @@
     "title": "meta/astryx",
     "link": "https://github.com/meta/astryx",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "An open source design system that's fully customizable and agent readyhttp://astryx.atmeta.com Astryx An open source design system that's fully customizable and built for how we build now: by people and the agents workin...",
     "coverImage": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
     "readTime": 1
@@ -20,7 +20,7 @@
     "title": "we-promise/sure",
     "link": "https://github.com/we-promise/sure",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "The personal finance app for everyone (by everyone)https://sure.am Deutsch | Español | Français | 日本語 | 한국어 | Português | Русский | 中文 Sure: The personal finance app for everyone Get involved: Discord • Website • Issues ...",
     "coverImage": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
     "readTime": 1
@@ -33,7 +33,7 @@
     "title": "dream-num/univer",
     "link": "https://github.com/dream-num/univer",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.https://univer.ai Build ...",
     "coverImage": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/hero-banner.png",
     "readTime": 1
@@ -46,7 +46,7 @@
     "title": "pookjw/HermesEnabler",
     "link": "https://github.com/pookjw/HermesEnabler",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Enable Hermès Watch Faces on any Apple Watch devicesHermesEnabler 2 English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português Supported on watchOS 27.0 through 27.3 beta 1. If you’re using...",
     "coverImage": "https://raw.githubusercontent.com/pookjw/HermesEnabler/main/image.png",
     "readTime": 1
@@ -59,7 +59,7 @@
     "title": "kajisho5/ffmpeg-skill",
     "link": "https://github.com/kajisho5/ffmpeg-skill",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.https...",
     "coverImage": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/logo/ffmpeg-skill-horizontal.svg?sanitize=true",
     "readTime": 1
@@ -72,7 +72,7 @@
     "title": "ChromeDevTools/chrome-devtools-mcp",
     "link": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Chrome DevTools for coding agentshttps://developer.chrome.com/docs/devtools/agentsChrome DevTools for agents Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent (such as Antigravity, Claude, Cursor or...",
     "coverImage": null,
     "readTime": 1
@@ -85,7 +85,7 @@
     "title": "tradermonty/claude-trading-skills",
     "link": "https://github.com/tradermonty/claude-trading-skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.https://tradermonty.github.io/claude-trading-skills/Claude Tradin...",
     "coverImage": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg?sanitize=true",
     "readTime": 1
@@ -98,7 +98,7 @@
     "title": "ag-ui-protocol/ag-ui",
     "link": "https://github.com/ag-ui-protocol/ag-ui",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.https://ag-ui.com The open protocol that connects any agent to any app. Docs · Examples · Spec · Discord AG-UI is an open, lightweight, ...",
     "coverImage": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/wordmark.svg?sanitize=true",
     "readTime": 1
@@ -111,7 +111,7 @@
     "title": "alibaba/open-code-review",
     "link": "https://github.com/alibaba/open-code-review",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS,...",
     "coverImage": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg?sanitize=true",
     "readTime": 1
@@ -124,7 +124,7 @@
     "title": "mvanhorn/last30days-skill",
     "link": "https://github.com/mvanhorn/last30days-skill",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary/last30days English | Français | Deutsch | Español | Português (Brasil) | 日本語 | 简体中文 | ...",
     "coverImage": "https://raw.githubusercontent.com/mvanhorn/last30days-skill/star-history-assets/star-history-light.svg?sanitize=true",
     "readTime": 1
@@ -137,7 +137,7 @@
     "title": "backnotprop/plannotator",
     "link": "https://github.com/backnotprop/plannotator",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.https://plannotator.ai Everything you need to annotate ...",
     "coverImage": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/banner.webp",
     "readTime": 1
@@ -150,7 +150,7 @@
     "title": "google-labs-code/stitch-skills",
     "link": "https://github.com/google-labs-code/stitch-skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.https://...",
     "coverImage": null,
     "readTime": 1
@@ -163,7 +163,7 @@
     "title": "GoogleChrome/modern-web-guidance-src",
     "link": "https://github.com/GoogleChrome/modern-web-guidance-src",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Keep your coding agent up to date with the latest web best practiceshttps://goo.gle/modern-web-guidance Modern Web Guidance (Source) This repo is the source repository for GoogleChrome/modern-web-guidance and includes th...",
     "coverImage": "https://contrib.rocks/image?repo=GoogleChrome/modern-web-guidance-src&max=101",
     "readTime": 1
@@ -176,7 +176,7 @@
     "title": "n8n-io/nod",
     "link": "https://github.com/n8n-io/nod",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-26T15:01:56Z",
+    "publishedAt": "2026-11-26T15:03:02Z",
     "snippet": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.https://nod.n8n....",
     "coverImage": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero-dark.webp",
     "readTime": 1
