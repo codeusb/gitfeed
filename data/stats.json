@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-26T15:06:40.673766+00:00",
+  "lastUpdated": "2026-11-26T15:08:06.352420+00:00",
   "totalArticles": 84,
   "newArticlesInThisRun": 0,
   "prunedArticles": 0,
@@ -9,7 +9,7 @@
       "title": "橘鸦AI早报",
       "category": "tech",
       "url": "https://daily.juya.uk/rss.xml",
-      "lastChecked": "2026-11-26T15:06:20.997218+00:00",
+      "lastChecked": "2026-11-26T15:08:02.329283+00:00",
       "status": "ok",
       "articlesFetched": 10,
       "error": null
@@ -18,7 +18,7 @@
       "title": "Changelog",
       "category": "tech",
       "url": "http://feeds.feedburner.com/thechangelog",
-      "lastChecked": "2026-11-26T15:06:22.071212+00:00",
+      "lastChecked": "2026-11-26T15:08:02.853023+00:00",
       "status": "ok",
       "articlesFetched": 50,
       "error": null
@@ -27,7 +27,7 @@
       "title": "JavaScript Weekly",
       "category": "tech",
       "url": "http://javascriptweekly.com/rss",
-      "lastChecked": "2026-11-26T15:06:24.290403+00:00",
+      "lastChecked": "2026-11-26T15:08:03.150717+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -36,7 +36,7 @@
       "title": "Node Weekly",
       "category": "tech",
       "url": "http://nodeweekly.com/rss/1j9a0ll9",
-      "lastChecked": "2026-11-26T15:06:26.125372+00:00",
+      "lastChecked": "2026-11-26T15:08:03.415344+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -45,7 +45,7 @@
       "title": "Frontend Focus",
       "category": "tech",
       "url": "https://frontendfoc.us/rss",
-      "lastChecked": "2026-11-26T15:06:27.601662+00:00",
+      "lastChecked": "2026-11-26T15:08:03.805715+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -54,7 +54,7 @@
       "title": "React Status",
       "category": "tech",
       "url": "https://react.statuscode.com/rss",
-      "lastChecked": "2026-11-26T15:06:29.177299+00:00",
+      "lastChecked": "2026-11-26T15:08:04.228018+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -63,7 +63,7 @@
       "title": "selfh.st",
       "category": "tech",
       "url": "https://selfh.st/rss/",
-      "lastChecked": "2026-11-26T15:06:31.851237+00:00",
+      "lastChecked": "2026-11-26T15:08:04.488649+00:00",
       "status": "ok",
       "articlesFetched": 25,
       "error": null
@@ -72,7 +72,7 @@
       "title": "Golang Weekly",
       "category": "t-language",
       "url": "http://golangweekly.com/rss",
-      "lastChecked": "2026-11-26T15:06:34.455358+00:00",
+      "lastChecked": "2026-11-26T15:08:04.850779+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -81,7 +81,7 @@
       "title": "GitHub Weekly Trending Repositories",
       "category": "t-language",
       "url": "https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml",
-      "lastChecked": "2026-11-26T15:06:37.129656+00:00",
+      "lastChecked": "2026-11-26T15:08:05.779419+00:00",
       "status": "ok",
       "articlesFetched": 14,
       "error": null
@@ -90,7 +90,7 @@
       "title": "Postgres Weekly",
       "category": "t-language",
       "url": "http://postgresweekly.com/rss/1g42j1di",
-      "lastChecked": "2026-11-26T15:06:38.915162+00:00",
+      "lastChecked": "2026-11-26T15:08:06.056468+00:00",
       "status": "ok",
       "articlesFetched": 4,
       "error": null
@@ -99,7 +99,7 @@
       "title": "阮一峰的网络日志",
       "category": "weekly",
       "url": "https://feeds.feedburner.com/ruanyifeng",
-      "lastChecked": "2026-11-26T15:06:40.664891+00:00",
+      "lastChecked": "2026-11-26T15:08:06.337804+00:00",
       "status": "ok",
       "articlesFetched": 6,
       "error": null
