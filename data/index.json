@@ -7,7 +7,7 @@
     "title": "meta/astryx",
     "link": "https://github.com/meta/astryx",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "An open source design system that's fully customizable and agent readyhttp://astryx.atmeta.com Astryx An open source design system that's fully customizable and built for how we build now: by people and the agents workin...",
     "coverImage": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
     "readTime": 1
@@ -20,7 +20,7 @@
     "title": "we-promise/sure",
     "link": "https://github.com/we-promise/sure",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "The personal finance app for everyone (by everyone)https://sure.am Deutsch | Español | Français | 日本語 | 한국어 | Português | Русский | 中文 Sure: The personal finance app for everyone Get involved: Discord • Website • Issues ...",
     "coverImage": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
     "readTime": 1
@@ -33,7 +33,7 @@
     "title": "dream-num/univer",
     "link": "https://github.com/dream-num/univer",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.https://univer.ai Build ...",
     "coverImage": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/hero-banner.png",
     "readTime": 1
@@ -46,7 +46,7 @@
     "title": "pookjw/HermesEnabler",
     "link": "https://github.com/pookjw/HermesEnabler",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Enable Hermès Watch Faces on any Apple Watch devicesHermesEnabler 2 English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português Supported on watchOS 27.0 through 27.3 beta 1. If you’re using...",
     "coverImage": "https://raw.githubusercontent.com/pookjw/HermesEnabler/main/image.png",
     "readTime": 1
@@ -59,7 +59,7 @@
     "title": "kajisho5/ffmpeg-skill",
     "link": "https://github.com/kajisho5/ffmpeg-skill",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.https...",
     "coverImage": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/logo/ffmpeg-skill-horizontal.svg?sanitize=true",
     "readTime": 1
@@ -72,7 +72,7 @@
     "title": "ChromeDevTools/chrome-devtools-mcp",
     "link": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Chrome DevTools for coding agentshttps://developer.chrome.com/docs/devtools/agentsChrome DevTools for agents Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent (such as Antigravity, Claude, Cursor or...",
     "coverImage": null,
     "readTime": 1
@@ -85,7 +85,7 @@
     "title": "tradermonty/claude-trading-skills",
     "link": "https://github.com/tradermonty/claude-trading-skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.https://tradermonty.github.io/claude-trading-skills/Claude Tradin...",
     "coverImage": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg?sanitize=true",
     "readTime": 1
@@ -98,7 +98,7 @@
     "title": "ag-ui-protocol/ag-ui",
     "link": "https://github.com/ag-ui-protocol/ag-ui",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.https://ag-ui.com The open protocol that connects any agent to any app. Docs · Examples · Spec · Discord AG-UI is an open, lightweight, ...",
     "coverImage": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/wordmark.svg?sanitize=true",
     "readTime": 1
@@ -111,7 +111,7 @@
     "title": "alibaba/open-code-review",
     "link": "https://github.com/alibaba/open-code-review",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS,...",
     "coverImage": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg?sanitize=true",
     "readTime": 1
@@ -124,7 +124,7 @@
     "title": "mvanhorn/last30days-skill",
     "link": "https://github.com/mvanhorn/last30days-skill",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary/last30days English | Français | Deutsch | Español | Português (Brasil) | 日本語 | 简体中文 | ...",
     "coverImage": "https://raw.githubusercontent.com/mvanhorn/last30days-skill/star-history-assets/star-history-light.svg?sanitize=true",
     "readTime": 1
@@ -137,7 +137,7 @@
     "title": "n8n-io/nod",
     "link": "https://github.com/n8n-io/nod",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.https://nod.n8n....",
     "coverImage": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero-dark.webp",
     "readTime": 1
@@ -150,7 +150,7 @@
     "title": "GoogleChrome/modern-web-guidance-src",
     "link": "https://github.com/GoogleChrome/modern-web-guidance-src",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "Keep your coding agent up to date with the latest web best practiceshttps://goo.gle/modern-web-guidance Modern Web Guidance (Source) This repo is the source repository for GoogleChrome/modern-web-guidance and includes th...",
     "coverImage": "https://contrib.rocks/image?repo=GoogleChrome/modern-web-guidance-src&max=101",
     "readTime": 1
@@ -163,7 +163,7 @@
     "title": "backnotprop/plannotator",
     "link": "https://github.com/backnotprop/plannotator",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.https://plannotator.ai Everything you need to annotate ...",
     "coverImage": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/banner.webp",
     "readTime": 1
@@ -176,8 +176,34 @@
     "title": "google-labs-code/stitch-skills",
     "link": "https://github.com/google-labs-code/stitch-skills",
     "author": "GitHub Weekly Trending Repositories",
-    "publishedAt": "2026-11-27T09:19:31Z",
+    "publishedAt": "2026-11-27T19:16:21Z",
     "snippet": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.https://...",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "f63570b1e47bbbef",
+    "feedId": "github-weekly-trending-repositories",
+    "feedTitle": "GitHub Weekly Trending Repositories",
+    "category": "t-language",
+    "title": "obsidianmd/obsidian-skills",
+    "link": "https://github.com/obsidianmd/obsidian-skills",
+    "author": "GitHub Weekly Trending Repositories",
+    "publishedAt": "2026-11-27T19:16:21Z",
+    "snippet": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.Agent Skills for use with Obsidian. These skills follow the Agent Skills specification, so they work with any agent that supports s...",
+    "coverImage": null,
+    "readTime": 1
+  },
+  {
+    "id": "4bafba18f95b247f",
+    "feedId": "selfh-st",
+    "feedTitle": "selfh.st",
+    "category": "tech",
+    "title": "Self-Host Weekly (27 November 2026)",
+    "link": "https://selfh.st/weekly/2026-11-27/",
+    "author": "Ethan Sholly",
+    "publishedAt": "2026-11-27T13:03:16Z",
+    "snippet": "Become a paid subscriber to access the newsletter’s full-text RSS feed or continue reading on selfh.st.",
     "coverImage": null,
     "readTime": 1
   },
@@ -205,6 +231,32 @@
     "publishedAt": "2026-11-27T00:10:30Z",
     "snippet": "这里记录每周值得分享的科技内容，周五发布。 本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。 封面图 本周，小鹏公司展示它的人形机器人。（via） AI 的疯狂造富 上周，模型公司 Anthropic 公司上市，创造出巨额财富。 这是一家历史很短的公司。它成立于2021年，当时规模很小，正式的大量对外招聘是2023年开始的。 大家知道吗，这么短的成立时间，又有...",
     "coverImage": "https://cdn.beekka.com/blogimg/asset/202611/bg2026112608.webp",
+    "readTime": 1
+  },
+  {
+    "id": "af6330ed1e118874",
+    "feedId": "golang-weekly",
+    "feedTitle": "Golang Weekly",
+    "category": "t-language",
+    "title": "A mammoth tour of Go's tooling for 2026",
+    "link": "https://golangweekly.com/issues/626",
+    "author": "Golang Weekly",
+    "publishedAt": "2026-11-27T00:00:00Z",
+    "snippet": "#​626 — November 27, 2026 Read the Web Version Go Weekly An Overview of Go's Tooling, Updated for 2026 — Alex's 2019 tour of Go tooling was one of our most popular links ever, but now he's back with an all-new 2026 editi...",
+    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/y6z6dqzbfy2uzig73q9i.jpg",
+    "readTime": 1
+  },
+  {
+    "id": "c81a6ef6980c0fe7",
+    "feedId": "react-status",
+    "feedTitle": "React Status",
+    "category": "tech",
+    "title": "Ricky Hanlon leaves Meta (but not React)",
+    "link": "https://react.statuscode.com/issues/499",
+    "author": "React Status",
+    "publishedAt": "2026-11-27T00:00:00Z",
+    "snippet": "#​499 — November 27, 2026 Read on the Web React Status Ricky Hanlon is Leaving Meta (But Not React) — After years helping get React \"from 4 million to 250 million weekly downloads\", Ricky has left React's birthplace, not...",
+    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/iyljdqwehjcad5y5dro8.jpg",
     "readTime": 1
   },
   {
@@ -403,19 +455,6 @@
     "readTime": 1
   },
   {
-    "id": "b0e9a0d4e4279cdc",
-    "feedId": "react-status",
-    "feedTitle": "React Status",
-    "category": "tech",
-    "title": "Why Next.js has had so many security advisories",
-    "link": "https://react.statuscode.com/issues/498",
-    "author": "React Status",
-    "publishedAt": "2026-11-20T00:00:00Z",
-    "snippet": "#​498 — November 20, 2026 Read on the Web React Status React Flow 13: Fewer Re-Renders for Big Node-Based UIs — The library behind countless node editors and workflow UIs gets its first major release in two years, with n...",
-    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/ds7cbagrj5mmhgomkj4i.jpg",
-    "readTime": 1
-  },
-  {
     "id": "bb09df1b86591de6",
     "feedId": "golang-weekly",
     "feedTitle": "Golang Weekly",
@@ -426,6 +465,19 @@
     "publishedAt": "2026-11-20T00:00:00Z",
     "snippet": "#​625 — November 20, 2026 Read the Web Version Go Weekly Probabilistic Data Structures in Go — A diagram-driven tour of five probabilistic data structures (Bloom filters, count-min sketch, HyperLogLog, t-digest, top-k) t...",
     "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/pamrp1ng4g3juit229ib.jpg",
+    "readTime": 1
+  },
+  {
+    "id": "b0e9a0d4e4279cdc",
+    "feedId": "react-status",
+    "feedTitle": "React Status",
+    "category": "tech",
+    "title": "Why Next.js has had so many security advisories",
+    "link": "https://react.statuscode.com/issues/498",
+    "author": "React Status",
+    "publishedAt": "2026-11-20T00:00:00Z",
+    "snippet": "#​498 — November 20, 2026 Read on the Web React Status React Flow 13: Fewer Re-Renders for Big Node-Based UIs — The library behind countless node editors and workflow UIs gets its first major release in two years, with n...",
+    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/ds7cbagrj5mmhgomkj4i.jpg",
     "readTime": 1
   },
   {
@@ -572,19 +624,6 @@
     "readTime": 1
   },
   {
-    "id": "27033c5199447c85",
-    "feedId": "react-status",
-    "feedTitle": "React Status",
-    "category": "tech",
-    "title": "shadcn's next thing: UI SDK",
-    "link": "https://react.statuscode.com/issues/497",
-    "author": "React Status",
-    "publishedAt": "2026-11-13T00:00:00Z",
-    "snippet": "#​497 — November 13, 2026 Read on the Web React Status Declarative Dragging — Rather than designing drag and drop interactions as needed, what if you could declare the possible outcomes and let a library work out the int...",
-    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/jmcergdduhiy3e6s1glp.jpg",
-    "readTime": 1
-  },
-  {
     "id": "1c18aed3e26ab647",
     "feedId": "golang-weekly",
     "feedTitle": "Golang Weekly",
@@ -595,6 +634,19 @@
     "publishedAt": "2026-11-13T00:00:00Z",
     "snippet": "#​624 — November 13, 2026 Read the Web Version Go Weekly Go Turns 17: An Update — A mini 'State of the Union' to celebrate Go's 17th birthday (first unveiled in a quite understated post in 2009). Austin recaps a year of ...",
     "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/otrpv3lgplpw6ieeppjz.jpg",
+    "readTime": 1
+  },
+  {
+    "id": "27033c5199447c85",
+    "feedId": "react-status",
+    "feedTitle": "React Status",
+    "category": "tech",
+    "title": "shadcn's next thing: UI SDK",
+    "link": "https://react.statuscode.com/issues/497",
+    "author": "React Status",
+    "publishedAt": "2026-11-13T00:00:00Z",
+    "snippet": "#​497 — November 13, 2026 Read on the Web React Status Declarative Dragging — Rather than designing drag and drop interactions as needed, what if you could declare the possible outcomes and let a library work out the int...",
+    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/jmcergdduhiy3e6s1glp.jpg",
     "readTime": 1
   },
   {
@@ -676,19 +728,6 @@
     "readTime": 1
   },
   {
-    "id": "7fbca3f0b1a4191f",
-    "feedId": "react-status",
-    "feedTitle": "React Status",
-    "category": "tech",
-    "title": "Redux Toolkit's road to 3.0",
-    "link": "https://react.statuscode.com/issues/496",
-    "author": "React Status",
-    "publishedAt": "2026-11-06T00:00:00Z",
-    "snippet": "#​496 — November 6, 2026 Read on the Web React Status Discord Dropping Electron and React Native for a Rust Rewrite — Discord, one of React Native's best-known users, is moving away, with its CTO 𝕏 showing off a Rust des...",
-    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/ouvobggjw2zmigv3z8xx.jpg",
-    "readTime": 1
-  },
-  {
     "id": "62722aa623071c1f",
     "feedId": "golang-weekly",
     "feedTitle": "Golang Weekly",
@@ -699,6 +738,19 @@
     "publishedAt": "2026-11-06T00:00:00Z",
     "snippet": "#​623 — November 6, 2026 Read the Web Version Go Weekly The Official Guide to encoding/json/v2 (and Migrating to It) — Now that encoding/json/v2 and jsontext are stable, the Go team has a refreshed introduction to how th...",
     "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/mjufarps84eobx02hryp.jpg",
+    "readTime": 1
+  },
+  {
+    "id": "7fbca3f0b1a4191f",
+    "feedId": "react-status",
+    "feedTitle": "React Status",
+    "category": "tech",
+    "title": "Redux Toolkit's road to 3.0",
+    "link": "https://react.statuscode.com/issues/496",
+    "author": "React Status",
+    "publishedAt": "2026-11-06T00:00:00Z",
+    "snippet": "#​496 — November 6, 2026 Read on the Web React Status Discord Dropping Electron and React Native for a Rust Rewrite — Discord, one of React Native's best-known users, is moving away, with its CTO 𝕏 showing off a Rust des...",
+    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/ouvobggjw2zmigv3z8xx.jpg",
     "readTime": 1
   },
   {
@@ -806,19 +858,6 @@
     "readTime": 1
   },
   {
-    "id": "e279dbc217559a8e",
-    "feedId": "react-status",
-    "feedTitle": "React Status",
-    "category": "tech",
-    "title": "TanStack's smaller React for the browser",
-    "link": "https://react.statuscode.com/issues/495",
-    "author": "React Status",
-    "publishedAt": "2026-10-30T00:00:00Z",
-    "snippet": "#​495 — October 30, 2026 Read on the Web React Status Putting MUI, Mantine, Ant Designand React Spectrum Under Load Den Odell wanted to see how popular design systems cope when you give them real work, so he timed ten of...",
-    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/aanjymzij2eewsfnkhro.jpg",
-    "readTime": 1
-  },
-  {
     "id": "bc2de8e82231593f",
     "feedId": "golang-weekly",
     "feedTitle": "Golang Weekly",
@@ -829,6 +868,19 @@
     "publishedAt": "2026-10-30T00:00:00Z",
     "snippet": "#​622 — October 30, 2026 Read the Web Version Go Weekly Wails 3.0: Build Desktop Apps with Go and Native Web Views — Nearly four years after its alpha, Wails 3 lets you build desktop apps with a Go backend and web fronte...",
     "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/s0aokyzlbjmn4zfzop4e.jpg",
+    "readTime": 1
+  },
+  {
+    "id": "e279dbc217559a8e",
+    "feedId": "react-status",
+    "feedTitle": "React Status",
+    "category": "tech",
+    "title": "TanStack's smaller React for the browser",
+    "link": "https://react.statuscode.com/issues/495",
+    "author": "React Status",
+    "publishedAt": "2026-10-30T00:00:00Z",
+    "snippet": "#​495 — October 30, 2026 Read on the Web React Status Putting MUI, Mantine, Ant Designand React Spectrum Under Load Den Odell wanted to see how popular design systems cope when you give them real work, so he timed ten of...",
+    "coverImage": "https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60,q_auto/aanjymzij2eewsfnkhro.jpg",
     "readTime": 1
   },
   {
@@ -1036,19 +1088,6 @@
     "author": "Changelog",
     "publishedAt": "2026-09-03T20:00:00Z",
     "snippet": "This week I’m joined by Peer Richelsen, co-founder of Cal.com. What if the majority of open source repositories are already compromised and we just don’t know it yet? That’s the theory Peer brings to the table this week....",
-    "coverImage": null,
-    "readTime": 1
-  },
-  {
-    "id": "d61111e760361d06",
-    "feedId": "selfh-st",
-    "feedTitle": "selfh.st",
-    "category": "tech",
-    "title": "Self-Host Weekly (28 August 2026)",
-    "link": "https://selfh.st/weekly/2026-08-28/",
-    "author": "Ethan Sholly",
-    "publishedAt": "2026-08-28T12:10:11Z",
-    "snippet": "Become a paid subscriber to access the newsletter’s full-text RSS feed or continue reading on selfh.st.",
     "coverImage": null,
     "readTime": 1
   },
